@@ -215,9 +215,9 @@
           <control type="togglebutton" id="705" description="Info">
             <include>9000Buttons</include>
             <label>20159</label>
-            <!--<onclick>close</onclick>-->
+            <onclick>close</onclick>
 			<onclick>ActivateWindow(142)</onclick>
-			<!--<altclick>close</altclick>-->
+			<altclick>close</altclick>
 			<altclick>Dialog.Close(142)</altclick>
 			<usealttexture>Window.IsActive(142)</usealttexture>
           </control>

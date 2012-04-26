@@ -3,6 +3,7 @@
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
   <controls>
+  <include>MiniBackground</include>
     <control type="group">
       <posx>0</posx>
       <posy>0</posy>

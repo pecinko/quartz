@@ -1,17 +1,10 @@
 ﻿<window id="106">
   <defaultcontrol always="true">996</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <!-- ## Override defaults as dialog does not have fixed position ## -->
-  <animation type="WindowOpen">
-    <effect type="fade" start="0" end="100" time="200"/>
-    <effect type="zoom" easing="out" start="0" end="100" center="auto" time="200"/>
-  </animation>
-  <animation type="WindowClose">
-    <effect type="fade" start="100" end="0" time="100"/>
-    <effect type="zoom" easing="in" start="100" end="0" center="auto" time="100"/>
-  </animation>
+  <include>DialogOpenClose</include>
   <coordinates>
     <system>1</system>
+	<origin x="468" y="70" />
   </coordinates>
   <controls>
     <control type="label">
@@ -48,8 +41,8 @@
       </control>
     </control>
     <control type="image">
-      <posx>0</posx>
-      <posy>0</posy>
+      <posx>-468</posx>
+      <posy>-70</posy>
       <width>1280</width>
       <height>720</height>
       <texture>debuggrid720.png</texture>
