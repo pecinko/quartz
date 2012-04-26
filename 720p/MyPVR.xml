@@ -1,0 +1,208 @@
+<window id="600">
+  <defaultcontrol>32</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control type="group" id="50">
+      <include>Window_OpenClose_Animation</include>
+      <include>EPGTimelineView</include>
+      <!-- view id = 10 -->
+      <include>LiveTVChannelView</include>
+      <!-- view id = 11 -->
+      <include>LiveRadioChannelView</include>
+      <!-- view id = 12 -->
+      <include>LiveTVRecordingsView</include>
+      <!-- view id = 13 -->
+      <include>LiveTVTimersView</include>
+      <!-- view id = 14 -->
+      <include>LiveTVGuideChannelView</include>
+      <!-- view id = 15 -->
+      <include>LiveTVGuideNowNextView</include>
+      <!-- view id = 16 -->
+      <include>LiveTVSearchView</include>
+      <!-- view id = 17 -->
+    </control>
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <texture>img/BlackDot.png</texture>
+      <animation effect="fade" time="400">Visible</animation>
+      <animation effect="fade" time="200">Hidden</animation>
+      <visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
+    </control>
+    <control type="group" description="Side menu 9000 group">
+      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+      <include>DialogOpenCloseVisible</include>
+      <control type="image" description="List back">
+        <posx>242</posx>
+        <posy>38</posy>
+        <width>788</width>
+        <height>694</height>
+        <aspectratio>stretch</aspectratio>
+        <texture border="150">img/Dialog.png</texture>
+      </control>
+      <control type="grouplist" id="9000">
+        <posx>400</posx>
+        <posy>158</posy>
+        <width>480</width>
+        <height>440</height>
+        <itemgap>-54</itemgap>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
+        <control type="button" id="32" description="TV Channels">
+          <include>9000Buttons</include>
+          <label>19023</label>
+        </control>
+        <control type="button" id="33" description="Radio Channels">
+          <onleft>12</onleft>
+          <onright>12</onright>
+          <label>19024</label>
+          <include>9000Buttons</include>
+        </control>
+        <control type="button" id="31" description="TV Guide">
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
+        </control>
+        <control type="button" id="34" description="Recordings">
+          <include>9000Buttons</include>
+          <label>19163</label>
+        </control>
+        <control type="button" id="35" description="Timers">
+          <include>9000Buttons</include>
+          <label>19040</label>
+        </control>
+        <control type="button" id="36" description="Search">
+          <include>9000Buttons</include>
+          <label>137</label>
+        </control>
+        <control type="button" id="699" description="Playing">
+          <enable>Player.HasMedia</enable>
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[31023]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ]</label>
+          <onclick>fullscreen</onclick>
+          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
+        </control>
+      </control>
+    </control>
+    <control type="group">
+      <control type="label" description="Clock other windows">
+        <visible>![Control.IsVisible(53) | Control.IsVisible(55)]</visible>
+        <posx>22r</posx>
+        <posy>2</posy>
+        <width>130</width>
+        <height>50</height>
+        <align>right</align>
+        <aligny>center</aligny>
+        <font>size19</font>
+        <textcolor>Grey</textcolor>
+        <label>$INFO[System.Time]</label>
+      </control>
+	  <control type="label" description="Content Debug">
+        <visible>Skin.HasSetting(DebugInfo)</visible>
+        <posx>200</posx>
+        <posy>4</posy>
+        <width>1280</width>
+        <height>50</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>size19</font>
+        <textcolor>Red</textcolor>
+        <label>[B]$VAR[RowPosition] - $VAR[ContentType][/B][COLOR=Silver]$INFO[Container.FolderName][/COLOR]</label>
+      </control>
+    </control>
+    <control type="grouplist">
+      <visible>![Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15)]</visible>
+      <posx>640</posx>
+      <posy>40</posy>
+      <width>620</width>
+      <height>50</height>
+      <align>center</align>
+      <aligny>bottom</aligny>
+      <orientation>horizontal</orientation>
+      <control type="label" id="7777" description="Heading">
+        <width min="40" max="620">auto</width>
+        <height>50</height>
+        <font>size28</font>
+        <textcolor>White2</textcolor>
+        <scroll>false</scroll>
+        <label>$VAR[PVR_Headings]</label>
+      </control>
+      <control type="label" description="Number of files">
+        <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+        <width min="40" max="80">auto</width>
+        <height>54</height>
+        <font>size17</font>
+        <textcolor>Grey</textcolor>
+        <label>$INFO[Container.NumItems,  (,)]</label>
+      </control>
+    </control>
+	<control type="grouplist">
+      <visible>Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15)</visible>
+      <posx>22</posx>
+      <posy>0</posy>
+      <width>820</width>
+      <height>50</height>
+      <align>left</align>
+      <aligny>bottom</aligny>
+      <orientation>horizontal</orientation>
+      <control type="label" id="7777" description="Heading">
+        <width min="40" max="720">auto</width>
+        <height>50</height>
+        <font>size28</font>
+        <textcolor>White2</textcolor>
+        <scroll>false</scroll>
+        <label>$VAR[PVR_Headings]</label>
+      </control>
+      <control type="label" description="Number of files">
+        <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+        <width min="40" max="80">auto</width>
+        <height>54</height>
+        <font>size17</font>
+        <textcolor>Grey</textcolor>
+        <label>$INFO[Container.NumItems,  (,)]</label>
+      </control>
+    </control>
+	<!--<control type="image" description="Addon Logo">
+        <visible>SubString(Container.FolderPath,plugin://plugin,left)</visible>
+        <posx>640</posx>
+      	<posy>30</posy>
+      	<width>620</width>
+      	<height>50</height>
+        <aspectratio>keep</aspectratio>
+		<bordertexture>img/BlackDot.png</bordertexture>
+		<bordersize>210,4,210,4</bordersize>
+        <texture>$INFO[Container.FolderName,logos/,.png]</texture>
+      </control>-->
+	 <control type="group" description="Scroll letter">
+      <visible>Container.Scrolling</visible>
+      <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="150" delay="300" reversible="false">Hidden</animation>
+      <control type="image">
+        <posx>925</posx>
+        <posy>650</posy>
+        <width>54</width>
+        <height>54</height>
+        <texture border="12">img/SortLetterBG.png</texture>
+      </control>
+      <control type="label">
+        <posx>925</posx>
+        <posy>650</posy>
+        <width>54</width>
+        <height>54</height>
+        <align>center</align>
+        <font>size25</font>
+        <label>$INFO[ListItem.SortLetter]</label>
+      </control>
+    </control>
+    <control type="label">
+      <include>WindowID</include>
+      <label>MyPVR.xml</label>
+    </control>
+    <include>Debug_Grid</include>
+  </controls>
+</window>

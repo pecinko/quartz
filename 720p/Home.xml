@@ -363,7 +363,12 @@
         <ondown>-</ondown>
         <include>Sublist</include>
         <content>
-          <item id="1" description="Weather">
+          <item id="0" description="LiveTV">
+            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <label>31502</label>
+            <onclick>ActivateWindow(PVR)</onclick>
+          </item>
+		  <item id="1" description="Weather">
             <visible>!Skin.HasSetting(Addons1)</visible>
             <label>8</label>
             <onclick>ActivateWindow(Weather)</onclick>

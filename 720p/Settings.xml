@@ -105,7 +105,12 @@
             <label>24001</label>
             <onclick>activatewindow(AddonBrowser,root)</onclick>
           </item>
-          <item id="7" description="Weather">
+		  <item id="7">
+			<visible>System.HasPvr</visible>
+			<label>31502</label>
+			<onclick>activateWindow(PVRSettings)</onclick>
+			</item>
+          <item id="8" description="Weather">
             <label>8</label>
             <onclick>activatewindow(WeatherSettings)</onclick>
           </item>

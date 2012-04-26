@@ -62,14 +62,14 @@
         <control type="image">
           <visible>!VideoPlayer.Content(Movies)</visible>
           <posx>10</posx>
-          <posy>46</posy>
+          <posy>48</posy>
           <width>160</width>
           <height>160</height>
           <bordersize>8</bordersize>
           <texture>$INFO[VideoPlayer.Cover]</texture>
-          <aspectratio>scale</aspectratio>
+          <aspectratio aligny="top">keep</aspectratio>
         </control>
-        <control type="image">
+        <!--<control type="image">
           <visible>!VideoPlayer.Content(Movies)</visible>
           <posx>10</posx>
           <posy>46</posy>
@@ -77,43 +77,48 @@
           <height>160</height>
           <texture border="3">img/CoverOverlay0.png</texture>
           <bordersize>8</bordersize>
-        </control>
+        </control>-->
         <control type="group">
           <posx>-20</posx>
           <posy>44</posy>
           <control type="label" description="Main label">
+            <visible>![VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)]</visible>
+            <include>FullscreenInfoLabelMain</include>
+            <label>[COLOR=Grey]$INFO[VideoPlayer.ChannelNumber,,.][/COLOR]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
+          </control>
+		  <control type="label" description="Main label">
             <visible>VideoPlayer.Content(MusicVideos)</visible>
             <include>FullscreenInfoLabelMain</include>
             <label>$INFO[VideoPlayer.Artist]</label>
           </control>
-          <control type="label" description="Main">
-            <visible>VideoPlayer.Content(Movies)</visible>
-            <include>FullscreenInfoLabelMain</include>
-            <label>$INFO[VideoPlayer.Title]</label>
-          </control>
-          <control type="label" description="Main">
+          <control type="label" description="Main label">
             <visible>VideoPlayer.Content(Episodes)</visible>
             <include>FullscreenInfoLabelMain</include>
             <label>$INFO[VideoPlayer.Title]</label>
           </control>
-          <control type="label" description="label2">
+          <control type="label" description="Label 2">
             <visible>VideoPlayer.Content(MusicVideos)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
             <label>$INFO[VideoPlayer.Album]</label>
           </control>
-          <control type="label" description="Label2">
-            <visible>!StringCompare(Player.Chapter,00)</visible>
-            <visible>VideoPlayer.Content(Movies)</visible>
+          <control type="label" description="Label 2">
+            <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
             <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
           </control>
-          <control type="label" description="Label2">
+          <control type="label" description="Label 2">
             <visible>VideoPlayer.Content(Episodes)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
             <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
+          </control>
+		  <control type="label" description="Label 2">
+            <visible>VideoPlayer.Content(LiveTV)</visible>
+            <font>size17</font>
+            <include>FullscreenInfoLabel2</include>
+            <label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
           </control>
           <control type="textbox">
             <posx>200</posx>

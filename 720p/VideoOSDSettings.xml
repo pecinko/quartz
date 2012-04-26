@@ -34,8 +34,6 @@
         <itemgap>0</itemgap>
         <orientation>vertical</orientation>
         <pagecontrol>60</pagecontrol>
-        <onleft>-</onleft>
-        <onright>-</onright>
         <onup>5</onup>
         <ondown>5</ondown>
       </control>

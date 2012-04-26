@@ -13,6 +13,8 @@
   <include file="CommonViews.xml" />
   <include file="View_Videos.xml"/>
   <include file="View_Banners.xml"/>
+  <include file="View_LiveTV.xml"/>
+  <include file="View_PVR.xml"/>
   <include file="Includes_Home.xml"/>
   <include file="Includes_Shelf.xml"/>
   <include file="Includes_WP10DayForecast.xml" />

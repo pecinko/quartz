@@ -10,13 +10,13 @@
       <label>DialogMuteBug.xml</label>
     </control>
     <control type="group">
-     <posx>1180</posx>
+     <posx>1200</posx>
       <posy>20</posy>
       <control type="image" id="901" description="Muted">
-		<posx>0</posx>
-        <posy>0</posy>
-        <width>64</width>
-        <height>64</height>
+		<posx>6</posx>
+        <posy>6</posy>
+        <width>52</width>
+        <height>52</height>
         <aspectratio>keep</aspectratio>
         <texture>img/SpeakerMuted.png</texture>
       </control>

@@ -116,7 +116,15 @@
     <value>C: N/A - $INFO[Container.FolderPath]</value>
   </variable>
   <variable name="RowPosition" description="Content Type Debugg Info">
-    <value condition="Control.IsVisible(50)">Control 50</value>
+    <value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(10)">Control 10</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(11)">Control 11</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(12)">Control 12</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(13)">Control 13</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(14)">Control 14</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(15)">Control 15</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(16)">Control 16</value>
+	<value condition="Window.IsActive(MyPVR.xml) + Control.IsVisible(17)">Control 17</value>
+	<value condition="Control.IsVisible(50)">Control 50</value>
     <value condition="Control.IsVisible(51)">Control 51</value>
     <value condition="Control.IsVisible(52)">Control 52</value>
     <value condition="Control.IsVisible(53)">Control 53</value>
@@ -167,6 +175,10 @@
     <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
     <value condition="Window.IsActive(weather)">$INFO[Window(Weather).Property(WeatherProvider)]</value>
     <value>$INFO[Container.FolderName]</value>
+  </variable>
+  <variable name="PVR_Headings" description="PVR Headings">
+    <value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
+	<value>$INFO[Container.FolderName]</value>
   </variable>
   <variable name="MPAA" description="MPAA Ratings">
     <value condition="container.content(TVShows) | container.content(episodes)">$INFO[ListItem.MPAA]</value>
