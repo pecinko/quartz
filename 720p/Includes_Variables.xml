@@ -95,6 +95,10 @@
     <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
     <value>$INFO[ListItem.Overlay]</value>
   </variable>
+  <variable name="PVROverlay" description="PVR Overlay image">
+    <value condition="ListItem.IsRecording">OverlayRecording.png</value>
+    <value condition="ListItem.HasTimer">OverlayTimer.png</value>
+  </variable>
   <variable name="ButtonMenuTopImage" description="Focused Function Icon">
     <value condition="ControlGroup(9000).HasFocus(2)">BMQuit.png</value>
     <value condition="ControlGroup(9000).HasFocus(3)">BMShutdown.png</value>

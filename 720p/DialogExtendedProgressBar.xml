@@ -44,5 +44,9 @@
 				<height>8</height>
 			</control>
 		</control>
+		<control type="label">
+      <include>WindowID</include>
+      <label>DialogExtendedProgressBar.xml</label>
+    </control>
 	</controls>
 </window>
