@@ -2,11 +2,6 @@
   <defaultcontrol always="true">2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
-    <control type="label">
-      <posy>40</posy>
-      <include>DialogID</include>
-      <label>VisualisationPresetList.xml</label>
-    </control>
     <control type="image">
       <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
       <posx>140</posx>
@@ -78,6 +73,6 @@
       <onleft>2</onleft>
       <onright>2</onright>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

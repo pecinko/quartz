@@ -4,11 +4,6 @@
   <include>DialogOpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <posy>100</posy>
-      <include>DialogID</include>
-      <label>SmartPlaylistRule.xml</label>
-    </control>
     <control type="image">
       <posx>60</posx>
       <posy>40</posy>
@@ -128,6 +123,6 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

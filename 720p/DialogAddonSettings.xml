@@ -8,10 +8,6 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>WindowID</include>
-      <label>DialogAddonSettings.xml</label>
-    </control>
     <control type="label" id="20" description="Heading">
       <posy>0</posy>
       <posx>75</posx>
@@ -132,6 +128,5 @@
       <showonepage>false</showonepage>
       <onright>8999</onright>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

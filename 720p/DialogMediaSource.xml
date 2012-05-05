@@ -3,10 +3,6 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>DialogID</include>
-      <label>DialogMediaSource.xml</label>
-    </control>
     <control type="group" description="Right panel">
       <posx>340</posx>
       <posy>80</posy>
@@ -126,6 +122,5 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

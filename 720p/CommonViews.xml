@@ -1805,12 +1805,12 @@
     </focusedlayout>
   </include>
   <include name="TVProgress">
-	<posx>0</posx>
-	<posy>3</posy>
-	<width>535</width>
-	<height>68</height>
-	<texturebg>img/ItemBG.png</texturebg>
-	<midtexture>img/ItemBG2.png</midtexture>
-	<info>ListItem.Progress</info>
+    <posx>0</posx>
+    <posy>3</posy>
+    <width>535</width>
+    <height>68</height>
+    <texturebg>img/ItemBG.png</texturebg>
+    <midtexture>img/ItemBG2.png</midtexture>
+    <info>ListItem.Progress</info>
   </include>
 </includes>

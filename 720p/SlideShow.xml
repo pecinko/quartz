@@ -1,9 +1,5 @@
 <window id="2007">
   <controls>
-    <control type="label">
-      <include>WindowID</include>
-      <label>SlideShow.xml</label>
-    </control>
     <control type="group">
       <visible>Slideshow.IsActive</visible>
       <animation condition="Slideshow.IsPaused" effect="fade" start="100" end="0" time="200">conditional</animation>
@@ -46,6 +42,6 @@
         <texture>OSD/OSDProgressPause.png</texture>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

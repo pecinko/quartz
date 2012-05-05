@@ -308,18 +308,18 @@
             <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
             <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
           </control>
-          <control type="button" id="699" description="Playing">
-            <enable>Player.HasMedia</enable>
-            <include>9000Buttons</include>
-            <label>$LOCALIZE[31023]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ]</label>
-            <onclick>fullscreen</onclick>
-          </control>
+          <control type="togglebutton" id="699" description="Playing">
+          <enable>Player.HasMedia</enable>
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[16003]</label>
+		  <altlabel>$LOCALIZE[31977]</altlabel>
+		  <usealttexture>Player.HasMedia</usealttexture>
+          <onclick>fullscreen</onclick>
+		  <altclick>fullscreen</altclick>
+          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
+        </control>
         </control>
       </control>
-    </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>MyPrograms.xml</label>
     </control>
     <include>MediaHeader</include>
     <control type="label" description="Heading">
@@ -327,6 +327,6 @@
       <include>HeadingR</include>
       <label>0</label>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

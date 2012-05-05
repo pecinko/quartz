@@ -7,17 +7,13 @@
     <include>View_Videos</include>
     <include condition="Skin.HasSetting(PostersHide)">View_Banners</include>
     <control type="image" description="Test">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>1280</width>
-		  <height>720</height>
-          <aspectratio>keep</aspectratio>
-          <texture>Test.png</texture>
-		  <animation effect="fade" time="0" end="0" condition="true">Conditional</animation>
-        </control>
-	<control type="label">
-      <include>WindowID</include>
-      <label>MyVideoNav.xml</label>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <aspectratio>keep</aspectratio>
+      <texture>Test.png</texture>
+      <animation effect="fade" time="0" end="0" condition="true">Conditional</animation>
     </control>
     <control type="group" description="Side menu 9000 group">
       <include>9000Commons</include>
@@ -40,23 +36,25 @@
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
           <onclick>ActivateWindow(Videos,files)</onclick>
         </control>
-        <control type="button" id="699" description="Playing">
+       	<control type="togglebutton" id="699" description="Playing">
           <enable>Player.HasMedia</enable>
           <include>9000Buttons</include>
-          <label>$LOCALIZE[31023]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ]</label>
+          <label>$LOCALIZE[16003]</label>
+		  <altlabel>$LOCALIZE[31977]</altlabel>
+		  <usealttexture>Player.HasMedia</usealttexture>
           <onclick>fullscreen</onclick>
+		  <altclick>fullscreen</altclick>
           <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
       </control>
     </control>
     <control type="group">
       <include>MediaHeader</include>
-	  <control type="label" description="Heading">
+      <control type="label" description="Heading">
         <visible>IsEmpty(Container.FolderName)</visible>
         <include>HeadingR</include>
         <label>3</label>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

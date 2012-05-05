@@ -263,10 +263,5 @@
 					<label>186</label>
 				</control>
 			</control>
-			<control type="label">
-      <include>WindowID</include>
-      <label>DialogPVRRecordingInfo.xml</label>
-    </control>
-    <include>Debug_Grid</include>
 	</controls>
 </window>

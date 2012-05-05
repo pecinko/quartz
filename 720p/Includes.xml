@@ -89,26 +89,6 @@
 	 <textcolor>White2</textcolor>
     <font>size28</font>
   </include>
-  <include name="DialogID">
-    <posx>10</posx>
-    <posy>10</posy>
-    <width>520</width>
-    <height>14</height>
-    <textcolor>Red</textcolor>
-    <shadowcolor>Black</shadowcolor>
-    <align>left</align>
-    <visible>Skin.HasSetting(DebugInfo)</visible>
-  </include>
-  <include name="WindowID">
-    <posx>10</posx>
-    <posy>10</posy>
-    <width>520</width>
-    <height>14</height>
-    <textcolor>Blue</textcolor>
-    <shadowcolor>Black</shadowcolor>
-    <align>left</align>
-    <visible>Skin.HasSetting(DebugInfo)</visible>
-  </include>
   <include name="Dimensions_Fullscreen">
     <posx>0</posx>
     <posy>0</posy>
@@ -129,18 +109,6 @@
         <font>size19</font>
         <textcolor>Grey</textcolor>
         <label>$INFO[System.Time]</label>
-      </control>
-      <control type="label" description="Content Debug">
-        <visible>Skin.HasSetting(DebugInfo)</visible>
-        <posx>200</posx>
-        <posy>4</posy>
-        <width>1280</width>
-        <height>50</height>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>size19</font>
-        <textcolor>Red</textcolor>
-        <label>[B]$VAR[RowPosition] - $VAR[ContentType][/B]</label>
       </control>
       <control type="label" description="Heading">
         <posx>0</posx>
@@ -180,18 +148,6 @@
         <font>size18</font>
         <textcolor>Grey</textcolor>
         <label>$INFO[System.Time]</label>
-      </control>
-      <control type="label" description="Content Debug">
-        <visible>Skin.HasSetting(DebugInfo)</visible>
-        <posx>20</posx>
-        <posy>30</posy>
-        <width>1280</width>
-        <height>50</height>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>size15</font>
-        <textcolor>Red</textcolor>
-        <label>$INFO[Container.NumItems] - [B]$VAR[RowPosition] - $VAR[ContentType][/B][COLOR=Silver]$INFO[Container.FolderName][/COLOR]</label>
       </control>
     </control>
     <control type="grouplist">
@@ -246,18 +202,7 @@
         <label>$INFO[Container.NumItems,  (,)]</label>
       </control>
     </control>
-	<!--<control type="image" description="Addon Logo">
-        <visible>SubString(Container.FolderPath,plugin://plugin,left)</visible>
-        <posx>640</posx>
-      	<posy>30</posy>
-      	<width>620</width>
-      	<height>50</height>
-        <aspectratio>keep</aspectratio>
-		<bordertexture>img/BlackDot.png</bordertexture>
-		<bordersize>210,4,210,4</bordersize>
-        <texture>$INFO[Container.FolderName,logos/,.png]</texture>
-      </control>-->
-	 <control type="group" description="Scroll letter">
+	<control type="group" description="Scroll letter">
       <visible>Container.Scrolling</visible>
       <animation effect="fade" start="0" end="100" time="50" delay="0" reversible="false">Visible</animation>
       <animation effect="fade" start="100" end="0" time="150" delay="300" reversible="false">Hidden</animation>
@@ -278,16 +223,92 @@
         <label>$INFO[ListItem.SortLetter]</label>
       </control>
     </control>
-  </include>
-  <include name="Debug_Grid">
-    <control type="image">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1280</width>
-      <height>720</height>
-      <texture>debuggrid720.png</texture>
-      <visible>Skin.HasSetting(DebugGrid)</visible>
+	<control type="group" description="Player Info">
+		<visible>Player.HasMedia</visible>
+		<visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
+		<include>VisibleFadeEffect</include>
+		<posx>460</posx>
+      <posy>-4</posy>
+	 <control type="image" description="Playing BG">
+      <width>360</width>
+      <height>84</height>
+      <texture border="14">img/ProgressBG.png</texture>
     </control>
+	<control type="group">
+	<control type="image">
+      <posx>14</posx>
+	  <posy>14</posy>
+	  <width>56</width>
+      <height>56</height>
+      <texture>$INFO[MusicPlayer.Cover]</texture>
+	  <aspectratio>keep</aspectratio>
+    </control>
+	<control type="image">
+      <posx>14</posx>
+	  <posy>14</posy>
+	  <width>56</width>
+      <height>56</height>
+      <texture>$INFO[VideoPlayer.Cover]</texture>
+	  <aspectratio>keep</aspectratio>
+    </control>
+	<control type="label">
+        <posx>80</posx>
+        <posy>10</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size17</font>
+		<textcolor>White2</textcolor>
+        <label>$INFO[MusicPlayer.Title]</label>
+      </control>
+	  <control type="label">
+        <posx>80</posx>
+        <posy>32</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size15</font>
+        <label>$INFO[MusicPlayer.Artist]</label>
+      </control>
+	  <control type="label">
+        <posx>80</posx>
+        <posy>50</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size15</font>
+        <label>$INFO[MusicPlayer.Album]</label>
+      </control>
+	  <control type="label">
+        <posx>80</posx>
+        <posy>10</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size17</font>
+		<textcolor>White2</textcolor>
+        <label>$INFO[VideoPlayer.Title]</label>
+      </control>
+	  <control type="label">
+        <posx>80</posx>
+        <posy>32</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size15</font>
+        <label>$INFO[VideoPlayer.Artist]</label>
+      </control>
+	  <control type="label">
+        <posx>80</posx>
+        <posy>50</posy>
+        <aligny>center</aligny>
+        <width>262</width>
+        <height>24</height>
+        <font>size15</font>
+        <label>$INFO[VideoPlayer.Album]</label>
+      </control>
+	  </control>
+	</control>
   </include>
   <include name="SeekbarIconsCommons">
     <width>30</width>

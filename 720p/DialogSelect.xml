@@ -4,10 +4,6 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>DialogID</include>
-      <label>DialogSelect.xml</label>
-    </control>
     <control type="label" id="1" description="Header label">
       <include>HeadingR</include>
       <label>13406</label>
@@ -302,6 +298,5 @@
       <onleft>3</onleft>
       <onright>-</onright>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

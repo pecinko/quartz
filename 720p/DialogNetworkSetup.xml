@@ -7,11 +7,6 @@
     <control type="group">
       <posx>340</posx>
       <posy>160</posy>
-      <control type="label">
-        <posy>-80</posy>
-        <include>DialogID</include>
-        <label>DialogNetworkSetup.xml</label>
-      </control>
       <control type="label" id="2" description="Heading">
         <posx>-340</posx>
         <posy>-40</posy>
@@ -136,6 +131,5 @@
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

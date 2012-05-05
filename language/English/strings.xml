@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
   <!-- Misc labels -->
   <string id="31000">Change Your</string>
@@ -211,5 +211,6 @@
   <string id="31981">Watchlist</string>
   <string id="31980">Show clock</string>
   <string id="31979">Info not available</string>
-  <string id="31978">Lenght</string>	 
+  <string id="31978">Lenght</string>
+  <string id="31977">Fullscreen player</string>	 
 </strings>

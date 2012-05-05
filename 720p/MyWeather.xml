@@ -68,10 +68,6 @@
         </control>
       </control>
     </control>
-    <control type="label">
-      <include>DialogID</include>
-      <label>MyWeather.xml</label>
-    </control>
     <control type="group" id="51">
       <visible>!StringCompare(Weather.Plugin,weather.weatherplus)</visible>
       <control type="group" description="Left panel">
@@ -446,6 +442,6 @@
         <orientation>vertical</orientation>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

@@ -154,10 +154,6 @@
       </control>
     </control>
     <include>Header</include>
-    <control type="label">
-      <include>WindowID</include>
-      <label>LoginScreen.xml</label>
-    </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

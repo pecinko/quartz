@@ -5,8 +5,11 @@
     <origin x="0" y="0" />
   </coordinates>
   <include>OpenClose</include>
-  <controls> <include>MiniBackground</include> <include>MusicBackground</include>
-    <control type="image" description="Vignette"> <include>Dimensions_Fullscreen</include>
+  <controls>
+    <include>MiniBackground</include>
+    <include>MusicBackground</include>
+    <control type="image" description="Vignette">
+      <include>Dimensions_Fullscreen</include>
       <texture>img/Vignette_VideoInfo.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
@@ -198,10 +201,5 @@
         </control>
       </control>
     </control>
-    <control type="label">
-      <posy>40</posy>
-      <include>DialogID</include>
-      <label>DialogAlbumInfo.xml</label>
-    </control>
-    <include>Debug_Grid</include> </controls>
+  </controls>
 </window>

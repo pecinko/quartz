@@ -3,12 +3,6 @@
   <allowoverlay>yes</allowoverlay>
   <include>OpenClose</include>
   <controls>
-    <control type="label">
-      <posx>50</posx>
-      <posy>50</posy>
-      <include>DialogID</include>
-      <label>DialogMuteBug.xml</label>
-    </control>
     <control type="group">
      <posx>1200</posx>
       <posy>20</posy>
@@ -21,6 +15,5 @@
         <texture>img/SpeakerMuted.png</texture>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

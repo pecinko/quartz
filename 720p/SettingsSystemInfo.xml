@@ -4,10 +4,6 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>WindowID</include>
-      <label>SettingsSystemInfo.xml</label>
-    </control>
     <control type="label" description="Heading">
       <include>Heading</include>
       <label>130</label>
@@ -167,6 +163,6 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

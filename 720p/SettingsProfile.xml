@@ -8,10 +8,6 @@
       <include>HeadingR</include>
       <label>10034</label>
     </control>
-    <control type="label">
-      <include>DialogID</include>
-      <label>SettingsProfile.xml</label>
-    </control>
     <control type="togglebutton" id="4" description="Enable Login Screen">
       <posx>680</posx>
       <posy>94</posy>
@@ -111,6 +107,6 @@
         </focusedlayout>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

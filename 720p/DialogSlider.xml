@@ -3,11 +3,6 @@
   <allowoverlay>no</allowoverlay>
   <include>OpenClose</include>
   <controls>
-    <control type="label">
-      <posy>86</posy>
-      <include>DialogID</include>
-      <label>DialogSlider.xml</label>
-    </control>
     <control type="group">
       <posx>0</posx>
       <posy>0</posy>
@@ -49,6 +44,5 @@
         <animation effect="fade" time="200">VisibleChange</animation>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

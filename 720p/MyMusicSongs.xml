@@ -481,12 +481,15 @@
           <label>$LOCALIZE[1024] $LOCALIZE[14022]</label>
           <onclick>ActivateWindow(MusicLibrary,root)</onclick>
         </control>
-        <control type="button" id="699" description="Playing">
+        <control type="togglebutton" id="699" description="Playing">
           <enable>Player.HasMedia</enable>
           <include>9000Buttons</include>
-          <label>$LOCALIZE[31023]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ]</label>
-          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
+          <label>$LOCALIZE[16003]</label>
+		  <altlabel>$LOCALIZE[31977]</altlabel>
+		  <usealttexture>Player.HasMedia</usealttexture>
           <onclick>fullscreen</onclick>
+		  <altclick>fullscreen</altclick>
+          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
       </control>
     </control>
@@ -496,10 +499,6 @@
       <include>HeadingR</include>
       <label>2</label>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>MyMusicSongs.xml</label>
-    </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

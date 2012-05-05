@@ -12,10 +12,6 @@
       <posx>260</posx>
       <posy>10</posy>
       <visible>!Window.IsVisible(smartplaylistrule)</visible>
-      <control type="label">
-        <include>DialogID</include>
-        <label>SmartPlaylistEditor.xml</label>
-      </control>
       <control type="spincontrolex" id="22">
         <description>Set Playlist type</description>
         <posx>10</posx>
@@ -233,6 +229,6 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

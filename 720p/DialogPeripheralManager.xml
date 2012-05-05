@@ -5,11 +5,6 @@
     <system>1</system>
   </coordinates>
   <controls>
-    <control type="label">
-      <posy>-40</posy>
-      <include>DialogID</include>
-      <label>DialogPeripheralManager.xml</label>
-    </control>
     <control type="image">
       <posx>150</posx>
       <posy>-100</posy>
@@ -165,6 +160,5 @@
         <ondown>20</ondown>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

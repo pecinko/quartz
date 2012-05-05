@@ -464,12 +464,15 @@
           <include>9000Buttons</include>
           <label>13319</label>
         </control>
-        <control type="button" id="699" description="Playing">
+        <control type="togglebutton" id="699" description="Playing">
           <enable>Player.HasMedia</enable>
           <include>9000Buttons</include>
-          <label>$LOCALIZE[31023][COLOR=Grey2]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ][/COLOR]</label>
-          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
+          <label>$LOCALIZE[16003]</label>
+		  <altlabel>$LOCALIZE[31977]</altlabel>
+		  <usealttexture>Player.HasMedia</usealttexture>
           <onclick>fullscreen</onclick>
+		  <altclick>fullscreen</altclick>
+          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
       </control>
     </control>
@@ -479,10 +482,6 @@
       <include>HeadingR</include>
       <label>1</label>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>MyPics.xml</label>
-    </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

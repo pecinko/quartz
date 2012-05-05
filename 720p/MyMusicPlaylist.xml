@@ -165,10 +165,5 @@
       </control>
     </control>
     <include>MediaHeader</include>
-    <control type="label">
-      <include>DialogID</include>
-      <label>MyMusicPlaylist.xml</label>
-    </control>
-    <include>Debug_Grid</include>
-  </controls>
+    </controls>
 </window>

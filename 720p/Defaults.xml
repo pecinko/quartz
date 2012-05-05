@@ -90,8 +90,8 @@
     <focusedcolor>White2</focusedcolor>
     <selectedcolor>White2</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturenofocus border="5">img/Edit.png</texturenofocus>
-    <texturefocus border="5">img/EditFO.png</texturefocus>
+    <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
+    <texturefocus flipy="true" border="5">img/ButtonFO.png</texturefocus>
   </default>
   <default type="togglebutton">
     <posx>0</posx>
@@ -109,9 +109,7 @@
     <selectedcolor>White2</selectedcolor>
     <altselectedcolor>Blue</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <!--<texturenofocus border="8">img/ButtonNF.png</texturenofocus>-->
     <texturefocus border="8">img/ButtonFO.png</texturefocus>
-    <!--<alttexturenofocus border="8">img/ButtonNF.png</alttexturenofocus>-->
     <alttexturefocus border="8">img/ButtonFO.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>

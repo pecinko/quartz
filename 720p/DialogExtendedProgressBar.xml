@@ -1,52 +1,46 @@
 <window id="614">
-	<defaultcontrol></defaultcontrol>
-	<animation effect="slide" start="0,-70" end="0,0" time="100">WindowOpen</animation>
-	<animation effect="slide" start="0,0" end="0,-70" delay="400" time="100">WindowClose</animation>
-	<controls>
-		<control type="group">
-			<posx>720</posx>
-			<posy>0</posy>
-			<animation effect="slide" end="-400,0" time="200" condition="Window.IsVisible(133)">conditional</animation>
-			<animation effect="slide" end="0,-80" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
-			<control type="image">
-				<posx>0</posx>
-				<posy>-10</posy>
-				<width>400</width>
-				<height>70</height>
-				<texture>img/BlackDot.png</texture>
-			</control>
-			<control type="label" id="30">
-				<description>Header Label</description>
-				<posx>15</posx>
-				<posy>4</posy>
-				<width>370</width>
-				<height>18</height>
-				<font>font15</font>
-				<textcolor>selected</textcolor>
-				<align>left</align>
-				<aligny>center</aligny>
-			</control>
-			<control type="label" id="31">
-				<description>Title Label</description>
-				<posx>15</posx>
-				<posy>20</posy>
-				<width>370</width>
-				<height>20</height>
-				<font>font10</font>
-				<align>left</align>
-				<aligny>center</aligny>
-			</control>
-			<control type="progress" id="32">
-				<description>progress control</description>
-				<posx>15</posx>
-				<posy>42</posy>
-				<width>370</width>
-				<height>8</height>
-			</control>
-		</control>
-		<control type="label">
-      <include>WindowID</include>
-      <label>DialogExtendedProgressBar.xml</label>
+  <defaultcontrol></defaultcontrol>
+  <include>OpenClose</include>
+  <controls>
+    <control type="group">
+      <posx>720</posx>
+      <posy>0</posy>
+      <animation effect="slide" end="-396,0" time="200" condition="Window.IsVisible(133)">conditional</animation>
+      <control type="image" description="Dialog BG">
+        <posx>0</posx>
+        <posy>-4</posy>
+        <width>400</width>
+        <height>72</height>
+        <texture border="14">img/ProgressBG.png</texture>
+      </control>
+      <control type="label" id="30" description="Caption Label">
+        <posx>15</posx>
+        <posy>6</posy>
+        <width>370</width>
+        <height>18</height>
+        <font>size14</font>
+        <align>left</align>
+        <aligny>center</aligny>
+      </control>
+      <control type="label" id="31" description="Current Directory Label">
+        <posx>15</posx>
+        <posy>24</posy>
+        <width>370</width>
+        <height>20</height>
+        <font>size14</font>
+        <align>left</align>
+        <aligny>center</aligny>
+      </control>
+      <control type="progress" id="32" description="Progress bar">
+        <posx>15</posx>
+        <posy>50</posy>
+        <width>370</width>
+        <height>5</height>
+        <texturebg>MusicOSD/ProgressBG.png</texturebg>
+        <midtexture>MusicOSD/ProgressMidd.png</midtexture>
+        <righttexture>MusicOSD/ProgressRight.png</righttexture>
+        <lefttexture>MusicOSD/ProgressLeft.png</lefttexture>
+      </control>
     </control>
-	</controls>
+  </controls>
 </window>

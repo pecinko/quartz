@@ -10,11 +10,6 @@
       <height>920</height>
       <texture border="150">img/Dialog.png</texture>
     </control>
-    <control type="label">
-      <posy>40</posy>
-      <include>DialogID</include>
-      <label>DialogPictureInfo.xml</label>
-    </control>
     <control type="label" description="Heading">
       <posx>0</posx>
       <posy>40</posy>
@@ -113,6 +108,5 @@
       <onleft>5</onleft>
       <onright>-</onright>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

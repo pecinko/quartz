@@ -6,10 +6,6 @@
     <control type="group">
       <posx>0</posx>
       <posy>0</posy>
-      <control type="label">
-        <include>DialogID</include>
-        <label>MyVideoPlaylist.xml</label>
-      </control>
       <control type="group" description="Infolist">
         <visible>Control.IsVisible(50)</visible>
         <control type="group" description="Thumbs no info">
@@ -183,6 +179,6 @@
       </control>
     </control>
     <include>MediaHeader</include>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

@@ -5,7 +5,7 @@
     <include>MiniBackground</include>
     <control type="group">
       <include>MediaHeader</include>
-	  <control type="label" description="Content Debug">
+      <control type="label" description="Content Debug">
         <visible>Skin.HasSetting(DebugInfo)</visible>
         <posx>200</posx>
         <posy>4</posy>
@@ -225,21 +225,20 @@
     <control type="group" description="Left panel">
       <posy>0</posy>
       <control type="textbox" description="Plot51">
-		  <visible>Container(50).HasFocus(0)</visible>
-		  <animation effect="fade" time="200">VisibleChange</animation>
-		  <posx>80</posx>
-			<posy>240</posy>
-			<width>440</width>
-			<height>252</height>
-			<font>size20</font>
-			<textcolor>Silver</textcolor>
-			<align>justify</align>
-			<aligny>bottom</aligny>
-			<autoscroll delay="0" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-		  <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
-		</control>
-	  
-	  <control type="image" description="Logo">
+        <visible>Container(50).HasFocus(0)</visible>
+        <animation effect="fade" time="200">VisibleChange</animation>
+        <posx>80</posx>
+        <posy>240</posy>
+        <width>440</width>
+        <height>252</height>
+        <font>size20</font>
+        <textcolor>Silver</textcolor>
+        <align>justify</align>
+        <aligny>bottom</aligny>
+        <autoscroll delay="0" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
+      </control>
+      <control type="image" description="Logo">
         <visible>Container(50).HasFocus(1) | Container(50).HasFocus(2)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -249,7 +248,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>DefaultAddon.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(3) + !Skin.HasSetting(Scrollbars_Active)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -259,7 +258,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/ScrollOFF.jpg</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(3) + Skin.HasSetting(Scrollbars_Active)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -269,8 +268,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/ScrollON.jpg</texture>
       </control>
-	  
-	  <control type="image" description="Menu">
+      <control type="image" description="Menu">
         <visible>Container(50).HasFocus(4)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -280,7 +278,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>help/OptionsMenu.png</texture>
       </control>
-	  <control type="image" description="Menu">
+      <control type="image" description="Menu">
         <visible>Container(50).HasFocus(4) + Skin.HasSetting(ViewOptions_Hide)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -290,7 +288,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>help/OptionsMenuOFF.png</texture>
       </control>
-	  <control type="image" description="Menu">
+      <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5) + !Skin.HasSetting(PostersHide)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -300,7 +298,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>help/Poster.jpg</texture>
       </control>
-	  <control type="image" description="Menu">
+      <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5) + Skin.HasSetting(PostersHide)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -320,7 +318,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>help/Grid.png</texture>
       </control>
-	  <control type="image" description="Views">
+      <control type="image" description="Views">
         <visible>Container(50).HasFocus(7) + !Skin.HasSetting(AddViews)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>40</posx>
@@ -330,7 +328,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/OptionsMenuOFF.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(8)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -340,7 +338,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/HomeMenu.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(9)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -350,7 +348,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/Shelf.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(10)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -360,7 +358,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/Quit.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(11)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -370,7 +368,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/Clock.png</texture>
       </control>
-	  <control type="image" description="HomeMenu">
+      <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(12)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>80</posx>
@@ -380,13 +378,6 @@
         <aspectratio>keep</aspectratio>
         <texture>help/Warning.png</texture>
       </control>
-	  
     </control>
-    
-	<control type="label">
-      <include>WindowID</include>
-      <label>CustomSettings.xml</label>
-    </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

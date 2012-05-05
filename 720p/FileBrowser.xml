@@ -4,10 +4,6 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>DialogID</include>
-      <label>FileBrowser.xml</label>
-    </control>
     <control type="label" id="411" description="Heading">
       <include>HeadingR</include>
       <label>-</label>
@@ -250,7 +246,7 @@
         </control>
         <control type="radiobutton" id="416" description="Horizontal Flip">
           <radioposx>420</radioposx>
-		  <include>9000Buttons</include>
+          <include>9000Buttons</include>
           <label>$LOCALIZE[749]</label>
         </control>
       </control>
@@ -273,6 +269,5 @@
       <onleft>450</onleft>
       <onright>9000</onright>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

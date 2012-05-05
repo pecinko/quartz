@@ -4,49 +4,32 @@
   <include>DialogOpenClose</include>
   <coordinates>
     <system>1</system>
-	<origin x="468" y="70" />
+    <origin x="468" y="80"/>
   </coordinates>
   <controls>
-    <control type="label">
+    <control type="image" id="999" description="Background image">
+      <posx>-23</posx>
       <posy>-30</posy>
-      <posx>30</posx>
-      <include>DialogID</include>
-      <label>DialogContextMenu.xml</label>
+      <height>760</height>
+      <width>390</width>
+      <texture border="60,60,60,60">img/ContextMenu.png</texture>
     </control>
-    <control type="group">
-	<posy>15</posy>
-      <control type="image" id="999" description="Background image">
-        <posx>-23</posx>
-        <posy>-30</posy>
-        <height>760</height>
-        <width>390</width>
-        <texture border="60,60,60,60">img/ContextMenu.png</texture>
-      </control>
-      <control type="grouplist" id="996" description="Context menu container">
-        <posx>12</posx>
-        <posy>30</posy>
-        <width>320</width>
-        <height max="640">auto</height>
-        <itemgap>2</itemgap>
-      </control>
-      <control type="button" id="1000" description="Buttons">
-        <posx>-</posx>
-        <posy>-</posy>
-        <width>320</width>
-        <height>40</height>
-        <shadowcolor>BlackT</shadowcolor>
-        <focusedcolor>White2</focusedcolor>
-        <texturefocus border="5">img/ContextButtonFO.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
-      </control>
+    <control type="grouplist" id="996" description="Context menu container">
+      <posx>12</posx>
+      <posy>30</posy>
+      <width>320</width>
+      <height max="640">auto</height>
+      <itemgap>2</itemgap>
     </control>
-    <control type="image">
-      <posx>-468</posx>
-      <posy>-70</posy>
-      <width>1280</width>
-      <height>720</height>
-      <texture>debuggrid720.png</texture>
-      <visible>Skin.HasSetting(DebugGrid)</visible>
+    <control type="button" id="1000" description="Buttons">
+      <posx>-</posx>
+      <posy>-</posy>
+      <width>320</width>
+      <height>40</height>
+      <shadowcolor>BlackT</shadowcolor>
+      <focusedcolor>White2</focusedcolor>
+      <texturefocus border="5">img/ContextButtonFO.png</texturefocus>
+      <texturenofocus>-</texturenofocus>
     </control>
   </controls>
 </window>

@@ -12,10 +12,6 @@
       <aspectratio>stretch</aspectratio>
       <texture>img/LineV.png</texture>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>SettingsCategory.xml</label>
-    </control>
     <control type="label" description="Heading">
       <include>Heading</include>
       <label>10004</label>
@@ -86,6 +82,6 @@
       <onleft>5</onleft>
       <onright>3</onright>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

@@ -21,12 +21,6 @@
     <control type="group">
       <posx>80</posx>
       <posy>505</posy>
-      <control type="label">
-        <posx>150</posx>
-        <posy>80</posy>
-        <include>DialogID</include>
-        <label>MusicOSD.xml</label>
-      </control>
       <!--101-->
       
       <control type="group" id="101">
@@ -315,7 +309,7 @@
           <onclick>Close</onclick>
           <onclick>ActivateWindow(MusicPlaylist)</onclick>
         </control>
-		<control type="button" id="556" description="Fanart">
+        <control type="button" id="556" description="Fanart">
           <include>ButtonMenu</include>
           <label>$LOCALIZE[20445]</label>
           <label2>[COLOR=Grey2]$VAR[MusicPlayingFanartLabel2][/COLOR]</label2>
@@ -358,6 +352,5 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

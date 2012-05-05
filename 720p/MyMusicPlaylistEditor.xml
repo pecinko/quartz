@@ -9,10 +9,6 @@
       <include>Heading</include>
       <label>10503</label>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>MyMusicPlaylistEditor.xml</label>
-    </control>
     <control type="group">
       <description>Left panel</description>
       <posx>30</posx>
@@ -298,6 +294,6 @@
         <effect type="fade" start="100" end="40" time="200" reversible="true" />
       </animation>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

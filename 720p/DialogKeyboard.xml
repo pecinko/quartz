@@ -46,11 +46,6 @@
       <control type="group">
         <posx>0</posx>
         <posy>100</posy>
-        <control type="label">
-          <posy>20</posy>
-          <include>DialogID</include>
-          <label>DialogKeyboard.xml</label>
-        </control>
         <control type="image" description="Edit area background">
           <posx>30</posx>
           <posy>0</posy>
@@ -701,11 +696,6 @@
             </control>
           </control>
         </control>
-      </control>
-      <control type="group">
-        <posx>0</posx>
-        <posy>0</posy>
-        <include>Debug_Grid</include>
       </control>
     </control>
   </controls>

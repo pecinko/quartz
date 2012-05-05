@@ -54,7 +54,7 @@
       <control type="label" id="24" description="Buffering label">
         <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
         <include>SeekbarLabels</include>
-        <label>$INFO[Player.CacheLevel]%</label>
+        <label>$INFO[Player.CacheLevel,,%]</label>
       </control>
       <control type="label" description="2x RW FW label">
         <visible>player.forwarding2x | player.rewinding2x</visible>
@@ -100,10 +100,6 @@
         <aspectratio>stretch</aspectratio>
         <texture>VideoOSD/BGVideoOSD.png</texture>
       </control>
-    </control>
-    <control type="label">
-      <include>DialogID</include>
-      <label>DialogSeekbar.xml</label>
     </control>
     <control type="group">
       <posy>685</posy>
@@ -212,24 +208,5 @@
         <texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>
       </control>
     </control>
-    
-    <!--<control type="image" description="Progress back">
-				<posx>5</posx>
-				<posy>39</posy>
-				<width>1130</width>
-				<height>31</height>
-				<texture flipy="false" border="4">img/ProgressBack2.png</texture>
-			</control>-->
-    
-    <!--<control type="slider" id="401">
-				<description>Seekbar</description>
-				<posx>40</posx>
-				<posy>50</posy>
-				<width>1200</width>
-				<height>10</height>
-				<visible>Player.Seeking</visible>
-			</control>-->
-    
-    <include>Debug_Grid</include>
   </controls>
 </window>

@@ -69,15 +69,6 @@
           <texture>$INFO[VideoPlayer.Cover]</texture>
           <aspectratio aligny="top">keep</aspectratio>
         </control>
-        <!--<control type="image">
-          <visible>!VideoPlayer.Content(Movies)</visible>
-          <posx>10</posx>
-          <posy>46</posy>
-          <width>160</width>
-          <height>160</height>
-          <texture border="3">img/CoverOverlay0.png</texture>
-          <bordersize>8</bordersize>
-        </control>-->
         <control type="group">
           <posx>-20</posx>
           <posy>44</posy>
@@ -86,7 +77,7 @@
             <include>FullscreenInfoLabelMain</include>
             <label>[COLOR=Grey]$INFO[VideoPlayer.ChannelNumber,,.][/COLOR]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
           </control>
-		  <control type="label" description="Main label">
+          <control type="label" description="Main label">
             <visible>VideoPlayer.Content(MusicVideos)</visible>
             <include>FullscreenInfoLabelMain</include>
             <label>$INFO[VideoPlayer.Artist]</label>
@@ -114,7 +105,7 @@
             <include>FullscreenInfoLabel2</include>
             <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
           </control>
-		  <control type="label" description="Label 2">
+          <control type="label" description="Label 2">
             <visible>VideoPlayer.Content(LiveTV)</visible>
             <font>size17</font>
             <include>FullscreenInfoLabel2</include>
@@ -190,10 +181,5 @@
         </control>
       </control>
     </control>
-    <control type="label">
-      <include>DialogID</include>
-      <label>DialogFullscreenInfo.xml</label>
-    </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

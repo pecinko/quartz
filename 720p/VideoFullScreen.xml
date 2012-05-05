@@ -142,6 +142,6 @@
 	  </control>
 	  
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

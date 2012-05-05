@@ -4,11 +4,6 @@
   <allowoverlay>no</allowoverlay>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <posy>40</posy>
-      <include>DialogID</include>
-      <label>LockSettings.xml</label>
-    </control>
     <control type="label" description="Header Label">
       <include>HeadingR</include>
       <label>20043</label>
@@ -78,6 +73,6 @@
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

@@ -2,12 +2,6 @@
   <defaultcontrol always="true">9000</defaultcontrol>
   <include>DialogOpenClose</include>
   <controls>
-    <control type="label">
-      <posx>250</posx>
-      <posy>80</posy>
-      <include>DialogID</include>
-      <label>CustomQuit.xml</label>
-    </control>
     <control type="group" description="All dialog content">
       <control type="image">
         <posx>250</posx>
@@ -105,6 +99,5 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

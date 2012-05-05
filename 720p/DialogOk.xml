@@ -4,11 +4,6 @@
   <allowoverlay>no</allowoverlay>
   <include>DialogOpenClose</include>
   <controls>
-    <control type="label">
-      <posy>340</posy>
-      <include>DialogID</include>
-      <label>DialogOk.xml</label>
-    </control>
     <control type="group">
       <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
       <posx>320</posx>
@@ -50,13 +45,8 @@
         <posy>220</posy>
         <width>200</width>
         <label>186</label>
-        <onleft>10</onleft>
-        <onright>10</onright>
-        <onup>10</onup>
-        <ondown>10</ondown>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

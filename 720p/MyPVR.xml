@@ -80,11 +80,14 @@
           <include>9000Buttons</include>
           <label>137</label>
         </control>
-        <control type="button" id="699" description="Playing">
+        <control type="togglebutton" id="699" description="Playing">
           <enable>Player.HasMedia</enable>
           <include>9000Buttons</include>
-          <label>$LOCALIZE[31023]$INFO[MusicPlayer.Title,: ]$INFO[VideoPlayer.Title,: ]</label>
+          <label>$LOCALIZE[16003]</label>
+		  <altlabel>$LOCALIZE[31977]</altlabel>
+		  <usealttexture>Player.HasMedia</usealttexture>
           <onclick>fullscreen</onclick>
+		  <altclick>fullscreen</altclick>
           <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
         </control>
       </control>
@@ -101,19 +104,7 @@
         <textcolor>Grey</textcolor>
         <label>$INFO[System.Time]</label>
       </control>
-	  <control type="label" description="Content Debug">
-        <visible>Skin.HasSetting(DebugInfo)</visible>
-        <posx>200</posx>
-        <posy>4</posy>
-        <width>1280</width>
-        <height>50</height>
-        <align>left</align>
-        <aligny>center</aligny>
-        <font>size19</font>
-        <textcolor>Red</textcolor>
-        <label>[B]$VAR[RowPosition] - $VAR[ContentType][/B][COLOR=Silver]$INFO[Container.FolderName][/COLOR]</label>
-      </control>
-    </control>
+	 </control>
     <control type="grouplist">
       <visible>![Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14) | Control.IsVisible(17)]</visible>
       <posx>640</posx>
@@ -187,10 +178,5 @@
         <label>$INFO[ListItem.SortLetter]</label>
       </control>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>MyPVR.xml</label>
-    </control>
-    <include>Debug_Grid</include>
-  </controls>
+    </controls>
 </window>

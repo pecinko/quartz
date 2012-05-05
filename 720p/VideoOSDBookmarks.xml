@@ -3,11 +3,6 @@
   <allowoverlay>yes</allowoverlay>
   <include>OpenClose</include>
   <controls>
-    <control type="label">
-      <posy>30</posy>
-      <include>DialogID</include>
-      <label>VideoOSDBookmarks.xml</label>
-    </control>
     <control type="image">
       <posx>100</posx>
       <posy>-50</posy>
@@ -116,6 +111,6 @@
         </control>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

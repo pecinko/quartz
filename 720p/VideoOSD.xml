@@ -393,12 +393,5 @@
         </control>
       </control>
     </control>
-	<control type="label">
-          <posx>150</posx>
-          <posy>0</posy>
-          <include>DialogID</include>
-          <label>VideoOSD.xml</label>
-        </control>
-    <include>Debug_Grid</include>
-  </controls>
+	</controls>
 </window>

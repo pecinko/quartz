@@ -13,17 +13,11 @@
       <include>HeadingR</include>
       <label>504</label>
     </control>
-    <control type="label">
-      <posx>250</posx>
-      <posy>80</posy>
-      <include>DialogID</include>
-      <label>CustomWatchlist.xml</label>
-    </control>
     <control type="group" description="Fat List 51">
       <visible>Control.IsVisible(51)</visible>
       <control type="group" description="Episode thumbs">
         <visible>!Skin.HasSetting(WL_Poster)</visible>
-		<posy>90</posy>
+        <posy>90</posy>
         <posx>-22</posx>
         <control type="image" description="Thumb Reflection">
           <posx>102</posx>
@@ -54,9 +48,9 @@
           <aspectratio>stretch</aspectratio>
         </control>
       </control>
-	  <control type="group" description="Posters Season">
+      <control type="group" description="Posters Season">
         <visible>Skin.HasSetting(WL_Poster)</visible>
-		<posy>50</posy>
+        <posy>50</posy>
         <posx>206</posx>
         <control type="image" description="Thumb Reflection">
           <posx>0</posx>
@@ -224,7 +218,7 @@
               <label>$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Label]</label>
             </control>
           </focusedlayout>
-		  <itemlayout condition="Skin.HasSetting(WL_Poster)" width="535" height="74">
+          <itemlayout condition="Skin.HasSetting(WL_Poster)" width="535" height="74">
             <include>ListBG</include>
             <control type="image" description="SCALE">
               <posx>6</posx>
@@ -274,7 +268,7 @@
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-			<visible>!IsEmpty(ListItem.Thumb)</visible>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
               <posx>6</posx>
               <posy>6</posy>
               <height>62</height>
@@ -534,52 +528,44 @@
         <animation effect="rotate" start="360" end="0" center="auto" time="1800" loop="true" condition="true">conditional</animation>
       </control>
     </control>
-	<control type="group">
+    <control type="group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-	  <include>DialogOpenCloseVisible</include>
-	  <control type="image">
+      <include>DialogOpenCloseVisible</include>
+      <control type="image">
         <posx>250</posx>
         <posy>130</posy>
         <width>774</width>
         <height>450</height>
         <texture border="150">img/Dialog.png</texture>
       </control>
-	  <control type="grouplist" id="9000" description="Options">
-          <posx>400</posx>
-			<posy>268</posy>
-			<width>480</width>
-			<height>400</height>
-			<itemgap>-54</itemgap>
-			<onleft>51</onleft>
-			<onright>51</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<scrolltime>200</scrolltime>
-			<orientation>vertical</orientation>
-          <control type="togglebutton" id="701" description="View">
-            <include>9000Buttons</include>
-            <label>$LOCALIZE[582]: $LOCALIZE[535] 1</label>
-			<altlabel>$LOCALIZE[582]: $LOCALIZE[535] 2</altlabel>
-            <onclick>Skin.ToggleSetting(WL_Poster)</onclick>
-            <usealttexture>Skin.HasSetting(WL_Poster)</usealttexture>
-          </control>
-          <control type="button" id="702" description="Music">
-            <include>9000Buttons</include>
-            <label>$LOCALIZE[184] $LOCALIZE[535]</label>
-            <onclick>ClearProperty(Quartz_Watchlist,0)</onclick>
-			<onclick>RunScript(script.watchlist,$VAR[WatchlistParameters])</onclick>
-			<onclick>SetProperty(Quartz_Watchlist,True,0)</onclick>
-			<onclick>Control.SetFocus(51)</onclick>
-		   </control>
-          
+      <control type="grouplist" id="9000" description="Options">
+        <posx>400</posx>
+        <posy>268</posy>
+        <width>480</width>
+        <height>400</height>
+        <itemgap>-54</itemgap>
+        <onleft>51</onleft>
+        <onright>51</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
+        <control type="togglebutton" id="701" description="View">
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[582]: $LOCALIZE[535] 1</label>
+          <altlabel>$LOCALIZE[582]: $LOCALIZE[535] 2</altlabel>
+          <onclick>Skin.ToggleSetting(WL_Poster)</onclick>
+          <usealttexture>Skin.HasSetting(WL_Poster)</usealttexture>
+        </control>
+        <control type="button" id="702" description="Music">
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[184] $LOCALIZE[535]</label>
+          <onclick>ClearProperty(Quartz_Watchlist,0)</onclick>
+          <onclick>RunScript(script.watchlist,$VAR[WatchlistParameters])</onclick>
+          <onclick>SetProperty(Quartz_Watchlist,True,0)</onclick>
+          <onclick>Control.SetFocus(51)</onclick>
         </control>
       </control>
-    <control type="label">
-      <posx>0</posx>
-      <posy>0</posy>
-      <include>DialogID</include>
-      <label>CustomWatchlist.xml</label>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

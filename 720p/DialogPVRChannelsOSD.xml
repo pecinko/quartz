@@ -513,10 +513,6 @@
 				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>-->
-		<control type="label">
-      <include>WindowID</include>
-      <label>DialogPVRChannelsOSD.xml</label>
-    </control>
-    <include>Debug_Grid</include>
+	
 	</controls>
 </window>

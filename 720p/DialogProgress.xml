@@ -3,11 +3,6 @@
   <allowoverlay>no</allowoverlay>
   <include>DialogOpenClose</include>
   <controls>
-    <control type="label">
-      <posy>-40</posy>
-      <include>DialogID</include>
-      <label>DialogProgress.xml</label>
-    </control>
     <control type="group">
       <posx>0</posx>
       <posy>140</posy>
@@ -68,12 +63,5 @@
         <pulseonselect>true</pulseonselect>
       </control>
     </control>
-	<control type="label">
-          <posx>150</posx>
-          <posy>200</posy>
-          <include>DialogID</include>
-          <label>DialogProgress.xml</label>
-        </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

@@ -347,10 +347,6 @@
         <label>$LOCALIZE[154]. $LOCALIZE[705]. $LOCALIZE[1212]. $LOCALIZE[13281].</label>
       </control>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>Settings.xml</label>
-    </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

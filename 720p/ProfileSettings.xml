@@ -4,10 +4,6 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label">
-      <include>DialogID</include>
-      <label>ProfileSettings.xml</label>
-    </control>
     <control type="label" id="1000" description="Profile Name">
       <include>HeadingR</include>
     </control>
@@ -91,6 +87,6 @@
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

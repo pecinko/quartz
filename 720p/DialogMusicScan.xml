@@ -1,52 +1,47 @@
 <window id="112">
-  <allowoverlay>yes</allowoverlay>
-  <include>OpenClose</include>
-  <controls>
-    <control type="group">
-      <posx>1260</posx>
-      <posy>675</posy>
-      <visible>!Window.IsActive(videofullscreen.xml) + !Window.IsActive(musicvisualisation.xml)</visible>
-      <animation condition="Window.IsActive(133)" effect="slide" start="0,0" end="-640,0" time="0">Conditional</animation>
-      <control type="label">
-        <posy>38</posy>
-        <include>DialogID</include>
-        <label>DialogMusicScan.xml</label>
-      </control>
-      <control type="label" id="402" description="Directory">
-        <posx>0</posx>
-        <posy>16</posy>
-        <width>500</width>
-        <height>30</height>
-        <font>-</font>
-        <align>right</align>
-        <scroll>false</scroll>
-        <textcolor>Silver</textcolor>
-        <haspath>true</haspath>
-        <shadowcolor>Black</shadowcolor>
-        <label>-</label>
-      </control>
-      <control type="progress" id="403" description="Progress">
-        <posx>80</posx>
-        <posy>30</posy>
-        <width>3</width>
-        <height>2</height>
-        <align>right</align>
-        <texturebg>-</texturebg>
-        <midtexture>-</midtexture>
-      </control>
-      <control type="label" description="Updating Label">
-        <posx>0</posx>
-        <posy>16</posy>
-        <width>600</width>
-        <height>30</height>
-        <scroll>false</scroll>
-        <font>size15</font>
-        <textcolor>Grey</textcolor>
-        <shadowcolor>Black</shadowcolor>
-        <align>right</align>
-        <label>[COLOR=Silver]$LOCALIZE[2]:[/COLOR] $INFO[Control.GetLabel(402)]$INFO[Control.GetLabel(403), ,%]</label>
-      </control>
-    </control>
-    <include>Debug_Grid</include>
-  </controls>
+	<defaultcontrol></defaultcontrol>
+	<include>OpenClose</include>	
+	<controls>
+		<control type="group">
+			<posx>720</posx>
+			<posy>0</posy>
+			<animation effect="slide" end="-396,0" time="240" easing="inout" condition="Window.IsVisible(133)">conditional</animation>
+			<control type="image" description="Dialog BG">
+				<posx>0</posx>
+				<posy>-4</posy>
+				<width>400</width>
+				<height>72</height>
+				<texture border="14">img/ProgressBG.png</texture>
+			</control>
+			<control type="label" id="401" description="Caption Label">
+				<posx>15</posx>
+				<posy>6</posy>
+				<width>370</width>
+				<height>18</height>
+				<font>size14</font>
+				<align>left</align>
+				<aligny>center</aligny>
+			</control>
+			<control type="label" id="402" description="Current Directory Label">
+				<posx>15</posx>
+				<posy>24</posy>
+				<width>370</width>
+				<height>20</height>
+				<font>size14</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<haspath>true</haspath>
+			</control>
+			<control type="progress" id="403" description="Progress bar">
+				<posx>15</posx>
+				<posy>50</posy>
+				<width>370</width>
+				<height>5</height>
+				<texturebg>MusicOSD/ProgressBG.png</texturebg>
+                <midtexture>MusicOSD/ProgressMidd.png</midtexture>
+                <righttexture>MusicOSD/ProgressRight.png</righttexture>
+                <lefttexture>MusicOSD/ProgressLeft.png</lefttexture>
+			</control>
+		</control>
+	</controls>
 </window>

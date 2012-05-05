@@ -199,6 +199,5 @@
       <onleft>450</onleft>
       <onright>-</onright>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

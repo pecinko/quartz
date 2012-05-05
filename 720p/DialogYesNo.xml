@@ -8,26 +8,19 @@
       <posy>240</posy>
       <control type="image">
         <posx>-180</posx>
-        <posy>-170</posy>
+        <posy>-150</posy>
         <width>1000</width>
-        <height>620</height>
+        <height>580</height>
         <texture border="150">img/Dialog.png</texture>
       </control>
-      <control type="label">
-        <posy>-40</posy>
-        <include>DialogID</include>
-        <label>DialogYesNo.xml</label>
-      </control>
-      <control type="label" id="1">
-        <description>Heading</description>
+      <control type="label" id="1" description="Heading">
         <posx>0</posx>
         <label>-</label>
         <width>640</width>
         <font>size26B</font>
         <align>center</align>
       </control>
-      <control type="label" id="2">
-        <description>Line 1</description>
+      <control type="label" id="2" description="Line 1">
         <posx>0</posx>
         <posy>72</posy>
         <label>-</label>
@@ -35,8 +28,7 @@
         <align>center</align>
         <scroll>true</scroll>
       </control>
-      <control type="label" id="3">
-        <description>Line 2</description>
+      <control type="label" id="3" description="Line 2">
         <posx>0</posx>
         <posy>104</posy>
         <label>-</label>
@@ -44,8 +36,7 @@
         <align>center</align>
         <scroll>true</scroll>
       </control>
-      <control type="label" id="4">
-        <description>Line 3</description>
+      <control type="label" id="4" description="Line 3">
         <posx>0</posx>
         <posy>136</posy>
         <label>-</label>
@@ -53,8 +44,7 @@
         <align>center</align>
         <scroll>true</scroll>
       </control>
-      <control type="button" id="10">
-        <description>No</description>
+      <control type="button" id="10" description="No">
         <posx>125</posx>
         <posy>210</posy>
         <width>180</width>
@@ -65,8 +55,7 @@
         <ondown>10</ondown>
         <texturefocus border="5">img/ButtonFO.png</texturefocus>
       </control>
-      <control type="button" id="11">
-        <description>Yes</description>
+      <control type="button" id="11" description="Yes">
         <posx>335</posx>
         <posy>210</posy>
         <width>180</width>
@@ -78,6 +67,5 @@
         <texturefocus border="5">img/ButtonFO.png</texturefocus>
       </control>
     </control>
-    <include>Debug_Grid</include>
   </controls>
 </window>

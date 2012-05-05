@@ -204,7 +204,7 @@
                 <label>$INFO[Control.GetLabel(23)]</label>
                 <font>size17</font>
                 <textcolor>Red</textcolor>
-                <include>DialogID</include>
+                <visible>Skin.HasSetting(DebugInfo)</visible>
               </control>
             </control>
           </control>
@@ -334,6 +334,17 @@
               <font>size17</font>
               <textcolor>Grey2</textcolor>
             </control>
+			<control type="label">
+                <posx>518</posx>
+                <posy>30</posy>
+                <height>20</height>
+                <width>90</width>
+                <align>left</align>
+                <label>$INFO[Control.GetLabel(23)]</label>
+                <font>size17</font>
+                <textcolor>Red</textcolor>
+                <visible>Skin.HasSetting(DebugInfo)</visible>
+              </control>
           </control>
         </control>
       </control>
@@ -407,10 +418,5 @@
         <shadowcolor>Black</shadowcolor>
       </control>
     </control>
-    <control type="label">
-      <include>DialogID</include>
-      <label>MusicVisualisation.xml</label>
-    </control>
-    <include>Debug_Grid</include>
-  </controls>
+   </controls>
 </window>

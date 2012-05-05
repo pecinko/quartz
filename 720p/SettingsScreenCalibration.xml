@@ -6,12 +6,6 @@
       <description>videowindow</description>
       <include>Dimensions_Fullscreen</include>
     </control>
-    <control type="label">
-      <width>1260</width>
-      <align>center</align>
-      <include>DialogID</include>
-      <label>SettingsScreenCalibration.xml</label>
-    </control>
     <control type="mover" id="8">
       <description>top left mover</description>
       <posx>0</posx>
@@ -64,6 +58,6 @@
       <align>center</align>
       <label>-</label>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>

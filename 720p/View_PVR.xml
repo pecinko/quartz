@@ -929,7 +929,7 @@
               <posy>0</posy>
               <width>300</width>
               <height>40</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
+              <texture border="5">img/ButtonFO.png</texture>
               <visible>Control.HasFocus(14)</visible>
             </control>
             <control type="image">

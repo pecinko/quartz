@@ -9,10 +9,6 @@
       <include>Heading</include>
       <label>7</label>
     </control>
-    <control type="label">
-      <include>WindowID</include>
-      <label>FileManager.xml</label>
-    </control>
     <control type="image" description="Line Splitter">
       <posx>640</posx>
       <posy>150</posy>
@@ -211,6 +207,6 @@
       <onleft>21</onleft>
       <onright>21</onright>
     </control>
-    <include>Debug_Grid</include>
+    
   </controls>
 </window>
