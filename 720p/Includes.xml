@@ -227,84 +227,85 @@
 		<visible>Player.HasMedia</visible>
 		<visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
 		<include>VisibleFadeEffect</include>
-		<posx>460</posx>
-      <posy>-4</posy>
+	  <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional</animation>
+	  <posx>10</posx>
+      <posy>640</posy>
 	 <control type="image" description="Playing BG">
-      <width>360</width>
-      <height>84</height>
+      <width>260</width>
+      <height>70</height>
       <texture border="14">img/ProgressBG.png</texture>
     </control>
 	<control type="group">
 	<control type="image">
-      <posx>14</posx>
-	  <posy>14</posy>
-	  <width>56</width>
-      <height>56</height>
+      <posx>10</posx>
+	  <posy>10</posy>
+	  <width>50</width>
+      <height>50</height>
       <texture>$INFO[MusicPlayer.Cover]</texture>
 	  <aspectratio>keep</aspectratio>
     </control>
 	<control type="image">
-      <posx>14</posx>
+      <posx>10</posx>
 	  <posy>14</posy>
-	  <width>56</width>
-      <height>56</height>
+	  <width>50</width>
+      <height>50</height>
       <texture>$INFO[VideoPlayer.Cover]</texture>
 	  <aspectratio>keep</aspectratio>
     </control>
 	<control type="label">
-        <posx>80</posx>
-        <posy>10</posy>
+        <posx>70</posx>
+        <posy>6</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size17</font>
+        <font>size16</font>
 		<textcolor>White2</textcolor>
         <label>$INFO[MusicPlayer.Title]</label>
       </control>
 	  <control type="label">
-        <posx>80</posx>
-        <posy>32</posy>
+        <posx>70</posx>
+        <posy>24</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size15</font>
+        <font>size14</font>
         <label>$INFO[MusicPlayer.Artist]</label>
       </control>
 	  <control type="label">
-        <posx>80</posx>
-        <posy>50</posy>
+        <posx>70</posx>
+        <posy>40</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size15</font>
+        <font>size14</font>
         <label>$INFO[MusicPlayer.Album]</label>
       </control>
 	  <control type="label">
-        <posx>80</posx>
-        <posy>10</posy>
+        <posx>70</posx>
+        <posy>6</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size17</font>
+        <font>size16</font>
 		<textcolor>White2</textcolor>
         <label>$INFO[VideoPlayer.Title]</label>
       </control>
 	  <control type="label">
-        <posx>80</posx>
-        <posy>32</posy>
+        <posx>70</posx>
+        <posy>24</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size15</font>
+        <font>size14</font>
         <label>$INFO[VideoPlayer.Artist]</label>
       </control>
 	  <control type="label">
-        <posx>80</posx>
-        <posy>50</posy>
+        <posx>70</posx>
+        <posy>40</posy>
         <aligny>center</aligny>
-        <width>262</width>
+        <width>174</width>
         <height>24</height>
-        <font>size15</font>
+        <font>size14</font>
         <label>$INFO[VideoPlayer.Album]</label>
       </control>
 	  </control>

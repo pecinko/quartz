@@ -14,7 +14,7 @@
     <disabledcolor>Disabled</disabledcolor>
     <scroll>true</scroll>
     <scrollspeed>50</scrollspeed>
-    <scrollsuffix>/</scrollsuffix>
+    <scrollsuffix> / </scrollsuffix>
   </default>
   <default type="fadelabel">
     <posx>0</posx>
