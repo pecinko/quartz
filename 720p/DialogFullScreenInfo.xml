@@ -75,7 +75,7 @@
           <control type="label" description="Main label">
             <visible>![VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)]</visible>
             <include>FullscreenInfoLabelMain</include>
-            <label>[COLOR=Grey]$INFO[VideoPlayer.ChannelNumber,,.][/COLOR]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
+            <label>$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
           </control>
           <control type="label" description="Main label">
             <visible>VideoPlayer.Content(MusicVideos)</visible>

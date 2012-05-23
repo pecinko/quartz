@@ -1,5 +1,4 @@
 <window id="104">
-  <defaultcontrol always="true">-</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <animation effect="fade" start="100" end="0" time="500" reversible="false">WindowClose</animation>
   <controls>
@@ -41,15 +40,12 @@
           <texture>img/Speaker.png</texture>
         </control>
         <control type="progress" id="1" description="Progress control">
-          <posx>6</posx>
-          <posy>94</posy>
-          <width>96</width>
-          <height>8</height>
-          <lefttexture>-</lefttexture>
-          <righttexture>-</righttexture>
-          <overlaytexture>-</overlaytexture>
-          <texturebg border="1">img/BlackDotT.png</texturebg>
-          <midtexture border="3">OSD/VolProgressMid.png</midtexture>
+          <posx>8</posx>
+          <posy>96</posy>
+          <width>94</width>
+          <height>6</height>
+          <texturebg border="1">progress/ProgressBG.png</texturebg>
+          <midtexture border="1">progress/ProgressMidd.png</midtexture>
           <info>Player.Volume</info>
         </control>
       </control>

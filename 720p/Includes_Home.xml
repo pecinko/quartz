@@ -14,43 +14,43 @@
     <label>-</label>
   </include>
   <include name="HomeBarAnimation">
-    <animation condition="[Control.HasFocus(302) | Control.HasFocus(312) | ControlGroup(8999).HasFocus(9002)] + Control.IsVisible(301)" effect="slide" start="0,0" end="200,0"
+    <animation condition="[Control.HasFocus(302) | Control.HasFocus(312) | Control.HasFocus(9002)] + Control.IsVisible(301)" effect="slide" start="0,0" end="200,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | ControlGroup(8999).HasFocus(9003)] + Control.IsVisible(301) + Control.IsVisible(302)" effect="slide" start="0,0" end="400,0"
+    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | Control.HasFocus(9003)] + Control.IsVisible(301) + Control.IsVisible(302)" effect="slide" start="0,0" end="400,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | ControlGroup(8999).HasFocus(9003)] + Control.IsVisible(302) + !Control.IsVisible(301)" effect="slide" start="0,0" end="200,0"
+    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | Control.HasFocus(9003)] + Control.IsVisible(302) + !Control.IsVisible(301)" effect="slide" start="0,0" end="200,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | ControlGroup(8999).HasFocus(9003)] + Control.IsVisible(301) + !Control.IsVisible(302)" effect="slide" start="0,0" end="200,0"
+    <animation condition="[Control.HasFocus(303) | Control.HasFocus(313) | Control.HasFocus(9003)] + Control.IsVisible(301) + !Control.IsVisible(302)" effect="slide" start="0,0" end="200,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,6)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,6)"
 		 effect="slide" start="0,0" end="600,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,5)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,5)"
 		 effect="slide" start="0,0"  end="400,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,4)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + Control.IsVisible(305) + StringCompare(Container(500).NumItems,4)"
 		 effect="slide" start="0,0"  end="200,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,5)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,5)"
 		 effect="slide" start="0,0"  end="600,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,4)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,4)"
 		 effect="slide" start="0,0"  end="400,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | ControlGroup(8999).HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,3)"
+    <animation condition="[Control.HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(9004)] + !Control.IsVisible(305) + StringCompare(Container(500).NumItems,3)"
 		 effect="slide" start="0,0"  end="200,0"	time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | ControlGroup(8999).HasFocus(9005)] + StringCompare(Container(500).NumItems,6)" effect="slide" start="0,0"  end="800,0"
+    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | Control.HasFocus(9005)] + StringCompare(Container(500).NumItems,6)" effect="slide" start="0,0"  end="800,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | ControlGroup(8999).HasFocus(9005)] + StringCompare(Container(500).NumItems,5)" effect="slide" start="0,0"  end="600,0"
+    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | Control.HasFocus(9005)] + StringCompare(Container(500).NumItems,5)" effect="slide" start="0,0"  end="600,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | ControlGroup(8999).HasFocus(9005)] + StringCompare(Container(500).NumItems,4)" effect="slide" start="0,0"  end="400,0"
+    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | Control.HasFocus(9005)] + StringCompare(Container(500).NumItems,4)" effect="slide" start="0,0"  end="400,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | ControlGroup(8999).HasFocus(9005)] + StringCompare(Container(500).NumItems,3)" effect="slide" start="0,0"  end="200,0"
+    <animation condition="[Control.HasFocus(305) | Control.HasFocus(315) | Control.HasFocus(9005)] + StringCompare(Container(500).NumItems,3)" effect="slide" start="0,0"  end="200,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | ControlGroup(8999).HasFocus(9006)] + StringCompare(Container(500).NumItems,6)" effect="slide" start="0,0"  end="1000,0"
+    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | Control.HasFocus(9006)] + StringCompare(Container(500).NumItems,6)" effect="slide" start="0,0"  end="1000,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | ControlGroup(8999).HasFocus(9006)] + StringCompare(Container(500).NumItems,5)" effect="slide" start="0,0"  end="800,0"
+    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | Control.HasFocus(9006)] + StringCompare(Container(500).NumItems,5)" effect="slide" start="0,0"  end="800,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | ControlGroup(8999).HasFocus(9006)] + StringCompare(Container(500).NumItems,4)" effect="slide" start="0,0"  end="600,0"
+    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | Control.HasFocus(9006)] + StringCompare(Container(500).NumItems,4)" effect="slide" start="0,0"  end="600,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | ControlGroup(8999).HasFocus(9006)] + StringCompare(Container(500).NumItems,3)" effect="slide" start="0,0"  end="400,0"
+    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | Control.HasFocus(9006)] + StringCompare(Container(500).NumItems,3)" effect="slide" start="0,0"  end="400,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
-    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | ControlGroup(8999).HasFocus(9006)] + StringCompare(Container(500).NumItems,2)" effect="slide" start="0,0"  end="200,0"
+    <animation condition="[Control.HasFocus(306) | Control.HasFocus(316) | Control.HasFocus(9006)] + StringCompare(Container(500).NumItems,2)" effect="slide" start="0,0"  end="200,0"
 					time="180" easing="inout" reversible="true">Conditional</animation>
   </include>
   <include name="Animation301">

@@ -17,7 +17,7 @@
           <height>594</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
+          
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -85,7 +85,7 @@
           <height>592</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
+          
           <onup>51</onup>
           <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
@@ -122,7 +122,7 @@
           <ondown>-</ondown>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
+          
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>

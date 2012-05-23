@@ -5,18 +5,6 @@
   <controls>
     <include>MiniBackground</include>
     <include>MediaHeader</include>
-    <control type="label" description="Content Debug">
-      <visible>Skin.HasSetting(DebugInfo)</visible>
-      <posx>200</posx>
-      <posy>4</posy>
-      <width>1280</width>
-      <height>50</height>
-      <align>left</align>
-      <aligny>center</aligny>
-      <font>size19</font>
-      <textcolor>Red</textcolor>
-      <label>[B]$VAR[ContentType][/B]</label>
-    </control>
     <control type="group">
       <posx>680</posx>
       <posy>94</posy>

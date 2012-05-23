@@ -4,7 +4,7 @@
     <animation effect="fade" end="0" time="100">Hidden</animation>
   </include>
   <include name="LabelVisibleFade">
-    <animation effect="fade" end="100" delay="300" time="200">Visible</animation>
+    <animation effect="fade" end="100" delay="100" time="300">Visible</animation>
     <animation effect="fade" end="0" time="100">Hidden</animation>
   </include>
   <include name="ShelfTopLabel">
@@ -458,14 +458,6 @@
   <include name="Movies_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(311) + Player.HasVideo + !Container(311).HasPrevious</visible>
-        <width>168</width>
-		<include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>[B]$LOCALIZE[13350][/B]</label>
-      </control>
-      <control type="label" description="Top Label">
-        <animation effect="slide" start="0,0" end="170,0" time="0" condition="Control.IsVisible(311) + Player.HasVideo + !Container(311).HasPrevious">Conditional</animation>
         <visible>Control.IsVisible(311)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
@@ -479,13 +471,6 @@
         <onright>311</onright>
         <include>MoviesShortcutsCommons</include>
         <content>
-          <item id="0" description="Player">
-            <visible>Player.HasVideo + ![VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)]</visible>
-            <label>$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Title]</label>
-            <onclick>fullscreen</onclick>
-            <thumb>$INFO[VideoPlayer.Cover]</thumb>
-           
-          </item>
           <item id="1" description="Movies">
             <visible>!Skin.HasSetting(MoviesShelf_Custom)</visible>
             <visible>!IsEmpty(Window.Property(LatestMovie.1.Path))</visible>
@@ -648,15 +633,6 @@
           </item>
         </content>
       </control>
-      <control type="image" description="Splitter">
-        <visible>Control.IsVisible(311)</visible>
-        <posx>215</posx>
-        <posy>30</posy>
-        <width>1</width>
-        <height>300</height>
-        <texture>img/ShinyLine.png</texture>
-        <visible>Player.HasVideo + ![VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)] + !Container(311).HasPrevious</visible>
-      </control>
       <control type="image">
         <visible>Control.HasFocus(311) + Skin.HasSetting(MoviesShelf_Custom)</visible>
         <posx>18</posx>
@@ -704,14 +680,6 @@
   <include name="TV_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312) + Player.HasVideo + !Container(312).HasPrevious</visible>
-        <width>200</width>
-		<include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>[B]$LOCALIZE[13350][/B]</label>
-      </control>
-      <control type="label" description="Top Label">
-        <animation effect="slide" start="0,0" end="298,0" time="0" condition="Control.IsVisible(312) + Player.HasVideo + !Container(312).HasPrevious">Conditional</animation>
         <visible>Control.IsVisible(312)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
@@ -725,12 +693,6 @@
         <onright>312</onright>
         <include>EpisodeShortcutsCommons</include>
         <content>
-          <item id="0" description="Player">
-            <visible>Player.HasVideo + ![VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)]</visible>
-            <label>$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Title]</label>
-            <onclick>fullscreen</onclick>
-            <thumb>$INFO[VideoPlayer.Cover]</thumb>
-          </item>
           <item id="1" description="Episodes1">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
             <visible>!IsEmpty(Window.Property(LatestEpisode.1.Path))</visible>
@@ -913,15 +875,6 @@
           </item>
         </content>
       </control>
-      <control type="image" description="Splitter">
-        <visible>Control.IsVisible(312)</visible>
-        <posx>343</posx>
-        <posy>30</posy>
-        <width>1</width>
-        <height>300</height>
-        <texture>img/ShinyLine.png</texture>
-        <visible>Player.HasVideo + ![VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)] + !Container(312).HasPrevious</visible>
-      </control>
       <control type="image">
         <visible>Control.HasFocus(312) + Skin.HasSetting(TVShelf_Custom)</visible>
         <posx>18</posx>
@@ -963,14 +916,6 @@
   <include name="Music_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(313) + Player.HasAudio + !Container(313).HasPrevious</visible>
-        <width>200</width>
-		<include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>[B]$LOCALIZE[13350][/B]</label>
-      </control>
-      <control type="label" description="Top Label">
-        <animation effect="slide" start="0,0" end="238,0" time="0" condition="Control.IsVisible(313) + Player.HasAudio + !Container(313).HasPrevious">Conditional</animation>
         <visible>Control.IsVisible(313)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
@@ -984,18 +929,6 @@
         <onright>313</onright>
         <include>MusicShortcutsCommons</include>
         <content>
-          <item id="0" description="Player">
-            <visible>Player.HasVideo + ![VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)]</visible>
-            <label>$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Title]</label>
-            <onclick>fullscreen</onclick>
-            <thumb>$INFO[VideoPlayer.Cover]</thumb>
-          </item>
-		  <item id="0" description="Player">
-            <visible>Player.HasAudio</visible>
-            <label>$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Title]</label>
-            <onclick>fullscreen</onclick>
-            <thumb>$INFO[MusicPlayer.Cover]</thumb>
-          </item>
           <item id="1" description="Music">
             <visible>!Skin.HasSetting(MusicShelf_Custom)</visible>
             <visible>!IsEmpty(Window.Property(LatestAlbum.1.Path))</visible>
@@ -1347,15 +1280,6 @@
             <property name="ItemType">$LOCALIZE[111]</property>
           </item>
         </content>
-      </control>
-      <control type="image" description="Splitter">
-        <visible>Control.IsVisible(313)</visible>
-        <posx>285</posx>
-        <posy>30</posy>
-        <width>1</width>
-        <height>300</height>
-        <texture>img/ShinyLine.png</texture>
-        <visible>Player.HasMedia + ![VideoPlayer.Content(episodes) | VideoPlayer.Content(movies)] + !Container(313).HasPrevious</visible>
       </control>
       <control type="image">
         <visible>Control.HasFocus(313)</visible>

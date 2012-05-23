@@ -40,7 +40,19 @@
         <textcolor>Silver</textcolor>
         <label>$INFO[Player.FinishTime,(,)]</label>
       </control>
-    </control>
+	  <control type="label" description="Next item">
+        <visible>!IsEmpty(VideoPlayer.NextTitle)</visible>
+		<posx>200</posx>
+        <posy>1</posy>
+        <width>880</width>
+        <height>40</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>size17</font>
+        <textcolor>Silver</textcolor>
+        <label>$INFO[VideoPlayer.NextTitle,[COLOR=Grey]$LOCALIZE[209]:  [/COLOR]]</label>
+      </control>
+	</control>
     <control type="group">
       <posy>180</posy>
       <control type="image" description="Background">
