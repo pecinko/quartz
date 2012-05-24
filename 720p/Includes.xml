@@ -224,10 +224,9 @@
       </control>
     </control>
 	<control type="group" description="Player Info">
-		<visible>Player.HasMedia</visible>
+		<visible>!Control.HasFocus(301) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml)]</visible>
 		<visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
 		<include>VisibleFadeEffect</include>
-	  <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional</animation>
 	  <posx>10</posx>
       <posy>640</posy>
 	 <control type="image" description="Playing BG">
@@ -246,7 +245,7 @@
     </control>
 	<control type="image">
       <posx>10</posx>
-	  <posy>14</posy>
+	  <posy>10</posy>
 	  <width>50</width>
       <height>50</height>
       <texture>$INFO[VideoPlayer.Cover]</texture>
