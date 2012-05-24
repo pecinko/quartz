@@ -19,7 +19,7 @@
             <visible>Container(450).HasFocus()</visible>
             <include>Slider4</include>
           </control>
-          <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
+          <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
             <effect type="fade" start="100" end="40" time="0" reversible="true" />
           </animation>
           <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-270"
@@ -96,7 +96,6 @@
           <height>590</height>
           <onleft>9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
           <onup>451</onup>
           <ondown>451</ondown>
           <pagecontrol>60</pagecontrol>
@@ -227,7 +226,16 @@
       </control>
     </control>
     <control type="group" description="Side menu 9000 group">
-      <include>9000Commons</include>
+      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+		<include>DialogOpenCloseVisible</include>
+		<control type="image" description="List back">
+		  <posx>242</posx>
+		  <posy>78</posy>
+		  <width>788</width>
+		  <height>574</height>
+		  <aspectratio>stretch</aspectratio>
+		  <texture border="150">img/Dialog.png</texture>
+		</control>
       <control type="grouplist" id="9000">
         <onleft>450</onleft>
         <onright>450</onright>
