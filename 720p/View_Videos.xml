@@ -15,7 +15,7 @@
           <height>594</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <pagecontrol>60</pagecontrol>
@@ -142,7 +142,7 @@
           <height>592</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
@@ -336,7 +336,7 @@
           <height>592</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>52</onup>
           <ondown>52</ondown>
           <pagecontrol>60</pagecontrol>
@@ -368,74 +368,74 @@
           <visible>Skin.HasSetting(AddViews)</visible>
           <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(addons)</visible>
           <viewtype label="536">Grid</viewtype>
-          <posx>48</posx>
+          <posx>40</posx>
           <posy>140</posy>
-          <width>1184</width>
+          <width>1200</width>
           <height>600</height>
           <orientation>vertical</orientation>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>53</onup>
           <ondown>53</ondown>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout condition="container.content(files)" height="250" width="296">
+          <itemlayout condition="container.content(files)" height="250" width="300">
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture>img/ListBG.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout condition="container.content(files)" height="250" width="296">
+          <focusedlayout condition="container.content(files)" height="250" width="300">
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture>img/ListBG.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>18</posx>
-        <posy>18</posy>
-        <width>262</width>
-        <height>202</height>
+              <posx>15</posx>
+              <posy>16</posy>
+              <width>270</width>
+              <height>170</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
-              <animation effect="fade" start="0" end="100" time="250" delay="150">Focus</animation>
-              <posx>148</posx>
-              <posy>226</posy>
+              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+              <posx>150</posx>
+              <posy>200</posy>
               <width>270</width>
               <height>30</height>
               <font>size18</font>
@@ -445,28 +445,28 @@
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
           </focusedlayout>
-          <itemlayout condition="![container.content(files) | container.content(addons)]" height="300" width="169">
+          <itemlayout condition="![container.content(files) | container.content(addons)]" height="300" width="200">
             <control type="image">
-              <posx>17</posx>
-				<posy>220</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>218</posy>
+              <width>134</width>
+              <height>200</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>17</posx>
-				<posy>18</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>16</posy>
+              <width>134</width>
+              <height>200</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>17</posx>
-				<posy>18</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>16</posy>
+              <width>134</width>
+              <height>200</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
@@ -474,8 +474,8 @@
               <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>78</posx>
-                <posy>190</posy>
+                <posx>94</posx>
+                <posy>186</posy>
                 <height>30</height>
                 <width>100</width>
                 <aspectratio>keep</aspectratio>
@@ -483,11 +483,11 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>127</posx>
-                <posy>186</posy>
+                <posx>143</posx>
+                <posy>182</posy>
                 <height>30</height>
                 <width>100</width>
-                <font>size15</font>
+                <font>size17</font>
                 <scroll>true</scroll>
                 <align>center</align>
                 <scroll>false</scroll>
@@ -496,36 +496,35 @@
               </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="![container.content(files) | container.content(addons)]" height="300" width="169">
+          <focusedlayout condition="![container.content(files) | container.content(addons)]" height="300" width="200">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-			  <posx>17</posx>
-				<posy>220</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>218</posy>
+              <width>134</width>
+              <height>200</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
+              <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-              <posx>17</posx>
-				<posy>18</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>16</posy>
+              <width>134</width>
+              <height>200</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>17</posx>
-				<posy>18</posy>
-				<width>135</width>
-				<height>202</height>
+              <posx>33</posx>
+              <posy>16</posy>
+              <width>134</width>
+              <height>200</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-			
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>85</posx>
+              <posx>100</posx>
               <posy>226</posy>
               <width>180</width>
               <height>30</height>
@@ -539,8 +538,8 @@
               <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>78</posx>
-                <posy>190</posy>
+                <posx>94</posx>
+                <posy>186</posy>
                 <height>30</height>
                 <width>100</width>
                 <aspectratio>keep</aspectratio>
@@ -548,22 +547,22 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>127</posx>
-                <posy>186</posy>
+                <posx>143</posx>
+                <posy>182</posy>
                 <height>30</height>
                 <width>100</width>
-                <font>size15</font>
+                <font>size17</font>
                 <scroll>true</scroll>
                 <align>center</align>
                 <scroll>false</scroll>
-                <textcolor>White2</textcolor>
+                <textcolor>White</textcolor>
                 <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
               </control>
             </control>
           </focusedlayout>
-          <itemlayout condition="container.content(addons)" height="250" width="197">
+          <itemlayout condition="container.content(addons)" height="250" width="200">
             <control type="image">
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>186</posy>
               <width>170</width>
               <height>170</height>
@@ -571,7 +570,7 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>16</posy>
               <width>170</width>
               <height>170</height>
@@ -579,7 +578,7 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>16</posy>
               <width>170</width>
               <height>170</height>
@@ -587,10 +586,10 @@
               <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout condition="container.content(addons)" height="250" width="197">
+          <focusedlayout condition="container.content(addons)" height="250" width="200">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>186</posy>
               <width>170</width>
               <height>170</height>
@@ -598,7 +597,7 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>16</posy>
               <width>170</width>
               <height>170</height>
@@ -606,7 +605,7 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>14</posx>
+              <posx>15</posx>
               <posy>16</posy>
               <width>170</width>
               <height>170</height>
@@ -615,7 +614,7 @@
             </control>
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>99</posx>
+              <posx>100</posx>
               <posy>200</posy>
               <width>180</width>
               <height>30</height>
@@ -633,25 +632,23 @@
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image" description="Posters">
-            <posx>16</posx>
-            <posy>109</posy>
+            <posx>24</posx>
+            <posy>107</posy>
             <width>232</width>
-            <height>299</height>
+            <height>298</height>
             <texture border="50">img/Frame2.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="169,0"
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="200,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="338,0"
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="400,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="507,0"
+            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="600,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="676,0"
+            <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="800,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="845,0"
-						time="200" reversible="true">Conditional</animation>
-			<animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1014,0"
+            <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1000,0"
 						time="200" reversible="true">Conditional</animation>
             <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
@@ -665,19 +662,19 @@
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image" description="Generic">
-            <posx>17</posx>
-            <posy>109</posy>
-            <width>359</width>
-            <height>300</height>
+            <posx>6</posx>
+            <posy>107</posy>
+            <width>368</width>
+            <height>268</height>
             <texture border="50">img/Frame2.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="296,0"
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="300,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="592,0"
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="600,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="888,0"
+            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="900,0"
 						time="200" reversible="true">Conditional</animation>
             <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
@@ -691,7 +688,7 @@
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image">
-            <posx>13</posx>
+            <posx>7</posx>
             <posy>108</posy>
             <width>266</width>
             <height>266</height>
@@ -699,15 +696,15 @@
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="197,0"
+            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="200,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="394,0"
+            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="400,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="591,0"
+            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="600,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="788,0"
+            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="800,0"
 						time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(5)" effect="slide" start="0,0" end="985,0"
+            <animation condition="Container.Column(5)" effect="slide" start="0,0" end="1000,0"
 						time="200" reversible="true">Conditional</animation>
             <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0"
 						time="200" reversible="true">Conditional</animation>
@@ -750,15 +747,6 @@
           <label>$INFO[Container.NumItems,  (,)]</label>
         </control>
       </control>
-	  <control type="image">
-		  <visible>Container.Content(Movies) | Container.Content(files)</visible>
-		  <posx>46</posx>
-		  <posy>66</posy>
-		  <height>54</height>
-		  <width>20</width>
-		  <texture>$VAR[Overlay]</texture>
-		  <aspectratio>keep</aspectratio>
-		</control>
       <control type="label" description="Media details">
         <posx>70</posx>
         <posy>78</posy>
@@ -1111,7 +1099,7 @@
           <height>592</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>54</onup>
           <ondown>54</ondown>
           <pagecontrol>60</pagecontrol>
@@ -1265,7 +1253,7 @@
           <height>432</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>57</onup>
           <ondown>57</ondown>
           <pagecontrol>60</pagecontrol>
@@ -1474,7 +1462,7 @@
           <height>270</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>59</onup>
           <ondown>59</ondown>
           <pagecontrol>60</pagecontrol>
@@ -1706,7 +1694,7 @@
           <orientation>vertical</orientation>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          
+          <onright condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</onright>
           <onup>502</onup>
           <ondown>502</ondown>
           <preloaditems>4</preloaditems>
