@@ -1568,7 +1568,6 @@
     <alttexturefocus border="110,0,110,0">img/Slider4.png</alttexturefocus>
   </include>
   <include name="9000Commons" description="Regular BG">
-    <visible>!Skin.HasSetting(ViewOptions_Hide)</visible>
     <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
     <include>DialogOpenCloseVisible</include>
     <control type="image" description="List back">
@@ -1642,7 +1641,7 @@
     <align>left</align>
     <scroll>false</scroll>
   </include>
-  <include name="FlagsVideoInfo">
+  <include name="FlagsAudioInfo">
     <control type="group" description="Furniture">
       <posy>0</posy>
       <control type="grouplist">
@@ -1652,10 +1651,9 @@
         <height>24</height>
         <itemgap>20</itemgap>
         <orientation>horizontal</orientation>
-        <align>right</align>
+        <align>left</align>
         <aligny>center</aligny>
         <control type="image" description="Rating">
-          <visible>Container.content(songs) | container.content(Albums)</visible>
           <posx>68</posx>
           <posy>690</posy>
           <height>24</height>
@@ -1674,45 +1672,6 @@
           <aspectratio>keep</aspectratio>
           <colordiffuse>Silver</colordiffuse>
           <texture>$INFO[ListItem.FileExtension,badges/audio/,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>Window.IsActive(MyVideoNav.xml)</visible>
-          <visible>StringCompare(ListItem.Videoresolution,1080) | StringCompare(ListItem.Videoresolution,720)</visible>
-          <height>30</height>
-          <width>60</width>
-          <posx>0</posx>
-          <posy>0</posy>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>Window.IsActive(MyVideoNav.xml) + !IsEmpty(ListItem.VideoCodec)</visible>
-          <height>30</height>
-          <width>60</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>Window.IsActive(MyVideoNav.xml) + !IsEmpty(ListItem.AudioChannels)</visible>
-          <height>30</height>
-          <width>60</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
-        </control>
-        <control type="image">
-          <visible>Window.IsActive(MyVideoNav.xml)</visible>
-          <height>30</height>
-          <width>60</width>
-          <bordersize>3</bordersize>
-          <aspectratio>keep</aspectratio>
-          <colordiffuse>Silver</colordiffuse>
-          <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
       </control>
     </control>
