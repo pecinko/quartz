@@ -620,52 +620,6 @@
         </content>
       </control>
     </control>
-	<control type="grouplist" id="8999" description="Submenus">
-      <posx>0</posx>
-      <posy>320</posy>
-      <itemgap>0</itemgap>
-      <width>auto</width>
-      <height>54</height>
-      <align>center</align>
-      <aligny>top</aligny>
-      <onup>700</onup>
-      <orientation>horizontal</orientation>
-	  <control type="button" id="9001">
-		  <visible>Control.IsVisible(301)</visible>
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(301)</onfocus>
-		  <onclick>Control.SetFocus(301)</onclick>
-	  </control>
-	  <control type="button" id="9002">
-		  <visible>Control.IsVisible(302)</visible>
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(302)</onfocus>
-		  <onclick>Control.SetFocus(302)</onclick>
-	  </control>
-	  <control type="button" id="9003">
-		  <visible>Control.IsVisible(303)</visible>
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(303)</onfocus>
-		  <onclick>Control.SetFocus(303)</onclick>
-	  </control>
-	  <control type="button" id="9004">
-		  <visible>Control.IsVisible(304)</visible>
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(304)</onfocus>
-		  <onclick>Control.SetFocus(304)</onclick>
-	  </control>
-	  <control type="button" id="9005">
-		  <visible>Control.IsVisible(305)</visible>
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(305)</onfocus>
-		  <onclick>Control.SetFocus(305)</onclick>
-	  </control>
-	  <control type="button" id="9006">
-		  <include>HomeButtonsCommons</include>
-	 	  <onfocus>Control.SetFocus(306)</onfocus>
-		  <onclick>Control.SetFocus(306)</onclick>
-	  </control>
-	  </control>
 	<control type="group" id="700" description="Shelf items">
       <include condition="!Skin.HasSetting(MoviesShelf_Image)">Movies_RA</include>
       <include condition="!Skin.HasSetting(TVShelf_Image)">TV_RA</include>
