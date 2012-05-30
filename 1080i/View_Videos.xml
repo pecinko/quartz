@@ -1401,7 +1401,7 @@
             </control>
             <control type="image" description="Rating">
               <posx>0</posx>
-              <posy>330</posy>
+              <posy>408</posy>
               <include>10Rating</include>
             </control>
             <control type="textbox" description="Plot51">
@@ -1418,13 +1418,13 @@
             </control>
             <control type="label" description="1 Bottom Label">
               <width>540</width>
-              <posy>363</posy>
+              <posy>323</posy>
               <include>Genre51Commons</include>
               <label>$VAR[TopLabel]</label>
             </control>
             <control type="label" description="2 bottom Label">
               <width>540</width>
-              <posy>400</posy>
+              <posy>360</posy>
               <include>Genre51Commons</include>
               <label>$INFO[ListItem.Genre]</label>
             </control>
