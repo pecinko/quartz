@@ -82,7 +82,6 @@
         <height>720</height>
         <include>Icon_Fade</include>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <bordersize>1</bordersize>
         <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
@@ -119,7 +118,6 @@
         <width>756</width>
         <height>540</height>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <bordersize>1</bordersize>
         <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
@@ -155,7 +153,6 @@
         <height>720</height>
         <include>Icon_Fade</include>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <bordersize>1</bordersize>
         <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
@@ -795,7 +792,8 @@
           <aspectratio>keep</aspectratio>
         </control>
         <control type="image">
-          <posx>9</posx>
+          <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <posx>9</posx>
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
@@ -833,7 +831,8 @@
           <aspectratio>keep</aspectratio>
         </control>
         <control type="image">
-          <posx>9</posx>
+          <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <posx>9</posx>
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
@@ -873,7 +872,8 @@
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
-        <posx>9</posx>
+        <visible>!IsEmpty(ListItem.Thumb)</visible>
+		<posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -928,7 +928,8 @@
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
-        <posx>9</posx>
+        <visible>!IsEmpty(ListItem.Thumb)</visible>
+		<posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -1238,7 +1239,8 @@
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
-        <posx>9</posx>
+        <visible>!IsEmpty(ListItem.Thumb)</visible>
+		<posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -1293,7 +1295,8 @@
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
-        <posx>9</posx>
+        <visible>!IsEmpty(ListItem.Thumb)</visible>
+		<posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>

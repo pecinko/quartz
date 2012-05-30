@@ -5,7 +5,7 @@
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
-  <visible>!Window.IsVisible(startup)</visible>
+  <visible>!Window.IsVisible(startup) + [Skin.HasSetting(DebugInfo) | Skin.HasSetting(DebugGrid)]</visible>
   <controls>
     <control type="image" description="DebugGrid">
       <visible>Skin.HasSetting(DebugGrid)</visible>

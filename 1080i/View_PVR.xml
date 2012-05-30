@@ -416,7 +416,6 @@
             <width>759</width>
             <height>429</height>
             <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <bordersize>1</bordersize>
             <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[ListItem.Thumb]</texture>
             <aspectratio>keep</aspectratio>
             <include>VisibleFadeEffect</include>

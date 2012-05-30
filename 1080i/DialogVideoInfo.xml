@@ -544,7 +544,6 @@
             <height>543</height>
             <width>369</width>
             <aspectratio>keep</aspectratio>
-            <bordersize>1</bordersize>
             <texture background="true">$INFO[ListItem.Icon]</texture>
           </control>
         </itemlayout>
@@ -571,7 +570,6 @@
             <height>543</height>
             <width>369</width>
             <aspectratio>keep</aspectratio>
-            <bordersize>1</bordersize>
             <texture background="true">$INFO[ListItem.Icon]</texture>
           </control>
         </focusedlayout>

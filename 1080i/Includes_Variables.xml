@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <variable name="Trailer" description="Trailers check keep in front">
     <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
@@ -16,35 +16,7 @@
     <value condition="Control.HasFocus(305) + !Control.IsVisible(315) + Skin.HasSetting(AddonsShelf_Image)">$INFO[Skin.String(AddonsShelf_Icon)]</value>
     <value condition="Control.HasFocus(306) + Skin.HasSetting(XBMCShelf_Image)">$INFO[Skin.String(XBMCShelf_Icon)]</value>
   </variable>
-  <variable name="MoviesName" description="Movies HomeLabel">
-    <value condition="!IsEmpty(Skin.String(MoviesName))">$INFO[Skin.String(MoviesName)]</value>
-    <value>$LOCALIZE[20342]</value>
-  </variable>
-  <variable name="TVName" description="TV HomeLabel">
-    <value condition="!IsEmpty(Skin.String(TVName))">$INFO[Skin.String(TVName)]</value>
-    <value>$LOCALIZE[20343]</value>
-  </variable>
-  <variable name="MusicName" description="Music HomeLabel">
-    <value condition="!IsEmpty(Skin.String(MusicName))">$INFO[Skin.String(MusicName)]</value>
-    <value>$LOCALIZE[2]</value>
-  </variable>
-  <variable name="PicturesName" description="Pictures HomeLabel">
-    <value condition="!IsEmpty(Skin.String(PicturesName))">$INFO[Skin.String(PicturesName)]</value>
-    <value>$LOCALIZE[1]</value>
-  </variable>
-  <variable name="AddonsName" description="Addons HomeLabel">
-    <value condition="!IsEmpty(Skin.String(AddonsName))">$INFO[Skin.String(AddonsName)]</value>
-    <value>$LOCALIZE[24001]</value>
-  </variable>
-  <variable name="XBMCName" description="XBMC HomeLabel">
-    <value condition="!IsEmpty(Skin.String(XBMCName))">$INFO[Skin.String(XBMCName)]</value>
-    <value>XBMC</value>
-  </variable>
-  <variable name="ClockLabel2" description="Label2 for Clock selector in skin settings">
-    <value condition="Skin.HasSetting(ShowClock)">$LOCALIZE[107]</value>
-    <value>$LOCALIZE[106]</value>
-  </variable>
-  <variable name="QuitLabel2" description="Label2 for Quit selector">
+  <variable name="QuitLabel2" description="Label2 for skin settings Quit function item">
     <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
     <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
     <value condition="StringCompare(Skin.String(shutdown),hibernate)">$LOCALIZE[13010]</value>
@@ -71,26 +43,6 @@
     <value condition="Container.HasFocus(311)">$INFO[Container(311).ListItem.Label]</value>
     <value>$LOCALIZE[305]</value>
   </variable>
-  <variable name="PosterViewsVar" description="Skin settings Poster Views Toggle">
-    <value condition="!Skin.HasSetting(PostersHide)">$LOCALIZE[31991]</value>
-    <value>$LOCALIZE[31992]</value>
-  </variable>
-  <variable name="AddViewsVar" description="Skin settings Additional Views Toggle">
-    <value condition="Skin.HasSetting(AddViews)">$LOCALIZE[305]</value>
-    <value>$LOCALIZE[1223]</value>
-  </variable>
-  <variable name="ViewOptionsDialog" description="Skin settings View Options Dialog">
-    <value condition="Skin.HasSetting(ViewOptions_Hide)">$LOCALIZE[1223]</value>
-    <value>$LOCALIZE[305]</value>
-  </variable>
-  <variable name="AutoScroll" description="Skin settings">
-    <value condition="Skin.HasSetting(AutoScroll)">$LOCALIZE[107]</value>
-    <value>$LOCALIZE[106]</value>
-  </variable>
-  <variable name="Scrollbars" description="Skin settings">
-    <value condition="Skin.HasSetting(Scrollbars_Active)">$LOCALIZE[31998]</value>
-    <value>$LOCALIZE[31997]</value>
-  </variable>
   <variable name="Overlay" description="Overlay image">
     <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
     <value>$INFO[ListItem.Overlay]</value>
@@ -99,34 +51,12 @@
     <value condition="ListItem.IsRecording">OverlayRecording.png</value>
     <value condition="ListItem.HasTimer">OverlayTimer.png</value>
   </variable>
-  <variable name="ButtonMenuTopImage" description="Focused Function Icon">
-    <value condition="ControlGroup(9000).HasFocus(2)">BMQuit.png</value>
-    <value condition="ControlGroup(9000).HasFocus(3)">BMShutdown.png</value>
-    <value condition="ControlGroup(9000).HasFocus(6) | ControlGroup(9000).HasFocus(7)">BMSleep.png</value>
-    <value condition="ControlGroup(9000).HasFocus(8)">BMRestart.png</value>
-  </variable>
   <variable name="WeatherFooter" description="Weather plus footer labels">
     <value condition="IsEmpty(Window.Property(Weather.CurrentView))">$LOCALIZE[31904]</value>
     <value condition="StringCompare(Window.Property(Weather.CurrentView),36hour)">$LOCALIZE[31901]</value>
     <value condition="StringCompare(Window.Property(Weather.CurrentView),weekend)">$LOCALIZE[31903]</value>
     <value condition="StringCompare(Window.Property(Weather.CurrentView),maps)">$INFO[Window.Property(Weather.CurrentMap)]</value>
     <value condition="StringCompare(Window.Property(Weather.CurrentView),hourly)">$LOCALIZE[31902]</value>
-  </variable>
-  <variable name="VideosSectionLabel" description="User defined label for Videos">
-    <value condition="!Skin.String(VideosSectionLabel)">$LOCALIZE[3]</value>
-    <value condition="Skin.String(VideosSectionLabel)">$INFO[Skin.String(VideosSectionLabel)]</value>
-  </variable>
-  <variable name="FavouritesSectionLabel" description="User defined label for Favs">
-    <value condition="!Skin.String(FavouritesSectionLabel)">$LOCALIZE[1036]</value>
-    <value condition="Skin.String(FavouritesSectionLabel)">$INFO[Skin.String(FavouritesSectionLabel)]</value>
-  </variable>
-  <variable name="VideosSectionPathLabel" description="User defined path for Videos">
-    <value condition="!Skin.String(VideosSectionPathLabel)">$LOCALIZE[3]</value>
-    <value condition="Skin.String(VideosSectionPathLabel)">$INFO[Skin.String(VideosSectionPathLabel)]</value>
-  </variable>
-  <variable name="FavouritesSectionPathLabel" description="User defined path for Favs">
-    <value condition="!Skin.String(FavouritesSectionPathLabel)">$LOCALIZE[1036]</value>
-    <value condition="Skin.String(FavouritesSectionPathLabel)">$INFO[Skin.String(FavouritesSectionPathLabel)]</value>
   </variable>
   <variable name="GlobalHeadings" description="Global Headings">
     <value condition="Window.IsActive(56)">$LOCALIZE[5] - Quartz</value>
@@ -193,21 +123,5 @@
     <value condition="Container.Content(TVShows) | Container.Content(Seasons)">$INFO[ListItem.Property(UnwatchedEpisodes),$LOCALIZE[16101] ]$INFO[ListItem.Property(TotalEpisodes), (,)]</value>
     <value condition="container.content(musicvideos)">$INFO[ListItem.Artist]</value>
     <value>$INFO[ListItem.Label2]</value>
-  </variable>
-  <variable name="InfoPanel_L3Label" description="InfoPanel Label3 Label">
-    <value condition="Container.Content(albums)">$LOCALIZE[562]:</value>
-    <value condition="Container.Content(artists)">$LOCALIZE[176]:</value>
-    <value condition="Container.Content(musicvideos)">$LOCALIZE[558]:</value>
-    <value>$LOCALIZE[564]:</value>
-  </variable>
-  <variable name="InfoPanel_L2Value" description="InfoPanel Label2 Value">
-    <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
-    <value>$INFO[ListItem.Genre]</value>
-  </variable>
-  <variable name="InfoPanel_L3Value" description="InfoPanel Label3 Value">
-    <value condition="Container.Content(albums)">$INFO[ListItem.Year]</value>
-    <value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Style)]</value>
-    <value condition="Container.Content(musicvideos)">$INFO[ListItem.Album]</value>
-    <value>$INFO[ListItem.FileExtension]</value>
   </variable>
 </includes>

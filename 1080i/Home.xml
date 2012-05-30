@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="0">
   <defaultcontrol always="true">8998</defaultcontrol>
   <allowoverlay>no</allowoverlay>
@@ -346,7 +346,7 @@
         <include>Animation304</include>
       </control>
       <control type="list" id="305" description="Addons">
-        <visible>!Skin.HasSetting(AddonsSectionHide)</visible>
+        <visible>!Skin.HasSetting(AddonsSectionHide) | Skin.HasSetting(PVR_Enabled)</visible>
         <visible>IntegerGreaterThan(Container(305).NumItems,0)</visible>
         <onleft>304</onleft>
         <onright>306</onright>
@@ -355,7 +355,7 @@
         <include>Sublist</include>
         <content>
           <item id="0" description="LiveTV">
-            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <visible>Skin.HasSetting(PVR_Enabled)</visible>
             <label>31502</label>
             <onclick>ActivateWindow(PVR)</onclick>
           </item>

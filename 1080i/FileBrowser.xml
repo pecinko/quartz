@@ -192,9 +192,8 @@
         <fadetime>200</fadetime>
         <texture>$INFO[ListItem.Icon]</texture>
         <aspectratio>keep</aspectratio>
-        <bordertexture border="2">img/CoverOverlay0.png</bordertexture>
-        <bordersize>1</bordersize>
-      </control>
+        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
+       </control>
       <control type="image" description="Item Thumb FLIPPED">
         <visible>SubString(Control.GetLabel(416),*)</visible>
         <width>765</width>
@@ -202,8 +201,7 @@
         <fadetime>200</fadetime>
         <texture flipx="true">$INFO[ListItem.Icon]</texture>
         <aspectratio>keep</aspectratio>
-        <bordertexture border="2">img/CoverOverlay0.png</bordertexture>
-        <bordersize>1</bordersize>
+        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
       </control>
     </control>
     <control type="group" description="Side menu 9000 group">

@@ -45,13 +45,13 @@
             <include>HD_Badge</include>
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-              <width>720</width>
+              <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+              <width>711</width>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -66,13 +66,13 @@
             <include>HD_Badge</include>
             <include>ArrowFO</include>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-              <width>720</width>
+              <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
+              <width>711</width>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -126,8 +126,7 @@
           <width>720</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <bordertexture border="3">img/CoverOverlay1.png</bordertexture>
-          <bordersize>2</bordersize>
+          <bordertexture border="4">img/CoverOverlay1.png</bordertexture>
           <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
@@ -219,7 +218,6 @@
             <width>756</width>
             <height>495</height>
             <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <bordersize>1</bordersize>
             <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
@@ -321,7 +319,6 @@
             <height>720</height>
             <include>Icon_Fade</include>
             <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <bordersize>1</bordersize>
             <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
@@ -412,7 +409,8 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
@@ -447,7 +445,8 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
@@ -469,26 +468,27 @@
           </focusedlayout>
           <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
             <control type="image">
-              <posx>33</posx>
-              <posy>327</posy>
-              <width>201</width>
-              <height>300</height>
+              <posx>35</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>33</posx>
+              <posx>35</posx>
               <posy>24</posy>
-              <width>201</width>
-              <height>300</height>
+              <width>197</width>
+              <height>294</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>33</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>35</posx>
               <posy>24</posy>
-              <width>201</width>
-              <height>300</height>
+              <width>197</width>
+              <height>294</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
@@ -496,8 +496,8 @@
               <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>124</posx>
-                <posy>279</posy>
+                <posx>123</posx>
+                <posy>276</posy>
                 <height>45</height>
                 <width>150</width>
                 <aspectratio>keep</aspectratio>
@@ -505,8 +505,8 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>198</posx>
-                <posy>273</posy>
+                <posx>197</posx>
+                <posy>270</posy>
                 <height>45</height>
                 <width>150</width>
                 <font>size16</font>
@@ -521,32 +521,33 @@
           <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>33</posx>
-              <posy>327</posy>
-              <width>201</width>
-              <height>300</height>
+              <posx>35</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
             <control type="image">
-              <posx>33</posx>
+              <posx>35</posx>
               <posy>24</posy>
-              <width>201</width>
-              <height>300</height>
+              <width>197</width>
+              <height>294</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>33</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>35</posx>
               <posy>24</posy>
-              <width>201</width>
-              <height>300</height>
+              <width>197</width>
+              <height>294</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>133</posx>
+              <posx>135</posx>
               <posy>339</posy>
               <width>270</width>
               <height>45</height>
@@ -560,8 +561,8 @@
               <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>124</posx>
-                <posy>279</posy>
+                <posx>123</posx>
+                <posy>276</posy>
                 <height>45</height>
                 <width>150</width>
                 <aspectratio>keep</aspectratio>
@@ -569,8 +570,8 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>198</posx>
-                <posy>273</posy>
+                <posx>197</posx>
+                <posy>270</posy>
                 <height>45</height>
                 <width>150</width>
                 <font>size16</font>
@@ -600,7 +601,8 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
               <posy>9</posy>
               <width>255</width>
               <height>255</height>
@@ -627,7 +629,8 @@
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
               <posy>9</posy>
               <width>255</width>
               <height>255</height>
@@ -654,10 +657,10 @@
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image" description="Posters">
-            <posx>66</posx>
+            <posx>68</posx>
             <posy>207</posy>
-            <width>255</width>
-            <height>354</height>
+            <width>251</width>
+            <height>348</height>
             <texture border="28">img/Frame25.png</texture>
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
@@ -1221,7 +1224,6 @@
           <height>720</height>
           <include>Icon_Fade</include>
           <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-          <bordersize>1</bordersize>
           <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
@@ -1340,7 +1342,6 @@
     <control type="group" description="Poster Fanart">
       <visible>Control.IsVisible(59)</visible>
       <control type="group" description="Furniture">
-        <visible>!StringCompare(ListItem.Label,..)</visible>
         <control type="image" description="fanart">
           <posx>0</posx>
           <posy>0</posy>
@@ -1370,10 +1371,11 @@
               <height>356</height>
               <fadetime>50</fadetime>
               <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
+              <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Thumb">
-              <posx>363</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>363</posx>
               <posy>12</posy>
               <width>240</width>
               <height>356</height>
@@ -1555,7 +1557,8 @@
             <texture background="true">$INFO[ListItem.Icon]</texture>
           </control>
           <control type="image" description="Thumb">
-            <posx>56</posx>
+            <visible>!IsEmpty(ListItem.Thumb)</visible>
+			<posx>56</posx>
             <posy>69</posy>
             <height>543</height>
             <width>369</width>
@@ -1581,7 +1584,8 @@
             <texture background="true">$INFO[ListItem.Icon]</texture>
           </control>
 		  <control type="image" description="Thumb">
-            <posx>56</posx>
+            <visible>!IsEmpty(ListItem.Thumb)</visible>
+			<posx>56</posx>
             <posy>69</posy>
             <height>543</height>
             <width>369</width>
@@ -1716,7 +1720,8 @@
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>27</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>27</posx>
               <posy>24</posy>
               <width>246</width>
               <height>369</height>
@@ -1766,7 +1771,8 @@
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>27</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>27</posx>
               <posy>24</posy>
               <width>246</width>
               <height>369</height>
@@ -1817,7 +1823,8 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>64</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>64</posx>
               <posy>0</posy>
               <width>771</width>
               <height>144</height>
@@ -1866,7 +1873,8 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>64</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>64</posx>
               <posy>0</posy>
               <width>771</width>
               <height>144</height>
@@ -2081,7 +2089,8 @@
           <aspectratio aligny="bottom">stretch</aspectratio>
         </control>
         <control type="image" description="Thumb Overlay">
-          <posx>0</posx>
+          <visible>!IsEmpty(ListItem.Thumb)</visible>
+		  <posx>0</posx>
           <posy>0</posy>
           <width>756</width>
           <height>426</height>
@@ -2157,7 +2166,8 @@
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image" description="Thumb Overlay">
-            <posx>26</posx>
+            <visible>!IsEmpty(ListItem.Thumb)</visible>
+			<posx>26</posx>
             <posy>27</posy>
             <width>202</width>
             <height>303</height>
@@ -2184,7 +2194,8 @@
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Thumb Overlay">
-              <posx>26</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>26</posx>
               <posy>27</posy>
               <width>202</width>
               <height>303</height>
@@ -2384,7 +2395,8 @@
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image" description="Thumb Overlay">
-            <posx>27</posx>
+            <visible>!IsEmpty(ListItem.Thumb)</visible>
+			<posx>27</posx>
             <posy>27</posy>
             <width>393</width>
             <height>303</height>
@@ -2411,7 +2423,8 @@
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Thumb Overlay">
-              <posx>27</posx>
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>27</posx>
               <posy>27</posy>
               <width>393</width>
               <height>303</height>

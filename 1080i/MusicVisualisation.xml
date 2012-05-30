@@ -109,8 +109,7 @@
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
-              <texture border="3">img/CoverOverlay1.png</texture>
-              <bordersize>1</bordersize>
+              <texture border="4">img/CoverOverlay1.png</texture>
               <aspectratio aligny="bottom">stretch</aspectratio>
             </control>
           </control>
@@ -247,8 +246,7 @@
               <height>600</height>
               <width>600</width>
               <fadetime>300</fadetime>
-              <texture border="3">img/CoverOverlay1.png</texture>
-              <bordersize>1</bordersize>
+              <texture border="4">img/CoverOverlay1.png</texture>
               <aspectratio aligny="bottom">stretch</aspectratio>
             </control>
           </control>
