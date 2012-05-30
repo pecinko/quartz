@@ -1416,18 +1416,19 @@
               <autoscroll delay="8000" time="4300" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
               <label>$VAR[Plots]</label>
             </control>
-            <control type="label" description="1 Bottom Label">
+            <control type="label" description="2 bottom Label">
               <width>540</width>
               <posy>323</posy>
               <include>Genre51Commons</include>
-              <label>$VAR[TopLabel]</label>
+              <label>$INFO[ListItem.Genre]</label>
             </control>
-            <control type="label" description="2 bottom Label">
+			<control type="label" description="1 Bottom Label">
               <width>540</width>
               <posy>360</posy>
               <include>Genre51Commons</include>
-              <label>$INFO[ListItem.Genre]</label>
+              <label>$VAR[TopLabel]</label>
             </control>
+            
           </control>
         </control>
       </control>
