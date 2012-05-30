@@ -52,7 +52,7 @@
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="99" description="Hardware">
-          <visible>System.HasPvr</visible>
+          <visible>Skin.HasSetting(PVR_Enabled)</visible>
           <width>300</width>
           <label>19191</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
