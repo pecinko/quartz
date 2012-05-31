@@ -362,468 +362,6 @@
         <onright>-</onright>
       </control>
     </control>
-    <control type="group" description="Grid view">
-      <visible>Control.IsVisible(53)</visible>
-      <control type="group" description="Container and frame">
-        <control type="panel" id="53" description="Grid">
-          <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
-          <viewtype label="536">Grid</viewtype>
-          <posx>60</posx>
-          <posy>210</posy>
-          <width>1800</width>
-          <height>900</height>
-          <orientation>vertical</orientation>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">53</onright>
-		  <onup>53</onup>
-          <ondown>53</ondown>
-          <preloaditems>4</preloaditems>
-          <pagecontrol>60</pagecontrol>
-          <scrolltime>400</scrolltime>
-          <itemlayout condition="container.content(files) | container.content(episodes)" height="375" width="450">
-            <control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture>img/ListBG.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <posx>45</posx>
-              <posy>279</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-          </itemlayout>
-          <focusedlayout condition="container.content(files) | container.content(episodes)" height="375" width="450">
-            <control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture>img/ListBG.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>45</posx>
-              <posy>279</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>225</posx>
-              <posy>300</posy>
-              <width>420</width>
-              <height>45</height>
-              <font>size18</font>
-              <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
-              <align>center</align>
-              <label>[B]$INFO[ListItem.Label][/B]</label>
-            </control>
-          </focusedlayout>
-          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
-            <control type="image">
-              <posx>35</posx>
-              <posy>320</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-              <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="group">
-              <visible>container.content(TVshows) | container.content(seasons)</visible>
-              <control type="image">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>123</posx>
-                <posy>276</posy>
-                <height>45</height>
-                <width>150</width>
-                <aspectratio>keep</aspectratio>
-                <texture>badges/RedBadge.png</texture>
-              </control>
-              <control type="label" description="Label2">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>197</posx>
-                <posy>270</posy>
-                <height>45</height>
-                <width>150</width>
-                <font>size16</font>
-                <scroll>true</scroll>
-                <align>center</align>
-                <scroll>false</scroll>
-                <textcolor>Grey2</textcolor>
-                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-              </control>
-            </control>
-          </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
-            <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>35</posx>
-              <posy>320</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>
-            <control type="image">
-              <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>135</posx>
-              <posy>339</posy>
-              <width>270</width>
-              <height>45</height>
-              <font>size18</font>
-              <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
-              <align>center</align>
-              <label>[B]$INFO[ListItem.Label][/B]</label>
-            </control>
-            <control type="group">
-              <visible>container.content(TVshows) | container.content(seasons)</visible>
-              <control type="image">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>123</posx>
-                <posy>276</posy>
-                <height>45</height>
-                <width>150</width>
-                <aspectratio>keep</aspectratio>
-                <texture>badges/RedBadge.png</texture>
-              </control>
-              <control type="label" description="Label2">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>197</posx>
-                <posy>270</posy>
-                <height>45</height>
-                <width>150</width>
-                <font>size16</font>
-                <scroll>true</scroll>
-                <align>center</align>
-                <scroll>false</scroll>
-                <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
-              </control>
-            </control>
-          </focusedlayout>
-          <itemlayout condition="container.content(addons)" height="360" width="360">
-            <control type="image">
-              <posx>45</posx>
-              <posy>264</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-          </itemlayout>
-          <focusedlayout condition="container.content(addons)" height="360" width="360">
-            <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>45</posx>
-              <posy>264</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="label">
-              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>172</posx>
-              <posy>270</posy>
-              <width>270</width>
-              <height>45</height>
-              <font>size18</font>
-              <textcolor>White2</textcolor>
-              <shadowcolor>Black</shadowcolor>
-              <align>center</align>
-              <label>[B]$INFO[ListItem.Label][/B]</label>
-            </control>
-          </focusedlayout>
-        </control>
-        <control type="group" description="Frame Sliders">
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
-          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <control type="image" description="Posters">
-            <posx>68</posx>
-            <posy>207</posy>
-            <width>251</width>
-            <height>348</height>
-            <texture border="28">img/Frame25.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="257,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="514,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="771,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="1028,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1285,0" time="220" reversible="true">Conditional</animation>
-			<animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1542,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,450" time="220" reversible="true">Conditional</animation>
-          </control>
-        </control>
-        <control type="group" description="Frame Sliders">
-          <visible>container.content(files) | container.content(episodes)</visible>
-          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <control type="image" description="Generic">
-            <posx>78</posx>
-            <posy>206</posy>
-            <width>414</width>
-            <height>309</height>
-            <texture border="28">img/Frame25.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="450,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="900,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="1350,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,375" time="220" reversible="true">Conditional</animation>
-          </control>
-        </control>
-        <control type="group" description="Frame Sliders">
-          <visible>container.content(addons)</visible>
-          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
-          <control type="image">
-            <posx>78</posx>
-            <posy>192</posy>
-            <width>309</width>
-            <height>309</height>
-            <texture border="28">img/Frame25.png</texture>
-            <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="360,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="720,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="1080,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1440,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,360" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,720" time="220" reversible="true">Conditional</animation>
-          </control>
-        </control>
-      </control>
-      <control type="image" description="Line Split">
-        <posx>105</posx>
-        <posy>164</posy>
-        <width>1702</width>
-        <height>1</height>
-        <texture>img/LineL.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="grouplist" description="Media Header">
-        <posx>105</posx>
-        <posy>54</posy>
-        <width>930</width>
-        <height>75</height>
-        <align>left</align>
-        <aligny>bottom</aligny>
-        <orientation>horizontal</orientation>
-        <control type="label" id="7777" description="Heading">
-          <width min="60" max="930">auto</width>
-          <height>75</height>
-          <font>size28</font>
-          <textcolor>White2</textcolor>
-          <label>$VAR[GlobalHeadings]</label>
-        </control>
-        <control type="label" description="Number of files">
-          <visible>!IsEmpty(Control.GetLabel(7777))</visible>
-          <width min="60" max="120">auto</width>
-          <height>81</height>
-          <font>size17</font>
-          <textcolor>Grey</textcolor>
-          <label>$INFO[Container.NumItems,  (,)]</label>
-        </control>
-      </control>
-      <control type="label" description="Media details">
-        <posx>105</posx>
-        <posy>117</posy>
-        <width>1500</width>
-        <textcolor>Silver</textcolor>
-        <include>Genre51Commons</include>
-        <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
-      </control>
-      <control type="image" description="Overlay">
-        <visible>![container.content(tvshows) | container.content(seasons) | SubString(ListItem.Path,videodb://1/7)]</visible>
-        <posx>66</posx>
-        <posy>124</posy>
-        <height>32</height>
-        <width>60</width>
-        <aspectratio align="left">keep</aspectratio>
-        <texture>$VAR[Overlay]</texture>
-      </control>
-      <control type="image" description="Sets">
-        <visible>SubString(ListItem.Path,videodb://1/7)</visible>
-        <posx>50</posx>
-        <posy>123</posy>
-        <height>33</height>
-        <width>60</width>
-        <aspectratio>keep</aspectratio>
-        <texture>badges/setsFO.png</texture>
-      </control>
-      <control type="grouplist">
-        <posx>304r</posx>
-        <posy>126</posy>
-        <height>24</height>
-        <width>195</width>
-        <itemgap>15</itemgap>
-        <align>right</align>
-        <orientation>horizontal</orientation>
-        <control type="image">
-          <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-          <posx>1500</posx>
-          <height>24</height>
-          <width>45</width>
-          <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
-        </control>
-        <control type="image" description="Rating">
-          <visible>!IsEmpty(ListItem.Rating)</visible>
-          <posx>1590</posx>
-          <posy>0</posy>
-          <include>10Rating</include>
-        </control>
-        <control type="label" description="Media details">
-          <visible>container.content(addons)</visible>
-          <height>24</height>
-          <width>195</width>
-          <font>size18</font>
-          <align>right</align>
-          <textcolor>Silver</textcolor>
-          <label>$INFO[ListItem.Label2]</label>
-        </control>
-      </control>
-      <control type="image" description="Bottom fade">
-        <visible>Container.content(files) | container.content(addons)</visible>
-        <posx>0</posx>
-        <posy>1035</posy>
-        <width>1920</width>
-        <height>45</height>
-        <texture>img/Gradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>30r</posx>
-        <posy>219</posy>
-        <height>780</height>
-        <onleft>53</onleft>
-        <onright>-</onright>
-      </control>
-    </control>
     <control type="group" description="Infolist 2 - Movies are animated">
       <visible>Control.IsVisible(54)</visible>
       <control type="group" description="Movies Section">
@@ -1527,7 +1065,7 @@
         <onright>-</onright>
       </control>
     </control>
-    <control type="group" description="View 501">
+    <control type="group" description="Big Icons">
       <visible>Control.IsVisible(501)</visible>
       <control type="fixedlist" id="501">
         <visible>Container.content(movies) | [Container.content(tvshows) + !Skin.HasSetting(PostersHide)] | Container.content(seasons)</visible>
@@ -1681,111 +1219,142 @@
         <label>$VAR[Plots]</label>
       </control>
     </control>
-    <control type="group" description="Grid view">
-      <visible>Control.IsVisible(502)</visible>
-      <posy>-30</posy>
+	<control type="group" description="Grid view">
+      <visible>Control.IsVisible(53)</visible>
       <control type="group" description="Container and frame">
-        <control type="panel" id="502" description="Grid">
+        <control type="panel" id="53" description="Grid">
           <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>Container.Content(Movies) | container.content(TVshows) | Container.Content(Seasons)</visible>
-          <viewtype label="$LOCALIZE[536] 2">Icons 2</viewtype>
-          <posx>960</posx>
-          <posy>180</posy>
-          <width>900</width>
+          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
+          <viewtype label="536">Grid</viewtype>
+          <posx>60</posx>
+          <posy>210</posy>
+          <width>1800</width>
           <height>900</height>
           <orientation>vertical</orientation>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
-          <onup>502</onup>
-          <ondown>502</ondown>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">53</onright>
+		  <onup>53</onup>
+          <ondown>53</ondown>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout condition="![container.content(TVshows) + Skin.HasSetting(PostersHide)]" height="450" width="300">
+          <itemlayout condition="container.content(files) | container.content(episodes)" height="375" width="450">
             <control type="image">
-              <posx>27</posx>
-              <posy>327</posy>
-              <width>246</width>
-              <height>393</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
+              <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture>img/ListBG.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>27</posx>
+              <posx>45</posx>
               <posy>24</posy>
-              <width>246</width>
-              <height>369</height>
+              <width>360</width>
+              <height>255</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>scale</aspectratio>
+              <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+              <posx>45</posx>
+              <posy>279</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
               <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>27</posx>
+			  <posx>45</posx>
               <posy>24</posy>
-              <width>246</width>
-              <height>369</height>
+              <width>360</width>
+              <height>255</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="group">
-              <visible>container.content(seasons) | container.content(TVshows)</visible>
-              <control type="image">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>162</posx>
-                <posy>351</posy>
-                <height>45</height>
-                <width>150</width>
-                <aspectratio>keep</aspectratio>
-                <texture>badges/RedBadge.png</texture>
-              </control>
-              <control type="label" description="Label2">
-                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>237</posx>
-                <posy>345</posy>
-                <height>45</height>
-                <width>150</width>
-                <font>size17</font>
-                <scroll>true</scroll>
-                <align>center</align>
-                <textcolor>Grey2</textcolor>
-                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
-              </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="![container.content(TVshows) + Skin.HasSetting(PostersHide)]" height="450" width="300">
+          <focusedlayout condition="container.content(files) | container.content(episodes)" height="375" width="450">
             <control type="image">
-              <posx>27</posx>
-              <posy>327</posy>
-              <width>246</width>
-              <height>393</height>
+              <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture>img/ListBG.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+              <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+              <posx>45</posx>
+              <posy>279</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+              <posx>225</posx>
+              <posy>300</posy>
+              <width>420</width>
+              <height>45</height>
+              <font>size18</font>
+              <textcolor>White2</textcolor>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Label][/B]</label>
+            </control>
+          </focusedlayout>
+          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+            <control type="image">
+              <posx>35</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-              <posx>27</posx>
+              <posx>35</posx>
               <posy>24</posy>
-              <width>246</width>
-              <height>369</height>
+              <width>197</width>
+              <height>294</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
               <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>27</posx>
+			  <posx>35</posx>
               <posy>24</posy>
-              <width>246</width>
-              <height>369</height>
+              <width>197</width>
+              <height>294</height>
               <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="group">
-              <visible>container.content(seasons) | container.content(TVshows)</visible>
+              <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>162</posx>
-                <posy>351</posy>
+                <posx>123</posx>
+                <posy>276</posy>
                 <height>45</height>
                 <width>150</width>
                 <aspectratio>keep</aspectratio>
@@ -1793,314 +1362,310 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>237</posx>
-                <posy>345</posy>
+                <posx>197</posx>
+                <posy>270</posy>
                 <height>45</height>
                 <width>150</width>
-                <font>size17</font>
+                <font>size16</font>
                 <scroll>true</scroll>
                 <align>center</align>
                 <scroll>false</scroll>
-                <textcolor>White2</textcolor>
-                <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+                <textcolor>Grey2</textcolor>
+                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+              </control>
+            </control>
+          </itemlayout>
+          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+              <posx>35</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+            <control type="image">
+              <posx>35</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>35</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+              <posx>135</posx>
+              <posy>339</posy>
+              <width>270</width>
+              <height>45</height>
+              <font>size18</font>
+              <textcolor>White2</textcolor>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Label][/B]</label>
+            </control>
+            <control type="group">
+              <visible>container.content(TVshows) | container.content(seasons)</visible>
+              <control type="image">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>123</posx>
+                <posy>276</posy>
+                <height>45</height>
+                <width>150</width>
+                <aspectratio>keep</aspectratio>
+                <texture>badges/RedBadge.png</texture>
+              </control>
+              <control type="label" description="Label2">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>197</posx>
+                <posy>270</posy>
+                <height>45</height>
+                <width>150</width>
+                <font>size16</font>
+                <scroll>true</scroll>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>White</textcolor>
+                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
               </control>
             </control>
           </focusedlayout>
-          <itemlayout condition="container.content(TVshows) + Skin.HasSetting(PostersHide)" height="180" width="900">
+          <itemlayout condition="container.content(addons)" height="360" width="360">
             <control type="image">
-              <posx>64</posx>
-              <posy>144</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <posx>64</posx>
-              <posy>0</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>64</posx>
-              <posy>0</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
+              <posx>45</posx>
+              <posy>264</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-              <posx>723</posx>
-              <posy>99</posy>
-              <height>45</height>
-              <width>150</width>
-              <aspectratio>keep</aspectratio>
-              <texture>badges/RedBadge.png</texture>
+              <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label" description="Label2">
-              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-              <posx>798</posx>
-              <posy>93</posy>
-              <height>45</height>
-              <width>150</width>
-              <font>size17</font>
-              <scroll>true</scroll>
-              <align>center</align>
-              <scroll>false</scroll>
-              <textcolor>Grey2</textcolor>
-              <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout condition="container.content(TVshows) + Skin.HasSetting(PostersHide)" height="180" width="900">
+          <focusedlayout condition="container.content(addons)" height="360" width="360">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>64</posx>
-              <posy>144</posy>
-              <width>771</width>
-              <height>144</height>
+              <posx>45</posx>
+              <posy>264</posy>
+              <width>255</width>
+              <height>255</height>
               <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <posx>64</posx>
-              <posy>0</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-			  <posx>64</posx>
-              <posy>0</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-              <posx>723</posx>
-              <posy>99</posy>
-              <height>45</height>
-              <width>150</width>
-              <aspectratio>keep</aspectratio>
-              <texture>badges/RedBadge.png</texture>
+              <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
             </control>
-            <control type="label" description="Label2">
-              <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-              <posx>798</posx>
-              <posy>93</posy>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+              <posx>172</posx>
+              <posy>270</posy>
+              <width>270</width>
               <height>45</height>
-              <width>150</width>
-              <font>size17</font>
-              <scroll>true</scroll>
-              <align>center</align>
-              <scroll>false</scroll>
+              <font>size18</font>
               <textcolor>White2</textcolor>
-              <label>[B]$INFO[ListItem.Property(UnwatchedEpisodes)][/B]</label>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
           </focusedlayout>
         </control>
         <control type="group" description="Frame Sliders">
-          <visible>![container.content(TVshows) + Skin.HasSetting(PostersHide)]</visible>
+          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image" description="Posters">
-            <posx>63</posx>
-            <posy>180</posy>
-            <width>294</width>
-            <height>417</height>
+            <posx>68</posx>
+            <posy>207</posy>
+            <width>251</width>
+            <height>348</height>
             <texture border="28">img/Frame25.png</texture>
             <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="900,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="1200,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="1500,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,450" time="200" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="257,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="514,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="771,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="1028,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1285,0" time="220" reversible="true">Conditional</animation>
+			<animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1542,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,450" time="220" reversible="true">Conditional</animation>
           </control>
         </control>
         <control type="group" description="Frame Sliders">
-          <visible>container.content(TVshows) + Skin.HasSetting(PostersHide)</visible>
+          <visible>container.content(files) | container.content(episodes)</visible>
+          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <control type="image" description="Generic">
+            <posx>78</posx>
+            <posy>206</posy>
+            <width>414</width>
+            <height>309</height>
+            <texture border="28">img/Frame25.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="450,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="900,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="1350,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,375" time="220" reversible="true">Conditional</animation>
+          </control>
+        </control>
+        <control type="group" description="Frame Sliders">
+          <visible>container.content(addons)</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <control type="image">
-            <posx>999</posx>
-            <posy>156</posy>
-            <width>820</width>
-            <height>192</height>
+            <posx>78</posx>
+            <posy>192</posy>
+            <width>309</width>
+            <height>309</height>
             <texture border="28">img/Frame25.png</texture>
             <aspectratio>stretch</aspectratio>
-            <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,180" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,360" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(3)" effect="slide" start="0,0" end="0,540" time="200" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(4)" effect="slide" start="0,0" end="0,720" time="200" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="360,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="720,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="1080,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1440,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,360" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,720" time="220" reversible="true">Conditional</animation>
           </control>
         </control>
       </control>
-      <control type="group">
-        <visible>container.content(TVshows) + Skin.HasSetting(PostersHide)</visible>
+      <control type="image" description="Line Split">
+        <posx>105</posx>
+        <posy>164</posy>
+        <width>1702</width>
+        <height>1</height>
+        <texture>img/LineL.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="grouplist" description="Media Header">
+        <posx>105</posx>
+        <posy>54</posy>
+        <width>930</width>
+        <height>75</height>
+        <align>left</align>
+        <aligny>bottom</aligny>
+        <orientation>horizontal</orientation>
+        <control type="label" id="7777" description="Heading">
+          <width min="60" max="930">auto</width>
+          <height>75</height>
+          <font>size28</font>
+          <textcolor>White2</textcolor>
+          <label>$VAR[GlobalHeadings]</label>
+        </control>
+        <control type="label" description="Number of files">
+          <visible>!IsEmpty(Control.GetLabel(7777))</visible>
+          <width min="60" max="120">auto</width>
+          <height>81</height>
+          <font>size17</font>
+          <textcolor>Grey</textcolor>
+          <label>$INFO[Container.NumItems,  (,)]</label>
+        </control>
+      </control>
+      <control type="label" description="Media details">
+        <posx>105</posx>
+        <posy>117</posy>
+        <width>1500</width>
+        <textcolor>Silver</textcolor>
+        <include>Genre51Commons</include>
+        <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
+      </control>
+      <control type="image" description="Overlay">
+        <visible>![container.content(tvshows) | container.content(seasons) | SubString(ListItem.Path,videodb://1/7)]</visible>
+        <posx>66</posx>
+        <posy>124</posy>
+        <height>32</height>
+        <width>60</width>
+        <aspectratio align="left">keep</aspectratio>
+        <texture>$VAR[Overlay]</texture>
+      </control>
+      <control type="image" description="Sets">
+        <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+        <posx>50</posx>
+        <posy>123</posy>
+        <height>33</height>
+        <width>60</width>
+        <aspectratio>keep</aspectratio>
+        <texture>badges/setsFO.png</texture>
+      </control>
+      <control type="grouplist">
+        <posx>304r</posx>
+        <posy>126</posy>
+        <height>24</height>
+        <width>195</width>
+        <itemgap>15</itemgap>
+        <align>right</align>
+        <orientation>horizontal</orientation>
         <control type="image">
-          <visible>!Container.Row(0)</visible>
-          <animation effect="fade" time="200">VisibleChange</animation>
-          <posx>1005</posx>
-          <posy>135</posy>
-          <height>156</height>
-          <width>832</width>
-          <texture flipy="true">img/DefaultGradient.png</texture>
-          <aspectratio>stretch</aspectratio>
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+          <posx>1500</posx>
+          <height>24</height>
+          <width>45</width>
+          <aspectratio>keep</aspectratio>
+          <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
         </control>
-        <control type="image">
-          <animation effect="fade" time="200">VisibleChange</animation>
-          <visible>!Container.Row(4)</visible>
-          <posx>1005</posx>
-          <posy>933</posy>
-          <height>156</height>
-          <width>832</width>
-          <texture>img/DefaultGradient.png</texture>
-          <aspectratio>stretch</aspectratio>
-        </control>
-      </control>
-      <control type="group" description="Media info">
-        <posx>112</posx>
-        <posy>15</posy>
-        <control type="group" description="Media info Top">
-          <posx>0</posx>
-          <posy>654</posy>
-          <control type="label" description="Main Label">
-            <visible>!Container.content(movies)</visible>
-            <width>608</width>
-            <font>size22B</font>
-            <textcolor>White2</textcolor>
-            <include>Genre51Commons</include>
-            <label>$INFO[ListItem.Label]</label>
-          </control>
-          <control type="label" description="Main Label">
-            <visible>Container.content(movies)</visible>
-            <width>705</width>
-            <font>size22B</font>
-            <textcolor>White2</textcolor>
-            <include>Genre51Commons</include>
-            <label>$INFO[ListItem.Label]</label>
-          </control>
-          <control type="image">
-            <posx>-30</posx>
-            <posy>-3</posy>
-            <height>30</height>
-            <width>30</width>
-            <texture>$VAR[Overlay]</texture>
-            <aspectratio>keep</aspectratio>
-          </control>
-          <control type="image" description="Rating">
-            <visible>!Container.content(movies)</visible>
-            <posx>622</posx>
-            <posy>0</posy>
-            <include>10Rating</include>
-          </control>
-          <control type="image">
-            <visible>Container.content(movies)</visible>
-            <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-            <posx>720</posx>
-            <posy>-9</posy>
-            <width>40</width>
-            <height>39</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
-          </control>
-          <control type="image">
-            <posx>0</posx>
-            <posy>46</posy>
-            <height>1</height>
-            <width>758</width>
-            <texture>img/LineST.png</texture>
-          </control>
-          <control type="textbox" description="Plot51">
-            <!--<height>166</height>-->
-            <include>Plot51Commons</include>
-            <label fallback="31979">$VAR[Plots]</label>
-          </control>
-          <control type="image">
-            <posx>0</posx>
-            <posy>224</posy>
-            <height>1</height>
-            <width>758</width>
-            <texture>img/LineST.png</texture>
-          </control>
-        </control>
-        <control type="group" description="Media Info Bottom">
-          <posx>0</posx>
-          <posy>810</posy>
-          <control type="label" description="MPAA">
-            <posy>90</posy>
-            <textcolor>White</textcolor>
-            <include>Genre51Commons</include>
-            <label>[COLOR=Grey]$LOCALIZE[20074]:[/COLOR] $INFO[ListItem.MPAA]</label>
-          </control>
-          <control type="grouplist">
-            <posx>0</posx>
-            <posy>130</posy>
-            <width>auto</width>
-            <height>33</height>
-            <orientation>horizontal</orientation>
-            <align>left</align>
-            <itemgap>30</itemgap>
-            <control type="label" description="Details">
-              <textcolor>White</textcolor>
-              <height>33</height>
-              <width max="735">auto</width>
-              <include>Genre51Commons</include>
-              <label>[COLOR=Grey]$LOCALIZE[33029]:[/COLOR] $VAR[500TopLabel]$VAR[Trailer, • ]</label>
-            </control>
-          </control>
-          <control type="label" description="Genre">
-            <textcolor>White</textcolor>
-            <posy>171</posy>
-            <include>Genre51Commons</include>
-            <label>[COLOR=Grey]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
-          </control>
-        </control>
-      </control>
-      <control type="group" description="FA">
-        <visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
-        <include>VisibleFadeEffect</include>
-        <posy>186</posy>
-        <posx>114</posx>
-        <control type="image" description="FA">
-          <posx>0</posx>
+        <control type="image" description="Rating">
+          <visible>!IsEmpty(ListItem.Rating)</visible>
+          <posx>1590</posx>
           <posy>0</posy>
-          <width>756</width>
-          <height>426</height>
-          <include>Fanart_Fade</include>
-          <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-          <aspectratio aligny="bottom">stretch</aspectratio>
+          <include>10Rating</include>
         </control>
-        <control type="image" description="Reflection">
-          <posx>0</posx>
-          <posy>426</posy>
-          <width>756</width>
-          <height>426</height>
-          <include>Fanart_Fade</include>
-          <texture diffuse="img/Reflection0.png" flipy="true" background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-          <aspectratio aligny="bottom">stretch</aspectratio>
-        </control>
-        <control type="image" description="Thumb Overlay">
-          <visible>!IsEmpty(ListItem.Thumb)</visible>
-		  <posx>0</posx>
-          <posy>0</posy>
-          <width>756</width>
-          <height>426</height>
-          <texture border="3">img/CoverOverlay0.png</texture>
-          <aspectratio aligny="bottom">stretch</aspectratio>
+        <control type="label" description="Media details">
+          <visible>container.content(addons)</visible>
+          <height>24</height>
+          <width>195</width>
+          <font>size18</font>
+          <align>right</align>
+          <textcolor>Silver</textcolor>
+          <label>$INFO[ListItem.Label2]</label>
         </control>
       </control>
       <control type="image" description="Bottom fade">
-        <visible>container.content(TVshows) + Skin.HasSetting(PostersHide)</visible>
+        <visible>Container.content(files) | container.content(addons)</visible>
         <posx>0</posx>
         <posy>1035</posy>
         <width>1920</width>
@@ -2109,14 +1674,468 @@
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="scrollbar" id="60">
-        <posx>45r</posx>
-        <posy>207</posy>
-        <height>816</height>
+        <posx>30r</posx>
+        <posy>219</posy>
+        <height>780</height>
+        <onleft>53</onleft>
+        <onright>-</onright>
+      </control>
+    </control>
+	<control type="group" description="Grid view">
+      <visible>Control.IsVisible(502)</visible>
+      <control type="image" description="fanart">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <fadetime>300</fadetime>
+        <animation effect="fade" time="300">Visible</animation>
+        <animation effect="fade" time="300">Hidden</animation>
+        <aspectratio>keep</aspectratio>
+        <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+      </control>
+      <control type="image">
+        <include>Dimensions_Fullscreen</include>
+        <texture>img/Vignette_57.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+	  <control type="group" description="Container and frame">
+        <control type="panel" id="502" description="Grid">
+          <visible>Skin.HasSetting(AddViews)</visible>
+          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
+          <viewtype label="Panel">Panel</viewtype>
+          <posx>835</posx>
+          <posy>360</posy>
+          <width>1062</width>
+          <height>700</height>
+          <orientation>vertical</orientation>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">53</onright>
+		  <onup>502</onup>
+          <ondown>502</ondown>
+          <preloaditems>4</preloaditems>
+          <pagecontrol>60</pagecontrol>
+          <scrolltime>400</scrolltime>
+          <itemlayout condition="container.content(files) | container.content(episodes)" height="233" width="354">
+            <control type="image">
+              <posx>37</posx>
+              <posy>14</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+			  <posx>37</posx>
+              <posy>190</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>37</posx>
+              <posy>14</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="label">
+              <posx>177</posx>
+              <posy>190</posy>
+              <width>280</width>
+              <height>36</height>
+              <font>size16</font>
+              <textcolor>Grey</textcolor>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/B]</label>
+            </control>
+          </itemlayout>
+          <focusedlayout condition="container.content(files) | container.content(episodes)" height="233" width="354">
+            <control type="image">
+              <posx>37</posx>
+              <posy>14</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+			  <posx>37</posx>
+              <posy>190</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>37</posx>
+              <posy>14</posy>
+              <width>280</width>
+              <height>175</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+			<control type="label">
+              <posx>177</posx>
+              <posy>190</posy>
+              <width>280</width>
+              <height>36</height>
+              <font>size16</font>
+              <textcolor>White</textcolor>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/B]</label>
+            </control>
+          </focusedlayout>
+          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="350" width="265">
+            <control type="image">
+              <posx>34</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <posx>34</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>34</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="group">
+              <visible>container.content(TVshows) | container.content(seasons)</visible>
+              <control type="image">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>123</posx>
+                <posy>276</posy>
+                <height>45</height>
+                <width>150</width>
+                <aspectratio>keep</aspectratio>
+                <texture>badges/RedBadge.png</texture>
+              </control>
+              <control type="label" description="Label2">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>197</posx>
+                <posy>270</posy>
+                <height>45</height>
+                <width>150</width>
+                <font>size16</font>
+                <scroll>true</scroll>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>Grey2</textcolor>
+                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+              </control>
+            </control>
+          </itemlayout>
+          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="350" width="265">
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+              <posx>34</posx>
+              <posy>320</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+            <control type="image">
+              <posx>34</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>34</posx>
+              <posy>24</posy>
+              <width>197</width>
+              <height>294</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="group">
+              <visible>container.content(TVshows) | container.content(seasons)</visible>
+              <control type="image">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>123</posx>
+                <posy>276</posy>
+                <height>45</height>
+                <width>150</width>
+                <aspectratio>keep</aspectratio>
+                <texture>badges/RedBadge.png</texture>
+              </control>
+              <control type="label" description="Label2">
+                <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
+                <posx>197</posx>
+                <posy>270</posy>
+                <height>45</height>
+                <width>150</width>
+                <font>size16</font>
+                <scroll>true</scroll>
+                <align>center</align>
+                <scroll>false</scroll>
+                <textcolor>White</textcolor>
+                <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
+              </control>
+            </control>
+          </focusedlayout>
+          <itemlayout condition="container.content(addons)" height="360" width="360">
+            <control type="image">
+              <posx>45</posx>
+              <posy>264</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+              <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+          </itemlayout>
+          <focusedlayout condition="container.content(addons)" height="360" width="360">
+            <control type="image">
+              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
+              <posx>45</posx>
+              <posy>264</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+              <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+              <visible>!IsEmpty(ListItem.Thumb)</visible>
+			  <posx>45</posx>
+              <posy>9</posy>
+              <width>255</width>
+              <height>255</height>
+              <texture border="3">img/CoverOverlay0.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label">
+              <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+              <posx>172</posx>
+              <posy>270</posy>
+              <width>270</width>
+              <height>45</height>
+              <font>size18</font>
+              <textcolor>White2</textcolor>
+              <shadowcolor>Black</shadowcolor>
+              <align>center</align>
+              <label>[B]$INFO[ListItem.Label][/B]</label>
+            </control>
+          </focusedlayout>
+        </control>
+		<control type="group" description="Media info">
+        <animation effect="fade" time="400">Visible</animation>
+        <animation effect="fade" time="0">Hidden</animation>
+        <posx>70</posx>
+        <posy>0</posy>
+		<control type="image" description="Overlay">
+			<visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+			<posx>-40</posx>
+			<posy>376</posy>
+			<height>32</height>
+			<width>60</width>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>$VAR[Overlay]</texture>
+		  </control>
+		  <control type="image" description="Sets">
+			<visible>SubString(ListItem.Path,videodb://1/7)</visible>
+			<posx>-57</posx>
+			<posy>376</posy>
+			<height>33</height>
+			<width>60</width>
+			<aspectratio>keep</aspectratio>
+			<texture>badges/setsFO.png</texture>
+		  </control>
+        <control type="group" description="Media info Top">
+          <visible>!Container.Content(MusicVideos)</visible>
+          <posx>0</posx>
+          <posy>384</posy>
+          <control type="label" description="Main Label">
+            <posy>-12</posy>
+			<width>690</width>
+            <font>size22B</font>
+            <textcolor>White2</textcolor>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="textbox" description="Plot51">
+            <width>690</width>
+			<height>420</height>
+            <include>Plot51Commons</include>
+            <label fallback="31979">$VAR[Plots]</label>
+          </control>
+         </control>
+        <control type="group" description="Media Info Bottom">
+          <visible>!Container.Content(MusicVideos)</visible>
+          <posx>0</posx>
+          <posy>816</posy>
+          <control type="label" description="MPAA">
+            <posy>90</posy>
+            <width>690</width>
+			<textcolor>White</textcolor>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.MPAA,[COLOR=Grey]$LOCALIZE[20074]:[/COLOR] ]</label>
+          </control>
+          <control type="label" description="Genre">
+            <visible>!container.content(episodes)</visible>
+            <width>690</width>
+			<posy>130</posy>
+            <textcolor>White</textcolor>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.Genre,[COLOR=Grey]$LOCALIZE[515]:[/COLOR] ]</label>
+          </control>
+          <control type="label" description="Genre">
+            <visible>container.content(episodes)</visible>
+            <posy>130</posy>
+            <width>690</width>
+			<textcolor>White</textcolor>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.RatingAndVotes,[COLOR=Grey]$LOCALIZE[563]:[/COLOR] ]</label>
+          </control>
+          <control type="label" description="Details">
+            <textcolor>White</textcolor>
+            <posy>171</posy>
+            <width>690</width>
+			<include>Genre51Commons</include>
+            <label>$VAR[500TopLabel,[COLOR=Grey]$LOCALIZE[33029]:[/COLOR] ]</label>
+          </control>
+        </control>
+        <control type="group">
+          <visible>Container.Content(MusicVideos)</visible>
+          <include>MusicInfo</include>
+        </control>
+      </control>
+        <control type="group" description="Frames">
+          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
+          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <control type="image" description="Posters">
+            <posx>842</posx>
+            <posy>357</posy>
+            <width>251</width>
+            <height>348</height>
+            <texture border="28">img/Frame25.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="265,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="530,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="795,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,350" time="220" reversible="true">Conditional</animation>
+          </control>
+        </control>
+        <control type="group" description="Frame Sliders">
+          <visible>container.content(files) | container.content(episodes)</visible>
+          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <control type="image" description="Generic">
+            <posx>846</posx>
+            <posy>348</posy>
+            <width>333</width>
+            <height>227</height>
+            <texture border="28">img/Frame25.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="354,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="708,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,233" time="220" reversible="true">Conditional</animation>
+			<animation condition="Container.Row(2)" effect="slide" easing="inout" start="0,0" end="0,466" time="220" reversible="true">Conditional</animation>
+          </control>
+        </control>
+        <control type="group" description="Frame Sliders">
+          <visible>container.content(addons)</visible>
+          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
+          <control type="image">
+            <posx>78</posx>
+            <posy>192</posy>
+            <width>309</width>
+            <height>309</height>
+            <texture border="28">img/Frame25.png</texture>
+            <aspectratio>stretch</aspectratio>
+            <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(1)" effect="slide" start="0,0" end="360,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(2)" effect="slide" start="0,0" end="720,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(3)" effect="slide" start="0,0" end="1080,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1440,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,360" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,720" time="220" reversible="true">Conditional</animation>
+          </control>
+        </control>
+      </control>
+      
+      
+      
+      <control type="image" description="Bottom fade">
+        <visible>!Container.Row(2)</visible>
+		<include>VisibleFadeEffect</include>
+		<posx>0</posx>
+        <posy>1000</posy>
+        <width>1920</width>
+        <height>80</height>
+        <texture>img/Gradient.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="scrollbar" id="60">
+        <posx>30r</posx>
+        <posy>360</posy>
+        <height>600</height>
         <onleft>502</onleft>
         <onright>-</onright>
       </control>
     </control>
-    <control type="group">
+    <control type="group" description="Fanart 3">
       <visible>Control.IsVisible(500)</visible>
       <control type="image">
         <include>Dimensions_Fullscreen</include>
