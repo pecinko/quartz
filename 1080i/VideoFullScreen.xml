@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="2005">
   <defaultcontrol>-</defaultcontrol>
   <animation effect="fade" time="500">WindowOpen</animation>
