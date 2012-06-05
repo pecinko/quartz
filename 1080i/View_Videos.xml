@@ -426,7 +426,7 @@
             <aspectratio aligny="bottom">stretch</aspectratio>
           </control>
           <control type="image" description="Thumb">
-            <visible>!IsEmpty(ListItem.Property(fanart_image)</visible>
+            <visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>756</width>
