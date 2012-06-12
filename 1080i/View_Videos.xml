@@ -1741,7 +1741,7 @@
         <control type="panel" id="502" description="Grid">
           <visible>Skin.HasSetting(AddViews)</visible>
           <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
-          <viewtype label="Panel">Panel</viewtype>
+          <viewtype label="$LOCALIZE[31976]">Panel</viewtype>
           <posx>835</posx>
           <posy>360</posy>
           <width>1062</width>
