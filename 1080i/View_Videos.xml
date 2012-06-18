@@ -693,7 +693,7 @@
         <fadetime>300</fadetime>
         <animation effect="fade" time="300">Visible</animation>
         <animation effect="fade" time="300">Hidden</animation>
-        <aspectratio>keep</aspectratio>
+        <aspectratio>stretch</aspectratio>
         <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
       </control>
       <control type="image">
@@ -927,7 +927,7 @@
           <fadetime>200</fadetime>
           <animation effect="fade" time="300">Visible</animation>
           <animation effect="fade" time="300">Hidden</animation>
-          <aspectratio>keep</aspectratio>
+          <aspectratio>stretch</aspectratio>
           <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
         </control>
         <control type="image">
@@ -1729,7 +1729,7 @@
         <fadetime>300</fadetime>
         <animation effect="fade" time="300">Visible</animation>
         <animation effect="fade" time="300">Hidden</animation>
-        <aspectratio>keep</aspectratio>
+        <aspectratio>stretch</aspectratio>
         <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
       </control>
       <control type="image">
