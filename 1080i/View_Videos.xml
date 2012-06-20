@@ -1262,7 +1262,7 @@
       <control type="group" description="Container and frame">
         <control type="panel" id="53" description="Grid">
           <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
+          <visible>StringCompareContainer.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
           <viewtype label="536">Grid</viewtype>
           <posx>60</posx>
           <posy>210</posy>
@@ -1284,11 +1284,21 @@
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
-              <texture>img/ListBG.png</texture>
+              <texture>img/ThumbBorder2.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>SubString(Container.FolderPath,videodb://2/2,left) | SubString(Container.FolderPath,videodb://5,left)</visible>
+			  <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+			<control type="image">
+              <visible>![SubString(Container.FolderPath,videodb://2/2,left) | SubString(Container.FolderPath,videodb://5,left)]</visible>
+			  <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
@@ -1296,15 +1306,6 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
-              <posy>279</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
               <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
@@ -1319,11 +1320,21 @@
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
-              <texture>img/ListBG.png</texture>
+              <texture>img/ThumbBorder2.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
-              <posx>45</posx>
+              <visible>SubString(Container.FolderPath,videodb://2/2,left) | SubString(Container.FolderPath,videodb://5,left)</visible>
+			  <posx>45</posx>
+              <posy>24</posy>
+              <width>360</width>
+              <height>255</height>
+              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+			<control type="image">
+              <visible>![SubString(Container.FolderPath,videodb://2/2,left) | SubString(Container.FolderPath,videodb://5,left)]</visible>
+			  <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
               <height>255</height>
@@ -1331,16 +1342,6 @@
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>45</posx>
-              <posy>279</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
-              <aspectratio>keep</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
               <posx>45</posx>
               <posy>24</posy>
               <width>360</width>
@@ -1361,7 +1362,7 @@
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
           </focusedlayout>
-          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+          <itemlayout condition="SubString(Container.FolderPath,videodb://4,left) | SubString(Container.FolderPath,videodb://1,left) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
             <control type="image">
               <posx>35</posx>
               <posy>320</posy>
@@ -1413,7 +1414,7 @@
               </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+          <focusedlayout condition="SubString(Container.FolderPath,videodb://4,left) | SubString(Container.FolderPath,videodb://1,left) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
               <posx>35</posx>
@@ -1547,7 +1548,7 @@
           </focusedlayout>
         </control>
         <control type="group" description="Frame Sliders">
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
+          <visible>SubString(Container.FolderPath,videodb://4,left) | SubString(Container.FolderPath,videodb://1,left) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
