@@ -1,3 +1,7 @@
+3.3.8
+Cosmetics
+Loginscreen Fix
+
 3.3.6
 Lower transparency on fanart overlays
 Improved screen calibration
