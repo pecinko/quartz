@@ -5,9 +5,10 @@
   <include>OpenClose</include>
   <onload condition="IsEmpty(Window(Home).Property(Quartz_Watchlist))">RunScript(script.watchlist,$VAR[WatchlistParameters])</onload>
   <onload condition="IsEmpty(Window(Home).Property(Quartz_Watchlist))">SetProperty(Quartz_Watchlist,True,0)</onload>
+  <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,skin)</onload>
   <controls>
     <include>MiniBackground</include>
-	<control type="button" id="8998" description="Fix ATV1 focus bug">
+    <control type="button" id="8998" description="Fix ATV1 focus bug">
       <include>HiddenButton</include>
       <onfocus>Control.SetFocus(9000)</onfocus>
       <onclick>Control.SetFocus(9000)</onclick>
@@ -67,7 +68,7 @@
       <orientation>horizontal</orientation>
       <control type="list" id="301" description="Movies">
         <visible>!Skin.HasSetting(MoviesSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(301).NumItems,0)</visible>
+        <visible>IntegerGreaterThan(Container(301).NumItems,0) | Skin.HasSetting(plexbmc)</visible>
         <onleft>306</onleft>
         <onright>302</onright>
         <onup>311</onup>
@@ -77,18 +78,21 @@
         <movement>3</movement>
         <content>
           <item id="0" description="MyMovies">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies1)</visible>
             <visible>Library.HasContent(Movies)</visible>
             <label>342</label>
             <onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
           </item>
           <item id="1" description="RA Movies">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies2)</visible>
             <visible>Library.HasContent(Movies)</visible>
             <label>31289</label>
             <onclick>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</onclick>
           </item>
           <item id="2" description="Genres">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies3)</visible>
             <visible>Library.HasContent(Movies)</visible>
             <label>135</label>
@@ -130,23 +134,105 @@
             <onclick>$INFO[Skin.String(CustomMovies.7.Path)]</onclick>
           </item>
           <item id="8" description="Browse">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies4)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
           </item>
           <item id="9" description="Search">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies5)</visible>
             <visible>Library.HasContent(Movies)</visible>
             <label>137</label>
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
           </item>
+		  <item id="12">
+            <label>$INFO[Window.Property(plexbmc.0.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.0.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.0.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.0.title))</visible>
+            <visible>substring(Window.Property(plexbmc.0.type),movie)</visible>
+          </item>
+          <item id="13">
+            <label>$INFO[Window.Property(plexbmc.1.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.1.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.1.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.1.title))</visible>
+            <visible>substring(Window.Property(plexbmc.1.type),movie)</visible>
+          </item>
+          <item id="14">
+            <label>$INFO[Window.Property(plexbmc.2.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.2.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.2.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.2.title))</visible>
+            <visible>substring(Window.Property(plexbmc.2.type),movie)</visible>
+          </item>
+          <item id="15">
+            <label>$INFO[Window.Property(plexbmc.3.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.3.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.3.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.3.title))</visible>
+            <visible>substring(Window.Property(plexbmc.3.type),movie)</visible>
+          </item>
+          <item id="16">
+            <label>$INFO[Window.Property(plexbmc.4.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.4.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.4.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.4.title))</visible>
+            <visible>substring(Window.Property(plexbmc.4.type),movie)</visible>
+          </item>
+          <item id="17">
+            <label>$INFO[Window.Property(plexbmc.5.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.5.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.5.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.5.title))</visible>
+            <visible>substring(Window.Property(plexbmc.5.type),movie)</visible>
+          </item>
+          <item id="18">
+            <label>$INFO[Window.Property(plexbmc.6.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.6.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.6.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.6.title))</visible>
+            <visible>substring(Window.Property(plexbmc.6.type),movie)</visible>
+          </item>
+          <item id="19">
+            <label>$INFO[Window.Property(plexbmc.7.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.7.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.7.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.7.title))</visible>
+            <visible>substring(Window.Property(plexbmc.7.type),movie)</visible>
+          </item>
+          <item id="20">
+            <label>$INFO[Window.Property(plexbmc.8.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.8.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.8.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.8.title))</visible>
+            <visible>substring(Window.Property(plexbmc.8.type),movie)</visible>
+          </item>
+          <item id="21">
+            <label>$INFO[Window.Property(plexbmc.9.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.9.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.9.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.9.title))</visible>
+            <visible>substring(Window.Property(plexbmc.9.type),movie)</visible>
+          </item>
         </content>
         <include>Animation301</include>
       </control>
       <control type="list" id="302" description="TVShows">
         <visible>!Skin.HasSetting(TVSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(302).NumItems,0)</visible>
+        <visible>IntegerGreaterThan(Container(302).NumItems,0) | Skin.HasSetting(plexbmc)</visible>
         <onleft>301</onleft>
         <onright>303</onright>
         <onup>312</onup>
@@ -154,18 +240,21 @@
         <include>Sublist</include>
         <content>
           <item id="0" description="MyTV">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TV1)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>20343</label>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
           </item>
           <item id="1" description="RA TV">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TV2)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>31289</label>
             <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
           </item>
           <item id="2" description="Browse 5 MENU ITEM ADDED Watchlist">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TV5)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>31981</label>
@@ -207,23 +296,105 @@
             <onclick>$INFO[Skin.String(CustomTV.7.Path)]</onclick>
           </item>
           <item id="8" description="Browse">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TV3)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
           </item>
           <item id="9" description="Search">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TV4)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>137</label>
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
           </item>
+		   <item id="12">
+            <label>$INFO[Window.Property(plexbmc.0.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.0.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.0.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.0.title))</visible>
+            <visible>substring(Window.Property(plexbmc.0.type),show)</visible>
+          </item>
+          <item id="13">
+            <label>$INFO[Window.Property(plexbmc.1.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.1.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.1.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.1.title))</visible>
+            <visible>substring(Window.Property(plexbmc.1.type),show)</visible>
+          </item>
+          <item id="14">
+            <label>$INFO[Window.Property(plexbmc.2.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.2.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.2.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.2.title))</visible>
+            <visible>substring(Window.Property(plexbmc.2.type),show)</visible>
+          </item>
+          <item id="15">
+            <label>$INFO[Window.Property(plexbmc.3.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.3.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.3.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.3.title))</visible>
+            <visible>substring(Window.Property(plexbmc.3.type),show)</visible>
+          </item>
+          <item id="16">
+            <label>$INFO[Window.Property(plexbmc.4.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.4.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.4.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.4.title))</visible>
+            <visible>substring(Window.Property(plexbmc.4.type),show)</visible>
+          </item>
+          <item id="17">
+            <label>$INFO[Window.Property(plexbmc.5.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.5.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.5.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.5.title))</visible>
+            <visible>substring(Window.Property(plexbmc.5.type),show)</visible>
+          </item>
+          <item id="18">
+            <label>$INFO[Window.Property(plexbmc.6.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.6.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.6.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.6.title))</visible>
+            <visible>substring(Window.Property(plexbmc.6.type),show)</visible>
+          </item>
+          <item id="19">
+            <label>$INFO[Window.Property(plexbmc.7.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.7.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.7.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.7.title))</visible>
+            <visible>substring(Window.Property(plexbmc.7.type),show)</visible>
+          </item>
+          <item id="20">
+            <label>$INFO[Window.Property(plexbmc.8.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.8.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.8.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.8.title))</visible>
+            <visible>substring(Window.Property(plexbmc.8.type),show)</visible>
+          </item>
+          <item id="21">
+            <label>$INFO[Window.Property(plexbmc.9.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.9.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.9.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.9.title))</visible>
+            <visible>substring(Window.Property(plexbmc.9.type),show)</visible>
+          </item>
         </content>
         <include>Animation302</include>
       </control>
       <control type="list" id="303" description="Music">
         <visible>!Skin.HasSetting(MusicSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(303).NumItems,0)</visible>
+        <visible>IntegerGreaterThan(Container(303).NumItems,0) | Skin.HasSetting(plexbmc)</visible>
         <onleft>302</onleft>
         <onright>304</onright>
         <onup>313</onup>
@@ -231,21 +402,25 @@
         <include>Sublist</include>
         <content>
           <item id="0" description="Artists">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
             <label>133</label>
             <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Artists,return)</onclick>
           </item>
           <item id="1" description="Music Videos">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music2) + Library.HasContent(MusicVideos)</visible>
             <label>3</label>
             <onclick>ActivateWindow(VideoLibrary,MusicVideos,return)</onclick>
           </item>
           <item id="2" description="Library">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music3) + Library.HasContent(Music)</visible>
             <label>14022</label>
             <onclick>ActivateWindow(MusicLibrary,root)</onclick>
           </item>
           <item id="3" description="Files">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music4)</visible>
             <label>744</label>
             <onclick>ActivateWindow(MusicFiles,root)</onclick>
@@ -286,17 +461,98 @@
             <onclick>$INFO[Skin.String(CustomMusic.7.Path)]</onclick>
           </item>
           <item id="10" description="Search">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music5) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</visible>
             <label>137</label>
             <onclick>ActivateWindow(MusicLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
+          </item>
+		  <item id="12">
+            <label>$INFO[Window.Property(plexbmc.0.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.0.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.0.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.0.title))</visible>
+            <visible>substring(Window.Property(plexbmc.0.type),artist)</visible>
+          </item>
+          <item id="13">
+            <label>$INFO[Window.Property(plexbmc.1.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.1.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.1.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.1.title))</visible>
+            <visible>substring(Window.Property(plexbmc.1.type),artist)</visible>
+          </item>
+          <item id="14">
+            <label>$INFO[Window.Property(plexbmc.2.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.2.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.2.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.2.title))</visible>
+            <visible>substring(Window.Property(plexbmc.2.type),artist)</visible>
+          </item>
+          <item id="15">
+            <label>$INFO[Window.Property(plexbmc.3.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.3.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.3.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.3.title))</visible>
+            <visible>substring(Window.Property(plexbmc.3.type),artist)</visible>
+          </item>
+          <item id="16">
+            <label>$INFO[Window.Property(plexbmc.4.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.4.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.4.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.4.title))</visible>
+            <visible>substring(Window.Property(plexbmc.4.type),artist)</visible>
+          </item>
+          <item id="17">
+            <label>$INFO[Window.Property(plexbmc.5.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.5.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.5.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.5.title))</visible>
+            <visible>substring(Window.Property(plexbmc.5.type),artist)</visible>
+          </item>
+          <item id="18">
+            <label>$INFO[Window.Property(plexbmc.6.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.6.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.6.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.6.title))</visible>
+            <visible>substring(Window.Property(plexbmc.6.type),artist)</visible>
+          </item>
+          <item id="19">
+            <label>$INFO[Window.Property(plexbmc.7.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.7.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.7.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.7.title))</visible>
+            <visible>substring(Window.Property(plexbmc.7.type),artist)</visible>
+          </item>
+          <item id="20">
+            <label>$INFO[Window.Property(plexbmc.8.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.8.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.8.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.8.title))</visible>
+            <visible>substring(Window.Property(plexbmc.8.type),artist)</visible>
+          </item>
+          <item id="21">
+            <label>$INFO[Window.Property(plexbmc.9.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.9.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.9.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.9.title))</visible>
+            <visible>substring(Window.Property(plexbmc.9.type),artist)</visible>
           </item>
         </content>
         <include>Animation303</include>
       </control>
       <control type="list" id="304" description="Pictures">
         <visible>!Skin.HasSetting(PicturesSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(304).NumItems,0)</visible>
+        <visible>IntegerGreaterThan(Container(304).NumItems,0) | Skin.HasSetting(plexbmc)</visible>
         <onleft>303</onleft>
         <onright>305</onright>
         <onup>314</onup>
@@ -304,6 +560,7 @@
         <include>Sublist</include>
         <content>
           <item id="1" description="Pictures">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Pictures1)</visible>
             <label>1</label>
             <onclick>ActivateWindow(Pictures)</onclick>
@@ -343,12 +600,92 @@
             <label>$INFO[Skin.String(CustomPictures.7.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.7.Path)]</onclick>
           </item>
+		  <item id="12">
+            <label>$INFO[Window.Property(plexbmc.0.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.0.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.0.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.0.title))</visible>
+            <visible>substring(Window.Property(plexbmc.0.type),photo)</visible>
+          </item>
+          <item id="13">
+            <label>$INFO[Window.Property(plexbmc.1.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.1.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.1.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.1.title))</visible>
+            <visible>substring(Window.Property(plexbmc.1.type),photo)</visible>
+          </item>
+          <item id="14">
+            <label>$INFO[Window.Property(plexbmc.2.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.2.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.2.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.2.title))</visible>
+            <visible>substring(Window.Property(plexbmc.2.type),photo)</visible>
+          </item>
+          <item id="15">
+            <label>$INFO[Window.Property(plexbmc.3.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.3.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.3.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.3.title))</visible>
+            <visible>substring(Window.Property(plexbmc.3.type),photo)</visible>
+          </item>
+          <item id="16">
+            <label>$INFO[Window.Property(plexbmc.4.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.4.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.4.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.4.title))</visible>
+            <visible>substring(Window.Property(plexbmc.4.type),photo)</visible>
+          </item>
+          <item id="17">
+            <label>$INFO[Window.Property(plexbmc.5.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.5.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.5.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.5.title))</visible>
+            <visible>substring(Window.Property(plexbmc.5.type),photo)</visible>
+          </item>
+          <item id="18">
+            <label>$INFO[Window.Property(plexbmc.6.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.6.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.6.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.6.title))</visible>
+            <visible>substring(Window.Property(plexbmc.6.type),photo)</visible>
+          </item>
+          <item id="19">
+            <label>$INFO[Window.Property(plexbmc.7.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.7.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.7.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.7.title))</visible>
+            <visible>substring(Window.Property(plexbmc.7.type),photo)</visible>
+          </item>
+          <item id="20">
+            <label>$INFO[Window.Property(plexbmc.8.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.8.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.8.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.8.title))</visible>
+            <visible>substring(Window.Property(plexbmc.8.type),photo)</visible>
+          </item>
+          <item id="21">
+            <label>$INFO[Window.Property(plexbmc.9.title)]</label>
+            <label2>$INFO[Window.Property(plexbmc.9.subtitle)]</label2>
+            <onclick>$INFO[Window.Property(plexbmc.9.path)]</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>!IsEmpty(Window.Property(plexbmc.9.title))</visible>
+            <visible>substring(Window.Property(plexbmc.9.type),photo)</visible>
+          </item>
         </content>
         <include>Animation304</include>
       </control>
       <control type="list" id="305" description="Addons">
         <visible>!Skin.HasSetting(AddonsSectionHide) | Skin.HasSetting(PVR_Enabled)</visible>
-        <visible>IntegerGreaterThan(Container(305).NumItems,0)</visible>
+        <visible>IntegerGreaterThan(Container(305).NumItems,0) | Skin.HasSetting(plexbmc)</visible>
         <onleft>304</onleft>
         <onright>306</onright>
         <onup>315</onup>
@@ -361,35 +698,59 @@
             <onclick>ActivateWindow(PVR)</onclick>
           </item>
           <item id="1" description="Weather">
-            <visible>!Skin.HasSetting(Addons1)</visible>
+            <visible>!Skin.HasSetting(plexbmc)</visible>
+			<visible>!Skin.HasSetting(Addons1)</visible>
             <label>8</label>
             <onclick>ActivateWindow(Weather)</onclick>
           </item>
           <item id="2" description="Program apps">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Addons2)</visible>
             <label>0</label>
             <onclick>XBMC.ActivateWindow(Programs,Addons,return)</onclick>
           </item>
           <item id="3" description="Picture apps">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Addons3)</visible>
             <label>1</label>
             <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
           </item>
           <item id="4" description="Video apps">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Addons4)</visible>
             <label>157</label>
             <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
           </item>
           <item id="5" description="Music apps">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Addons5)</visible>
             <label>2</label>
             <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
           </item>
           <item id="6" description="Settings">
+            <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Addons6)</visible>
             <label>5</label>
             <onclick>ActivateWindow(AddonBrowser,root)</onclick>
+          </item>
+		  <item id="11" description="Pictures">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <label>1</label>
+            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22&quot;,return)</onclick>
+          </item>
+		  <item id="12">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <label>157</label>
+            <onclick>ActivateWindow(Videos,&quot;plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22&quot;,return)</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+          </item>
+          <item id="13">
+            <visible>Skin.HasSetting(plexbmc)</visible>
+            <label>2</label>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,&quot;plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22&quot;,return)</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,&quot;plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22&quot;,return)</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
           </item>
           <item id="3" description="Custom Apps">
             <visible>!IsEmpty(Skin.String(CustomAddons.1.Path))</visible>
@@ -431,6 +792,18 @@
         <ondown>306</ondown>
         <include>Sublist</include>
         <content>
+          <item id="0" description="Plexbmc">
+            <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
+            <label>go PLEX</label>
+            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+            <onclick>XBMC.ReloadSkin()</onclick>
+          </item>
+          <item id="0" description="Plexbmc">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <label>go XBMC</label>
+            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+            <onclick>XBMC.ReloadSkin()</onclick>
+          </item>
           <item id="1" description="Now playing Video">
             <visible>Player.HasMedia</visible>
             <label>31977</label>
@@ -602,19 +975,30 @@
             <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
             <onclick>SetFocus(305)</onclick>
           </item>
-          <item id="6" description="XBMC">
-            <label fallback="XBMC">$INFO[Skin.String(XBMCName)]</label>
+          <item id="6" description="Plexbmc">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+			<label fallback="PLEX">$INFO[Skin.String(XBMCName)]</label>
+            <onclick>SetFocus(306)</onclick>
+          </item>
+		  <item id="6" description="XBMC">
+            <visible>![System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)]</visible>
+			<label fallback="XBMC">$INFO[Skin.String(XBMCName)]</label>
             <onclick>SetFocus(306)</onclick>
           </item>
         </content>
       </control>
     </control>
     <control type="group" id="700" description="Shelf items">
-      <include condition="!Skin.HasSetting(MoviesShelf_Image)">Movies_RA</include>
-      <include condition="!Skin.HasSetting(TVShelf_Image)">TV_RA</include>
-      <include condition="!Skin.HasSetting(MusicShelf_Image)">Music_RA</include>
+      <include condition="![Skin.HasSetting(MoviesShelf_Image) | Skin.HasSetting(plexbmc)]">Movies_RA</include>
+	  <include condition="![Skin.HasSetting(TVShelf_Image) | Skin.HasSetting(plexbmc)]">TV_RA</include>
+      <include condition="![Skin.HasSetting(MusicShelf_Image) | Skin.HasSetting(plexbmc)]">Music_RA</include>
       <include condition="Skin.HasSetting(PicturesShelf_Custom)">Pictures_Shortcuts</include>
       <include condition="Skin.HasSetting(AddonsShelf_Custom)">Addons_Shortcuts</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Movies_RA</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.TV_RA</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Music_RA</include>
+	  <!--<include condition="Skin.HasSetting(plexbmc)">Plexbmc.Pictures_Shortcuts</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Addons_Shortcuts</include>-->
       <control type="group" description="Playing">
         <visible>ControlGroup(9000).HasFocus(306) + Player.HasMedia</visible>
         <posy>57</posy>
@@ -625,22 +1009,38 @@
       <control type="image" description="Custom Image">
         <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
         <include>ListVisibleFade</include>
-        include&gt;
-        <posx>68</posx><posy>111</posy><width>1785</width><height>303</height><fadetime>100</fadetime><aspectratio aligny="bottom">keep</aspectratio><texture>$VAR[ShelfIcon]</texture></control>
+        <posx>68</posx>
+        <posy>111</posy>
+        <width>1785</width>
+        <height>303</height>
+        <fadetime>100</fadetime>
+        <aspectratio aligny="bottom">keep</aspectratio>
+        <texture>$VAR[ShelfIcon]</texture>
+      </control>
       <control type="image" description="Reflection Custom Image">
         <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
         <include>ListVisibleFade</include>
-        include&gt;
-        <posx>68</posx><posy>414</posy><width>1785</width><height>303</height><aspectratio aligny="top">keep</aspectratio><texture flipy="true" diffuse="img/Reflection.png">$VAR[ShelfIcon]</texture></control>
+        <posx>68</posx>
+        <posy>414</posy>
+        <width>1785</width>
+        <height>303</height>
+        <aspectratio aligny="top">keep</aspectratio>
+        <texture flipy="true" diffuse="img/Reflection.png">$VAR[ShelfIcon]</texture>
+      </control>
       <control type="image" description="Logo">
         <visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) + !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
         <include>ListVisibleFade</include>
-        include&gt;
-        <posx>68</posx><posy>138</posy><width>1785</width><height>324</height><aspectratio aligny="bottom">keep</aspectratio><texture>img/XBMCHomeLogo.png</texture></control>
+        <posx>68</posx>
+        <posy>138</posy>
+        <width>1785</width>
+        <height>324</height>
+        <aspectratio aligny="bottom">keep</aspectratio>
+        <texture>$VAR[ShelfLogo]</texture>
+      </control>
     </control>
     <control type="group" description="RSS">
       <control type="rss" description="RSS Feed">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+		<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
         <visible>ControlGroup(9000).HasFocus(306)</visible>
         <include>VisibleFadeEffect</include>
         <posx>0</posx>

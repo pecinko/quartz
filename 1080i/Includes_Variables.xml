@@ -16,6 +16,10 @@
     <value condition="Control.HasFocus(305) + !Control.IsVisible(315) + Skin.HasSetting(AddonsShelf_Image)">$INFO[Skin.String(AddonsShelf_Icon)]</value>
     <value condition="Control.HasFocus(306) + Skin.HasSetting(XBMCShelf_Image)">$INFO[Skin.String(XBMCShelf_Icon)]</value>
   </variable>
+  <variable name="ShelfLogo" description="Home Shelf Logo">
+    <value condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">img/X_PlexHomeLogo.png</value>
+	<value>img/XBMCHomeLogo.png</value>
+  </variable>
   <variable name="QuitLabel2" description="Label2 for skin settings Quit function item">
     <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
     <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
