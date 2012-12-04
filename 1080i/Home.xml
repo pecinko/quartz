@@ -1057,7 +1057,7 @@
 		  <item id="11" description="Pictures">
             <visible>Skin.HasSetting(plexbmc)</visible>
             <label>1</label>
-            <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22&quot;,return)</onclick>
+            <onclick>ActivateWindow(pictures,&quot;plugin://plugin.video.plexbmc/?url=http://photo&amp;mode=22&quot;,return)</onclick>
           </item>
 		  <item id="12">
             <visible>Skin.HasSetting(plexbmc)</visible>
@@ -1144,6 +1144,17 @@
             <label>1036</label>
             <onclick>ActivateWindow(Favourites)</onclick>
           </item>
+		  <item id="6" description="PleXBMC Settings">
+			<label>PleXBMC</label>
+            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
+			<visible>Skin.HasSetting(plexbmc)</visible>
+		  </item>
+          <item id="22">
+            <label>Plex Online</label>
+			<onclick>ActivateWindow(VideoLibrary,plugin://plugin.video.plexbmc/?url=http://online&mode=22,return)</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+          </item>					
+
           <item id="4" description="LogOff Profile">
             <visible>System.HasLoginScreen</visible>
             <visible>System.Loggedon</visible>
