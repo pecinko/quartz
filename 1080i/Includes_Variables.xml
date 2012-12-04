@@ -77,7 +77,9 @@
     <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
     <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
     <value condition="Window.IsActive(weather)">$INFO[Window(Weather).Property(WeatherProvider)]</value>
+    <value condition="Skin.hassetting(plexbmc) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
     <value>$INFO[Container.FolderName]</value>
+	
   </variable>
   <variable name="PVR_Headings" description="PVR Headings">
     <value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
