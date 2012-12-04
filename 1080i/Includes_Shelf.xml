@@ -115,7 +115,7 @@
     <height>402</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
-    <itemlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
+    <itemlayout condition="!Skin.HasSetting(MoviesShelf_Custom)" height="387" width="254">
       <control type="image" description="Reflection">
         <posx>26</posx>
         <posy>330</posy>
@@ -133,7 +133,7 @@
         <aspectratio>scale</aspectratio>
       </control>
     </itemlayout>
-    <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
+    <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom)" height="387" width="254">
       <control type="group">
         <control type="image" description="Reflection">
           <posx>26</posx>
@@ -283,7 +283,7 @@
     <height>402</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
-    <itemlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="357" width="444">
+    <itemlayout condition="!Skin.HasSetting(TVShelf_Custom)" height="357" width="444">
       <control type="image" description="Reflection">
         <posx>27</posx>
         <posy>330</posy>
@@ -335,7 +335,7 @@
         </control>
       </control>
     </itemlayout>
-    <focusedlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="357" width="444">
+    <focusedlayout condition="!Skin.HasSetting(TVShelf_Custom)" height="357" width="444">
       <control type="group">
         <control type="image" description="Reflection">
           <posx>27</posx>
