@@ -2366,7 +2366,7 @@
         <visible>Control.IsVisible(315)</visible>
         <include>ShelfTopLabel</include>
         <include>LabelVisibleFade</include>
-        <label>[B]$INFO[Container(315).ListItem.Property(ItemType)][/B]</label>
+        <label>[B]Recently viewed channels[/B]</label>
       </control>
       <control type="panel" id="315" description="TOP Shortcuts">
         <visible>ControlGroup(9000).HasFocus(305) | Control.HasFocus(315)</visible>
