@@ -2376,7 +2376,71 @@
         <onright>315</onright>
         <include>MusicShortcutsCommons</include>
         <content>
-          <item id="1" description="Addons">
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.1.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.1.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.1.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.2.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.2.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.2.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.2.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.3.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.3.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.3.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.3.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.4.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.4.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.4.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.4.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.5.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.5.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.5.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.5.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.6.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.6.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.6.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.6.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.7.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.7.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.7.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.7.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+          <item id="1" description="Music">
+            <visible>!Skin.HasSetting(AddonsShelf_Custom)</visible>
+            <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.8.Path))</visible>
+            <label>$INFO[Window.Property(Plexbmc.LatestChannel.8.Title)]</label>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestChannel.8.Path)]</onclick>
+            <thumb>$INFO[Window.Property(Plexbmc.LatestChannel.8.Thumb)]</thumb>
+            <property name="ItemType">$LOCALIZE[359]</property>
+          </item>
+ 		  <item id="1" description="Addons">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
             <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.1.Label))]</label>

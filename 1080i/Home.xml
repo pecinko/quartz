@@ -1333,8 +1333,8 @@
 	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Movies_RA</include>
 	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.TV_RA</include>
 	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Music_RA</include>
-	  <!--<include condition="Skin.HasSetting(plexbmc)">Plexbmc.Pictures_Shortcuts</include>
-	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Addons_Shortcuts</include>-->
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Pictures_Shortcuts</include>
+	  <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Addons_Shortcuts</include>
       <control type="group" description="Playing">
         <visible>ControlGroup(9000).HasFocus(306) + Player.HasMedia</visible>
         <posy>57</posy>
