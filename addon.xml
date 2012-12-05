@@ -1,13 +1,13 @@
-<addon id="skin.quartz" version="3.3.9" name="Quartz" provider-name="Pecinko">
+<addon id="skin.quartz3.plexbmc" version="3.3.9" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
-    <import addon="script.favourites" version="3.2.0"/>
-    <import addon="script.watchlist" version="0.1.8"/>
+    <!--<import addon="script.favourites" version="3.2.0"/>
+    <import addon="script.watchlist" version="0.1.8"/>-->
   </requires>
   <extension
     point="xbmc.gui.skin"
     defaultthemename="Textures.xbt"
-    debugging="true">
+    debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	
   </extension>
