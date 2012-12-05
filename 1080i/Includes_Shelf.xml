@@ -1963,7 +1963,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.1.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.1.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.1.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.1.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.1.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -1972,7 +1972,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.2.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.2.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.2.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.2.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.2.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -1981,7 +1981,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.3.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.3.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.3.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.3.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.3.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -1990,7 +1990,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.4.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.4.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.4.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.4.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.4.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -1999,7 +1999,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.5.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.5.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.5.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.5.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.5.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -2008,7 +2008,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.6.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.6.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.6.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.6.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.6.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -2017,7 +2017,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.7.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.7.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.7.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.7.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.7.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -2026,7 +2026,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.8.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.8.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.8.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.8.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.8.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -2035,7 +2035,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.9.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.9.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.9.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.9.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.9.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
@@ -2044,7 +2044,7 @@
             <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.10.Path))</visible>
             <label>$INFO[Window.Property(Plexbmc.LatestAlbum.10.Artist),, - ]$INFO[Window.Property(Plexbmc.LatestAlbum.10.Title)]</label>
             <onclick>PlayList.Clear</onclick>
-            <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Path)])</onclick>
+            <onclick>$INFO[Window(Home).Property(Plexbmc.LatestAlbum.10.Path)]</onclick>
             <thumb>$INFO[Window.Property(Plexbmc.LatestAlbum.10.Thumb)]</thumb>
             <property name="ItemType">$LOCALIZE[359]</property>
           </item>
