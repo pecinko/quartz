@@ -1951,7 +1951,7 @@
         <label>[B]$INFO[Container(313).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="313" description="TOP Shortcuts">
-        <visible>[Skin.HasSetting(MusicShelf_Custom)] + [ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
+        <visible>[ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
         <onup>303</onup>
         <ondown>303</ondown>
         <onleft>313</onleft>
