@@ -1,4 +1,4 @@
-<addon id="skin.quartz3.plexbmc" version="3.3.9" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
+<addon id="skin.quartz3.plexbmc" version="0.5" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
     <!--<import addon="script.favourites" version="3.2.0"/>
