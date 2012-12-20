@@ -49,6 +49,7 @@
   </variable>
   <variable name="Overlay" description="Overlay image">
     <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay/]</value>
+    <value condition="ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay/]</value>
     <value>$INFO[ListItem.Overlay]</value>
   </variable>
   <variable name="PVROverlay" description="PVR Overlay image">
