@@ -287,14 +287,14 @@
         <onclick>Skin.ToggleSetting(TV2)</onclick>
         <selected>!Skin.HasSetting(TV2)</selected>
       </control>
-      <control type="radiobutton" id="203">
+      <!--<control type="radiobutton" id="203">
         <visible>Library.HasContent(TVShows)</visible>
         <visible>!Skin.HasSetting(TVSectionHide) + Container(50).HasFocus(1002)</visible>
         <include>SettingsSubmenuButtons</include>
         <label>$LOCALIZE[31981]</label>
         <onclick>Skin.ToggleSetting(TV5)</onclick>
         <selected>!Skin.HasSetting(TV5)</selected>
-      </control>
+      </control>-->
       <control type="button" id="204">
         <visible>!Skin.HasSetting(TVSectionHide) + Container(50).HasFocus(1002)</visible>
         <include>SettingsSubmenuButtons</include>

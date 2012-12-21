@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="2901">
+<window>
   <defaultcontrol always="true">100</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
+  
   <zorder>2</zorder>
   <controls>
     <control type="group">

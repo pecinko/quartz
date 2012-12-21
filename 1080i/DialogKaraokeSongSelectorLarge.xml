@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="144">
+<window type="dialog">
   <include>OpenClose</include>
   <controls>
     <control type="group">

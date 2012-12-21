@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="29">
+<window>
   <defaultcontrol always="true">52</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <include>OpenClose</include>
   <controls>
     <control type="group" description="BG and icons">

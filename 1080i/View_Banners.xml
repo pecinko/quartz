@@ -29,7 +29,7 @@
               <width>756</width>
               <height>135</height>
               <include>Icon_Fade</include>
-              <texture background="true">$INFO[ListItem.Thumb]</texture>
+              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Icon">
@@ -197,7 +197,7 @@
               <width>771</width>
               <height>144</height>
               <include>Icon_Fade</include>
-              <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
+              <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image" description="Thumb">
@@ -206,7 +206,7 @@
               <width>771</width>
               <height>144</height>
               <include>Icon_Fade</include>
-              <texture background="true">$INFO[ListItem.Thumb]</texture>
+              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio aligny="top">stretch</aspectratio>
             </control>
             <control type="image" description="Icon">

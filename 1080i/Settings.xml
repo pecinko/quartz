@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="4">
+<window>
   <defaultcontrol always="true">52</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
@@ -58,10 +58,6 @@
           <item id="0" description="Appearance">
             <label>480</label>
             <onclick>activatewindow(AppearanceSettings)</onclick>
-          </item>
-          <item id="1" description="Skin options">
-            <label>166</label>
-            <onclick>activatewindow(56)</onclick>
           </item>
           <item id="2" description="Media Sources">
             <label>20094</label>

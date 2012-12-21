@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="0">
+<window>
   <defaultcontrol always="true">8998</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <include>OpenClose</include>
-  <onload condition="IsEmpty(Window(Home).Property(Quartz_Watchlist))">RunScript(script.watchlist,$VAR[WatchlistParameters])</onload>
-  <onload condition="IsEmpty(Window(Home).Property(Quartz_Watchlist))">SetProperty(Quartz_Watchlist,True,0)</onload>
   <controls>
     <include>MiniBackground</include>
 	<control type="button" id="8998" description="Fix ATV1 focus bug">
@@ -67,7 +65,6 @@
       <orientation>horizontal</orientation>
       <control type="list" id="301" description="Movies">
         <visible>!Skin.HasSetting(MoviesSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(301).NumItems,0)</visible>
         <onleft>306</onleft>
         <onright>302</onright>
         <onup>311</onup>
@@ -146,7 +143,6 @@
       </control>
       <control type="list" id="302" description="TVShows">
         <visible>!Skin.HasSetting(TVSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(302).NumItems,0)</visible>
         <onleft>301</onleft>
         <onright>303</onright>
         <onup>312</onup>
@@ -163,14 +159,14 @@
             <visible>!Skin.HasSetting(TV2)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>31289</label>
-            <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+            <onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
           </item>
-          <item id="2" description="Browse 5 MENU ITEM ADDED Watchlist">
+          <!--<item id="2" description="Browse 5 MENU ITEM ADDED Watchlist">
             <visible>!Skin.HasSetting(TV5)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>31981</label>
-            <onclick>ActivateWindow(1113)</onclick>
-          </item>
+            <onclick>ActivateWindow(Videos,InProgressShows,return)</onclick>
+          </item>-->
           <item id="3" description="Custom TV">
             <visible>!IsEmpty(Skin.String(CustomTV.1.Path))</visible>
             <label>$INFO[Skin.String(CustomTV.1.Label)]</label>
@@ -223,7 +219,6 @@
       </control>
       <control type="list" id="303" description="Music">
         <visible>!Skin.HasSetting(MusicSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(303).NumItems,0)</visible>
         <onleft>302</onleft>
         <onright>304</onright>
         <onup>313</onup>
@@ -296,7 +291,6 @@
       </control>
       <control type="list" id="304" description="Pictures">
         <visible>!Skin.HasSetting(PicturesSectionHide)</visible>
-        <visible>IntegerGreaterThan(Container(304).NumItems,0)</visible>
         <onleft>303</onleft>
         <onright>305</onright>
         <onup>314</onup>
@@ -348,7 +342,6 @@
       </control>
       <control type="list" id="305" description="Addons">
         <visible>!Skin.HasSetting(AddonsSectionHide) | Skin.HasSetting(PVR_Enabled)</visible>
-        <visible>IntegerGreaterThan(Container(305).NumItems,0)</visible>
         <onleft>304</onleft>
         <onright>306</onright>
         <onup>315</onup>

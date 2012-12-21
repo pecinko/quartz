@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="107">
+<window>
   <type>dialog</type>
   <zorder>2</zorder>
-  <allowoverlay>no</allowoverlay>
+  
   <animation type="WindowOpen">
     <effect type="fade" start="0" end="100" time="240" />
     <effect type="zoom" tween="cubic" easing="out" start="0" end="100" center="960,50" time="240" />

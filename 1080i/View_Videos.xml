@@ -329,7 +329,7 @@
         <posx>1020</posx>
         <posy>141</posy>
         <control type="fixedlist" id="52">
-          <visible>container.content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(Seasons) | container.content(episodes) | container.content(musicvideos) | container.content(files)</visible>
+          <visible>container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(episodes) | container.content(musicvideos) | container.content(files)</visible>
           <posx>0</posx>
           <posy>0</posy>
           <width>802</width>
@@ -833,7 +833,7 @@
         </control>
         <control type="fixedlist" id="57">
           <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>container.content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
+          <visible>container.content(Movies) | container.content(TVshows) | container.content(seasons)</visible>
           <posx>0</posx>
           <posy>0</posy>
           <width>802</width>
@@ -939,7 +939,7 @@
           <posx>-255</posx>
           <posy>525</posy>
           <control type="group" description="Regular Posters">
-            <visible>container.content(seasons) | container.content(movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)]</visible>
+            <visible>container.content(seasons) | container.content(movies) | container.content(TVshows)</visible>
             <posy>117</posy>
             <control type="image" description="Thumb">
               <posx>363</posx>
@@ -1032,7 +1032,7 @@
         </control>
         <control type="fixedlist" id="59">
           <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>container.content(seasons) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(Movies)</visible>
+          <visible>container.content(seasons) | container.content(TVshows) | container.content(Movies)</visible>
           <posx>0</posx>
           <posy>0</posy>
           <width>802</width>
@@ -1106,7 +1106,7 @@
     <control type="group" description="Big Icons">
       <visible>Control.IsVisible(501)</visible>
       <control type="fixedlist" id="501">
-        <visible>Container.content(movies) | [Container.content(tvshows) + !Skin.HasSetting(PostersHide)] | Container.content(seasons)</visible>
+        <visible>Container.content(movies) | Container.content(tvshows) | Container.content(seasons)</visible>
         <posx>-240</posx>
         <posy>111</posy>
         <width>2400</width>
@@ -1124,7 +1124,7 @@
         <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
         <scrolltime easing="inout">280</scrolltime>
-        <itemlayout condition="Container.content(movies) | [Container.content(tvshows) + !Skin.HasSetting(PostersHide)] | Container.content(seasons)" width="480" height="750">
+        <itemlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="480" height="750">
           <control type="image" description="Thumb">
             <posx>56</posx>
             <posy>69</posy>
@@ -1151,7 +1151,7 @@
             <texture flipy="true" scalediffuse="false" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Icon]</texture>
           </control>
         </itemlayout>
-        <focusedlayout condition="Container.content(movies) | [Container.content(tvshows) + !Skin.HasSetting(PostersHide)] | Container.content(seasons)" width="480" height="750">
+        <focusedlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="480" height="750">
           <control type="image" description="Thumb">
             <posx>56</posx>
             <posy>69</posy>
@@ -1278,7 +1278,7 @@
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+          <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="450" width="257">
             <control type="image">
               <posx>35</posx>
               <posy>320</posy>
@@ -1330,7 +1330,7 @@
               </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="450" width="257">
+          <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="450" width="257">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
               <posx>35</posx>
@@ -1548,7 +1548,7 @@
           </focusedlayout>
         </control>
         <control type="group" description="Frame Sliders">
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
+          <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
@@ -1593,7 +1593,7 @@
           </control>
         </control>
 		<control type="group" description="Frame Sliders">
-          <visible>![Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(addons)]</visible>
+          <visible>![Container.Content(Movies) | Container.content(tvshows) | container.content(seasons) | container.content(addons)]</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
@@ -1745,7 +1745,7 @@
               <posy>168</posy>
               <width>771</width>
               <height>144</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1753,7 +1753,7 @@
               <posy>24</posy>
               <width>771</width>
               <height>144</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1794,7 +1794,7 @@
               <posy>168</posy>
               <width>771</width>
               <height>144</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1802,7 +1802,7 @@
               <posy>24</posy>
               <width>771</width>
               <height>144</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1990,7 +1990,7 @@
       <control type="group" description="Container and frame">
         <control type="panel" id="502" description="Grid">
           <visible>Skin.HasSetting(AddViews)</visible>
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
+          <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons) | container.content(files) | container.content(episodes) | container.content(addons)</visible>
           <viewtype label="$LOCALIZE[31976]">Panel</viewtype>
           <posx>835</posx>
           <posy>360</posy>
@@ -2084,7 +2084,7 @@
               <label>[B]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode][/B]</label>
             </control>
           </focusedlayout>
-          <itemlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="350" width="265">
+          <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="350" width="265">
             <control type="image">
               <posx>34</posx>
               <posy>320</posy>
@@ -2136,7 +2136,7 @@
               </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)" height="350" width="265">
+          <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="350" width="265">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
               <posx>34</posx>
@@ -2338,7 +2338,7 @@
           </control>
         </control>
         <control type="group" description="Frames">
-          <visible>Container.Content(Movies) | [container.content(TVshows) + !Skin.HasSetting(PostersHide)] | container.content(seasons)</visible>
+          <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)</visible>
           <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
           <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
@@ -2430,7 +2430,7 @@
       </control>
       <control type="fixedlist" id="500" description="TOP Shortcuts">
         <visible>Skin.HasSetting(AddViews)</visible>
-        <visible>Container.content(movies) | container.content(seasons) | [container.content(tvshows) + !Skin.HasSetting(PostersHide)]</visible>
+        <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
         <onup condition="!Skin.HasSeting(ViewOptions_Hide)">9000</onup>
         <onup condition="Skin.HasSeting(ViewOptions_Hide)">-</onup>
         <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
