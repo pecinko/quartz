@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="113">
+<window>
   <defaultcontrol always="true">901</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
+  
   <include>OpenClose</include>
   <controls>
     <control type="group">

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="2006">
+<window>
   <defaultcontrol always="true">-</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
   <controls>
     <control type="group">

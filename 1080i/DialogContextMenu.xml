@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="106">
+<window>
   <defaultcontrol always="true">996</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <include>DialogOpenClose</include>
   <coordinates>
     <system>1</system>

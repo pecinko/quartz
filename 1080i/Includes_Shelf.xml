@@ -111,7 +111,7 @@
     <include>ListVisibleFade</include>
     <posx>72</posx>
     <posy>84</posy>
-    <width>1776</width>
+    <width>1778</width>
     <height>402</height>
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>

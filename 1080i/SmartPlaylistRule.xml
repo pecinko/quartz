@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="129">
+<window>
   <defaultcontrol always="true">9001</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <include>DialogOpenClose</include>
   <controls>
     <control type="image">

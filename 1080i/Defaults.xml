@@ -189,7 +189,8 @@
     <visible>true</visible>
     <width>711</width>
     <height>36</height>
-    <texturesliderbar>OSD/SeekSliderBack.png</texturesliderbar>
+    <aligny>center</aligny>
+		<texturesliderbar>OSD/SeekSliderBack.png</texturesliderbar>
     <textureslidernib>OSD/ScrollBarNibFO.png</textureslidernib>
     <textureslidernibfocus>OSD/ScrollBarNibFO.png</textureslidernibfocus>
     <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
@@ -199,7 +200,8 @@
     <posy>225</posy>
     <height>75</height>
     <width>450</width>
-    <sliderwidth>100</sliderwidth>
+    <aligny>center</aligny>
+		<sliderwidth>100</sliderwidth>
     <sliderheight>24</sliderheight>
     <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
     <textureslidernib>OSD/SliderNibNF.png</textureslidernib>

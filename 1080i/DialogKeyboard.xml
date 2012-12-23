@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="103">
+<window>
   <defaultcontrol always="true">300</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <controls>
     <control type="group">
       <visible>!Window.IsVisible(numericinput)</visible>

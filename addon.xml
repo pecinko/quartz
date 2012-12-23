@@ -1,8 +1,7 @@
-<addon id="skin.quartz3.plexbmc" version="0.6" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
+<addon id="skin.quartz3.plexbmc" version="0.7" name="Quartz V3 plexbmc" provider-name="hippojay (original skin by Pecinko)">
   <requires>
-    <import addon="xbmc.gui" version="3.00"/>
-    <!--<import addon="script.favourites" version="3.2.0"/>
-    <import addon="script.watchlist" version="0.1.8"/>-->
+    <import addon="xbmc.gui" version="4.00"/>
+    <!--<import addon="script.favourites" version="4.0.4"/>-->
   </requires>
   <extension
     point="xbmc.gui.skin"

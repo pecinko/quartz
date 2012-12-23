@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="122">
-  <defaultcontrol always="true">2</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
+  <window>
+	<defaultcontrol always="true">2</defaultcontrol>
+  
   <controls>
     <control type="image">
       <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
