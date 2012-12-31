@@ -1508,13 +1508,13 @@
   <include name="Plexbmc.Movies_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(311)</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestMovie.1.Path)) + Control.IsVisible(311)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>[B]$INFO[Container(311).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="311" description="TOP Shortcuts">
-        <visible>[ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestMovie.1.Path)) + [ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]</visible>
 		<onup>-</onup>
         <ondown>301</ondown>
         <onleft>311</onleft>
@@ -1718,13 +1718,13 @@
   <include name="Plexbmc.TV_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312)</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestEpisode.1.Path)) + Control.IsVisible(312)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>[B]$INFO[Container(312).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="312" description="TOP Shortcuts">
-        <visible>[ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestEpisode.1.Path)) + [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
         <onup>-</onup>
         <ondown>302</ondown>
         <onleft>312</onleft>
@@ -1945,13 +1945,13 @@
   <include name="Plexbmc.Music_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(313)</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.1.Path)) + Control.IsVisible(313)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>[B]$INFO[Container(313).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="313" description="TOP Shortcuts">
-        <visible>[ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestAlbum.1.Path)) + [ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
         <onup>303</onup>
         <ondown>303</ondown>
         <onleft>313</onleft>
@@ -2249,13 +2249,13 @@
   <include name="Plexbmc.Pictures_Shortcuts">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(314)</visible>
+        <visible>!IsEmpty(Skin.String(ShelfPictures.1.Label)) + Control.IsVisible(314)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>[B]$INFO[Container(314).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="314" description="TOP Shortcuts">
-        <visible>ControlGroup(9000).HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(904)</visible>
+        <visible>!IsEmpty(Skin.String(ShelfPictures.1.Label)) + ControlGroup(9000).HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(904)</visible>
         <onup>304</onup>
         <ondown>304</ondown>
         <onleft>314</onleft>
@@ -2363,13 +2363,13 @@
   <include name="Plexbmc.Addons_Shortcuts">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(315)</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path)) + Control.IsVisible(315)</visible>
         <include>ShelfTopLabel</include>
         <include>LabelVisibleFade</include>
         <label>[B]Recently viewed channels[/B]</label>
       </control>
       <control type="panel" id="315" description="TOP Shortcuts">
-        <visible>ControlGroup(9000).HasFocus(305) | Control.HasFocus(315)</visible>
+        <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path)) + [ ControlGroup(9000).HasFocus(305) | Control.HasFocus(315) ]</visible>
         <onup>305</onup>
         <ondown>305</ondown>
         <onleft>315</onleft>
