@@ -68,7 +68,6 @@
       <orientation>horizontal</orientation>
       <control type="list" id="301" description="Movies">
         <visible>!Skin.HasSetting(MoviesSectionHide)</visible>
-        <visible>Skin.HasSetting(plexbmc)</visible>
         <onleft>306</onleft>
         <onright>302</onright>
         <onup>311</onup>
@@ -312,7 +311,6 @@
       </control>
       <control type="list" id="302" description="TVShows">
         <visible>!Skin.HasSetting(TVSectionHide)</visible>
-        <visible>Skin.HasSetting(plexbmc)</visible>
         <onleft>301</onleft>
         <onright>303</onright>
         <onup>312</onup>
@@ -554,7 +552,6 @@
       </control>
       <control type="list" id="303" description="Music">
         <visible>!Skin.HasSetting(MusicSectionHide)</visible>
-        <visible>Skin.HasSetting(plexbmc)</visible>
         <onleft>302</onleft>
         <onright>304</onright>
         <onup>313</onup>
@@ -792,7 +789,6 @@
       </control>
       <control type="list" id="304" description="Pictures">
         <visible>!Skin.HasSetting(PicturesSectionHide)</visible>
-        <visible>Skin.HasSetting(plexbmc)</visible>
         <onleft>303</onleft>
         <onright>305</onright>
         <onup>314</onup>
@@ -1005,7 +1001,6 @@
       </control>
       <control type="list" id="305" description="Addons">
         <visible>!Skin.HasSetting(AddonsSectionHide) | Skin.HasSetting(PVR_Enabled)</visible>
-        <visible>Skin.HasSetting(plexbmc)</visible>
         <onleft>304</onleft>
         <onright>306</onright>
         <onup>315</onup>
