@@ -1071,7 +1071,12 @@
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window.Property(plexbmc.myplex))</visible>
             <label>myPlex Queue</label>
             <onclick>$INFO[Window.Property(plexbmc.queue)]</onclick>
-          </item>		  
+          </item>	
+          <item id="22">
+            <label>Plex Online</label>
+			<onclick>ActivateWindow(VideoLibrary,plugin://plugin.video.plexbmc/?url=http://online&mode=22,return)</onclick>
+            <visible>Skin.HasSetting(plexbmc)</visible>
+          </item>						  
           <item id="3" description="Custom Apps">
             <visible>!IsEmpty(Skin.String(CustomAddons.1.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.1.Label)]</label>
@@ -1129,6 +1134,11 @@
             <label>31977</label>
             <onclick>fullscreen</onclick>
           </item>
+		  <item id="6" description="PleXBMC Settings">
+			<label>PleXBMC</label>
+            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
+			<visible>Skin.HasSetting(plexbmc)</visible>
+		  </item>
           <item id="2" description="Settings">
             <visible>!Skin.HasSetting(HideSettings)</visible>
             <label>5</label>
@@ -1139,17 +1149,6 @@
             <label>1036</label>
             <onclick>ActivateWindow(Favourites)</onclick>
           </item>
-		  <item id="6" description="PleXBMC Settings">
-			<label>PleXBMC</label>
-            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-			<visible>Skin.HasSetting(plexbmc)</visible>
-		  </item>
-          <item id="22">
-            <label>Plex Online</label>
-			<onclick>ActivateWindow(VideoLibrary,plugin://plugin.video.plexbmc/?url=http://online&mode=22,return)</onclick>
-            <visible>Skin.HasSetting(plexbmc)</visible>
-          </item>					
-
           <item id="4" description="LogOff Profile">
             <visible>System.HasLoginScreen</visible>
             <visible>System.Loggedon</visible>
