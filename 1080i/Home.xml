@@ -1067,6 +1067,11 @@
             <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,&quot;plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22&quot;,return)</onclick>
             <visible>Skin.HasSetting(plexbmc)</visible>
           </item>
+	      <item id="3" description="myplex Queue">
+            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window.Property(plexbmc.myplex))</visible>
+            <label>myPlex Queue</label>
+            <onclick>$INFO[Window.Property(plexbmc.queue)]</onclick>
+          </item>		  
           <item id="3" description="Custom Apps">
             <visible>!IsEmpty(Skin.String(CustomAddons.1.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.1.Label)]</label>
@@ -1128,11 +1133,6 @@
             <visible>!Skin.HasSetting(HideSettings)</visible>
             <label>5</label>
             <onclick>ActivateWindow(Settings)</onclick>
-          </item>
-	      <item id="3" description="myplex Queue">
-            <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window.Property(plexbmc.myplex))</visible>
-            <label>myPlex Queue</label>
-            <onclick>$INFO[Window.Property(plexbmc.queue)]</onclick>
           </item>
           <item id="3" description="Favorites">
             <visible>!Skin.HasSetting(XBMC2)</visible>
@@ -1303,7 +1303,13 @@
           </item>
           <item id="5" description="Addons">
             <visible>Control.IsVisible(305)</visible>
+            <visible>![System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)]</visible>
             <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
+            <onclick>SetFocus(305)</onclick>
+          </item>
+          <item id="5" description="Channels">
+            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+            <label fallback="Channels">$INFO[Skin.String(AddonsName)]</label>
             <onclick>SetFocus(305)</onclick>
           </item>
           <item id="6" description="Plexbmc">
