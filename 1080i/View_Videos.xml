@@ -45,12 +45,12 @@
             <include>HD_Badge</include>
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700) | ListItem.IsFolder</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>![IntegerGreaterThan(ListItem.property(VideoResolution),700) | ListItem.IsFolder]</visible>
+              <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
               <width>711</width>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
@@ -66,12 +66,12 @@
             <include>HD_Badge</include>
             <include>ArrowFO</include>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700) | ListItem.IsFolder</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>![IntegerGreaterThan(ListItem.property(VideoResolution),700) | ListItem.IsFolder]</visible>
+              <visible>![IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder]</visible>
               <width>711</width>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
@@ -856,13 +856,13 @@
             <include>Sets</include>
             <include>Unwatched_Badge</include>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>720</width>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -880,13 +880,13 @@
             <include>SetsFO</include>
             <include>Unwatched_BadgeFO</include>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>720</width>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1055,13 +1055,13 @@
             <include>Sets</include>
             <include>Unwatched_Badge</include>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>720</width>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <include>52MainLabel</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1072,13 +1072,13 @@
             <include>SetsFO</include>
             <include>Unwatched_BadgeFO</include>
             <control type="label" description="Main Label">
-              <visible>!IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>!IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>720</width>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label" description="Main Label">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <include>52MainLabelFO</include>
               <label>$INFO[ListItem.Label]</label>
             </control>
@@ -1680,12 +1680,12 @@
         <align>right</align>
         <orientation>horizontal</orientation>
         <control type="image">
-          <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+          <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
           <posx>1500</posx>
           <height>24</height>
           <width>45</width>
           <aspectratio>keep</aspectratio>
-          <texture>$INFO[ListItem.property(VideoResolution),badges/,.png]</texture>
+          <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
         </control>
         <control type="image" description="Rating">
           <visible>!IsEmpty(ListItem.Rating)</visible>
@@ -2606,11 +2606,11 @@
               <label>[COLOR=Grey]$LOCALIZE[33029]:[/COLOR] $VAR[500TopLabel]$VAR[Trailer, • ]</label>
             </control>
             <control type="image">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>40</width>
               <height>39</height>
               <aspectratio>keep</aspectratio>
-              <texture>$INFO[ListItem.property(VideoResolution),badges/,.png]</texture>
+              <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
             </control>
           </control>
           <control type="label" description="Genre">
@@ -2846,11 +2846,11 @@
               <include>10Rating</include>
             </control>
             <control type="image">
-              <visible>IntegerGreaterThan(ListItem.property(VideoResolution),700)</visible>
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
               <width>40</width>
               <height>39</height>
               <aspectratio>keep</aspectratio>
-              <texture>$INFO[ListItem.property(VideoResolution),badges/,.png]</texture>
+              <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
             </control>
           </control>
         </control>
