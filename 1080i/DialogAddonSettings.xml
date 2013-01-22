@@ -86,6 +86,7 @@
       </control>
       <control type="button" id="3" description="Default Button">
         <font>size22</font>
+        <align>left</align>
       </control>
       <control type="radiobutton" id="4" description="Default RadioButton">
         <font>size22</font>

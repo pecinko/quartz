@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">52</defaultcontrol>
   
@@ -88,23 +88,23 @@
             <label>8</label>
             <onclick>activatewindow(WeatherSettings)</onclick>
           </item>
-          <item id="8" description="Network">
-            <label>705</label>
-            <onclick>activatewindow(NetworkSettings)</onclick>
+          <item id="9" description="Service">
+            <label>14036</label>
+            <onclick>activatewindow(ServiceSettings)</onclick>
           </item>
-          <item id="9" description="System">
+          <item id="10" description="System">
             <label>13000</label>
             <onclick>activatewindow(SystemSettings)</onclick>
           </item>
-          <item id="10" description="Profiles">
+          <item id="11" description="Profiles">
             <label>13200</label>
             <onclick>ActivateWindow(Profiles)</onclick>
           </item>
-          <item id="11" description="File manager">
+          <item id="12" description="File manager">
             <label>10003</label>
             <onclick>ActivateWindow(filemanager)</onclick>
           </item>
-          <item id="12" description="Sys Info">
+          <item id="13" description="Sys Info">
             <label>$LOCALIZE[138]</label>
             <onclick>activatewindow(systeminfo)</onclick>
           </item>
@@ -254,7 +254,7 @@
         <align>center</align>
         <label>$LOCALIZE[24033]. $LOCALIZE[24022]. $LOCALIZE[24021]. $LOCALIZE[24034]. $LOCALIZE[25000].</label>
       </control>
-      <control type="label" description="Weather">
+      <control type="label" description="PVR">
         <visible>Container(52).HasFocus(7)</visible>
         <width>660</width>
         <height>225</height>
@@ -263,10 +263,21 @@
         <scroll>false</scroll>
         <aligny>top</aligny>
         <align>center</align>
-        <label>$LOCALIZE[33063]. $LOCALIZE[5].</label>
+        <label>$LOCALIZE[19069]. $LOCALIZE[264]. $LOCALIZE[14095]. $LOCALIZE[19259].</label>
       </control>
-      <control type="label" description="Network">
+      <control type="label" description="Weather">
         <visible>Container(52).HasFocus(8)</visible>
+        <width>660</width>
+        <height>225</height>
+        <font>size22</font>
+        <wrapmultiline>true</wrapmultiline>
+        <scroll>false</scroll>
+        <aligny>top</aligny>
+        <align>center</align>
+        <label>$LOCALIZE[24029].</label>
+      </control>
+      <control type="label" description="Service">
+        <visible>Container(52).HasFocus(9)</visible>
         <width>660</width>
         <height>225</height>
         <font>size22</font>
@@ -277,7 +288,7 @@
         <label>$LOCALIZE[14036]. $LOCALIZE[1200]. $LOCALIZE[798].</label>
       </control>
       <control type="label" description="System">
-        <visible>Container(52).HasFocus(9)</visible>
+        <visible>Container(52).HasFocus(10)</visible>
         <width>660</width>
         <height>225</height>
         <font>size22</font>
@@ -288,7 +299,7 @@
         <label>$LOCALIZE[21373]. $LOCALIZE[337]. $LOCALIZE[14094]. $LOCALIZE[14095]. $LOCALIZE[14092]. $LOCALIZE[20100].</label>
       </control>
       <control type="label" description="Profiles">
-        <visible>Container(52).HasFocus(10)</visible>
+        <visible>Container(52).HasFocus(11)</visible>
         <width>660</width>
         <height>225</height>
         <font>size22</font>
@@ -299,7 +310,7 @@
         <label>$LOCALIZE[20096]. $LOCALIZE[20100]. $LOCALIZE[20115].</label>
       </control>
       <control type="label" description="File manager">
-        <visible>Container(52).HasFocus(11)</visible>
+        <visible>Container(52).HasFocus(12)</visible>
         <width>660</width>
         <height>225</height>
         <font>size22</font>
@@ -310,7 +321,7 @@
         <label>$LOCALIZE[744]. $LOCALIZE[115]. $LOCALIZE[116]. $LOCALIZE[117]. $LOCALIZE[118].</label>
       </control>
       <control type="label" description="System info">
-        <visible>Container(52).HasFocus(12)</visible>
+        <visible>Container(52).HasFocus(13)</visible>
         <width>660</width>
         <height>225</height>
         <font>size22</font>
