@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Translator: Özgür BASKIN (queeup)-->
 <!--Email: ozgur.baskin@gmail.com-->
-<!--Date of translation: 26/11/2010-->
-<!--Turkish strings based on English strings revision 35254-->
+<!--Date of translation: 17/01/2013-->
 <strings>
   <!-- Misc labels -->
   <string id="31000">Değiştir</string>
@@ -20,7 +19,7 @@
   <string id="31023">Oynatılıyor</string>
   <string id="31024">Sayfa</string>
   <string id="31025">Nesne</string>
-  <string id="31026">Çeşitli Ayarlar</string>
+  <string id="31026">Çeşitli Seçenekler</string>
   <string id="31027">Yer</string>
  
   <!-- View Type labels -->
@@ -32,7 +31,7 @@
   <string id="31033">Bilgi</string>
 
   <!-- Extra labels -->
-  <string id="31040">Şimdi Çalınıyor</string>
+  <string id="31040">Şimdi Oynatılıyor</string>
 
   <string id="31042">OYNATILIYOR</string>
   <string id="31043">DURAKLATILDI</string>
@@ -50,11 +49,11 @@
   <string id="31057">Çalma listesini kapat</string>
   <string id="31058">Sistem müzik dosyaları</string>
   <string id="31059">Geçerli çalma listesi</string>
-  <string id="31060">Bu dosya istiflendi, oynatmak istediğiniz bölümü seçin.</string>
+  <string id="31060">Bu dosya yığınlandı, oynatmak istediğiniz bölümü seçin.</string>
   <string id="31061">Seçilen Geçerli Parça</string>
   
   <!-- Skin Settings labels -->
-  <string id="31100"></string>
+  <string id="31100">  (Favorilerden öğe atamak için tıklat)</string>
   <string id="31101">Giriş ekranı seçenekleri</string>
   <string id="31102">Arka Plan</string>
   <string id="31103">Resim slayt gösterisinde "DURAKLATILDI"yı göster</string>
@@ -74,7 +73,7 @@
   <string id="31117">Son Eklenen Videoları Göster</string>
   <string id="31118">Ana Sayfa Programlar Altmenüsü</string>
   <string id="31119"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31120">TUŞ ETİKETİ</string>
+  <string id="31120">DÜĞME ETİKETİ</string>
   <string id="31121"></string>  <!-- blanked 2010-11-12 -->
   <string id="31122">Hava Durumu Sayfası</string>
   <string id="31123">TV Programları için "Afiş" yerine "Poster" kullan</string>
@@ -83,13 +82,16 @@
 
   <string id="31126"></string>  <!-- blanked 2010-11-12 -->
   <string id="31127"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31128">Lyrics</string>
+  <string id="31128">Şarkı Sözleri</string>
   <string id="31129"></string>  <!-- blanked 2010-11-12 -->
   <string id="31130"></string>  <!-- blanked 2010-11-12 -->
   
-  <string id="31131">Yatay Ana Menü</string>
-  <string id="31132">Lyrics Eklentisi</string>
+  <string id="31131">Yatay Ana Menü Kullan</string>
+  <string id="31132">Şarkı Sözleri Eklentisi</string>
   <string id="31133">Altyazı Eklentisi</string>
+  <string id="31134">Giriş Sayfası Videolar Alt menüsü</string>
+  <string id="31135">Giriş Sayfası Müzik Alt menüsü</string>
+  <string id="31136">Giriş Sayfası Resimler Alt menüsü</string>
 
   <string id="31140">Müzik OSD</string>
   <string id="31141">Video OSD</string>
@@ -100,7 +102,7 @@
   <string id="31202">Oyuncuları Göster</string>
   <string id="31203">Şarkını Seç</string>
   <string id="31204">Bölge Bağlantıları</string>
-  <string id="31205">Lyrics Kaynağı</string>
+  <string id="31205">Şarkı Sözleri Kaynağı</string>
 
   <!-- Extra labels -->
   <string id="31300">Mevcut Sıcaklık</string>
@@ -148,17 +150,71 @@
   <string id="31390">Dış görünüm varsayılanı</string>
   <string id="31391">B. Harfsiz dış görünüm varsayılanı</string>
   <string id="31392">Arial tabanlı</string>
-
-  <!-- Description Labels  -->
-  <string id="31400">[B]GÖRÜNÜM AYARLARINI YAPILANDIR[/B][CR][CR]Dış görünümü değiştir · Dil ve bölgesel ayarları değiştir · Dosya listeleme seçeneklerini değiştir · Ekran koruyucuyu ayarla</string>
-  <string id="31401">[B]VİDEO AYARLARINI YAPILANDIR[/B][CR][CR]Video kitaplığını yönet · Video oynatma seçeneklerini ayarla · Video listeleme seçeneklerini değiştir · Altyazı karakterlerini ayarla</string>
-  <string id="31402">[B]MÜZİK AYARLARINI YAPILANDIR[/B][CR][CR]Müzik kitaplığını yönet · Müzik çalma seçeneklerini ayarla · Müzik listeleme seçeneklerini değiştir · Şarkı sunumu ayarları · Karaoke seçeneklerini ayarla</string>
-  <string id="31403">[B]RESİM AYARLARINI YAPILANDIR[/B][CR][CR]Resim listeleme seçeneklerini değiştir · Slayt gösterisi ayarlarını yapılandır</string>
-  <string id="31404">[B]HAVA DURUMU AYARLARINI YAPILANDIR[/B][CR][CR]Hava Durumu bilgilerini almak için üç şehir seçin</string>
-  <string id="31405">[B]AĞ AYARLARINI YAPILANDIR[/B][CR][CR]UPnP ve HTTP üzerinden XBMC kontrolü ayarları · Dosya paylaşımını yapılandır[CR]İnternet erişim seçeneklerini ayarla</string>
-  <string id="31406">[B]SİSTEM AYARLARINI YAPILANDIR[/B][CR][CR]Görünüm ayarları · Ses çıkış ayarlarını yapılandır · Uzaktan kumandaları ayarla[CR]Güç tasarrufu seçeneklerini ayarla · Hata ayıklamayı etkinleştir · Sistem kilit ayarları</string>
-  <string id="31407">[B]DIŞ GÖRÜNÜM AYARLARINI YAPILANDIR[/B][CR][CR]Confluence dış görünümü ayarları · Ana menü ögelerini ekle ve kaldır[CR]Arayüz arkaplanlarını değiştir</string>
-  <string id="31408">[B]EKLENTİLERİ YAPILANDIR[/B][CR][CR]Yüklenmiş eklentileri yönet · Eklentilere gözat ve yenilerini yükle[CR]Eklenti ayarlarını değiştir</string>
-
-  <string id="31421">Oturum açıp devam etmek için[CR]XBMC kullanıcı profilinizi seçin</string>
+  
+  <!-- Extra Unified PVR labels -->
+  <string id="31500">Kayıt Zamanlayıcıları</string>
+  <string id="31501">Programlanan Saat</string>
+  <string id="31502">Canlı TV</string>
+  <string id="31503">Grup Ekle</string>
+  <string id="31504">Grubu Yeniden Adlandır</string>
+  <string id="31505">Grubu Sil</string>
+  <string id="31506">Kullanılabilir[CR]Gruplar</string>
+  <string id="31509">Kanal Grubu</string>
+  <string id="31510">Zamanlayıcı Ayarlandı</string>
+  <string id="31511">Kanal Seçenekleri</string>
+  
+   <!-- Weather plugin -->
+  <string id="31900">Hava Haritaları</string>
+  <string id="31901">36 Saatlik</string>
+  <string id="31902">Saatlik</string>
+  <string id="31903">Hafta sonu</string>
+  <string id="31904">10 Günlük</string>
+  <string id="31905">Hava tahmini</string>
+  <string id="31906">Haritalar ve Video</string>
+  <string id="31907">Video Hava Tahmini [COLOR=grey2](Tam Ekran Oynatım)[/COLOR]</string>
+  <string id="31908">Yağış Olasılığı</string>
+  <string id="31909">Hava tahmini bilgisi getiriliyor...</string>
+  
+  <!-- QUARTZ -->
+  
+  <string id="31038">Bütün dış görünüm ayarlarını varsayılan değerlere sıfırla</string>
+  <string id="31039">Öğe</string>
+  <string id="31395">Bölüm</string>
+  <string id="31400">Şu anda izlenen</string>
+  <string id="31288">Fragmanlar</string>
+  <string id="31289">Yeni Eklenen</string>
+  <string id="31290">Müzik çalma penceresinde fanart göster</string>
+  <string id="31291">Eklenti yönetici</string>
+  <string id="31292">öğe</string>
+  <string id="31293">   atamak için tıklat (veya atanmış öğeyi temizle)</string>
+  <string id="31294">  (şu anda oynatılan ses/video'ya git)</string>
+  <string id="31295">   bölüm etiketini değiştimek için tıklat</string>
+  <string id="31296">Bölümler</string>
+  <string id="31297">dak</string>
+  <string id="31298">Alt menü öğeleri</string>
+  
+  <string id="31999">Kaydırma çubukları</string>
+  <string id="31998">Etkin</string>
+  <string id="31997">Pasif</string>
+  <string id="31996">Görünüm seçenekleri iletişim kutusu</string>
+  <string id="31995">Video dosyaları</string>
+  <string id="31994">Müzik dosyaları</string>
+  <string id="31993">Kılavuz ve Fanart görünüm modları</string>
+  <string id="31992">Afiş (geniş) görünüm modları</string>
+  <string id="31991">Poster görünüm modları</string>
+  <string id="31990">Giriş menüleri özelleştirici</string>
+  <string id="31989">Giriş medya rafı özelleştirici</string>
+  <string id="31988">Medya rafı öğeleri</string>
+  <string id="31987">En çok çalınan albümler</string>
+  <string id="31986">Otomatik doldur</string>
+  <string id="31985">Özel medya kısayolları</string>
+  <string id="31984">Özel resim</string>
+  <string id="31983">Menüden seç</string>
+  <string id="31982">XBMC menüsü Çık düğmesi işlevi</string>
+  <string id="31981">İzleme listesi</string>
+  <string id="31980">Saati göster</string>
+  <string id="31979">Bilgi mevcut değil</string>
+  <string id="31978">Uzunluk</string>
+  <string id="31977">Tam ekran oynatıcı</string>	 
+  <string id="31976">Panel</string>	 
 </strings>
