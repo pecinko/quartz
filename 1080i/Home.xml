@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <window>
   <defaultcontrol always="true">8998</defaultcontrol>
-  
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
@@ -496,7 +495,7 @@
         <include>Animation306</include>
       </control>
       <animation type="Conditional" condition="Control.HasFocus(700)">
-        <effect type="fade" start="100" end="75" time="300" reversible="true" />
+        <effect type="fade" start="100" end="75" time="300" reversible="true"/>
       </animation>
     </control>
     <control type="group" description="Main Bar items">
@@ -507,7 +506,7 @@
       <animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(500).NumItems,5)">conditional</animation>
       <control type="image" description="Bar NF">
         <animation type="Conditional" condition="!ControlGroup(700).HasFocus()">
-          <effect type="fade" start="100" end="0" time="200" reversible="true" />
+          <effect type="fade" start="100" end="0" time="200" reversible="true"/>
         </animation>
         <posx>-15</posx>
         <posy>472</posy>
@@ -521,7 +520,7 @@
       </control>
       <control type="image" description="Bar FO">
         <animation type="Conditional" condition="ControlGroup(700).HasFocus()">
-          <effect type="fade" start="100" end="0" time="200" reversible="true" />
+          <effect type="fade" start="100" end="0" time="200" reversible="true"/>
         </animation>
         <posx>-15</posx>
         <posy>472</posy>
@@ -615,19 +614,13 @@
         <animation effect="fade" start="0" end="100" delay="300" time="300">VisibleChange</animation>
         <include>PlayingInfo</include>
       </control>
-      <control type="image" description="Custom Image">
-        <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
-        <include>ListVisibleFade</include>
+      <control type="image" description="Custom Image"><visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible><include>ListVisibleFade</include>
         include&gt;
         <posx>68</posx><posy>111</posy><width>1785</width><height>303</height><fadetime>100</fadetime><aspectratio aligny="bottom">keep</aspectratio><texture>$VAR[ShelfIcon]</texture></control>
-      <control type="image" description="Reflection Custom Image">
-        <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
-        <include>ListVisibleFade</include>
+      <control type="image" description="Reflection Custom Image"><visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible><include>ListVisibleFade</include>
         include&gt;
         <posx>68</posx><posy>414</posy><width>1785</width><height>303</height><aspectratio aligny="top">keep</aspectratio><texture flipy="true" diffuse="img/Reflection.png">$VAR[ShelfIcon]</texture></control>
-      <control type="image" description="Logo">
-        <visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) + !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
-        <include>ListVisibleFade</include>
+      <control type="image" description="Logo"><visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) + !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible><include>ListVisibleFade</include>
         include&gt;
         <posx>68</posx><posy>138</posy><width>1785</width><height>324</height><aspectratio aligny="bottom">keep</aspectratio><texture>img/XBMCHomeLogo.png</texture></control>
     </control>

@@ -32,6 +32,11 @@
         <control type="button" id="3" description="Sort">
           <include>9000Buttons</include>
         </control>
+        <control type="togglebutton" id="4" description="Ordering">
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+          <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+        </control>
         <control type="button" id="698" description="Browse files">
           <include>9000Buttons</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
