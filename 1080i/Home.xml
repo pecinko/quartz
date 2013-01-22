@@ -5,7 +5,7 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-	<control type="button" id="8998" description="Fix ATV1 focus bug">
+    <control type="button" id="8998" description="Fix ATV1 focus bug">
       <include>HiddenButton</include>
       <onfocus>Control.SetFocus(9000)</onfocus>
       <onclick>Control.SetFocus(9000)</onclick>
