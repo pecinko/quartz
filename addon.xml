@@ -1,4 +1,4 @@
-<addon id="skin.quartz" version="4.0.0" name="Quartz" provider-name="Pecinko">
+<addon id="skin.quartz" version="4.0.1" name="Quartz" provider-name="Pecinko">
   <requires>
     <import addon="xbmc.gui" version="4.00"/>
     <import addon="script.favourites" version="4.0.4"/>
