@@ -3,10 +3,9 @@
   <variable name="Trailer" description="Trailers check keep in front">
     <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
   </variable>
-  <variable name="WatchlistParameters">
-    <value condition="Library.HasContent(Music) + [Library.HasContent(TVShows) + !Skin.HasSetting(TV5)]">movies=false&amp;episodes=true&amp;albums=true&amp;limit=10</value>
-    <value condition="Library.HasContent(Music) + [!Library.HasContent(TVShows) | Skin.HasSetting(TV5)]">movies=false&amp;episodes=false&amp;albums=true&amp;limit=10</value>
-    <value condition="!Library.HasContent(Music) + [Library.HasContent(TVShows) + !Skin.HasSetting(TV5)]">movies=false&amp;episodes=true&amp;albums=false&amp;limit=10</value>
+  <variable name="Banner" description="TV Banners">
+    <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+    <value>$INFO[ListItem.Icon]</value>
   </variable>
   <variable name="ShelfIcon" description="Shelf custom and fallback image">
     <value condition="Control.HasFocus(301) + !Control.IsVisible(311) + Skin.HasSetting(MoviesShelf_Image)">$INFO[Skin.String(MoviesShelf_Icon)]</value>

@@ -160,12 +160,12 @@
             <label>31289</label>
             <onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
           </item>
-          <!--<item id="2" description="Browse 5 MENU ITEM ADDED Watchlist">
+          <item id="2" description="Browse 5 MENU ITEM ADDED Watchlist">
             <visible>!Skin.HasSetting(TV5)</visible>
             <visible>Library.HasContent(TVShows)</visible>
-            <label>31981</label>
-            <onclick>ActivateWindow(Videos,InProgressShows,return)</onclick>
-          </item>-->
+            <label>575</label>
+            <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;)</onclick>
+          </item>
           <item id="3" description="Custom TV">
             <visible>!IsEmpty(Skin.String(CustomTV.1.Path))</visible>
             <label>$INFO[Skin.String(CustomTV.1.Label)]</label>
