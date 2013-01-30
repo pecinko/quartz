@@ -30,7 +30,7 @@
       <onright>2</onright>
       <onup>9</onup>
       <ondown>8999</ondown>
-    </control>
+	</control>
     <control type="grouplist" id="8999" description="Left OK/Cancel Panel">
       <posx>112</posx>
       <posy>780</posy>
@@ -67,6 +67,7 @@
       <font>size22</font>
       <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
       <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+	  <align>left</align>
     </control>
     <control type="group" description="Right Panel">
       <posx>700</posx>
@@ -75,7 +76,7 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>1125</width>
-        <height>825</height>
+        <height>900</height>
         <itemgap>0</itemgap>
         <onup>2</onup>
         <ondown>2</ondown>
