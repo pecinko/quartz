@@ -132,6 +132,28 @@
         <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
+	  <control type="group">
+        <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
+        <control type="image">
+          <posx>26</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>36</height>
+          <texture>img/BlackDotT.png</texture>
+          <aspectratio>stretch</aspectratio>
+        </control>
+		<control type="label">
+          <posx>127</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>36</height>
+          <font>size15</font>
+          <textcolor>Silver</textcolor>
+		  <shadowcolor>Black</shadowcolor>
+          <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
+          <align>center</align>
+        </control>
+      </control>
     </itemlayout>
     <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
       <control type="group">
@@ -151,6 +173,28 @@
           <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
         </control>
+		<control type="group">
+        <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
+        <control type="image">
+          <posx>26</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>36</height>
+          <texture>img/BlackDotT.png</texture>
+          <aspectratio>stretch</aspectratio>
+        </control>
+		<control type="label">
+          <posx>127</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>36</height>
+          <font>size15</font>
+          <textcolor>White2</textcolor>
+		  <shadowcolor>Black</shadowcolor>
+          <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
+          <align>center</align>
+        </control>
+      </control>
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
@@ -679,7 +723,7 @@
         <ondown>302</ondown>
         <onleft>312</onleft>
         <onright>312</onright>
-        <include>EpisodeShortcutsCommons</include>
+        <include>MoviesShortcutsCommons</include>
         <content>
           <item id="1" description="Episodes1">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
@@ -687,7 +731,7 @@
             <label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.1.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.1.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.1.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
           </item>
@@ -697,7 +741,7 @@
             <label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.2.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.2.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.2.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
           </item>
@@ -707,7 +751,7 @@
             <label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.3.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.3.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.3.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
           </item>
@@ -717,7 +761,7 @@
             <label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.4.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.4.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.4.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
           </item>
@@ -727,7 +771,7 @@
             <label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.5.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.5.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.5.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
           </item>
@@ -737,7 +781,7 @@
             <label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.6.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.6.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.6.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
           </item>
@@ -747,7 +791,7 @@
             <label>$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.7.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.7.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.7.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
           </item>
@@ -757,7 +801,7 @@
             <label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.8.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.8.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.8.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.8.Path)])</onclick>
           </item>
@@ -767,7 +811,7 @@
             <label>$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.9.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.9.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.9.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.9.Path)])</onclick>
           </item>
@@ -777,7 +821,7 @@
             <label>$INFO[Window.Property(LatestEpisode.10.EpisodeTitle)]</label>
             <label2>$INFO[Window.Property(LatestEpisode.10.ShowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(LatestEpisode.10.EpisodeSeason),S,•]$INFO[Window.Property(LatestEpisode.10.EpisodeNumber),E]</property>
-            <thumb>$INFO[Window.Property(LatestEpisode.10.Thumb)]</thumb>
+            <thumb>$INFO[Window.Property(LatestEpisode.10.ShowThumb)]</thumb>
             <property name="ItemType">$LOCALIZE[20387]</property>
             <onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.10.Path)])</onclick>
           </item>
@@ -878,17 +922,20 @@
         <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1416,0" time="220" easing="inout" reversible="true">Conditional</animation>
       </control>
       <control type="image">
-        <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
-        <posx>74</posx>
+        <visible>Control.HasFocus(312) + !Skin.HasSetting(MoviesShelf_Custom)</visible>
+        <posx>73</posx>
         <posy>86</posy>
-        <width>443</width>
-        <height>350</height>
+        <width>252</width>
+        <height>352</height>
         <texture border="28">img/Frame25.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="444,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="888,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1332,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="220" easing="inout" reversible="true">Conditional</animation>
       </control>
     </control>
   </include>

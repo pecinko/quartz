@@ -164,7 +164,7 @@
             <visible>!Skin.HasSetting(TV5)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>575</label>
-            <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;)</onclick>
+            <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;,return)</onclick>
           </item>
           <item id="3" description="Custom TV">
             <visible>!IsEmpty(Skin.String(CustomTV.1.Path))</visible>
@@ -340,7 +340,7 @@
         <include>Animation304</include>
       </control>
       <control type="list" id="305" description="Addons">
-        <visible>!Skin.HasSetting(AddonsSectionHide) | Skin.HasSetting(PVR_Enabled)</visible>
+        <visible>!Skin.HasSetting(AddonsSectionHide) | System.GetBool(pvrmanager.enabled)</visible>
         <onleft>304</onleft>
         <onright>306</onright>
         <onup>315</onup>
@@ -348,7 +348,7 @@
         <include>Sublist</include>
         <content>
           <item id="0" description="LiveTV">
-            <visible>Skin.HasSetting(PVR_Enabled)</visible>
+            <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>31502</label>
             <onclick>ActivateWindow(PVR)</onclick>
           </item>

@@ -115,19 +115,7 @@
           </control>
         </focusedlayout>
         <content>
-          <item id="0" description="PVR">
-            <visible>Skin.HasSetting(PVR_Enabled)</visible>
-			<label>31502</label>
-            <label2>$LOCALIZE[305]</label2>
-            <onclick>Skin.ToggleSetting(PVR_Enabled)</onclick>
-          </item>
-		  <item id="0" description="PVR">
-            <visible>!Skin.HasSetting(PVR_Enabled)</visible>
-			<label>31502</label>
-            <label2>$LOCALIZE[1223]</label2>
-            <onclick>Skin.ToggleSetting(PVR_Enabled)</onclick>
-          </item>
-		  <item id="1" description="AutoScroll">
+          <item id="1" description="AutoScroll">
             <visible>Skin.HasSetting(AutoScroll)</visible>
 			<label>$LOCALIZE[20189]</label>
             <label2>$LOCALIZE[107]</label2>
