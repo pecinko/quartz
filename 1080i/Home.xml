@@ -744,7 +744,7 @@
         </control>
       </control>
     </control>
-	<control type="label" description="Clock other windows">
+	<control type="label" description="Clock">
         <visible>Skin.HasSetting(ShowClock)</visible>
         <posx>30r</posx>
         <posy>3</posy>

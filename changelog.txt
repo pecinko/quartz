@@ -1,3 +1,9 @@
+4.0.6
+Fix up PVR bool
+Reverse shelf to episode thumbs instead of TV posters
+Add missing tags for non-default fonts
+
+
 4.0.4
 Show clock on home page when enabled in settings
 
