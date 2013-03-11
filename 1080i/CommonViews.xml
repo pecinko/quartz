@@ -223,7 +223,7 @@
     </control>
   </include>
   <include name="SlimListItemCount">
-    <animation effect="slide" start="0,0" end="0,-405" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
+    <animation effect="slide" start="0,0" end="0,-405" time="0" condition="StringCompare(Container.NumItems,1) | StringCompare(Container.NumItems,0)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-324" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
     <animation effect="slide" start="0,0" end="0,-243" time="0" condition="StringCompare(Container.NumItems,4)">conditional</animation>

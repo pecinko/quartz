@@ -36,7 +36,7 @@
       <posy>592</posy>
       <width>256</width>
       <height>128</height>
-      <texturefocus border="0,3,0,3">calibrate/CalibrateSubTitles2.png</texturefocus>
+      <texturefocus border="0,3,0,3">calibrate/CalibrateSubtitles2.png</texturefocus>
       <texturenofocus>-</texturenofocus>
     </control>
     <control type="resize" id="11">

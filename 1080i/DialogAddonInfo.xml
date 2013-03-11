@@ -2,7 +2,6 @@
 <window>
   <defaultcontrol always="true">300</defaultcontrol>
   <include>OpenClose</include>
-  
   <coordinates>
     <origin x="0" y="0" />
   </coordinates>
@@ -98,7 +97,7 @@
     </control>
     <control type="image" description="Navbar">
       <posx>-82</posx>
-      <posy>1028</posy>
+      <posy>1023</posy>
       <width>2085</width>
       <height>1</height>
       <aspectratio>stretch</aspectratio>
@@ -109,9 +108,9 @@
       <posx>0</posx>
       <control type="grouplist" id="300">
         <posx>15</posx>
-        <posy>1024</posy>
+        <posy>1021</posy>
         <width>1890</width>
-        <height>58</height>
+        <height>60</height>
         <itemgap>0</itemgap>
         <aligny>bottom</aligny>
         <align>center</align>

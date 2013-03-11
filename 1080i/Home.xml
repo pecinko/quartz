@@ -1494,5 +1494,17 @@
         </control>
       </control>
     </control>
-  </controls>
+	<control type="label" description="Clock">
+	<visible>Skin.HasSetting(ShowClock)</visible>
+	<posx>30r</posx>
+	<posy>3</posy>
+	<width>195</width>
+	<height>75</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>size19</font>
+	<textcolor>White</textcolor>
+	<label>[B]$INFO[System.Time][/B]</label>
+  </control>
+  </controls>  
 </window>
