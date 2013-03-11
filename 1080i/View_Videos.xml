@@ -1745,7 +1745,7 @@
               <posy>168</posy>
               <width>771</width>
               <height>144</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$VAR[Banner]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1753,7 +1753,7 @@
               <posy>24</posy>
               <width>771</width>
               <height>144</height>
-              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
+              <texture background="true">$VAR[Banner]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1794,7 +1794,7 @@
               <posy>168</posy>
               <width>771</width>
               <height>144</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$VAR[Banner]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -1802,7 +1802,7 @@
               <posy>24</posy>
               <width>771</width>
               <height>144</height>
-              <texture background="true">$INFO[ListItem.Art(banner)]</texture>
+              <texture background="true">$VAR[Banner]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
