@@ -1729,7 +1729,7 @@
         <ondown>302</ondown>
         <onleft>312</onleft>
         <onright>312</onright>
-        <include>EpisodeShortcutsCommons</include>
+        <include>MoviesShortcutsCommons</include>
         <content>
           <item id="1" description="Episodes1">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
@@ -1929,16 +1929,19 @@
       </control>
       <control type="image">
         <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
-        <posx>74</posx>
+        <posx>73</posx>
         <posy>86</posy>
-        <width>443</width>
-        <height>350</height>
+        <width>252</width>
+        <height>352</height>
         <texture border="28">img/Frame25.png</texture>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="444,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="888,0" time="220" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1332,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="220" easing="inout" reversible="true">Conditional</animation>
       </control>
     </control>
   </include>
