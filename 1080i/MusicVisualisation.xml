@@ -173,7 +173,7 @@
                 <width>675</width>
                 <height>13</height>
                 <texturebg border="6,0,6,0">MusicOSD/ProgressBG.png</texturebg>
-                <midtexture border="0,1,0,1">MusicOSD/ProgressMidd.png</midtexture>
+                <midtexture border="0,0,1,0">MusicOSD/ProgressMidd.png</midtexture>
                 <righttexture border="0,1,6,1">MusicOSD/ProgressRight.png</righttexture>
                 <lefttexture border="6,1,0,1">MusicOSD/ProgressLeft.png</lefttexture>
                 <overlaytexture>-</overlaytexture>
@@ -186,7 +186,7 @@
                 <height>30</height>
                 <width>123</width>
                 <align>right</align>
-                <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
+                <label fallback="-:-">[B]$INFO[Player.TimeRemaining,-][/B]</label>
                 <font>size17</font>
                 <textcolor>Grey2</textcolor>
               </control>
@@ -311,7 +311,7 @@
               <width>675</width>
               <height>13</height>
               <texturebg border="6,0,6,0">MusicOSD/ProgressBG.png</texturebg>
-                <midtexture border="0,1,0,1">MusicOSD/ProgressMidd.png</midtexture>
+                <midtexture border="0,0,1,0">MusicOSD/ProgressMidd.png</midtexture>
                 <righttexture border="0,1,6,1">MusicOSD/ProgressRight.png</righttexture>
                 <lefttexture border="6,1,0,1">MusicOSD/ProgressLeft.png</lefttexture>
               <overlaytexture>-</overlaytexture>
@@ -324,7 +324,7 @@
               <height>30</height>
               <width>123</width>
               <align>right</align>
-              <label>[B]$INFO[Player.TimeRemaining,-][/B]</label>
+              <label fallback="-:-">[B]$INFO[Player.TimeRemaining,-][/B]</label>
               <font>size17</font>
               <textcolor>Grey2</textcolor>
             </control>

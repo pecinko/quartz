@@ -1,8 +1,15 @@
+4.0.7
+Make grid view retain focus after video play
+Add party mode and update library from home screen
+Fix progress bar visual glitches introduced in Frodo
+
 4.0.6
 Fix up PVR bool
 Reverse shelf to episode thumbs instead of TV posters
 Add missing tags for non-default fonts
 
+4.0.5
+MIA :)
 
 4.0.4
 Show clock on home page when enabled in settings

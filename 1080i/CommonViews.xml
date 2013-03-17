@@ -626,7 +626,7 @@
       <posy>0</posy>
       <height>81</height>
       <width>90</width>
-      <font>size18</font>
+      <font>size16</font>
       <scroll>true</scroll>
       <align>center</align>
       <scroll>false</scroll>
@@ -651,7 +651,7 @@
       <posy>0</posy>
       <height>81</height>
       <width>90</width>
-      <font>size18</font>
+      <font>size16</font>
       <scroll>true</scroll>
       <align>center</align>
       <scroll>false</scroll>

@@ -1278,7 +1278,7 @@
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
-          <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="450" width="257">
+		  <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
             <control type="image">
               <posx>35</posx>
               <posy>320</posy>
@@ -1318,7 +1318,7 @@
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                 <posx>197</posx>
-                <posy>270</posy>
+                <posy>271</posy>
                 <height>45</height>
                 <width>150</width>
                 <font>size16</font>
@@ -1330,7 +1330,7 @@
               </control>
             </control>
           </itemlayout>
-          <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="450" width="257">
+          <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
             <control type="image">
               <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
               <posx>35</posx>
@@ -1360,7 +1360,7 @@
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
               <posx>135</posx>
-              <posy>339</posy>
+              <posy>330</posy>
               <width>270</width>
               <height>45</height>
               <font>size18</font>
@@ -1383,7 +1383,7 @@
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
                 <posx>197</posx>
-                <posy>270</posy>
+                <posy>271</posy>
                 <height>45</height>
                 <width>150</width>
                 <font>size16</font>
@@ -1462,7 +1462,7 @@
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
           </focusedlayout>
-		  <itemlayout height="375" width="450">
+		  <itemlayout condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]" height="375" width="450">
             <control type="image">
               <posx>45</posx>
               <posy>24</posy>
@@ -1498,7 +1498,7 @@
               <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout height="375" width="450">
+          <focusedlayout condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]" height="375" width="450">
             <control type="image">
               <posx>45</posx>
               <posy>24</posy>
@@ -1546,6 +1546,7 @@
               <label>[B]$INFO[ListItem.Label][/B]</label>
             </control>
           </focusedlayout>
+		  
         </control>
         <control type="group" description="Frame Sliders">
           <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)</visible>
@@ -1567,7 +1568,7 @@
             <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1285,0" time="220" reversible="true">Conditional</animation>
             <animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1542,0" time="220" reversible="true">Conditional</animation>
             <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
-            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,450" time="220" reversible="true">Conditional</animation>
+            <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,384" time="220" reversible="true">Conditional</animation>
           </control>
         </control>
         <control type="group" description="Frame Sliders">
@@ -1704,7 +1705,6 @@
         </control>
       </control>
       <control type="image" description="Bottom fade">
-        <visible>Container.content(files) | container.content(addons)</visible>
         <posx>0</posx>
         <posy>1035</posy>
         <width>1920</width>

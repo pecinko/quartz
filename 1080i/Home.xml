@@ -137,6 +137,12 @@
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
           </item>
+		  <item id="10" description="Update library">
+            <visible>!Skin.HasSetting(Movies6)</visible>
+            <visible>Library.HasContent(Movies)</visible>
+            <label>653</label>
+            <onclick>UpdateLibrary(Video)</onclick>
+          </item>
         </content>
         <include>Animation301</include>
       </control>
@@ -213,6 +219,12 @@
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
           </item>
+		  <item id="10" description="Update library">
+            <visible>!Skin.HasSetting(TV5)</visible>
+            <visible>Library.HasContent(TVShows)</visible>
+            <label>653</label>
+            <onclick>UpdateLibrary(Video)</onclick>
+          </item>
         </content>
         <include>Animation302</include>
       </control>
@@ -244,6 +256,11 @@
             <label>744</label>
             <onclick>ActivateWindow(MusicFiles,root)</onclick>
           </item>
+		  <item id="3" description="Party mode">
+            <visible>!Skin.HasSetting(Music7) + Library.HasContent(music)</visible>
+            <label>589</label>
+            <onclick>PlayerControl(PartyMode(music))</onclick>
+	      </item>
           <item id="3" description="Custom Music">
             <visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
@@ -284,6 +301,12 @@
             <label>137</label>
             <onclick>ActivateWindow(MusicLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
+          </item>
+		  <item id="11" description="Update library MUSIC 7 party mod see above">
+            <visible>!Skin.HasSetting(Music6)</visible>
+            <visible>Library.HasContent(Music)</visible>
+            <label>653</label>
+            <onclick>UpdateLibrary(Music)</onclick>
           </item>
         </content>
         <include>Animation303</include>
