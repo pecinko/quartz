@@ -132,6 +132,27 @@
         <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
+      <control type="group">
+        <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
+        <control type="image">
+          <posx>26</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>40</height>
+          <texture>img/BlackDotT.png</texture>
+          <aspectratio>stretch</aspectratio>
+        </control>
+		<control type="label">
+          <posx>127</posx>
+          <posy>291</posy>
+          <width>202</width>
+          <height>36</height>
+          <font>size15</font>
+          <textcolor>Silver</textcolor>
+          <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
+          <align>center</align>
+        </control>
+      </control>
     </itemlayout>
     <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom)" height="387" width="254">
       <control type="group">
@@ -163,6 +184,27 @@
           <label>[B]$INFO[ListItem.Label][/B]</label>
           <align>center</align>
         </control>
+        <control type="group">
+        <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
+        <control type="image">
+          <posx>26</posx>
+          <posy>290</posy>
+          <width>202</width>
+          <height>40</height>
+          <texture>img/BlackDotT.png</texture>
+          <aspectratio>stretch</aspectratio>
+        </control>
+		<control type="label">
+          <posx>127</posx>
+          <posy>291</posy>
+          <width>202</width>
+          <height>36</height>
+          <font>size15</font>
+          <textcolor>Silver</textcolor>
+          <label>[B][UPPERCASE]$INFO[ListItem.Property(SeasonEpisode)][/UPPERCASE][/B]</label>
+          <align>center</align>
+        </control>
+      </control>
       </control>
     </focusedlayout>
     <itemlayout condition="Skin.HasSetting(MoviesShelf_Custom)" height="357" width="354">
