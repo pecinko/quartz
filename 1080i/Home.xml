@@ -220,7 +220,7 @@
             <onclick>SendClick(8)</onclick>
           </item>
 		  <item id="10" description="Update library">
-            <visible>!Skin.HasSetting(TV5)</visible>
+            <visible>!Skin.HasSetting(TV6)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>653</label>
             <onclick>UpdateLibrary(Video)</onclick>

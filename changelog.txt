@@ -1,3 +1,6 @@
+4.0.8
+Fix menu customizer for TV Shows
+
 4.0.7
 Make grid view retain focus after video play
 Add party mode and update library from home screen

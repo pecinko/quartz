@@ -145,9 +145,9 @@
     </control>
     <control type="grouplist" id="52">
       <posx>600</posx>
-      <posy>264</posy>
+      <posy>244</posy>
       <width>720</width>
-      <height>750</height>
+      <height>766</height>
       <onright>Control.Move(50,1)</onright>
 	  <onleft>Control.Move(50,-1)</onleft>
 	  <onup>50</onup>
@@ -166,6 +166,7 @@
       <control type="label" id="99" description="spacer">
         <visible>!Skin.HasSetting(MoviesSectionHide) + Container(50).HasFocus(1001)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
@@ -277,6 +278,7 @@
       <control type="label" id="200" description="spacer">
         <visible>!Skin.HasSetting(TVSectionHide) + Container(50).HasFocus(1002)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
@@ -373,8 +375,8 @@
         <visible>!Skin.HasSetting(TVSectionHide) + Container(50).HasFocus(1002)</visible>
         <include>SettingsSubmenuButtons</include>
         <label>$LOCALIZE[653]</label>
-        <onclick>Skin.ToggleSetting(TV5)</onclick>
-        <selected>!Skin.HasSetting(TV5)</selected>
+        <onclick>Skin.ToggleSetting(TV6)</onclick>
+        <selected>!Skin.HasSetting(TV6)</selected>
       </control>
       <control type="button" id="299" description="RENAME">
         <visible>!Skin.HasSetting(MusicSectionHide) + Container(50).HasFocus(1003)</visible>
@@ -388,6 +390,7 @@
       <control type="label" id="300" description="spacer">
         <visible>!Skin.HasSetting(MusicSectionHide) + Container(50).HasFocus(1003)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
@@ -500,6 +503,7 @@
       <control type="label" id="401" description="spacer">
         <visible>!Skin.HasSetting(PicturesSectionHide) + Container(50).HasFocus(1004)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
@@ -571,6 +575,7 @@
       <control type="label" id="500" description="spacer">
         <visible>!Skin.HasSetting(AddonsSectionHide) + Container(50).HasFocus(1005)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
@@ -670,6 +675,7 @@
       <control type="label" id="601" description="spacer">
         <visible>Container(50).HasFocus(1006)</visible>
         <align>center</align>
+		<height>10</height>
         <include>SettingsSubmenuButtons</include>
         <label>-</label>
       </control>
