@@ -553,7 +553,7 @@
           </item>
           <item id="1" description="Addons">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.1.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.1.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfMovies.1.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfMovies.1.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfMovies.1.Label)])</onclick>
@@ -561,7 +561,7 @@
           </item>
           <item id="2" description="Addons">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.2.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.2.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfMovies.2.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfMovies.2.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfMovies.2.Label)])</onclick>
@@ -569,7 +569,7 @@
           </item>
           <item id="3" description="Addons">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.3.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.3.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfMovies.3.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfMovies.3.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfMovies.3.Label)])</onclick>
@@ -577,7 +577,7 @@
           </item>
           <item id="4" description="Addons">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.4.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.4.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfMovies.4.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfMovies.4.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfMovies.4.Label)])</onclick>
@@ -585,7 +585,7 @@
           </item>
           <item id="5" description="Addons">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.5.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.5.Label))</visible>
             <label>$INFO[system.addontitle(Skin.String(ShelfMovies.5.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfMovies.5.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfMovies.5.Label)])</onclick>
@@ -593,7 +593,7 @@
           </item>
           <item id="6" description="Fav">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.6.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.6.Label))</visible>
             <label>$INFO[Skin.String(ShelfMovies.6.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfMovies.6.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfMovies.6.Path)]</onclick>
@@ -601,7 +601,7 @@
           </item>
           <item id="7" description="Fav">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.7.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.7.Label))</visible>
             <label>$INFO[Skin.String(ShelfMovies.7.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfMovies.7.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfMovies.7.Path)]</onclick>
@@ -609,7 +609,7 @@
           </item>
           <item id="8" description="Fav">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.8.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.8.Label))</visible>
             <label>$INFO[Skin.String(ShelfMovies.8.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfMovies.8.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfMovies.8.Path)]</onclick>
@@ -617,7 +617,7 @@
           </item>
           <item id="9" description="Fav">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.9.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.9.Label))</visible>
             <label>$INFO[Skin.String(ShelfMovies.9.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfMovies.9.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfMovies.9.Path)]</onclick>
@@ -625,7 +625,7 @@
           </item>
           <item id="10" description="Fav">
             <visible>Skin.HasSetting(MoviesShelf_Custom)</visible>
-            <visible>!IsEmpty(Skin.String(ShelfMovies.10.Label))]</visible>
+            <visible>!IsEmpty(Skin.String(ShelfMovies.10.Label))</visible>
             <label>$INFO[Skin.String(ShelfMovies.10.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfMovies.10.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfMovies.10.Path)]</onclick>
@@ -1285,7 +1285,7 @@
         <label>[B]$INFO[Container(314).ListItem.Property(ItemType)][/B]</label>
       </control>
       <control type="panel" id="314" description="TOP Shortcuts">
-        <visible>ControlGroup(9000).HasFocus(304) | Control.HasFocus(314) | Control.HasFocus(904)</visible>
+        <visible>ControlGroup(9000).HasFocus(304) | Control.HasFocus(314)</visible>
         <onup>304</onup>
         <ondown>304</ondown>
         <onleft>314</onleft>

@@ -232,7 +232,7 @@
     <control type="group" id="250">
       <posx>-60</posx>
 	  <posy>90</posy>
-	  <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(122)">Conditional</animation>
+	  <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150)">Conditional</animation>
       <control type="image" description="BG">
         <posx>1827</posx>
         <posy>45</posy>
