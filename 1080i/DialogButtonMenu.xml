@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="buttonMenu" id="111">
   <defaultcontrol>9000</defaultcontrol>
   <include>DialogOpenClose</include>

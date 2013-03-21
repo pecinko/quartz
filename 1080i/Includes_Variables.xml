@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <variable name="Trailer" description="Trailers check keep in front">
     <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
