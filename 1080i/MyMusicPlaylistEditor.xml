@@ -252,7 +252,7 @@
       <posy>210</posy>
       <height>759</height>
       <width>30</width>
-      <onleft>-</onleft>
+      <onleft>noop</onleft>
       <onright>50</onright>
       <animation type="Conditional" condition="!Control.HasFocus(550) + !Container.Scrolling">
         <effect type="fade" start="100" end="40" time="200" reversible="true" />
@@ -264,7 +264,7 @@
       <height>759</height>
       <width>30</width>
       <onleft>100</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
       <animation type="Conditional" condition="!Control.HasFocus(150) + !Container.Scrolling">
         <effect type="fade" start="100" end="40" time="200" reversible="true" />
       </animation>

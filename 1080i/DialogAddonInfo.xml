@@ -114,7 +114,7 @@
         <itemgap>0</itemgap>
         <aligny>bottom</aligny>
         <align>center</align>
-        <onup>-</onup>
+        <onup>noop</onup>
         <orientation>horizontal</orientation>
         <control type="button" id="6" description="Install">
           <height>60</height>

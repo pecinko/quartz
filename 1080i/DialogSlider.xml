@@ -28,8 +28,8 @@
         <posx>765</posx>
         <posy>138</posy>
         <width>390</width>
-        <onup>-</onup>
-        <ondown>-</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <onleft>11</onleft>
         <onright>11</onright>
         <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>

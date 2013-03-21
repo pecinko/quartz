@@ -27,11 +27,11 @@
         <posy>120</posy>
         <width>930</width>
         <height>770</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onright condition="!Skin.HasSetting(Scrollbars_Active)">9000</onright>
-        <onup>-</onup>
-        <ondown>-</ondown>
+        <onup>noop</onup>
+        <ondown>noop</ondown>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="70">
           <control type="label">
@@ -79,7 +79,7 @@
       <posy>180</posy>
       <height>770</height>
       <onleft>5</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

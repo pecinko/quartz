@@ -156,7 +156,7 @@
         <posy>652</posy>
         <height>360</height>
         <onleft>59</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Infolist Fanart">
@@ -348,7 +348,7 @@
         <posy>381</posy>
         <height>660</height>
         <onleft>57</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     

@@ -32,8 +32,8 @@
       <height>126</height>
       <onleft>9000</onleft>
       <onright>9000</onright>
-      <onup>-</onup>
-      <ondown>-</ondown>
+      <onup>noop</onup>
+      <ondown>noop</ondown>
       <itemgap>30</itemgap>
       <align>center</align>
       <orientation>horizontal</orientation>

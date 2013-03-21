@@ -465,7 +465,7 @@
       </control>
       <control type="panel" id="311" description="TOP Shortcuts">
         <visible>[Library.HasContent(Movies) | Skin.HasSetting(MoviesShelf_Custom)] + [ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>301</ondown>
         <onleft>311</onleft>
         <onright>311</onright>
@@ -675,7 +675,7 @@
       </control>
       <control type="panel" id="312" description="TOP Shortcuts">
         <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Custom)] + [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
-        <onup>-</onup>
+        <onup>noop</onup>
         <ondown>302</ondown>
         <onleft>312</onleft>
         <onright>312</onright>

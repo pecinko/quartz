@@ -47,8 +47,8 @@
         <width>912</width>
         <height>243</height>
         <onup>9001</onup>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <ondown>12</ondown>
         <itemlayout height="81">
           <control type="image">

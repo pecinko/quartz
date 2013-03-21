@@ -137,7 +137,7 @@
         <content>
           <item>
             <icon>$LOCALIZE[31909]</icon>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
             <visible>IsEmpty(Window.Property(Daily.IsFetched))</visible>
           </item>
           <item>
@@ -145,7 +145,7 @@
             <label2>$INFO[Window.Property(Weekend.2.Humidity),[COLOR=Silver]$LOCALIZE[406] :[/COLOR] ,%][CR]$INFO[Window.Property(Weekend.2.UV),[COLOR=Silver]$LOCALIZE[403] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.Wind),[COLOR=Silver]$LOCALIZE[404] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.Sunrise),[COLOR=Silver]$LOCALIZE[33027] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.Sunset),[COLOR=Silver]$LOCALIZE[33028] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.2.Precipitation),[COLOR=Silver]$LOCALIZE[33021] :[/COLOR] ,%]</label2>
             <thumb>$INFO[Window.Property(Weekend.2.OutlookIcon)]</thumb>
             <icon>$INFO[Window.Property(Weekend.2.Outlook),[COLOR=Silver]$LOCALIZE[33030]: [/COLOR]][CR]$INFO[Window.Property(Weekend.2.Forecast),[COLOR=Silver]$LOCALIZE[31905]: [/COLOR]]</icon>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
             <visible>!IsEmpty(Window.Property(Weekend.IsFetched))</visible>
           </item>
           <item>
@@ -153,7 +153,7 @@
             <label2>$INFO[Window.Property(Weekend.3.Humidity),[COLOR=Silver]$LOCALIZE[406] :[/COLOR] ,%][CR]$INFO[Window.Property(Weekend.3.UV),[COLOR=Silver]$LOCALIZE[403] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.Wind),[COLOR=Silver]$LOCALIZE[404] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.Sunrise),[COLOR=Silver]$LOCALIZE[33027] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.Sunset),[COLOR=Silver]$LOCALIZE[33028] :[/COLOR] ,][CR]$INFO[Window.Property(Weekend.3.Precipitation),[COLOR=Silver]$LOCALIZE[33021] :[/COLOR] ,%]</label2>
             <thumb>$INFO[Window.Property(Weekend.3.OutlookIcon)]</thumb>
             <icon>$INFO[Window.Property(Weekend.3.Outlook),[COLOR=Silver]$LOCALIZE[33030]: [/COLOR]][CR]$INFO[Window.Property(Weekend.3.Forecast),[COLOR=Silver]$LOCALIZE[31905]: [/COLOR]]</icon>
-            <onclick>-</onclick>
+            <onclick>noop</onclick>
             <visible>!IsEmpty(Window.Property(Weekend.IsFetched))</visible>
           </item>
         </content>

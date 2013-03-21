@@ -17,8 +17,8 @@
       <label>$LOCALIZE[20096]:  $LOCALIZE[1223]</label>
       <altlabel>$LOCALIZE[20096]:  $LOCALIZE[305]</altlabel>
       <align>left</align>
-      <onright>-</onright>
-      <onleft>-</onleft>
+      <onright>noop</onright>
+      <onleft>noop</onleft>
       <onup>2</onup>
       <ondown>2</ondown>
       <font>size24</font>
@@ -45,10 +45,10 @@
         <posy>0</posy>
         <width>802</width>
         <height>891</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>4</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <pagecontrol>60</pagecontrol>
         <scrolltime>280</scrolltime>
         <itemlayout width="802" height="81">

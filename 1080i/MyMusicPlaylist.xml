@@ -133,7 +133,7 @@
           <posy>135</posy>
           <height>870</height>
           <onleft>50</onleft>
-          <onright>-</onright>
+          <onright>noop</onright>
         </control>
       </control>
       <control type="group" description="Side menu 9000 group">

@@ -438,7 +438,7 @@
         <posy>432</posy>
         <height>552</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
       </control>

@@ -34,8 +34,8 @@
         <posy>126</posy>
         <width>1800</width>
         <height>120</height>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>53</onup>
         <ondown>52</ondown>
         <focusposition>1</focusposition>

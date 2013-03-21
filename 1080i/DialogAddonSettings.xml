@@ -37,10 +37,10 @@
       <width>480</width>
       <height>250</height>
       <itemgap>9</itemgap>
-      <onleft>-</onleft>
+      <onleft>noop</onleft>
       <onright>2</onright>
       <onup>9</onup>
-      <ondown>-</ondown>
+      <ondown>noop</ondown>
       <align>center</align>
       <aligny>top</aligny>
       <orientation>vertical</orientation>

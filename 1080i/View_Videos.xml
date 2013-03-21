@@ -90,7 +90,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Big List 51">
@@ -167,7 +167,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>51</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Large Infolist2">
@@ -359,7 +359,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>52</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Infolist 2 - Movies are animated">
@@ -680,7 +680,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>54</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Fanart 1">
@@ -913,7 +913,7 @@
         <posy>399</posy>
         <height>630</height>
         <onleft>57</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Poster Fanart">
@@ -1100,7 +1100,7 @@
         <posy>652</posy>
         <height>360</height>
         <onleft>59</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Big Icons">
@@ -1717,7 +1717,7 @@
         <posy>219</posy>
         <height>780</height>
         <onleft>53</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
 	<control type="group" description="Banner wall">
@@ -2412,7 +2412,7 @@
         <posy>360</posy>
         <height>600</height>
         <onleft>502</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Fanart 3">

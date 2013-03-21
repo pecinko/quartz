@@ -45,8 +45,8 @@
           <posy>129</posy>
           <width>1800</width>
           <height>111</height>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>53</onup>
           <ondown>52</ondown>
           <focusposition>1</focusposition>
@@ -117,27 +117,27 @@
           <content>
             <item id="1001" description="Movies">
               <label fallback="20342">$INFO[Skin.String(MoviesName)]</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
             <item id="1002" description="TV">
               <label fallback="20343">$INFO[Skin.String(TVName)]</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
             <item id="1003" description="Music">
               <label fallback="2">$INFO[Skin.String(MusicName)]</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
             <item id="1004" description="Pictures">
               <label fallback="1">$INFO[Skin.String(PicturesName)]</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
             <item id="1005" description="Addons">
               <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
             <item id="1006" description="XBMC">
               <label>XBMC</label>
-              <onclick>-</onclick>
+              <onclick>noop</onclick>
             </item>
           </content>
         </control>
@@ -150,7 +150,7 @@
         <onup>50</onup>
         <onleft>50</onleft>
         <onright>50</onright>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <itemgap>0</itemgap>
         <pagecontrol>60</pagecontrol>
         <scrolltime tween="sine" easing="inout">280</scrolltime>

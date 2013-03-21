@@ -67,7 +67,7 @@
         <onleft>306</onleft>
         <onright>302</onright>
         <onup>311</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <include>Sublist</include>
         <focusposition>3</focusposition>
         <movement>3</movement>
@@ -151,7 +151,7 @@
         <onleft>301</onleft>
         <onright>303</onright>
         <onup>312</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <include>Sublist</include>
         <content>
           <item id="0" description="MyTV">
@@ -233,7 +233,7 @@
         <onleft>302</onleft>
         <onright>304</onright>
         <onup>313</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <include>Sublist</include>
         <content>
           <item id="0" description="Artists">
@@ -316,7 +316,7 @@
         <onleft>303</onleft>
         <onright>305</onright>
         <onup>314</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <include>Sublist</include>
         <content>
           <item id="1" description="Pictures">
@@ -367,7 +367,7 @@
         <onleft>304</onleft>
         <onright>306</onright>
         <onup>315</onup>
-        <ondown>-</ondown>
+        <ondown>noop</ondown>
         <include>Sublist</include>
         <content>
           <item id="0" description="LiveTV">
@@ -556,8 +556,8 @@
         <include>HomeBarAnimation</include>
       </control>
       <control type="list" id="500" description="Navbar">
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>700</onup>
         <ondown>300</ondown>
         <posx>60</posx>

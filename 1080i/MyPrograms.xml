@@ -67,7 +67,7 @@
         <posy>147</posy>
         <height>882</height>
         <onleft>50</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="51">
@@ -103,7 +103,7 @@
         <posy>135</posy>
         <height>870</height>
         <onleft>51</onleft>
-        <onright>-</onright>
+        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Grid">
@@ -117,8 +117,8 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onup>-</onup>
-          <ondown>-</ondown>
+          <onup>noop</onup>
+          <ondown>noop</ondown>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
           <preloaditems>4</preloaditems>

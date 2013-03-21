@@ -29,8 +29,8 @@
           <posy>150</posy>
           <width>525</width>
           <height>450</height>
-          <onleft>-</onleft>
-          <onright>-</onright>
+          <onleft>noop</onleft>
+          <onright>noop</onright>
           <onup>9000</onup>
           <ondown>9000</ondown>
           <itemgap>0</itemgap>

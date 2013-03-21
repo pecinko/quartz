@@ -93,8 +93,8 @@
         <itemgap>3</itemgap>
         <onup>4</onup>
         <ondown>6</ondown>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <orientation>vertical</orientation>
       </control>
       <control type="button" id="7" description="Button Default">
@@ -132,7 +132,7 @@
           <posy>831</posy>
           <width>330</width>
           <label>186</label>
-          <onleft>-</onleft>
+          <onleft>noop</onleft>
           <onright>29</onright>
           <onup>6</onup>
           <ondown>3</ondown>
@@ -144,7 +144,7 @@
           <width>330</width>
           <label>222</label>
           <onleft>28</onleft>
-          <onright>-</onright>
+          <onright>noop</onright>
           <onup>6</onup>
           <ondown>3</ondown>
           <texturenofocus border="4">img/ButtonNF.png</texturenofocus>

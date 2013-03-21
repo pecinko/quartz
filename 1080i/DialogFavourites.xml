@@ -25,7 +25,7 @@
         <posy>0</posy>
         <width>802</width>
         <height>888</height>
-        <onleft>-</onleft>
+        <onleft>noop</onleft>
         <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onup>450</onup>
         <ondown>450</ondown>
@@ -180,7 +180,7 @@
       <posy>135</posy>
       <height>870</height>
       <onleft>450</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

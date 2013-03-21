@@ -35,8 +35,8 @@
         <itemgap>0</itemgap>
         <aligny>top</aligny>
         <orientation>vertical</orientation>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>29</onup>
         <ondown>28</ondown>
       </control>
@@ -68,8 +68,8 @@
         <posy>531</posy>
         <width>352</width>
         <label>186</label>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>5</onup>
         <ondown>29</ondown>
         <texturefocus border="8">img/ButtonFO.png</texturefocus>
@@ -80,8 +80,8 @@
         <posy>627</posy>
         <width>352</width>
         <label>222</label>
-        <onleft>-</onleft>
-        <onright>-</onright>
+        <onleft>noop</onleft>
+        <onright>noop</onright>
         <onup>28</onup>
         <ondown>5</ondown>
         <texturefocus border="8">img/ButtonFO.png</texturefocus>

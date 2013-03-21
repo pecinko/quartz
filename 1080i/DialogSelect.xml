@@ -277,7 +277,7 @@
       <posy>258</posy>
       <height>771</height>
       <onleft>3</onleft>
-      <onright>-</onright>
+      <onright>noop</onright>
     </control>
   </controls>
 </window>

@@ -126,8 +126,8 @@
         <height>765</height>
         <onleft>20</onleft>
         <onright>20</onright>
-        <ondown>-</ondown>
-        <onup>-</onup>
+        <ondown>noop</ondown>
+        <onup>noop</onup>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
       </control>

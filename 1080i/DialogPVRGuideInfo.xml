@@ -93,58 +93,58 @@
               <item>
                 <label>$LOCALIZE[20376]:</label>
                 <label2>$INFO[ListItem.OriginalTitle]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
               </item>
               <item>
                 <label>$LOCALIZE[19148]:</label>
                 <label2>$INFO[ListItem.ChannelName]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
               </item>
               <item>
                 <label>$LOCALIZE[572]:</label>
                 <label2>$INFO[ListItem.Studio]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Studio)</visible>
               </item>
               <item>
                 <label>$LOCALIZE[515]:</label>
                 <label2>$INFO[ListItem.Genre]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Genre)</visible>
               </item>
               <item>
                 <label>$LOCALIZE[562]:</label>
                 <label2>$INFO[ListItem.Year]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Year)</visible>
               </item>
               <item>
                 <label>$LOCALIZE[20074]:</label>
                 <label2>$INFO[ListItem.mpaa]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.mpaa)</visible>
               </item>
               <item>
                 <label>$LOCALIZE[552]:</label>
                 <label2>$INFO[ListItem.StartDate]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
               </item>
               <item>
                 <label>$LOCALIZE[142]</label>
                 <label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
               </item>
               <item>
                 <label>$LOCALIZE[180]:</label>
                 <label2>$INFO[ListItem.Duration]</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <visible>!IsEmpty(ListItem.Duration)</visible>
               </item>
               <item>
                 <label>-</label>
                 <label2>-</label2>
-                <onclick>-</onclick>
+                <onclick>noop</onclick>
                 <icon>img/LineST.png</icon>
               </item>
             </content>
