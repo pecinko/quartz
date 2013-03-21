@@ -636,7 +636,7 @@
           <width>270</width>
           <align>center</align>
           <font>size20</font>
-          <label>Cinema</label>
+          <label>$LOCALIZE[31037]</label>
           <textcolor>White</textcolor>
           <texturefocus>img/HomeBarFO.png</texturefocus>
           <onclick>Dialog.Close(all,true)</onclick>
