@@ -6,7 +6,7 @@
     <posx>412</posx>
     <posy>45</posy>
   </coordinates>
-  <include>dialogeffect</include>
+  <include>OpenClose</include>
   <controls>
     <control type="image">
       <description>background image</description>
@@ -260,7 +260,7 @@
       <ondown>60</ondown>
       <control type="button" id="10">
         <description>OK</description>
-        <include>ButtonInfoDialogsCommonValues</include>
+        
         <label>186</label>
       </control>
     </control>
