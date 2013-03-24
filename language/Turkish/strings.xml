@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Translator: Özgür BASKIN (queeup)-->
 <!--Email: ozgur.baskin@gmail.com-->
-<!--Date of translation: 17/01/2013-->
+<!--Date of translation: 23/03/2013-->
 <strings>
   <!-- Misc labels -->
   <string id="31000">Değiştir</string>
@@ -162,21 +162,9 @@
   <string id="31509">Kanal Grubu</string>
   <string id="31510">Zamanlayıcı Ayarlandı</string>
   <string id="31511">Kanal Seçenekleri</string>
-  
-   <!-- Weather plugin -->
-  <string id="31900">Hava Haritaları</string>
-  <string id="31901">36 Saatlik</string>
-  <string id="31902">Saatlik</string>
-  <string id="31903">Hafta sonu</string>
-  <string id="31904">10 Günlük</string>
-  <string id="31905">Hava tahmini</string>
-  <string id="31906">Haritalar ve Video</string>
-  <string id="31907">Video Hava Tahmini [COLOR=grey2](Tam Ekran Oynatım)[/COLOR]</string>
-  <string id="31908">Yağış Olasılığı</string>
-  <string id="31909">Hava tahmini bilgisi getiriliyor...</string>
-  
+
   <!-- QUARTZ -->
-  
+  <string id="31037">Sinema</string>
   <string id="31038">Bütün dış görünüm ayarlarını varsayılan değerlere sıfırla</string>
   <string id="31039">Öğe</string>
   <string id="31395">Bölüm</string>
