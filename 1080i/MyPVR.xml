@@ -4,7 +4,7 @@
   
   <controls>
     <control type="group" id="50">
-      <include>Window_OpenClose_Animation</include>
+      <include>OpenClose</include>
       <include>EPGTimelineView</include>
       <!-- view id = 10 -->
       <include>LiveTVChannelView</include>

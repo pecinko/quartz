@@ -52,11 +52,6 @@
           <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
           <info>ListItem.Label</info>
         </control>
-        <control type="group">
-          <posx>870</posx>
-          <posy>114</posy>
-          <include>FlagsVideoInfo</include>
-        </control>
         <control type="image" description="Line Split">
           <posx>0</posx>
           <posy>166</posy>
