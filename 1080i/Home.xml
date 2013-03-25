@@ -36,7 +36,7 @@
       </control>
     </control>
     <control type="grouplist" description="Sliders">
-      <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315) + !Control.HasFocus(316)</visible>
+      <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
       <posx>0</posx>
       <posy>568</posy>
       <width>auto</width>
@@ -442,7 +442,6 @@
       <control type="list" id="306" description="XBMC">
         <onleft>305</onleft>
         <onright>301</onright>
-        <onup>316</onup>
         <ondown>306</ondown>
         <include>Sublist</include>
         <content>
