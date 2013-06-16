@@ -133,7 +133,7 @@
           </item>
           <item id="1006" description="XBMC">
             <label fallback="XBMC">$INFO[Skin.String(XBMCName)]</label>
-          <onclick>-</onclick>
+          <onclick>noop</onclick>
 		  </item>
 		  
         </content>
