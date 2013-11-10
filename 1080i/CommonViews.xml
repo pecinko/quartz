@@ -622,7 +622,18 @@
 	<include name="3D_Badge">
     <control type="image">
       <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
-      <posx>84r</posx>
+      <posx>130r</posx>
+      <posy>0</posy>
+      <height>81</height>
+      <width>42</width>
+      <aspectratio>keep</aspectratio>
+      <texture>badges/flags/3D.png</texture>
+    </control>
+  </include>
+  <include name="3D_Badge51">
+    <control type="image">
+      <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+      <posx>133r</posx>
       <posy>0</posy>
       <height>111</height>
       <width>45</width>
@@ -874,6 +885,7 @@
     <itemlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
       <include>ListBG</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="image" description="SCALE">
         <posx>9</posx>
         <posy>9</posy>
@@ -930,6 +942,7 @@
     <focusedlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
       <include>ListBG</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="image" description="SCALE">
         <posx>9</posx>
         <posy>9</posy>
@@ -1106,6 +1119,7 @@
       <include>ListBG</include>
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <include>Sets51</include>
       <control type="group">
         <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -1155,6 +1169,7 @@
       <include>ListBG</include>
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <include>SetsFO51</include>
       <control type="group">
         <animation condition="IsEmpty(ListItem.Label2) + IsEmpty(ListItem.Duration)" effect="slide" start="0,0" end="0,18" time="0" reversible="true">Conditional</animation>
@@ -1241,6 +1256,7 @@
     <itemlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
       <include>ListBG</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="image" description="SCALE">
         <posx>9</posx>
         <posy>9</posy>
@@ -1297,6 +1313,7 @@
     <focusedlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
       <include>ListBG</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="image" description="SCALE">
         <posx>9</posx>
         <posy>9</posy>
@@ -1356,6 +1373,7 @@
       <include>ListBG</include>
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="label" description="Main Label">
         <visible>Container.Content(episodes) + IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
         <posx>45</posx>
@@ -1396,6 +1414,7 @@
       <include>ListBG</include>
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
+      <include>3D_Badge51</include>
       <control type="label" description="Main Label">
         <visible>Container.Content(episodes) + IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
         <posx>45</posx>
