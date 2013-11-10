@@ -619,7 +619,7 @@
       <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
     </control>
   </include>
-	<include name="HD_Badge52">
+	<include name="3D_Badge">
     <control type="image">
       <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
       <posx>84r</posx>
