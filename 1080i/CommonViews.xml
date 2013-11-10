@@ -619,9 +619,12 @@
       <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
     </control>
   </include>
+  <include name="3D_Badge_visibility">
+    <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+  </include>
 	<include name="3D_Badge">
     <control type="image">
-      <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+      <include>3D_Badge_visibility</include>
       <posx>130r</posx>
       <posy>0</posy>
       <height>81</height>
@@ -632,7 +635,7 @@
   </include>
   <include name="3D_Badge51">
     <control type="image">
-      <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+      <include>3D_Badge_visibility</include>
       <posx>133r</posx>
       <posy>0</posy>
       <height>111</height>

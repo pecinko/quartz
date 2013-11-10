@@ -1687,7 +1687,7 @@
         <align>right</align>
         <orientation>horizontal</orientation>
         <control type="image">
-          <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+          <include>3D_Badge_visibility</include>
           <height>24</height>
           <width>45</width>
           <aspectratio>keep</aspectratio>
@@ -2560,7 +2560,7 @@
               <label>[COLOR=Grey]$LOCALIZE[20074]:[/COLOR] $INFO[ListItem.MPAA]</label>
             </control>
             <control type="image">
-              <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+              <include>3D_Badge_visibility</include>
               <width>40</width>
               <height>39</height>
               <aspectratio>keep</aspectratio>
