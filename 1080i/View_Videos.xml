@@ -43,6 +43,7 @@
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
               <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
@@ -64,6 +65,7 @@
           <focusedlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>ArrowFO</include>
             <control type="label" description="Main Label">
               <visible>IntegerGreaterThan(ListItem.VideoResolution,700) | ListItem.IsFolder</visible>
@@ -853,6 +855,7 @@
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>Sets</include>
             <include>Unwatched_Badge</include>
             <control type="label" description="Main Label">
@@ -877,6 +880,7 @@
           <focusedlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>SetsFO</include>
             <include>Unwatched_BadgeFO</include>
             <control type="label" description="Main Label">
@@ -1052,6 +1056,7 @@
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>Sets</include>
             <include>Unwatched_Badge</include>
             <control type="label" description="Main Label">
@@ -1069,6 +1074,7 @@
           <focusedlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
+            <include>3D_Badge</include>
             <include>SetsFO</include>
             <include>Unwatched_BadgeFO</include>
             <control type="label" description="Main Label">
@@ -1673,16 +1679,22 @@
         <texture>badges/setsFO.png</texture>
       </control>
       <control type="grouplist">
-        <posx>304r</posx>
+        <posx>354r</posx>
         <posy>126</posy>
         <height>24</height>
-        <width>195</width>
+        <width>290</width>
         <itemgap>15</itemgap>
         <align>right</align>
         <orientation>horizontal</orientation>
         <control type="image">
+          <include>3D_Badge_visibility</include>
+          <height>24</height>
+          <width>45</width>
+          <aspectratio>keep</aspectratio>
+          <texture>badges/flags/3D.png</texture>
+        </control>
+        <control type="image">
           <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
-          <posx>1500</posx>
           <height>24</height>
           <width>45</width>
           <aspectratio>keep</aspectratio>
@@ -1690,14 +1702,13 @@
         </control>
         <control type="image" description="Rating">
           <visible>!IsEmpty(ListItem.Rating)</visible>
-          <posx>1590</posx>
           <posy>0</posy>
           <include>10Rating</include>
         </control>
         <control type="label" description="Media details">
           <visible>container.content(addons)</visible>
           <height>24</height>
-          <width>195</width>
+          <width>240</width>
           <font>size18</font>
           <align>right</align>
           <textcolor>Silver</textcolor>
@@ -2534,10 +2545,27 @@
         <control type="group" description="Right">
           <posx>1020</posx>
           <posy>30</posy>
-          <control type="label" description="MPAA">
+          <control type="grouplist">
+            <posx>0</posx>
             <posy>90</posy>
-            <include>Genre500Commons</include>
-            <label>[COLOR=Grey]$LOCALIZE[20074]:[/COLOR] $INFO[ListItem.MPAA]</label>
+            <width>auto</width>
+            <height>33</height>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>30</itemgap>
+            <control type="label" description="MPAA">
+              <height>33</height>
+              <width>735</width>
+              <include>Genre500Commons</include>
+              <label>[COLOR=Grey]$LOCALIZE[20074]:[/COLOR] $INFO[ListItem.MPAA]</label>
+            </control>
+            <control type="image">
+              <include>3D_Badge_visibility</include>
+              <width>40</width>
+              <height>39</height>
+              <aspectratio>keep</aspectratio>
+              <texture>badges/flags/3D.png</texture>
+            </control>
           </control>
           <control type="grouplist">
             <posx>0</posx>
