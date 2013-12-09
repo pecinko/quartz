@@ -620,7 +620,7 @@
     </control>
   </include>
   <include name="3D_Badge_visibility">
-    <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+    <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.) | SubString(ListItem.FilenameAndPath,Anaglyph)</visible>
   </include>
 	<include name="3D_Badge">
     <control type="image">
