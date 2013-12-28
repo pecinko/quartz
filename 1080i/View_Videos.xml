@@ -1691,7 +1691,7 @@
           <height>24</height>
           <width>45</width>
           <aspectratio>keep</aspectratio>
-          <texture>badges/flags/3D.png</texture>
+          <texture>$VAR[3D_badge_texture]</texture>
         </control>
         <control type="image">
           <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
@@ -2564,7 +2564,7 @@
               <width>40</width>
               <height>39</height>
               <aspectratio>keep</aspectratio>
-              <texture>badges/flags/3D.png</texture>
+              <texture>$VAR[3D_badge_texture]</texture>
             </control>
           </control>
           <control type="grouplist">
