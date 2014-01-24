@@ -39,7 +39,7 @@
       <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
       <posx>0</posx>
       <posy>568</posy>
-      <width>auto</width>
+      <width max="1920">auto</width>
       <height>420</height>
       <align>center</align>
       <aligny>top</aligny>
@@ -56,7 +56,7 @@
       <posx>0</posx>
       <posy>585</posy>
       <itemgap>0</itemgap>
-      <width>auto</width>
+      <width max="1920">auto</width>
       <height>420</height>
       <align>center</align>
       <aligny>top</aligny>
