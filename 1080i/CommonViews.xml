@@ -620,7 +620,7 @@
     </control>
   </include>
   <include name="3D_Badge_visibility">
-    <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.)</visible>
+    <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.) | SubString(ListItem.FilenameAndPath,Anaglyph)</visible>
   </include>
 	<include name="3D_Badge">
     <control type="image">
@@ -630,7 +630,7 @@
       <height>81</height>
       <width>42</width>
       <aspectratio>keep</aspectratio>
-      <texture>badges/flags/3D.png</texture>
+      <texture>$VAR[3D_badge_texture]</texture>
     </control>
   </include>
   <include name="3D_Badge51">
@@ -641,7 +641,7 @@
       <height>111</height>
       <width>45</width>
       <aspectratio>keep</aspectratio>
-      <texture>badges/flags/3D.png</texture>
+      <texture>$VAR[3D_badge_texture]</texture>
     </control>
   </include>
   <include name="Unwatched_Badge">
