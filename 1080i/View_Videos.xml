@@ -236,15 +236,15 @@
           </control>
           <control type="image">
             <posx>0</posx>
-            <posy>46</posy>
+            <posy>44</posy>
             <height>1</height>
             <width>758</width>
             <texture>img/LineST.png</texture>
           </control>
           <control type="textbox" description="Plot51">
-            <height>213</height>
+            <height>210</height>
             <include>Plot51Commons</include>
-            <label fallback="31979">$VAR[Plots]</label>
+            <label>$VAR[Plots]</label>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -779,8 +779,9 @@
           <posx>390</posx>
           <posy>300</posy>
           <control type="textbox" description="Plot51">
-            <width>470</width>
-            <height>500</height>
+            <posy>63</posy>
+			<width>470</width>
+            <height>490</height>
             <include>Plot51Commons</include>
             <label>$VAR[Plots]</label>
           </control>
@@ -1254,7 +1255,7 @@
         <posx>360</posx>
         <posy>891</posy>
         <width>1200</width>
-        <height>132</height>
+        <height>130</height>
         <font>size20</font>
         <align>justify</align>
         <aligny>bottom</aligny>
@@ -2251,7 +2252,7 @@
             </control>
             <control type="textbox" description="Plot51">
               <width>690</width>
-              <height>420</height>
+              <height>440</height>
               <include>Plot51Commons</include>
               <label fallback="31979">$VAR[Plots]</label>
             </control>
@@ -2356,16 +2357,6 @@
           </control>
         </control>
       </control>
-      <control type="image" description="Bottom fade">
-        <visible>!Container.Row(2)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>0</posx>
-        <posy>1000</posy>
-        <width>1920</width>
-        <height>80</height>
-        <texture>img/Gradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
       <control type="scrollbar" id="60">
         <posx>30r</posx>
         <posy>360</posy>
@@ -2413,8 +2404,9 @@
             <posy>330</posy>
             <width>202</width>
             <height>303</height>
-            <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+            <texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
             <aspectratio>scale</aspectratio>
+			<colordiffuse>45FFFFFF</colordiffuse>
           </control>
           <control type="image" description="Thumb">
             <posx>26</posx>
@@ -2441,8 +2433,9 @@
               <posy>330</posy>
               <width>202</width>
               <height>303</height>
-              <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+              <texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
               <aspectratio>scale</aspectratio>
+			  <colordiffuse>45FFFFFF</colordiffuse>
             </control>
             <control type="image" description="Thumb">
               <posx>26</posx>
@@ -2484,6 +2477,14 @@
         <texture flipx="true">img/DefaultGradientH.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
+	  <control type="image" description="Thumb">
+		  <posx>0</posx>
+		  <posy>1030</posy>
+		  <width>1920</width>
+		  <height>60</height>
+		  <texture>img/DefaultGradient.png</texture>
+		  <aspectratio>stretch</aspectratio>
+		</control>
       <control type="image">
         <visible>Control.HasFocus(500)</visible>
         <include>VisibleFadeEffect</include>
@@ -2533,7 +2534,7 @@
             <posy>51</posy>
             <posx>0</posx>
             <width>802</width>
-            <height>132</height>
+            <height>130</height>
             <font>size20</font>
             <textcolor>Silver</textcolor>
             <align>justify</align>

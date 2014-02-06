@@ -2,10 +2,9 @@
 <window>
   <defaultcontrol always="true">996</defaultcontrol>
   
-  <include>DialogOpenClose</include>
+  <include>OpenClose</include>
   <coordinates>
     <system>1</system>
-    <origin x="668" y="80" />
   </coordinates>
   <controls>
     <control type="image" id="999" description="Background image">
