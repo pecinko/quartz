@@ -921,7 +921,7 @@
         <onright>noop</onright>
       </control>
     </control>
-    <control type="group" description="Poster Fanart">
+    <control type="group" description="Fanart 2">
       <visible>Control.IsVisible(59)</visible>
       <control type="group" description="Furniture">
         <control type="image" description="fanart">
@@ -990,7 +990,7 @@
               <posx>0</posx>
               <posy>68</posy>
               <width>540</width>
-              <height>252</height>
+              <height>250</height>
               <font>size20</font>
               <align>justify</align>
               <aligny>bottom</aligny>
@@ -2614,7 +2614,7 @@
         <showonepage>false</showonepage>
       </control>
     </control>
-    <control type="group">
+    <control type="group" description="Fanart 3">
       <visible>Control.IsVisible(510)</visible>
       <control type="image">
         <include>Dimensions_Fullscreen</include>
