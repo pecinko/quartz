@@ -37,65 +37,65 @@
   </include>
   <include name="Animation301">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(301)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(301)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="Control.HasFocus(311)">
-      <effect type="fade" start="100" end="60" time="100" reversible="true" />
+      <effect type="fade" start="100" end="60" time="100" reversible="true"/>
     </animation>
   </include>
   <include name="Animation302">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(302)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(302)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="Control.HasFocus(312)">
-      <effect type="fade" start="100" end="60" time="100" reversible="true" />
+      <effect type="fade" start="100" end="60" time="100" reversible="true"/>
     </animation>
   </include>
   <include name="Animation303">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(303)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(303)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="Control.HasFocus(313)">
-      <effect type="fade" start="100" end="60" time="100" reversible="true" />
+      <effect type="fade" start="100" end="60" time="100" reversible="true"/>
     </animation>
   </include>
   <include name="Animation304">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(304)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(304)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="Control.HasFocus(314)">
-      <effect type="fade" start="100" end="60" time="100" reversible="true" />
+      <effect type="fade" start="100" end="60" time="100" reversible="true"/>
     </animation>
   </include>
   <include name="Animation305">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(305)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(305)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="Control.HasFocus(315)">
-      <effect type="fade" start="100" end="60" time="100" reversible="true" />
+      <effect type="fade" start="100" end="60" time="100" reversible="true"/>
     </animation>
   </include>
   <include name="Animation306">
     <animation type="Conditional" condition="!ControlGroup(9000).HasFocus(306)">
-      <effect type="fade" start="100" end="0" time="0" reversible="false" />
+      <effect type="fade" start="100" end="0" time="0" reversible="false"/>
     </animation>
     <animation type="Conditional" condition="ControlGroup(9000).HasFocus(306)">
-      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false" />
+      <effect type="fade" start="0" end="100" time="150" delay="250" reversible="false"/>
     </animation>
   </include>
   <include name="Sublist">

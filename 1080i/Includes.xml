@@ -9,21 +9,21 @@
 		_MenuCustomizer 1116
 		_ShelfCustomizer 1117
 	-->
-  <include file="Includes_Variables.xml" />
-  <include file="Defaults.xml" />
-  <include file="CommonViews.xml" />
-  <include file="View_Videos.xml" />
-  <include file="View_Banners.xml" />
-  <include file="View_LiveTV.xml" />
-  <include file="View_PVR.xml" />
-  <include file="Includes_Home.xml" />
-  <include file="Includes_Shelf.xml" />
-  <include file="Includes_Shelf_Items.xml" />
-  <include file="Includes_WP10DayForecast.xml" />
-  <include file="Includes_WP36HourForecast.xml" />
-  <include file="Includes_WPWeekendForecast.xml" />
-  <include file="Includes_WPHourlyForecast.xml" />
-  <include file="Includes_WPMapsVideo.xml" />
+  <include file="Includes_Variables.xml"/>
+  <include file="Defaults.xml"/>
+  <include file="CommonViews.xml"/>
+  <include file="View_Videos.xml"/>
+  <include file="View_Banners.xml"/>
+  <include file="View_LiveTV.xml"/>
+  <include file="View_PVR.xml"/>
+  <include file="Includes_Home.xml"/>
+  <include file="Includes_Shelf.xml"/>
+  <include file="Includes_Shelf_Items.xml"/>
+  <include file="Includes_WP10DayForecast.xml"/>
+  <include file="Includes_WP36HourForecast.xml"/>
+  <include file="Includes_WPWeekendForecast.xml"/>
+  <include file="Includes_WPHourlyForecast.xml"/>
+  <include file="Includes_WPMapsVideo.xml"/>
   <include name="VisibleFadeEffect">
     <animation effect="fade" time="200">Visible</animation>
     <animation effect="fade" time="200">Hidden</animation>
@@ -34,22 +34,22 @@
   </include>
   <include name="DialogOpenClose">
     <animation type="WindowOpen">
-      <effect type="fade" start="0" end="100" time="240" />
-      <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,540" time="240" />
+      <effect type="fade" start="0" end="100" time="240"/>
+      <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,540" time="240"/>
     </animation>
     <animation type="WindowClose">
-      <effect type="fade" start="100" end="0" time="140" />
-      <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,540" time="140" />
+      <effect type="fade" start="100" end="0" time="140"/>
+      <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,540" time="140"/>
     </animation>
   </include>
   <include name="DialogOpenCloseVisible">
     <animation type="Visible">
-      <effect type="fade" start="0" end="100" time="240" />
-      <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,340" time="240" />
+      <effect type="fade" start="0" end="100" time="240"/>
+      <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="960,340" time="240"/>
     </animation>
     <animation type="Hidden">
-      <effect type="fade" start="100" end="0" time="140" />
-      <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140" />
+      <effect type="fade" start="100" end="0" time="140"/>
+      <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="960,340" time="140"/>
     </animation>
   </include>
   <include name="Fanart_Fade">

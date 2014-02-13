@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">100</defaultcontrol>
-  
   <zorder>2</zorder>
   <controls>
     <control type="group">
@@ -14,7 +13,7 @@
         <control type="group" description="Dialog Background">
           <visible>Window.IsVisible(videoosd.xml) + !Window.IsActive(dialogseekbar.xml)</visible>
           <animation type="Conditional" condition="Window.IsActive(videoosd.xml)">
-            <effect type="slide" start="0,0" end="0,-68" time="400" tween="cubic" easing="inout" reversible="true" />
+            <effect type="slide" start="0,0" end="0,-68" time="400" tween="cubic" easing="inout" reversible="true"/>
           </animation>
           <control type="image">
             <posx>0</posx>
@@ -277,12 +276,12 @@
         <posy>15</posy>
         <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>
         <animation type="Visible">
-          <effect type="fade" start="0" end="100" time="240" />
-          <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="auto" time="240" />
+          <effect type="fade" start="0" end="100" time="240"/>
+          <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="auto" time="240"/>
         </animation>
         <animation type="Hidden">
-          <effect type="fade" start="100" end="0" time="140" />
-          <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140" />
+          <effect type="fade" start="100" end="0" time="140"/>
+          <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140"/>
         </animation>
         <control type="image">
           <visible>ControlGroup(101).HasFocus()</visible>
@@ -296,12 +295,12 @@
         <control type="grouplist" id="101" description="Video OSD Options">
           <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>
           <animation type="Visible">
-            <effect type="fade" start="0" end="100" time="240" />
-            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="auto" time="240" />
+            <effect type="fade" start="0" end="100" time="240"/>
+            <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="auto" time="240"/>
           </animation>
           <animation type="Hidden">
-            <effect type="fade" start="100" end="0" time="140" />
-            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140" />
+            <effect type="fade" start="100" end="0" time="140"/>
+            <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140"/>
           </animation>
           <posx>600</posx>
           <posy>246</posy>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">8</defaultcontrol>
-  
   <controls>
     <control type="videowindow" id="20">
       <description>videowindow</description>
       <include>Dimensions_Fullscreen</include>
     </control>
-	<control type="image">
+    <control type="image">
       <description>pattern</description>
       <include>Dimensions_Fullscreen</include>
-	  <texture>dubuggrid1080.png</texture>
+      <texture>dubuggrid1080.png</texture>
     </control>
     <control type="mover" id="8">
       <description>top left mover</description>
@@ -48,7 +47,7 @@
       <texturefocus>calibrate/CalibratePixelRatio.png</texturefocus>
       <texturenofocus>-</texturenofocus>
     </control>
-	<control type="label" id="2">
+    <control type="label" id="2">
       <description>coordinates label</description>
       <posx>30</posx>
       <posy>60</posy>

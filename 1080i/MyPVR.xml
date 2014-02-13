@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol>32</defaultcontrol>
-  
   <controls>
     <control type="group" id="50">
       <include>OpenClose</include>
@@ -45,16 +44,16 @@
       </control>
       <control type="grouplist" id="9000">
         <posx>675</posx>
-		<posy>279</posy>
-		<width>576</width>
-		<height>525</height>
-		<itemgap>0</itemgap>
-		<onleft>50</onleft>
-		<onright>50</onright>
-		<onup>9000</onup>
-		<ondown>9000</ondown>
-		<scrolltime>200</scrolltime>
-		<orientation>vertical</orientation>
+        <posy>279</posy>
+        <width>576</width>
+        <height>525</height>
+        <itemgap>0</itemgap>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
         <control type="button" id="32" description="TV Channels">
           <include>9000Buttons</include>
           <label>19023</label>

@@ -260,7 +260,6 @@
       <ondown>60</ondown>
       <control type="button" id="10">
         <description>OK</description>
-        
         <label>186</label>
       </control>
     </control>

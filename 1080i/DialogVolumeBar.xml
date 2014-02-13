@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  
   <animation effect="fade" start="100" end="0" time="500" reversible="false">WindowClose</animation>
   <controls>
     <control type="group">
@@ -45,12 +44,12 @@
           <posy>144</posy>
           <width>135</width>
           <height>9</height>
-		  <texturebg border="6,0,6,0">progress/ProgressBG.png</texturebg>
-		  <midtexture border="0,1,0,1">progress/ProgressMidd.png</midtexture>
-		   <righttexture border="1,1,6,1">progress/ProgressRight.png</righttexture>
-		  <lefttexture border="6,1,1,1">progress/ProgressLeft.png</lefttexture>
-		<overlaytexture>-</overlaytexture>
-  		<info>Player.Volume</info>
+          <texturebg border="6,0,6,0">progress/ProgressBG.png</texturebg>
+          <midtexture border="0,1,0,1">progress/ProgressMidd.png</midtexture>
+          <righttexture border="1,1,6,1">progress/ProgressRight.png</righttexture>
+          <lefttexture border="6,1,1,1">progress/ProgressLeft.png</lefttexture>
+          <overlaytexture>-</overlaytexture>
+          <info>Player.Volume</info>
         </control>
       </control>
     </control>

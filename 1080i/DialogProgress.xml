@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">10</defaultcontrol>
-  
   <include>DialogOpenClose</include>
   <controls>
     <control type="group">
@@ -39,17 +38,17 @@
         <align>center</align>
         <label>-</label>
       </control>
-	  <control type="progress" description="Progressbar">
+      <control type="progress" description="Progressbar">
         <visible>Window.IsActive(filemanager)</visible>
         <posx>0</posx>
         <posy>261</posy>
         <width>960</width>
         <height>9</height>
-		  <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
-		  <midtexture border="0,1,0,1">progress/ProgressMidd.png</midtexture>
-		   <righttexture border="1,1,5,1">progress/ProgressRight.png</righttexture>
-		  <lefttexture border="5,1,1,1">progress/ProgressLeft.png</lefttexture>
-		<overlaytexture>-</overlaytexture>
+        <texturebg border="5,0,5,0">progress/ProgressBG.png</texturebg>
+        <midtexture border="0,1,0,1">progress/ProgressMidd.png</midtexture>
+        <righttexture border="1,1,5,1">progress/ProgressRight.png</righttexture>
+        <lefttexture border="5,1,1,1">progress/ProgressLeft.png</lefttexture>
+        <overlaytexture>-</overlaytexture>
         <info>System.Progressbar</info>
       </control>
       <control type="button" id="10" description="Cancel">

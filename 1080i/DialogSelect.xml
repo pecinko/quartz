@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">3</defaultcontrol>
-  
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
@@ -21,7 +20,7 @@
             <include>Slider4</include>
           </control>
           <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
+            <effect type="fade" start="100" end="40" time="0" reversible="true"/>
           </animation>
           <animation condition="Container(3).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
           <animation condition="Container(3).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
@@ -189,7 +188,7 @@
             <include>Slider5</include>
           </control>
           <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
+            <effect type="fade" start="100" end="40" time="0" reversible="true"/>
           </animation>
           <animation condition="Container(6).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
           <animation condition="Container(6).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
