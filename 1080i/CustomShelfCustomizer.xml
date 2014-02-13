@@ -69,7 +69,7 @@
           <focusedlayout width="600" height="111">
             <control type="image" description="Selector">
               <animation type="Conditional" condition="!Control.HasFocus(50)">
-                <effect type="fade" start="100" end="50" time="0" reversible="true" />
+                <effect type="fade" start="100" end="50" time="0" reversible="true"/>
               </animation>
               <posx>0</posx>
               <posy>0</posy>

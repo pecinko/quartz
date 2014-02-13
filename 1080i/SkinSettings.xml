@@ -20,7 +20,7 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
-          <effect type="fade" start="100" end="40" time="0" reversible="true" />
+          <effect type="fade" start="100" end="40" time="0" reversible="true"/>
         </animation>
         <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
         <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
@@ -117,13 +117,13 @@
         <content>
           <item id="1" description="AutoScroll">
             <visible>Skin.HasSetting(AutoScroll)</visible>
-			<label>$LOCALIZE[20189]</label>
+            <label>$LOCALIZE[20189]</label>
             <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
           </item>
-		  <item id="1" description="AutoScroll">
+          <item id="1" description="AutoScroll">
             <visible>!Skin.HasSetting(AutoScroll)</visible>
-			<label>$LOCALIZE[20189]</label>
+            <label>$LOCALIZE[20189]</label>
             <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
           </item>
@@ -139,25 +139,25 @@
           </item>
           <item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
-			<label>$LOCALIZE[31999]</label>
+            <label>$LOCALIZE[31999]</label>
             <label2>$LOCALIZE[31998]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
-		  <item id="4" description="Scrollbars">
+          <item id="4" description="Scrollbars">
             <visible>!Skin.HasSetting(Scrollbars_Active)</visible>
-			<label>$LOCALIZE[31999]</label>
+            <label>$LOCALIZE[31999]</label>
             <label2>$LOCALIZE[31997]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
           <item id="5" description="Options dialog">
             <visible>Skin.HasSetting(ViewOptions_Hide)</visible>
-			<label>$LOCALIZE[31996]</label>
+            <label>$LOCALIZE[31996]</label>
             <label2>$LOCALIZE[1223]</label2>
             <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
           </item>
-		  <item id="5" description="Options dialog">
+          <item id="5" description="Options dialog">
             <visible>!Skin.HasSetting(ViewOptions_Hide)</visible>
-			<label>$LOCALIZE[31996]</label>
+            <label>$LOCALIZE[31996]</label>
             <label2>$LOCALIZE[305]</label2>
             <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
           </item>
@@ -175,13 +175,13 @@
           </item>-->
           <item id="7" description="Additional view modes">
             <visible>Skin.HasSetting(AddViews)</visible>
-			<label>31993</label>
+            <label>31993</label>
             <label2>305</label2>
             <onclick>Skin.ToggleSetting(AddViews)</onclick>
           </item>
-		  <item id="7" description="Additional view modes">
+          <item id="7" description="Additional view modes">
             <visible>!Skin.HasSetting(AddViews)</visible>
-			<label>31993</label>
+            <label>31993</label>
             <label2>1223</label2>
             <onclick>Skin.ToggleSetting(AddViews)</onclick>
           </item>
@@ -200,46 +200,46 @@
           </item>
           <item id="11" description="Show Clock">
             <visible>Skin.HasSetting(ShowClock)</visible>
-			<label>$LOCALIZE[31980]</label>
+            <label>$LOCALIZE[31980]</label>
             <label2>107</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
           </item>
-		  <item id="11" description="Show Clock">
+          <item id="11" description="Show Clock">
             <visible>!Skin.HasSetting(ShowClock)</visible>
-			<label>$LOCALIZE[31980]</label>
+            <label>$LOCALIZE[31980]</label>
             <label2>106</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
           </item>
           <item id="13" description="EpisodeThumbs">
             <visible>Skin.HasSetting(UseEpisodeThumbs)</visible>
-			<label>$LOCALIZE[31975]</label>
+            <label>$LOCALIZE[31975]</label>
             <label2>107</label2>
-			<onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
+            <onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
           </item>
-		  <item id="13" description="EpisodeThumbs">
+          <item id="13" description="EpisodeThumbs">
             <visible>!Skin.HasSetting(UseEpisodeThumbs)</visible>
-			<label>$LOCALIZE[31975]</label>
+            <label>$LOCALIZE[31975]</label>
             <label2>106</label2>
-			<onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
+            <onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
           </item>
-		  <item id="14" description="Use Widgets script">
+          <item id="14" description="Use Widgets script">
             <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(UseWidgets)</visible>
-			<label>$LOCALIZE[31974]</label>
+            <label>$LOCALIZE[31974]</label>
             <label2>107</label2>
-			<onclick>Skin.ToggleSetting(UseWidgets)</onclick>
+            <onclick>Skin.ToggleSetting(UseWidgets)</onclick>
           </item>
-		  <item id="14" description="Use Widgets script">
-			<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(UseWidgets)</visible>
-			<label>$LOCALIZE[31974]</label>
+          <item id="14" description="Use Widgets script">
+            <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(UseWidgets)</visible>
+            <label>$LOCALIZE[31974]</label>
             <label2>106</label2>
-			<onclick>Skin.ToggleSetting(UseWidgets)</onclick>
+            <onclick>Skin.ToggleSetting(UseWidgets)</onclick>
           </item>
-		  <item id="14" description="Use Widgets script">
+          <item id="14" description="Use Widgets script">
             <visible>!System.HasAddon(service.skin.widgets)</visible>
-			<label>[COLOR=Grey]$LOCALIZE[31974][/COLOR]</label>
+            <label>[COLOR=Grey]$LOCALIZE[31974][/COLOR]</label>
             <onclick>noop</onclick>
           </item>
-		  <item id="12" description="Reset Skin">
+          <item id="12" description="Reset Skin">
             <label>$LOCALIZE[31038]</label>
             <onclick>Skin.ResetSettings</onclick>
             <onclick>XBMC.ReloadSkin()</onclick>
@@ -270,8 +270,7 @@
     </control>
     <control type="group" description="Left panel">
       <posy>0</posy>
-      
-	  <control type="image" description="PVR">
+      <control type="image" description="PVR">
         <visible>Container(50).HasFocus(0) + !Skin.HasSetting(PVR_Enabled)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>
@@ -291,7 +290,7 @@
         <aspectratio>keep</aspectratio>
         <texture>help/PVRON.jpg</texture>
       </control>
-	  <control type="textbox" description="Plot51">
+      <control type="textbox" description="Plot51">
         <visible>Container(50).HasFocus(1)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>

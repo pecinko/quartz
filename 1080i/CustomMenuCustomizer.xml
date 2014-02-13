@@ -58,7 +58,7 @@
         <focusedlayout width="600" height="120">
           <control type="image" description="Selector">
             <animation type="Conditional" condition="!Control.HasFocus(50)">
-              <effect type="fade" start="100" end="0" time="100" reversible="true" />
+              <effect type="fade" start="100" end="0" time="100" reversible="true"/>
             </animation>
             <posx>0</posx>
             <posy>1</posy>
@@ -133,9 +133,8 @@
           </item>
           <item id="1006" description="XBMC">
             <label fallback="XBMC">$INFO[Skin.String(XBMCName)]</label>
-          <onclick>noop</onclick>
-		  </item>
-		  
+            <onclick>noop</onclick>
+          </item>
         </content>
       </control>
     </control>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">-</defaultcontrol>
-  
   <onload condition="system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
   <controls>
     <control type="group">
@@ -31,7 +30,7 @@
         <animation effect="fade" start="0" end="70" time="300">Visible</animation>
         <animation effect="fade" start="70" end="0" time="200">Hidden</animation>
         <animation type="Conditional" condition="true">
-          <effect type="fade" start="0" end="70" time="0" reversible="false" />
+          <effect type="fade" start="0" end="70" time="0" reversible="false"/>
         </animation>
       </control>
       <control type="image" description="Fanart only">
@@ -43,7 +42,7 @@
         <animation effect="fade" start="0" end="70" time="300">Visible</animation>
         <animation effect="fade" start="70" end="0" time="200">Hidden</animation>
         <animation type="Conditional" condition="true">
-          <effect type="fade" start="0" end="70" time="0" reversible="false" />
+          <effect type="fade" start="0" end="70" time="0" reversible="false"/>
         </animation>
       </control>
       <control type="group" description="INFO grouped for visibility sake">
@@ -64,23 +63,23 @@
         <control type="group" description="Info panel LEFT">
           <posy>30</posy>
           <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
-            <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360" />
-            <effect type="fade" start="0" end="100" time="800" center="640,360" />
+            <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360"/>
+            <effect type="fade" start="0" end="100" time="800" center="640,360"/>
           </animation>
           <animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)" reversible="false">
-            <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360" />
-            <effect type="fade" start="100" end="0" easing="out" time="300" />
+            <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360"/>
+            <effect type="fade" start="100" end="0" easing="out" time="300"/>
           </animation>
           <animation type="Conditional" condition="IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)" reversible="false">
-            <effect type="rotatey" tween="quadratic" start="0" end="180" time="1000" center="960,540" />
-            <effect type="fade" start="100" end="0" time="400" center="640,360" />
+            <effect type="rotatey" tween="quadratic" start="0" end="180" time="1000" center="960,540"/>
+            <effect type="fade" start="100" end="0" time="400" center="640,360"/>
           </animation>
           <animation type="Conditional" condition="![IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)]" reversible="false">
-            <effect type="rotatey" tween="quadratic" start="180" end="0" time="1000" center="960,540" />
-            <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />
+            <effect type="rotatey" tween="quadratic" start="180" end="0" time="1000" center="960,540"/>
+            <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360"/>
           </animation>
           <control type="group" description="Music Cover group">
-            <camera x="450" y="450" />
+            <camera x="450" y="450"/>
             <animation effect="rotatey" start="0" end="-9" center="450," time="0" reversible="false" condition="true">Conditional</animation>
             <posy>225</posy>
             <posx>150</posx>
@@ -208,15 +207,15 @@
           <posy>30</posy>
           <visible>IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)</visible>
           <animation type="Visible" reversible="false">
-            <effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960," />
-            <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360" />
+            <effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960,"/>
+            <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360"/>
           </animation>
           <animation type="Hidden" reversible="false">
-            <effect type="rotatey" tween="quadratic" start="0" end="-180" time="1000" center="960," />
-            <effect type="fade" start="100" end="0" time="400" center="640,360" />
+            <effect type="rotatey" tween="quadratic" start="0" end="-180" time="1000" center="960,"/>
+            <effect type="fade" start="100" end="0" time="400" center="640,360"/>
           </animation>
           <control type="group" description="Music Cover group">
-            <camera x="1470" y="450" />
+            <camera x="1470" y="450"/>
             <animation effect="rotatey" start="0" end="9" center="1470," time="0" reversible="false" condition="true">Conditional</animation>
             <!--<animation effect="rotatey" start="0" end="-16" center="180," time="0" reversible="false" condition="true">Conditional</animation>-->
             <posy>225</posy>
@@ -311,9 +310,9 @@
               <width>675</width>
               <height>13</height>
               <texturebg border="6,0,6,0">MusicOSD/ProgressBG.png</texturebg>
-                <midtexture border="0,0,1,0">MusicOSD/ProgressMidd.png</midtexture>
-                <righttexture border="0,1,6,1">MusicOSD/ProgressRight.png</righttexture>
-                <lefttexture border="6,1,0,1">MusicOSD/ProgressLeft.png</lefttexture>
+              <midtexture border="0,0,1,0">MusicOSD/ProgressMidd.png</midtexture>
+              <righttexture border="0,1,6,1">MusicOSD/ProgressRight.png</righttexture>
+              <lefttexture border="6,1,0,1">MusicOSD/ProgressLeft.png</lefttexture>
               <overlaytexture>-</overlaytexture>
               <info>Player.Progress</info>
               <visible>true</visible>

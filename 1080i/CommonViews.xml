@@ -134,7 +134,7 @@
         <include>Icon_Fade</include>
         <texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
         <aspectratio aligny="top">keep</aspectratio>
-		<colordiffuse>33FFFFFF</colordiffuse>
+        <colordiffuse>33FFFFFF</colordiffuse>
       </control>
       <control type="image" description="Thumb">
         <posx>180</posx>
@@ -165,7 +165,7 @@
       <visible>ListItem.IsFolder | container.content(addons)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <camera x="495" y="630" />
+      <camera x="495" y="630"/>
       <animation effect="rotatey" start="0" end="-9" center="495," time="0" reversible="false" condition="container.content(albums) | Container.content(artists)">Conditional</animation>
       <control type="image" description="Thumb">
         <posx>0</posx>
@@ -622,7 +622,7 @@
   <include name="3D_Badge_visibility">
     <visible>SubString(ListItem.FilenameAndPath,3dbd) | SubString(ListItem.FilenameAndPath,SBS.) | SubString(ListItem.FilenameAndPath,Anaglyph)</visible>
   </include>
-	<include name="3D_Badge">
+  <include name="3D_Badge">
     <control type="image">
       <include>3D_Badge_visibility</include>
       <posx>130r</posx>
@@ -818,7 +818,7 @@
         </control>
         <control type="image">
           <visible>!IsEmpty(ListItem.Thumb)</visible>
-		  <posx>9</posx>
+          <posx>9</posx>
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
@@ -857,7 +857,7 @@
         </control>
         <control type="image">
           <visible>!IsEmpty(ListItem.Thumb)</visible>
-		  <posx>9</posx>
+          <posx>9</posx>
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
@@ -899,7 +899,7 @@
       </control>
       <control type="image">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
-		<posx>9</posx>
+        <posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -956,7 +956,7 @@
       </control>
       <control type="image">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
-		<posx>9</posx>
+        <posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -1270,7 +1270,7 @@
       </control>
       <control type="image">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
-		<posx>9</posx>
+        <posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -1327,7 +1327,7 @@
       </control>
       <control type="image">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
-		<posx>9</posx>
+        <posx>9</posx>
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
@@ -1572,7 +1572,7 @@
     <onup>9000</onup>
     <ondown>9000</ondown>
     <scrolltime>200</scrolltime>
-	<orientation>vertical</orientation>
+    <orientation>vertical</orientation>
   </include>
   <include name="9000Buttons">
     <width>576</width>
@@ -1591,9 +1591,9 @@
     <include>DialogOpenCloseVisible</include>
     <control type="image" description="List back">
       <posx>444</posx>
-        <posy>195</posy>
-        <width>1023</width>
-        <height>702</height>
+      <posy>195</posy>
+      <width>1023</width>
+      <height>702</height>
       <aspectratio>stretch</aspectratio>
       <texture border="136,127,128,139">img/Dialog.png</texture>
     </control>

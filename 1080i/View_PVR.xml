@@ -541,7 +541,7 @@
         <onright>31</onright>
         <onup>10</onup>
         <ondown>10</ondown>
-		<onback>50</onback>
+        <onback>50</onback>
         <rulerlayout height="66" width="60">
           <control type="image" id="1" description="Header row">
             <width>60</width>
@@ -681,7 +681,7 @@
             <font>size18</font>
             <aligny>center</aligny>
             <scroll>false</scroll>
-			<align>left</align>
+            <align>left</align>
             <textcolor>Grey</textcolor>
             <info>ListItem.Label</info>
           </control>
@@ -1651,14 +1651,14 @@
             <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
             <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
             <control type="image">
-                <animation effect="fade" time="100">VisibleChange</animation>
-                <posx>-24</posx>
-                <posy>315</posy>
-                <width>1749</width>
-                <height>144</height>
-                <texture border="26">img/Slider5.png</texture>
-                <aspectratio>stretch</aspectratio>
-              </control>
+              <animation effect="fade" time="100">VisibleChange</animation>
+              <posx>-24</posx>
+              <posy>315</posy>
+              <width>1749</width>
+              <height>144</height>
+              <texture border="26">img/Slider5.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
             <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
             <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>

@@ -382,25 +382,21 @@
           <control type="button" id="26">
             <description>Add Group</description>
             <width>345</width>
-            
             <label>31503</label>
           </control>
           <control type="button" id="27">
             <description>Rename Group</description>
             <width>345</width>
-            
             <label>31504</label>
           </control>
           <control type="button" id="28">
             <description>Delete Group</description>
             <width>345</width>
-            
             <label>31505</label>
           </control>
           <control type="button" id="29">
             <description>OK</description>
             <width>345</width>
-            
             <label>186</label>
           </control>
         </control>

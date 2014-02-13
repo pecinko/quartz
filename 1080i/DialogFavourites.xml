@@ -107,8 +107,8 @@
         <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
         <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
         <include>Slider5</include>
-		<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
-          <effect type="fade" start="100" end="40" time="0" reversible="true" />
+        <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
+          <effect type="fade" start="100" end="40" time="0" reversible="true"/>
         </animation>
         <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(450).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>

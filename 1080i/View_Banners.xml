@@ -281,7 +281,7 @@
           <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
           <include>Slider4</include>
           <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
-            <effect type="fade" start="100" end="40" time="0" reversible="true" />
+            <effect type="fade" start="100" end="40" time="0" reversible="true"/>
           </animation>
           <animation condition="Container(56).Position(0)" effect="slide" start="0,0" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
           <animation condition="Container(56).Position(1)" effect="slide" start="0,0" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
@@ -351,6 +351,5 @@
         <onright>noop</onright>
       </control>
     </control>
-    
   </include>
 </includes>

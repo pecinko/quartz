@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">901</defaultcontrol>
-  
   <include>OpenClose</include>
   <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
   <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
@@ -103,7 +102,7 @@
     </control>
     <control type="group" description="Dialog Background">
       <animation type="Conditional" condition="Window.IsActive(videoosd.xml)">
-        <effect type="slide" start="0,0" end="0,-68" time="400" tween="cubic" easing="inout" reversible="true" />
+        <effect type="slide" start="0,0" end="0,-68" time="400" tween="cubic" easing="inout" reversible="true"/>
       </animation>
       <control type="image">
         <posx>0</posx>
@@ -137,7 +136,7 @@
       </control>
       <control type="progress" description="Cache Progress">
         <visible>false</visible>
-		<posx>303</posx>
+        <posx>303</posx>
         <posy>10</posy>
         <width>1398</width>
         <height>17</height>

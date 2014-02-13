@@ -19,9 +19,9 @@
     </control>
     <control type="image" description="Dialog">
       <posx>444</posx>
-        <posy>245</posy>
-        <width>1023</width>
-        <height>602</height>
+      <posy>245</posy>
+      <width>1023</width>
+      <height>602</height>
       <aspectratio>stretch</aspectratio>
       <texture border="136,127,128,139">img/Dialog.png</texture>
     </control>
@@ -49,7 +49,7 @@
       <control type="button" id="3" description="Shutdown button">
         <enable>System.CanPowerDown</enable>
         <animation type="Conditional" condition="!Control.IsEnabled(3)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
+          <effect type="fade" start="100" end="30" time="0" reversible="true"/>
         </animation>
         <width>126</width>
         <height>126</height>
@@ -62,7 +62,7 @@
       <control type="button" id="6" description="Suspend button">
         <enable>System.CanSuspend</enable>
         <animation type="Conditional" condition="!Control.IsEnabled(6)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
+          <effect type="fade" start="100" end="30" time="0" reversible="true"/>
         </animation>
         <width>126</width>
         <height>126</height>
@@ -75,7 +75,7 @@
       <control type="button" id="8" description="Reboot button">
         <enable>System.CanReboot</enable>
         <animation type="Conditional" condition="!Control.IsEnabled(8)">
-          <effect type="fade" start="100" end="30" time="0" reversible="true" />
+          <effect type="fade" start="100" end="30" time="0" reversible="true"/>
         </animation>
         <width>126</width>
         <height>126</height>
@@ -86,42 +86,42 @@
         <label>13013</label>
       </control>
     </control>
-	<control type="group">
-	 <posx>660</posx>
-	 <posy>105</posy>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(2)</visible>
-      <width>600</width>
-      <height>675</height>
-      <align>center</align>
-      <font>size26B</font>
-      <label>13009</label>
+    <control type="group">
+      <posx>660</posx>
+      <posy>105</posy>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(2)</visible>
+        <width>600</width>
+        <height>675</height>
+        <align>center</align>
+        <font>size26B</font>
+        <label>13009</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(3)</visible>
+        <width>600</width>
+        <height>675</height>
+        <align>center</align>
+        <font>size26B</font>
+        <label>13005</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(6)</visible>
+        <width>600</width>
+        <height>675</height>
+        <align>center</align>
+        <font>size26B</font>
+        <label>13011</label>
+      </control>
+      <control type="label">
+        <visible>ControlGroup(9000).HasFocus(8)</visible>
+        <width>600</width>
+        <height>675</height>
+        <align>center</align>
+        <font>size26B</font>
+        <label>13013</label>
+      </control>
     </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(3)</visible>
-      <width>600</width>
-      <height>675</height>
-      <align>center</align>
-      <font>size26B</font>
-      <label>13005</label>
-    </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(6)</visible>
-      <width>600</width>
-      <height>675</height>
-      <align>center</align>
-      <font>size26B</font>
-      <label>13011</label>
-    </control>
-    <control type="label">
-      <visible>ControlGroup(9000).HasFocus(8)</visible>
-      <width>600</width>
-      <height>675</height>
-      <align>center</align>
-      <font>size26B</font>
-      <label>13013</label>
-    </control>
-	</control>
     <control type="image" description="Selector">
       <posx>649</posx>
       <posy>504</posy>
@@ -130,13 +130,13 @@
       <aspectratio>stretch</aspectratio>
       <texture border="28">img/Frame25.png</texture>
       <animation type="Conditional" condition="Control.HasFocus(3)">
-        <effect type="slide" start="0,0" end="156,0" time="180" center="auto" reversible="true" />
+        <effect type="slide" start="0,0" end="156,0" time="180" center="auto" reversible="true"/>
       </animation>
       <animation type="Conditional" condition="Control.HasFocus(6)">
-        <effect type="slide" start="0,0" end="312,0" time="180" center="auto" reversible="true" />
+        <effect type="slide" start="0,0" end="312,0" time="180" center="auto" reversible="true"/>
       </animation>
       <animation type="Conditional" condition="Control.HasFocus(8)">
-        <effect type="slide" start="0,0" end="468,0" time="180" center="auto" reversible="true" />
+        <effect type="slide" start="0,0" end="468,0" time="180" center="auto" reversible="true"/>
       </animation>
     </control>
   </controls>

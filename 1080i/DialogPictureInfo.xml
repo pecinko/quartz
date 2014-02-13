@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">5</defaultcontrol>
-  
   <include>DialogOpenClose</include>
   <controls>
     <control type="image">
@@ -37,14 +36,14 @@
           <control type="label">
             <posx>30</posx>
             <height>70</height>
-			<width>405</width>
+            <width>405</width>
             <scroll>false</scroll>
             <info>ListItem.Label</info>
           </control>
           <control type="label">
             <posx>900</posx>
             <height>70</height>
-			<width>435</width>
+            <width>435</width>
             <align>right</align>
             <scroll>false</scroll>
             <font>size17</font>
@@ -57,16 +56,16 @@
             <width>930</width>
             <texture border="5">img/ButtonFO.png</texture>
           </control>
-		  <control type="label">
+          <control type="label">
             <posx>30</posx>
             <height>70</height>
-			<width>405</width>
+            <width>405</width>
             <info>ListItem.Label</info>
           </control>
           <control type="label">
             <posx>900</posx>
             <height>70</height>
-			<width>435</width>
+            <width>435</width>
             <align>right</align>
             <font>size17</font>
             <info>ListItem.Label2</info>

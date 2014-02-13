@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">8</defaultcontrol>
-  
   <include>OpenClose</include>
   <coordinates>
-    <origin x="0" y="0" />
+    <origin x="0" y="0"/>
   </coordinates>
   <controls>
     <include>MiniBackground</include>
