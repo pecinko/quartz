@@ -526,7 +526,7 @@
     <content>
           <item id="1" description="Episodes1">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.1.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.1.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.1.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.1.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.1.Season),S,•]$INFO[Window.Property(RecommendedEpisode.1.Episode),E]</property>
@@ -537,7 +537,7 @@
           </item>
           <item id="2" description="Shortcut2">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.2.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.2.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.2.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.2.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.2.Season),S,•]$INFO[Window.Property(RecommendedEpisode.2.Episode),E]</property>
@@ -548,7 +548,7 @@
           </item>
           <item id="3" description="Shortcut3">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.3.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.3.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.3.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.3.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.3.Season),S,•]$INFO[Window.Property(RecommendedEpisode.3.Episode),E]</property>
@@ -559,7 +559,7 @@
           </item>
           <item id="4" description="Shortcut4">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.4.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.4.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.4.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.4.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.4.Season),S,•]$INFO[Window.Property(RecommendedEpisode.4.Episode),E]</property>
@@ -570,7 +570,7 @@
           </item>
           <item id="5" description="Shortcut5">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.5.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.5.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.5.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.5.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.5.Season),S,•]$INFO[Window.Property(RecommendedEpisode.5.Episode),E]</property>
@@ -581,7 +581,7 @@
           </item>
           <item id="6" description="Shortcut6">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.6.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.6.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.6.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.6.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.6.Season),S,•]$INFO[Window.Property(RecommendedEpisode.6.Episode),E]</property>
@@ -592,7 +592,7 @@
           </item>
           <item id="7" description="Shortcut7">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.7.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.7.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.7.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.7.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.7.Season),S,•]$INFO[Window.Property(RecommendedEpisode.7.Episode),E]</property>
@@ -603,7 +603,7 @@
           </item>
           <item id="8" description="Shortcut8">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.8.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.8.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.8.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.8.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.8.Season),S,•]$INFO[Window.Property(RecommendedEpisode.8.Episode),E]</property>
@@ -614,7 +614,7 @@
           </item>
           <item id="9" description="Shortcut9">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.9.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.9.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.9.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.9.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.9.Season),S,•]$INFO[Window.Property(RecommendedEpisode.9.Episode),E]</property>
@@ -625,7 +625,7 @@
           </item>
           <item id="10" description="Shortcut10">
             <visible>!Skin.HasSetting(TVShelf_Custom)</visible>
-            <visible>!IsEmpty(Window.Property(RecommendedEpisode.10.File))</visible>
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),true) + !IsEmpty(Window.Property(RecommendedEpisode.10.File))</visible>
             <label>$INFO[Window.Property(RecommendedEpisode.10.Title)]</label>
             <label2>$INFO[Window.Property(RecommendedEpisode.10.TVshowTitle)]</label2>
             <property name="SeasonEpisode">$INFO[Window.Property(RecommendedEpisode.10.Season),S,•]$INFO[Window.Property(RecommendedEpisode.10.Episode),E]</property>

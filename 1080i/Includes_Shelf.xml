@@ -519,18 +519,18 @@
   <include name="TV_RA">
     <control type="group">
       <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312) + !Skin.HasSetting(UseWidgets)</visible>
-        <include>LabelVisibleFade</include>
+        <visible>Control.IsVisible(312) + ![Skin.HasSetting(UseWidgets) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)]</visible>
+		<include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
       </control>
 	  <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312) + Skin.HasSetting(UseWidgets)</visible>
+        <visible>Control.IsVisible(312) + Skin.HasSetting(UseWidgets) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
         <include>LabelVisibleFade</include>
         <include>ShelfTopLabel</include>
         <label>$LOCALIZE[31973]</label>
       </control>
-      <control type="panel" id="312" description="TOP Shortcuts">
+	  <control type="panel" id="312" description="TOP Shortcuts">
         <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Custom)] + [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
         <onup>noop</onup>
         <ondown>302</ondown>
