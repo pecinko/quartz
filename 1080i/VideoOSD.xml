@@ -33,7 +33,33 @@
           <scroll>false</scroll>
           <font>size18</font>
           <shadowcolor>Black</shadowcolor>
-          <label>[B]$INFO[VideoPlayer.Title][/B]</label>
+          <label>$INFO[VideoPlayer.Title]</label>
+        </control>
+		<control type="label" description="Title">
+          <animation type="Conditional" condition="IsEmpty(VideoPlayer.SubtitlesLanguage)">
+            <effect type="slide" start="0,0" end="0,15" time="0" reversible="true" />
+          </animation>
+		  <posx>1700</posx>
+          <posy>951</posy>
+          <height>30</height>
+          <width>540</width>
+          <scroll>false</scroll>
+          <font>size14</font>
+		  <align>right</align>
+          <label>$INFO[VideoPlayer.AudioLanguage, $LOCALIZE[292]: ]</label>
+        </control>
+		<control type="label" description="Title">
+          <animation type="Conditional" condition="IsEmpty(VideoPlayer.AudioLanguage)">
+            <effect type="slide" start="0,0" end="0,-20" time="0" reversible="true" />
+          </animation>
+		  <posx>1700</posx>
+          <posy>981</posy>
+          <height>30</height>
+          <width>540</width>
+          <scroll>false</scroll>
+          <font>size14</font>
+		  <align>right</align>
+          <label>$INFO[VideoPlayer.SubtitlesLanguage, $LOCALIZE[287]: ]</label>
         </control>
       </control>
       <control type="group" id="100">
