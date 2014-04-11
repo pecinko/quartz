@@ -6,7 +6,7 @@
     <control type="button" id="10" description="Startup Trigger">
       <posx>15</posx>
       <posy>15</posy>
-      <onfocus>ReplaceWindow(Home)</onfocus>
+      <onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
       <texturenofocus></texturenofocus>
       <texturefocus></texturefocus>
     </control>

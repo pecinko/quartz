@@ -22,7 +22,7 @@
         <posy>225</posy>
         <width>750</width>
         <height>525</height>
-        <onleft>close</onleft>
+        <onleft>PreviousChannelGroup</onleft>
         <onright>61</onright>
         <onup>11</onup>
         <ondown>11</ondown>
