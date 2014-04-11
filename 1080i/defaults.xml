@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <default type="label">
-    <posx>0</posx>
-    <posy>0</posy>
     <height>75</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -17,8 +15,6 @@
     <scrollsuffix>  •  </scrollsuffix>
   </default>
   <default type="fadelabel">
-    <posx>0</posx>
-    <posy>0</posy>
     <height>75</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -45,15 +41,11 @@
     <autoscroll delay="6000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
   </default>
   <default type="image">
-    <posx>0</posx>
-    <posy>0</posy>
     <align>center</align>
     <aligny>center</aligny>
     <aspectratio>stretch</aspectratio>
   </default>
   <default type="button">
-    <posx>0</posx>
-    <posy>0</posy>
     <width>390</width>
     <height>75</height>
     <align>center</align>
@@ -70,8 +62,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="edit">
-    <posx>0</posx>
-    <posy>0</posy>
     <width>390</width>
     <height>75</height>
     <align>center</align>
@@ -87,8 +77,6 @@
     <texturefocus flipy="true" border="5">img/ButtonFO.png</texturefocus>
   </default>
   <default type="togglebutton">
-    <posx>0</posx>
-    <posy>0</posy>
     <width>450</width>
     <height>75</height>
     <align>center</align>
@@ -108,8 +96,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="radiobutton">
-    <posx>0</posx>
-    <posy>6</posy>
     <height>75</height>
     <align>left</align>
     <aligny>center</aligny>
@@ -129,8 +115,6 @@
     <pulseonselect>false</pulseonselect>
   </default>
   <default type="spincontrol">
-    <posx>0</posx>
-    <posy>0</posy>
     <textureup>img/ArrowUpNF.png</textureup>
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
@@ -151,8 +135,6 @@
     <pulseonselect>true</pulseonselect>
   </default>
   <default type="spincontrolex">
-    <posx>0</posx>
-    <posy>0</posy>
     <width>450</width>
     <height>75</height>
     <font>size22</font>
@@ -185,8 +167,6 @@
     <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
   </default>
   <default type="sliderex" description="Default Slider">
-    <posx>795</posx>
-    <posy>225</posy>
     <height>75</height>
     <width>450</width>
     <aligny>center</aligny>
@@ -205,8 +185,6 @@
     <textoffsetx>20</textoffsetx>
   </default>
   <default type="scrollbar">
-    <posx>0</posx>
-    <posy>0</posy>
     <width>9</width>
     <orientation>vertical</orientation>
     <texturesliderbackground border="0,4,0,4">Scrollbar/ScrollbarBG.png</texturesliderbackground>

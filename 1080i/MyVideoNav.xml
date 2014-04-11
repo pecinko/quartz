@@ -37,6 +37,17 @@
           <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
           <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
         </control>
+		<control type="togglebutton" id="20" description="Update library">
+          <include>9000Buttons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
+		  <usealttexture>library.isscanningmusic</usealttexture>
+        </control>
+		<control type="button" id="697" description="Playlist">
+          <include>9000Buttons</include>
+          <label>$LOCALIZE[31040]</label>
+          <onclick>ActivateWindow(videoplaylist)</onclick>
+        </control>
         <control type="button" id="698" description="Browse files">
           <include>9000Buttons</include>
           <label>$LOCALIZE[1024] $LOCALIZE[744]</label>

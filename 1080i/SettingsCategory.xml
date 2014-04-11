@@ -15,8 +15,16 @@
     </control>
     <control type="label" description="Heading">
       <include>Heading</include>
-      <label>10004</label>
+      <label>$LOCALIZE[10004] - $INFO[Control.GetLabel(2)]</label>
     </control>
+	<control type="label" id="2" description="Category label">
+        <posx>650</posx>
+        <posy>117</posy>
+        <width>620</width>
+        <height>72</height>
+        <align>center</align>
+        <font>-</font>
+      </control>
     <control type="grouplist" id="3" description="Left - Button Area">
       <posx>60</posx>
       <posy>165</posy>
@@ -25,15 +33,39 @@
       <itemgap>9</itemgap>
       <onleft>5</onleft>
       <onright>5</onright>
+      <onup>20</onup>
+      <ondown>20</ondown>
+      <orientation>vertical</orientation>
+    </control>
+	<control type="label" description="Settings level label">
+        <posx>60</posx>
+        <posy>900</posy>
+        <width>360</width>
+        <height>60</height>
+        <textoffsetx>10</textoffsetx>
+		<textcolor>blue</textcolor>
+		<label>$LOCALIZE[31299]</label>
+      </control>
+	<control type="button" id="20" description="Settings level">
+      <posx>60</posx>
+      <posy>960</posy>
+      <onright>noop</onright>
+      <onleft>noop</onleft>
       <onup>3</onup>
       <ondown>3</ondown>
-      <orientation>vertical</orientation>
+      <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
+      <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+      <textoffsetx>20</textoffsetx>
+      <align>left</align>
+      <aligny>center</aligny>
+      <font>size23</font>
+	  <onclick>SettingsLevelChange</onclick>
     </control>
     <control type="grouplist" id="5" description="Right - Control Area">
       <posx>540</posx>
       <posy>165</posy>
       <width>1260</width>
-      <height>912</height>
+      <height>680</height>
       <itemgap>0</itemgap>
       <onleft>3</onleft>
       <onright>60</onright>
@@ -72,6 +104,15 @@
       <aligny>center</aligny>
       <font>size23</font>
     </control>
+	<control type="textbox" id="6" description="Settings description">
+				<posx>560</posx>
+        		<posy>921</posy>
+        		<width>1230</width>
+      			<height>126</height>
+				<align>justify</align>
+				<textcolor>blue</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>
     <control type="scrollbar" id="60">
       <posx>39r</posx>
       <posy>159</posy>

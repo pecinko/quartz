@@ -14,13 +14,13 @@
         <posx>0</posx>
         <posy>-9</posy>
         <width>1920</width>
-        <height>156</height>
+        <height>216</height>
         <texture>img/BlackDotST.png</texture>
       </control>
       <control type="image" description="Info Background">
         <visible>VideoPlayer.Content(LiveTV)</visible>
         <posx>0</posx>
-        <posy>165</posy>
+        <posy>225</posy>
         <width>1920</width>
         <height>177</height>
         <texture>img/BlackDotST.png</texture>
@@ -29,7 +29,7 @@
         <posx>60</posx>
         <posy>-8</posy>
         <width>1890</width>
-        <height>38</height>
+        <height>70</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>size17</font>
@@ -37,9 +37,9 @@
       </control>
       <control type="label" id="11" description="row 2 sys label">
         <posx>60</posx>
-        <posy>30</posy>
+        <posy>63</posy>
         <width>1890</width>
-        <height>36</height>
+        <height>70</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>size17</font>
@@ -47,9 +47,9 @@
       </control>
       <control type="label" id="12" description="row 3 sys label">
         <posx>60</posx>
-        <posy>68</posy>
+        <posy>129</posy>
         <width>1890</width>
-        <height>72</height>
+        <height>70</height>
         <align>left</align>
         <aligny>center</aligny>
         <font>size17</font>

@@ -186,7 +186,7 @@
       </control>
       <control type="group" description="Media info">
         <visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
-        <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+        <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
         <animation effect="fade" time="400">Visible</animation>
         <animation effect="fade" time="0">Hidden</animation>
         <posx>112</posx>
@@ -289,7 +289,7 @@
       </control>
       <control type="group" description="Media info">
         <visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
-        <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+        <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
         <animation effect="fade" time="400">Visible</animation>
         <animation effect="fade" time="0">Hidden</animation>
         <control type="group" description="Thumbs no info">
@@ -371,10 +371,10 @@
         <control type="group" description="Posters">
           <posx>60</posx>
           <posy>240</posy>
-          <animation effect="zoom" start="100" end="62" time="400" center="518,-234" easing="in" reversible="false" condition="System.IdleTime(2) + !SubString(ListItem.Path,videodb://1/7)">Conditional</animation>
-          <animation effect="zoom" start="62" end="100" time="50" center="518,-234" easing="in" reversible="false" condition="![System.IdleTime(2) + !SubString(ListItem.Path,videodb://1/7)]">Conditional</animation>
-          <animation effect="fade" start="100" end="0" time="260" reversible="false" condition="System.IdleTime(2) + !IsEmpty(ListItem.Property(fanart_image)) + !SubString(ListItem.Path,videodb://1/7)">Conditional</animation>
-          <animation effect="fade" start="0" end="100" time="340" reversible="false" condition="![System.IdleTime(2) + !IsEmpty(ListItem.Property(fanart_image)) + !SubString(ListItem.Path,videodb://1/7)]">Conditional</animation>
+          <animation effect="zoom" start="100" end="62" time="400" center="518,-234" easing="in" reversible="false" condition="System.IdleTime(2) + !SubString(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+          <animation effect="zoom" start="62" end="100" time="50" center="518,-234" easing="in" reversible="false" condition="![System.IdleTime(2) + !SubString(ListItem.Path,videodb://movies/sets/)]">Conditional</animation>
+          <animation effect="fade" start="100" end="0" time="260" reversible="false" condition="System.IdleTime(2) + !IsEmpty(ListItem.Property(fanart_image)) + !SubString(ListItem.Path,videodb://movies/sets/)">Conditional</animation>
+          <animation effect="fade" start="0" end="100" time="340" reversible="false" condition="![System.IdleTime(2) + !IsEmpty(ListItem.Property(fanart_image)) + !SubString(ListItem.Path,videodb://movies/sets/)]">Conditional</animation>
           <control type="image" description="Thumb Reflection">
             <posx>180</posx>
             <posy>729</posy>
@@ -404,7 +404,7 @@
           </control>
         </control>
         <control type="group" description="Fanart">
-          <visible>System.IdleTime(1) + !SubString(ListItem.Path,videodb://1/7)</visible>
+          <visible>System.IdleTime(1) + !SubString(ListItem.Path,videodb://movies/sets/)</visible>
           <posx>114</posx>
           <posy>85</posy>
           <animation effect="fade" start="0" end="100" time="1000" easing="out" condition="System.IdleTime(2)">Conditional</animation>
@@ -438,7 +438,7 @@
           </control>
         </control>
         <control type="group" description="Media info">
-          <visible>System.IdleTime(2) + !SubString(ListItem.Path,videodb://1/7)</visible>
+          <visible>System.IdleTime(2) + !SubString(ListItem.Path,videodb://movies/sets/)</visible>
           <animation effect="fade" start="0" end="100" time="1000" easing="out" condition="System.IdleTime(2)">Conditional</animation>
           <animation effect="fade" start="100" end="0" time="0" condition="!System.IdleTime(2)">Conditional</animation>
           <posx>112</posx>
@@ -1662,7 +1662,7 @@
         <label>$INFO[ListItem.label][COLOR=Grey]$VAR[TopLabel,  ][/COLOR]</label>
       </control>
       <control type="image" description="Overlay">
-        <visible>![container.content(tvshows) | container.content(seasons) | SubString(ListItem.Path,videodb://1/7)]</visible>
+        <visible>![container.content(tvshows) | container.content(seasons) | SubString(ListItem.Path,videodb://movies/sets/)]</visible>
         <posx>66</posx>
         <posy>124</posy>
         <height>32</height>
@@ -1671,7 +1671,7 @@
         <texture>$VAR[Overlay]</texture>
       </control>
       <control type="image" description="Sets">
-        <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+        <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
         <posx>50</posx>
         <posy>123</posy>
         <height>33</height>
@@ -2221,7 +2221,7 @@
           <posx>70</posx>
           <posy>0</posy>
           <control type="image" description="Overlay">
-            <visible>!SubString(ListItem.Path,videodb://1/7)</visible>
+            <visible>!SubString(ListItem.Path,videodb://movies/sets/)</visible>
             <posx>-40</posx>
             <posy>376</posy>
             <height>32</height>
@@ -2230,7 +2230,7 @@
             <texture>$VAR[Overlay]</texture>
           </control>
           <control type="image" description="Sets">
-            <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+            <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
             <posx>-57</posx>
             <posy>376</posy>
             <height>33</height>

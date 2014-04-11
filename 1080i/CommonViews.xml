@@ -726,7 +726,7 @@
   </include>
   <include name="ArrowNF">
     <control type="image" description="arrow">
-      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://1/7) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
+      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://movies/sets/) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
       <posx>75r</posx>
       <posy>0</posy>
       <height>81</height>
@@ -737,7 +737,7 @@
   </include>
   <include name="ArrowFO">
     <control type="image" description="arrow">
-      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://1/7) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
+      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://movies/sets/) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
       <posx>75r</posx>
       <posy>0</posy>
       <height>81</height>
@@ -746,7 +746,7 @@
       <texture>img/ArrowNF.png</texture>
     </control>
     <control type="image" description="arrow">
-      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://1/7) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
+      <visible>[Window.IsActive(Settings.xml) | ListItem.IsFolder] + ![StringCompare(ListItem.Label,..) | SubString(ListItem.Path,videodb://movies/sets/) | container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(Episodes) | container.content(musicvideos) | container.content(songs) | container.content(addons) | SubString(Container.FolderPath,plugin://,left)]</visible>
       <animation effect="fade" start="0" end="100" time="150" delay="300">Focus</animation>
       <posx>75r</posx>
       <posy>0</posy>
@@ -759,7 +759,7 @@
   <include name="Sets">
     <control type="image" description="Sets">
       <visible>Window.IsActive(MyVideoNav.xml)</visible>
-      <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+      <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
       <posx>82r</posx>
       <posy>0</posy>
       <height>81</height>
@@ -771,7 +771,7 @@
   <include name="Sets51">
     <control type="image" description="Sets">
       <visible>Window.IsActive(MyVideoNav.xml)</visible>
-      <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+      <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
       <posx>82r</posx>
       <posy>0</posy>
       <height>111</height>
@@ -783,7 +783,7 @@
   <include name="SetsFO">
     <control type="image" description="Sets">
       <visible>Window.IsActive(MyVideoNav.xml)</visible>
-      <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+      <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
       <posx>82r</posx>
       <posy>0</posy>
       <height>81</height>
@@ -795,7 +795,7 @@
   <include name="SetsFO51">
     <control type="image" description="Sets">
       <visible>Window.IsActive(MyVideoNav.xml)</visible>
-      <visible>SubString(ListItem.Path,videodb://1/7)</visible>
+      <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
       <posx>82r</posx>
       <posy>0</posy>
       <height>111</height>

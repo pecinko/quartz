@@ -164,8 +164,10 @@
   <string id="31037">Cinema</string>
   <string id="31038">Reset ALL skin settings to default values</string>
   <string id="31039">Item</string>
+  
   <string id="31395">Section</string>
   <string id="31400">Currently watching</string>
+  <string id="31287">Local subtitle available</string>
   <string id="31288">Trailers</string>
   <string id="31289">Newly Added</string>
   <string id="31290">Show Fanart in music playing window</string>
@@ -177,6 +179,7 @@
   <string id="31296">Sections</string>
   <string id="31297">min</string>
   <string id="31298">Submenu items</string>
+  <string id="31299">Level:</string>
 
   <string id="31999">Scrollbars</string>
   <string id="31998">Active</string>

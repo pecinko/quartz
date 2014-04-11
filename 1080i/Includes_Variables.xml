@@ -108,7 +108,7 @@
   </variable>
   <variable name="Plots" description="Plots and descriptions">
     <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
-    <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
+    <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
     <value condition="[Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes)] + !IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
     <value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot)">$INFO[Container.ShowPlot]</value>
     <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
@@ -116,7 +116,7 @@
     <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
   </variable>
   <variable name="52_SmallLabels" description="Container 52 small labels">
-    <value condition="SubString(ListItem.Path,videodb://1/7)">$LOCALIZE[20457]</value>
+    <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
     <value condition="container.content(Movies) + StringCompare(Container.SortMethod,$LOCALIZE[551])">$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
     <value condition="Container.Content(Episodes) + StringCompare(Container.SortMethod,$LOCALIZE[20359])">$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
     <value condition="Container.Content(TVShows) | Container.Content(Seasons)">$INFO[ListItem.Property(UnwatchedEpisodes),$LOCALIZE[16101] ]$INFO[ListItem.Property(TotalEpisodes), (,)]</value>

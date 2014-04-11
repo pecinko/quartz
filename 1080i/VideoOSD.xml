@@ -314,18 +314,13 @@
           <ondown>101</ondown>
           <itemgap>0</itemgap>
           <scrolltime>240</scrolltime>
-          <control type="togglebutton" id="701" description="Subtitles">
+          <control type="button" id="701" description="Subtitles">
             <visible>!VideoPlayer.Content(LiveTV)</visible>
             <include>9000Buttons</include>
             <label>31356</label>
             <onclick>SetFocus(602)</onclick>
             <onclick>Close</onclick>
-            <onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-            <onclick>SetFocus(602)</onclick>
-            <altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-            <altclick>Close</altclick>
-            <altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-            <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+            <onclick>ActivateWindow(SubtitleSearch)</onclick>
           </control>
           <control type="togglebutton" id="702" description="Record">
             <visible>VideoPlayer.Content(LiveTV)</visible>
