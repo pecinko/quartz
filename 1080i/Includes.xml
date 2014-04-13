@@ -10,7 +10,7 @@
 		_ShelfCustomizer 1117
 	-->
   <include file="Includes_Variables.xml" />
-  <include file="Defaults.xml" />
+  <include file="defaults.xml" />
   <include file="CommonViews.xml" />
   <include file="View_Videos.xml" />
   <include file="View_Banners.xml" />

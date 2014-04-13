@@ -21,7 +21,7 @@
       <height max="960">auto</height>
       <itemgap>3</itemgap>
       <control type="button" id="2001" description="InProgressReset">
-        <visible>[Container.Content(Episodes) | Container.Content(Movies) ] + system.hasaddon(script.module.inprogressreset) + !SubString(ListItem.PercentPlayed,0,left)</visible>
+        <visible>[Container.Content(Episodes) | Container.Content(Movies)] + system.hasaddon(script.module.inprogressreset) + !SubString(ListItem.PercentPlayed,0,left)</visible>
         <posx>-</posx>
         <posy>-</posy>
         <width>480</width>
@@ -30,7 +30,7 @@
         <focusedcolor>White2</focusedcolor>
         <texturefocus border="5">img/ContextButtonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
-        <label>Reset Progress</label>
+        <label>31286</label>
         <onclick>Dialog.Close(all,true)</onclick>
         <onclick>RunScript(script.module.inprogressreset,DBID=$INFO[ListItem.DBID])</onclick>
       </control>
