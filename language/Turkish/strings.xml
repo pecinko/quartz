@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--Translator: Özgür BASKIN (queeup)-->
 <!--Email: ozgur.baskin@gmail.com-->
-<!--Date of translation: 06/02/2014-->
+<!--Date of translation: 06/05/2014-->
 <strings>
   <!-- Misc labels -->
   <string id="31000">Değiştir</string>
@@ -167,8 +167,11 @@
   <string id="31037">Sinema</string>
   <string id="31038">Bütün dış görünüm ayarlarını varsayılan değerlere sıfırla</string>
   <string id="31039">Öğe</string>
+  
   <string id="31395">Bölüm</string>
   <string id="31400">Şu anda izlenen</string>
+  <string id="31286">İlerleme durumunu sıfırla</string>
+  <string id="31287">Yerel altyazı mevcut</string>
   <string id="31288">Fragmanlar</string>
   <string id="31289">Yeni Eklenen</string>
   <string id="31290">Müzik çalma penceresinde fanart göster</string>
@@ -180,6 +183,7 @@
   <string id="31296">Bölümler</string>
   <string id="31297">dak</string>
   <string id="31298">Alt menü öğeleri</string>
+  <string id="31299">Düzey:</string>
 
   <string id="31999">Kaydırma çubukları</string>
   <string id="31998">Etkin</string>
