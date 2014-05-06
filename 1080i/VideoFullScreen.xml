@@ -56,7 +56,7 @@
         <label>-</label>
       </control>
       <control type="group">
-        <posy>114</posy>
+        <posy>165</posy>
         <visible>VideoPlayer.Content(LiveTV)</visible>
         <control type="label" description="Backend">
           <posx>60</posx>
