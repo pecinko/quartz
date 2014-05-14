@@ -365,8 +365,9 @@
           <item id="2" description="Program apps">
             <visible>!Skin.HasSetting(Addons2)</visible>
             <label>0</label>
-            <onclick>XBMC.ActivateWindow(Programs,Addons,return)</onclick>
-          </item>
+            <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
+			<onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
+	      </item>
           <item id="3" description="Picture apps">
             <visible>!Skin.HasSetting(Addons3)</visible>
             <label>1</label>

@@ -1,3 +1,9 @@
+4.5.2
+Add missing labels to subtitle download dialog
+Fix opening of add ons on Android platform
+Fix PVR info overlap /thanks Diego
+Refresh Turkish translation /thanks Queeup
+
 4.5.1
 Fix selected items in dialog with multipy choices
 Fix custom TV items media shelf
