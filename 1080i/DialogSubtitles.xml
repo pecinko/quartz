@@ -59,16 +59,36 @@
             </control>
           </control>
         </control>
-        <control type="label" id="100" description="Textarea">
+        <control type="label" id="100" description="Active service header">
           <posx>75</posx>
-          <posy>90</posy>
+          <posy>15</posy>
           <width>1320</width>
           <height>60</height>
-          <font>font13</font>
           <textcolor>Silver</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>
+        </control>
+		<control type="label" description="Video File name">
+          <posx>75</posx>
+          <posy>100</posy>
+          <width>1320</width>
+          <height>60</height>
+          <font>font13</font>
+          <label>$INFO[Player.Filename]</label>
+          <textcolor>Blue</textcolor>
+          <align>center</align>
+          <aligny>center</aligny>
+          <wrapmultiline>true</wrapmultiline>
+        </control>
+        <control type="label" id="140" description="Searching...">
+          <posx>75</posx>
+          <posy>75</posy>
+          <width>1320</width>
+          <height>30</height>
+          <align>center</align>
+          <aligny>center</aligny>
+          <font>font13</font>
         </control>
         <control type="image">
           <description>separator</description>
@@ -99,7 +119,7 @@
             <width>33</width>
             <height>54</height>
             <aspectratio>keep</aspectratio>
-            <info>Listitem.Thumb</info>
+            <texture>flags/$INFO[ListItem.Thumb].gif</texture>
           </control>
           <control type="label">
             <posx>54</posx>
@@ -168,7 +188,7 @@
             <width>33</width>
             <height>54</height>
             <aspectratio>keep</aspectratio>
-            <info>Listitem.Thumb</info>
+            <texture>flags/$INFO[ListItem.Thumb].gif</texture>
           </control>
           <control type="label">
             <posx>54</posx>
@@ -310,8 +330,7 @@
             <posy>700</posy>
             <width>375</width>
             <height>57</height>
-	  <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
-      <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+	  <texturenofocus>-</texturenofocus>
       <textoffsetx>20</textoffsetx>
       <align>left</align>
       <aligny>center</aligny>
