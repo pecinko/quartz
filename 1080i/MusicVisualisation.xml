@@ -274,7 +274,8 @@
               <textcolor>Grey3</textcolor>
             </control>
             <control type="label" description="Album">
-              <posy>636</posy>
+              <posx>0</posx>
+			  <posy>636</posy>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
               <align>right</align>

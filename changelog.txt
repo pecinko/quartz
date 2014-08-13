@@ -1,3 +1,8 @@
+4.5.5
+Increase number of recently added items to 25
+Remove skin widgets support in favor of built-in support
+Fix music player label alignment
+
 4.5.2
 Add missing labels to subtitle download dialog
 Fix opening of add ons on Android platform
