@@ -68,19 +68,19 @@
       <control type="button" id="7">
         <description>Default Button</description>
         <height>66</height>
-        <texturefocus border="5">img/ButtonFO.png</texturefocus>
+        <texturefocus border="9">img/MediaButton.png</texturefocus>
         <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
       </control>
       <control type="radiobutton" id="8">
         <description>Default RadioButton</description>
         <height>66</height>
-        <texturefocus border="5">img/ButtonFO.png</texturefocus>
+        <texturefocus border="9">img/MediaButton.png</texturefocus>
         <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
       </control>
       <control type="spincontrolex" id="9">
         <description>Default spincontrolex</description>
         <height>66</height>
-        <texturefocus border="5">img/ButtonFO.png</texturefocus>
+        <texturefocus border="9">img/MediaButton.png</texturefocus>
         <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
         <aligny>center</aligny>
         <reverse>yes</reverse>
@@ -88,7 +88,7 @@
       <control type="sliderex" id="10">
         <description>Default Slider</description>
         <height>66</height>
-        <texturefocus border="5">img/ButtonFO.png</texturefocus>
+        <texturefocus border="9">img/MediaButton.png</texturefocus>
         <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
       </control>
       <control type="edit" id="12">

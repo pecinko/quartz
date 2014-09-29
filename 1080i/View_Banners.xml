@@ -11,7 +11,7 @@
           <height>1080</height>
           <fadetime>300</fadetime>
           <aspectratio>stretch</aspectratio>
-          <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+          <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
         </control>
         <control type="image">
           <include>Dimensions_Fullscreen</include>
@@ -39,7 +39,7 @@
               <width>756</width>
               <height>330</height>
               <include>Icon_Fade</include>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="Thumb">
@@ -170,7 +170,7 @@
         <animation effect="fade" time="300">Visible</animation>
         <animation effect="fade" time="300">Hidden</animation>
         <aspectratio>stretch</aspectratio>
-        <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
       </control>
       <control type="image">
         <visible>false</visible>
@@ -216,7 +216,7 @@
               <width>756</width>
               <height>450</height>
               <include>Icon_Fade</include>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image" description="Thumb">

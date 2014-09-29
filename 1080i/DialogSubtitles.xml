@@ -76,7 +76,7 @@
           <height>60</height>
           <font>font13</font>
           <label>$INFO[Player.Filename]</label>
-          <textcolor>Blue</textcolor>
+          <textcolor>HL</textcolor>
           <align>center</align>
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>
@@ -179,7 +179,7 @@
             <posy>0</posy>
             <width>1365</width>
             <height>54</height>
-            <texture border="5">img/ButtonFO.png</texture>
+            <texture border="9">img/MediaButton.png</texture>
             <visible>Control.HasFocus(120)</visible>
           </control>
           <control type="image">
@@ -297,7 +297,7 @@
             <height>57</height>
             <font>size18</font>
             <aligny>center</aligny>
-            <selectedcolor>Blue</selectedcolor>
+            <selectedcolor>HL</selectedcolor>
             <align>left</align>
             <info>ListItem.Label</info>
           </control>
@@ -308,7 +308,7 @@
             <posy>0</posy>
             <width>375</width>
             <height>57</height>
-            <texture border="5">img/ButtonFO.png</texture>
+            <texture border="9">img/MediaButton.png</texture>
             <visible>Control.HasFocus(150)</visible>
           </control>
           <control type="label">
@@ -319,7 +319,7 @@
             <font>size18</font>
             <aligny>center</aligny>
             <textcolor>white</textcolor>
-            <selectedcolor>Blue</selectedcolor>
+            <selectedcolor>HL</selectedcolor>
             <align>left</align>
             <info>ListItem.Label</info>
           </control>

@@ -28,7 +28,7 @@
         <label>-</label>
         <font>size17</font>
         <haspath>true</haspath>
-        <textcolor>Blue</textcolor>
+        <textcolor>HL</textcolor>
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="list" id="20" description="Left File List">
@@ -113,7 +113,7 @@
         <label>-</label>
         <font>size17</font>
         <haspath>true</haspath>
-        <textcolor>Blue</textcolor>
+        <textcolor>HL</textcolor>
         <shadowcolor>black</shadowcolor>
       </control>
       <control type="list" id="21" description="Right File List">

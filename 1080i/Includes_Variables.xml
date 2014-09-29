@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+  <variable name="Fanart.Thumb" description="Thumb fallback for fanart">
+    <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+	<value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+	<value>DefaultFolder.png</value>
+  </variable>
   <variable name="Trailer" description="Trailers check keep in front">
     <value condition="Container.Content(Movies) + !IsEmpty(ListItem.Trailer)">$LOCALIZE[20410]</value>
   </variable>
   <variable name="Banner" description="TV Banners">
     <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-    <value>$INFO[ListItem.Icon]</value>
+    <value>$INFO[ListItem.Thumb]</value>
   </variable>
   <variable name="ShelfIcon" description="Shelf custom and fallback image">
     <value condition="Control.HasFocus(301) + !Control.IsVisible(311) + Skin.HasSetting(MoviesShelf_Image)">$INFO[Skin.String(MoviesShelf_Icon)]</value>
@@ -97,7 +102,7 @@
     <value condition="Container.Content(Addons)">$INFO[ListItem.label2]$INFO[ListItem.Property(Addon.Creator), • ]</value>
     <value condition="Container.Content(songs)">$INFO[ListItem.Album]</value>
     <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Label]</value>
-    <value condition="Container.Content(Movies)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.RatingAndVotes, • ]</value>
+    <value condition="Container.Content(Movies)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.Rating, • ]</value>
     <value condition="Container.Content(Seasons) | Container.Content(TVShows)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[16101] ] $INFO[ListItem.Property(TotalEpisodes),(, $LOCALIZE[20453])]</value>
     <value>$INFO[ListItem.Label2]</value>
   </variable>

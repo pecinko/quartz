@@ -5,14 +5,15 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size22</font>
+	<scroll>false</scroll>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <scroll>true</scroll>
     <scrollspeed>50</scrollspeed>
-    <scrollsuffix>  •  </scrollsuffix>
+    <scrollsuffix>  &#0000;  </scrollsuffix>
   </default>
   <default type="fadelabel">
     <height>75</height>
@@ -21,9 +22,9 @@
     <font>size22</font>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <scrollout>false</scrollout>
     <pauseatend>3000</pauseatend>
@@ -31,14 +32,15 @@
   </default>
   <default type="textbox">
     <font>size20</font>
-    <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <textcolor>Silver</textcolor>
+	<align>justify</align>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <pagecontrol>61</pagecontrol>
     <pulseonselect>false</pulseonselect>
-    <autoscroll delay="6000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+    <autoscroll delay="8000" time="4300" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
   </default>
   <default type="image">
     <align>center</align>
@@ -53,11 +55,12 @@
     <font>size22</font>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+	<focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
+    
+	<texturefocus border="9">img/MediaButton.png</texturefocus>
     <!--<texturenofocus border="8">img/ButtonNF.png</texturenofocus>-->
     <pulseonselect>false</pulseonselect>
   </default>
@@ -69,12 +72,12 @@
     <font>size22</font>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
-    <texturefocus flipy="true" border="5">img/ButtonFO.png</texturefocus>
+    <texturefocus flipy="true" border="9">img/MediaButton.png</texturefocus>
   </default>
   <default type="togglebutton">
     <width>450</width>
@@ -84,13 +87,13 @@
     <font>size22</font>
     <textoffsetx>20</textoffsetx>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
-    <altselectedcolor>Blue</altselectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
+    <altselectedcolor>HL</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
-    <alttexturefocus border="5">img/ButtonFO.png</alttexturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
@@ -101,13 +104,13 @@
     <aligny>center</aligny>
     <font>size22</font>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
     <textureradiofocus>img/RadioON.png</textureradiofocus>
     <textureradionofocus>-</textureradionofocus>
     <textoffsetx>20</textoffsetx>
@@ -119,14 +122,14 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <font>size22</font>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
@@ -142,13 +145,13 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>White</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <shadowcolor>ShadowDark</shadowcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <textoffsetx>20</textoffsetx>
     <align>left</align>
@@ -175,14 +178,22 @@
     <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
     <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
     <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
     <texturenofocus>-</texturenofocus>
     <font>size22</font>
     <textcolor>White</textcolor>
-    <focusedcolor>White2</focusedcolor>
-    <selectedcolor>White2</selectedcolor>
+    <focusedcolor>HL</focusedcolor>
+    <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     <textoffsetx>20</textoffsetx>
+  </default>
+  <default type="progress">
+    <reveal>true</reveal>
+    <texturebg>OSD/ProgressBackground.png</texturebg>
+    <lefttexture>controls/ProgressLeft.png</lefttexture>
+    <midtexture>controls/ProgressMid.png</midtexture>
+    <righttexture>controls/ProgressRight.png</righttexture>
+    <overlaytexture>-</overlaytexture>
   </default>
   <default type="scrollbar">
     <width>9</width>

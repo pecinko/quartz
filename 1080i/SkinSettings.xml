@@ -78,7 +78,7 @@
             <height>81</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
           </control>
         </itemlayout>
         <focusedlayout width="892" height="81">
@@ -111,7 +111,7 @@
             <height>81</height>
             <width>42</width>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
           </control>
         </focusedlayout>
         <content>
@@ -127,11 +127,23 @@
             <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(AutoScroll)</onclick>
           </item>
-          <item id="2" description="Lyrics">
+		  <item id="2" description="Fanart">
+            <visible>Skin.HasSetting(HideFanart)</visible>
+			<label>$LOCALIZE[31307]</label>
+            <label2>$LOCALIZE[107]</label2>
+            <onclick>Skin.ToggleSetting(HideFanart)</onclick>
+          </item>
+		  <item id="2" description="Fanart">
+            <visible>!Skin.HasSetting(HideFanart)</visible>
+			<label>$LOCALIZE[31307]</label>
+            <label2>$LOCALIZE[106]</label2>
+            <onclick>Skin.ToggleSetting(HideFanart)</onclick>
+          </item>
+         <!-- <item id="2" description="Lyrics">
             <label>$LOCALIZE[24020] $LOCALIZE[31132]</label>
             <label2>$INFO[Skin.String(LyricPath)]</label2>
             <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-          </item>
+          </item>-->
           <!--<item id="3" description="Subtitles">
             <label>$LOCALIZE[24020] $LOCALIZE[31133]</label>
             <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>

@@ -5,18 +5,20 @@
   <views>50,51,52,54,501,53,502,55,56,57,58,59,500,510</views>
   <onload condition="System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
   <controls>
-    <include>View_Videos</include>
+    <include>FullBackground</include>
+	  
+	  
+	<include>View_Videos</include>
     <include>View_Banners</include>
     <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
-      <control type="image" description="List back">
-        <posx>459</posx>
-        <posy>168</posy>
-        <width>1002</width>
-        <height>762</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+      <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>900</width>
+        <height>900</height>
+        <texture border="128">img/DialogPanel.png</texture>
       </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>

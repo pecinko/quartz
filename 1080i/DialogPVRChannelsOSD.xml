@@ -115,7 +115,7 @@
             <posy>0</posy>
             <width>60</width>
             <height>105</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </itemlayout>
@@ -204,7 +204,7 @@
             <posy>0</posy>
             <width>60</width>
             <height>105</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
             <aspectratio>keep</aspectratio>
           </control>
         </focusedlayout>

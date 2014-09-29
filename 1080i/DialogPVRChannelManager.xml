@@ -57,7 +57,7 @@
             <posy>12</posy>
             <height>38</height>
             <width>180</width>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label" description="Main Label">
@@ -96,7 +96,7 @@
             <posy>12</posy>
             <height>38</height>
             <width>180</width>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
             <aspectratio align="right">keep</aspectratio>
           </control>
           <control type="label" description="Main Label">
@@ -447,7 +447,7 @@
             <label>$LOCALIZE[31026]</label>
             <align>left</align>
             <aligny>center</aligny>
-            <textcolor>blue</textcolor>
+            <textcolor>HL</textcolor>
             <shadowcolor>black</shadowcolor>
           </control>
           <control type="button" id="30">

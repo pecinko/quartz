@@ -112,7 +112,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture>$INFO[ListItem.Icon]</texture>
+              <texture>$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -150,7 +150,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture>$INFO[ListItem.Icon]</texture>
+              <texture>$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">

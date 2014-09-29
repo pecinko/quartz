@@ -24,7 +24,7 @@
           <width>621</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -106,7 +106,7 @@
           <width>621</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -116,7 +116,7 @@
           <width>621</width>
           <height>720</height>
           <include>Icon_Fade</include>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -159,7 +159,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -191,7 +191,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="PhotoFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -217,7 +217,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <include>LargeListFade</include>
+      <!--<include>LargeListFade</include>-->
       <control type="scrollbar" id="60">
         <posx>51r</posx>
         <posy>135</posy>
@@ -249,7 +249,7 @@
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -276,7 +276,7 @@
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -320,7 +320,8 @@
             <posy>147</posy>
             <width>309</width>
             <height>309</height>
-            <texture border="28">img/Frame25.png</texture>
+            <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="200" reversible="true">Conditional</animation>
             <animation condition="Container.Column(1)" effect="slide" start="0,0" end="300,0" time="200" reversible="true">Conditional</animation>

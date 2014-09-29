@@ -47,25 +47,25 @@
       <control type="button" id="10" description="OK Button">
         <width>390</width>
         <label>186</label>
-        <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
+        <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
         <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="button" id="12" description="Defaults Button">
         <width>390</width>
         <label>409</label>
-        <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
+        <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
         <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="button" id="11" description="Cancel Button">
         <width>390</width>
         <label>222</label>
-        <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
+        <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
         <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
     </control>
     <control type="button" id="13" description="Default Category Button">
       <font>size22</font>
-      <texturenofocus>img/SettingsButtonNF.png</texturenofocus>
+      <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
       <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
 	  <align>left</align>
     </control>
@@ -102,7 +102,7 @@
         <label>-</label>
         <font>size24</font>
         <align>left</align>
-        <textcolor>Blue</textcolor>
+        <textcolor>HL</textcolor>
       </control>
       <control type="image" id="6" description="Default Seperator">
         <height>-3</height>

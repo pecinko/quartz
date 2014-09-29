@@ -8,41 +8,32 @@
     <posy>0</posy>
   </coordinates>
   <controls>
-    <control type="image" description="BG">
-      <animation effect="fade" start="0" end="100" delay="150" time="300">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>busy/BusyBG.png</texture>
-    </control>
-    <control type="image" description="Dialog">
-      <posx>444</posx>
-        <posy>245</posy>
-        <width>1023</width>
-        <height>602</height>
-      <aspectratio>stretch</aspectratio>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
-    </control>
-    <control type="grouplist" id="9000">
-      <posx>660</posx>
-      <posy>520</posy>
+    
+    <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>975</width>
+        <height>570</height>
+        <texture border="128">img/DialogPanel.png</texture>
+      </control>
+	  <control type="grouplist" id="9000">
+      <centerleft>960</centerleft>
+      <posy>543</posy>
       <width>600</width>
       <height>126</height>
       <onleft>9000</onleft>
       <onright>9000</onright>
       <onup>noop</onup>
       <ondown>noop</ondown>
-      <itemgap>30</itemgap>
+      <itemgap>84</itemgap>
       <align>center</align>
       <orientation>horizontal</orientation>
       <control type="button" id="2" description="Exit button">
-        <width>126</width>
-        <height>126</height>
+        <width>72</width>
+        <height>72</height>
         <font>-</font>
-        <texturenofocus>BM_QuitFO.png</texturenofocus>
-        <texturefocus>BM_QuitFO.png</texturefocus>
+        <texturenofocus>BMQuit.png</texturenofocus>
+        <texturefocus colordiffuse="HL">BMQuit.png</texturefocus>
         <onclick>XBMC.Quit()</onclick>
         <label>13009</label>
       </control>
@@ -51,11 +42,11 @@
         <animation type="Conditional" condition="!Control.IsEnabled(3)">
           <effect type="fade" start="100" end="30" time="0" reversible="true" />
         </animation>
-        <width>126</width>
-        <height>126</height>
+        <width>72</width>
+        <height>72</height>
         <font>-</font>
-        <texturenofocus>BM_ShutdownFO.png</texturenofocus>
-        <texturefocus>BM_ShutdownFO.png</texturefocus>
+        <texturenofocus>BMShutdown.png</texturenofocus>
+        <texturefocus colordiffuse="HL">BMShutdown.png</texturefocus>
         <onclick>XBMC.Powerdown()</onclick>
         <label>13005</label>
       </control>
@@ -64,11 +55,11 @@
         <animation type="Conditional" condition="!Control.IsEnabled(6)">
           <effect type="fade" start="100" end="30" time="0" reversible="true" />
         </animation>
-        <width>126</width>
-        <height>126</height>
+        <width>72</width>
+        <height>72</height>
         <font>-</font>
-        <texturenofocus>BM_SleepFO.png</texturenofocus>
-        <texturefocus>BM_SleepFO.png</texturefocus>
+        <texturenofocus>BMSleep.png</texturenofocus>
+        <texturefocus colordiffuse="HL">BMSleep.png</texturefocus>
         <onclick>XBMC.Suspend()</onclick>
         <label>13011</label>
       </control>
@@ -77,24 +68,26 @@
         <animation type="Conditional" condition="!Control.IsEnabled(8)">
           <effect type="fade" start="100" end="30" time="0" reversible="true" />
         </animation>
-        <width>126</width>
-        <height>126</height>
+        <width>72</width>
+        <height>72</height>
         <font>-</font>
-        <texturenofocus>BM_RestartFO.png</texturenofocus>
-        <texturefocus>BM_RestartFO.png</texturefocus>
+        <texturenofocus>BMRestart.png</texturenofocus>
+        <texturefocus colordiffuse="HL">BMRestart.png</texturefocus>
         <onclick>XBMC.Reset()</onclick>
         <label>13013</label>
       </control>
     </control>
 	<control type="group">
-	 <posx>660</posx>
-	 <posy>105</posy>
+	 <centerleft>960</centerleft>
+	 <posy>90</posy>
+	 <width>600</width>
     <control type="label">
       <visible>ControlGroup(9000).HasFocus(2)</visible>
       <width>600</width>
       <height>675</height>
       <align>center</align>
       <font>size26B</font>
+	  <textcolor>HL</textcolor>
       <label>13009</label>
     </control>
     <control type="label">
@@ -103,7 +96,8 @@
       <height>675</height>
       <align>center</align>
       <font>size26B</font>
-      <label>13005</label>
+      <textcolor>HL</textcolor>
+	  <label>13005</label>
     </control>
     <control type="label">
       <visible>ControlGroup(9000).HasFocus(6)</visible>
@@ -111,7 +105,8 @@
       <height>675</height>
       <align>center</align>
       <font>size26B</font>
-      <label>13011</label>
+      <textcolor>HL</textcolor>
+	  <label>13011</label>
     </control>
     <control type="label">
       <visible>ControlGroup(9000).HasFocus(8)</visible>
@@ -119,16 +114,19 @@
       <height>675</height>
       <align>center</align>
       <font>size26B</font>
-      <label>13013</label>
+      <textcolor>HL</textcolor>
+	  <label>13013</label>
     </control>
 	</control>
     <control type="image" description="Selector">
-      <posx>649</posx>
-      <posy>504</posy>
-      <width>154</width>
-      <height>154</height>
+      <posx>664</posx>
+      <posy>516</posy>
+      <width>124</width>
+      <height>124</height>
       <aspectratio>stretch</aspectratio>
-      <texture border="28">img/Frame25.png</texture>
+      <texture border="26,22,26,22">img/MediaButton.png</texture>
+        		<!--<texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>-->
       <animation type="Conditional" condition="Control.HasFocus(3)">
         <effect type="slide" start="0,0" end="156,0" time="180" center="auto" reversible="true" />
       </animation>

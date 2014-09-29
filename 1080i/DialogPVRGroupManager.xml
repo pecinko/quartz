@@ -43,7 +43,7 @@
             <label>31506</label>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>blue</textcolor>
+            <textcolor>HL</textcolor>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -146,7 +146,7 @@
             <font>font13</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>blue</textcolor>
+            <textcolor>HL</textcolor>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -179,7 +179,7 @@
                 <height>48</height>
                 <posx>8</posx>
                 <posy>6</posy>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
               </control>
               <control type="label">
                 <posx>60</posx>
@@ -216,7 +216,7 @@
                 <height>48</height>
                 <posx>8</posx>
                 <posy>6</posy>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
               </control>
               <control type="label">
                 <posx>60</posx>
@@ -263,7 +263,7 @@
             <font>font13</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>blue</textcolor>
+            <textcolor>HL</textcolor>
           </control>
           <control type="image">
             <posx>0</posx>
@@ -296,7 +296,7 @@
                 <height>48</height>
                 <posx>8</posx>
                 <posy>6</posy>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
               </control>
               <control type="label">
                 <posx>60</posx>
@@ -333,7 +333,7 @@
                 <height>48</height>
                 <posx>8</posx>
                 <posy>6</posy>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
               </control>
               <control type="label">
                 <posx>60</posx>

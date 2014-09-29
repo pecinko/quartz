@@ -3,22 +3,56 @@
   <defaultcontrol always="true">8998</defaultcontrol>
   <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
+    <!--<include>MiniBackground</include>-->
+	<control type="image" description="BG">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>100%</width>
+        <height>100%</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>img/BaseBGD.png</texture>
+		<colordiffuse>Overlay</colordiffuse>
+      </control>
     <control type="button" id="8998" description="Fix ATV1 focus bug">
       <include>HiddenButton</include>
       <onfocus>Control.SetFocus(9000)</onfocus>
       <onclick>Control.SetFocus(9000)</onclick>
     </control>
     <control type="group" description="Furniture">
-      <control type="image" description="Stage">
+      <!--<control type="image" description="Stage">
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
         <height>478</height>
         <aspectratio>stretch</aspectratio>
         <texture>img/HomeStage.png</texture>
+      </control>-->
+	  <!--<control type="image" description="Stage">
+        <left>0</left>
+        <bottom>0</bottom>
+        <width>1920</width>
+        <height>540</height>
+        <aspectratio>stretch</aspectratio>
+        <texture border="1,0,1,0">img/Gradient.png</texture>
+      </control>-->
+	  <control type="image" description="Stage">
+        <posx>0</posx>
+        <posy>-200</posy>
+        <width>1920</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture flipy="true">img/BigShelf.png</texture>
       </control>
+	  
       <control type="image" description="Navbar">
+        <posx>-90</posx>
+        <posy>454</posy>
+        <width>2100</width>
+        <height>144</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>img/HomeMenuBar.png</texture>
+      </control>
+	  <!--<control type="image" description="Navbar">
         <posx>-90</posx>
         <posy>476</posy>
         <width>2100</width>
@@ -33,12 +67,12 @@
         <height>1</height>
         <aspectratio>stretch</aspectratio>
         <texture>img/Line1.png</texture>
-      </control>
+      </control>-->
     </control>
     <control type="grouplist" description="Sliders">
       <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
       <posx>0</posx>
-      <posy>568</posy>
+      <posy>586</posy>
       <width max="1920">auto</width>
       <height>420</height>
       <align>center</align>
@@ -525,13 +559,14 @@
           <effect type="fade" start="100" end="0" time="200" reversible="true"/>
         </animation>
         <posx>-15</posx>
-        <posy>472</posy>
+        <posy>473</posy>
         <width>450</width>
-        <height>100</height>
+        <height>97</height>
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
         <texture border="50,0,50,0">img/HomeBarNF.png</texture>
+		<!--<colordiffuse>HL</colordiffuse>-->
         <include>HomeBarAnimation</include>
       </control>
       <control type="image" description="Bar FO">
@@ -539,14 +574,15 @@
           <effect type="fade" start="100" end="0" time="200" reversible="true"/>
         </animation>
         <posx>-15</posx>
-        <posy>472</posy>
+        <posy>473</posy>
         <width>450</width>
-        <height>100</height>
+        <height>97</height>
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
         <texture border="50,0,50,0">img/HomeBarFO.png</texture>
-        <include>HomeBarAnimation</include>
+        <!--<colordiffuse>HL</colordiffuse>-->
+		<include>HomeBarAnimation</include>
       </control>
       <control type="list" id="500" description="Navbar">
         <onleft>noop</onleft>
@@ -611,7 +647,7 @@
             <onclick>SetFocus(305)</onclick>
           </item>
           <item id="6" description="XBMC">
-            <label fallback="XBMC">$INFO[Skin.String(XBMCName)]</label>
+            <label fallback="13000">$INFO[Skin.String(XBMCName)]</label>
             <onclick>SetFocus(306)</onclick>
           </item>
         </content>
@@ -654,45 +690,12 @@
       <control type="image" description="Logo">
         <visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) + !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
         <include>ListVisibleFade</include>
-        <posx>68</posx>
-        <posy>138</posy>
-        <width>1785</width>
-        <height>324</height>
-        <aspectratio aligny="bottom">keep</aspectratio>
-        <texture>img/XBMCHomeLogo.png</texture>
-      </control>
-    </control>
-    <control type="group" description="RSS">
-      <control type="rss" description="RSS Feed">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <visible>ControlGroup(9000).HasFocus(306)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>0</posx>
-        <posy>1038</posy>
+        <centerleft>960</centerleft>
+        <top>120</top>
         <width>1920</width>
-        <height>33</height>
-        <font>size15</font>
-        <urlset>1</urlset>
-        <shadowcolor>Black</shadowcolor>
-        <titlecolor>White</titlecolor>
-        <headlinecolor>White</headlinecolor>
-        <textcolor>Grey</textcolor>
-      </control>
-      <control type="image" description="RSS Left fade">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <posx>0</posx>
-        <posy>1038</posy>
-        <width>90</width>
-        <height>33</height>
-        <texture>img/DefaultGradientH.png</texture>
-      </control>
-      <control type="image" description="RSS Left fade">
-        <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-        <posx>1830</posx>
-        <posy>1038</posy>
-        <width>90</width>
-        <height>33</height>
-        <texture flipx="true">img/DefaultGradientH.png</texture>
+        <height>222</height>
+        <aspectratio aligny="bottom">keep</aspectratio>
+        <texture>img/XBMCLogo.png</texture>
       </control>
     </control>
     <control type="group" description="Player Info">

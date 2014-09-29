@@ -39,7 +39,7 @@
                 <height>111</height>
                 <width>111</width>
                 <bordersize>6</bordersize>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
               </control>
               <control type="image">
@@ -85,7 +85,7 @@
                 <height>111</height>
                 <width>111</width>
                 <bordersize>6</bordersize>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
                 <aspectratio>scale</aspectratio>
               </control>
               <control type="image">
@@ -127,7 +127,7 @@
           </control>
           <include>LargeListSlider</include>
         </control>
-        <include>LargeListFade</include>
+        <!--<include>LargeListFade</include>-->
         <control type="scrollbar" id="60">
           <posx>51r</posx>
           <posy>135</posy>

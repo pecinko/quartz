@@ -100,7 +100,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture>$INFO[ListItem.Icon]</texture>
+              <texture>$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -130,7 +130,7 @@
               <height>111</height>
               <width>111</width>
               <bordersize>6</bordersize>
-              <texture>$INFO[ListItem.Icon]</texture>
+              <texture>$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
@@ -190,7 +190,7 @@
         <width>765</width>
         <height>690</height>
         <fadetime>200</fadetime>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>keep</aspectratio>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
        </control>
@@ -199,7 +199,7 @@
         <width>765</width>
         <height>690</height>
         <fadetime>200</fadetime>
-        <texture flipx="true">$INFO[ListItem.Icon]</texture>
+        <texture flipx="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>keep</aspectratio>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
       </control>

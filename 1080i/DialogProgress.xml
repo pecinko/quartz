@@ -4,22 +4,24 @@
   
   <include>DialogOpenClose</include>
   <controls>
+   <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>1200</width>
+        <height>846</height>
+        <texture border="128">img/DialogPanel.png</texture>
+      </control>
     <control type="group">
       <posx>480</posx>
       <posy>360</posy>
-      <control type="image">
-        <posx>-210</posx>
-        <posy>-150</posy>
-        <width>1360</width>
-        <height>740</height>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
-      </control>
+      
       <control type="label" id="1" description="Heading">
-        <width>960</width>
+        <posy>-30</posy>
+		<width>960</width>
         <label>-</label>
         <font>size28</font>
-        <shadowcolor>black</shadowcolor>
-        <align>center</align>
+        <textcolor>HL</textcolor>
+		<align>center</align>
       </control>
       <control type="label" id="2" description="Line 1">
         <posy>75</posy>

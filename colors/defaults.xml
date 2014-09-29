@@ -11,13 +11,15 @@
 	<color name="Black">FF000000</color>
 	<color name="BlackT">55000000</color>
 	<color name="BlackST">90000000</color>
-	<!--<color name="Silver">FF777777</color>-->
 	<color name="Silver">FFE2E2E2</color>
 	<color name="Diffuse">FFA0A0A0</color>
 	<color name="Diffuse2">FF474747</color>
 	<color name="Disabled">FF5E5E5E</color>	
-	<color name="Shadow">70000000</color>
-	<color name="ShadowDark">FF262626</color>
+	<color name="Shadow">FF262626</color>
+	<color name="ShadowDark">FF000000</color>
+	<color name="HL">FFedac20</color>
+	<color name="Overlay">FF222b38</color>
+	<!--<color name="Overlay">FF262f3c</color>-->
 	<!--
 	<color name="Black">FF000000</color>
 	<color name="BlackShadow">FF666666</color>

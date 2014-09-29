@@ -73,7 +73,7 @@
           <height>45</height>
           <font>size18</font>
           <align>left</align>
-          <textcolor>Blue</textcolor>
+          <textcolor>HL</textcolor>
           <label>$INFO[ListItem.Property(Addon.Disclaimer)]</label>
         </control>
         <control type="textbox" description="Plot">

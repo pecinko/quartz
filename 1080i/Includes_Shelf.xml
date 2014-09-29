@@ -116,21 +116,23 @@
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
-      <control type="image" description="Reflection">
+      <!--<control type="image" description="Reflection">
         <posx>26</posx>
         <posy>330</posy>
         <width>202</width>
         <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+        <texture fallback="DefaultFolder.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
-      </control>
+      </control>-->
       <control type="image">
-        <posx>26</posx>
-        <posy>27</posy>
-        <width>202</width>
-        <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+        <posx>17</posx>
+          <posy>18</posy>
+          <width>220</width>
+          <height>321</height>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
+		<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
       </control>
       <control type="label">
         <animation effect="fade" start="0" end="100" time="200" delay="100">UnFocus</animation>
@@ -146,21 +148,23 @@
     </itemlayout>
     <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
       <control type="group">
-        <control type="image" description="Reflection">
+        <!--<control type="image" description="Reflection">
           <posx>26</posx>
           <posy>330</posy>
           <width>202</width>
           <height>303</height>
-          <texture fallback="DefaultVideo.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+          <texture fallback="DefaultFolder.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
-        </control>
+        </control>-->
         <control type="image">
-          <posx>26</posx>
-          <posy>27</posy>
-          <width>202</width>
-          <height>303</height>
-          <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+          <posx>17</posx>
+          <posy>18</posy>
+          <width>220</width>
+          <height>321</height>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
+		  <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
         </control>
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
@@ -177,39 +181,39 @@
       </control>
     </focusedlayout>
     <itemlayout condition="Skin.HasSetting(MoviesShelf_Custom)" height="357" width="354">
-      <control type="image" description="Reflection">
+      <!--<control type="image" description="Reflection">
         <posx>27</posx>
         <posy>330</posy>
         <width>303</width>
         <height>303</height>
-        <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+        <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
-      </control>
+      </control>-->
       <control type="image">
         <posx>27</posx>
         <posy>27</posy>
         <width>303</width>
         <height>303</height>
-        <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
     </itemlayout>
     <focusedlayout condition="Skin.HasSetting(MoviesShelf_Custom)" height="357" width="354">
       <control type="group">
-        <control type="image" description="Reflection">
+        <!--<control type="image" description="Reflection">
           <posx>27</posx>
           <posy>330</posy>
           <width>303</width>
           <height>303</height>
-          <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+          <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
-        </control>
+        </control>-->
         <control type="image">
           <posx>27</posx>
           <posy>27</posy>
           <width>303</width>
           <height>303</height>
-          <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
         </control>
         <control type="label">
@@ -236,40 +240,44 @@
     <orientation>horizontal</orientation>
     <scrolltime>400</scrolltime>
     <itemlayout height="357" width="354">
-      <control type="image" description="Reflection">
+      <!--<control type="image" description="Reflection">
         <posx>27</posx>
         <posy>330</posy>
         <width>303</width>
         <height>303</height>
-        <texture fallback="DefaultAudio.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+        <texture fallback="DefaultFolder.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
-      </control>
+      </control>-->
       <control type="image">
-        <posx>27</posx>
-        <posy>27</posy>
-        <width>303</width>
-        <height>303</height>
-        <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+        <posx>18</posx>
+        <posy>18</posy>
+        <width>321</width>
+        <height>321</height>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
+		<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
       </control>
     </itemlayout>
     <focusedlayout height="357" width="354">
       <control type="group">
-        <control type="image" description="Reflection">
+        <!--<control type="image" description="Reflection">
           <posx>27</posx>
           <posy>330</posy>
           <width>303</width>
           <height>303</height>
-          <texture fallback="DefaultAudio.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
+          <texture fallback="DefaultFolder.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio scalediffuse="false">scale</aspectratio>
-        </control>
+        </control>-->
         <control type="image">
-          <posx>27</posx>
-          <posy>27</posy>
-          <width>303</width>
-          <height>303</height>
-          <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+          <posx>18</posx>
+          <posy>18</posy>
+          <width>321</width>
+          <height>321</height>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
+		  <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
         </control>
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
@@ -300,7 +308,7 @@
         <posy>330</posy>
         <width>393</width>
         <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Property(Art)]</texture>
+        <texture fallback="DefaultFolder.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Property(Art)]</texture>
         <aspectratio scalediffuse="false">scale</aspectratio>
       </control>
       <control type="image">
@@ -308,7 +316,7 @@
         <posy>27</posy>
         <width>393</width>
         <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Property(Art)]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Property(Art)]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="group">
@@ -415,78 +423,38 @@
       </control>
     </focusedlayout>-->
     <itemlayout condition="Skin.HasSetting(TVShelf_Custom) | Library.HasContent(TVShows)" height="357" width="354">
-      <control type="image" description="Reflection">
-        <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
-        <posx>27</posx>
-        <posy>330</posy>
-        <width>303</width>
-        <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
-        <aspectratio scalediffuse="false">scale</aspectratio>
-      </control>
-      <control type="image" description="Reflection">
-        <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-        <posx>27</posx>
-        <posy>330</posy>
-        <width>303</width>
-        <height>303</height>
-        <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-        <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
-      </control>
       <control type="image">
-        <posx>27</posx>
-        <posy>27</posy>
-        <width>303</width>
-        <height>303</height>
-        <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+        <posx>18</posx>
+        <posy>18</posy>
+        <width>321</width>
+        <height>321</height>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
+		<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
       </control>
-      <control type="image">
-        <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-        <posx>27</posx>
-        <posy>27</posy>
-        <width>303</width>
-        <height>303</height>
-        <texture background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
+      <control type="label">
+          <posx>178</posx>
+          <posy>345</posy>
+          <width>345</width>
+          <height>30</height>
+          <font>size17</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[ListItem.TVshowTitle]</label>
+          <align>center</align>
+        </control>
     </itemlayout>
     <focusedlayout condition="Skin.HasSetting(TVShelf_Custom) | Library.HasContent(TVShows)" height="357" width="354">
       <control type="group">
-        <control type="image" description="Reflection">
-          <visible>IsEmpty(ListItem.Art(tvshow.banner))</visible>
-          <posx>27</posx>
-          <posy>330</posy>
-          <width>303</width>
-          <height>303</height>
-          <texture fallback="DefaultVideo.png" background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(thumb)]</texture>
-          <aspectratio scalediffuse="false">scale</aspectratio>
-        </control>
-        <control type="image" description="Reflection">
-          <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-          <posx>27</posx>
-          <posy>330</posy>
-          <width>303</width>
-          <height>303</height>
-          <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-          <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
-        </control>
         <control type="image">
-          <posx>27</posx>
-          <posy>27</posy>
-          <width>303</width>
-          <height>303</height>
-          <texture fallback="DefaultVideo.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+          <posx>18</posx>
+          <posy>18</posy>
+          <width>321</width>
+          <height>321</height>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
-        </control>
-        <control type="image">
-          <visible>!IsEmpty(ListItem.Art(tvshow.banner))</visible>
-          <posx>27</posx>
-          <posy>27</posy>
-          <width>303</width>
-          <height>303</height>
-          <texture background="true">$INFO[ListItem.Art(tvshow.banner)]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
+		  <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
         </control>
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
@@ -528,7 +496,8 @@
         <posy>86</posy>
         <width>350</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -542,8 +511,9 @@
         <posy>86</posy>
         <width>252</width>
         <height>352</height>
-        <texture border="28">img/Frame25.png</texture>
-        <aspectratio>stretch</aspectratio>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
+				<aspectratio>stretch</aspectratio>
         <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -577,7 +547,8 @@
         <include>EpisodeShortcutsCommons</include>
         <include condition="Skin.HasSetting(TVShelf_Custom)">TV_Custom_Items</include>
         <include condition="!Skin.HasSetting(TVShelf_Custom)">TV_RA_Items</include>
-        <!--<include condition="Skin.HasSetting(UseEpisodeThumbs) | Skin.HasSetting(TVShelf_Custom)">EpisodeShortcutsCommons</include>
+        
+		<!--<include condition="Skin.HasSetting(UseEpisodeThumbs) | Skin.HasSetting(TVShelf_Custom)">EpisodeShortcutsCommons</include>
 		<include condition="![Skin.HasSetting(UseEpisodeThumbs) | Skin.HasSetting(TVShelf_Custom)]">MoviesShortcutsCommons</include>-->
         <!--<include condition="!Skin.HasSetting(UseWidgets)">TV_RA_Items</include>
 		<include condition="Skin.HasSetting(UseWidgets)">TV_Widgets_Items</include>-->
@@ -590,7 +561,8 @@
         <posy>86</posy>
         <width>350</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -605,7 +577,8 @@
         <posy>86</posy>
         <width>443</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="444,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -619,7 +592,8 @@
         <posy>86</posy>
         <width>252</width>
         <height>352</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -1007,7 +981,8 @@
         <posy>86</posy>
         <width>350</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -1121,7 +1096,8 @@
         <posy>86</posy>
         <width>350</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(314).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
@@ -1235,7 +1211,8 @@
         <posy>86</posy>
         <width>350</width>
         <height>350</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>

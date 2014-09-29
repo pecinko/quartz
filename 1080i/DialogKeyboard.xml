@@ -619,7 +619,7 @@
               <width>300</width>
               <height>75</height>
               <label>$LOCALIZE[20180]</label>
-              <altlabel>[COLOR=Blue][UPPERCASE]$LOCALIZE[20180][/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=HL][UPPERCASE]$LOCALIZE[20180][/UPPERCASE][/COLOR]</altlabel>
               <alttexturenofocus border="8">img/ButtonNF.png</alttexturenofocus>
               <onleft>76</onleft>
               <onright>71</onright>
@@ -658,7 +658,7 @@
               <onup>307</onup>
               <ondown>302</ondown>
               <label>$LOCALIZE[20179]</label>
-              <altlabel>[COLOR=Blue][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=HL][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
               <alttexturenofocus border="4">img/ButtonNF.png</alttexturenofocus>
               <radioposy>18</radioposy>
               <textoffsetx>8</textoffsetx>
@@ -674,7 +674,7 @@
               <onup>303</onup>
               <ondown>300</ondown>
               <label>$LOCALIZE[20178]</label>
-              <altlabel>[COLOR=Blue][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
+              <altlabel>[COLOR=HL][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
               <alttexturenofocus border="4">img/ButtonNF.png</alttexturenofocus>
               <radioposy>18</radioposy>
               <textoffsetx>8</textoffsetx>

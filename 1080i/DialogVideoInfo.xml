@@ -9,10 +9,10 @@
   <controls>
     <include>MiniBackground</include>
     <control type="image" description="Fanart">
-      <visible>!IsEmpty(ListItem.Property(fanart_image))</visible>
+      <visible>!IsEmpty(ListItem.Art(fanart))</visible>
       <include>VisibleFadeEffect</include>
       <include>Dimensions_Fullscreen</include>
-      <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+      <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
       <aspectratio>stretch</aspectratio>
     </control>
     <control type="image" description="Vignette">
@@ -30,7 +30,7 @@
       <aspectratio>stretch</aspectratio>
     </control>
     <control type="label" description="Fanart not available">
-      <visible>Control.HasFocus(10) + IsEmpty(ListItem.Property(fanart_image))</visible>
+      <visible>Control.HasFocus(10) + IsEmpty(ListItem.Art(fanart))</visible>
       <include>VisibleFadeEffect</include>
       <posx>210</posx>
       <posy>315</posy>
@@ -540,7 +540,7 @@
             <height>543</height>
             <width>369</width>
             <aspectratio>keep</aspectratio>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           </control>
         </itemlayout>
         <focusedlayout width="480" height="750">
@@ -566,7 +566,7 @@
             <height>543</height>
             <width>369</width>
             <aspectratio>keep</aspectratio>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           </control>
         </focusedlayout>
       </control>
@@ -577,7 +577,8 @@
         <posy>152</posy>
         <width>424</width>
         <height>600</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" description="Media details">

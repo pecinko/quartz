@@ -190,7 +190,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <include>LargeListFade</include>
+      <!--<include>LargeListFade</include>-->
       <control type="scrollbar" id="70">
         <posx>39r</posx>
         <posy>135</posy>
@@ -392,7 +392,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <include>LargeListFade</include>
+      <!--<include>LargeListFade</include>-->
       <control type="scrollbar" id="71">
         <posx>39r</posx>
         <posy>135</posy>
@@ -630,7 +630,7 @@
             <font>size18</font>
             <align>center</align>
             <aligny>center</aligny>
-            <textcolor>Blue</textcolor>
+            <textcolor>HL</textcolor>
             <info>ListItem.ChannelNumber</info>
           </control>
           <control type="label" id="1" description="Column 1 selected">
@@ -639,7 +639,7 @@
             <width>246</width>
             <height>78</height>
             <font>size18</font>
-            <textcolor>Blue</textcolor>
+            <textcolor>HL</textcolor>
             <aligny>center</aligny>
             <align>left</align>
             <label>[B]$INFO[ListItem.ChannelName][/B]</label>
@@ -650,7 +650,7 @@
             <width>300</width>
             <height>78</height>
             <font>size18</font>
-            <textcolor>Blue</textcolor>
+            <textcolor>HL</textcolor>
             <aligny>center</aligny>
             <align>left</align>
             <label>[B]$INFO[ListItem.ChannelName][/B]</label>
@@ -855,7 +855,7 @@
               <width>75</width>
               <height>39</height>
               <visible>!IsEmpty(ListItem.Date)</visible>
-              <texture border="1">$INFO[ListItem.Icon]</texture>
+              <texture border="1">$INFO[ListItem.Thumb]</texture>
             </control>
             <control type="label">
               <posx>75</posx>
@@ -929,7 +929,7 @@
               <posy>0</posy>
               <width>450</width>
               <height>60</height>
-              <texture border="5">img/ButtonFO.png</texture>
+              <texture border="9">img/MediaButton.png</texture>
               <visible>Control.HasFocus(14)</visible>
             </control>
             <control type="image">
@@ -946,7 +946,7 @@
               <width>75</width>
               <height>39</height>
               <visible>!IsEmpty(ListItem.Date)</visible>
-              <texture border="1">$INFO[ListItem.Icon]</texture>
+              <texture border="1">$INFO[ListItem.Thumb]</texture>
             </control>
             <control type="label">
               <posx>75</posx>

@@ -130,7 +130,7 @@
           <height>435</height>
           <aspectratio aligny="bottom">keep</aspectratio>
           <fadetime>IconCrossfadeTime</fadetime>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <bordertexture border="8">ThumbShadow.png</bordertexture>
           <bordersize>8</bordersize>
         </control>
@@ -143,7 +143,7 @@
           <align>center</align>
           <aligny>center</aligny>
           <font>font13</font>
-          <textcolor>blue</textcolor>
+          <textcolor>HL</textcolor>
           <shadowcolor>black</shadowcolor>
           <scrollout>false</scrollout>
           <pauseatend>1000</pauseatend>

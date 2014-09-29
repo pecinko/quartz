@@ -28,7 +28,7 @@
             <width>621</width>
             <height>720</height>
             <include>Icon_Fade</include>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio aligny="bottom">keep</aspectratio>
           </control>
           <control type="image" description="Thumb">
@@ -70,7 +70,7 @@
                 <height>111</height>
                 <width>166</width>
                 <bordersize>8</bordersize>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
                 <aspectratio>keep</aspectratio>
               </control>
               <control type="label" description="Main Label">
@@ -108,7 +108,7 @@
                 <height>111</height>
                 <width>166</width>
                 <bordersize>8</bordersize>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture>$INFO[ListItem.Thumb]</texture>
                 <aspectratio>keep</aspectratio>
               </control>
               <control type="label" description="Main Label">
@@ -141,7 +141,7 @@
           </control>
           <include>LargeListSlider</include>
         </control>
-        <include>LargeListFade</include>
+        <!--<include>LargeListFade</include>-->
         <control type="scrollbar" id="60">
           <posx>51r</posx>
           <posy>135</posy>

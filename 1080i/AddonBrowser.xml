@@ -60,7 +60,7 @@
             <width>300</width>
             <align>right</align>
             <font>size18</font>
-            <textcolor>White2</textcolor>
+            <textcolor>HL</textcolor>
             <label>$INFO[ListItem.Label2]</label>
           </control>
         </focusedlayout>
@@ -131,7 +131,7 @@
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
     </control>
@@ -149,14 +149,14 @@
           <width>540</width>
           <height>540</height>
           <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
+          <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="image" description="Thumb">
           <width>540</width>
           <height>540</height>
           <include>Icon_Fade</include>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">stretch</aspectratio>
         </control>
         <control type="image" description="Thumb">

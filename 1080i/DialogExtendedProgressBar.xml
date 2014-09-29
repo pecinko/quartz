@@ -1,45 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
+  <visible>[Library.IsScanningMusic | Library.IsScanningVideo] + ![Window.IsActive(FullScreenVideo) | Window.IsActive(MusicVisualisation.xml)]</visible>
+  <animation effect="slide" start="0,-150" end="0,0" time="400" easing="out">WindowOpen</animation>
+  <animation effect="slide" start="0,0" end="0,-150" time="200" easing="in">WindowClose</animation>
   <controls>
     <control type="group">
-      <animation effect="fade" start="100" end="0" time="200" reversible="true" condition="Window.IsActive(FullscreenVideo) | Window.IsActive(Visualisation)">conditional</animation>
-      <posx>1080</posx>
-      <posy>3</posy>
-      <control type="image" description="Dialog BG">
+      <control type="image">
         <posx>0</posx>
-        <posy>-6</posy>
-        <width>600</width>
-        <height>108</height>
-        <texture border="14">img/ProgressBG.png</texture>
+        <posy>0</posy>
+        <width>1920</width>
+        <height>96</height>
+        <texture>HUD/Notification.png</texture>
       </control>
-      <control type="label" id="30" description="Caption Label">
-        <posx>22</posx>
-        <posy>9</posy>
-        <width>555</width>
-        <height>27</height>
-        <font>size14</font>
-        <align>left</align>
-        <aligny>center</aligny>
+      <control type="label" id="30" description="Heading">
+        <top>6</top>
+        <left>10</left>
+        <width>890</width>
+        <height>60</height>
+        <align>right</align>
+		<font>-</font>
       </control>
-      <control type="label" id="31" description="Current Directory Label">
-        <posx>22</posx>
-        <posy>36</posy>
-        <width>555</width>
-        <height>30</height>
-        <font>size14</font>
+      <control type="label" id="31" description="Message">
+        <top>6</top>
+        <right>10</right>
+        <width>890</width>
+        <height>60</height>
         <align>left</align>
 		<haspath>true</haspath>
-        <aligny>center</aligny>
+		<font>-</font>
       </control>
       <control type="progress" id="32" description="Progress bar">
-        <posx>22</posx>
-        <posy>75</posy>
+        <posx>48</posx>
+        <posy>0</posy>
         <width>555</width>
         <height>8</height>
-        <texturebg>MusicOSD/ProgressBG.png</texturebg>
-        <midtexture border="0,0,1,0">MusicOSD/ProgressMidd.png</midtexture>
-        <righttexture>MusicOSD/ProgressRight.png</righttexture>
-        <lefttexture>MusicOSD/ProgressLeft.png</lefttexture>
+        <texturebg>-</texturebg>
+        <midtexture>-</midtexture>
+        <righttexture>-</righttexture>
+        <lefttexture>-</lefttexture>
+      </control>
+	  <control type="label" id="1" description="Group label">
+        <top>6</top>
+        <left>10</left>
+        <width>1860</width>
+        <height>60</height>
+		<font>size19</font>
+		<scroll>false</scroll>
+        <label>[COLOR=HL]$INFO[Control.GetLabel(32),,%][/COLOR]  $INFO[Control.GetLabel(30)] [COLOR=HL]•[/COLOR] $INFO[Control.GetLabel(31)]</label>
       </control>
     </control>
   </controls>

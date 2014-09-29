@@ -88,7 +88,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <include>LargeListFade</include>
+      <!--<include>LargeListFade</include>-->
       <control type="scrollbar" id="60">
         <posx>51r</posx>
         <posy>135</posy>
@@ -121,7 +121,7 @@
               <posy>279</posy>
               <width>255</width>
               <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -129,7 +129,7 @@
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -148,7 +148,7 @@
               <posy>279</posy>
               <width>255</width>
               <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -156,7 +156,7 @@
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="image">
@@ -190,7 +190,8 @@
             <posy>207</posy>
             <width>309</width>
             <height>309</height>
-            <texture border="28">img/Frame25.png</texture>
+            <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
             <aspectratio>stretch</aspectratio>
             <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="200" reversible="true">Conditional</animation>
             <animation condition="Container.Column(1)" effect="slide" start="0,0" end="300,0" time="200" reversible="true">Conditional</animation>
@@ -289,7 +290,7 @@
       <control type="image">
         <include>Dimensions_Fullscreen</include>
         <include>Fanart_Fade</include>
-        <texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="image">
@@ -321,7 +322,7 @@
             <posy>330</posy>
             <width>303</width>
             <height>303</height>
-            <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+            <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image" description="Thumb">
@@ -329,7 +330,7 @@
             <posy>27</posy>
             <width>303</width>
             <height>303</height>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image" description="Thumb Overlay">
@@ -348,7 +349,7 @@
               <posy>330</posy>
               <width>303</width>
               <height>303</height>
-              <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Icon]</texture>
+              <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Thumb">
@@ -356,7 +357,7 @@
               <posy>27</posy>
               <width>303</width>
               <height>303</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
             <control type="image" description="Thumb Overlay">
@@ -396,7 +397,8 @@
         <posy>693</posy>
         <width>351</width>
         <height>351</height>
-        <texture border="28">img/Frame25.png</texture>
+        <texture border="36">focus/FrameFO.png</texture>
+        		<bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
         <animation condition="Container(58).Position(0)" effect="slide" end="-1062,0" time="220" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(58).Position(1)" effect="slide" end="-708,0" time="220" easing="inout" reversible="true">Conditional</animation>

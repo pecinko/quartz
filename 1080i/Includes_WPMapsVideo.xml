@@ -70,7 +70,7 @@
             <posy>8</posy>
             <width>45</width>
             <height>45</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
           </control>
           <control type="label">
             <posx>60</posx>
@@ -99,7 +99,7 @@
             <posy>8</posy>
             <width>45</width>
             <height>45</height>
-            <texture>$INFO[ListItem.Icon]</texture>
+            <texture>$INFO[ListItem.Thumb]</texture>
           </control>
           <control type="label">
             <posx>60</posx>

@@ -4,7 +4,7 @@
   
   <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
+    <include>FullBackground</include>
     <include>MediaHeader</include>
     <control type="group">
       <posx>1020</posx>
@@ -50,7 +50,8 @@
         <focusedlayout width="802" height="81">
           <include>ArrowFO</include>
           <control type="label" description="Main Label">
-            <include>52MainLabelFO</include>
+            <textcolor>HL</textcolor>
+			<include>52MainLabelFO</include>
             <label>$INFO[ListItem.Label]</label>
           </control>
         </focusedlayout>
@@ -113,26 +114,6 @@
           </item>
         </content>
       </control>
-    </control>
-    <control type="image">
-      <visible>Container(52).HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <posx>1005</posx>
-      <posy>135</posy>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">img/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <visible>Container(52).HasNext</visible>
-      <posx>1005</posx>
-      <posy>963</posy>
-      <height>81</height>
-      <width>832</width>
-      <texture>img/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
     </control>
     <control type="group" description="Left panel">
       <posy>-30</posy>

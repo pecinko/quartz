@@ -51,7 +51,7 @@
             <visible>!Control.HasFocus(60)</visible>
             <width>870</width>
             <height>69</height>
-            <texture border="5">img/ButtonFO.png</texture>
+            <texture border="9">img/MediaButton.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>

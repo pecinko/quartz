@@ -55,26 +55,26 @@
       <visible>IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Thumb Reflection">
+      <!--<control type="image" description="Thumb Reflection">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <posx>180</posx>
         <posy>720</posy>
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="top">keep</aspectratio>
-      </control>
+      </control>-->
       <control type="image" description="Thumb">
         <posx>180</posx>
         <posy>0</posy>
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <control type="image" description="Thumb">
+      <!--<control type="image" description="Thumb">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <posx>180</posx>
         <posy>0</posy>
@@ -82,9 +82,9 @@
         <height>720</height>
         <include>Icon_Fade</include>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
+      </control>-->
     </control>
     <control type="group" description="Thumbs with info">
       <posy>60</posy>
@@ -92,60 +92,62 @@
       <visible>!IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <control type="image" description="Reflection">
+      <!--<control type="image" description="Reflection">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <posx>0</posx>
         <posy>540</posy>
         <width>756</width>
         <height>540</height>
         <include>Icon_Fade</include>
-        <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="top">keep</aspectratio>
-      </control>
+      </control>-->
       <control type="image" description="Thumb">
         <posx>0</posx>
         <posy>0</posy>
         <width>756</width>
         <height>540</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <control type="image" description="Thumb Overlay">
+      <!--<control type="image" description="Thumb Overlay">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <posx>0</posx>
         <posy>0</posy>
         <width>756</width>
         <height>540</height>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
+      </control>-->
     </control>
   </include>
   <include name="DefaultThumbs">
     <control type="group" description="Thumbs no info">
       <posy>240</posy>
-      <control type="image" description="Thumb Reflection">
+      <!--<control type="image" description="Thumb Reflection">
         <posx>180</posx>
         <posy>720</posy>
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture background="true" flipy="true">$INFO[ListItem.Icon]</texture>
+        <texture background="true" flipy="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="top">keep</aspectratio>
 		<colordiffuse>33FFFFFF</colordiffuse>
-      </control>
+      </control>-->
       <control type="image" description="Thumb">
         <posx>180</posx>
-        <posy>0</posy>
+        <posy>30</posy>
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+        <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+		<bordersize>9</bordersize>
+		<aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <control type="image" description="Thumb">
+      <!--<control type="image" description="Thumb">
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <posx>180</posx>
         <posy>0</posy>
@@ -153,9 +155,9 @@
         <height>720</height>
         <include>Icon_Fade</include>
         <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
+      </control>-->
     </control>
   </include>
   <include name="DefaultSquareThumbs">
@@ -173,7 +175,7 @@
         <width>621</width>
         <height>720</height>
         <include>Icon_Fade</include>
-        <texture diffuse="img/Diffuse1.png" background="true">$INFO[ListItem.Icon]</texture>
+        <texture diffuse="img/Diffuse1.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
       <control type="image" description="Thumb Reflection">
@@ -208,7 +210,7 @@
           <width>600</width>
           <height>600</height>
           <include>Icon_Fade</include>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">stretch</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -257,20 +259,20 @@
   <include name="SlimListSlider">
     <control type="group" description="Slider">
       <include>Slider4</include>
-      <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-243" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,-162" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,-81" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,81" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,162" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(8)" effect="slide" start="0,0" end="0,243" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(9)" effect="slide" start="0,0" end="0,324" time="180" easing="inout" reversible="true">Conditional</animation>
-      <animation condition="Container.Position(10)" effect="slide" start="0,0" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-405" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-324" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-243" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,-162" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,-81" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,81" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,162" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(8)" effect="slide" start="0,0" end="0,243" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(9)" effect="slide" start="0,0" end="0,324" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
+      <animation condition="Container.Position(10)" effect="slide" start="0,0" end="0,405" time="200" tween="cubic" easing="inout" reversible="true">Conditional</animation>
     </control>
   </include>
   <include name="LargeListFade">
-    <control type="image">
+    <!--<control type="image">
       <visible>Container.HasPrevious</visible>
       <animation effect="fade" time="200">VisibleChange</animation>
       <posx>1005</posx>
@@ -279,8 +281,8 @@
       <width>832</width>
       <texture flipy="true">img/DefaultGradient.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
+    </control>-->
+    <!--<control type="image">
       <animation effect="fade" time="200">VisibleChange</animation>
       <visible>Container.HasNext</visible>
       <posx>1005</posx>
@@ -289,10 +291,10 @@
       <width>832</width>
       <texture>img/DefaultGradient.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
+    </control>-->
   </include>
   <include name="SlimListFade">
-    <control type="image">
+    <!--<control type="image">
       <visible>Container.HasPrevious</visible>
       <animation effect="fade" time="200">VisibleChange</animation>
       <posx>1005</posx>
@@ -301,8 +303,8 @@
       <width>832</width>
       <texture flipy="true">img/DefaultGradient.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
+    </control>-->
+    <!--<control type="image">
       <animation effect="fade" time="200">VisibleChange</animation>
       <visible>Container.HasNext</visible>
       <posx>1005</posx>
@@ -311,7 +313,7 @@
       <width>832</width>
       <texture>img/DefaultGradient.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
+    </control>-->
   </include>
   <include name="FullscreenInfoLabelMain">
     <posx>300</posx>
@@ -476,16 +478,34 @@
   <include name="Slider4">
     <control type="image">
       <animation effect="fade" time="100">VisibleChange</animation>
+      <posx>-12</posx>
+      <posy>404</posy>
+      <width>819</width>
+      <height>84</height>
+      <texture border="0,9,0,9">img/MediaButton.png</texture>
+      <aspectratio>stretch</aspectratio>
+    </control>
+	<!--<control type="image">
+      <animation effect="fade" time="100">VisibleChange</animation>
       <posx>-27</posx>
       <posy>383</posy>
       <width>852</width>
       <height>126</height>
       <texture border="26">img/Slider4.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
+    </control>-->
   </include>
   <include name="Slider5">
     <control type="image">
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <posx>0</posx>
+      <posy>336</posy>
+      <width>807</width>
+      <height>105</height>
+      <texture border="0,9,0,9">img/MediaButton.png</texture>
+      <aspectratio>stretch</aspectratio>
+    </control>
+	<!--<control type="image">
       <animation effect="fade" time="100">VisibleChange</animation>
       <posx>-27</posx>
       <posy>315</posy>
@@ -493,28 +513,24 @@
       <height>150</height>
       <texture border="26">img/Slider5.png</texture>
       <aspectratio>stretch</aspectratio>
-    </control>
+    </control>-->
   </include>
   <include name="52MainLabel">
     <posx>45</posx>
     <posy>0</posy>
     <height>75</height>
     <width>630</width>
-    <aligny>center</aligny>
-    <scroll>false</scroll>
+    <selectedcolor>HL</selectedcolor>
     <font>size24</font>
-    <textcolor>White</textcolor>
-	<selectedcolor>Blue</selectedcolor>
   </include>
   <include name="52MainLabelFO">
     <posx>45</posx>
     <posy>0</posy>
     <height>75</height>
     <width>630</width>
-    <aligny>center</aligny>
     <font>size24</font>
-    <textcolor>White2</textcolor>
-	<selectedcolor>Blue</selectedcolor>
+    <textcolor>HL</textcolor>
+	<selectedcolor>HL</selectedcolor>
   </include>
   <include name="52Label2">
     <posx>42r</posx>
@@ -551,7 +567,7 @@
     <posy>12</posy>
     <height>50</height>
     <width>720</width>
-    <textcolor>White2</textcolor>
+    <textcolor>HL</textcolor>
     <aligny>center</aligny>
     <font>size24</font>
   </include>
@@ -578,21 +594,21 @@
   <include name="Watched_Marks">
     <control type="image">
       <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes)</visible>
-      <posx>4</posx>
+      <posx>3</posx>
       <posy>0</posy>
       <height>81</height>
-      <width>30</width>
+      <width>24</width>
       <texture>$VAR[Overlay]</texture>
-      <aspectratio>keep</aspectratio>
+	  <aspectratio>keep</aspectratio>
     </control>
   </include>
   <include name="Watched_Marks51">
     <control type="image">
       <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes)</visible>
-      <posx>4</posx>
+      <posx>15</posx>
       <posy>0</posy>
       <height>111</height>
-      <width>30</width>
+      <width>18</width>
       <texture>$VAR[Overlay]</texture>
       <aspectratio>keep</aspectratio>
     </control>
@@ -815,7 +831,7 @@
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>keep</aspectratio>
         </control>
         <control type="image">
@@ -854,7 +870,7 @@
           <posy>9</posy>
           <height>93</height>
           <width>93</width>
-          <texture background="true">$INFO[ListItem.Icon]</texture>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>keep</aspectratio>
         </control>
         <control type="image">
@@ -896,7 +912,7 @@
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -953,7 +969,7 @@
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1121,7 +1137,7 @@
   </include>
   <include name="LargeListMoviesLayout">
     <itemlayout condition="container.content(movies)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
@@ -1171,7 +1187,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(movies)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
@@ -1267,7 +1283,7 @@
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1324,7 +1340,7 @@
         <posy>9</posy>
         <height>93</height>
         <width>148</width>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1466,7 +1482,7 @@
         <height>111</height>
         <width>111</width>
         <bordersize>6</bordersize>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1513,7 +1529,7 @@
         <height>111</height>
         <width>111</width>
         <bordersize>6</bordersize>
-        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
       <control type="image">
@@ -1560,14 +1576,14 @@
     <font>size24</font>
     <align>left</align>
     <textoffsetx>20</textoffsetx>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
-    <alttexturefocus border="5">img/ButtonFO.png</alttexturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
   </include>
   <include name="9000GrouplistParameters">
     <posx>675</posx>
-    <posy>354</posy>
+    <posy>240</posy>
     <width>576</width>
-    <height>375</height>
+    <height>608</height>
     <itemgap>0</itemgap>
     <onleft>50</onleft>
     <onright>50</onright>
@@ -1585,8 +1601,10 @@
     <disabledcolor>Grey</disabledcolor>
     <texturenofocus>-</texturenofocus>
     <alttexturenofocus>-</alttexturenofocus>
-    <texturefocus border="5">img/ButtonFO.png</texturefocus>
-    <alttexturefocus border="5">img/ButtonFO.png</alttexturefocus>
+    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
+	<!--<texturefocus border="9">img/MediaButton.png</texturefocus>
+    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>-->
   </include>
   <include name="9000Commons" description="Regular BG">
     <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -1746,7 +1764,7 @@
         <posy>22</posy>
         <width>1560</width>
         <height>1</height>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
       </control>
     </itemlayout>
     <focusedlayout height="42">
@@ -1779,7 +1797,7 @@
         <posy>22</posy>
         <width>1560</width>
         <height>1</height>
-        <texture>$INFO[ListItem.Icon]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
       </control>
     </focusedlayout>
   </include>

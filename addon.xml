@@ -1,4 +1,4 @@
-<addon id="skin.quartz" version="4.5.5" name="Quartz" provider-name="Pecinko">
+<addon id="skin.quartz" version="5.0.0" name="Quartz" provider-name="Pecinko">
   <requires>
     <import addon="xbmc.gui" version="5.0.1"/>
     <import addon="script.favourites" version="4.0.4"/>
@@ -12,6 +12,6 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">Apple TV style skin</summary>
-    <description lang="en">Inspired by Apple TV interface Quartz brings easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by Baswazz.</description>
+    <description lang="en">Inspired by Apple TV interface Quartz brings easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by CloudDweller and Pecinko.</description>
   </extension>
 </addon>

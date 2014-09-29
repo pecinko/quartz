@@ -68,7 +68,7 @@
             <posy>0</posy>
             <width>810</width>
             <height>69</height>
-            <texture border="5">img/ButtonFO.png</texture>
+            <texture border="9">img/MediaButton.png</texture>
           </control>
           <control type="label">
             <posx>30</posx>
@@ -156,7 +156,7 @@
       <posy>210</posy>
       <width>180</width>
       <height>180</height>
-      <texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
+      <texture fallback="DefaultAddonNone.png">$INFO[ListItem.Thumb]</texture>
       <aspectratio aligny="top">scale</aspectratio>
       <bordertexture border="3">img/ThumbBorder3.png</bordertexture>
       <bordersize>1</bordersize>

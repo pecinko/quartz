@@ -47,7 +47,7 @@
             <height>111</height>
             <width>111</width>
             <bordersize>6</bordersize>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image">
@@ -82,7 +82,7 @@
             <height>111</height>
             <width>111</width>
             <bordersize>6</bordersize>
-            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
           <control type="image">
@@ -152,7 +152,7 @@
           <width>495</width>
           <height>495</height>
           <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection.png" flipy="true">$INFO[ListItem.Icon]</texture>
+          <texture background="true" diffuse="img/Reflection.png" flipy="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
         </control>
         <control type="image" description="Thumb">
@@ -161,7 +161,7 @@
           <width>495</width>
           <height>495</height>
           <include>Icon_Fade</include>
-          <texture diffuse="img/DiffuseB.png" background="true">$INFO[ListItem.Icon]</texture>
+          <texture diffuse="img/DiffuseB.png" background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
         </control>
         <control type="image" description="Thumb">
