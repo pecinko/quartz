@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
   <include name="Movies_RA_Items">
-    <content target="video">videodb://recentlyaddedmovies/</content>
+    <content target="video">special://skin/playlists/recent.xsp</content>
   </include>
   <include name="Movies_Custom_Items">
     <content>
@@ -88,7 +88,7 @@
     </content>
   </include>
   <include name="TV_RA_Items">
-    <content target="video">videodb://recentlyaddedepisodes/</content>
+    <content target="video">plugin://plugin.tvshelf/</content>
   </include>
   <include name="TV_Custom_Items">
     <content>

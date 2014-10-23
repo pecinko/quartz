@@ -163,8 +163,8 @@
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
           <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <!-- <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright> -->
           <onup>51</onup>
           <ondown>51</ondown>
           <pagecontrol>60</pagecontrol>
