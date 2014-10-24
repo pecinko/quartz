@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+  <defaultcontrol always="true">10</defaultcontrol>
+  <include>OpenClose</include>
+  <controls>
+    <include>DimBG</include>
+    <control type="group">
+      <include>DialogOpenClose</include>
+      <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>1200</width>
+        <height>846</height>
+        <texture border="128">img/DialogPanel.png</texture>
+      </control>
+      
+      <control type="group">
+        <top>270</top>
+      <control type="label" id="1" description="Heading">
+        <centerleft>960</centerleft>
+        <label>-</label>
+        <width>960</width>
+        <font>size28</font>
+        <align>center</align>
+		<bordersize>0,30,0,30</bordersize>
+        <textcolor>HL</textcolor>
+      </control>
+	    <control type="textbox" id="9" description="Labels">
+         <top>174</top>
+		  <centerleft>960</centerleft>
+          <width>870</width>
+          <height>160</height>
+          <align>center</align>
+		  <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+        </control>
+        <control type="button" id="10" description="OK">
+          <top>441</top>
+          <centerleft>960</centerleft>
+		  <width>300</width>
+          <label>186</label>
+          <onleft>11</onleft>
+          <onright>11</onright>
+          <onup>10</onup>
+          <ondown>10</ondown>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>
