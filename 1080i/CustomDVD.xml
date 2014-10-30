@@ -10,7 +10,7 @@
         <width>1023</width>
         <height>561</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="image">
         <posx>630</posx>
@@ -33,7 +33,7 @@
           <onright>noop</onright>
           <onup>9001</onup>
           <ondown>9001</ondown>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout height="96" width="600">
             <control type="image">
               <posx>18</posx>

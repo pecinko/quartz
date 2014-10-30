@@ -11,24 +11,26 @@
       <posx>0</posx>
       <posy>0</posy>
       <height>1080</height>
-      <width>555</width>
-      <texture border="60,60,60,60">img/ContextMenu.png</texture>
+      <width>500</width>
+      <texture border="21">img/DialogNew.png</texture>
+			<colordiffuse>Overlay</colordiffuse>
+			<!--<texture border="60,60,60,60">img/ContextMenu.png</texture>-->
     </control>
     <control type="grouplist" id="996" description="Context menu container">
-      <posx>37</posx>
+      <posx>7</posx>
       <posy>60</posy>
-      <width>480</width>
+      <width>486</width>
       <height max="960">auto</height>
       <itemgap>3</itemgap>
       <control type="button" id="2001" description="InProgressReset">
         <visible>[Container.Content(Episodes) | Container.Content(Movies)] + system.hasaddon(script.module.inprogressreset) + !SubString(ListItem.PercentPlayed,0,left)</visible>
         <posx>-</posx>
         <posy>-</posy>
-        <width>480</width>
+        <width>486</width>
         <height>60</height>
         <shadowcolor>BlackT</shadowcolor>
         <focusedcolor>White2</focusedcolor>
-        <texturefocus border="5">img/ContextButtonFO.png</texturefocus>
+        <texturefocus>img/ContextButtonFO.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <label>31286</label>
         <onclick>Dialog.Close(all,true)</onclick>
@@ -37,11 +39,11 @@
       <control type="button" id="1000" description="Buttons">
         <posx>-</posx>
         <posy>-</posy>
-        <width>480</width>
+        <width>486</width>
         <height>60</height>
         <shadowcolor>BlackT</shadowcolor>
-        <focusedcolor>White2</focusedcolor>
-        <texturefocus border="5">img/ContextButtonFO.png</texturefocus>
+        <focusedcolor>HL</focusedcolor>
+        <texturefocus>img/ButtonW.png</texturefocus>
         <texturenofocus>-</texturenofocus>
       </control>
     </control>

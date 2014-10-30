@@ -122,7 +122,7 @@
           <focusposition>2</focusposition>
           <movement>2</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>Unwatched_Badge</include>
@@ -310,7 +310,7 @@
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>Unwatched_Badge</include>

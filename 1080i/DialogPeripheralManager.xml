@@ -11,7 +11,7 @@
       <posy>-150</posy>
       <width>1470</width>
       <height>1380</height>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
+      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="group">
       <posx>502</posx>

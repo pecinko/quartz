@@ -46,7 +46,7 @@
         <pagecontrol>60</pagecontrol>
         <focusposition>5</focusposition>
         <movement>5</movement>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        
         <itemlayout width="892" height="81">
           <control type="label" description="Main Label">
             <posx>30</posx>

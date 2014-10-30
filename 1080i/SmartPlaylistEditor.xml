@@ -51,7 +51,7 @@
         <onright>12</onright>
         <ondown>10</ondown>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-        <texturefocus flipy="true" border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus flipy="true" border="8">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="label">
         <description>Find items where</description>

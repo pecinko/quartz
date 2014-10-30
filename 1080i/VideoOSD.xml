@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">603</defaultcontrol>
-  
   <zorder>2</zorder>
   <controls>
   <control type="group" description="OSDMenu">
-      <!--<visible>![Window.IsActive(123) | Window.IsActive(124)]</visible>-->
+      <visible>![Window.IsActive(123) | Window.IsActive(124)]</visible>
       <control type="group">
         <control type="group">
           <posx>154</posx>
@@ -13,15 +12,17 @@
           <width>1611</width>
           <height>177</height>
           <control type="image" description="OSD BG">
-            <posx>0</posx>
+            <visible>!Window.IsActive(dialogseekbar.xml)</visible>
+						<posx>0</posx>
             <posy>0</posy>
             <height>180</height>
             <width>1611</width>
-            <texture>OSD/OSDBackground.png</texture>
+            <texture>img/BlackDotST.png</texture>
+						<!--<texture>OSD/OSDBackground.png</texture>-->
           </control>
           <control type="group" id="100">
             <width>1185</width>
-            <posy>24</posy>
+            <posy>90</posy>
             <height>144</height>
             <itemgap>0</itemgap>
             <orientation>horizontal</orientation>
@@ -31,7 +32,8 @@
               <height>57</height>
               <texturenofocus>OSD/Stop.png</texturenofocus>
               <texturefocus>OSD/StopFocused.png</texturefocus>
-              <onleft>607</onleft>
+              <onup>607</onup>
+							<onleft>607</onleft>
               <onright>601</onright>
               <onclick>XBMC.PlayerControl(Stop)</onclick>
             </control>
@@ -41,7 +43,8 @@
               <height>57</height>
               <texturenofocus>OSD/SkipBack.png</texturenofocus>
               <texturefocus>OSD/SkipBackFocused.png</texturefocus>
-              <onleft>600</onleft>
+              <onup>607</onup>
+							<onleft>600</onleft>
               <onright>602</onright>
               <onclick>XBMC.PlayerControl(Previous)</onclick>
             </control>
@@ -53,7 +56,8 @@
               <texturefocus>OSD/RewindFocused.png</texturefocus>
               <onleft>601</onleft>
               <onright>603</onright>
-              <onclick>XBMC.PlayerControl(Rewind)</onclick>
+              <onup>607</onup>
+							<onclick>XBMC.PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="603">
               <posx>754</posx>
@@ -66,7 +70,8 @@
               <alttexturefocus>OSD/PauseFocused.png</alttexturefocus>
               <onleft>602</onleft>
               <onright>604</onright>
-              <onclick>XBMC.PlayerControl(Play)</onclick>
+              <onup>607</onup>
+							<onclick>XBMC.PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="604">
               <posx>848</posx>
@@ -76,7 +81,8 @@
               <texturefocus>OSD/FastForwardFocused.png</texturefocus>
               <onleft>603</onleft>
               <onright>605</onright>
-              <onclick>XBMC.PlayerControl(Forward)</onclick>
+              <onup>607</onup>
+							<onclick>XBMC.PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="605">
               <posx>940</posx>
@@ -86,7 +92,8 @@
               <texturefocus>OSD/SkipForwardFocused.png</texturefocus>
               <onleft>604</onleft>
               <onright>606</onright>
-              <onclick>XBMC.PlayerControl(Next)</onclick>
+              <onup>607</onup>
+							<onclick>XBMC.PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="606">
               <posx>1034</posx>
@@ -96,6 +103,7 @@
               <texturefocus>OSD/DVDFocused.png</texturefocus>
               <onleft>605</onleft>
               <onright>607</onright>
+							<onup>607</onup>
               <onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
             </control>
             <!--<control type="button" id="607">
@@ -453,7 +461,7 @@
               <visible>player.forwarding</visible>
             </control>
           </control>
-          <control type="progress" id="23">
+          <!--<control type="progress" id="23">
             <description>Progressbar</description>
             <posx>200</posx>
             <posy>99</posy>
@@ -461,8 +469,8 @@
             <height>24</height>
             <info>Player.Progress</info>
             <visible>true</visible>
-          </control>
-          <control type="label">
+          </control>-->
+          <!--<control type="label">
             <posx>-8</posx>
             <posy>99</posy>
             <width>240</width>
@@ -492,8 +500,8 @@
             <textcolor>Shadow</textcolor>
             <label>-$INFO[VideoPlayer.TimeRemaining]</label>
             <visible>!IsEmpty(VideoPlayer.TimeRemaining)</visible>
-          </control>
-          <control type="label">
+          </control>-->
+          <!--<control type="label">
             <posx>1374</posx>
             <posy>96</posy>
             <width>240</width>
@@ -503,11 +511,10 @@
             <textcolor>White</textcolor>
             <label>-$INFO[VideoPlayer.TimeRemaining]</label>
             <visible>!IsEmpty(VideoPlayer.TimeRemaining)</visible>
-          </control>
+          </control>-->
         </control>
       </control>
-    </control>
-	<control type="group" description="Options content">
+			<control type="group" description="Options content">
         <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>
         <animation type="Visible">
           <effect type="fade" start="0" end="100" time="240" />
@@ -610,6 +617,8 @@
           </control>-->
         </control>
 		</control>
+    </control>
+	
     <control type="group" description="MediaInfo">
       <visible>ControlGroup(214).Hasfocus + ![Window.IsActive(123) | Window.IsActive(124)]</visible>
       <control type="image" id="1">
@@ -1062,7 +1071,7 @@
           <width>900</width>
           <height>900</height>
           <aspectratio>stretch</aspectratio>
-          <texture border="136,127,128,139">img/Dialog.png</texture>
+          <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
         </control>
         <control type="grouplist" id="101" description="Video OSD Options">
           <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>

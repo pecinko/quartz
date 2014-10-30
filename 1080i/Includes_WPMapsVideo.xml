@@ -92,7 +92,7 @@
             <posy>0</posy>
             <width>758</width>
             <height>75</height>
-            <texture border="8">img/ButtonFO.png</texture>
+            <texture border="8">img/SettingsButtonFO.png</texture>
           </control>
           <control type="image">
             <posx>0</posx>

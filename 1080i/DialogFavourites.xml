@@ -32,7 +32,7 @@
         <pagecontrol>60</pagecontrol>
         <focusposition>3</focusposition>
         <movement>4</movement>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        
         <itemlayout width="870" height="111">
           <control type="image">
             <posx>0</posx>

@@ -28,12 +28,11 @@
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
           <onup>50</onup>
           <ondown>50</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="535">List</viewtype>
           <focusposition>5</focusposition>
           <movement>5</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
             <control type="label" description="Main Label">
               <width>720</width>
@@ -167,12 +166,12 @@
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright> -->
           <onup>51</onup>
           <ondown>51</ondown>
-          <pagecontrol>60</pagecontrol>
+          
           <viewtype label="537">Big List 51</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <include>LargeListAddonsLayout</include>
           <include>LargeListSeasonsTVPostersLayout</include>
           <include>LargeListMoviesLayout</include>
@@ -182,13 +181,13 @@
         <include>LargeListSlider</include>
       </control>
       <!--<include>LargeListFade</include>-->
-      <control type="scrollbar" id="60">
+      <!--<control type="scrollbar" id="60">
         <posx>39r</posx>
         <posy>135</posy>
         <height>870</height>
         <onleft>51</onleft>
         <onright>noop</onright>
-      </control>
+      </control>-->
     </control>
     <control type="group" description="Large Infolist2">
       <visible>Control.IsVisible(52)</visible>
@@ -682,12 +681,10 @@
           <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
           <onup>54</onup>
           <ondown>54</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="$LOCALIZE[544] 2">Media info 2</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
           <include>LargeListMoviesLayout</include>
           <include>LargeListMVideosEpisodesLayout</include>
           <include>LargeListFilesLayout</include>
@@ -696,13 +693,13 @@
         <include>LargeListSlider</include>
       </control>
       <!--<include>LargeListFade</include>-->
-      <control type="scrollbar" id="60">
+      <!--<control type="scrollbar" id="60">
         <posx>39r</posx>
         <posy>147</posy>
         <height>882</height>
         <onleft>54</onleft>
         <onright>noop</onright>
-      </control>
+      </control>-->
     </control>
     <!--<control type="group" description="Fanart 1">
       <visible>Control.IsVisible(57)</visible>
@@ -828,7 +825,7 @@
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>
@@ -1029,7 +1026,7 @@
           <focusposition>2</focusposition>
           <movement>2</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>Watched_Marks</include>
             <include>HD_Badge</include>

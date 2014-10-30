@@ -12,7 +12,7 @@
         <posy>-81</posy>
         <width>810</width>
         <height>450</height>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="label" id="10" description="Heading">
         <posx>0</posx>

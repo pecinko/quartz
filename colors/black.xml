@@ -7,7 +7,7 @@
 	<!--<color name="White">FFF1F1F1</color>-->
 	<color name="White2">FFFFFFFF</color>
 	<color name="Red">FFFF0000</color>
-	<color name="Blue">FF2261B4</color>
+	<color name="Blue">FF003366</color>
 	<color name="Black">FF000000</color>
 	<color name="BlackT">55000000</color>
 	<color name="BlackST">90000000</color>
@@ -17,9 +17,11 @@
 	<color name="Disabled">FF5E5E5E</color>	
 	<color name="Shadow">FF262626</color>
 	<color name="ShadowDark">FF000000</color>
-	<color name="HL">FFf0c968</color>
-	<color name="Overlay">FF202124</color>
-	<!--<color name="Overlay">FF262f3c</color>-->
+	<color name="HL">FF8de94c</color>
+
+	
+	<!--<color name="Overlay">FF202124</color>-->
+	<color name="Overlay">FF141618</color>
 	<!--
 	<color name="Black">FF000000</color>
 	<color name="BlackShadow">FF666666</color>

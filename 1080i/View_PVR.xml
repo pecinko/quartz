@@ -95,7 +95,7 @@
           <viewtype label="537">Big List 11</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="111">
             <control type="progress">
               <include>TVProgress</include>
@@ -297,7 +297,7 @@
           <viewtype label="537">Big List 12</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="111">
             <control type="progress">
               <include>TVProgress</include>
@@ -477,7 +477,7 @@
             <viewtype label="535">List 13</viewtype>
             <focusposition>5</focusposition>
             <movement>5</movement>
-            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            
             <itemlayout width="802" height="81">
               <include>Watched_Marks</include>
               <include>ArrowNF</include>
@@ -700,7 +700,7 @@
             <posy>3</posy>
             <width>57</width>
             <height>72</height>
-            <texture border="3">img/ButtonFO.png</texture>
+            <texture border="3">img/SettingsButtonFO.png</texture>
           </control>
           <control type="label" id="1">
             <posx>8</posx>
@@ -1329,7 +1329,7 @@
               <pagecontrol>75</pagecontrol>
               <focusposition>3</focusposition>
               <movement>3</movement>
-              <scrolltime tween="sine" easing="inout">280</scrolltime>
+              
               <itemlayout width="1702" height="126">
                 <control type="progress">
                   <posx>0</posx>
@@ -1525,7 +1525,7 @@
             <pagecontrol>76</pagecontrol>
             <focusposition>3</focusposition>
             <movement>4</movement>
-            <scrolltime tween="sine" easing="inout">280</scrolltime>
+            
             <itemlayout width="1702" height="111">
               <control type="image">
                 <posx>0</posx>

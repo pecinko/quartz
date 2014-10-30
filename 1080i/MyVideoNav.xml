@@ -15,9 +15,9 @@
       <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>900</width>
-        <height>900</height>
-        <texture border="128">img/DialogPanel.png</texture>
+        <width>660</width>
+        <height>720</height>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>

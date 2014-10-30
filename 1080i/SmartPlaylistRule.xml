@@ -9,7 +9,7 @@
       <posy>90</posy>
       <width>1530</width>
       <height>870</height>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
+      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="group">
       <posx>360</posx>
@@ -82,7 +82,7 @@
         <onright>20</onright>
         <ondown>9000</ondown>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-        <texturefocus flipy="true" border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus flipy="true" border="8">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="button" id="20">
         <description>Browse Button</description>

@@ -92,7 +92,7 @@
         <width>912</width>
         <align>left</align>
         <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
-        <texturefocus border="5" flipy="true">img/ButtonFO.png</texturefocus>
+        <texturefocus border="5" flipy="true">img/SettingsButtonFO.png</texturefocus>
         <textoffsetx>20</textoffsetx>
         <onup>10</onup>
         <onleft>18</onleft>

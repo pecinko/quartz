@@ -60,7 +60,7 @@
     <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
     
-	<texturefocus border="9">img/MediaButton.png</texturefocus>
+	<texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <!--<texturenofocus border="8">img/ButtonNF.png</texturenofocus>-->
     <pulseonselect>false</pulseonselect>
   </default>
@@ -92,8 +92,8 @@
     <selectedcolor>HL</selectedcolor>
     <altselectedcolor>HL</altselectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
-    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <pulseonselect>false</pulseonselect>
@@ -110,7 +110,7 @@
     <disabledcolor>Disabled</disabledcolor>
     <radiowidth>30</radiowidth>
     <radioheight>30</radioheight>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <textureradiofocus>img/RadioON.png</textureradiofocus>
     <textureradionofocus>-</textureradionofocus>
     <textoffsetx>20</textoffsetx>
@@ -122,7 +122,7 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <font>size22</font>
@@ -145,7 +145,7 @@
     <textureupfocus>img/ArrowUpFO.png</textureupfocus>
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>White</textcolor>
@@ -178,7 +178,7 @@
     <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
     <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
     <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <texturenofocus>-</texturenofocus>
     <font>size22</font>
     <textcolor>White</textcolor>

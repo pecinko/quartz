@@ -41,7 +41,7 @@
         <width>1002</width>
         <height>912</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="grouplist" id="9000">
         <posx>675</posx>

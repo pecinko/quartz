@@ -2,7 +2,7 @@
 <window>
   <defaultcontrol always="true">8998</defaultcontrol>
   <include>OpenClose</include>
-  <controls>
+	<controls>
     <!--<include>MiniBackground</include>-->
 	<control type="image" description="BG">
         <posx>0</posx>

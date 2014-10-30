@@ -9,7 +9,7 @@
       <posy>0</posy>
       <width>1350</width>
       <height>960</height>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
+      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="group">
       <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>

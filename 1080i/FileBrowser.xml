@@ -47,7 +47,7 @@
           <pagecontrol>60</pagecontrol>
           <focusposition>5</focusposition>
           <movement>5</movement>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
@@ -91,9 +91,9 @@
           <pagecontrol>60</pagecontrol>
           <focusposition>3</focusposition>
           <movement>4</movement>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="111">
-            <include>ListBG</include>
+            <!--<include>ListBG</include>-->
             <control type="image">
               <posx>0</posx>
               <posy>0</posy>
@@ -213,7 +213,7 @@
         <width>1002</width>
         <height>687</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="grouplist" id="9000">
         <onleft>450</onleft>

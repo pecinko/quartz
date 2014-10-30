@@ -26,7 +26,7 @@
           <focusposition>5</focusposition>
           <movement>5</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="802" height="81">
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
@@ -83,7 +83,7 @@
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <include>LargeListAddonsLayout</include>
         </control>
         <include>LargeListSlider</include>
@@ -454,7 +454,7 @@
         <width>1002</width>
         <height>762</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>

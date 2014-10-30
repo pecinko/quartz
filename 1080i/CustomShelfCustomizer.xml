@@ -52,7 +52,7 @@
           <focusposition>1</focusposition>
           <orientation>horizontal</orientation>
           <pagecontrol>60</pagecontrol>
-          <scrolltime tween="sine" easing="inout">280</scrolltime>
+          
           <itemlayout width="600" height="111">
             <control type="label" description="Main Label">
               <posx>300</posx>
@@ -153,7 +153,7 @@
         <ondown>noop</ondown>
         <itemgap>0</itemgap>
         <pagecontrol>60</pagecontrol>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        
         <!--MOVIES-->
         <control type="button" id="100" description="Auto">
           <visible>Library.HasContent(Movies)</visible>

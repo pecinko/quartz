@@ -29,17 +29,17 @@
       <control type="button" id="7">
         <height>81</height>
         <width>802</width>
-        <texturefocus border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="radiobutton" id="8">
         <height>81</height>
         <width>802</width>
-        <texturefocus border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="spincontrolex" id="9">
         <height>81</height>
         <width>802</width>
-        <texturefocus border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="image" description="Line split">
         <posx>0</posx>
@@ -58,7 +58,7 @@
         <onright>noop</onright>
         <onup>5</onup>
         <ondown>29</ondown>
-        <texturefocus border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
       <control type="button" id="29" description="Cancel">
@@ -70,7 +70,7 @@
         <onright>noop</onright>
         <onup>28</onup>
         <ondown>noop</ondown>
-        <texturefocus border="8">img/ButtonFO.png</texturefocus>
+        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
     </control>

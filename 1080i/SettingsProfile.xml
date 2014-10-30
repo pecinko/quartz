@@ -100,7 +100,7 @@
             <posy>0</posy>
             <width>802</width>
             <height>81</height>
-            <texture border="8">img/ButtonFO.png</texture>
+            <texture border="8">img/SettingsButtonFO.png</texture>
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label" description="Main Label">

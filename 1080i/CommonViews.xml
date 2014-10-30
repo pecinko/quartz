@@ -500,9 +500,9 @@
     <control type="image">
       <animation effect="fade" time="100">VisibleChange</animation>
       <posx>0</posx>
-      <posy>336</posy>
-      <width>807</width>
-      <height>105</height>
+      <posy>339</posy>
+      <width>801</width>
+      <height>99</height>
       <texture border="4">img/SettingsButtonFO.png</texture>
 			<!--<texture border="0,9,0,9">img/MediaButton.png</texture>-->
       <aspectratio>stretch</aspectratio>
@@ -826,7 +826,7 @@
   </include>
   <include name="LargeListAddonsLayout">
     <itemlayout condition="container.content(addons)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="group">
         <control type="image">
           <posx>9</posx>
@@ -865,7 +865,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(addons)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="group">
         <control type="image">
           <posx>9</posx>
@@ -906,7 +906,7 @@
   </include>
   <include name="LargeListMVideosEpisodesLayout">
     <itemlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
       <control type="image" description="SCALE">
@@ -963,7 +963,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
       <control type="image" description="SCALE">
@@ -1024,7 +1024,7 @@
   </include>
   <include name="LargeListFilesLayout">
     <itemlayout condition="Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -1056,7 +1056,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -1090,7 +1090,7 @@
   </include>
   <include name="LargeListNoThumbFilesLayout">
     <itemlayout condition="Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="label" description="Main Label">
         <visible>!IsEmpty(ListItem.Label2)</visible>
         <posx>30</posx>
@@ -1113,7 +1113,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="label" description="Main Label">
         <visible>!IsEmpty(ListItem.Label2)</visible>
         <posx>30</posx>
@@ -1241,7 +1241,7 @@
   </include>
   <include name="LargeListSeasonsTVPostersLayout">
     <itemlayout condition="container.content(seasons) | container.content(TVshows)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Unwatched_Badge51</include>
       <include>Watched_Marks51</include>
       <control type="label" description="Main Label">
@@ -1258,7 +1258,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(seasons) | container.content(TVshows)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Watched_Marks51</include>
       <include>Unwatched_Badge51FO</include>
       <control type="label" description="Main Label">
@@ -1277,7 +1277,7 @@
   </include>
   <include name="LargeListMVideosEpisodesLayout">
     <itemlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
       <control type="image" description="SCALE">
@@ -1334,7 +1334,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(episodes) | container.content(musicvideos)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
       <control type="image" description="SCALE">
@@ -1393,7 +1393,7 @@
   </include>
   <include name="LargeListNoThumbEpisodesLayout">
     <itemlayout condition="container.content(episodes) | Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
@@ -1434,7 +1434,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(episodes) | Container.content(files)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <include>Watched_Marks51</include>
       <include>HD_Badge51</include>
       <include>3D_Badge51</include>
@@ -1477,7 +1477,7 @@
   </include>
   <include name="LargeListAlbumsLayout">
     <itemlayout condition="container.content(albums)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -1524,7 +1524,7 @@
       </control>
     </itemlayout>
     <focusedlayout condition="container.content(albums)" width="802" height="111">
-      <include>ListBG</include>
+      <!--<include>ListBG</include>-->
       <control type="image">
         <posx>0</posx>
         <posy>0</posy>
@@ -1578,8 +1578,8 @@
     <font>size24</font>
     <align>left</align>
     <textoffsetx>20</textoffsetx>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
-    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
   </include>
   <include name="9000GrouplistParameters">
     <posx>675</posx>
@@ -1603,10 +1603,10 @@
     <disabledcolor>Grey</disabledcolor>
     <texturenofocus>-</texturenofocus>
     <alttexturenofocus>-</alttexturenofocus>
-    <texturefocus border="9">img/MediaButton.png</texturefocus>
-    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>
-	<!--<texturefocus border="9">img/MediaButton.png</texturefocus>
-    <alttexturefocus border="9">img/MediaButton.png</alttexturefocus>-->
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
+	<!--<texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>-->
   </include>
   <include name="9000Commons" description="Regular BG">
     <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -1617,7 +1617,7 @@
         <width>1023</width>
         <height>702</height>
       <aspectratio>stretch</aspectratio>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
+      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
     </control>
   </include>
   <include name="Plot51Commons">
@@ -1656,7 +1656,7 @@
     <shadowcolor>Black</shadowcolor>
   </include>
   <include name="KeyboardButtons">
-    <texturefocus border="8">img/ButtonFO.png</texturefocus>
+    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <align>center</align>
     <aligny>center</aligny>
     <textoffsetx>0</textoffsetx>

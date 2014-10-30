@@ -49,9 +49,9 @@
         <pagecontrol>60</pagecontrol>
         <focusposition>3</focusposition>
         <movement>4</movement>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        
         <itemlayout width="802" height="111">
-          <include>ListBG</include>
+          <!--<include>ListBG</include>-->
           <control type="image" description="Logo">
             <posx>615</posx>
             <posy>12</posy>
@@ -90,7 +90,7 @@
           </control>
         </itemlayout>
         <focusedlayout width="802" height="111">
-          <include>ListBG</include>
+          <!--<include>ListBG</include>-->
           <control type="image" description="Logo">
             <posx>615</posx>
             <posy>12</posy>

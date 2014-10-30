@@ -16,7 +16,7 @@
       <posy>-80</posy>
       <width>825</width>
       <height>1200</height>
-      <texture border="136,127,128,139">img/Dialog.png</texture>
+      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="label" id="1">
       <description>dialog Heading</description>
@@ -31,7 +31,7 @@
       <posy>210</posy>
       <width>465</width>
       <height>75</height>
-      <texture border="8" flipy="true">img/ButtonFO.png</texture>
+      <texture border="8" flipy="true">img/SettingsButtonFO.png</texture>
     </control>
     <control type="label" id="4" description="Edit Text">
       <posx>144</posx>

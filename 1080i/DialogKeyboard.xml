@@ -53,7 +53,7 @@
           <width>810</width>
           <height>84</height>
           <aspectratio>stretch</aspectratio>
-          <texture border="8" flipy="true">img/ButtonFO.png</texture>
+          <texture border="8" flipy="true">img/SettingsButtonFO.png</texture>
         </control>
         <control type="label" id="310" description="Edit Text">
           <posx>52</posx>
@@ -90,7 +90,7 @@
               <onright>67</onright>
               <onup>32</onup>
               <ondown>72</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -104,7 +104,7 @@
               <onright>68</onright>
               <onup>32</onup>
               <ondown>73</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -118,7 +118,7 @@
               <onright>69</onright>
               <onup>32</onup>
               <ondown>74</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -132,7 +132,7 @@
               <onright>70</onright>
               <onup>32</onup>
               <ondown>75</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -146,7 +146,7 @@
               <onright>8</onright>
               <onup>306</onup>
               <ondown>76</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -163,7 +163,7 @@
               <onright>72</onright>
               <onup>65</onup>
               <ondown>77</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -177,7 +177,7 @@
               <onright>73</onright>
               <onup>66</onup>
               <ondown>78</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -191,7 +191,7 @@
               <onright>74</onright>
               <onup>67</onup>
               <ondown>79</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -205,7 +205,7 @@
               <onright>75</onright>
               <onup>68</onup>
               <ondown>80</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -219,7 +219,7 @@
               <onright>76</onright>
               <onup>69</onup>
               <ondown>81</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -233,7 +233,7 @@
               <onright>304</onright>
               <onup>70</onup>
               <ondown>82</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -250,7 +250,7 @@
               <onright>78</onright>
               <onup>71</onup>
               <ondown>83</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -264,7 +264,7 @@
               <onright>79</onright>
               <onup>72</onup>
               <ondown>84</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -278,7 +278,7 @@
               <onright>80</onright>
               <onup>73</onup>
               <ondown>85</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -292,7 +292,7 @@
               <onright>81</onright>
               <onup>74</onup>
               <ondown>86</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -306,7 +306,7 @@
               <onright>82</onright>
               <onup>75</onup>
               <ondown>87</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -320,7 +320,7 @@
               <onright>307</onright>
               <onup>76</onup>
               <ondown>88</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -337,7 +337,7 @@
               <onright>84</onright>
               <onup>77</onup>
               <ondown>89</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -351,7 +351,7 @@
               <onright>85</onright>
               <onup>78</onup>
               <ondown>90</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -365,7 +365,7 @@
               <onright>86</onright>
               <onup>79</onup>
               <ondown>48</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -379,7 +379,7 @@
               <onright>87</onright>
               <onup>80</onup>
               <ondown>49</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -393,7 +393,7 @@
               <onright>88</onright>
               <onup>81</onup>
               <ondown>50</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -407,7 +407,7 @@
               <onright>303</onright>
               <onup>82</onup>
               <ondown>51</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -424,7 +424,7 @@
               <onright>90</onright>
               <onup>83</onup>
               <ondown>52</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -438,7 +438,7 @@
               <onright>48</onright>
               <onup>84</onup>
               <ondown>53</ondown>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <font>size26</font>
             </control>
@@ -555,7 +555,7 @@
               <width>75</width>
               <height>75</height>
               <label>&lt;</label>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <onleft>300</onleft>
               <onright>32</onright>
               <onup>52</onup>
@@ -570,7 +570,7 @@
               <width>300</width>
               <height>75</height>
               <label>20182</label>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>0</textoffsetx>
               <onleft>305</onleft>
               <onright>306</onright>
@@ -585,7 +585,7 @@
               <width>75</width>
               <height>75</height>
               <label>&gt;</label>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <onleft>32</onleft>
               <onright>300</onright>
               <onup>57</onup>
@@ -608,7 +608,7 @@
               <onup>300</onup>
               <ondown>304</ondown>
               <align>center</align>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>8</textoffsetx>
               <font>size22</font>
             </control>
@@ -691,7 +691,7 @@
               <onup>302</onup>
               <ondown>8</ondown>
               <align>center</align>
-              <texturefocus border="8">img/ButtonFO.png</texturefocus>
+              <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
               <textoffsetx>8</textoffsetx>
               <font>size22</font>
             </control>

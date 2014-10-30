@@ -10,7 +10,7 @@
         <posy>-45</posy>
         <width>1050</width>
         <height>606</height>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="label" id="401">
         <description>Song Number Label</description>

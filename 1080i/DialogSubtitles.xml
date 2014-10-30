@@ -15,7 +15,7 @@
         <posy>-25</posy>
         <width>1750</width>
         <height>1080</height>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="button" id="666">
         <posx>1629</posx>
@@ -258,7 +258,7 @@
         <posy>45</posy>
         <width>708</width>
         <height>870</height>
-        <texture border="136,127,128,139">img/Dialog.png</texture>
+        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="label" description="Right side options">
         <posx>2000</posx>

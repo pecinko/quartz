@@ -40,7 +40,7 @@
         <onright>12</onright>
         <ondown>16</ondown>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-        <texturefocus border="8" flipy="true">img/ButtonFO.png</texturefocus>
+        <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="button" id="12">
         <description>Server Browse</description>
@@ -67,7 +67,7 @@
           <onright>16</onright>
           <ondown>13</ondown>
           <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-          <texturefocus border="8" flipy="true">img/ButtonFO.png</texturefocus>
+          <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="13">
           <description>Port</description>
@@ -80,7 +80,7 @@
           <onright>13</onright>
           <ondown>14</ondown>
           <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-          <texturefocus border="8" flipy="true">img/ButtonFO.png</texturefocus>
+          <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="edit" id="14" description="Username">
           <posx>15</posx>
@@ -93,7 +93,7 @@
           <onright>14</onright>
           <ondown>15</ondown>
           <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-          <texturefocus border="8" flipy="true">img/ButtonFO.png</texturefocus>
+          <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="edit" id="15" description="Password">
           <posx>15</posx>
@@ -106,7 +106,7 @@
           <onright>15</onright>
           <ondown>18</ondown>
           <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-          <texturefocus border="8" flipy="true">img/ButtonFO.png</texturefocus>
+          <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
         </control>
       </control>
       <control type="button" id="18" description="Ok">

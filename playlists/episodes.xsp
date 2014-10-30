@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="episodes">
+    <name>episodes</name>
+    <match>one</match>
+    <rule field="playcount" operator="is">
+        <value>0</value>
+    </rule>
+    <rule field="inprogress" operator="true" />
+    <order direction="ascending">dateaired</order>
+</smartplaylist>

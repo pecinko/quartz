@@ -39,7 +39,7 @@
         <focusposition>5</focusposition>
         <movement>5</movement>
         <preloaditems>4</preloaditems>
-        <scrolltime tween="sine" easing="inout">280</scrolltime>
+        
         <itemlayout width="802" height="81">
           <include>ArrowNF</include>
           <control type="label" description="Main Label">
