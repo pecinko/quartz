@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <defaultcontrol always="true">3</defaultcontrol>
+  <defaultcontrol always="true">12</defaultcontrol>
   
   <include>OpenClose</include>
   <controls>
@@ -16,7 +16,7 @@
         <width>1020</width>
         <label>20344</label>
       </control>
-      <control type="spincontrolex" id="3" description="Content Type">
+      <control type="spincontrolex" id="12" description="Content Type">
         <posx>435</posx>
         <posy>75</posy>
         <width>1080</width>
@@ -24,7 +24,7 @@
         <label>-</label>
         <align>right</align>
         <onup>29</onup>
-        <ondown>4</ondown>
+        <ondown>21</ondown>
         <onleft>28</onleft>
         <onright>28</onright>
         <textoffsetx>20</textoffsetx>
@@ -36,7 +36,7 @@
         <posy>75</posy>
         <width>578</width>
         <align>left</align>
-        <label>$INFO[Control.GetLabel(3)]</label>
+        <label>$INFO[Control.GetLabel(12)]</label>
       </control>
       <control type="image" description="Splitter">
         <posx>375</posx>
@@ -45,14 +45,14 @@
         <width>1260</width>
         <texture>img/LineST.png</texture>
       </control>
-      <control type="list" id="4" description="Scraper list">
+      <control type="list" id="21" description="Scraper list">
         <posx>705</posx>
         <posy>171</posy>
         <width>810</width>
         <height>210</height>
-        <onup>3</onup>
+        <onup>12</onup>
         <onleft>5</onleft>
-        <onright>3</onright>
+        <onright>12</onright>
         <ondown>5</ondown>
         <itemlayout height="69" width="810">
           <control type="label">
@@ -91,8 +91,8 @@
         <width>1080</width>
         <height>450</height>
         <itemgap>3</itemgap>
-        <onup>4</onup>
-        <ondown>6</ondown>
+        <onup>21</onup>
+        <ondown>22</ondown>
         <onleft>noop</onleft>
         <onright>noop</onright>
         <orientation>vertical</orientation>
@@ -108,7 +108,7 @@
       </control>
       <control type="group">
         <posy>72</posy>
-        <control type="button" id="6" description="Settings">
+        <control type="button" id="22" description="Settings">
           <posx>435</posx>
           <posy>723</posy>
           <width>1080</width>
@@ -134,8 +134,8 @@
           <label>186</label>
           <onleft>noop</onleft>
           <onright>29</onright>
-          <onup>6</onup>
-          <ondown>3</ondown>
+          <onup>22</onup>
+          <ondown>12</ondown>
           <texturenofocus border="4">img/ButtonNF.png</texturenofocus>
         </control>
         <control type="button" id="29" description="Cancel">
@@ -145,8 +145,8 @@
           <label>222</label>
           <onleft>28</onleft>
           <onright>noop</onright>
-          <onup>6</onup>
-          <ondown>3</ondown>
+          <onup>22</onup>
+          <ondown>12</ondown>
           <texturenofocus border="4">img/ButtonNF.png</texturenofocus>
         </control>
       </control>

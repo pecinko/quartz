@@ -28,7 +28,7 @@
         <onright>10</onright>
         <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
       </control>
-      <control type="button" id="11" description="Server Name">
+      <control type="edit" id="11" description="Server Name">
         <posx>15</posx>
         <posy>159</posy>
         <width>615</width>
@@ -69,7 +69,7 @@
           <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
           <texturefocus border="8" flipy="true">img/SettingsButtonFO.png</texturefocus>
         </control>
-        <control type="button" id="13">
+        <control type="edit" id="13">
           <description>Port</description>
           <posx>15</posx>
           <posy>306</posy>

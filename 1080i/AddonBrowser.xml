@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">50</defaultcontrol>
-  
   <controls>
     <control type="group" description="Slider and List">
       <include>SlimListItemCount</include>
@@ -23,7 +22,6 @@
         <focusposition>5</focusposition>
         <movement>5</movement>
         <preloaditems>4</preloaditems>
-        
         <itemlayout width="802" height="81">
           <include>ArrowNF</include>
           <control type="label" description="Main Label">
@@ -220,14 +218,15 @@
         <width>1002</width>
         <height>687</height>
         <aspectratio>stretch</aspectratio>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
+        <texture border="21">img/DialogNew.png</texture>
+        <colordiffuse>Overlay</colordiffuse>
       </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
         <control type="button" id="3" description="Sort">
           <include>9000Buttons</include>
         </control>
-        <control type="togglebutton" id="5" description="Updates">
+        <control type="button" id="5" description="Updates">
           <include>9000Buttons</include>
           <label>$LOCALIZE[24063]: $LOCALIZE[1223]</label>
           <altlabel>$LOCALIZE[24063]: $LOCALIZE[305]</altlabel>

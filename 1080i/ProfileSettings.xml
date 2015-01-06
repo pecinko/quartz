@@ -5,10 +5,10 @@
   <include>OpenClose</include>
   <controls>
     <include>MiniBackground</include>
-    <control type="label" id="1000" description="Profile Name">
+    <control type="label" id="102" description="Profile Name">
       <include>HeadingR</include>
     </control>
-    <control type="image" id="2" description="Profile image">
+    <control type="image" id="101" description="Profile image">
       <posx>270</posx>
       <posy>330</posy>
       <width>450</width>
@@ -16,7 +16,7 @@
       <texture>unknown-user.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-    <control type="label" id="1001" description="Profile Directory">
+    <control type="label" id="103" description="Profile Directory">
       <posx>990</posx>
       <posy>120</posy>
       <width>810</width>

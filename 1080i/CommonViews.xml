@@ -482,19 +482,10 @@
       <posy>404</posy>
       <width>819</width>
       <height>84</height>
-      <texture border="4">img/SettingsButtonFO.png</texture>
-			<!--<texture border="0,9,0,9">img/MediaButton.png</texture>-->
+      <!--<texture border="4">img/SettingsButtonFO.png</texture>-->
+			<texture border="0,9,0,9">img/MediaButton2.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
-	<!--<control type="image">
-      <animation effect="fade" time="100">VisibleChange</animation>
-      <posx>-27</posx>
-      <posy>383</posy>
-      <width>852</width>
-      <height>126</height>
-      <texture border="26">img/Slider4.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>-->
   </include>
   <include name="Slider5">
     <control type="image">
@@ -503,20 +494,12 @@
       <posy>339</posy>
       <width>801</width>
       <height>99</height>
-      <texture border="4">img/SettingsButtonFO.png</texture>
-			<!--<texture border="0,9,0,9">img/MediaButton.png</texture>-->
+      <!--<texture border="36">focus/FrameFO.png</texture>-->
+			<!--<texture border="4">img/SettingsButtonFO.png</texture>-->
+			<texture border="0,9,0,9">img/MediaButton2.png</texture>
       <aspectratio>stretch</aspectratio>
     </control>
-	<!--<control type="image">
-      <animation effect="fade" time="100">VisibleChange</animation>
-      <posx>-27</posx>
-      <posy>315</posy>
-      <width>855</width>
-      <height>150</height>
-      <texture border="26">img/Slider5.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>-->
-  </include>
+	 </include>
   <include name="52MainLabel">
     <posx>45</posx>
     <posy>0</posy>
@@ -1582,9 +1565,9 @@
     <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
   </include>
   <include name="9000GrouplistParameters">
-    <posx>675</posx>
-    <posy>240</posy>
-    <width>576</width>
+    <centerleft>960</centerleft>
+    <top>240</top>
+    <width>540</width>
     <height>608</height>
     <itemgap>0</itemgap>
     <onleft>50</onleft>
@@ -1595,7 +1578,7 @@
 	<orientation>vertical</orientation>
   </include>
   <include name="9000Buttons">
-    <width>576</width>
+    <width>540</width>
     <textoffsetx>0</textoffsetx>
     <align>center</align>
     <aligny>center</aligny>
@@ -1603,11 +1586,11 @@
     <disabledcolor>Grey</disabledcolor>
     <texturenofocus>-</texturenofocus>
     <alttexturenofocus>-</alttexturenofocus>
-    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
-    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
-	<!--<texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <texturefocus border="0,9,0,9">img/MediaButton2.png</texturefocus>
+		<alttexturefocus border="4">img/MediaButton2.png</alttexturefocus>
+		<!--<texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
     <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>-->
-  </include>
+	</include>
   <include name="9000Commons" description="Regular BG">
     <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
     <include>DialogOpenCloseVisible</include>

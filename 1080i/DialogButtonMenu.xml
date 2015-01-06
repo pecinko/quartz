@@ -124,7 +124,7 @@
       <width>124</width>
       <height>124</height>
       <aspectratio>stretch</aspectratio>
-      <texture border="26,22,26,22">img/MediaButton.png</texture>
+      <texture border="26,22,26,22">img/MediaButton2.png</texture>
         		<!--<texture border="36">focus/FrameFO.png</texture>
         		<bordersize>-9</bordersize>-->
       <animation type="Conditional" condition="Control.HasFocus(3)">

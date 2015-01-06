@@ -4,9 +4,9 @@
     <posx>0</posx>
 	<width>375</width>
     <height>78</height>
-		<texture border="4">img/SettingsButtonFO.png</texture>
+		<!--<texture border="4">img/SettingsButtonFO.png</texture>-->
 
-	<!--<texture border="26,22,26,22">img/MediaButton.png</texture>-->
+	<texture border="26,22,26,22">img/MediaButton2.png</texture>
 	<aspectratio>stretch</aspectratio>
   </include>
   <include name="HomeButtonsCommons">

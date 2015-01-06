@@ -96,6 +96,13 @@
       <align>left</align>
       <font>size23</font>
     </control>
+		<control type="sliderex" id="13" description="Slider control">
+      <width>1260</width>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+      <align>left</align>
+      <font>size23</font>
+    </control>
     <control type="button" id="10" description="Category Button">
       <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
       <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>

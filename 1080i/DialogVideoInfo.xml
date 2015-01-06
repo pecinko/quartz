@@ -1,88 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="false">8</defaultcontrol>
-  
   <include>OpenClose</include>
   <coordinates>
     <origin x="0" y="0" />
   </coordinates>
   <controls>
-    <include>MiniBackground</include>
-    <control type="image" description="Fanart">
-      <visible>!IsEmpty(ListItem.Art(fanart))</visible>
-      <include>VisibleFadeEffect</include>
-      <include>Dimensions_Fullscreen</include>
-      <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image" description="Vignette">
-      <include>Dimensions_Fullscreen</include>
-      <texture>img/BlackDotST.png</texture>
-      <aspectratio>stretch</aspectratio>
-      <animation effect="fade" start="100" end="10" time="200" reversible="true" condition="Control.HasFocus(12)">Conditional</animation>
-    </control>
-    <control type="image" description="Vignette">
-      <posx>0</posx>
-      <posy>450</posy>
-      <width>1920</width>
-      <height>630</height>
-      <texture>img/Gradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="label" description="Fanart not available">
-      <visible>Control.HasFocus(10) + IsEmpty(ListItem.Art(fanart))</visible>
-      <include>VisibleFadeEffect</include>
-      <posx>210</posx>
-      <posy>315</posy>
-      <width>1500</width>
-      <height>450</height>
-      <wrapmultiline>true</wrapmultiline>
-      <align>center</align>
-      <aligny>center</aligny>
-      <font>size26</font>
-      <textcolor>Grey2</textcolor>
-      <label>$LOCALIZE[31311]</label>
-    </control>
     <control type="group" description="Thumbs">
       <visible>Control.HasFocus(10)</visible>
       <include>VisibleFadeEffect</include>
       <posx>392</posx>
       <posy>120</posy>
-      <control type="image" description="Stage Thumbs">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>-540</posx>
-        <posy>480</posy>
-        <width>2220</width>
-        <height>300</height>
-        <texture>img/IconStage2.png</texture>
-        <aspectratio>stretch</aspectratio>
-        <animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
-      </control>
       <control type="image" description="Thumb">
         <posx>0</posx>
         <posy>30</posy>
         <width>1137</width>
         <height>660</height>
-        <texture diffuse="img/Diffuse0.png">$INFO[ListItem.Thumb]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
-      <control type="image" description="Thumb">
-        <posx>0</posx>
-        <posy>30</posy>
-        <width>1137</width>
-        <height>660</height>
-        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <bordersize>2</bordersize>
-        <texture diffuse="img/DiffuseE.png">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>
-      <control type="image" description="Reflection">
-        <posx>0</posx>
-        <posy>690</posy>
-        <width>1137</width>
-        <height>660</height>
-        <texture diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
       </control>
     </control>
     <control type="group" description="Media Info">
@@ -493,15 +428,6 @@
       <posy>60</posy>
       <visible>Control.HasFocus(9012) | Control.HasFocus(50)</visible>
       <include>VisibleFadeEffect</include>
-      <control type="image" description="Stage Actors">
-        <posx>-150</posx>
-        <posy>540</posy>
-        <width>2220</width>
-        <height>300</height>
-        <texture>img/IconStage2.png</texture>
-        <aspectratio>stretch</aspectratio>
-        <animation effect="fade" start="100" end="30" time="0" condition="true">Conditional</animation>
-      </control>
       <control type="fixedlist" id="50">
         <visible>Control.HasFocus(9012) | Control.HasFocus(50)</visible>
         <posx>-240</posx>
@@ -526,14 +452,6 @@
             <aspectratio>stretch</aspectratio>
             <texture>img/BlackDot.png</texture>
           </control>
-          <control type="image" description="Thumb BG">
-            <posx>56</posx>
-            <posy>69</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
-          </control>
           <control type="image" description="Thumb">
             <posx>56</posx>
             <posy>69</posy>
@@ -551,14 +469,6 @@
             <width>369</width>
             <aspectratio>stretch</aspectratio>
             <texture>img/BlackDot.png</texture>
-          </control>
-          <control type="image" description="Thumb BG">
-            <posx>56</posx>
-            <posy>69</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
           </control>
           <control type="image" description="Thumb">
             <posx>56</posx>
@@ -578,7 +488,7 @@
         <width>424</width>
         <height>600</height>
         <texture border="36">focus/FrameFO.png</texture>
-        		<bordersize>-9</bordersize>
+        <bordersize>-9</bordersize>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" description="Media details">
@@ -591,40 +501,21 @@
         <font>size22B</font>
         <label>$INFO[Container(50).ListItem.Label]</label>
       </control>
-      <control type="image" description="Bottom fade">
-        <visible>Control.HasFocus(9012) | control.HasFocus(50)</visible>
-        <animation effect="fade" end="100" time="0">Visible</animation>
-        <animation effect="fade" end="0" time="200">Hidden</animation>
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>img/Vignette_MoviesCoverflow.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-    </control>
-    <control type="image" description="Options BG">
-      <posx>0</posx>
-      <posy>1011</posy>
-      <height>75</height>
-      <width>1920</width>
-      <aspectratio>stretch</aspectratio>
-      <texture>img/BlackDot.png</texture>
     </control>
     <control type="image" description="Navbar">
-      <posx>-82</posx>
-      <posy>1012</posy>
-      <width>2085</width>
-      <height>1</height>
+      <posx>-90</posx>
+      <posy>969</posy>
+      <width>2100</width>
+      <height>124</height>
       <aspectratio>stretch</aspectratio>
-      <texture>img/Line1.png</texture>
+      <texture>img/HomeMenuBar.png</texture>
     </control>
     <control type="group" description="Options">
       <posy>0</posy>
       <posx>0</posx>
       <control type="grouplist">
         <posx>0</posx>
-        <posy>1010</posy>
+        <posy>990</posy>
         <width>1920</width>
         <height>88</height>
         <itemgap>0</itemgap>
@@ -636,10 +527,10 @@
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <label>$LOCALIZE[31037]</label>
           <textcolor>White</textcolor>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
+          <texturefocus>-</texturefocus>
           <onclick>Dialog.Close(all,true)</onclick>
           <onclick>Playlist.Clear</onclick>
           <onclick>RunScript(script.cinema.experience)</onclick>
@@ -648,12 +539,12 @@
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <label>208</label>
           <altlabel>1024</altlabel>
           <textcolor>White</textcolor>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
+          <texturefocus>-</texturefocus>
+          <alttexturefocus>-</alttexturefocus>
           <usealttexture>Container.Content(TVShows)</usealttexture>
         </control>
         <control type="button" id="301" description="InProgressReset">
@@ -661,91 +552,55 @@
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <label>Reset Progress</label>
           <textcolor>White</textcolor>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
+          <texturefocus>-</texturefocus>
           <onclick>Dialog.Close(all,true)</onclick>
           <onclick>RunScript(script.module.inprogressreset,DBID=$INFO[ListItem.DBID])</onclick>
         </control>
         <control type="button" id="11" description="Trailer">
+          <visible>!IsEmpty(ListItem.Trailer)</visible>
           <height>75</height>
           <width>270</width>
-          <font>size20</font>
+          <font>size22</font>
           <align>center</align>
           <label>20410</label>
           <textcolor>White</textcolor>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <enable>!IsEmpty(ListItem.Trailer)</enable>
+          <texturefocus>-</texturefocus>
           <pulseonselect>true</pulseonselect>
         </control>
         <control type="button" id="6" description="Refresh">
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <textcolor>White</textcolor>
           <label>$LOCALIZE[184]</label>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
+          <texturefocus>-</texturefocus>
         </control>
         <control type="button" id="9012" description="Actors">
           <onup>50</onup>
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <textcolor>White</textcolor>
           <label>344</label>
           <onclick>Control.SetFocus(50)</onclick>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-          <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
+          <texturefocus>-</texturefocus>
+          <alttexturefocus>-</alttexturefocus>
         </control>
         <control type="button" id="10" description="Get Art">
           <height>75</height>
           <width>270</width>
           <align>center</align>
-          <font>size20</font>
+          <font>size22</font>
           <textcolor>White</textcolor>
           <label>13511</label>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
+          <texturefocus>-</texturefocus>
         </control>
-        <!--<control type="button" id="12" description="Get FanArt">
-          <height>75</height>
-          <width>270</width>
-          <align>center</align>
-          <font>size20</font>
-          <textcolor>White</textcolor>
-          <label>20413</label>
-          <texturefocus>img/HomeBarFO.png</texturefocus>
-        </control>-->
       </control>
     </control>
-    <!--<control type="image" description="Header">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1280</width>
-      <height>48</height>
-      <texture>img/BlackDotST.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image" description="Line Split">
-      <posx>0</posx>
-      <posy>47</posy>
-      <width>1280</width>
-      <height>1</height>
-      <texture>img/LineST.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="label" description="Title">
-      <posx>40</posx>
-      <posy>2</posy>
-      <width>1200</width>
-      <height>50</height>
-      <align>center</align>
-      <aligny>center</aligny>
-      <font>size24</font>
-      <textcolor>White</textcolor>
-      <info>ListItem.Label</info>
-    </control>-->
   </controls>
 </window>

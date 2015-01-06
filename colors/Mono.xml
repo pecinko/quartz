@@ -17,11 +17,8 @@
 	<color name="Disabled">FF5E5E5E</color>	
 	<color name="Shadow">FF262626</color>
 	<color name="ShadowDark">FF000000</color>
-	<color name="HL">FF8de94c</color>
-
-	
-	<!--<color name="Overlay">FF202124</color>-->
-	<color name="Overlay">FF141618</color>
+	<color name="HL">FFc6c6c6</color>
+	<color name="Overlay">FF000000</color>
 	<!--
 	<color name="Black">FF000000</color>
 	<color name="BlackShadow">FF666666</color>

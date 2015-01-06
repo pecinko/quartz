@@ -6,18 +6,24 @@
   
 	<controls>
     <include>FullBackground</include>
-	  
-	<include>View_Videos</include>
+	  <control type="group" description="views">
+	  <visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
+		<animation effect="fade" delay="100" time="300">Visible</animation>
+      <animation effect="fade" time="0">Hidden</animation>
+		<include>View_Videos</include>
     <include>View_Banners</include>
-    <control type="group" description="Side menu 9000 group">
+    </control>
+		<control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
       <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>660</width>
-        <height>720</height>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
+        <width>810</width>
+        <height>915</height>
+        <texture border="128">img/DialogPanel.png</texture>
+				<!--<texture border="21">img/DialogNew.png</texture>
+				<colordiffuse>Overlay</colordiffuse>-->
       </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>

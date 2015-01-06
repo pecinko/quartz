@@ -85,7 +85,7 @@
         <aligny>center</aligny>
         <reverse>yes</reverse>
       </control>
-      <control type="sliderex" id="10">
+      <control type="sliderex" id="13">
         <description>Default Slider</description>
         <height>66</height>
         <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
