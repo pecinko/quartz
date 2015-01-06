@@ -690,7 +690,7 @@
   <include name="Unwatched_Badge51">
     <control type="label" description="Label2">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>84r</posx>
+      <right>20</right>
       <posy>0</posy>
       <height>111</height>
       <width>90</width>
@@ -705,7 +705,7 @@
   <include name="Unwatched_Badge51FO">
     <control type="image">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>129r</posx>
+      <right>20</right>
       <posy>0</posy>
       <height>111</height>
       <width>90</width>
@@ -715,7 +715,7 @@
     </control>
     <control type="label" description="Label2">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>84r</posx>
+      <right>20</right>
       <posy>0</posy>
       <height>111</height>
       <width>90</width>

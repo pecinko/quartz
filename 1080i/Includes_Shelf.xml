@@ -8,17 +8,6 @@
     <animation effect="fade" end="100" delay="100" time="300">Visible</animation>
     <animation effect="fade" end="0" time="100">Hidden</animation>
   </include>
-  <include name="ShelfTopLabel">
-    <posx>96</posx>
-    <posy>51</posy>
-    <height>45</height>
-    <width>750</width>
-    <align>left</align>
-    <aligny>center</aligny>
-    <font>size18</font>
-    <textcolor>White2</textcolor>
-    <shadowcolor>Shadow</shadowcolor>
-  </include>
   <include name="PlayingInfo">
     <control type="label" description="Playing label">
       <posx>94</posx>
@@ -128,7 +117,7 @@
       </control>
       <control type="label">
         <animation effect="fade" start="0" end="100" time="200" delay="100">UnFocus</animation>
-        <posx>127</posx>
+        <posx>17</posx>
         <posy>345</posy>
         <width>220</width>
         <height>30</height>
@@ -153,7 +142,7 @@
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-          <posx>127</posx>
+          <posx>17</posx>
           <posy>345</posy>
           <width>220</width>
           <height>30</height>
@@ -187,9 +176,9 @@
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-          <posx>178</posx>
+          <posx>5</posx>
           <posy>345</posy>
-          <width>345</width>
+          <width>344</width>
           <height>30</height>
           <font>size17</font>
           <textcolor>White2</textcolor>
@@ -234,9 +223,9 @@
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-          <posx>178</posx>
+          <posx>5</posx>
           <posy>345</posy>
-          <width>345</width>
+          <width>344</width>
           <height>30</height>
           <font>size17</font>
           <textcolor>White2</textcolor>
@@ -274,9 +263,9 @@
           <aspectratio>stretch</aspectratio>
         </control>
         <control type="label">
-          <posx>224</posx>
+          <posx>5</posx>
           <posy>249</posy>
-          <width>375</width>
+          <width>344</width>
           <height>30</height>
           <font>size18</font>
           <textcolor>Silver</textcolor>
@@ -287,9 +276,9 @@
       <control type="group">
         <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
         <control type="label">
-          <posx>224</posx>
+          <posx>5</posx>
           <posy>279</posy>
-          <width>375</width>
+          <width>344</width>
           <height>36</height>
           <font>size15</font>
           <textcolor>Silver</textcolor>
@@ -319,9 +308,9 @@
             <aspectratio>stretch</aspectratio>
           </control>
           <control type="label">
-            <posx>224</posx>
+            <posx>5</posx>
             <posy>249</posy>
-            <width>375</width>
+            <width>344</width>
             <height>30</height>
             <font>size18</font>
             <textcolor>Silver</textcolor>
@@ -332,9 +321,9 @@
         <control type="group">
           <visible>!IsEmpty(ListItem.Property(SeasonEpisode))</visible>
           <control type="label">
-            <posx>224</posx>
+            <posx>5</posx>
             <posy>279</posy>
-            <width>375</width>
+            <width>344</width>
             <height>36</height>
             <font>size15</font>
             <textcolor>Silver</textcolor>
@@ -346,9 +335,9 @@
           <visible>ControlGroup(700).HasFocus()</visible>
           <control type="label">
             <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-            <posx>224</posx>
+            <posx>5</posx>
             <posy>345</posy>
-            <width>435</width>
+            <width>344</width>
             <height>30</height>
             <font>size17</font>
             <textcolor>White2</textcolor>
@@ -370,9 +359,9 @@
         <bordersize>9</bordersize>
       </control>
       <control type="label">
-        <posx>178</posx>
+        <posx>5</posx>
         <posy>345</posy>
-        <width>345</width>
+        <width>344</width>
         <height>30</height>
         <font>size17</font>
         <textcolor>White2</textcolor>
@@ -395,9 +384,9 @@
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
           <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-          <posx>178</posx>
+          <posx>5</posx>
           <posy>345</posy>
-          <width>345</width>
+          <width>344</width>
           <height>30</height>
           <font>size17</font>
           <textcolor>White2</textcolor>
@@ -410,12 +399,6 @@
   <!--RA-->
   <include name="Movies_RA">
     <control type="group">
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(311)</visible>
-        <include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label fallback="31020">$INFO[Container(311).ListItem.Property(ItemType)]</label>
-      </control>
       <control type="panel" id="311" description="TOP Shortcuts">
         <visible>[Library.HasContent(Movies) | Skin.HasSetting(MoviesShelf_Custom)] + [ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]</visible>
         <onup>noop</onup>
@@ -462,18 +445,6 @@
   </include>
   <include name="TV_RA">
     <control type="group">
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312) + ![Skin.HasSetting(UseWidgets) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)]</visible>
-        <include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label fallback="31020">$INFO[Container(312).ListItem.Property(ItemType)]</label>
-      </control>
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(312) + Skin.HasSetting(UseWidgets) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)</visible>
-        <include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>$LOCALIZE[31973]</label>
-      </control>
       <control type="panel" id="312" description="TOP Shortcuts">
         <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Custom)] + [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
         <onup>noop</onup>
@@ -506,7 +477,7 @@
         <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
       </control>
-			<control type="image">
+      <control type="image">
         <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
         <posx>73</posx>
         <posy>86</posy>
@@ -523,49 +494,10 @@
         <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="150" easing="inout" reversible="true">Conditional</animation>
       </control>
-      <!--<control type="image">
-        <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
-		<visible>Skin.HasSetting(UseEpisodeThumbs)</visible>
-        <posx>74</posx>
-        <posy>86</posy>
-        <width>443</width>
-        <height>350</height>
-        <texture border="36">focus/FrameFO.png</texture>
-        		<bordersize>-9</bordersize>
-        <aspectratio>stretch</aspectratio>
-        <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="444,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="888,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1332,0" time="150" easing="inout" reversible="true">Conditional</animation>
-      </control>-->
-      <!--<control type="image">
-        <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
-		<visible>!Skin.HasSetting(UseEpisodeThumbs)</visible>
-        <posx>73</posx>
-        <posy>86</posy>
-        <width>252</width>
-        <height>352</height>
-        <texture border="36">focus/FrameFO.png</texture>
-        		<bordersize>-9</bordersize>
-        <aspectratio>stretch</aspectratio>
-        <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
-        <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="150" easing="inout" reversible="true">Conditional</animation>
-      </control>-->
     </control>
   </include>
   <include name="Music_RA">
     <control type="group">
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(313)</visible>
-        <include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>$INFO[Container(313).ListItem.Property(ItemType)]</label>
-      </control>
       <control type="panel" id="313" description="TOP Shortcuts">
         <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) | Skin.HasSetting(MusicShelf_Custom)] + [ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
         <onup>303</onup>

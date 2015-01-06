@@ -19,31 +19,6 @@
       <onclick>Control.SetFocus(9000)</onclick>
     </control>
     <control type="group" description="Furniture">
-      <!--<control type="image" description="Stage">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>478</height>
-        <aspectratio>stretch</aspectratio>
-        <texture>img/HomeStage.png</texture>
-      </control>-->
-	  <!--<control type="image" description="Stage">
-        <left>0</left>
-        <bottom>0</bottom>
-        <width>1920</width>
-        <height>540</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="1,0,1,0">img/Gradient.png</texture>
-      </control>-->
-	  <!--<control type="image" description="Stage">
-        <posx>0</posx>
-        <posy>-200</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <aspectratio>stretch</aspectratio>
-        <texture flipy="true">img/BigShelf.png</texture>
-      </control>-->
-	  
       <control type="image" description="Navbar">
         <posx>-90</posx>
         <posy>454</posy>
@@ -580,7 +555,7 @@
         <orientation>horizontal</orientation>
         <itemlayout height="81" width="300">
           <control type="label">
-            <posx>150</posx>
+            <posx>0</posx>
             <width>300</width>
             <height>81</height>
             <font>size28</font>
@@ -593,7 +568,7 @@
         </itemlayout>
         <focusedlayout height="81" width="300">
           <control type="label">
-            <posx>150</posx>
+            <posx>0</posx>
             <width>300</width>
             <height>81</height>
             <font>size28</font>

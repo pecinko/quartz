@@ -1268,14 +1268,6 @@
           <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
           <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
-            <!--<control type="image">
-              <posx>35</posx>
-              <posy>320</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>-->
             <control type="image">
               <posx>35</posx>
               <posy>24</posy>
@@ -1284,15 +1276,6 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-            <!--<control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
             <control type="group">
               <visible>container.content(TVshows) | container.content(seasons)</visible>
               <control type="image">
@@ -1306,7 +1289,7 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>197</posx>
+                <posx>123</posx>
                 <posy>271</posy>
                 <height>45</height>
                 <width>150</width>
@@ -1320,15 +1303,6 @@
             </control>
           </itemlayout>
           <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
-            <!--<control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>35</posx>
-              <posy>320</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-            </control>-->
             <control type="image">
               <posx>35</posx>
               <posy>24</posy>
@@ -1337,20 +1311,11 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-            <!--<control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>35</posx>
-              <posy>24</posy>
-              <width>197</width>
-              <height>294</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>135</posx>
+              <posx>5</posx>
               <posy>330</posy>
-              <width>270</width>
+              <width>257</width>
               <height>45</height>
               <font>size18</font>
               <textcolor>HL</textcolor>
@@ -1371,7 +1336,7 @@
               </control>
               <control type="label" description="Label2">
                 <visible>IntegerGreaterThan(ListItem.Property(UnwatchedEpisodes),0)</visible>
-                <posx>197</posx>
+                <posx>123</posx>
                 <posy>271</posy>
                 <height>45</height>
                 <width>150</width>
@@ -1401,26 +1366,8 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-            <!--<control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
           </itemlayout>
           <focusedlayout condition="container.content(addons)" height="360" width="360">
-            <!--<control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>45</posx>
-              <posy>264</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
             <control type="image">
               <posx>45</posx>
               <posy>9</posy>
@@ -1429,20 +1376,11 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>stretch</aspectratio>
             </control>
-            <!--<control type="image">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>45</posx>
-              <posy>9</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>172</posx>
+              <posx>45</posx>
               <posy>270</posy>
-              <width>270</width>
+              <width>255</width>
               <height>45</height>
               <font>size18</font>
               <textcolor>HL</textcolor>
@@ -1478,14 +1416,6 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
-            <!--<control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
           </itemlayout>
           <focusedlayout condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]" height="375" width="450">
             <control type="image">
@@ -1514,19 +1444,11 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
-            <!--<control type="image">
-              <posx>45</posx>
-              <posy>24</posy>
-              <width>360</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>-->
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>225</posx>
+              <posx>45</posx>
               <posy>300</posy>
-              <width>420</width>
+              <width>360</width>
               <height>45</height>
               <font>size18</font>
               <textcolor>HL</textcolor>
@@ -2068,7 +1990,7 @@
             </control>
             <control type="textbox" description="Plot51">
               <width>690</width>
-              <height>600</height>
+              <height>624</height>
               <include>Plot51Commons</include>
               <label fallback="31979">$VAR[Plots]</label>
             </control>
