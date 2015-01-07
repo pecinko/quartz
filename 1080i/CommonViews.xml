@@ -650,7 +650,7 @@
   <include name="Unwatched_Badge">
     <control type="label" description="Label2">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>84r</posx>
+      <right>9</right>
       <posy>0</posy>
       <height>81</height>
       <width>90</width>
@@ -658,14 +658,13 @@
       <scroll>true</scroll>
       <align>center</align>
       <scroll>false</scroll>
-      <textcolor>Grey</textcolor>
       <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
     </control>
   </include>
   <include name="Unwatched_BadgeFO">
     <control type="image">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>129r</posx>
+      <right>9</right>
       <posy>0</posy>
       <height>81</height>
       <width>90</width>
@@ -675,7 +674,7 @@
     </control>
     <control type="label" description="Label2">
       <visible>!IsEmpty(ListItem.Property(UnwatchedEpisodes)) + [container.content(TVshows) | container.content(seasons)] + !StringCompare(ListItem.Property(UnwatchedEpisodes),0)</visible>
-      <posx>84r</posx>
+      <right>9</right>
       <posy>0</posy>
       <height>81</height>
       <width>90</width>
@@ -683,7 +682,7 @@
       <scroll>true</scroll>
       <align>center</align>
       <scroll>false</scroll>
-      <textcolor>White2</textcolor>
+      <textcolor>HL</textcolor>
       <label>$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
     </control>
   </include>
@@ -1617,7 +1616,6 @@
   <include name="Genre51Commons">
     <posy>-9</posy>
     <font>size20</font>
-    <textcolor>Grey</textcolor>
     <width>758</width>
     <height>36</height>
     <align>left</align>
@@ -1626,7 +1624,6 @@
   <include name="Genre500Commons">
     <posy>0</posy>
     <font>size20</font>
-    <textcolor>White</textcolor>
     <width>801</width>
     <height>33</height>
     <align>left</align>
@@ -1719,29 +1716,25 @@
     <onup>9000</onup>
     <ondown>9000</ondown>
     <pagecontrol>-</pagecontrol>
-    <itemlayout height="42">
+    <itemlayout height="42" width="1560">
       <control type="label">
-        <posx>255</posx>
+        <left>0</left>
         <posy>0</posy>
         <width>255</width>
         <height>45</height>
         <font>size19</font>
         <align>right</align>
         <aligny>center</aligny>
-        <textcolor>Grey</textcolor>
-        <selectedcolor>selected</selectedcolor>
         <info>ListItem.Label</info>
       </control>
       <control type="label">
-        <posx>276</posx>
+        <left>276</left>
         <posy>0</posy>
         <width>1275</width>
         <height>45</height>
         <font>size19</font>
         <align>left</align>
         <aligny>center</aligny>
-        <textcolor>Grey2</textcolor>
-        <selectedcolor>Grey2</selectedcolor>
         <info>ListItem.Label2</info>
       </control>
       <control type="image">
@@ -1752,29 +1745,26 @@
         <texture>$INFO[ListItem.Thumb]</texture>
       </control>
     </itemlayout>
-    <focusedlayout height="42">
+    <focusedlayout height="42" width="1560">
       <control type="label">
-        <posx>255</posx>
+        <left>0</left>
         <posy>0</posy>
         <width>255</width>
         <height>45</height>
         <font>size19</font>
         <align>right</align>
         <aligny>center</aligny>
-        <textcolor>Grey</textcolor>
         <selectedcolor>selected</selectedcolor>
         <info>ListItem.Label</info>
       </control>
       <control type="label">
-        <posx>276</posx>
+        <left>276</left>
         <posy>0</posy>
         <width>1275</width>
         <height>45</height>
         <font>size19</font>
         <align>left</align>
         <aligny>center</aligny>
-        <textcolor>Grey2</textcolor>
-        <selectedcolor>Grey2</selectedcolor>
         <info>ListItem.Label2</info>
       </control>
       <control type="image">

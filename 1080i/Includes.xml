@@ -37,13 +37,44 @@
 		
       </control>
 	  <control type="image" description="BG">
-        <posx>0</posx>
+        <visible>![Control.IsVisible(56) | Control.IsVisible(58) | Control.IsVisible(510)]</visible>
+				<posx>0</posx>
         <posy>0</posy>
         <width>100%</width>
         <height>100%</height>
         <aspectratio>stretch</aspectratio>
         <texture>img/BaseBGD.png</texture>
 		<colordiffuse>Overlay</colordiffuse>
+      </control>
+			<control type="image">
+        <visible>Control.IsVisible(56)</visible>
+				<include>Dimensions_Fullscreen</include>
+        <texture>img/Vignette_57.png</texture>
+        <aspectratio>stretch</aspectratio>
+				<colordiffuse>Overlay</colordiffuse>
+      </control>
+			<control type="image">
+					<visible>Control.IsVisible(58)</visible>
+          <include>Dimensions_Fullscreen</include>
+          <texture>img/Vignette_58.png</texture>
+          <aspectratio>stretch</aspectratio>
+					<colordiffuse>Overlay</colordiffuse>
+        </control>
+				<control type="image">
+        <visible>Control.IsVisible(510)</visible>
+				<visible>Container.Content(episodes)</visible>
+        <include>Dimensions_Fullscreen</include>
+        <texture>img/Vignette_500.png</texture>
+				<colordiffuse>Overlay</colordiffuse>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="image">
+			<visible>Control.IsVisible(510)</visible>
+        <visible>!Container.Content(episodes)</visible>
+        <include>Dimensions_Fullscreen</include>
+        <texture>img/Vignette_58.png</texture>
+				<colordiffuse>Overlay</colordiffuse>
+        <aspectratio>stretch</aspectratio>
       </control>
   </include>
   <include name="MiniBackground">
@@ -168,8 +199,8 @@
   </include>
   <include name="MediaHeader">
       <control type="label" description="Clock other windows">
-        <!--<visible>Skin.HasSetting(ShowClock) + [Control.IsVisible(53) | Control.IsVisible(55)]</visible>-->
-        <centerleft>960</centerleft>
+        <visible>Skin.HasSetting(ShowClock)</visible>
+				<centerleft>960</centerleft>
         <posy>0</posy>
         <width>500</width>
         <height>60</height>

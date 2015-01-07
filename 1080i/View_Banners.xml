@@ -4,20 +4,7 @@
     <control type="group" description="Banner Fanart 58">
       <visible>Control.IsVisible(58)</visible>
       <control type="group" description="Furniture">
-        <control type="image" description="fanart">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>1920</width>
-          <height>1080</height>
-          <fadetime>300</fadetime>
-          <aspectratio>stretch</aspectratio>
-          <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-        </control>
-        <control type="image">
-          <include>Dimensions_Fullscreen</include>
-          <texture>img/Vignette_58.png</texture>
-          <aspectratio>stretch</aspectratio>
-        </control>
+        
         <control type="group" description="Faded Info thumbs">
           <posx>-243</posx>
           <posy>525</posy>
@@ -42,16 +29,6 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
-            <control type="image" description="Thumb">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>357</posx>
-              <posy>12</posy>
-              <width>756</width>
-              <height>135</height>
-              <include>Icon_Fade</include>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
           </control>
         </control>
         <control type="group" description="Media info">
@@ -69,7 +46,6 @@
               <align>justify</align>
               <aligny>bottom</aligny>
               <autoscroll delay="8000" time="4300" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-              <textcolor>Silver</textcolor>
               <label>$VAR[Plots]</label>
             </control>
             <control type="label" description="1 Bottom Label">
@@ -141,48 +117,10 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container.Position(5) | Container.HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>img/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>39r</posx>
-        <posy>652</posy>
-        <height>360</height>
-        <onleft>59</onleft>
-        <onright>noop</onright>
-      </control>
+      
     </control>
     <control type="group" description="Infolist Fanart">
       <visible>Control.IsVisible(56)</visible>
-      <control type="image" description="fanart">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <fadetime>300</fadetime>
-        <animation effect="fade" time="300">Visible</animation>
-        <animation effect="fade" time="300">Hidden</animation>
-        <aspectratio>stretch</aspectratio>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-      </control>
-      <control type="image">
-        <visible>false</visible>
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/BlackDotT.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_57.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
       <control type="group" description="Thumbs and media info">
         <control type="group" description="Faded Info thumbs">
           <posx>-30</posx>
@@ -191,15 +129,6 @@
             <animation effect="fade" time="0">Hidden</animation>
             <animation effect="fade" delay="100" time="200">Visible</animation>
             <posy>120</posy>
-            <control type="image" description="Thumb Reflection">
-              <posx>144</posx>
-              <posy>345</posy>
-              <width>771</width>
-              <height>144</height>
-              <include>Icon_Fade</include>
-              <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Art(banner)]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
             <control type="image" description="Thumb">
               <posx>144</posx>
               <posy>201</posy>
@@ -219,15 +148,6 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>keep</aspectratio>
             </control>
-            <control type="image" description="Thumb">
-              <visible>!IsEmpty(ListItem.Thumb)</visible>
-              <posx>144</posx>
-              <posy>201</posy>
-              <width>771</width>
-              <height>144</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
           </control>
         </control>
         <control type="group" description="Media info">
@@ -240,7 +160,7 @@
               <posy>45</posy>
               <width>630</width>
               <font>size22B</font>
-              <textcolor>White2</textcolor>
+              <textcolor>HL</textcolor>
               <include>Genre51Commons</include>
               <label>$INFO[ListItem.Title]</label>
             </control>
@@ -248,6 +168,7 @@
               <posx>639</posx>
               <posy>56</posy>
               <include>10Rating</include>
+							<colordiffuse>HL</colordiffuse>
             </control>
             <control type="textbox" description="Plot51">
               <posx>0</posx>
@@ -301,11 +222,10 @@
           <posy>0</posy>
           <width>802</width>
           <height>648</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>56</onup>
           <ondown>56</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="$LOCALIZE[20445] 1">Fanart 1</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
@@ -333,23 +253,7 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container.Position(5) | Container.HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>img/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>51r</posx>
-        <posy>381</posy>
-        <height>660</height>
-        <onleft>57</onleft>
-        <onright>noop</onright>
-      </control>
+      
     </control>
     
   </include>

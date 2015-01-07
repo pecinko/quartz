@@ -119,61 +119,26 @@
           <orientation>vertical</orientation>
           <onup>noop</onup>
           <ondown>noop</ondown>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <preloaditems>4</preloaditems>
-          <pagecontrol>60</pagecontrol>
-          <scrolltime>400</scrolltime>
           <itemlayout height="375" width="300">
-            <control type="image">
-              <posx>22</posx>
-              <posy>279</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
             <control type="image">
               <posx>22</posx>
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
               <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
           <focusedlayout height="375" width="300">
             <control type="image">
-              <animation effect="fade" start="100" end="20" delay="100" time="200" reversible="true">Focus</animation>
-              <posx>22</posx>
-              <posy>279</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture flipy="true" diffuse="img/Reflection0.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
               <posx>22</posx>
               <posy>24</posy>
               <width>255</width>
               <height>255</height>
               <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
               <aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
@@ -283,14 +248,13 @@
       <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
-      <control type="image" description="List back">
-        <posx>459</posx>
-        <posy>168</posy>
-        <width>1002</width>
-        <height>687</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-      </control>
+      <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>810</width>
+        <height>915</height>
+        <texture border="128">img/DialogPanel.png</texture>
+		  </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
           <control type="button" id="2" description="Views">

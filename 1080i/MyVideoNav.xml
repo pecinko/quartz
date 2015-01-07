@@ -22,9 +22,7 @@
         <width>810</width>
         <height>915</height>
         <texture border="128">img/DialogPanel.png</texture>
-				<!--<texture border="21">img/DialogNew.png</texture>
-				<colordiffuse>Overlay</colordiffuse>-->
-      </control>
+		  </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
         <control type="button" id="2" description="Views">

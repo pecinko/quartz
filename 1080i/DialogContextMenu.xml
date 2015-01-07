@@ -13,7 +13,6 @@
       <height>1080</height>
       <width>500</width>
       <texture border="21">img/DialogNew.png</texture>
-			<colordiffuse>Overlay</colordiffuse>
 			<!--<texture border="60,60,60,60">img/ContextMenu.png</texture>-->
     </control>
     <control type="grouplist" id="996" description="Context menu container">
@@ -30,7 +29,7 @@
         <height>60</height>
         <shadowcolor>BlackT</shadowcolor>
         <focusedcolor>White2</focusedcolor>
-        <texturefocus>img/ContextButtonFO.png</texturefocus>
+        <texturefocus>img/BlackDot.png</texturefocus>
         <texturenofocus>-</texturenofocus>
         <label>31286</label>
         <onclick>Dialog.Close(all,true)</onclick>
@@ -43,7 +42,7 @@
         <height>60</height>
         <shadowcolor>BlackT</shadowcolor>
         <focusedcolor>HL</focusedcolor>
-        <texturefocus>img/ButtonW.png</texturefocus>
+        <texturefocus>img/BlackDot.png</texturefocus>
         <texturenofocus>-</texturenofocus>
       </control>
     </control>

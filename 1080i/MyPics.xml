@@ -404,14 +404,13 @@
     <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>
-      <control type="image" description="List back">
-        <posx>459</posx>
-        <posy>168</posy>
-        <width>1002</width>
-        <height>762</height>
-        <aspectratio>stretch</aspectratio>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-      </control>
+      <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>810</width>
+        <height>915</height>
+        <texture border="128">img/DialogPanel.png</texture>
+		  </control>
       <control type="grouplist" id="9000">
         <include>9000GrouplistParameters</include>
         <control type="button" id="2" description="Views">
