@@ -4,7 +4,7 @@
     <import addon="script.favourites" version="4.0.4"/>
   </requires>
   <extension
-    point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="true">
+    point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false">
     <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
   </extension>
   <extension point="xbmc.addon.metadata">
