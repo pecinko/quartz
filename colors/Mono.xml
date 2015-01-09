@@ -18,7 +18,7 @@
 	<color name="Shadow">FF262626</color>
 	<color name="ShadowDark">FF000000</color>
 	<color name="HL">FFFFFFFF</color>
-	<color name="Overlay">FF1f1f1f</color>
+	<color name="Overlay">FF060708</color>
 	<!--
 	<color name="Black">FF000000</color>
 	<color name="BlackShadow">FF666666</color>

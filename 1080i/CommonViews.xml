@@ -1560,8 +1560,10 @@
     <font>size24</font>
     <align>left</align>
     <textoffsetx>20</textoffsetx>
-    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
-    <alttexturefocus border="4">img/SettingsButtonFO.png</alttexturefocus>
+    <texturenofocus>-</texturenofocus>
+    <alttexturenofocus>-</alttexturenofocus>
+    <texturefocus border="0,9,0,9">img/MediaButton2.png</texturefocus>
+		<alttexturefocus border="4">img/MediaButton2.png</alttexturefocus>
   </include>
   <include name="9000GrouplistParameters">
     <centerleft>960</centerleft>

@@ -18,9 +18,9 @@
       </control>
       <control type="progress" id="23" description="Progress Bar">
         <visible>true</visible>
-        <posx>84</posx>
+        <posx>-840</posx>
         <posy>-750</posy>
-        <width>747</width>
+        <width>50</width>
         <info>Player.Progress</info>
         <visible>true</visible>
       </control>
@@ -57,8 +57,10 @@
               <width>480</width>
               <fadetime>300</fadetime>
               <aspectratio aligny="bottom">stretch</aspectratio>
-              <texture diffuse="img/MusicPlayerDiffuse2.png">$INFO[MusicPlayer.Cover]</texture>
-            </control>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[MusicPlayer.Cover]</texture>
+		    	    <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+       			 <bordersize>9</bordersize>
+					  </control>
           </control>
           <control type="group" description="Main Labels">
             <posx>714</posx>
@@ -168,7 +170,9 @@
               <width>480</width>
               <fadetime>300</fadetime>
               <aspectratio aligny="bottom">stretch</aspectratio>
-              <texture diffuse="img/MusicPlayerDiffuse2.png">$INFO[MusicPlayer.Cover]</texture>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[MusicPlayer.Cover]</texture>
+		    	    <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+       			 <bordersize>9</bordersize>
             </control>
             
           </control>
