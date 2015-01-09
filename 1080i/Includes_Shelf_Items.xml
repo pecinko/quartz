@@ -89,9 +89,7 @@
     </content>
   </include>
   <include name="TV_RA_Items">
-    <content target="video">special://skin/playlists/tvshows.xsp</content>
-		<!--<content target="video">videodb://recentlyaddedepisodes/</content>-->
-		<!--<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=true</content>-->
+    <content target="video">special://skin/playlists/episodes.xsp</content>
   </include>
 	<include name="TV_Custom_Items">
     <content>

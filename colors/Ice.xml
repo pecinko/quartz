@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
-  <color name="Grey3">FFABABAB</color>
-	<color name="Grey2">FFBEBEBE</color>
-	<color name="Grey">FF636363</color>
+  <color name="Grey3">FFdadada</color>
+	<color name="Grey2">FFdadada</color>
+	<color name="Grey">FFdadada</color>
 	<color name="White">FFCCCCCC</color>
 	<!--<color name="White">FFF1F1F1</color>-->
 	<color name="White2">FFFFFFFF</color>
@@ -15,10 +15,13 @@
 	<color name="Diffuse">FFA0A0A0</color>
 	<color name="Diffuse2">FF474747</color>
 	<color name="Disabled">FF5E5E5E</color>	
-	<color name="Shadow">FF262626</color>
-	<color name="ShadowDark">FF000000</color>
-	<color name="HL">FFe99931</color>
-	<color name="Overlay">FF292f37</color>
+	<color name="Shadow">90151515</color>
+	<color name="ShadowDark">FF151515</color>
+
+	<color name="HL">FFFFFFFF</color>
+	<color name="Overlay">FF42474e</color>
+	<!--<color name="HL">FFcb943b</color>
+	<color name="Overlay">FF292f37</color>-->
 	<!--
 	<color name="Black">FF000000</color>
 	<color name="BlackShadow">FF666666</color>
