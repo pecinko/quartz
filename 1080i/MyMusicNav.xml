@@ -4,7 +4,7 @@
   
   <views>50,51,52,53,501,57,58,59,500,510</views>
   <controls>
-    <include>MiniBackground</include>
+    <include>FullBackground</include>
     <control type="group" description="50 List base">
       <visible>Control.IsVisible(50)</visible>
       <include>DefaultSquareThumbs</include>
@@ -19,16 +19,14 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>50</onup>
           <ondown>50</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="535">List</viewtype>
           <focusposition>5</focusposition>
           <movement>5</movement>
           <preloaditems>4</preloaditems>
-          
           <itemlayout width="802" height="81">
             <include>ArrowNF</include>
             <control type="label" description="Main Label">
@@ -45,65 +43,50 @@
           </focusedlayout>
         </control>
       </control>
-      <include>SlimListFade</include>
-      <control type="scrollbar" id="60">
-        <posx>51r</posx>
-        <posy>147</posy>
-        <height>882</height>
-        <onleft>50</onleft>
-        <onright>noop</onright>
-      </control>
     </control>
     <control type="group" description="51 fatList base">
       <visible>Control.IsVisible(51)</visible>
       <control type="group">
-        <visible>!Container.content(musicvideos)</visible>
-        <include>DefaultSquareThumbs</include>
+				<animation condition="Container.Content(songs)" effect="slide" end="0,-231" time="0">Conditional</animation>
+				<include>DefaultSquareThumbs</include>
       </control>
       <control type="group">
-        <visible>Container.content(musicvideos)</visible>
-        <include>DefaultThumbs</include>
-        <include>MusicInfo</include>
+				<visible>!container.content(addons)</visible>
+				<include>MusicInfo</include>
       </control>
-      <control type="group" description="Slider and List">
+			<control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
         <posy>141</posy>
         <control type="fixedlist" id="51">
-          <visible>container.content(albums) | container.content(musicvideos) | container.content(addons)</visible>
+          <visible>container.content(songs) | container.content(albums) | container.content(musicvideos) | container.content(addons)</visible>
           <posx>0</posx>
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>51</onup>
           <ondown>51</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="537">Big list</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          
-          <include>LargeListAlbumsLayout</include>
+          <include>LargeListSongsLayout</include>
+					<include>LargeListAlbumsLayout</include>
           <include>LargeListAddonsLayout</include>
           <include>LargeListMVideosEpisodesLayout</include>
         </control>
         <include>LargeListSlider</include>
       </control>
-      <!--<include>LargeListFade</include>-->
-      <control type="scrollbar" id="60">
-        <posx>51r</posx>
-        <posy>135</posy>
-        <height>870</height>
-        <onleft>51</onleft>
-        <onright>noop</onright>
-      </control>
     </control>
     <control type="group" description="52 List base">
       <visible>Control.IsVisible(52)</visible>
-      <include>DefaultSquareThumbs</include>
-      <include>MusicInfo</include>
+      <control type="group">
+				<animation condition="True" effect="slide" end="0,-231" time="0">Conditional</animation>
+				<include>DefaultSquareThumbs</include>
+      </control>
+			<include>MusicInfo</include>
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
         <posx>1020</posx>
@@ -115,16 +98,14 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>52</onup>
           <ondown>52</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="544">Media info</viewtype>
           <focusposition>5</focusposition>
           <movement>5</movement>
           <preloaditems>4</preloaditems>
-          
           <itemlayout width="802" height="81">
             <control type="label" description="Main Label">
               <width max="609">auto</width>
@@ -139,7 +120,7 @@
             </control>
             <control type="image" description="playing">
               <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
-              <posx>99r</posx>
+              <right>45</right>
               <posy>0</posy>
               <height>81</height>
               <width>36</width>
@@ -161,7 +142,7 @@
             <control type="image" description="playing">
               <visible>[Player.HasAudio + ListItem.IsPlaying]</visible>
               <animation effect="fade" start="50" end="100" time="100" delay="200">Focus</animation>
-              <posx>99r</posx>
+              <right>45</right>
               <posy>0</posy>
               <height>81</height>
               <width>36</width>
@@ -170,14 +151,6 @@
             </control>
           </focusedlayout>
         </control>
-      </control>
-      <include>SlimListFade</include>
-      <control type="scrollbar" id="60">
-        <posx>51r</posx>
-        <posy>147</posy>
-        <height>882</height>
-        <onleft>52</onleft>
-        <onright>noop</onright>
       </control>
     </control>
     <control type="group">
@@ -215,57 +188,37 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onup>noop</onup>
-          <ondown>noop</ondown>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <preloaditems>4</preloaditems>
-          <pagecontrol>60</pagecontrol>
-          <scrolltime>400</scrolltime>
           <itemlayout height="375" width="300">
             <control type="image">
-              <visible>container.content(albums)</visible>
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!container.content(albums)</visible>
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
+              <posx>16</posx>
+              <posy>18</posy>
+              <width>267</width>
+              <height>267</height>
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
+              <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        			<bordersize>6</bordersize>
+							<aspectratio>stretch</aspectratio>
             </control>
           </itemlayout>
           <focusedlayout height="375" width="300">
             <control type="image">
-              <visible>container.content(albums)</visible>
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
-              <texture fallback="DefaultAudio.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
-            <control type="image">
-              <visible>!container.content(albums)</visible>
-              <posx>22</posx>
-              <posy>24</posy>
-              <width>255</width>
-              <height>255</height>
+              <posx>16</posx>
+              <posy>18</posy>
+              <width>267</width>
+              <height>267</height>
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>stretch</aspectratio>
+              <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        			<bordersize>6</bordersize>
+							<aspectratio>stretch</aspectratio>
             </control>
             <control type="label">
               <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
-              <posx>150</posx>
+              <posx>16</posx>
               <posy>300</posy>
-              <width>270</width>
+              <width>267</width>
               <height>45</height>
               <font>size18</font>
               <textcolor>White2</textcolor>
@@ -313,9 +266,9 @@
         <posx>82</posx>
         <posy>117</posy>
         <width>1200</width>
-        <textcolor>Silver</textcolor>
+        <textcolor>HL</textcolor>
         <include>Genre51Commons</include>
-        <label>$INFO[ListItem.label][COLOR=Grey]  $INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
+        <label>$INFO[ListItem.label][COLOR=White]  $INFO[ListItem.Artist]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
       </control>
       <control type="grouplist">
         <posx>304r</posx>
@@ -349,13 +302,6 @@
         <texture>img/DefaultGradient.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
-      <control type="scrollbar" id="60">
-        <posx>45r</posx>
-        <posy>219</posy>
-        <height>660</height>
-        <onleft>53</onleft>
-        <onright>9000</onright>
-      </control>
     </control>
     <control type="group" description="View 501">
       <visible>Control.IsVisible(501)</visible>
@@ -365,18 +311,13 @@
         <posy>195</posy>
         <width>2250</width>
         <height>885</height>
-        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
-        <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</ondown>
-        <onup>501</onup>
-        <ondown>501</ondown>
-        <pagecontrol>60</pagecontrol>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
         <viewtype label="538">Big Icons</viewtype>
         <focusposition>1</focusposition>
         <movement>-</movement>
-        <preloaditems>3</preloaditems>
+        <preloaditems>4</preloaditems>
         <orientation>horizontal</orientation>
-        <scrolltime easing="inout">280</scrolltime>
         <itemlayout width="750" height="750">
           <control type="image" description="Thumb">
             <posx>96</posx>
@@ -385,22 +326,6 @@
             <width>558</width>
             <aspectratio>stretch</aspectratio>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-          </control>
-          <control type="image" description="Thumb">
-            <posx>96</posx>
-            <posy>567</posy>
-            <height>558</height>
-            <width>558</width>
-            <aspectratio>stretch</aspectratio>
-            <texture flipy="true" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-          </control>
-          <control type="image" description="Thumb">
-            <posx>96</posx>
-            <posy>9</posy>
-            <height>558</height>
-            <width>558</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
           </control>
         </itemlayout>
         <focusedlayout width="750" height="750">
@@ -412,22 +337,6 @@
             <aspectratio>stretch</aspectratio>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           </control>
-          <control type="image" description="Thumb">
-            <posx>96</posx>
-            <posy>567</posy>
-            <height>558</height>
-            <width>558</width>
-            <aspectratio>stretch</aspectratio>
-            <texture flipy="true" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-          </control>
-          <control type="image" description="Thumb">
-            <posx>96</posx>
-            <posy>9</posy>
-            <height>558</height>
-            <width>558</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
-          </control>
         </focusedlayout>
       </control>
       <control type="image" description="Selector">
@@ -437,14 +346,6 @@
         <height>606</height>
         <texture border="36">focus/FrameFO.png</texture>
         		<bordersize>-9</bordersize>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image" description="Bottom fade">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>img/Vignette_Coverflow.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" description="Media details">
@@ -473,40 +374,13 @@
         <textcolor>Silver</textcolor>
         <label>$INFO[ListItem.Label2]</label>
       </control>
-      <control type="scrollbar" id="60">
-        <posx>375</posx>
-        <posy>1005</posy>
-        <width>1170</width>
-        <height>9</height>
-        <onup>54</onup>
-        <ondown>54</ondown>
-        <orientation>horizontal</orientation>
-        <texturesliderbackground border="6,4,6,4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
-        <texturesliderbar border="6,4,6,4">Scrollbar/HScrollerNF.png</texturesliderbar>
-        <texturesliderbarfocus border="6,4,6,4">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
-        <pulseonselect>false</pulseonselect>
-        <showonepage>false</showonepage>
-      </control>
     </control>
-    <control type="group" description="Half List Fanart">
+    <!--<control type="group" description="Half List Fanart">
       <visible>Control.IsVisible(57)</visible>
-      <control type="image" description="fanart">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <fadetime>300</fadetime>
-        <animation effect="fade" time="300">Visible</animation>
-        <animation effect="fade" time="300">Hidden</animation>
-        <aspectratio>keep</aspectratio>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+      <control type="group">
+				<animation condition="True" effect="slide" end="0,-231" time="0">Conditional</animation>
+				<include>DefaultSquareThumbs</include>
       </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_57.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <include>DefaultSquareThumbs</include>
       <include>MusicInfo</include>
       <control type="group">
         <posx>1020</posx>
@@ -534,16 +408,14 @@
           <posy>0</posy>
           <width>952</width>
           <height>648</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>57</onup>
           <ondown>57</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="$LOCALIZE[20445]">Fanart</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
           <preloaditems>4</preloaditems>
-          
           <itemlayout width="802" height="81">
             <control type="label" description="Main Label">
               <include>52MainLabel</include>
@@ -566,76 +438,9 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container.Position(5) | Container.HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>img/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>39r</posx>
-        <posy>399</posy>
-        <height>630</height>
-        <onleft>57</onleft>
-        <onright>noop</onright>
-      </control>
-    </control>
+    </control>-->
     <!--<control type="group" description="Half List Fanart">
       <visible>Control.IsVisible(58)</visible>
-      <control type="image" description="fanart">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <fadetime>300</fadetime>
-        <animation effect="fade" time="300">Visible</animation>
-        <animation effect="fade" time="300">Hidden</animation>
-        <aspectratio>keep</aspectratio>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-      </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_57.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="group" description="Thumbs no info">
-        <posx>120</posx>
-        <posy>408</posy>
-        <animation effect="fade" time="400">Visible</animation>
-        <animation effect="fade" time="0">Hidden</animation>
-        <camera x="420" y="645" />
-        <animation effect="rotatey" start="0" end="-9" center="420," time="0" reversible="false" condition="true">Conditional</animation>
-        <control type="image" description="Thumb Reflection">
-          <posx>0</posx>
-          <posy>600</posy>
-          <width>600</width>
-          <height>600</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection1Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="top">stretch</aspectratio>
-        </control>
-        <control type="image" description="Thumb">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>600</width>
-          <height>600</height>
-          <include>Icon_Fade</include>
-          <texture diffuse="img/Diffuse1.png" background="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="bottom">stretch</aspectratio>
-        </control>
-        <control type="image" description="Thumb">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>600</width>
-          <height>600</height>
-          <texture border="4">img/CoverOverlay1.png</texture>
-          <aspectratio aligny="bottom">stretch</aspectratio>
-        </control>
-      </control>
       <control type="group">
         <posx>870</posx>
         <posy>384</posy>
@@ -716,43 +521,14 @@
           </focusedlayout>
         </control>
       </control>
-      <control type="image">
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <visible>Container.Position(5) | Container.HasNext</visible>
-        <posx>1005</posx>
-        <posy>963</posy>
-        <height>81</height>
-        <width>832</width>
-        <texture>img/DefaultGradient.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>39r</posx>
-        <posy>399</posy>
-        <height>630</height>
-        <onleft>58</onleft>
-        <onright>noop</onright>
-      </control>
     </control>-->
     <control type="group">
       <visible>Control.IsVisible(500)</visible>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <include>Fanart_Fade</include>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_58.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
       <control type="fixedlist" id="500" description="Fanart 3">
         <visible>Skin.HasSetting(AddViews)</visible>
-        <visible>Container.content(albums) | container.content(songs)</visible>
+        <visible>Container.content(albums) | container.content(songs) | container.content(artists)</visible>
         <onup>9000</onup>
-        <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</ondown>
+        <ondown>9000</ondown>
         <onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
@@ -767,14 +543,6 @@
         <preloaditems>4</preloaditems>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="357" width="354">
-          <control type="image" description="Reflection">
-            <posx>27</posx>
-            <posy>330</posy>
-            <width>303</width>
-            <height>303</height>
-            <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-          </control>
           <control type="image" description="Thumb">
             <posx>27</posx>
             <posy>27</posy>
@@ -783,25 +551,9 @@
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
-          <control type="image" description="Thumb Overlay">
-            <posx>27</posx>
-            <posy>27</posy>
-            <width>303</width>
-            <height>303</height>
-            <texture border="3">img/CoverOverlay0.png</texture>
-            <aspectratio>stretch</aspectratio>
-          </control>
         </itemlayout>
         <focusedlayout height="357" width="354">
           <control type="group">
-            <control type="image" description="Reflection">
-              <posx>27</posx>
-              <posy>330</posy>
-              <width>303</width>
-              <height>303</height>
-              <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
             <control type="image" description="Thumb">
               <posx>27</posx>
               <posy>27</posy>
@@ -810,36 +562,8 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-            <control type="image" description="Thumb Overlay">
-              <posx>27</posx>
-              <posy>27</posy>
-              <width>303</width>
-              <height>303</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
           </control>
         </focusedlayout>
-      </control>
-      <control type="image" description="LeftFade">
-        <visible>Container.Position(3) | Container.Position(4) | Container.Position(5) | Container.Position(6)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>0</posx>
-        <posy>716</posy>
-        <width>54</width>
-        <height>447</height>
-        <texture>img/DefaultGradientH.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image" description="RightFade">
-        <visible>Container.Position(0) | Container.Position(1) | Container.Position(2) | Container.Position(3)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>1866</posx>
-        <posy>716</posy>
-        <width>54</width>
-        <height>447</height>
-        <texture flipx="true">img/DefaultGradientH.png</texture>
-        <aspectratio>stretch</aspectratio>
       </control>
       <control type="image">
         <visible>Control.HasFocus(500)</visible>
@@ -878,42 +602,14 @@
           <aspectratio>stretch</aspectratio>
         </control>
       </control>
-      <control type="scrollbar" id="60">
-        <visible>true</visible>
-        <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-        <posx>98</posx>
-        <posy>1065</posy>
-        <width>1725</width>
-        <height>9</height>
-        <onup>500</onup>
-        <ondown>500</ondown>
-        <orientation>horizontal</orientation>
-        <texturesliderbackground border="6,4,6,4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
-        <texturesliderbar border="6,4,6,4">Scrollbar/HScrollerNF.png</texturesliderbar>
-        <texturesliderbarfocus border="6,4,6,4">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
-        <pulseonselect>false</pulseonselect>
-        <showonepage>false</showonepage>
-      </control>
     </control>
     <control type="group">
       <visible>Control.IsVisible(510)</visible>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <include>Fanart_Fade</include>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_58.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
       <control type="fixedlist" id="510" description="Fanart 3">
         <visible>Skin.HasSetting(AddViews)</visible>
-        <visible>![Container.content(albums) | container.content(songs)]</visible>
+        <visible>![Container.content(albums) | container.content(songs) | container.content(artists)]</visible>
         <onup>9000</onup>
-        <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown condition="![Skin.HasSetting(Scrollbars_Active) | Skin.HasSeting(ViewOptions_Hide)]">9000</ondown>
+        <ondown>9000</ondown>
         <onleft>510</onleft>
         <onright>510</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
@@ -928,14 +624,6 @@
         <preloaditems>4</preloaditems>
         <pagecontrol>60</pagecontrol>
         <itemlayout height="357" width="444">
-          <control type="image" description="Reflection">
-            <posx>27</posx>
-            <posy>330</posy>
-            <width>393</width>
-            <height>303</height>
-            <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-          </control>
           <control type="image" description="Thumb">
             <posx>27</posx>
             <posy>27</posy>
@@ -944,25 +632,9 @@
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
           </control>
-          <control type="image" description="Thumb Overlay">
-            <posx>27</posx>
-            <posy>27</posy>
-            <width>393</width>
-            <height>303</height>
-            <texture border="3">img/CoverOverlay0.png</texture>
-            <aspectratio>stretch</aspectratio>
-          </control>
         </itemlayout>
         <focusedlayout height="357" width="444">
           <control type="group">
-            <control type="image" description="Reflection">
-              <posx>27</posx>
-              <posy>330</posy>
-              <width>393</width>
-              <height>303</height>
-              <texture background="true" diffuse="img/ReflectionShelf.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-              <aspectratio>scale</aspectratio>
-            </control>
             <control type="image" description="Thumb">
               <posx>27</posx>
               <posy>27</posy>
@@ -971,36 +643,8 @@
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
               <aspectratio>scale</aspectratio>
             </control>
-            <control type="image" description="Thumb Overlay">
-              <posx>27</posx>
-              <posy>27</posy>
-              <width>393</width>
-              <height>303</height>
-              <texture border="3">img/CoverOverlay0.png</texture>
-              <aspectratio>stretch</aspectratio>
-            </control>
           </control>
         </focusedlayout>
-      </control>
-      <control type="image" description="LeftFade">
-        <visible>Container.Position(2) | Container.Position(3) | Container.Position(4)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>0</posx>
-        <posy>716</posy>
-        <width>54</width>
-        <height>447</height>
-        <texture>img/DefaultGradientH.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image" description="RightFade">
-        <visible>Container.Position(0) | Container.Position(1) | Container.Position(2)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>1866</posx>
-        <posy>716</posy>
-        <width>54</width>
-        <height>447</height>
-        <texture flipx="true">img/DefaultGradientH.png</texture>
-        <aspectratio>stretch</aspectratio>
       </control>
       <control type="image">
         <visible>Control.HasFocus(510)</visible>
@@ -1036,22 +680,6 @@
           <texture>img/LineST.png</texture>
           <aspectratio>stretch</aspectratio>
         </control>
-      </control>
-      <control type="scrollbar" id="60">
-        <visible>true</visible>
-        <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-        <posx>98</posx>
-        <posy>1065</posy>
-        <width>1725</width>
-        <height>9</height>
-        <onup>500</onup>
-        <ondown>500</ondown>
-        <orientation>horizontal</orientation>
-        <texturesliderbackground border="6,4,6,4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
-        <texturesliderbar border="6,4,6,4">Scrollbar/HScrollerNF.png</texturesliderbar>
-        <texturesliderbarfocus border="6,4,6,4">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
-        <pulseonselect>false</pulseonselect>
-        <showonepage>false</showonepage>
       </control>
     </control>
     <control type="group" description="Side menu 9000 group">

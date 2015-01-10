@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  
   <coordinates>
     <system>1</system>
     <posx>0</posx>
@@ -8,15 +7,17 @@
   </coordinates>
   <include>OpenClose</include>
   <controls>
+    <include>FullBackground</include>
+    <control type="image" description="Sidebar">
+      <left>0</left>
+      <top>0</top>
+      <width>471</width>
+      <height>1080</height>
+      <aspectratio>stretch</aspectratio>
+      <texture>img/Sidebar.png</texture>
+    </control>
     <control type="group" id="250">
-      <posx>-90</posx>
-      <control type="image" description="BG">
-        <posx>165</posx>
-        <posy>-25</posy>
-        <width>1750</width>
-        <height>1080</height>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-      </control>
+      <left>150</left>
       <control type="button" id="666">
         <posx>1629</posx>
         <posy>144</posy>
@@ -69,7 +70,7 @@
           <aligny>center</aligny>
           <wrapmultiline>true</wrapmultiline>
         </control>
-		<control type="label" description="Video File name">
+        <control type="label" description="Video File name">
           <posx>75</posx>
           <posy>100</posy>
           <width>1320</width>
@@ -105,13 +106,11 @@
         <posy>300</posy>
         <width>1368</width>
         <height>538</height>
-        <onleft>60</onleft>
+        <onleft>150</onleft>
         <onright>150</onright>
         <onup>120</onup>
         <ondown>120</ondown>
         <viewtype label="535">list</viewtype>
-        <pagecontrol>60</pagecontrol>
-        <scrolltime>200</scrolltime>
         <itemlayout width="1365" height="54">
           <control type="image">
             <posx>10</posx>
@@ -179,7 +178,7 @@
             <posy>0</posy>
             <width>1365</width>
             <height>54</height>
-            <texture border="9">img/MediaButton.png</texture>
+            <texture border="9">img/MediaButton2.png</texture>
             <visible>Control.HasFocus(120)</visible>
           </control>
           <control type="image">
@@ -240,28 +239,12 @@
           </control>
         </focusedlayout>
       </control>
-      <control type="scrollbar" id="60">
-        <posx>330</posx>
-        <posy>303</posy>
-        <height>522</height>
-        <onleft>120</onleft>
-        <onright>120</onright>
-        <showonepage>true</showonepage>
-      </control>
     </control>
     <control type="group" id="250">
-      <posx>-60</posx>
-	  <posy>90</posy>
-	  <animation effect="slide" start="0,0" end="-450,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(160)">Conditional</animation>
-      <control type="image" description="BG">
-        <posx>1827</posx>
-        <posy>45</posy>
-        <width>708</width>
-        <height>870</height>
-        <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-      </control>
+      <left>0</left>
+      <posy>90</posy>
       <control type="label" description="Right side options">
-        <posx>2000</posx>
+        <posx>25</posx>
         <posy>231</posy>
         <width>360</width>
         <height>30</height>
@@ -270,16 +253,8 @@
         <align>center</align>
         <textcolor>White</textcolor>
       </control>
-      <control type="image">
-        <description>separator</description>
-        <posx>1975</posx>
-        <posy>278</posy>
-        <width>450</width>
-        <height>1</height>
-        <texture>img/Line.png</texture>
-      </control>
       <control type="list" id="150">
-        <posx>2000</posx>
+        <posx>25</posx>
         <posy>285</posy>
         <width>375</width>
         <height>546</height>
@@ -308,7 +283,7 @@
             <posy>0</posy>
             <width>375</width>
             <height>57</height>
-            <texture border="9">img/MediaButton.png</texture>
+            <texture border="9">img/MediaButton2.png</texture>
             <visible>Control.HasFocus(150)</visible>
           </control>
           <control type="label">
@@ -325,23 +300,21 @@
           </control>
         </focusedlayout>
       </control>
-	  <control type="button" id="160" description="Manual search Button">
-      <posx>2000</posx>
-            <posy>700</posy>
-            <width>375</width>
-            <height>57</height>
-	  <texturenofocus>-</texturenofocus>
-      <textoffsetx>20</textoffsetx>
-      <align>left</align>
-      <aligny>center</aligny>
-      <font>size18</font>
-	  <label>24120</label>
-	  <onleft>120</onleft>
+      <control type="button" id="160" description="Manual search Button">
+        <posx>25</posx>
+        <posy>700</posy>
+        <width>375</width>
+        <height>57</height>
+        <textoffsetx>20</textoffsetx>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>size18</font>
+        <label>24120</label>
+        <onleft>120</onleft>
         <onright>120</onright>
         <onup>150</onup>
         <ondown>150</ondown>
+      </control>
     </control>
-    </control>
-	
   </controls>
 </window>

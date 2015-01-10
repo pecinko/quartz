@@ -17,7 +17,7 @@
         <posy>459</posy>
         <width>660</width>
         <height>75</height>
-        <texture border="9">img/MediaButton.png</texture>
+        <texture border="9">img/MediaButton2.png</texture>
         <animation condition="Container(9001).Position(0)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(9001).Position(1)" effect="slide" start="0,0" end="0,96" time="180" easing="inout" reversible="true">Conditional</animation>
       </control>

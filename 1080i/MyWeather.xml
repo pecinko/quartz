@@ -4,15 +4,8 @@
   
   <include>OpenClose</include>
   <controls>
-    <include>WeatherBackground</include>
-    <control type="image" description="weather">
-      <posx>0</posx>
-      <posy>0</posy>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>img/Vignette_57.png</texture>
-      <animation condition="true" effect="fade" start="100" end="88" time="0" reversible="false">Conditional</animation>
-    </control>
+    <!--<include>WeatherBackground</include>-->
+		<include>FullBackground</include>
     <include>Header</include>
     <control type="group" description="Bottom NAV">
       <posy>0</posy>

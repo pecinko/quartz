@@ -929,7 +929,7 @@
               <posy>0</posy>
               <width>450</width>
               <height>60</height>
-              <texture border="9">img/MediaButton.png</texture>
+              <texture border="9">img/MediaButton2.png</texture>
               <visible>Control.HasFocus(14)</visible>
             </control>
             <control type="image">

@@ -55,7 +55,7 @@
           <control type="image">
             <height>70</height>
             <width>930</width>
-            <texture border="9">img/MediaButton.png</texture>
+            <texture border="9">img/MediaButton2.png</texture>
           </control>
 		  <control type="label">
             <posx>30</posx>

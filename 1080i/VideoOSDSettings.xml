@@ -7,13 +7,14 @@
     <control type="group">
       <posx>1020</posx>
       <posy>0</posy>
-      <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+      <animation effect="fade" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
       <control type="image" description="background image">
-        <posx>-75</posx>
+        <centerright>465</centerright>
+				<centertop>50%</centertop>
         <posy>0</posy>
-        <width>1050</width>
-        <height>1080</height>
-        <texture border="28,0,0,0">OSD/VideoOSDSettingsBG.png</texture>
+        <width>1110</width>
+        <height>1200</height>
+        <texture border="128">img/DialogPanelST.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" id="2" description="Settings">
@@ -25,10 +26,10 @@
       </control>
       <control type="grouplist" id="5" description="Control Area">
         <posx>15</posx>
-        <posy>90</posy>
+        <posy>84</posy>
         <width>840</width>
-        <height>1002</height>
-        <itemgap>0</itemgap>
+        <height>920</height>
+        <itemgap>-3</itemgap>
         <orientation>vertical</orientation>
         <pagecontrol>60</pagecontrol>
         <onup>5</onup>
@@ -37,31 +38,31 @@
       <control type="button" id="7">
         <description>Default Button</description>
         <texturenofocus>-</texturenofocus>
-        <font>size22</font>
+        <font>size20</font>
         <align>left</align>
-        <height>66</height>
+        <height>60</height>
       </control>
       <control type="radiobutton" id="8">
         <description>Default RadioButton</description>
         <texturenofocus>-</texturenofocus>
         <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>size20</font>
+        <height>60</height>
       </control>
       <control type="spincontrolex" id="9">
         <description>Default spincontrolex</description>
         <texturenofocus>-</texturenofocus>
         <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>size20</font>
+        <height>60</height>
         <reverse>yes</reverse>
       </control>
       <control type="sliderex" id="13">
         <description>Default Slider</description>
         <texturenofocus>-</texturenofocus>
         <align>left</align>
-        <font>size22</font>
-        <height>66</height>
+        <font>size20</font>
+        <height>60</height>
       </control>
     </control>
   </controls>

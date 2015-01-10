@@ -67,7 +67,7 @@
           <control type="image">
             <width>912</width>
             <height>75</height>
-            <texture flipy="true" border="9">img/MediaButton.png</texture>
+            <texture border="9">img/MediaButton2.png</texture>
             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
           </control>
           <control type="label" description="Path label">

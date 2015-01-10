@@ -14,9 +14,8 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
-        <height>291</height>
-        <texture flipy="true">OSD/OSDBackground.png</texture>
-        <colordiffuse>BBFFFFFF</colordiffuse>
+        <height>270</height>
+        <texture>img/BlackDotST.png</texture>
       </control>
       <control type="label" description="Clock">
         <posx>27r</posx>

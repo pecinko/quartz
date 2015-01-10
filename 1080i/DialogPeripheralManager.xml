@@ -80,7 +80,7 @@
             <posy>0</posy>
             <width>825</width>
             <height>120</height>
-            <texture border="9">img/MediaButton.png</texture>
+            <texture border="9">img/MediaButton2.png</texture>
             <visible>Control.HasFocus(20)</visible>
           </control>
           <control type="label">

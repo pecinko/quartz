@@ -25,57 +25,67 @@
   <include file="Includes_WPHourlyForecast.xml" />
   <include file="Includes_WPMapsVideo.xml" />
   <include name="FullBackground">
-  <control type="image" description="Fanart">
-        <visible>!Skin.HasSetting(HideFanart)</visible>
-		<posx>0</posx>
-        <posy>0</posy>
-        <width>100%</width>
-        <height>100%</height>
-        <aspectratio>stretch</aspectratio>
-		<fadetime>400</fadetime>
-        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-		
-      </control>
-	  <control type="image" description="BG">
-        <visible>![Control.IsVisible(56) | Control.IsVisible(58) | Control.IsVisible(510)]</visible>
-				<posx>0</posx>
-        <posy>0</posy>
-        <width>100%</width>
-        <height>100%</height>
-        <aspectratio>stretch</aspectratio>
-        <texture>img/BaseBGD.png</texture>
-		<colordiffuse>Overlay</colordiffuse>
-      </control>
-			<control type="image">
-        <visible>Control.IsVisible(56)</visible>
-				<include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_57.png</texture>
-        <aspectratio>stretch</aspectratio>
-				<colordiffuse>Overlay</colordiffuse>
-      </control>
-			<control type="image">
-					<visible>Control.IsVisible(58)</visible>
-          <include>Dimensions_Fullscreen</include>
-          <texture>img/Vignette_58.png</texture>
-          <aspectratio>stretch</aspectratio>
-					<colordiffuse>Overlay</colordiffuse>
-        </control>
-				<control type="image">
-        <visible>Control.IsVisible(510)</visible>
-				<visible>Container.Content(episodes)</visible>
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_500.png</texture>
-				<colordiffuse>Overlay</colordiffuse>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image">
-			<visible>Control.IsVisible(510)</visible>
-        <visible>!Container.Content(episodes)</visible>
-        <include>Dimensions_Fullscreen</include>
-        <texture>img/Vignette_58.png</texture>
-				<colordiffuse>Overlay</colordiffuse>
-        <aspectratio>stretch</aspectratio>
-      </control>
+    <control type="image" description="Fanart">
+      <visible>Window.IsActive(MyPics.xml) + !Container.Content(addons)</visible>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>100%</width>
+      <height>100%</height>
+      <aspectratio>scale</aspectratio>
+      <fadetime>400</fadetime>
+      <texture background="true">$INFO[ListItem.Thumb]</texture>
+    </control>
+		<control type="image" description="Fanart">
+      <visible>![Window.IsActive(MyPics.xml) + !Container.Content(addons)]</visible>
+			<visible>!Skin.HasSetting(HideFanart)</visible>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>100%</width>
+      <height>100%</height>
+      <aspectratio>stretch</aspectratio>
+      <fadetime>400</fadetime>
+      <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+    </control>
+    <control type="image" description="BG">
+      <visible>![Control.IsVisible(56) | Control.IsVisible(58) | Control.IsVisible(510)]</visible>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>100%</width>
+      <height>100%</height>
+      <aspectratio>stretch</aspectratio>
+      <texture>img/BaseBGD.png</texture>
+      <colordiffuse>Overlay</colordiffuse>
+    </control>
+    <control type="image">
+      <visible>Control.IsVisible(56)</visible>
+      <include>Dimensions_Fullscreen</include>
+      <texture>img/Vignette_57.png</texture>
+      <aspectratio>stretch</aspectratio>
+      <colordiffuse>Overlay</colordiffuse>
+    </control>
+    <control type="image">
+      <visible>Control.IsVisible(58)</visible>
+      <include>Dimensions_Fullscreen</include>
+      <texture>img/Vignette_58.png</texture>
+      <aspectratio>stretch</aspectratio>
+      <colordiffuse>Overlay</colordiffuse>
+    </control>
+    <control type="image">
+      <visible>Control.IsVisible(510)</visible>
+      <visible>Container.Content(episodes)</visible>
+      <include>Dimensions_Fullscreen</include>
+      <texture>img/Vignette_500.png</texture>
+      <colordiffuse>Overlay</colordiffuse>
+      <aspectratio>stretch</aspectratio>
+    </control>
+    <control type="image">
+      <visible>Control.IsVisible(510)</visible>
+      <visible>!Container.Content(episodes)</visible>
+      <include>Dimensions_Fullscreen</include>
+      <texture>img/Vignette_58.png</texture>
+      <colordiffuse>Overlay</colordiffuse>
+      <aspectratio>stretch</aspectratio>
+    </control>
   </include>
   <include name="MiniBackground">
     <control type="image" description="Default BG">
@@ -88,13 +98,13 @@
   </include>
   <include name="DimBG">
     <control type="image" description="Default BG">
-	<posx>0</posx>
-    <posy>0</posy>
-    <width>1920</width>
-    <height>1080</height>
-    <texture>img/BGDiffuse.png</texture>
-    <aspectratio>stretch</aspectratio>
-	</control>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>img/BGDiffuse.png</texture>
+      <aspectratio>stretch</aspectratio>
+    </control>
   </include>
   <include name="VisibleFadeEffect">
     <animation effect="fade" time="200">Visible</animation>
@@ -105,23 +115,19 @@
     <animation effect="fade" time="240">WindowClose</animation>
   </include>
   <include name="DialogOpenClose">
-	<animation type="WindowOpen">
+    <animation type="WindowOpen">
       <effect type="fade" end="100" time="220" />
-     
     </animation>
     <animation type="WindowClose">
       <effect type="fade" end="0" time="120" />
-     
     </animation>
   </include>
   <include name="DialogOpenCloseVisible">
     <animation type="Visible">
       <effect type="fade" end="100" time="220" />
-     
     </animation>
     <animation type="Hidden">
       <effect type="fade" end="0" time="120" />
-     
     </animation>
   </include>
   <include name="Fanart_Fade">
@@ -198,18 +204,18 @@
     </control>
   </include>
   <include name="MediaHeader">
-      <control type="label" description="Clock other windows">
-        <visible>Skin.HasSetting(ShowClock)</visible>
-				<centerleft>960</centerleft>
-        <posy>0</posy>
-        <width>500</width>
-        <height>60</height>
-        <align>center</align>
-        <aligny>center</aligny>
-        <font>size24</font>
-        <textcolor>Grey3</textcolor>
-        <label>$INFO[System.Time]</label>
-      </control>
+    <control type="label" description="Clock other windows">
+      <visible>Skin.HasSetting(ShowClock)</visible>
+      <centerleft>960</centerleft>
+      <posy>12</posy>
+      <width>500</width>
+      <height>60</height>
+      <align>center</align>
+      <aligny>center</aligny>
+      <font>size22</font>
+      <textcolor>Grey3</textcolor>
+      <label>$INFO[System.Time]</label>
+    </control>
     <!--<control type="grouplist">
       <visible>![Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(500) | Control.IsVisible(510) | Control.IsVisible(501) | Control.IsVisible(502)]</visible>
       <posx>990</posx>
@@ -249,7 +255,7 @@
         <label>$VAR[GlobalHeadings]</label>
       </control>
     </control>-->
-	<!--<control type="label" description="Number of files">
+    <!--<control type="label" description="Number of files">
         <visible>!IsEmpty(Control.GetLabel(7777))</visible>
         <right>40</right>
 		<bottom>0</bottom>
