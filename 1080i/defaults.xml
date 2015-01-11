@@ -49,7 +49,7 @@
   <default type="button">
     <width>390</width>
     <height>75</height>
-    <align>center</align>
+    <align>left</align>
     <aligny>center</aligny>
     <font>size22</font>
     <textoffsetx>20</textoffsetx>
@@ -80,7 +80,7 @@
   <default type="togglebutton">
     <width>450</width>
     <height>75</height>
-    <align>center</align>
+    <align>left</align>
     <aligny>center</aligny>
     <font>size22</font>
     <textoffsetx>20</textoffsetx>

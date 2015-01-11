@@ -40,11 +40,11 @@
         <lefttexture>-</lefttexture>
       </control>
 	  <control type="label" id="1" description="Group label">
-        <top>6</top>
-        <left>10</left>
-        <width>1860</width>
+        <top>12</top>
+        <left>70</left>
+        <width>1780</width>
         <height>60</height>
-		<font>size19</font>
+		<font>size18</font>
 		<scroll>false</scroll>
         <label>[COLOR=HL]$INFO[Control.GetLabel(32),,%][/COLOR]  $INFO[Control.GetLabel(30)] [COLOR=HL]•[/COLOR] $INFO[Control.GetLabel(31)]</label>
       </control>

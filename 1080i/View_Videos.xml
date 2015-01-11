@@ -617,9 +617,7 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onright>9000</onright>
           <onup>54</onup>
           <ondown>54</ondown>
           <viewtype label="$LOCALIZE[544] 2">Media info 2</viewtype>
@@ -633,15 +631,7 @@
         </control>
         <include>LargeListSlider</include>
       </control>
-      <!--<include>LargeListFade</include>-->
-      <!--<control type="scrollbar" id="60">
-        <posx>39r</posx>
-        <posy>147</posy>
-        <height>882</height>
-        <onleft>54</onleft>
-        <onright>noop</onright>
-      </control>-->
-    </control>
+      </control>
     <!--<control type="group" description="Fanart 1">
       <visible>Control.IsVisible(57)</visible>
       <control type="image" description="fanart">
@@ -1026,27 +1016,24 @@
     </control>-->
     <control type="group" description="Big Icons">
       <visible>Control.IsVisible(501)</visible>
-      <control type="image" description="Coverflow Selector">
+      <!--<control type="image" description="Coverflow Selector">
         <centerleft>960</centerleft>
         <top>345</top>
         <width>1280</width>
         <height>415</height>
         <texture>img/BigShelf.png</texture>
         <aspectratio aligny="center" align="center">keep</aspectratio>
-      </control>
+      </control>-->
       <control type="fixedlist" id="501">
         <visible>Container.content(movies) | Container.content(tvshows) | Container.content(seasons)</visible>
         <posx>-240</posx>
         <posy>111</posy>
         <width>2400</width>
         <height>885</height>
-        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
-        <onup condition="Skin.HasSetting(ViewOptions_Hide)">-</onup>
-        <ondown condition="Skin.HasSetting(Scrollbars_Active)">60</ondown>
-        <ondown condition="!Skin.HasSetting(Scrollbars_Active)">-</ondown>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
         <onleft>501</onleft>
         <onright>501</onright>
-        <pagecontrol>60</pagecontrol>
         <viewtype label="538">Big Icons 501</viewtype>
         <focusposition>2</focusposition>
         <movement>-</movement>
@@ -1062,23 +1049,6 @@
             <aspectratio>scale</aspectratio>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           </control>
-          <!--<control type="image" description="Thumb">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>56</posx>
-            <posy>69</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
-          </control>-->
-          <!--<control type="image" description="Thumb">
-            <posx>56</posx>
-            <posy>615</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>scale</aspectratio>
-            <texture flipy="true" scalediffuse="false" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-          </control>-->
         </itemlayout>
         <focusedlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="480" height="750">
           <control type="image" description="Thumb">
@@ -1089,25 +1059,6 @@
             <aspectratio>scale</aspectratio>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
           </control>
-          <!--<control type="image" description="Thumb">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>56</posx>
-            <posy>69</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>stretch</aspectratio>
-            <texture border="3">img/CoverOverlay0.png</texture>
-          </control>-->
-          <!--<control type="image" description="Thumb">
-            <animation effect="fade" start="100" end="33" delay="300" time="800" reversible="false">Focus</animation>
-            <animation effect="fade" start="33" end="100" time="400" reversible="false">UnFocus</animation>
-            <posx>56</posx>
-            <posy>615</posy>
-            <height>543</height>
-            <width>369</width>
-            <aspectratio>scale</aspectratio>
-            <texture flipy="true" scalediffuse="false" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-          </control>-->
         </focusedlayout>
       </control>
       <control type="image" description="Coverflow Selector">
@@ -1117,14 +1068,6 @@
         <height>591</height>
         <texture border="36">focus/FrameFO.png</texture>
         <bordersize>-9</bordersize>
-        <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="image" description="Bottom fade">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>img/Vignette_MoviesCoverflow.png</texture>
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="label" description="Media details">
@@ -1154,22 +1097,6 @@
         <align>center</align>
         <textcolor>Silver</textcolor>
         <label>$VAR[TopLabel]</label>
-      </control>
-      <control type="scrollbar" id="60">
-        <visible>![System.IdleTime(1) + !IsEmpty(ListItem.Plot) + Container.Content(Movies)]</visible>
-        <animation effect="fade" delay="200" time="300">VisibleChange</animation>
-        <posx>375</posx>
-        <posy>1005</posy>
-        <width>1170</width>
-        <height>9</height>
-        <onup>54</onup>
-        <ondown>54</ondown>
-        <orientation>horizontal</orientation>
-        <texturesliderbackground border="6,4,6,4">Scrollbar/HScrollbarBG.png</texturesliderbackground>
-        <texturesliderbar border="6,4,6,4">Scrollbar/HScrollerNF.png</texturesliderbar>
-        <texturesliderbarfocus border="6,4,6,4">Scrollbar/HScrollerFO.png</texturesliderbarfocus>
-        <pulseonselect>false</pulseonselect>
-        <showonepage>false</showonepage>
       </control>
       <control type="textbox" description="Movies Plot">
         <visible>System.IdleTime(1) + !IsEmpty(ListItem.Plot) + Container.Content(Movies)</visible>

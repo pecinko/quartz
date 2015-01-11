@@ -4,7 +4,15 @@
   
   <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
+    <include>FullBackground</include>
+		<control type="image" description="Sidebar">
+      <left>0</left>
+      <top>0</top>
+      <width>471</width>
+      <height>1080</height>
+      <aspectratio>stretch</aspectratio>
+      <texture>img/Sidebar.png</texture>
+    </control>
     <control type="label" description="Heading">
       <include>Heading</include>
       <label>130</label>
@@ -12,9 +20,9 @@
     <control type="group">
       <posy>0</posy>
       <control type="grouplist" id="9001" description="Left panel">
-        <posx>120</posx>
+        <posx>90</posx>
         <posy>144</posy>
-        <width>300</width>
+        <width>350</width>
         <height>518</height>
         <itemgap>9</itemgap>
         <onleft>noop</onleft>
@@ -24,36 +32,36 @@
         <control type="button" id="95" description="Summary">
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
-          <width>300</width>
+          <width>330</width>
           <label>20037</label>
         </control>
         <control type="button" id="94" description="Storage">
-          <width>300</width>
+          <width>330</width>
           <label>13277</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="96" description="Network">
-          <width>300</width>
+          <width>330</width>
           <label>13279</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="97" description="Video">
-          <width>300</width>
+          <width>330</width>
           <label>13280</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="98" description="Hardware">
-          <width>300</width>
+          <width>330</width>
           <label>13281</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
         </control>
         <control type="button" id="99" description="Hardware">
           <visible>Skin.HasSetting(PVR_Enabled)</visible>
-          <width>300</width>
+          <width>330</width>
           <label>19191</label>
           <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
           <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
