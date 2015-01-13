@@ -5,12 +5,12 @@
   <include>DialogOpenClose</include>
   <controls>
     <control type="image">
-      <posx>195</posx>
-      <posy>90</posy>
-      <width>1530</width>
-      <height>870</height>
-      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-    </control>
+        <centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>1560</width>
+        <height>810</height>
+        <texture border="128">img/DialogPanel.png</texture>
+		  </control>
     <control type="group">
       <posx>360</posx>
       <posy>330</posy>
@@ -21,14 +21,15 @@
         <width>1140</width>
         <font>size26B</font>
         <align>center</align>
-        <label>21421</label>
+        <textcolor>HL</textcolor>
+				<label>21421</label>
       </control>
       <control type="label" description="Rule match label">
-        <posx>60</posx>
+        <posx>30</posx>
         <posy>66</posy>
-        <width>1080</width>
+        <width>1140</width>
         <align>center</align>
-        <textcolor>Grey</textcolor>
+        <textcolor>HL</textcolor>
         <label>21422</label>
       </control>
       <control type="group" id="9001">
@@ -42,7 +43,7 @@
           <onleft>16</onleft>
           <onup>9000</onup>
           <ondown>17</ondown>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+          <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
         </control>
         <control type="label">
           <description>Rule Field label</description>
@@ -61,7 +62,7 @@
           <onleft>15</onleft>
           <onup>9000</onup>
           <ondown>17</ondown>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+          <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
         </control>
         <control type="label">
           <description>Rule Field label</description>
@@ -81,7 +82,7 @@
         <onleft>20</onleft>
         <onright>20</onright>
         <ondown>9000</ondown>
-        <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+        <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
         <texturefocus flipy="true" border="8">img/SettingsButtonFO.png</texturefocus>
       </control>
       <control type="button" id="20">
@@ -94,7 +95,8 @@
         <onleft>17</onleft>
         <onright>17</onright>
         <ondown>9000</ondown>
-        <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+				<align>center</align>
+        <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
       </control>
       <control type="group" id="9000">
         <control type="button" id="18">
@@ -107,7 +109,8 @@
           <onleft>19</onleft>
           <onright>19</onright>
           <ondown>9001</ondown>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+					<align>center</align>
+          <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
         </control>
         <control type="button" id="19">
           <description>Cancel Button</description>
@@ -119,7 +122,8 @@
           <onleft>18</onleft>
           <onright>19</onright>
           <ondown>9001</ondown>
-          <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+					<align>center</align>
+          <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
         </control>
       </control>
     </control>

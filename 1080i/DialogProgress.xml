@@ -57,7 +57,7 @@
         <posy>330</posy>
         <width>300</width>
         <label>222</label>
-        <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
+				<align>center</align>
       </control>
     </control>
   </controls>

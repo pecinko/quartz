@@ -4,13 +4,13 @@
  <controls>
   <include>FullBackground</include>
   <include>MediaHeader</include>
-	 <control type="button" id="8998" description="Fix ATV1 focus bug">
+	 <control type="group" description="Content">
+    <include>OpenClose</include>
+		<control type="button" id="8998" description="Fix ATV1 focus bug">
       <include>HiddenButton</include>
       <onfocus>Control.SetFocus(9000)</onfocus>
       <onclick>Control.SetFocus(9000)</onclick>
     </control>
-		<control type="group" description="Content">
-    <include>OpenClose</include>
 		<control type="group" description="Furniture">
       <control type="image" description="Navbar">
         <posx>-90</posx>

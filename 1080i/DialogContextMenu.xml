@@ -27,7 +27,8 @@
         <posy>-</posy>
         <width>486</width>
         <height>60</height>
-        <shadowcolor>BlackT</shadowcolor>
+        <align>center</align>
+				<shadowcolor>BlackT</shadowcolor>
         <focusedcolor>White2</focusedcolor>
         <texturefocus>img/BlackDot.png</texturefocus>
         <texturenofocus>-</texturenofocus>
@@ -40,6 +41,7 @@
         <posy>-</posy>
         <width>486</width>
         <height>60</height>
+				<align>center</align>
         <shadowcolor>BlackT</shadowcolor>
         <focusedcolor>HL</focusedcolor>
         <texturefocus>img/BlackDot.png</texturefocus>

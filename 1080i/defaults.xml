@@ -74,7 +74,7 @@
     <focusedcolor>HL</focusedcolor>
     <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <texturenofocus border="5">img/ButtonNF.png</texturenofocus>
+    <texturenofocus border="8">img/SettingsButtonNF.png</texturenofocus>
     <texturefocus border="9">img/MediaButton2.png</texturefocus>
   </default>
   <default type="togglebutton">
@@ -144,7 +144,8 @@
     <texturedown>img/ArrowDownNF.png</texturedown>
     <texturedownfocus>img/ArrowDownFO.png</texturedownfocus>
     <texturefocus border="9">img/MediaButton2.png</texturefocus>
-    <spinwidth>18</spinwidth>
+    <texturenofocus>-</texturenofocus>
+		<spinwidth>18</spinwidth>
     <spinheight>18</spinheight>
     <textcolor>White</textcolor>
     <shadowcolor>ShadowDark</shadowcolor>
@@ -155,8 +156,8 @@
     <align>left</align>
     <aligny>center</aligny>
     <reverse>yes</reverse>
-    <pulseonselect>true</pulseonselect>
-  </default>
+    <pulseonselect>false</pulseonselect>
+	</default>
   <default type="slider" description="Seek Slider">
     <visible>true</visible>
     <width>711</width>

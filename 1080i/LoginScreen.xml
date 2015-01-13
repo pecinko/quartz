@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">52</defaultcontrol>
-  
-  <include>OpenClose</include>
   <controls>
+    <include>FullBackground</include>
+    <include>MediaHeader</include>
     <control type="group" description="BG and icons">
+      <include>OpenClose</include>
       <posx>0</posx>
       <posy>0</posy>
       <control type="group">
@@ -27,53 +28,21 @@
           <itemlayout width="450" height="450">
             <control type="image">
               <posx>75</posx>
-              <posy>302</posy>
-              <width>300</width>
-              <height>300</height>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-              <texture flipy="true" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-            </control>
-            <control type="image">
-              <posx>75</posx>
               <posy>0</posy>
               <width>300</width>
               <height>300</height>
               <aspectratio>scale</aspectratio>
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-            </control>
-            <control type="image">
-              <posx>75</posx>
-              <posy>0</posy>
-              <width>300</width>
-              <height>300</height>
-              <aspectratio>stretch</aspectratio>
-              <texture border="3">img/CoverOverlay0.png</texture>
             </control>
           </itemlayout>
           <focusedlayout width="450" height="450">
             <control type="image">
               <posx>75</posx>
-              <posy>302</posy>
-              <width>300</width>
-              <height>300</height>
-              <aspectratio scalediffuse="false">scale</aspectratio>
-              <texture flipy="true" diffuse="img/Reflection0XL.png" background="true">$INFO[ListItem.Thumb]</texture>
-            </control>
-            <control type="image">
-              <posx>75</posx>
               <posy>0</posy>
               <width>300</width>
               <height>300</height>
               <aspectratio>scale</aspectratio>
               <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-            </control>
-            <control type="image">
-              <posx>75</posx>
-              <posy>0</posy>
-              <width>300</width>
-              <height>300</height>
-              <aspectratio>stretch</aspectratio>
-              <texture border="3">img/CoverOverlay0.png</texture>
             </control>
           </focusedlayout>
         </control>
@@ -87,7 +56,7 @@
           <height>354</height>
           <aspectratio>stretch</aspectratio>
           <texture border="36">focus/FrameFO.png</texture>
-        		<bordersize>-9</bordersize>
+          <bordersize>-9</bordersize>
           <animation effect="slide" start="0,0" end="-225,0" time="0" condition="StringCompare(Container(52).NumItems,2)">conditional</animation>
           <animation type="Conditional" condition="Container(52).Position(0)">
             <effect type="slide" start="0,0" end="-450,0" center="auto" time="200" reversible="true" />
@@ -104,57 +73,53 @@
         <visible>Control.HasFocus(11)</visible>
         <animation effect="fade" time="300">Visible</animation>
         <animation effect="fade" time="200">Hidden</animation>
-        <posx>774</posx>
-        <posy>810</posy>
-        <width>372</width>
-        <height>372</height>
+        <posx>904</posx>
+        <posy>940</posy>
+        <width>112</width>
+        <height>112</height>
         <aspectratio aligny="center" align="center">stretch</aspectratio>
-        <texture border="13">img/Frame.png</texture>
-        <animation type="Conditional" condition="Control.HasFocus(11)">
-          <effect type="zoom" start="70" end="40" time="180" center="auto" delay="0" reversible="true" />
-        </animation>
+        <texture border="9">img/MediaButton2.png</texture>
+      </control>
+      <control type="group" description="Labels and button">
+        <posx>0</posx>
+        <posy>696</posy>
+        <control type="label" description="label 1">
+          <posx>0</posx>
+          <posy>30</posy>
+          <height>45</height>
+          <width>1920</width>
+          <align>center</align>
+          <font>size22</font>
+          <textcolor>White2</textcolor>
+          <label>[B]$INFO[ListItem.Label][/B]</label>
+        </control>
+        <control type="label" description="Label 2">
+          <posx>0</posx>
+          <posy>69</posy>
+          <width>1920</width>
+          <font>size18</font>
+          <align>center</align>
+          <textcolor>Grey</textcolor>
+          <label>$INFO[ListItem.Label2]</label>
+        </control>
+        <control type="button" id="11" description="Quit xbmc">
+          <posx>915</posx>
+          <posy>255</posy>
+          <width>90</width>
+          <height>90</height>
+          <onup>52</onup>
+          <ondown>52</ondown>
+          <onleft>Control.Move(52,-1)</onleft>
+          <onleft>52</onleft>
+          <onright>Control.Move(52,1)</onright>
+          <onright>52</onright>
+          <texturefocus>BMQuit.png</texturefocus>
+          <texturenofocus>BMQuit.png</texturenofocus>
+          <onclick>ActivateWindow(shutdownmenu)</onclick>
+          <font>-</font>
+          <label>$LOCALIZE[13009]</label>
+        </control>
       </control>
     </control>
-    <control type="group" description="Labels and button">
-      <posx>0</posx>
-      <posy>696</posy>
-      <control type="label" description="label 1">
-        <posx>0</posx>
-        <posy>30</posy>
-        <height>45</height>
-        <width>1920</width>
-        <align>center</align>
-        <font>size22</font>
-        <textcolor>White2</textcolor>
-        <label>[B]$INFO[ListItem.Label][/B]</label>
-      </control>
-      <control type="label" description="Label 2">
-        <posx>0</posx>
-        <posy>69</posy>
-        <width>1920</width>
-        <font>size18</font>
-        <align>center</align>
-        <textcolor>Grey</textcolor>
-        <label>$INFO[ListItem.Label2]</label>
-      </control>
-      <control type="button" id="11" description="Quit xbmc">
-        <posx>915</posx>
-        <posy>255</posy>
-        <width>90</width>
-        <height>90</height>
-        <onup>52</onup>
-        <ondown>52</ondown>
-        <onleft>Control.Move(52,-1)</onleft>
-        <onleft>52</onleft>
-        <onright>Control.Move(52,1)</onright>
-        <onright>52</onright>
-        <texturefocus>img/QuitFO.png</texturefocus>
-        <texturenofocus>img/QuitNF.png</texturenofocus>
-        <onclick>ActivateWindow(shutdownmenu)</onclick>
-        <font>-</font>
-        <label>$LOCALIZE[13009]</label>
-      </control>
-    </control>
-    <include>Header</include>
   </controls>
 </window>

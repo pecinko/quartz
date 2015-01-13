@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <defaultcontrol always="true">12</defaultcontrol>
-  
-  <include>OpenClose</include>
+  <defaultcontrol always="true">20</defaultcontrol>
   <controls>
     <include>MiniBackground</include>
+		<include>FullBackground</include>
     <control type="group">
-      <posx>0</posx>
+      <include>OpenClose</include>
+			<posx>0</posx>
       <posy>30</posy>
       <control type="label" description="Directory Contains">
         <posx>450</posx>
@@ -16,27 +16,17 @@
         <width>1020</width>
         <label>20344</label>
       </control>
-      <control type="spincontrolex" id="12" description="Content Type">
+      <control type="spincontrolex" id="20" description="Content Type">
         <posx>435</posx>
         <posy>75</posy>
         <width>1080</width>
-        <font>-</font>
-        <label>-</label>
-        <align>right</align>
         <onup>29</onup>
         <ondown>21</ondown>
         <onleft>28</onleft>
         <onright>28</onright>
         <textoffsetx>20</textoffsetx>
         <texturenofocus>-</texturenofocus>
-      </control>
-      <control type="label" description="Content Type Label">
-        <posx>435</posx>
-        <textoffsetx>20</textoffsetx>
-        <posy>75</posy>
-        <width>578</width>
-        <align>left</align>
-        <label>$INFO[Control.GetLabel(12)]</label>
+				<label>$LOCALIZE[20344]</label>
       </control>
       <control type="image" description="Splitter">
         <posx>375</posx>
@@ -45,14 +35,14 @@
         <width>1260</width>
         <texture>img/LineST.png</texture>
       </control>
-      <control type="list" id="21" description="Scraper list">
+      <control type="panel" id="21" description="Scraper list">
         <posx>705</posx>
         <posy>171</posy>
         <width>810</width>
         <height>210</height>
-        <onup>12</onup>
+        <onup>20</onup>
         <onleft>5</onleft>
-        <onright>12</onright>
+        <onright>20</onright>
         <ondown>5</ondown>
         <itemlayout height="69" width="810">
           <control type="label">
@@ -64,7 +54,6 @@
         </itemlayout>
         <focusedlayout height="69" width="810">
           <control type="image">
-            <visible>Control.HasFocus(4)</visible>
             <posy>0</posy>
             <width>810</width>
             <height>69</height>
@@ -80,7 +69,7 @@
       </control>
       <control type="image" description="Splitter">
         <posx>375</posx>
-        <posy>390</posy>
+        <posy>399</posy>
         <height>1</height>
         <width>1260</width>
         <texture>img/LineST.png</texture>
@@ -135,8 +124,8 @@
           <onleft>noop</onleft>
           <onright>29</onright>
           <onup>22</onup>
-          <ondown>12</ondown>
-          <texturenofocus border="4">img/ButtonNF.png</texturenofocus>
+          <ondown>20</ondown>
+          <align>center</align>
         </control>
         <control type="button" id="29" description="Cancel">
           <posx>1008</posx>
@@ -146,20 +135,18 @@
           <onleft>28</onleft>
           <onright>noop</onright>
           <onup>22</onup>
-          <ondown>12</ondown>
-          <texturenofocus border="4">img/ButtonNF.png</texturenofocus>
+          <ondown>20</ondown>
+          <align>center</align>
         </control>
       </control>
-    </control>
-    <control type="image" description="Addon Icon">
-      <posx>441</posx>
-      <posy>210</posy>
-      <width>180</width>
-      <height>180</height>
-      <texture fallback="DefaultAddonNone.png">$INFO[ListItem.Thumb]</texture>
-      <aspectratio aligny="top">scale</aspectratio>
-      <bordertexture border="3">img/ThumbBorder3.png</bordertexture>
-      <bordersize>1</bordersize>
+      <control type="image" description="Addon Icon">
+        <posx>441</posx>
+        <posy>189</posy>
+        <width>180</width>
+        <height>180</height>
+        <texture fallback="DefaultFolder.png">$INFO[ListItem.Thumb]</texture>
+        <aspectratio aligny="top">scale</aspectratio>
+      </control>
     </control>
   </controls>
 </window>

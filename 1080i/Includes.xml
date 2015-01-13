@@ -44,7 +44,7 @@
       <height>100%</height>
       <aspectratio>stretch</aspectratio>
       <fadetime>400</fadetime>
-      <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+      <texture background="true" fallback="img/BlackDot.png">$INFO[ListItem.Art(fanart)]</texture>
     </control>
     <control type="image" description="BG">
       <visible>![Control.IsVisible(56) | Control.IsVisible(58) | Control.IsVisible(510)]</visible>
