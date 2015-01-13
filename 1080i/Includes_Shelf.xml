@@ -188,6 +188,125 @@
       </control>
     </focusedlayout>
   </include>
+  <include name="TVShortcutsCommons">
+    <include>ListVisibleFade</include>
+    <posx>72</posx>
+    <posy>84</posy>
+    <width>1778</width>
+    <height>402</height>
+    <orientation>horizontal</orientation>
+    <scrolltime>400</scrolltime>
+    <itemlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="387" width="254">
+      <control type="image">
+        <posx>17</posx>
+        <posy>18</posy>
+        <width>220</width>
+        <height>321</height>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+        <aspectratio>scale</aspectratio>
+        <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        <bordersize>9</bordersize>
+      </control>
+      <control type="image">
+        <posx>17</posx>
+        <posy>276</posy>
+        <width>220</width>
+        <height>54</height>
+        <texture>img/BlackDotT.png</texture>
+        <aspectratio>scale</aspectratio>
+        <bordersize>9</bordersize>
+      </control>
+      <control type="label">
+        <posx>17</posx>
+        <posy>281</posy>
+        <width>220</width>
+        <height>42</height>
+        <font>size17</font>
+        <textcolor>White2</textcolor>
+        <label>[B]$INFO[ListItem.Season,,.]$INFO[ListItem.Episode][/B]</label>
+        <align>center</align>
+      </control>
+    </itemlayout>
+    <focusedlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="387" width="254">
+      <control type="group">
+        <control type="image">
+          <posx>17</posx>
+          <posy>18</posy>
+          <width>220</width>
+          <height>321</height>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+          <aspectratio>scale</aspectratio>
+          <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+          <bordersize>9</bordersize>
+        </control>
+        <control type="image">
+          <posx>17</posx>
+          <posy>276</posy>
+          <width>220</width>
+          <height>54</height>
+          <texture>img/BlackDotT.png</texture>
+          <aspectratio>scale</aspectratio>
+          <bordersize>9</bordersize>
+        </control>
+        <control type="label">
+          <posx>17</posx>
+          <posy>281</posy>
+          <width>220</width>
+          <height>42</height>
+          <font>size17</font>
+          <textcolor>White2</textcolor>
+          <label>[B]$INFO[ListItem.Season,,.]$INFO[ListItem.Episode][/B]</label>
+          <align>center</align>
+        </control>
+        <control type="label">
+          <visible>ControlGroup(700).HasFocus()</visible>
+          <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+          <posx>17</posx>
+          <posy>345</posy>
+          <width>220</width>
+          <height>30</height>
+          <font>size17</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[ListItem.Title]</label>
+          <align>center</align>
+        </control>
+      </control>
+    </focusedlayout>
+    <itemlayout condition="Skin.HasSetting(TVShelf_Custom)" height="357" width="354">
+      <control type="image">
+        <posx>27</posx>
+        <posy>27</posy>
+        <width>303</width>
+        <height>303</height>
+        <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+        <aspectratio>scale</aspectratio>
+      </control>
+    </itemlayout>
+    <focusedlayout condition="Skin.HasSetting(TVShelf_Custom)" height="357" width="354">
+      <control type="group">
+        <control type="image">
+          <posx>27</posx>
+          <posy>27</posy>
+          <width>303</width>
+          <height>303</height>
+          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <aspectratio>scale</aspectratio>
+        </control>
+        <control type="label">
+          <visible>ControlGroup(700).HasFocus()</visible>
+          <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
+          <posx>5</posx>
+          <posy>345</posy>
+          <width>344</width>
+          <height>30</height>
+          <font>size17</font>
+          <textcolor>White2</textcolor>
+          <label>$INFO[ListItem.Label]</label>
+          <align>center</align>
+        </control>
+      </control>
+    </focusedlayout>
+  </include>
   <include name="MusicShortcutsCommons">
     <include>ListVisibleFade</include>
     <posx>72</posx>
@@ -207,16 +326,16 @@
         <bordertexture border="12">img/ThumbBorder.png</bordertexture>
         <bordersize>9</bordersize>
       </control>
-			<control type="label">
-          <posx>5</posx>
-          <posy>345</posy>
-          <width>344</width>
-          <height>30</height>
-          <font>size17</font>
-          <textcolor>White2</textcolor>
-          <label>$INFO[ListItem.TVShowTitle]</label>
-          <align>center</align>
-        </control>
+      <control type="label">
+        <posx>5</posx>
+        <posy>345</posy>
+        <width>344</width>
+        <height>30</height>
+        <font>size17</font>
+        <textcolor>White2</textcolor>
+        <label>$INFO[ListItem.TVShowTitle]</label>
+        <align>center</align>
+      </control>
     </itemlayout>
     <focusedlayout height="357" width="354">
       <control type="group">
@@ -300,7 +419,7 @@
         <ondown>302</ondown>
         <onleft>312</onleft>
         <onright>312</onright>
-        <include>MusicShortcutsCommons</include>
+        <include>TVShortcutsCommons</include>
         <include condition="Skin.HasSetting(TVShelf_Custom)">TV_Custom_Items</include>
         <include condition="!Skin.HasSetting(TVShelf_Custom)">TV_RA_Items</include>
         
@@ -311,7 +430,7 @@
         
       </control>
       <control type="image">
-        <visible>Control.HasFocus(312)</visible>
+        <visible>Control.HasFocus(312) + Skin.HasSetting(TVShelf_Custom)</visible>
         <posx>75</posx>
         <posy>87</posy>
         <width>351</width>
@@ -324,6 +443,23 @@
         <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
         <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
+      </control>
+      <control type="image">
+        <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
+        <posx>73</posx>
+        <posy>86</posy>
+        <width>252</width>
+        <height>352</height>
+        <texture border="36">focus/FrameFO.png</texture>
+        <bordersize>-9</bordersize>
+        <aspectratio>stretch</aspectratio>
+        <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="150" easing="inout" reversible="true">Conditional</animation>
       </control>
     </control>
   </include>

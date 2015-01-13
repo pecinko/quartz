@@ -367,13 +367,10 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onleft>9000</onleft>
+          <onright>9000</onright>
           <onup>52</onup>
           <ondown>52</ondown>
-          <pagecontrol>60</pagecontrol>
           <viewtype label="544">Media info</viewtype>
           <focusposition>3</focusposition>
           <movement>4</movement>
@@ -1490,13 +1487,6 @@
         <height>45</height>
         <texture border="1,0,1,0">img/Gradient.png</texture>
         <aspectratio>stretch</aspectratio>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>30r</posx>
-        <posy>219</posy>
-        <height>780</height>
-        <onleft>53</onleft>
-        <onright>noop</onright>
       </control>
     </control>
     <control type="group" description="Banner wall">

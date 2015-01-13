@@ -1610,12 +1610,12 @@
     <shadowcolor>Black</shadowcolor>
   </include>
   <include name="KeyboardButtons">
-    <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
+    <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
     <align>center</align>
     <aligny>center</aligny>
     <textoffsetx>0</textoffsetx>
-    <width>75</width>
-    <height>75</height>
+    <width>72</width>
+    <height>72</height>
     <font>size26</font>
   </include>
   <include name="DetailsVideoInfoCommons">

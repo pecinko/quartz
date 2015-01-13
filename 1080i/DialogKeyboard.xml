@@ -5,8 +5,8 @@
     <control type="group">
       <visible>!Window.IsVisible(numericinput)</visible>
       <control type="image">
-        <centerleft>960</centerleft>
-        <centertop>735</centertop>
+        <centerleft>956</centerleft>
+        <centertop>744</centertop>
         <width>1470</width>
         <height>816</height>
         <texture border="128">img/DialogPanel.png</texture>
@@ -47,13 +47,13 @@
             <texturenofocus>-</texturenofocus>
           </control>
           <control type="group" description="Buttons">
-            <width>1050</width>
+            <width>1120</width>
           	<height>600</height>
 						<top>210</top>
-						<left>15</left>
+						<left>0</left>
 					<control type="grouplist">
               <description>1st Row</description>
-              <itemgap>0</itemgap>
+              <itemgap>5</itemgap>
               <orientation>horizontal</orientation>
               <control type="button" id="305">
                 <description>previous button</description>
@@ -174,9 +174,9 @@
             </control>
             <control type="grouplist">
               <description>2nd Row</description>
-              <itemgap>0</itemgap>
+              <itemgap>5</itemgap>
               <orientation>horizontal</orientation>
-              <top>75</top>
+              <top>78</top>
               <control type="togglebutton" id="304">
                 <description>Symbols button</description>
                 <width>150</width>
@@ -184,12 +184,14 @@
                 <altlabel>[COLOR=HL][UPPERCASE]@#!*[/UPPERCASE][/COLOR]</altlabel>
                 <onup>305</onup>
                 <ondown>303</ondown>
-                <include>KeyboardButtons</include>
+                <font>size22</font>
+								<include>KeyboardButtons</include>
               </control>
               <control type="button" id="307">
                 <description>IP Input button</description>
                 <width>150</width>
                 <label>IP</label>
+								<font>size22</font>
                 <onup>8</onup>
                 <ondown>303</ondown>
                 <include>KeyboardButtons</include>
@@ -269,15 +271,15 @@
             </control>
             <control type="grouplist">
               <description>3rd Row</description>
-              <itemgap>0</itemgap>
+              <itemgap>5</itemgap>
               <orientation>horizontal</orientation>
-              <posy>150</posy>
+              <posy>156</posy>
               <control type="togglebutton" id="303">
                 <description>CAPS LOCK button</description>
-                <width>300</width>
+                <width>303</width>
                 <onup>307</onup>
                 <ondown>302</ondown>
-                <font>size24</font>
+                <font>size22</font>
                 <label>20179</label>
                 <altlabel>[COLOR=HL][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
                 <include>KeyboardButtons</include>
@@ -291,49 +293,49 @@
               <control type="button" id="141">
                 <description>(2,1) button</description>
                 <onup>121</onup>
-                <ondown>161</ondown>
+                <ondown>160</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="142">
                 <description>(2,2) button</description>
                 <onup>122</onup>
-                <ondown>162</ondown>
+                <ondown>161</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="143">
                 <description>(2,3) button</description>
                 <onup>123</onup>
-                <ondown>163</ondown>
+                <ondown>162</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="144">
                 <description>(2,4) button</description>
                 <onup>124</onup>
-                <ondown>164</ondown>
+                <ondown>163</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="145">
                 <description>(2,5) button</description>
                 <onup>125</onup>
-                <ondown>165</ondown>
+                <ondown>164</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="146">
                 <description>(2,6) button</description>
                 <onup>126</onup>
-                <ondown>166</ondown>
+                <ondown>165</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="147">
                 <description>(2,7) button</description>
                 <onup>127</onup>
-                <ondown>167</ondown>
+                <ondown>166</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="148">
                 <description>(2,8) button</description>
                 <onup>128</onup>
-                <ondown>168</ondown>
+                <ondown>166</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="149">
@@ -357,57 +359,63 @@
             </control>
             <control type="grouplist">
               <description>4th Row</description>
-              <itemgap>0</itemgap>
+              <itemgap>5</itemgap>
               <orientation>horizontal</orientation>
-              <posy>225</posy>
+              <posy>234</posy>
               <control type="togglebutton" id="302" description="Shift">
-                <width>300</width>
+                <width>303</width>
                 <onup>303</onup>
+								<onright>160</onright>
                 <ondown>300</ondown>
                 <font>size24</font>
                 <label>20178</label>
                 <altlabel>[COLOR=HL][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
                 <include>KeyboardButtons</include>
               </control>
-              <control type="button" id="160">
+              <control type="label" id="5000" description="Empty Spacer">
+                <width>72</width>
+                <label>-</label>
+                <font>-</font>
+              </control>
+							<control type="button" id="160">
                 <description>(3,0) button</description>
-                <onup>140</onup>
+                <onup>141</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="161">
                 <description>(3,1) button</description>
-                <onup>141</onup>
+                <onup>142</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="162">
                 <description>(3,2) button</description>
-                <onup>142</onup>
+                <onup>143</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="163">
                 <description>(3,3) button</description>
-                <onup>143</onup>
+                <onup>144</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="164">
                 <description>(3,4) button</description>
-                <onup>144</onup>
+                <onup>145</onup>
                 <ondown>45</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="165">
                 <description>(3,5) button</description>
-                <onup>145</onup>
+                <onup>146</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="166">
                 <description>(3,6) button</description>
-                <onup>146</onup>
+                <onup>147</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
@@ -419,7 +427,7 @@
               </control>
               <control type="button" id="168">
                 <description>(3,8) button</description>
-                <onup>148</onup>
+                <onup>147</onup>
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
@@ -435,6 +443,7 @@
                 <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
+							
               <control type="button" id="171">
                 <description>(3,11) button</description>
                 <onup>151</onup>
@@ -444,25 +453,29 @@
             </control>
             <control type="grouplist">
               <description>5th Row</description>
-              <itemgap>0</itemgap>
+              <itemgap>5</itemgap>
               <orientation>horizontal</orientation>
-              <posy>300</posy>
+              <posy>312</posy>
               <control type="button" id="300" description="DONE button">
-                <width>300</width>
+                <width>303</width>
                 <label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>
                 <onup>302</onup>
                 <ondown>8</ondown>
-                <textcolor>FF4fe805</textcolor>
-                <font>size24</font>
+                <font>size22</font>
                 <include>KeyboardButtons</include>
               </control>
-              <control type="button" id="32">
+							<control type="label" id="5001" description="Empty Spacer">
+                <width>30</width>
+                <label>-</label>
+                <font>-</font>
+              </control>
+							<control type="button" id="32">
                 <description>SPACE button</description>
-                <width>750</width>
+                <width>630</width>
                 <label>$LOCALIZE[20182]</label>
                 <onup>162</onup>
                 <ondown>105</ondown>
-                <font>size24</font>
+                <font>size22</font>
                 <include>KeyboardButtons</include>
               </control>
             </control>

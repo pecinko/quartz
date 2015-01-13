@@ -1,130 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
   <defaultcontrol always="true">2</defaultcontrol>
-  
-  <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
-    <control type="label" description="Heading">
-      <include>HeadingR</include>
-      <label>10034</label>
-    </control>
-    <control type="togglebutton" id="4" description="Enable Login Screen">
-      <posx>1020</posx>
-      <posy>141</posy>
-      <height>81</height>
-      <width>802</width>
-      <label>$LOCALIZE[20096]:  $LOCALIZE[1223]</label>
-      <altlabel>$LOCALIZE[20096]:  $LOCALIZE[305]</altlabel>
-      <align>left</align>
-      <onright>noop</onright>
-      <onleft>noop</onleft>
-      <onup>2</onup>
-      <ondown>5</ondown>
-      <font>size24</font>
-      <textoffsetx>20</textoffsetx>
-      <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
-      <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
-      <alttexturenofocus border="5">img/SettingsButtonNF.png</alttexturenofocus>
-      <alttexturefocus border="5">img/SettingsButtonFO.png</alttexturefocus>
-    </control>
-	<control type="togglebutton" id="5" description="Enable Auto Login">
-      <posx>1020</posx>
-      <posy>231</posy>
-      <height>81</height>
-      <width>802</width>
-      <label>$LOCALIZE[33084]$INFO[system.profileautologin,:  ]</label>
-	  <altlabel>$LOCALIZE[33084]$INFO[system.profileautologin,:  ]</altlabel>
-	  <align>left</align>
-      <onright>noop</onright>
-      <onleft>noop</onleft>
-      <onup>4</onup>
-      <ondown>2</ondown>
-      <font>size24</font>
-      <textoffsetx>20</textoffsetx>
-      <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
-      <texturefocus border="5">img/SettingsButtonFO.png</texturefocus>
-      <alttexturenofocus border="5">img/SettingsButtonNF.png</alttexturenofocus>
-      <alttexturefocus border="5">img/SettingsButtonFO.png</alttexturefocus>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="300">VisibleChange</animation>
-      <posx>990</posx>
-      <posy>346</posy>
-      <width>897</width>
-      <height>1</height>
-      <texture>img/Line.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="group" description="Slider and List">
-      <posx>1020</posx>
-      <posy>372</posy>
-      <control type="list" id="2">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>802</width>
-        <height>891</height>
-        <onleft>noop</onleft>
-        <onright>noop</onright>
+    <include>FullBackground</include>
+    <control type="group" description="Content">
+      <include>OpenClose</include>
+      <control type="label" description="Heading">
+        <include>HeadingR</include>
+        <label>10034</label>
+      </control>
+      <control type="image" description="Sidebar">
+        <left>0</left>
+        <top>0</top>
+        <width>720</width>
+        <height>1080</height>
+        <aspectratio>stretch</aspectratio>
+        <texture>img/Sidebar.png</texture>
+      </control>
+			<control type="togglebutton" id="4" description="Enable Login Screen">
+        <posx>45</posx>
+        <posy>180</posy>
+        <height>81</height>
+        <width>630</width>
+        <label>$LOCALIZE[20096]:  $LOCALIZE[1223]</label>
+        <altlabel>$LOCALIZE[20096]:  $LOCALIZE[305]</altlabel>
+        <align>left</align>
+        <onright>2</onright>
+        <onleft>2</onleft>
+        <onup>5</onup>
+        <ondown>5</ondown>
+        <font>size22</font>
+        <textoffsetx>20</textoffsetx>
+        <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
+        <alttexturenofocus border="5">img/SettingsButtonNF.png</alttexturenofocus>
+      </control>
+      <control type="togglebutton" id="5" description="Enable Auto Login">
+        <posx>45</posx>
+        <posy>270</posy>
+        <height>81</height>
+        <width>630</width>
+        <label>$LOCALIZE[33084]$INFO[system.profileautologin,:  ]</label>
+        <altlabel>$LOCALIZE[33084]$INFO[system.profileautologin,:  ]</altlabel>
+        <align>left</align>
+        <onright>2</onright>
+        <onleft>2</onleft>
         <onup>4</onup>
-        <ondown>noop</ondown>
-        <pagecontrol>60</pagecontrol>
-        <scrolltime>280</scrolltime>
-        <itemlayout width="802" height="81">
-          <control type="label" description="Main Label">
-            <posx>30</posx>
-            <posy>0</posy>
-            <height>81</height>
-            <width>502</width>
-            <aligny>center</aligny>
-            <font>size24</font>
-            <textcolor>White</textcolor>
-            <label>$INFO[ListItem.Label]</label>
-          </control>
-          <control type="label" description="Label2">
-            <posx>42r</posx>
-            <posy>0</posy>
-            <height>81</height>
-            <width>420</width>
-            <font>size18</font>
-            <scroll>false</scroll>
-            <textcolor>Grey</textcolor>
-            <align>right</align>
-            <label>$INFO[ListItem.Label2]</label>
-          </control>
-        </itemlayout>
-        <focusedlayout width="802" height="81">
-          <control type="image">
-            <visible>![Control.HasFocus(4) | Control.HasFocus(5)]</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>802</width>
-            <height>81</height>
-            <texture border="8">img/SettingsButtonFO.png</texture>
-            <aspectratio>stretch</aspectratio>
-          </control>
-          <control type="label" description="Main Label">
-            <posx>30</posx>
-            <posy>0</posy>
-            <height>81</height>
-            <width>502</width>
-            <aligny>center</aligny>
-            <font>size24</font>
-            <textcolor>White2</textcolor>
-            <label>$INFO[ListItem.Label]</label>
-          </control>
-          <control type="label" description="Label2">
-            <posx>42r</posx>
-            <posy>0</posy>
-            <height>81</height>
-            <width>420</width>
-            <font>size18</font>
-            <scroll>false</scroll>
-            <textcolor>White2</textcolor>
-            <align>right</align>
-            <label>$INFO[ListItem.Label2]</label>
-          </control>
-        </focusedlayout>
+        <ondown>4</ondown>
+        <font>size22</font>
+        <textoffsetx>20</textoffsetx>
+        <texturenofocus border="5">img/SettingsButtonNF.png</texturenofocus>
+        <alttexturenofocus border="5">img/SettingsButtonNF.png</alttexturenofocus>
+      </control>
+      <control type="group" description="Slider and List">
+        <centerleft>1400</centerleft>
+        <posy>180</posy>
+        <width>820</width>
+				<control type="panel" id="2">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>820</width>
+          <height>891</height>
+          <onleft>4</onleft>
+          <onright>4</onright>
+          <itemlayout width="802" height="81">
+            <control type="label" description="Main Label">
+              <posx>30</posx>
+              <posy>0</posy>
+              <height>81</height>
+              <width>502</width>
+              <aligny>center</aligny>
+              <font>size24</font>
+              <textcolor>White</textcolor>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" description="Label2">
+              <posx>0</posx>
+              <posy>0</posy>
+              <height>81</height>
+              <width>780</width>
+              <font>size18</font>
+              <scroll>false</scroll>
+              <textcolor>White2</textcolor>
+              <align>right</align>
+              <label>$INFO[ListItem.Label2]</label>
+            </control>
+          </itemlayout>
+          <focusedlayout width="802" height="81">
+            <control type="image">
+              <posx>0</posx>
+              <posy>0</posy>
+              <width>802</width>
+              <height>81</height>
+              <texture border="9">img/MediaButton2.png</texture>
+              <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="label" description="Main Label">
+              <posx>30</posx>
+              <posy>0</posy>
+              <height>81</height>
+              <width>502</width>
+              <aligny>center</aligny>
+              <font>size24</font>
+              <textcolor>White2</textcolor>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" description="Label2">
+              <posx>0</posx>
+              <posy>0</posy>
+              <height>81</height>
+              <width>780</width>
+              <font>size18</font>
+              <scroll>false</scroll>
+              <textcolor>White2</textcolor>
+              <align>right</align>
+              <label>$INFO[ListItem.Label2]</label>
+            </control>
+          </focusedlayout>
+        </control>
       </control>
     </control>
   </controls>

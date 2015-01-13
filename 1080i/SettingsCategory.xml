@@ -26,7 +26,7 @@
         <font>-</font>
       </control>
       <control type="grouplist" id="3" description="Left - Button Area">
-        <posx>60</posx>
+        <posx>45</posx>
         <posy>165</posy>
         <width>420</width>
         <height>900</height>
@@ -38,7 +38,7 @@
         <orientation>vertical</orientation>
       </control>
       <control type="label" description="Settings level label">
-        <posx>60</posx>
+        <posx>45</posx>
         <posy>900</posy>
         <width>360</width>
         <height>60</height>
@@ -47,7 +47,7 @@
         <label>$LOCALIZE[31299]</label>
       </control>
       <control type="button" id="20" description="Settings level">
-        <posx>60</posx>
+        <posx>45</posx>
         <posy>960</posy>
         <onright>noop</onright>
         <onleft>noop</onleft>
@@ -76,32 +76,24 @@
       </control>
       <control type="button" id="7" description="Button">
         <width>1260</width>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
-        <font>size23</font>
+        <font>size22</font>
         <align>left</align>
       </control>
       <control type="radiobutton" id="8" description="Radio Button">
         <width>1260</width>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
         <radioposx>1197</radioposx>
-        <font>size23</font>
+        <font>size22</font>
         <align>left</align>
       </control>
       <control type="spincontrolex" id="9" description="Spin control">
         <width>1260</width>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
         <align>left</align>
-        <font>size23</font>
+        <font>size22</font>
       </control>
       <control type="sliderex" id="13" description="Slider control">
         <width>1260</width>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus border="4">img/SettingsButtonFO.png</texturefocus>
         <align>left</align>
-        <font>size23</font>
+        <font>size22</font>
       </control>
       <control type="button" id="10" description="Category Button">
         <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>

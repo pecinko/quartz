@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <defaultcontrol always="true">450</defaultcontrol>
-  <include>OpenClose</include>
   <coordinates>
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
   <controls>
-    <include>MiniBackground</include>
+    <include>FullBackground</include>
+    <control type="group" description="Content">
+      <include>OpenClose</include>
     <control type="label" description="Header label">
       <include>HeadingR</include>
       <label>1036</label>
@@ -25,22 +26,11 @@
         <posy>0</posy>
         <width>802</width>
         <height>888</height>
-        <onleft>noop</onleft>
-        <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
         <onup>450</onup>
         <ondown>450</ondown>
-        <pagecontrol>60</pagecontrol>
         <focusposition>3</focusposition>
         <movement>4</movement>
-        
         <itemlayout width="870" height="111">
-          <control type="image">
-            <posx>0</posx>
-            <posy>3</posy>
-            <height>105</height>
-            <width>870</width>
-            <texture>img/ListBG.png</texture>
-          </control>
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
@@ -49,14 +39,6 @@
             <bordersize>6</bordersize>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
-          </control>
-          <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <height>111</height>
-            <width>111</width>
-            <bordersize>6</bordersize>
-            <texture border="3">img/CoverOverlay0.png</texture>
           </control>
           <control type="label" description="Main Label">
             <scroll>false</scroll>
@@ -71,27 +53,12 @@
         <focusedlayout width="870" height="111">
           <control type="image">
             <posx>0</posx>
-            <posy>3</posy>
-            <height>105</height>
-            <width>870</width>
-            <texture>img/ListBG.png</texture>
-          </control>
-          <control type="image">
-            <posx>0</posx>
             <posy>0</posy>
             <height>111</height>
             <width>111</width>
             <bordersize>6</bordersize>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio>scale</aspectratio>
-          </control>
-          <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
-            <height>111</height>
-            <width>111</width>
-            <bordersize>6</bordersize>
-            <texture border="3">img/CoverOverlay0.png</texture>
           </control>
           <control type="label" description="Main Label">
             <posx>135</posx>
@@ -121,66 +88,21 @@
         <animation condition="Container(450).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
       </control>
     </control>
-    <control type="image">
-      <visible>Container.HasPrevious</visible>
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <posx>1005</posx>
-      <posy>135</posy>
-      <height>81</height>
-      <width>832</width>
-      <texture flipy="true">img/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
-    <control type="image">
-      <animation effect="fade" time="200">VisibleChange</animation>
-      <visible>Container.HasNext</visible>
-      <posx>1005</posx>
-      <posy>963</posy>
-      <height>81</height>
-      <width>832</width>
-      <texture>img/DefaultGradient.png</texture>
-      <aspectratio>stretch</aspectratio>
-    </control>
     <control type="group" description="Thumbs">
       <posx>-6</posx>
       <posy>267</posy>
-      <!--<animation effect="rotatey" start="0" end="-9" center="260," time="0" reversible="false" condition="true">Conditional</animation>-->
       <control type="group" description="Squares">
-        <control type="image" description="Thumb Reflection">
-          <posx>248</posx>
-          <posy>585</posy>
-          <width>495</width>
-          <height>495</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio>scale</aspectratio>
-        </control>
         <control type="image" description="Thumb">
           <posx>248</posx>
           <posy>90</posy>
           <width>495</width>
           <height>495</height>
           <include>Icon_Fade</include>
-          <texture diffuse="img/DiffuseB.png" background="true">$INFO[ListItem.Thumb]</texture>
+          <texture background="true">$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
-        </control>
-        <control type="image" description="Thumb">
-          <posx>248</posx>
-          <posy>90</posy>
-          <width>495</width>
-          <height>495</height>
-          <include>Icon_Fade</include>
-          <texture border="3">img/CoverOverlay0.png</texture>
-          <aspectratio>stretch</aspectratio>
         </control>
       </control>
     </control>
-    <control type="scrollbar" id="60">
-      <posx>51r</posx>
-      <posy>135</posy>
-      <height>870</height>
-      <onleft>450</onleft>
-      <onright>noop</onright>
-    </control>
+   </control>
   </controls>
 </window>

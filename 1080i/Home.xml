@@ -599,7 +599,7 @@
             <onclick>SetFocus(305)</onclick>
           </item>
           <item id="6" description="XBMC">
-            <label fallback="13000">$INFO[Skin.String(XBMCName)]</label>
+            <label fallback="KODI">$INFO[Skin.String(XBMCName)]</label>
             <onclick>SetFocus(306)</onclick>
           </item>
         </content>
