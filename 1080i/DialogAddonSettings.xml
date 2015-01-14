@@ -5,12 +5,13 @@
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
-  <include>OpenClose</include>
   <controls>
-    <include>MiniBackground</include>
-		<include>FullBackground</include>
+    <include>FullBackground</include>
+    <control type="group" description="Content">
+      <include>OpenClose</include>
     <control type="label" id="20" description="Heading">
-      <include>Heading</include>
+      <posy>21</posy>
+			<include>Heading</include>
       <label>-</label>
     </control>
     <control type="image" description="separator Left container">
@@ -50,16 +51,17 @@
         <label>186</label>
         <align>center</align>
 		  </control>
-      <control type="button" id="12" description="Defaults Button">
-        <width>390</width>
-        <label>409</label>
-        <align>center</align>
-			 </control>
       <control type="button" id="11" description="Cancel Button">
         <width>390</width>
         <label>222</label>
         <align>center</align>
 			</control>
+			<control type="button" id="12" description="Defaults Button">
+        <width>390</width>
+        <label>409</label>
+        <align>center</align>
+			 </control>
+      
     </control>
     <control type="button" id="13" description="Default Category Button">
       <font>size22</font>
@@ -107,6 +109,6 @@
         <width>900</width>
       </control>
     </control>
-    
+    </control>
   </controls>
 </window>

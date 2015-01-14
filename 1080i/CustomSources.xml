@@ -10,8 +10,8 @@
       <control type="image">
         <centerleft>960</centerleft>
         <centertop>540</centertop>
-        <width>810</width>
-        <height>600</height>
+        <width>870</width>
+        <height>540</height>
         <texture border="128">img/DialogPanel.png</texture>
 		  </control>
       <control type="grouplist" id="9000">

@@ -3,7 +3,7 @@
   <defaultcontrol always="true">300</defaultcontrol>
   <controls>
     <control type="group">
-      <visible>!Window.IsVisible(numericinput)</visible>
+     <!-- <visible>!Window.IsVisible(numericinput)</visible>-->
       <control type="image">
         <centerleft>956</centerleft>
         <centertop>744</centertop>
@@ -16,7 +16,6 @@
         <top>540</top>
         <width>1080</width>
         <height>60</height>
-        <!--<texture border="8">img/BlackDotT.png</texture>-->
 				<texture border="24,8,24,8">HUD/KeyEdit.png</texture>
       </control>
       <control type="group" description="content">
