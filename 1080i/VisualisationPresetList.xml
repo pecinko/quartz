@@ -3,16 +3,16 @@
 	<defaultcontrol always="true">2</defaultcontrol>
   
   <controls>
-    <control type="image">
-      <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
-      <posx>285</posx>
-      <posy>0</posy>
-      <width>1350</width>
-      <height>960</height>
-      <texture border="21">img/DialogNew.png</texture><colordiffuse>Overlay</colordiffuse>
-    </control>
     <control type="group">
-      <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
+     <include>OpenClose</include>
+		  <control type="image">
+        <centerleft>960</centerleft>
+        <centertop>480</centertop>
+        <width>1200</width>
+        <height>960</height>
+        <texture border="128">img/DialogPanel.png</texture>
+      </control>
+    <control type="group">
       <posx>510</posx>
       <posy>150</posy>
       <control type="label" description="Header Label">
@@ -22,6 +22,7 @@
         <label>31048</label>
         <font>size26B</font>
         <align>center</align>
+				<textcolor>HL</textcolor>
       </control>
       <control type="fixedlist" id="2">
         <description>Preset List</description>
@@ -63,15 +64,6 @@
         </focusedlayout>
       </control>
     </control>
-    <control type="scrollbar" id="60">
-      <visible>![Skin.HasSetting(KioskEnabled) + Skin.HasSetting(HideScrollbar)]</visible>
-      <animation condition="!Control.HasFocus(60) + !Container.Scrolling" effect="fade" start="100" end="70" time="200" reversible="true">Conditional</animation>
-      <animation effect="zoom" start="90" end="100" time="200" center="640,360">WindowOpen</animation>
-      <posx>1455</posx>
-      <posy>270</posy>
-      <height>480</height>
-      <onleft>2</onleft>
-      <onright>2</onright>
-    </control>
+		</control>
   </controls>
 </window>

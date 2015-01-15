@@ -55,16 +55,6 @@
       <visible>IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <!--<control type="image" description="Thumb Reflection">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>180</posx>
-        <posy>720</posy>
-        <width>621</width>
-        <height>720</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-      </control>-->
       <control type="image" description="Thumb">
         <posx>180</posx>
         <posy>0</posy>
@@ -73,18 +63,9 @@
         <include>Icon_Fade</include>
         <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
         <aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        <bordersize>9</bordersize>
       </control>
-      <!--<control type="image" description="Thumb">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>180</posx>
-        <posy>0</posy>
-        <width>621</width>
-        <height>720</height>
-        <include>Icon_Fade</include>
-        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>-->
     </control>
     <control type="group" description="Thumbs with info">
       <posy>60</posy>
@@ -92,16 +73,6 @@
       <visible>!IsEmpty(ListItem.Plot)</visible>
       <animation effect="fade" time="400">Visible</animation>
       <animation effect="fade" time="0">Hidden</animation>
-      <!--<control type="image" description="Reflection">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>0</posx>
-        <posy>540</posy>
-        <width>756</width>
-        <height>540</height>
-        <include>Icon_Fade</include>
-        <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-      </control>-->
       <control type="image" description="Thumb">
         <posx>0</posx>
         <posy>0</posy>
@@ -109,33 +80,15 @@
         <height>540</height>
         <include>Icon_Fade</include>
         <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
+        <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        <bordersize>9</bordersize>
+				<aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <!--<control type="image" description="Thumb Overlay">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>756</width>
-        <height>540</height>
-        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>-->
     </control>
   </include>
   <include name="DefaultThumbs">
     <control type="group" description="Thumbs no info">
       <posy>240</posy>
-      <!--<control type="image" description="Thumb Reflection">
-        <posx>180</posx>
-        <posy>720</posy>
-        <width>621</width>
-        <height>720</height>
-        <include>Icon_Fade</include>
-        <texture background="true" flipy="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="top">keep</aspectratio>
-		<colordiffuse>33FFFFFF</colordiffuse>
-      </control>-->
       <control type="image" description="Thumb">
         <posx>180</posx>
         <posy>30</posy>
@@ -147,17 +100,6 @@
         <bordersize>9</bordersize>
         <aspectratio aligny="bottom">keep</aspectratio>
       </control>
-      <!--<control type="image" description="Thumb">
-        <visible>!IsEmpty(ListItem.Thumb)</visible>
-        <posx>180</posx>
-        <posy>0</posy>
-        <width>621</width>
-        <height>720</height>
-        <include>Icon_Fade</include>
-        <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-        <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-        <aspectratio aligny="bottom">keep</aspectratio>
-      </control>-->
     </control>
   </include>
   <include name="DefaultSquareThumbs">

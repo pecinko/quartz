@@ -50,16 +50,19 @@
         <width>390</width>
         <label>186</label>
         <align>center</align>
+				<texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
 		  </control>
       <control type="button" id="11" description="Cancel Button">
         <width>390</width>
         <label>222</label>
         <align>center</align>
+				<texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
 			</control>
 			<control type="button" id="12" description="Defaults Button">
         <width>390</width>
         <label>409</label>
         <align>center</align>
+				<texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
 			 </control>
       
     </control>

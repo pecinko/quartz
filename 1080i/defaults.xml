@@ -160,24 +160,25 @@
 	</default>
   <default type="slider" description="Seek Slider">
     <visible>true</visible>
-    <width>711</width>
-    <height>36</height>
+    <height>75</height>
+		<width>450</width>
     <aligny>center</aligny>
-    <texturesliderbar>OSD/SeekSliderBack.png</texturesliderbar>
-    <textureslidernib>OSD/ScrollBarNibFO.png</textureslidernib>
-    <textureslidernibfocus>OSD/ScrollBarNibFO.png</textureslidernibfocus>
-    <texturesliderbar>OSD/SliderBackground2.png</texturesliderbar>
+    <sliderwidth>150</sliderwidth>
+    <sliderheight>24</sliderheight>
+		<texturesliderbar>HUD/SliderBG.png</texturesliderbar>
+    <textureslidernib>HUD/SliderNibNF.png</textureslidernib>
+    <textureslidernibfocus>HUD/SliderNibFO.png</textureslidernibfocus>
   </default>
   <default type="sliderex" description="Default Slider">
     <height>75</height>
     <width>450</width>
     <aligny>center</aligny>
-    <sliderwidth>100</sliderwidth>
+    <sliderwidth>150</sliderwidth>
     <sliderheight>24</sliderheight>
-    <texturesliderbar>OSD/SliderBackground.png</texturesliderbar>
-    <textureslidernib>OSD/SliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSD/SliderNibFO.png</textureslidernibfocus>
-    <texturefocus border="9">img/MediaButton2.png</texturefocus>
+    <texturesliderbar>HUD/SliderBG.png</texturesliderbar>
+    <textureslidernib>HUD/SliderNibNF.png</textureslidernib>
+    <textureslidernibfocus>HUD/SliderNibFO.png</textureslidernibfocus>
+		<texturefocus border="9">img/MediaButton2.png</texturefocus>
     <texturenofocus>-</texturenofocus>
     <font>size22</font>
     <textcolor>White</textcolor>

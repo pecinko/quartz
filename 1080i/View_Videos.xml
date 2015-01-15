@@ -3,14 +3,6 @@
   <include name="View_Videos" description="All Video Views">
     <control type="group" description="List 50 base">
       <visible>Control.IsVisible(50)</visible>
-      <control type="image" description="Thumb BG">
-        <centerleft>500</centerleft>
-        <bottom>15</bottom>
-        <width>1000</width>
-        <height>700</height>
-        <aspectratio>keep</aspectratio>
-        <texture aligny="top">img/ThumbBG.png</texture>
-      </control>
       <include>DefaultThumbs</include>
       <control type="group" description="Slider and List">
         <include>SlimListItemCount</include>
@@ -23,9 +15,7 @@
           <width>802</width>
           <height>891</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <viewtype label="535">List</viewtype>
@@ -104,52 +94,7 @@
     </control>
     <control type="group" description="Big List 51">
       <visible>Control.IsVisible(51)</visible>
-      <control type="image" description="Thumb BG">
-        <centerleft>500</centerleft>
-        <bottom>15</bottom>
-        <width>1000</width>
-        <height>700</height>
-        <aspectratio>keep</aspectratio>
-        <texture aligny="top">img/ThumbBG.png</texture>
-      </control>
-      <control type="group" description="Thumbs no info">
-        <posx>150</posx>
-        <posy>252</posy>
-        <!--<camera x="510" y="540" />
-        <animation effect="rotatey" start="0" end="-8" center="510," time="0" reversible="false" condition="true">Conditional</animation>-->
-        <animation effect="fade" time="400">Visible</animation>
-        <animation effect="fade" time="0">Hidden</animation>
-        <!-- <control type="image" description="Thumb Reflection">
-          <posx>0</posx>
-          <posy>720</posy>
-          <width>720</width>
-          <height>720</height>
-          <include>Icon_Fade</include>
-          <texture background="true" diffuse="img/Reflection1Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="top">keep</aspectratio>
-        </control>-->
-        <control type="image" description="Thumb">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>720</width>
-          <height>720</height>
-          <include>Icon_Fade</include>
-          <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
-          <!--<bordertexture border="2">img/CoverOverlay0.png</bordertexture>
-		  <bordersize>1</bordersize>-->
-        </control>
-        <!--<control type="image" description="Thumb">
-          <posx>0</posx>
-          <posy>0</posy>
-          <width>720</width>
-          <height>720</height>
-          <include>Icon_Fade</include>
-          <bordertexture border="4">img/CoverOverlay1.png</bordertexture>
-          <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
-        </control>-->
-      </control>
+      <include>DefaultThumbs</include>
       <control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
@@ -161,9 +106,7 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <!-- <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">-</onright> -->
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           
@@ -191,22 +134,6 @@
     </control>
     <control type="group" description="Large Infolist2">
       <visible>Control.IsVisible(52)</visible>
-      <!--<control type="image">
-        <posx>0</posx>
-        <bottom>0</bottom>
-        <width>1920</width>
-        <height>768</height>
-        <texture>img/background_overlay.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>-->
-      <control type="image" description="Thumb BG">
-        <centerleft>495</centerleft>
-        <bottom>372</bottom>
-        <width>1000</width>
-        <height>700</height>
-        <aspectratio>keep</aspectratio>
-        <texture aligny="bottom">img/ThumbBG.png</texture>
-      </control>
       <control type="group" description="NON music info">
         <visible>![container.content(musicvideos) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
         <include>DefaultInfoThumbs</include>
@@ -227,16 +154,6 @@
         <control type="group" description="Thumbs with info">
           <posy>193</posy>
           <posx>0</posx>
-          <!--<control type="image" description="Reflection">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>0</posx>
-            <posy>495</posy>
-            <width>756</width>
-            <height>495</height>
-            <include>Icon_Fade</include>
-            <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="top">keep</aspectratio>
-          </control>-->
           <control type="image" description="Thumb">
             <posx>0</posx>
             <posy>0</posy>
@@ -245,19 +162,9 @@
             <include>Icon_Fade</include>
             <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
             <aspectratio aligny="bottom">keep</aspectratio>
-            <!--<bordertexture border="2">img/CoverOverlay0.png</bordertexture>
-			<bordersize>1</bordersize>-->
+           <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        <bordersize>9</bordersize>
           </control>
-          <!--<control type="image" description="Thumb Overlay">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>756</width>
-            <height>495</height>
-            <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
-          </control>-->
         </control>
         <control type="group" description="Media info Top">
           <posx>0</posx>
@@ -318,45 +225,6 @@
           </control>
         </control>
       </control>
-      <!--<control type="group" description="Media info">
-        <visible>container.content(movies) | container.content(tvshows) | container.content(seasons)</visible>
-        <visible>SubString(ListItem.Path,videodb://movies/sets/)</visible>
-        <animation effect="fade" time="400">Visible</animation>
-        <animation effect="fade" time="0">Hidden</animation>
-        <control type="group" description="Thumbs no info">
-          <posy>240</posy>
-          <control type="image" description="Thumb Reflection">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>180</posx>
-            <posy>720</posy>
-            <width>621</width>
-            <height>720</height>
-            <include>Icon_Fade</include>
-            <texture background="true" diffuse="img/Reflection0Long.png" flipy="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="top">keep</aspectratio>
-          </control>
-          <control type="image" description="Thumb">
-            <posx>180</posx>
-            <posy>0</posy>
-            <width>621</width>
-            <height>720</height>
-            <include>Icon_Fade</include>
-            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
-          </control>
-          <control type="image" description="Thumb">
-            <visible>!IsEmpty(ListItem.Thumb)</visible>
-            <posx>180</posx>
-            <posy>0</posy>
-            <width>621</width>
-            <height>720</height>
-            <include>Icon_Fade</include>
-            <bordertexture border="3">img/CoverOverlay0.png</bordertexture>
-            <texture diffuse="img/DiffuseE.png" background="true">$INFO[ListItem.Thumb]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
-          </control>
-        </control>
-      </control>-->
       <control type="group" description="Slider and List">
         <include>LargeListItemCount</include>
         <posx>1020</posx>
@@ -367,8 +235,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>52</onup>
           <ondown>52</ondown>
           <viewtype label="544">Media info</viewtype>
@@ -392,13 +260,15 @@
           <posx>114</posx>
           <posy>85</posy>
           <control type="image" description="Thumb">
-            <posx>0</posx>
+            <posx>-6</posx>
             <posy>0</posy>
-            <width>756</width>
-            <height>423</height>
+            <width>774</width>
+            <height>441</height>
             <include>Fanart_Fade</include>
             <texture background="true">$VAR[Fanart.Thumb]</texture>
-            <aspectratio aligny="bottom">keep</aspectratio>
+            <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+      			<bordersize>9</bordersize>
+						<aspectratio aligny="bottom">keep</aspectratio>
 			    </control>
         </control>
         <control type="group" description="Media info">
@@ -465,41 +335,6 @@
               <label>$INFO[ListItem.Genre]</label>
             </control>
           </control>
-          <!--<control type="group">
-            <posx>0</posx>
-            <posy>442</posy>
-            <control type="label" description="Main Label">
-              <width>420</width>
-              <font>size22B</font>
-              <textcolor>White2</textcolor>
-              <include>Genre51Commons</include>
-              <label>$INFO[ListItem.Title]</label>
-            </control>
-            <control type="image" description="Rating">
-              <posx>420</posx>
-              <posy>1</posy>
-              <include>10Rating</include>
-            </control>
-            <control type="textbox" description="Plot51">
-              <include>Plot51Commons</include>
-              <label>$INFO[ListItem.Plot]</label>
-            </control>
-            <control type="label" description="1 Bottom Label">
-              <posy>160</posy>
-              <include>Genre51Commons</include>
-              <label>$INFO[ListItem.Genre]</label>
-            </control>
-            <control type="label" description="2 bottom Label">
-              <posy>190</posy>
-              <include>Genre51Commons</include>
-              <label>$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.RatingAndVotes, • ]$VAR[Trailer, • ]</label>
-            </control>
-            <control type="label" description="2 bottom Label">
-              <posy>220</posy>
-              <include>Genre51Commons</include>
-              <label>$LOCALIZE[20074]: $INFO[ListItem.MPAA]</label>
-            </control>
-          </control>-->
         </control>
       </control>
       <control type="group" description="NON Movies section">
@@ -511,14 +346,6 @@
         <control type="group" description="FA">
           <posy>195</posy>
           <posx>0</posx>
-          <!--<control type="image" description="Reflection">
-            <posx>0</posx>
-            <posy>426</posy>
-            <width>756</width>
-            <height>426</height>
-            <include>Icon_Fade</include>
-            <texture background="true" diffuse="img/Reflection0.png" flipy="true">$INFO[ListItem.Art(fanart)]</texture>
-          </control>-->
           <control type="image" description="Thumb">
             <posx>0</posx>
             <posy>0</posy>
@@ -526,15 +353,9 @@
             <height>426</height>
             <include>Icon_Fade</include>
             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+						<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+			      <bordersize>9</bordersize>
           </control>
-          <!--<control type="image" description="Thumb Overlay">
-            <visible>!IsEmpty(ListItem.Art(fanart))</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>756</width>
-            <height>426</height>
-            <texture border="3">img/CoverOverlay0.png</texture>
-          </control>-->
         </control>
         <control type="group" description="Media info Top">
           <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
@@ -614,7 +435,7 @@
           <width>802</width>
           <height>888</height>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright>9000</onright>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>54</onup>
           <ondown>54</ondown>
           <viewtype label="$LOCALIZE[544] 2">Media info 2</viewtype>
@@ -1027,8 +848,8 @@
         <posy>111</posy>
         <width>2400</width>
         <height>885</height>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <onleft>501</onleft>
         <onright>501</onright>
         <viewtype label="538">Big Icons 501</viewtype>
@@ -1190,10 +1011,10 @@
           <width>1800</width>
           <height>900</height>
           <orientation>vertical</orientation>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
-          <onup>53</onup>
-          <ondown>53</ondown>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
+          <onup>PageUp</onup>
+          <ondown>PageDown</ondown>
           <preloaditems>4</preloaditems>
           <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
             <control type="image">
@@ -1524,9 +1345,8 @@
           <onup>55</onup>
           <ondown>55</ondown>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <preloaditems>4</preloaditems>
-          <pagecontrol>60</pagecontrol>
           <scrolltime>400</scrolltime>
           <itemlayout height="225" width="900">
             <control type="image">
@@ -1735,9 +1555,7 @@
           <height>960</height>
           <orientation>vertical</orientation>
           <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onleft condition="Skin.HasSetting(ViewOptions_Hide)">-</onleft>
-          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
-          <onright condition="!Skin.HasSetting(Scrollbars_Active)">53</onright>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>502</onup>
           <ondown>502</ondown>
           <preloaditems>4</preloaditems>
@@ -1919,8 +1737,8 @@
 	  <control type="fixedlist" id="500" description="TOP Shortcuts">
         <visible>Skin.HasSetting(AddViews)</visible>
         <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
         <onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
@@ -1929,11 +1747,9 @@
         <width>2286</width>
         <height>402</height>
         <orientation>horizontal</orientation>
-        <scrolltime>400</scrolltime>
         <focusposition>4</focusposition>
         <movement>3</movement>
-        <preloaditems>2</preloaditems>
-        <pagecontrol>60</pagecontrol>
+        <preloaditems>4</preloaditems>
         <itemlayout condition="container.Content(Movies) | container.content(TVShows) | container.content(Seasons)" height="387" width="254">
           <control type="image" description="Thumb">
             <posx>26</posx>
@@ -2094,8 +1910,8 @@
       <control type="fixedlist" id="510" description="Fanart 3 for episodes and files">
         <visible>Skin.HasSetting(AddViews)</visible>
         <visible>![Container.content(movies) | container.content(seasons) | container.content(tvshows)]</visible>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <onleft>510</onleft>
         <onright>510</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>

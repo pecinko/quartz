@@ -2,7 +2,7 @@
 <includes>
   <include name="Movies_RA_Items">
     <!--<content target="video">videodb://recentlyaddedmovies/</content>-->
-		<content target="video">special://skin/playlists/movies.xsp</content>
+    <content target="video">special://skin/playlists/movies.xsp</content>
   </include>
   <include name="Movies_Custom_Items">
     <content>
@@ -89,9 +89,10 @@
     </content>
   </include>
   <include name="TV_RA_Items">
-    <content target="video">special://skin/playlists/episodes.xsp</content>
+    <!--<content target="video">videodb://recentlyaddedepisodes/</content>-->
+		<content target="video">special://skin/playlists/episodes.xsp</content>
   </include>
-	<include name="TV_Custom_Items">
+  <include name="TV_Custom_Items">
     <content>
       <item id="1" description="Addons">
         <visible>Skin.HasSetting(TVShelf_Custom)</visible>

@@ -70,14 +70,6 @@
       <shadowcolor>ShadowDark</shadowcolor>
     </control>
     <control type="image" description="Cover">
-      <posx>94</posx>
-      <posy>356</posy>
-      <width>303</width>
-      <height>303</height>
-      <texture flipy="true" diffuse="img/ReflectionShelf.png">$INFO[MusicPlayer.Cover]</texture>
-      <aspectratio scalediffuse="false">scale</aspectratio>
-    </control>
-    <control type="image" description="Cover">
       <visible>!Videoplayer.content(Movies)</visible>
       <posx>94</posx>
       <posy>54</posy>

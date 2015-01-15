@@ -148,7 +148,7 @@
             <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
             <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
           </item>-->
-          <item id="4" description="Scrollbars">
+          <!--<item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
 			<label>$LOCALIZE[31999]</label>
             <label2>$LOCALIZE[31998]</label2>
@@ -159,7 +159,7 @@
 			<label>$LOCALIZE[31999]</label>
             <label2>$LOCALIZE[31997]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
-          </item>
+          </item>-->
           <item id="5" description="Options dialog">
             <visible>Skin.HasSetting(ViewOptions_Hide)</visible>
 			<label>$LOCALIZE[31996]</label>

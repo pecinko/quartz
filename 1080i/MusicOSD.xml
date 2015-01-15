@@ -229,6 +229,7 @@
         <label>33063</label>
         <align>center</align>
         <aligny>center</aligny>
+				<textcolor>HL</textcolor>
         <include>TitleCommons</include>
       </control>
       <control type="grouplist" id="100" description="Music OSD Options">
