@@ -408,7 +408,7 @@
         </content>
         <include>Animation305</include>
       </control>
-      <control type="list" id="306" description="XBMC">
+      <control type="list" id="306" description="KODI">
         <onleft>305</onleft>
         <onright>301</onright>
         <ondown>306</ondown>
@@ -598,7 +598,7 @@
             <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
             <onclick>SetFocus(305)</onclick>
           </item>
-          <item id="6" description="XBMC">
+          <item id="6" description="KODI">
             <label fallback="KODI">$INFO[Skin.String(XBMCName)]</label>
             <onclick>SetFocus(306)</onclick>
           </item>

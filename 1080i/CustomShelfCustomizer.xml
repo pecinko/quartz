@@ -125,8 +125,8 @@
                 <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
                 <onclick>noop</onclick>
               </item>
-              <item id="1006" description="XBMC">
-                <label>XBMC</label>
+              <item id="1006" description="KODI">
+                <label>KODI</label>
                 <onclick>noop</onclick>
               </item>
             </content>
@@ -716,7 +716,7 @@
             <thumb>$INFO[Skin.String(ShelfAddons.10.Icon)]</thumb>
             <onclick>RunScript(script.favourites,property=ShelfAddons.10)</onclick>
           </control>
-          <!--XBMC-->
+          <!--KODI-->
           <control type="radiobutton" id="601" description="Image">
             <visible>Container(50).HasFocus(1006)</visible>
             <include>SettingsSubmenuButtons</include>

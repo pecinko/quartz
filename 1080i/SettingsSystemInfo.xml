@@ -74,7 +74,7 @@
           <height>900</height>
           <itemgap>9</itemgap>
           <control type="label" id="52">
-            <description>XBMC XBE BUILD Version</description>
+            <description>KODI XBE BUILD Version</description>
             <width>1140</width>
           </control>
           <control type="label" id="21">
