@@ -7,7 +7,7 @@
       <include>OpenClose</include>
       <control type="label" description="Heading">
         <posx>495</posx>
-        <posy>120</posy>
+        <posy>30</posy>
         <width>930</width>
         <height>75</height>
         <align>center</align>
@@ -16,7 +16,6 @@
         <label>31988</label>
       </control>
       <control type="group">
-        <posy>150</posy>
         <control type="image" description="Line top">
           <posx>0</posx>
           <posy>130</posy>
