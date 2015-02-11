@@ -506,7 +506,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfPictures.1.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.1.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfPictures.1.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="2" description="Addons">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -514,7 +513,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfPictures.2.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.2.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfPictures.2.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="3" description="Addons">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -522,7 +520,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfPictures.3.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.3.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfPictures.3.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="4" description="Addons">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -530,7 +527,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfPictures.4.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.4.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfPictures.4.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="5" description="Addons">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -538,7 +534,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfPictures.5.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfPictures.5.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfPictures.5.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="6" description="Fav">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -546,7 +541,6 @@
             <label>$INFO[Skin.String(ShelfPictures.6.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfPictures.6.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfPictures.6.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="7" description="Fav">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -554,7 +548,6 @@
             <label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfPictures.7.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfPictures.7.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="8" description="Fav">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -562,7 +555,6 @@
             <label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfPictures.8.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfPictures.8.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="9" description="Fav">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -570,7 +562,6 @@
             <label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfPictures.9.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfPictures.9.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="10" description="Fav">
             <visible>Skin.HasSetting(PicturesShelf_Custom)</visible>
@@ -578,7 +569,6 @@
             <label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfPictures.10.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfPictures.10.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
         </content>
       </control>
@@ -621,7 +611,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.1.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.1.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.1.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="2" description="Addons">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -629,7 +618,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.2.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.2.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.2.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="3" description="Addons">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -637,7 +625,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.3.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.3.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.3.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="4" description="Addons">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -645,7 +632,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.4.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.4.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.4.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="5" description="Addons">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -653,7 +639,6 @@
             <label>$INFO[system.addontitle(Skin.String(ShelfAddons.5.Label))]</label>
             <thumb>$INFO[system.addonicon(Skin.String(ShelfAddons.5.Label))]</thumb>
             <onclick>RunAddon($INFO[Skin.String(ShelfAddons.5.Label)])</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="6" description="Fav">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -661,7 +646,6 @@
             <label>$INFO[Skin.String(ShelfAddons.6.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfAddons.6.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfAddons.6.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="7" description="Fav">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -669,7 +653,6 @@
             <label>$INFO[Skin.String(ShelfAddons.7.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfAddons.7.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfAddons.7.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="8" description="Fav">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -677,7 +660,6 @@
             <label>$INFO[Skin.String(ShelfAddons.8.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfAddons.8.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfAddons.8.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="9" description="Fav">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -685,7 +667,6 @@
             <label>$INFO[Skin.String(ShelfAddons.9.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfAddons.9.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfAddons.9.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
           <item id="10" description="Fav">
             <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
@@ -693,7 +674,6 @@
             <label>$INFO[Skin.String(ShelfAddons.10.Label)]</label>
             <thumb>$INFO[Skin.String(ShelfAddons.10.Icon)]</thumb>
             <onclick>$INFO[Skin.String(ShelfAddons.10.Path)]</onclick>
-            <property name="ItemType">$LOCALIZE[111]</property>
           </item>
         </content>
       </control>
