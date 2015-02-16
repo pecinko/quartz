@@ -204,7 +204,7 @@
         <posy>276</posy>
         <width>220</width>
         <height>54</height>
-        <texture>img/BlackDotT.png</texture>
+        <texture>img/BlackDotST.png</texture>
         <aspectratio>scale</aspectratio>
         <bordersize>9</bordersize>
       </control>
@@ -214,7 +214,7 @@
         <width>220</width>
         <height>42</height>
         <font>size17</font>
-        <textcolor>White2</textcolor>
+        <textcolor>White</textcolor>
         <label>[B]$INFO[ListItem.Season,,.]$INFO[ListItem.Episode][/B]</label>
         <align>center</align>
       </control>
@@ -236,7 +236,7 @@
           <posy>276</posy>
           <width>220</width>
           <height>54</height>
-          <texture>img/BlackDotT.png</texture>
+          <texture>img/BlackDotST.png</texture>
           <aspectratio>scale</aspectratio>
           <bordersize>9</bordersize>
         </control>
@@ -246,17 +246,16 @@
           <width>220</width>
           <height>42</height>
           <font>size17</font>
-          <textcolor>White2</textcolor>
+          <textcolor>White</textcolor>
           <label>[B]$INFO[ListItem.Season,,.]$INFO[ListItem.Episode][/B]</label>
           <align>center</align>
         </control>
         <control type="label">
           <visible>ControlGroup(700).HasFocus()</visible>
-          <animation effect="fade" start="0" end="100" time="200" delay="100">Focus</animation>
           <posx>17</posx>
-          <posy>345</posy>
+          <posy>339</posy>
           <width>220</width>
-          <height>30</height>
+          <height>42</height>
           <font>size17</font>
           <textcolor>White2</textcolor>
           <label>$INFO[ListItem.Title]</label>
@@ -486,12 +485,6 @@
   </include>
   <include name="Pictures_Shortcuts">
     <control type="group">
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(314)</visible>
-        <include>LabelVisibleFade</include>
-        <include>ShelfTopLabel</include>
-        <label>$INFO[Container(314).ListItem.Property(ItemType)]</label>
-      </control>
       <control type="panel" id="314" description="TOP Shortcuts">
         <visible>ControlGroup(9000).HasFocus(304) | Control.HasFocus(314)</visible>
         <onup>304</onup>
@@ -601,12 +594,6 @@
   </include>
   <include name="Addons_Shortcuts">
     <control type="group">
-      <control type="label" description="Top Label">
-        <visible>Control.IsVisible(315)</visible>
-        <include>ShelfTopLabel</include>
-        <include>LabelVisibleFade</include>
-        <label>$INFO[Container(315).ListItem.Property(ItemType)]</label>
-      </control>
       <control type="panel" id="315" description="TOP Shortcuts">
         <visible>ControlGroup(9000).HasFocus(305) | Control.HasFocus(315)</visible>
         <onup>305</onup>

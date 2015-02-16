@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-  <visible>[Library.IsScanningMusic | Library.IsScanningVideo] + ![Window.IsActive(FullScreenVideo) | Window.IsActive(MusicVisualisation.xml)]</visible>
+  <visible>![Window.IsActive(FullScreenVideo) | Window.IsActive(MusicVisualisation.xml)]</visible>
   <animation effect="slide" start="0,-150" end="0,0" time="400" easing="out">WindowOpen</animation>
   <animation effect="slide" start="0,0" end="0,-150" time="200" easing="in">WindowClose</animation>
   <controls>

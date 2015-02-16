@@ -289,7 +289,7 @@
       </control>
 	</control>-->
     <control type="group" description="Player Info">
-      <visible>!Control.HasFocus(301) + Player.HasMedia + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml)]</visible>
+			<visible>!Control.HasFocus(301) + Player.HasAudio + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml)]</visible>
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
       <include>VisibleFadeEffect</include>
       <posx>15</posx>

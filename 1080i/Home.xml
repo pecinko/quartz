@@ -506,35 +506,16 @@
       <animation effect="slide" start="0,0" end="450,0" time="0" condition="StringCompare(Container(500).NumItems,3)">conditional</animation>
       <animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(500).NumItems,4)">conditional</animation>
       <animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(500).NumItems,5)">conditional</animation>
-      <control type="image" description="Bar NF">
-        <animation type="Conditional" condition="!ControlGroup(700).HasFocus()">
-          <effect type="fade" start="100" end="0" time="200" reversible="true"/>
-        </animation>
+      <control type="image" description="Bar">
         <posx>-15</posx>
         <posy>473</posy>
         <width>450</width>
-        <height>97</height>
+        <height>96</height>
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
-        <texture border="50,0,50,0">img/HomeBarNF.png</texture>
-		<!--<colordiffuse>HL</colordiffuse>-->
+        <texture border="50,0,50,0">home/HomeBar.png</texture>
         <include>HomeBarAnimation</include>
-      </control>
-      <control type="image" description="Bar FO">
-        <animation type="Conditional" condition="ControlGroup(700).HasFocus()">
-          <effect type="fade" start="100" end="0" time="200" reversible="true"/>
-        </animation>
-        <posx>-15</posx>
-        <posy>473</posy>
-        <width>450</width>
-        <height>97</height>
-        <align>center</align>
-        <aligny>center</aligny>
-        <aspectratio>stretch</aspectratio>
-        <texture border="50,0,50,0">img/HomeBarFO.png</texture>
-        <!--<colordiffuse>HL</colordiffuse>-->
-		<include>HomeBarAnimation</include>
       </control>
       <control type="list" id="500" description="Navbar">
         <onleft>noop</onleft>
@@ -641,7 +622,7 @@
       </control>
     </control>
     <control type="group" description="Player Info">
-      <visible>Player.HasMedia</visible>
+      <visible>!Control.HasFocus(301) + Player.HasAudio + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml)]</visible>
       <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
       <include>VisibleFadeEffect</include>
       <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional</animation>

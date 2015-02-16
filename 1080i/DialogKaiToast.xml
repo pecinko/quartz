@@ -12,28 +12,29 @@
         <height>96</height>
         <texture>HUD/Notification.png</texture>
       </control>
-      <control type="label" id="401" description="Heading">
-        <top>6</top>
+      <control type="label" id="9000" description="Real label">
+        <top>3</top>
+        <left>30</left>
+        <width>930</width>
+        <height>60</height>
+        <align>left</align>
+				<label>$INFO[Control.GetLabel(401)]$INFO[Control.GetLabel(402),[COLOR=HL] • [/COLOR]]</label>
+      </control>
+			<control type="label" id="401" description="Heading">
+        <top>3</top>
         <left>0</left>
         <width>930</width>
         <height>60</height>
         <align>right</align>
-      </control>
-      <control type="label" description="Spacer">
-        <top>6</top>
-        <centerleft>960</centerleft>
-        <width>40</width>
-        <height>60</height>
-        <align>center</align>
-        <textcolor>HL</textcolor>
-        <label>•</label>
+				<font>-</font>
       </control>
       <control type="label" id="402" description="Message">
-        <top>6</top>
+        <top>3</top>
         <right>0</right>
         <width>930</width>
         <height>60</height>
         <align>left</align>
+				<font>-</font>
       </control>
     </control>
   </controls>
