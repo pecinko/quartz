@@ -3,7 +3,6 @@
   <defaultcontrol>-</defaultcontrol>
   <animation effect="fade" time="500">WindowOpen</animation>
   <animation effect="fade" time="300">WindowClose</animation>
-  <onunload>Dialog.close(all,true)</onunload>
   <controls>
     <control type="group" id="0">
       <visible>!Window.IsActive(DialogFullscreenInfo.xml)</visible>
