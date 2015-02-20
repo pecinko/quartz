@@ -375,8 +375,10 @@
       <posy>404</posy>
       <width>819</width>
       <height>84</height>
-      <!--<texture border="4">img/SettingsButtonFO.png</texture>-->
-      <texture border="9">img/MediaButton2.png</texture>
+      <texture border="36">focus/FrameFO.png</texture>
+      <bordersize>-27</bordersize>
+			<!--<texture border="4">img/SettingsButtonFO.png</texture>-->
+      <!--<texture border="9">img/MediaButton2.png</texture>-->
       <aspectratio>stretch</aspectratio>
     </control>
   </include>
@@ -387,9 +389,10 @@
       <posy>330</posy>
       <width>807</width>
       <height>117</height>
-      <!--<texture border="36">focus/FrameFO.png</texture>-->
-      <!--<texture border="4">img/SettingsButtonFO.png</texture>-->
-      <texture border="9">img/MediaButton2.png</texture>
+      <texture border="36">focus/FrameFO.png</texture>
+      <bordersize>-27</bordersize>
+			<!--<texture border="4">img/SettingsButtonFO.png</texture>-->
+      <!--<texture border="9">img/MediaButton2.png</texture>-->
       <aspectratio>stretch</aspectratio>
     </control>
   </include>
@@ -483,10 +486,10 @@
   <include name="Watched_Marks51">
     <control type="image">
       <visible>Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Movies) | Container.Content(episodes)</visible>
-      <posx>15</posx>
+      <posx>6</posx>
       <posy>0</posy>
       <height>111</height>
-      <width>18</width>
+      <width>27</width>
       <texture>$VAR[Overlay]</texture>
       <aspectratio>keep</aspectratio>
     </control>

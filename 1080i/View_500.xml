@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="View_500" description="All Video Views">
+    <control type="group" description="Fanart 3">
+      <visible>Control.IsVisible(500)</visible>
+      <control type="image" description="Line Split">
+        <top>645</top>
+        <centerleft>960</centerleft>
+        <width>2400</width>
+        <height>1</height>
+        <texture>img/Line.png</texture>
+        <aspectratio>stretch</aspectratio>
+      </control>
+      <control type="fixedlist" id="500" description="TOP Shortcuts">
+        <visible>Skin.HasSetting(AddViews)</visible>
+        <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <onleft>500</onleft>
+        <onright>500</onright>
+        <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
+        <posx>-183</posx>
+        <posy>690</posy>
+        <width>2286</width>
+        <height>402</height>
+        <orientation>horizontal</orientation>
+        <focusposition>4</focusposition>
+        <movement>3</movement>
+        <preloaditems>4</preloaditems>
+        <itemlayout condition="container.Content(Movies) | container.content(TVShows) | container.content(Seasons)" height="387" width="254">
+          <control type="image">
+            <posx>8</posx>
+            <posy>3</posy>
+            <width>222</width>
+            <height>333</height>
+            <texture border="12">img/ThumbBorder.png</texture>
+            <bordersize>-9</bordersize>
+          </control>
+          <control type="image" description="Thumb">
+            <posx>8</posx>
+            <posy>3</posy>
+            <width>222</width>
+            <height>333</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>scale</aspectratio>
+          </control>
+          <control type="image">
+            <posx>195</posx>
+            <posy>297</posy>
+            <width>30</width>
+            <height>30</height>
+            <texture>$VAR[Overlay]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+        </itemlayout>
+        <focusedlayout condition="container.Content(Movies) | container.content(TVShows) | container.content(Seasons)" height="387" width="254">
+          <control type="image">
+            <posx>8</posx>
+            <posy>3</posy>
+            <width>222</width>
+            <height>333</height>
+            <texture border="12">img/ThumbBorder.png</texture>
+            <bordersize>-9</bordersize>
+          </control>
+          <control type="image" description="Thumb">
+            <posx>8</posx>
+            <posy>3</posy>
+            <width>222</width>
+            <height>333</height>
+            <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+            <aspectratio>scale</aspectratio>
+          </control>
+          <control type="image">
+            <posx>195</posx>
+            <posy>297</posy>
+            <width>30</width>
+            <height>30</height>
+            <texture>$VAR[Overlay]</texture>
+            <aspectratio>keep</aspectratio>
+          </control>
+        </focusedlayout>
+      </control>
+      <control type="image">
+        <visible>Control.HasFocus(500)</visible>
+        <include>VisibleFadeEffect</include>
+        <posx>816</posx>
+        <posy>669</posy>
+        <width>272</width>
+        <height>384</height>
+        <texture border="36">focus/FrameFO.png</texture>
+        <bordersize>-9</bordersize>
+        <aspectratio>stretch</aspectratio>
+        <animation condition="Container(500).Position(1)" effect="slide" start="0,0" end="-762,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(2)" effect="slide" start="0,0" end="-508,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(3)" effect="slide" start="0,0" end="-254,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(4)" effect="slide" start="0,0" end="0,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(5)" effect="slide" start="0,0" end="254,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(6)" effect="slide" start="0,0" end="508,0" time="220" easing="inout" reversible="true">Conditional</animation>
+        <animation condition="Container(500).Position(7)" effect="slide" start="0,0" end="762,0" time="220" easing="inout" reversible="true">Conditional</animation>
+      </control>
+      <control type="group" description="Media Info">
+        <left>82</left>
+        <top>162</top>
+        <control type="label" description="Item Title">
+          <top>96</top>
+          <font>size22B</font>
+          <textcolor>HL</textcolor>
+          <width>789</width>
+          <include>Genre51Commons</include>
+          <info>ListItem.Label</info>
+        </control>
+        <control type="label" description="MPAA">
+          <top>157</top>
+          <height>33</height>
+          <width>1100</width>
+          <include>Genre500Commons</include>
+          <label>$INFO[ListItem.MPAA]</label>
+        </control>
+        <control type="label" description="Details">
+          <top>198</top>
+          <height>33</height>
+          <width>1100</width>
+          <include>Genre500Commons</include>
+          <label>$VAR[500TopLabel]$VAR[Trailer, • ]</label>
+        </control>
+        <control type="label" description="Genre">
+          <top>236</top>
+          <width>1100</width>
+          <include>Genre500Commons</include>
+          <label>$INFO[ListItem.Genre]</label>
+        </control>
+				<control type="textbox" description="Plot">
+          <top>290</top>
+          <posx>0</posx>
+          <width>1200</width>
+          <height>170</height>
+					<align>left</align>
+          <label>$VAR[Plots]</label>
+        </control>
+      </control>
+      <!--<control type="image">
+              <left>72</left>
+			  <top>90</top>
+			  <width>363</width>
+              <height>534</height>
+              <aspectratio align="left" aligny="bottom">keep</aspectratio>
+              <include>Icon_Fade</include>
+			  <texture>$INFO[Container(500).ListItem.Art(thumb)]</texture>
+				<bordertexture border="12">img/ThumbBorder.png</bordertexture>
+        <bordersize>9</bordersize>
+			 </control>-->
+      <!--<control type="group" description="Right">
+          <posx>1020</posx>
+          <posy>30</posy>
+          <control type="grouplist">
+            <posx>0</posx>
+            <posy>90</posy>
+            <width>auto</width>
+            <height>33</height>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>30</itemgap>
+            
+            <control type="image">
+              <include>3D_Badge_visibility</include>
+              <width>40</width>
+              <height>39</height>
+              <aspectratio>keep</aspectratio>
+              <texture>$VAR[3D_badge_texture]</texture>
+            </control>
+          </control>
+          <control type="grouplist">
+            <posx>0</posx>
+            <posy>130</posy>
+            <width>auto</width>
+            <height>33</height>
+            <orientation>horizontal</orientation>
+            <align>left</align>
+            <itemgap>30</itemgap>
+            <control type="label" description="Details">
+              <height>33</height>
+              <width max="735">auto</width>
+              <include>Genre500Commons</include>
+              <label>[COLOR=Grey]$LOCALIZE[33029]:[/COLOR] $VAR[500TopLabel]$VAR[Trailer, • ]</label>
+            </control>
+            <control type="image">
+              <visible>IntegerGreaterThan(ListItem.VideoResolution,700)</visible>
+              <width>40</width>
+              <height>39</height>
+              <aspectratio>keep</aspectratio>
+              <texture>$INFO[ListItem.VideoResolution,badges/,.png]</texture>
+            </control>
+          </control>
+          <control type="label" description="Genre">
+            <posy>171</posy>
+            <include>Genre500Commons</include>
+            <label>[COLOR=Grey]$LOCALIZE[515]:[/COLOR] $INFO[ListItem.Genre]</label>
+          </control>
+        </control>-->
+      
+    </control>
+  </include>
+</includes>

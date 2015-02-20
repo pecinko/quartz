@@ -89,8 +89,8 @@
   </include>
   <include name="TV_RA_Items">
     <!--<content target="video">videodb://recentlyaddedepisodes/</content>-->
-    <content target="video">special://skin/playlists/episodes.xsp</content>
-    <!--<content target="video">plugin://service.quartz.tvshelf/?reload=$INFO[Window.Property(recentepisodes)</content>-->
+    <!--<content target="video">special://skin/playlists/episodes.xsp</content>-->
+    <content target="video">plugin://service.quartz.tvshelf/?reload=$INFO[Window.Property(recentepisodes)</content>
   </include>
   <include name="TV_Custom_Items">
     <content>

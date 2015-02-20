@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="View_58" description="Banner Views only">
+    <control type="group" description="Banner Fanart 58">
+      <visible>Control.IsVisible(58)</visible>
+      <control type="group" description="Furniture">
+        
+        <control type="group" description="Faded Info thumbs">
+          <posx>-243</posx>
+          <posy>525</posy>
+          <control type="group" description="Banners">
+            <posy>105</posy>
+            <control type="image" description="Thumb">
+              <posx>357</posx>
+              <posy>12</posy>
+              <width>756</width>
+              <height>135</height>
+              <include>Icon_Fade</include>
+              <texture background="true">$VAR[Banner]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image" description="Icon">
+              <visible>IsEmpty(ListItem.Thumb)</visible>
+              <posx>357</posx>
+              <posy>0</posy>
+              <width>756</width>
+              <height>330</height>
+              <include>Icon_Fade</include>
+              <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
+              <aspectratio>keep</aspectratio>
+            </control>
+          </control>
+        </control>
+        <control type="group" description="Media info">
+          <posx>112</posx>
+          <posy>27</posy>
+          <control type="group">
+            <posx>0</posx>
+            <posy>663</posy>
+            <control type="textbox" description="Plot51">
+              <posx>0</posx>
+              <posy>99</posy>
+              <width>758</width>
+              <height>129</height>
+              <font>size20</font>
+              <align>justify</align>
+              <aligny>bottom</aligny>
+              <autoscroll delay="8000" time="4300" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+              <label>$VAR[Plots]</label>
+            </control>
+            <control type="label" description="1 Bottom Label">
+              <posy>243</posy>
+              <include>Genre51Commons</include>
+              <label>$INFO[ListItem.Genre]</label>
+            </control>
+            <control type="label" description="2 bottom Label">
+              <posy>285</posy>
+              <include>Genre51Commons</include>
+              <label>$VAR[TopLabel]</label>
+            </control>
+          </control>
+        </control>
+      </control>
+      <control type="group" description="Slider and Container">
+        <animation effect="slide" start="0,0" end="0,-162" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
+        <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
+        <posx>1020</posx>
+        <posy>627</posy>
+        <control type="group" description="Slider">
+          <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="930,225" time="300" reversible="true">Conditional</animation>
+          <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
+          <include>Slider4</include>
+          <animation condition="Container(58).Position(0)" effect="slide" start="0,0" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(1)" effect="slide" start="0,0" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(2)" effect="slide" start="0,0" end="0,-243" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(3)" effect="slide" start="0,0" end="0,-162" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(4)" effect="slide" start="0,0" end="0,-81" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(5)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(6)" effect="slide" start="0,0" end="0,81" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(7)" effect="slide" start="0,0" end="0,162" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(8)" effect="slide" start="0,0" end="0,243" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(9)" effect="slide" start="0,0" end="0,324" time="180" easing="inout" reversible="true">Conditional</animation>
+          <animation condition="Container(58).Position(10)" effect="slide" start="0,0" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
+        </control>
+        <control type="fixedlist" id="58">
+          <visible>container.content(TVshows)</visible>
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>802</width>
+          <height>405</height>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">60</onright>
+          <onup>58</onup>
+          <ondown>58</ondown>
+          <pagecontrol>60</pagecontrol>
+          <viewtype label="$LOCALIZE[20445] 2">Fanart 2 Banners</viewtype>
+          <focusposition>2</focusposition>
+          <movement>2</movement>
+          <preloaditems>4</preloaditems>
+          
+          <itemlayout width="802" height="81">
+            <include>Watched_Marks</include>
+            <include>Unwatched_Badge</include>
+            <control type="label" description="Main Label">
+              <include>52MainLabel</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+          </itemlayout>
+          <focusedlayout width="802" height="81">
+            <include>Watched_Marks</include>
+            <include>Unwatched_BadgeFO</include>
+            <control type="label" description="Main Label">
+              <include>52MainLabelFO</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+          </focusedlayout>
+        </control>
+      </control>
+      
+    </control>
+  </include>
+</includes>

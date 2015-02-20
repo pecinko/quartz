@@ -12,18 +12,23 @@
   <include file="Includes_Variables.xml" />
   <include file="defaults.xml" />
   <include file="CommonViews.xml" />
-  <include file="View_Videos.xml" />
-  <include file="View_Banners.xml" />
+  <include file="View_50.xml" />
+	<include file="View_51.xml" />
+	<include file="View_52.xml" />
+	<include file="View_53.xml" />
+	<include file="View_54.xml" />
+	<include file="View_55.xml" />
+	<include file="View_56.xml" />
+	<include file="View_58.xml" />
+	<include file="View_500.xml" />
+	<include file="View_501.xml" />
+	<include file="View_502.xml" />
+	<include file="View_510.xml" />
   <include file="View_LiveTV.xml" />
   <include file="View_PVR.xml" />
   <include file="Includes_Home.xml" />
   <include file="Includes_Shelf.xml" />
   <include file="Includes_Shelf_Items.xml" />
-  <include file="Includes_WP10DayForecast.xml" />
-  <include file="Includes_WP36HourForecast.xml" />
-  <include file="Includes_WPWeekendForecast.xml" />
-  <include file="Includes_WPHourlyForecast.xml" />
-  <include file="Includes_WPMapsVideo.xml" />
   <include name="FullBackground">
     <control type="image" description="Fanart">
       <visible>Window.IsActive(MyPics.xml) + !Container.Content(addons)</visible>
@@ -53,8 +58,8 @@
       <width>100%</width>
       <height>100%</height>
       <aspectratio>stretch</aspectratio>
-      <texture>img/BaseBGD.png</texture>
-      <colordiffuse>Overlay</colordiffuse>
+      <texture>img/BGOverlay.png</texture>
+			<colordiffuse>Overlay</colordiffuse>
     </control>
     <control type="image">
       <visible>Control.IsVisible(56)</visible>

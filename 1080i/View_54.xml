@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <include name="View_54" description="All Video Views">
+    <control type="group" description="Infolist 2 - Movies are animated">
+      <visible>Control.IsVisible(54)</visible>
+      <control type="group" description="Movies Section">
+        <visible>Container.Content(Movies)</visible>
+        <control type="group" description="Fanart">
+          <posx>114</posx>
+          <posy>85</posy>
+          <control type="image" description="Thumb">
+            <posx>-6</posx>
+            <posy>0</posy>
+            <width>774</width>
+            <height>441</height>
+            <include>Fanart_Fade</include>
+            <texture background="true">$VAR[Fanart.Thumb]</texture>
+            <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+            <bordersize>9</bordersize>
+            <aspectratio aligny="bottom">keep</aspectratio>
+          </control>
+        </control>
+        <control type="group" description="Media info">
+          <posx>112</posx>
+          <posy>-120</posy>
+          <control type="group" description="Media info Top">
+            <posx>0</posx>
+            <posy>690</posy>
+            <control type="label" description="Main Label">
+              <width>750</width>
+              <font>size22B</font>
+              <textcolor>HL</textcolor>
+              <include>Genre51Commons</include>
+              <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="image">
+              <posx>0</posx>
+              <posy>46</posy>
+              <height>1</height>
+              <width>758</width>
+              <texture>img/LineST.png</texture>
+            </control>
+            <control type="textbox" description="Plot51">
+              <height>249</height>
+              <include>Plot51Commons</include>
+              <label fallback="31979">$VAR[Plots]</label>
+            </control>
+            <control type="image">
+              <posx>0</posx>
+              <posy>308</posy>
+              <height>1</height>
+              <width>758</width>
+              <texture>img/LineST.png</texture>
+            </control>
+          </control>
+          <control type="group" description="Media Info Bottom">
+            <posx>0</posx>
+            <posy>921</posy>
+            <control type="label" description="MPAA">
+              <posy>90</posy>
+              <textcolor>White</textcolor>
+              <include>Genre51Commons</include>
+              <label>$INFO[ListItem.MPAA]</label>
+            </control>
+            <control type="grouplist">
+              <posx>0</posx>
+              <posy>130</posy>
+              <width>auto</width>
+              <height>33</height>
+              <orientation>horizontal</orientation>
+              <align>left</align>
+              <itemgap>30</itemgap>
+              <control type="label" description="Details">
+                <textcolor>White</textcolor>
+                <height>33</height>
+                <width max="735">auto</width>
+                <include>Genre51Commons</include>
+                <label>$VAR[500TopLabel]$VAR[Trailer, • ]</label>
+              </control>
+            </control>
+            <control type="label" description="Genre">
+              <posy>171</posy>
+              <include>Genre51Commons</include>
+              <label>$INFO[ListItem.Genre]</label>
+            </control>
+          </control>
+        </control>
+      </control>
+      <control type="group" description="NON Movies section">
+        <visible>!container.content(movies)</visible>
+        <animation effect="fade" time="400">Visible</animation>
+        <animation effect="fade" time="0">Hidden</animation>
+        <posx>112</posx>
+        <posy>-81</posy>
+        <control type="group" description="FA">
+          <posy>195</posy>
+          <posx>0</posx>
+          <control type="image" description="Thumb">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>756</width>
+            <height>426</height>
+            <include>Icon_Fade</include>
+            <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+            <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+            <bordersize>9</bordersize>
+          </control>
+        </control>
+        <control type="group" description="Media info Top">
+          <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
+          <posx>0</posx>
+          <posy>702</posy>
+          <control type="label" description="Main Label">
+            <width>750</width>
+            <font>size22B</font>
+            <textcolor>HL</textcolor>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>46</posy>
+            <height>1</height>
+            <width>758</width>
+            <texture>img/LineST.png</texture>
+          </control>
+          <control type="textbox" description="Plot51">
+            <height>213</height>
+            <include>Plot51Commons</include>
+            <label>$VAR[Plots]</label>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>266</posy>
+            <height>1</height>
+            <width>758</width>
+            <texture>img/LineST.png</texture>
+          </control>
+        </control>
+        <control type="group" description="Media Info Bottom">
+          <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
+          <posx>0</posx>
+          <posy>891</posy>
+          <control type="label" description="MPAA">
+            <posy>90</posy>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.MPAA]</label>
+          </control>
+          <control type="label" description="Genre">
+            <visible>!container.content(episodes)</visible>
+            <posy>130</posy>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.Genre]</label>
+          </control>
+          <control type="label" description="Genre">
+            <visible>container.content(episodes)</visible>
+            <posy>130</posy>
+            <include>Genre51Commons</include>
+            <label>$INFO[ListItem.Rating]</label>
+          </control>
+          <control type="label" description="Details">
+            <posy>171</posy>
+            <include>Genre51Commons</include>
+            <label>$VAR[500TopLabel]</label>
+          </control>
+        </control>
+        <control type="group">
+          <visible>Container.Content(MusicVideos)</visible>
+          <include>MusicInfo</include>
+        </control>
+        <control type="group">
+          <visible>![Container.Content(MusicVideos) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+          <include>DefaultMediaInfo</include>
+        </control>
+      </control>
+      <control type="group" description="Slider and List">
+        <include>LargeListItemCount</include>
+        <posx>1020</posx>
+        <posy>141</posy>
+        <control type="fixedlist" id="54">
+          <visible>container.content(files) | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>802</width>
+          <height>888</height>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
+          <onup>54</onup>
+          <ondown>54</ondown>
+          <viewtype label="$LOCALIZE[544] 2">Media info 2</viewtype>
+          <focusposition>3</focusposition>
+          <movement>4</movement>
+          <preloaditems>4</preloaditems>
+          <include>LargeListMoviesLayout</include>
+          <include>LargeListMVideosEpisodesLayout</include>
+          <include>LargeListFilesLayout</include>
+          <include>LargeListSeasonsTVPostersLayout</include>
+        </control>
+        <include>LargeListSlider</include>
+      </control>
+    </control>
+  </include>
+</includes>
