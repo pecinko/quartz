@@ -18,8 +18,8 @@
 	<include file="View_53.xml" />
 	<include file="View_54.xml" />
 	<include file="View_55.xml" />
-	<include file="View_56.xml" />
-	<include file="View_58.xml" />
+	<!--<include file="View_56.xml" />-->
+	<!--<include file="View_58.xml" />-->
 	<include file="View_500.xml" />
 	<include file="View_501.xml" />
 	<include file="View_502.xml" />

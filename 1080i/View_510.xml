@@ -4,7 +4,6 @@
     <control type="group" description="Fanart 3">
       <visible>Control.IsVisible(510)</visible>
       <control type="fixedlist" id="510" description="Fanart 3 for episodes and files">
-        <visible>Skin.HasSetting(AddViews)</visible>
         <visible>![Container.content(movies) | container.content(seasons) | container.content(tvshows)]</visible>
         <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
         <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>

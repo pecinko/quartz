@@ -14,8 +14,9 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
+          <pagecontrol>60</pagecontrol>
+					<onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">9001</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <viewtype label="535">List</viewtype>

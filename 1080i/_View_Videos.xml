@@ -1783,7 +1783,6 @@
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="fixedlist" id="500" description="TOP Shortcuts">
-        <visible>Skin.HasSetting(AddViews)</visible>
         <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
         <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>

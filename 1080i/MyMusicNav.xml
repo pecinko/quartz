@@ -180,7 +180,6 @@
           </control>
         </control>
 				<control type="panel" id="53" description="Panel">
-          <visible>Skin.HasSetting(AddViews)</visible>
           <visible>Container.Content(Albums) | Container.Content(Addons)</visible>
           <viewtype label="536">Icons</viewtype>
           <posx>60</posx>
@@ -402,7 +401,6 @@
           <animation condition="Container(57).Position(10)" effect="slide" start="0,0" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
         </control>
         <control type="fixedlist" id="57">
-          <visible>Skin.HasSetting(AddViews)</visible>
           <visible>container.content(songs)</visible>
           <posx>0</posx>
           <posy>0</posy>
@@ -469,7 +467,6 @@
           <animation condition="Container.Position(10)" effect="slide" start="0,0" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
         </control>
         <control type="fixedlist" id="58">
-          <visible>Skin.HasSetting(AddViews)</visible>
           <visible>container.content(albums)</visible>
           <posx>0</posx>
           <posy>0</posy>
@@ -525,7 +522,6 @@
     <control type="group">
       <visible>Control.IsVisible(500)</visible>
       <control type="fixedlist" id="500" description="Fanart 3">
-        <visible>Skin.HasSetting(AddViews)</visible>
         <visible>Container.content(albums) | container.content(songs) | container.content(artists)</visible>
         <onup>9000</onup>
         <ondown>9000</ondown>
@@ -606,7 +602,6 @@
     <control type="group">
       <visible>Control.IsVisible(510)</visible>
       <control type="fixedlist" id="510" description="Fanart 3">
-        <visible>Skin.HasSetting(AddViews)</visible>
         <visible>![Container.content(albums) | container.content(songs) | container.content(artists)]</visible>
         <onup>9000</onup>
         <ondown>9000</ondown>
@@ -739,13 +734,6 @@
         </control>
       </control>
     </control>
-    <control type="group">
-      <include>MediaHeader</include>
-      <control type="label" description="Heading">
-        <visible>IsEmpty(Container.FolderName)</visible>
-        <include>HeadingR</include>
-        <label>2</label>
-      </control>
-    </control>
+    
   </controls>
 </window>

@@ -92,7 +92,6 @@
           </control>
         </control>
 				<control type="panel" id="53" description="Grid">
-          <visible>Skin.HasSetting(AddViews)</visible>
           <viewtype label="536">Icons</viewtype>
           <posx>60</posx>
           <posy>210</posy>

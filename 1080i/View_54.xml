@@ -183,9 +183,10 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
-          <onup>54</onup>
+          <pagecontrol>60</pagecontrol>
+					<onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">9001</onright>
+					<onup>54</onup>
           <ondown>54</ondown>
           <viewtype label="$LOCALIZE[544] 2">Media info 2</viewtype>
           <focusposition>3</focusposition>

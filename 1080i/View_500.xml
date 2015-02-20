@@ -12,11 +12,11 @@
         <aspectratio>stretch</aspectratio>
       </control>
       <control type="fixedlist" id="500" description="TOP Shortcuts">
-        <visible>Skin.HasSetting(AddViews)</visible>
         <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
-        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
-        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
-        <onleft>500</onleft>
+        <pagecontrol>60</pagecontrol>
+				<onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="Skin.HasSetting(Scrollbars_Active)">9003</ondown>
+				<onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
         <posx>-183</posx>

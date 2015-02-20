@@ -148,18 +148,18 @@
             <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
             <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
           </item>-->
-          <!--<item id="4" description="Scrollbars">
+          <item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
-			<label>$LOCALIZE[31999]</label>
-            <label2>$LOCALIZE[31998]</label2>
+						<label>$LOCALIZE[31999]</label>
+            <label2>$LOCALIZE[107]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
           </item>
 		  <item id="4" description="Scrollbars">
             <visible>!Skin.HasSetting(Scrollbars_Active)</visible>
-			<label>$LOCALIZE[31999]</label>
-            <label2>$LOCALIZE[31997]</label2>
+						<label>$LOCALIZE[31999]</label>
+            <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(Scrollbars_Active)</onclick>
-          </item>-->
+          </item>
           <item id="5" description="Options dialog">
             <visible>Skin.HasSetting(ViewOptions_Hide)</visible>
 			<label>$LOCALIZE[31996]</label>
@@ -184,7 +184,7 @@
             <label2>$LOCALIZE[31991]</label2>
             <onclick>Skin.ToggleSetting(PostersHide)</onclick>
           </item>-->
-          <item id="7" description="Additional view modes">
+          <!--<item id="7" description="Additional view modes">
             <visible>Skin.HasSetting(AddViews)</visible>
 			<label>31993</label>
             <label2>305</label2>
@@ -195,7 +195,7 @@
 			<label>31993</label>
             <label2>1223</label2>
             <onclick>Skin.ToggleSetting(AddViews)</onclick>
-          </item>
+          </item>-->
           <item id="8" description="Home screen categories">
             <label>31990</label>
             <onclick>ActivateWindow(1116)</onclick>

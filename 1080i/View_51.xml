@@ -14,9 +14,10 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
-          <onup>51</onup>
+          <pagecontrol>60</pagecontrol>
+					<onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">9001</onright>
+					<onup>51</onup>
           <ondown>51</ondown>
           <viewtype label="537">Big List 51</viewtype>
           <focusposition>3</focusposition>

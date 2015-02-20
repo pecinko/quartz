@@ -4,9 +4,6 @@
     <control type="group" description="Panel view">
       <visible>Control.IsVisible(502)</visible>
       <control type="group" description="Frames">
-        <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
-        <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
-        <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
         <control type="image" description="Posters">
           <posx>842</posx>
           <posy>69</posy>
@@ -33,9 +30,10 @@
           <width>1062</width>
           <height>960</height>
           <orientation>vertical</orientation>
-          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
-          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
-          <onup>502</onup>
+          <pagecontrol>60</pagecontrol>
+					<onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="Skin.HasSetting(Scrollbars_Active)">9001</onright>
+					<onup>502</onup>
           <ondown>502</ondown>
           <preloaditems>4</preloaditems>
           <pagecontrol>60</pagecontrol>

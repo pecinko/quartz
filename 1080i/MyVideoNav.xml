@@ -16,13 +16,73 @@
 			<include>View_53</include>
 			<include>View_54</include>
 			<include>View_55</include>
-			<include>View_56</include>
-			<include>View_58</include>
 			<include>View_500</include>
 			<include>View_501</include>
 			<include>View_502</include>
 			<include>View_510</include>
     </control>
+		<control type="button" id="9001">
+        <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
+				<centerleft>1400</centerleft>
+        <centertop>540</centertop>
+        <width>201</width>
+        <height>210</height>
+        <texturenofocus>-</texturenofocus>
+				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>Scroll</font>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>PageUp(60)</onup>
+				<ondown>PageDown(60)</ondown>
+				<onclick>Control.SetFocus(50)</onclick>
+				<onback>Control.SetFocus(50)</onback>
+				<align>center</align>
+		  </control>
+			<control type="button" id="9002">
+        <visible allowhiddenfocus="true">Control.HasFocus(9002)</visible>
+				<centerleft>960</centerleft>
+        <centertop>750</centertop>
+        <width>201</width>
+        <height>210</height>
+        <texturenofocus>-</texturenofocus>
+				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>Scroll</font>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<onleft>PageUp(60)</onleft>
+				<onright>PageDown(60)</onright>
+				<onclick>Control.SetFocus(50)</onclick>
+				<onback>Control.SetFocus(50)</onback>
+				<align>center</align>
+		  </control>
+			<control type="button" id="9003">
+        <visible allowhiddenfocus="true">Control.HasFocus(9003)</visible>
+				<centerleft>960</centerleft>
+        <centertop>540</centertop>
+        <width>201</width>
+        <height>210</height>
+        <texturenofocus>-</texturenofocus>
+				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<label>$INFO[ListItem.SortLetter]</label>
+				<font>Scroll</font>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<onleft>PageUp(60)</onleft>
+				<onright>PageDown(60)</onright>
+				<onclick>Control.SetFocus(50)</onclick>
+				<onback>Control.SetFocus(50)</onback>
+				<align>center</align>
+		  </control>
+			<control type="scrollbar" id="60">
+        <posx>-500</posx>
+        <posy>147</posy>
+        <height>882</height>
+        <onleft>50</onleft>
+        <onright>noop</onright>
+      </control>
+			
     <control type="group" description="Side menu 9000 group">
       <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
       <include>DialogOpenCloseVisible</include>

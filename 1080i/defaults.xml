@@ -5,13 +5,11 @@
     <align>left</align>
     <aligny>center</aligny>
     <font>size22</font>
-    <scroll>false</scroll>
     <textcolor>White</textcolor>
     <shadowcolor>ShadowDark</shadowcolor>
     <focusedcolor>HL</focusedcolor>
     <selectedcolor>HL</selectedcolor>
     <disabledcolor>Disabled</disabledcolor>
-    <scroll>true</scroll>
     <scrollspeed>50</scrollspeed>
     <scrollsuffix> &#0000; </scrollsuffix>
   </default>
