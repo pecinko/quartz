@@ -412,13 +412,8 @@
         <onright>312</onright>
         <include>TVShortcutsCommons</include>
         <include condition="Skin.HasSetting(TVShelf_Custom)">TV_Custom_Items</include>
-        <include condition="!Skin.HasSetting(TVShelf_Custom)">TV_RA_Items</include>
-        
-        <!--<include condition="Skin.HasSetting(UseEpisodeThumbs) | Skin.HasSetting(TVShelf_Custom)">EpisodeShortcutsCommons</include>
-		<include condition="![Skin.HasSetting(UseEpisodeThumbs) | Skin.HasSetting(TVShelf_Custom)]">MoviesShortcutsCommons</include>-->
-        <!--<include condition="!Skin.HasSetting(UseWidgets)">TV_RA_Items</include>
-		<include condition="Skin.HasSetting(UseWidgets)">TV_Widgets_Items</include>-->
-        
+        <include condition="!Skin.HasSetting(TVShelf_Custom) + System.HasAddon(service.quartz.tvshelf)">TV_NextUp_Items</include>
+        <include condition="!Skin.HasSetting(TVShelf_Custom) + !System.HasAddon(service.quartz.tvshelf)">TV_Recent_Items</include>
       </control>
       <control type="image">
         <visible>Control.HasFocus(312) + Skin.HasSetting(TVShelf_Custom)</visible>
