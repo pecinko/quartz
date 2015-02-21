@@ -15,8 +15,8 @@
         <posx>0</posx>
         <posy>0</posy>
         <width>1920</width>
-        <height>60</height>
-        <texture>img/BlackDotST.png</texture>
+        <height>69</height>
+        <texture>OSD/OSDBackground.png</texture>
       </control>
       <control type="label" description="Clock">
         <posx>60</posx>
@@ -110,8 +110,7 @@
         <width>1920</width>
         <height>225</height>
         <aspectratio>stretch</aspectratio>
-        <!--<texture>VideoOSD/BGVideoOSD.png</texture>-->
-				<texture>img/BlackDotST.png</texture>
+        <texture>OSD/OSDBackground.png</texture>
       </control>
     </control>
     <control type="group">

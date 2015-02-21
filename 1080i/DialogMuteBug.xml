@@ -2,14 +2,21 @@
 <window>
   <include>OpenClose</include>
   <controls>
+    <control type="image">
+      <right>45</right>
+      <top>42</top>
+      <width>111</width>
+      <height>111</height>
+      <texture border="24">HUD/HUDBackground.png</texture>
+    </control>
     <control type="image" id="901" description="Muted">
-      <top>-42</top>
-      <left>1672</left>
-      <width>318</width>
-      <height>306</height>
-      <bordersize>75</bordersize>
-	  <texture aligny="top" align="right">HUD/VolumeMuted.png</texture>
-	  <colordiffuse>HL</colordiffuse>
+      <top>48</top>
+      <right>45</right>
+      <width>111</width>
+      <height>111</height>
+      <bordersize>-15</bordersize>
+      <aspectratio align="right">keep</aspectratio>
+      <texture>HUD/VolumeMuted.png</texture>
     </control>
   </controls>
 </window>

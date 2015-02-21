@@ -17,8 +17,7 @@
             <posy>0</posy>
             <height>180</height>
             <width>1611</width>
-            <texture>img/BlackDotST.png</texture>
-						<!--<texture>OSD/OSDBackground.png</texture>-->
+            <texture>OSD/OSDBackground.png</texture>
           </control>
           <control type="group" id="100">
             <width>1185</width>
@@ -104,7 +103,7 @@
               <onleft>605</onleft>
               <onright>607</onright>
 							<onup>607</onup>
-              <onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+              <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
             </control>
             <!--<control type="button" id="607">
               <posx>1414</posx>
@@ -119,19 +118,17 @@
               <onright>1017</onright>
               <onclick>XBMC.ActivateWindow(124)</onclick>
             </control>-->
-            <control type="button" id="607">
+            <!--<control type="button" id="607">
               <posx>1470</posx>
               <posy>-19</posy>
               <width>90</width>
-          <height>98</height>
-		      <texturefocus colordiffuse="White2">VideoOSD/OSDOptionsFO.png</texturefocus>
+          		<height>98</height>
+		      		<texturefocus colordiffuse="White2">VideoOSD/OSDOptionsFO.png</texturefocus>
           		<texturenofocus colordiffuse="White2">VideoOSD/OSDOptionsNF.png</texturenofocus>
-		  		<!--<texturenofocus>OSD/VideoSettings.png</texturenofocus>
-              <texturefocus>OSD/VideoSettingsFocused.png</texturefocus>-->
-              <onleft>606</onleft>
+		  		    <onleft>606</onleft>
               <onright>600</onright>
               <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
-			</control>
+			</control>-->
           </control>
           <!--<control type="group" id="214">
             <width>1185</width>
