@@ -31,7 +31,7 @@
               <height>57</height>
               <texturenofocus>OSD/Stop.png</texturenofocus>
               <texturefocus>OSD/StopFocused.png</texturefocus>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onleft>607</onleft>
               <onright>601</onright>
               <onclick>XBMC.PlayerControl(Stop)</onclick>
@@ -42,7 +42,7 @@
               <height>57</height>
               <texturenofocus>OSD/SkipBack.png</texturenofocus>
               <texturefocus>OSD/SkipBackFocused.png</texturefocus>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onleft>600</onleft>
               <onright>602</onright>
               <onclick>XBMC.PlayerControl(Previous)</onclick>
@@ -55,7 +55,7 @@
               <texturefocus>OSD/RewindFocused.png</texturefocus>
               <onleft>601</onleft>
               <onright>603</onright>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onclick>XBMC.PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="603">
@@ -69,7 +69,7 @@
               <alttexturefocus>OSD/PauseFocused.png</alttexturefocus>
               <onleft>602</onleft>
               <onright>604</onright>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onclick>XBMC.PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="604">
@@ -80,7 +80,7 @@
               <texturefocus>OSD/FastForwardFocused.png</texturefocus>
               <onleft>603</onleft>
               <onright>605</onright>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onclick>XBMC.PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="605">
@@ -91,7 +91,7 @@
               <texturefocus>OSD/SkipForwardFocused.png</texturefocus>
               <onleft>604</onleft>
               <onright>606</onright>
-              <onup>607</onup>
+              <onup>606</onup>
 							<onclick>XBMC.PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="606">
@@ -102,7 +102,7 @@
               <texturefocus>OSD/DVDFocused.png</texturefocus>
               <onleft>605</onleft>
               <onright>607</onright>
-							<onup>607</onup>
+							<onup>606</onup>
               <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
             </control>
             <!--<control type="button" id="607">

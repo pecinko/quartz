@@ -32,25 +32,22 @@
       <control type="label" description="End time">
         <posx>60r</posx>
         <posy>0</posy>
-        <width>195</width>
+        <width>300</width>
         <height>60</height>
         <align>right</align>
         <aligny>center</aligny>
         <font>size18</font>
         <textcolor>Silver</textcolor>
-        <label>$INFO[Player.FinishTime,(,)]</label>
+        <label>[COLOR=FF636363]$LOCALIZE[31049]:[/COLOR] $INFO[Player.FinishTime]</label>
       </control>
-      <control type="label" description="Next item">
-        <visible>!IsEmpty(VideoPlayer.NextTitle)</visible>
-        <posx>300</posx>
-        <posy>1</posy>
-        <width>1320</width>
+      <control type="label" description="title">
+        <centerleft>960</centerleft>
+        <posy>0</posy>
+        <width>1200</width>
         <height>60</height>
         <align>center</align>
         <aligny>center</aligny>
-        <font>size17</font>
-        <textcolor>Silver</textcolor>
-        <label>$INFO[VideoPlayer.NextTitle,[COLOR=Grey]$LOCALIZE[209]:  [/COLOR]]</label>
+        <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=HL]  •  [/COLOR]]$INFO[VideoPlayer.Season,,.]$INFO[VideoPlayer.Episode,,[COLOR=HL]  •  [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
       </control>
     </control>
     <control type="group">
@@ -114,7 +111,7 @@
       </control>
     </control>
     <control type="group">
-      <posy>1028</posy>
+      <posy>1014</posy>
       <!--<control type="image" description="Real Background">
         <posx>299</posx>
         <posy>6</posy>
@@ -189,7 +186,7 @@
       </control>
     </control>
     <control type="group">
-      <posy>1022</posy>
+      <posy>1008</posy>
       <posx>0</posx>
       <control type="image" description="Buffer icon">
         <visible>Player.Caching</visible>

@@ -91,7 +91,8 @@
     <content target="video">special://skin/playlists/episodes.xsp</content>
   </include>
 	<include name="TV_NextUp_Items">
-    <content target="video">plugin://service.quartz.tvshelf/?reload=$INFO[Window.Property(recentepisodes)]</content>
+    <!--<content target="video">plugin://service.quartz.tvshelf/?reload=$INFO[Window.Property(quartz_tvshelf)]</content>-->
+		<content target="video">plugin://service.quartz.tvshelf/,$INFO[Window.Property(quartz_tvshelf)]</content>
   </include>
   <include name="TV_Custom_Items">
     <content>

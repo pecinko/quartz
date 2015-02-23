@@ -37,7 +37,7 @@
   <string id="31046">Audio Properties</string>
   <string id="31047">Current Preset</string>
   <string id="31048">Visualization Presets</string>
-  <string id="31049">End Time</string>
+  <string id="31049">Ends</string><!--Time when currently playing video will end -->
 
 
   <!-- Playlist Editor labels -->

@@ -28,7 +28,7 @@
         <width>201</width>
         <height>210</height>
         <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>Scroll</font>
 				<onleft>50</onleft>
@@ -46,7 +46,7 @@
         <width>201</width>
         <height>210</height>
         <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>Scroll</font>
 				<onup>50</onup>
@@ -64,7 +64,7 @@
         <width>201</width>
         <height>210</height>
         <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/HUDBackground.png</texturefocus>
+				<texturefocus border="12">HUD/ScrollHorizontal.png</texturefocus>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<font>Scroll</font>
 				<onup>50</onup>

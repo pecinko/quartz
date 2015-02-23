@@ -3,14 +3,6 @@
   <include name="View_500" description="All Video Views">
     <control type="group" description="Fanart 3">
       <visible>Control.IsVisible(500)</visible>
-      <control type="image" description="Line Split">
-        <top>645</top>
-        <centerleft>960</centerleft>
-        <width>2400</width>
-        <height>1</height>
-        <texture>img/Line.png</texture>
-        <aspectratio>stretch</aspectratio>
-      </control>
       <control type="fixedlist" id="500" description="TOP Shortcuts">
         <visible>Container.content(movies) | container.content(seasons) | Container.content(tvshows)</visible>
         <pagecontrol>60</pagecontrol>
@@ -100,39 +92,39 @@
       </control>
       <control type="group" description="Media Info">
         <left>82</left>
-        <top>162</top>
+        <top>132</top>
         <control type="label" description="Item Title">
           <top>96</top>
           <font>size22B</font>
           <textcolor>HL</textcolor>
-          <width>789</width>
+          <width>900</width>
           <include>Genre51Commons</include>
           <info>ListItem.Label</info>
         </control>
         <control type="label" description="MPAA">
           <top>157</top>
           <height>33</height>
-          <width>1100</width>
+          <width>900</width>
           <include>Genre500Commons</include>
           <label>$INFO[ListItem.MPAA]</label>
         </control>
         <control type="label" description="Details">
           <top>198</top>
           <height>33</height>
-          <width>1100</width>
+          <width>900</width>
           <include>Genre500Commons</include>
           <label>$VAR[500TopLabel]$VAR[Trailer, • ]</label>
         </control>
         <control type="label" description="Genre">
           <top>236</top>
-          <width>1100</width>
+          <width>900</width>
           <include>Genre500Commons</include>
           <label>$INFO[ListItem.Genre]</label>
         </control>
 				<control type="textbox" description="Plot">
           <top>290</top>
           <posx>0</posx>
-          <width>1200</width>
+          <width>900</width>
           <height>170</height>
 					<align>left</align>
           <label>$VAR[Plots]</label>
