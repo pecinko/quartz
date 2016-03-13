@@ -182,18 +182,6 @@
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.mpaa)</visible>
                   </item>
-                  <item>
-                    <label>$LOCALIZE[561]:</label>
-                    <label2>$INFO[ListItem.FileName]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.FileName)</visible>
-                  </item>
-                  <item>
-                    <label>$LOCALIZE[573]:</label>
-                    <label2>[COLOR=Grey]$INFO[ListItem.Path][/COLOR]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.Path)</visible>
-                  </item>
                   <!--<item>
                 <label>-</label>
                 <label2>-</label2>

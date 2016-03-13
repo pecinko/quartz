@@ -180,11 +180,11 @@
   <include name="MediaHeader">
     <control type="label" description="Clock other windows">
       <visible>Skin.HasSetting(ShowClock)</visible>
-      <centerleft>960</centerleft>
-      <posy>12</posy>
+      <right>60</right>
+      <posy>26</posy>
       <width>500</width>
       <height>60</height>
-      <align>center</align>
+      <align>right</align>
       <aligny>center</aligny>
       <font>size22</font>
       <textcolor>Grey3</textcolor>

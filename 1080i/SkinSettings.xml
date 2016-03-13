@@ -327,43 +327,43 @@
         <texture>DefaultAddon.png</texture>
       </control>
       <control type="image" description="HomeMenu">
+        <visible>Container(50).HasFocus(4)</visible>
+        <animation effect="fade" time="200">VisibleChange</animation>
+        <posx>120</posx>
+        <posy>198</posy>
+        <width>660</width>
+        <height>684</height>
+        <aspectratio>keep</aspectratio>
+        <texture>help/Scrollbar.png</texture>
+      </control>
+      <control type="image" description="Menu">
         <visible>Container(50).HasFocus(4) + !Skin.HasSetting(Scrollbars_Active)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>
-        <posy>168</posy>
+        <posy>198</posy>
         <width>660</width>
-        <height>750</height>
+        <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/ScrollOFF.jpg</texture>
-      </control>
-      <control type="image" description="HomeMenu">
-        <visible>Container(50).HasFocus(4) + Skin.HasSetting(Scrollbars_Active)</visible>
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <posx>120</posx>
-        <posy>168</posy>
-        <width>660</width>
-        <height>750</height>
-        <aspectratio>keep</aspectratio>
-        <texture>help/ScrollON.jpg</texture>
+        <texture>help/ScrollbarOFF.png</texture>
       </control>
       <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>
-        <posy>348</posy>
+        <posy>198</posy>
         <width>660</width>
-        <height>384</height>
-        <aspectratio align="center" aligny="bottom">keep</aspectratio>
+        <height>684</height>
+        <aspectratio>keep</aspectratio>
         <texture>help/OptionsMenu.png</texture>
       </control>
       <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5) + Skin.HasSetting(ViewOptions_Hide)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>
-        <posy>348</posy>
+        <posy>198</posy>
         <width>660</width>
-        <height>384</height>
-        <aspectratio align="center" aligny="bottom">keep</aspectratio>
+        <height>684</height>
+        <aspectratio>keep</aspectratio>
         <texture>help/OptionsMenuOFF.png</texture>
       </control>
       <!--<control type="image" description="Menu">
