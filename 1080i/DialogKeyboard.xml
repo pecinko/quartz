@@ -395,7 +395,7 @@
               <control type="button" id="164">
                 <description>(3,4) button</description>
                 <onup>144</onup>
-                <ondown>45</ondown>
+                <ondown>32</ondown>
                 <include>KeyboardButtons</include>
               </control>
               <control type="button" id="165">
