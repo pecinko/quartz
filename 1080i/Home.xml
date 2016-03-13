@@ -418,9 +418,9 @@
             <visible>!Skin.HasSetting(XBMC0)</visible>
             <label>653</label>
             <onclick>CleanLibrary(Video)</onclick>
-              <onclick condition="Library.HasContent(Music)">CleanLibrary(Music)</onclick>
+            <onclick condition="Library.HasContent(Music)">CleanLibrary(Music)</onclick>
             <onclick>UpdateLibrary(Video)</onclick>
-              <onclick condition="Library.HasContent(Music)">UpdateLibrary(Music)</onclick>
+            <onclick condition="Library.HasContent(Music)">UpdateLibrary(Music)</onclick>
           </item>
           <item id="1" description="Now playing Video">
             <visible>Player.HasMedia</visible>
