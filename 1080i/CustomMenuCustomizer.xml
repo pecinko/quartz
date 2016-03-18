@@ -139,7 +139,7 @@
               <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
               <onclick>Skin.ToggleSetting(AddonsSectionHide)</onclick>
             </item>
-            <item id="1006" description="XBMC">
+            <item id="1006" description="KODI">
               <label fallback="KODI">$INFO[Skin.String(XBMCName)]</label>
               <onclick>noop</onclick>
             </item>

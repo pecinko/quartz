@@ -79,7 +79,7 @@
 
   <string id="31126">Songteksten in muziek-OSD inschakelen</string>
   <string id="31127">Pad naar songtekstscript</string>
-  <string id="31128">XBMC-songteksten</string>
+  <string id="31128">KODI-songteksten</string>
   <string id="31129">Downloaden ondertitels in video-OSD inschakelen</string>
   <string id="31130">Pad naar ondertitelscript</string>
   <string id="31131">Horizontaal home menu gebruiken</string>
@@ -149,11 +149,11 @@
   <string id="31402">[B]MUZIEKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw muziekbibliotheek · Configureer muziekafspeelopties en -bestandslijstopties · Configureer nummer indienen · Configureer karaokeopties</string>
   <string id="31403">[B]FOTO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer fotobestandslijstopties en diavoorstelling.</string>
   <string id="31404">[B]WEERINSTELLINGEN CONFIGUREREN[/B][CR][CR]Geef drie locaties op voor weersverwachtingen.</string>
-  <string id="31405">[B]NETWERKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer de controle van XBMC via UPnP en HTTP · Configureer delen van bestanden · Configureer internettoegang</string>
+  <string id="31405">[B]NETWERKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer de controle van KODI via UPnP en HTTP · Configureer delen van bestanden · Configureer internettoegang</string>
   <string id="31406">[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer en kalibreer schermgeluidsuitgang · Configureer invoerapparaten en energiebeheeropties · Schakel debugging in · Configureer vergrendelopties</string>
   <string id="31407">[B]SKININSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer de Confluence-skin · Voeg items toe aan of verwijder ze uit het beginscherm · Wijzig skinachtergronden</string>
-  <string id="31408">[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde Add-ons · Zoek en installeer Add-ons via xbmc.org · Wijzig Add-oninstellingen</string>
+  <string id="31408">[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde Add-ons · Zoek en installeer Add-ons via kodi.tv · Wijzig Add-oninstellingen</string>
 
-  <string id="31421">Selecteer uw XBMC-gebruikersprofiel[CR]om in te loggen</string>
+  <string id="31421">Selecteer uw KODI-gebruikersprofiel[CR]om in te loggen</string>
   <string id="31977">Volledig scherm afspeler</string>
 </strings>

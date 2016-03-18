@@ -101,22 +101,22 @@
             <label>$INFO[Skin.String(CustomMovies.5.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMovies.5.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut6">
+          <item id="8" description="Shortcut6">
             <visible>!IsEmpty(Skin.String(CustomMovies.6.Path))</visible>
             <label>$INFO[Skin.String(CustomMovies.6.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMovies.6.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut7">
+          <item id="9" description="Shortcut7">
             <visible>!IsEmpty(Skin.String(CustomMovies.7.Path))</visible>
             <label>$INFO[Skin.String(CustomMovies.7.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMovies.7.Path)]</onclick>
           </item>
-          <item id="8" description="Browse">
+          <item id="10" description="Browse">
             <visible>!Skin.HasSetting(Movies4)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
           </item>
-          <item id="9" description="Search">
+          <item id="11" description="Search">
             <visible>!Skin.HasSetting(Movies5)</visible>
             <visible>Library.HasContent(Movies)</visible>
             <label>137</label>
@@ -177,22 +177,22 @@
             <label>$INFO[Skin.String(CustomTV.5.Label)]</label>
             <onclick>$INFO[Skin.String(CustomTV.5.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut6">
+          <item id="8" description="Shortcut6">
             <visible>!IsEmpty(Skin.String(CustomTV.6.Path))</visible>
             <label>$INFO[Skin.String(CustomTV.6.Label)]</label>
             <onclick>$INFO[Skin.String(CustomTV.6.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut7">
+          <item id="9" description="Shortcut7">
             <visible>!IsEmpty(Skin.String(CustomTV.7.Path))</visible>
             <label>$INFO[Skin.String(CustomTV.7.Label)]</label>
             <onclick>$INFO[Skin.String(CustomTV.7.Path)]</onclick>
           </item>
-          <item id="8" description="Browse">
+          <item id="10" description="Browse">
             <visible>!Skin.HasSetting(TV3)</visible>
             <label>1024</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
           </item>
-          <item id="9" description="Search">
+          <item id="11" description="Search">
             <visible>!Skin.HasSetting(TV4)</visible>
             <visible>Library.HasContent(TVShows)</visible>
             <label>137</label>
@@ -230,47 +230,47 @@
             <label>744</label>
             <onclick>ActivateWindow(MusicFiles,root)</onclick>
           </item>
-          <item id="3" description="Party mode">
+          <item id="4" description="Party mode">
             <visible>!Skin.HasSetting(Music7) + Library.HasContent(music)</visible>
             <label>589</label>
             <onclick>PlayerControl(PartyMode(music))</onclick>
           </item>
-          <item id="3" description="Custom Music">
+          <item id="5" description="Custom Music">
             <visible>!IsEmpty(Skin.String(CustomMusic.1.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.1.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.1.Path)]</onclick>
           </item>
-          <item id="4" description="Shortcut2">
+          <item id="6" description="Shortcut2">
             <visible>!IsEmpty(Skin.String(CustomMusic.2.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.2.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.2.Path)]</onclick>
           </item>
-          <item id="5" description="Shortcut3">
+          <item id="7" description="Shortcut3">
             <visible>!IsEmpty(Skin.String(CustomMusic.3.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.3.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.3.Path)]</onclick>
           </item>
-          <item id="6" description="Shortcut4">
+          <item id="8" description="Shortcut4">
             <visible>!IsEmpty(Skin.String(CustomMusic.4.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.4.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.4.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut5">
+          <item id="9" description="Shortcut5">
             <visible>!IsEmpty(Skin.String(CustomMusic.5.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.5.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.5.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut6">
+          <item id="10" description="Shortcut6">
             <visible>!IsEmpty(Skin.String(CustomMusic.6.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.6.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.6.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut7">
+          <item id="11" description="Shortcut7">
             <visible>!IsEmpty(Skin.String(CustomMusic.7.Path))</visible>
             <label>$INFO[Skin.String(CustomMusic.7.Label)]</label>
             <onclick>$INFO[Skin.String(CustomMusic.7.Path)]</onclick>
           </item>
-          <item id="10" description="Search">
+          <item id="12" description="Search">
             <visible>!Skin.HasSetting(Music5) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</visible>
             <label>137</label>
             <onclick>ActivateWindow(MusicLibrary)</onclick>
@@ -287,42 +287,42 @@
         <ondown>noop</ondown>
         <include>Sublist</include>
         <content>
-          <item id="1" description="Pictures">
+          <item id="0" description="Pictures">
             <visible>!Skin.HasSetting(Pictures1)</visible>
             <label>1</label>
             <onclick>ActivateWindow(Pictures)</onclick>
           </item>
-          <item id="3" description="Custom Pictures">
+          <item id="1" description="Custom Pictures">
             <visible>!IsEmpty(Skin.String(CustomPictures.1.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.1.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.1.Path)]</onclick>
           </item>
-          <item id="4" description="Shortcut2">
+          <item id="2" description="Shortcut2">
             <visible>!IsEmpty(Skin.String(CustomPictures.2.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.2.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.2.Path)]</onclick>
           </item>
-          <item id="5" description="Shortcut3">
+          <item id="3" description="Shortcut3">
             <visible>!IsEmpty(Skin.String(CustomPictures.3.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.3.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.3.Path)]</onclick>
           </item>
-          <item id="6" description="Shortcut4">
+          <item id="4" description="Shortcut4">
             <visible>!IsEmpty(Skin.String(CustomPictures.4.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.4.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.4.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut5">
+          <item id="5" description="Shortcut5">
             <visible>!IsEmpty(Skin.String(CustomPictures.5.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.5.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.5.Path)]</onclick>
           </item>
-          <item id="8" description="Shortcut6">
+          <item id="6" description="Shortcut6">
             <visible>!IsEmpty(Skin.String(CustomPictures.6.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.6.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.6.Path)]</onclick>
           </item>
-          <item id="9" description="Shortcut7">
+          <item id="7" description="Shortcut7">
             <visible>!IsEmpty(Skin.String(CustomPictures.7.Path))</visible>
             <label>$INFO[Skin.String(CustomPictures.7.Label)]</label>
             <onclick>$INFO[Skin.String(CustomPictures.7.Path)]</onclick>
@@ -375,32 +375,32 @@
             <label>5</label>
             <onclick>ActivateWindow(AddonBrowser,root)</onclick>
           </item>
-          <item id="3" description="Custom Apps">
+          <item id="7" description="Custom Apps">
             <visible>!IsEmpty(Skin.String(CustomAddons.1.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.1.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.1.Path)]</onclick>
           </item>
-          <item id="4" description="Shortcut2">
+          <item id="8" description="Shortcut2">
             <visible>!IsEmpty(Skin.String(CustomAddons.2.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.2.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.2.Path)]</onclick>
           </item>
-          <item id="5" description="Shortcut3">
+          <item id="9" description="Shortcut3">
             <visible>!IsEmpty(Skin.String(CustomAddons.3.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.3.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.3.Path)]</onclick>
           </item>
-          <item id="6" description="Shortcut4">
+          <item id="10" description="Shortcut4">
             <visible>!IsEmpty(Skin.String(CustomAddons.4.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.4.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.4.Path)]</onclick>
           </item>
-          <item id="7" description="Shortcut5">
+          <item id="11" description="Shortcut5">
             <visible>!IsEmpty(Skin.String(CustomAddons.5.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.5.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.5.Path)]</onclick>
           </item>
-          <item id="8" description="Shortcut6">
+          <item id="12" description="Shortcut6">
             <visible>!IsEmpty(Skin.String(CustomAddons.6.Path))</visible>
             <label>$INFO[Skin.String(CustomAddons.6.Label)]</label>
             <onclick>$INFO[Skin.String(CustomAddons.6.Path)]</onclick>
@@ -408,7 +408,7 @@
         </content>
         <include>Animation305</include>
       </control>
-      <control type="list" id="306" description="XBMC">
+      <control type="list" id="306" description="KODI">
         <onleft>305</onleft>
         <onright>301</onright>
         <ondown>306</ondown>
@@ -579,7 +579,7 @@
             <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
             <onclick>SetFocus(305)</onclick>
           </item>
-          <item id="6" description="XBMC">
+          <item id="6" description="KODI">
             <label fallback="KODI">$INFO[Skin.String(XBMCName)]</label>
             <onclick>SetFocus(306)</onclick>
           </item>

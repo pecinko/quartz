@@ -15,7 +15,7 @@
       <include>OpenClose</include>
       <control type="label" description="Heading">
         <posx>495</posx>
-        <posy>120</posy>
+        <posy>30</posy>
         <width>930</width>
         <height>75</height>
         <align>center</align>
@@ -24,7 +24,6 @@
         <label>31988</label>
       </control>
       <control type="group">
-        <posy>150</posy>
         <control type="image" description="Line top">
           <posx>0</posx>
           <posy>130</posy>
@@ -134,8 +133,8 @@
                 <label fallback="24001">$INFO[Skin.String(AddonsName)]</label>
                 <onclick>noop</onclick>
               </item>
-              <item id="1006" description="XBMC">
-                <label>XBMC</label>
+              <item id="1006" description="KODI">
+                <label>KODI</label>
                 <onclick>noop</onclick>
               </item>
             </content>
@@ -725,7 +724,7 @@
             <thumb>$INFO[Skin.String(ShelfAddons.10.Icon)]</thumb>
             <onclick>RunScript(script.favourites,property=ShelfAddons.10)</onclick>
           </control>
-          <!--XBMC-->
+          <!--KODI-->
           <control type="radiobutton" id="601" description="Image">
             <visible>Container(50).HasFocus(1006)</visible>
             <include>SettingsSubmenuButtons</include>

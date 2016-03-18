@@ -144,10 +144,10 @@
   <string id="31402">[B]MOŽNOSTI HUDBY[/B][CR][CR]Správa knihovny hudby · Možnosti přehrávání hudby · Možnosti zobrazení hudeb. souborů[CR]Služby pro odesílání informací o přehrávaných skladbách · Nastavení karaoke</string>
   <string id="31403">[B]MOŽNOSTI OBRÁZKŮ[/B][CR][CR]Možnosti zobrazení obrázků · Konfigurace prezentace</string>
   <string id="31404">[B]MOŽNOSTI POČASÍ[/B][CR][CR]Nastavení oblastí pro předpověď počasí</string>
-  <string id="31405">[B]MOŽNOSTI SÍTĚ[/B][CR][CR]Možnosti ovládání XBMC přes UPnP a HTTP · Nastavení sdílení médií[CR]Nastavení přístupu na internet</string>
+  <string id="31405">[B]MOŽNOSTI SÍTĚ[/B][CR][CR]Možnosti ovládání KODI přes UPnP a HTTP · Nastavení sdílení médií[CR]Nastavení přístupu na internet</string>
   <string id="31406">[B]MOŽNOSTI SYSTÉMU[/B][CR][CR]Nastavení a kalibrace obrazovky · Konfigurace výstupu zvuku · Nastavení dálkového ovládání[CR]Možnosti úsporného režimu · Ukládání informací o ladění · Konfigurace rodičovského zámku</string>
   <string id="31407">[B]MOŽNOSTI VZHLEDU[/B][CR][CR]Přizpůsobení vzhledu Confluence · Správa sekcí na úvodní obrazovce[CR]Nastavení pozadí vzhledu</string>
-  <string id="31408">[B]MOŽNOSTI DOPLŇKŮ[/B][CR][CR]Správa nainstalovaných doplňků · Vyhledávání a instalace doplňků z xbmc.org[CR]Nastavení doplňků</string>
+  <string id="31408">[B]MOŽNOSTI DOPLŇKŮ[/B][CR][CR]Správa nainstalovaných doplňků · Vyhledávání a instalace doplňků z kodi.tv[CR]Nastavení doplňků</string>
 
   <string id="31421">Přihlášení uživatele[CR]Pokračujte výběrem profilu</string>
 </strings>

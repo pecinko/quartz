@@ -102,7 +102,7 @@
           <textcolor>Grey</textcolor>
           <label>$INFO[ListItem.Label2]</label>
         </control>
-        <control type="button" id="11" description="Quit xbmc">
+        <control type="button" id="11" description="Quit KODI">
           <posx>915</posx>
           <posy>255</posy>
           <width>90</width>

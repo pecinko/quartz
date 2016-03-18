@@ -524,10 +524,10 @@
         <control type="image">
           <visible>ControlGroup(101).HasFocus()</visible>
           <centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>930</width>
-        <height>630</height>
-        <texture border="128">img/DialogPanel.png</texture>
+          <centertop>540</centertop>
+          <width>810</width>
+          <height>630</height>
+          <texture border="128">img/DialogPanel.png</texture>
         </control>
 		<control type="grouplist" id="101" description="Video OSD Options">
           <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>
@@ -541,7 +541,7 @@
           </animation>
           <centerleft>960</centerleft>
           <centertop>540</centertop>
-          <width>576</width>
+          <width>540</width>
           <height>300</height>
           <itemgap>0</itemgap>
           <onleft>602</onleft>
