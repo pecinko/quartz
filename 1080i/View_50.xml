@@ -24,6 +24,7 @@
           <movement>5</movement>
           <preloaditems>4</preloaditems>
           <itemlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
+            <include>Watched_Marks</include>
             <control type="label" description="Main Label">
               <width>720</width>
               <include>52MainLabel</include>
@@ -31,6 +32,7 @@
             </control>
           </itemlayout>
           <focusedlayout condition="SubString(Container.FolderPath,plugin://,left)" width="802" height="81">
+            <include>Watched_Marks</include>
             <control type="label" description="Main Label">
               <width>720</width>
               <include>52MainLabelFO</include>
