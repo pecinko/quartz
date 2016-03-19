@@ -1,4 +1,4 @@
-<addon id="skin.quartz" version="5.2" name="Quartz" provider-name="Pecinko">
+<addon id="skin.quartz" version="5.2" name="Quartz" provider-name="TPX01">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.favourites" version="4.0.4"/>
@@ -12,4 +12,4 @@
     <summary lang="en">Apple TV style skin</summary>
     <description lang="en">Easy to use, fast and flexible user interface. If you believe that sometimes less means more, you might feel right at home with Quartz. Skin graphics by CloudDweller and Pecinko.</description>
   </extension>
-</addon>
+</addon>F
