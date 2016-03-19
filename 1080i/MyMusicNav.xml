@@ -19,8 +19,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <viewtype label="535">List</viewtype>
@@ -64,8 +64,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           <viewtype label="537">Big list</viewtype>
@@ -98,8 +98,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>52</onup>
           <ondown>52</ondown>
           <viewtype label="544">Media info</viewtype>
@@ -187,8 +187,8 @@
           <width>1800</width>
           <height>897</height>
           <orientation>vertical</orientation>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <preloaditems>4</preloaditems>
           <itemlayout height="375" width="300">
             <control type="image">
@@ -310,8 +310,8 @@
         <posy>195</posy>
         <width>2250</width>
         <height>885</height>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <viewtype label="538">Big Icons</viewtype>
         <focusposition>1</focusposition>
         <movement>-</movement>
@@ -523,8 +523,8 @@
       <visible>Control.IsVisible(500)</visible>
       <control type="fixedlist" id="500" description="Fanart 3">
         <visible>Container.content(albums) | container.content(songs) | container.content(artists)</visible>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <onleft>500</onleft>
         <onright>500</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>
@@ -603,8 +603,8 @@
       <visible>Control.IsVisible(510)</visible>
       <control type="fixedlist" id="510" description="Fanart 3">
         <visible>![Container.content(albums) | container.content(songs) | container.content(artists)]</visible>
-        <onup>9000</onup>
-        <ondown>9000</ondown>
+        <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
+        <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
         <onleft>510</onleft>
         <onright>510</onright>
         <viewtype label="$LOCALIZE[20445] 3">Fanart 3</viewtype>

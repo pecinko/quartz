@@ -16,8 +16,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>891</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>50</onup>
           <ondown>50</ondown>
           <viewtype label="535">List</viewtype>
@@ -53,8 +53,8 @@
           <posy>0</posy>
           <width>802</width>
           <height>888</height>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <onup>51</onup>
           <ondown>51</ondown>
           <viewtype label="537">Big list</viewtype>
@@ -140,8 +140,8 @@
           <width>1800</width>
           <height>945</height>
           <orientation>vertical</orientation>
-          <onleft>9000</onleft>
-          <onright>9000</onright>
+          <onleft condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onleft>
+          <onright condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onright>
           <preloaditems>4</preloaditems>
           <itemlayout height="375" width="300">
             <control type="image">
