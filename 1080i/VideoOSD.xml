@@ -30,7 +30,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/Stop.png</texturenofocus>
-              <texturefocus>OSD/StopFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/Stop.png</texturefocus>
               <onup>606</onup>
 							<onleft>607</onleft>
               <onright>601</onright>
@@ -41,7 +41,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/SkipBack.png</texturenofocus>
-              <texturefocus>OSD/SkipBackFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/SkipBack.png</texturefocus>
               <onup>606</onup>
 							<onleft>600</onleft>
               <onright>602</onright>
@@ -52,7 +52,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/Rewind.png</texturenofocus>
-              <texturefocus>OSD/RewindFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/Rewind.png</texturefocus>
               <onleft>601</onleft>
               <onright>603</onright>
               <onup>606</onup>
@@ -66,7 +66,7 @@
               <texturefocus>OSD/PlayFocused.png</texturefocus>
               <usealttexture>Player.Playing</usealttexture>
               <alttexturenofocus>OSD/Pause.png</alttexturenofocus>
-              <alttexturefocus>OSD/PauseFocused.png</alttexturefocus>
+              <alttexturefocus colordiffuse="HL">OSD/Pause.png</alttexturefocus>
               <onleft>602</onleft>
               <onright>604</onright>
               <onup>606</onup>
@@ -77,7 +77,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/FastForward.png</texturenofocus>
-              <texturefocus>OSD/FastForwardFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/FastForward.png</texturefocus>
               <onleft>603</onleft>
               <onright>605</onright>
               <onup>606</onup>
@@ -88,7 +88,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/SkipForward.png</texturenofocus>
-              <texturefocus>OSD/SkipForwardFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/SkipForward.png</texturefocus>
               <onleft>604</onleft>
               <onright>606</onright>
               <onup>606</onup>
@@ -98,168 +98,14 @@
               <posx>1034</posx>
               <width>93</width>
               <height>57</height>
-              <texturenofocus>OSD/DVD.png</texturenofocus>
-              <texturefocus>OSD/DVDFocused.png</texturefocus>
+              <texturenofocus>OSD/Options.png</texturenofocus>
+              <texturefocus colordiffuse="HL">OSD/Options.png</texturefocus>
               <onleft>605</onleft>
               <onright>607</onright>
 							<onup>606</onup>
               <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
             </control>
-            <!--<control type="button" id="607">
-              <posx>1414</posx>
-              <posy>1</posy>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/AudioSettings.png</texturenofocus>
-              <texturefocus>OSD/AudioSettingsFocused.png</texturefocus>
-              <onup>2016</onup>
-              <ondown>2016</ondown>
-              <onleft>1015</onleft>
-              <onright>1017</onright>
-              <onclick>XBMC.ActivateWindow(124)</onclick>
-            </control>-->
-            <!--<control type="button" id="607">
-              <posx>1470</posx>
-              <posy>-19</posy>
-              <width>90</width>
-          		<height>98</height>
-		      		<texturefocus colordiffuse="White2">VideoOSD/OSDOptionsFO.png</texturefocus>
-          		<texturenofocus colordiffuse="White2">VideoOSD/OSDOptionsNF.png</texturenofocus>
-		  		    <onleft>606</onleft>
-              <onright>600</onright>
-              <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
-			</control>-->
           </control>
-          <!--<control type="group" id="214">
-            <width>1185</width>
-            <posy>24</posy>
-            <height>144</height>
-            <itemgap>0</itemgap>
-            <orientation>horizontal</orientation>
-            <visible allowhiddenfocus="true">[Control.HasFocus(2009) | Control.HasFocus(2010) | Control.HasFocus(2011) | Control.HasFocus(2012) | Control.HasFocus(2013) | Control.HasFocus(2014) | Control.HasFocus(2015) | Control.HasFocus(2016) | Control.HasFocus(2017)]</visible>
-            <control type="button" id="2009">
-              <posx>476</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/Stop.png</texturenofocus>
-              <texturefocus>OSD/StopFocused.png</texturefocus>
-              <onup>1009</onup>
-              <ondown>1009</ondown>
-              <onleft>2017</onleft>
-              <onright>2010</onright>
-              <onclick>XBMC.PlayerControl(Stop)</onclick>
-            </control>
-            <control type="button" id="2010">
-              <posx>568</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/SkipBack.png</texturenofocus>
-              <texturefocus>OSD/SkipBackFocused.png</texturefocus>
-              <onup>1010</onup>
-              <ondown>1010</ondown>
-              <onleft>2009</onleft>
-              <onright>2011</onright>
-              <onclick>XBMC.PlayerControl(Previous)</onclick>
-            </control>
-            <control type="button" id="2011">
-              <posx>662</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/Rewind.png</texturenofocus>
-              <texturefocus>OSD/RewindFocused.png</texturefocus>
-              <onup>1011</onup>
-              <ondown>1011</ondown>
-              <onleft>2010</onleft>
-              <onright>2012</onright>
-              <onclick>XBMC.PlayerControl(Rewind)</onclick>
-            </control>
-            <control type="togglebutton" id="2012">
-              <posx>754</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/Play.png</texturenofocus>
-              <texturefocus>OSD/PlayFocused.png</texturefocus>
-              <usealttexture>Player.Playing</usealttexture>
-              <alttexturenofocus>OSD/Pause.png</alttexturenofocus>
-              <alttexturefocus>OSD/PauseFocused.png</alttexturefocus>
-              <onup>1012</onup>
-              <ondown>1012</ondown>
-              <onleft>2011</onleft>
-              <onright>2013</onright>
-              <onclick>XBMC.PlayerControl(Play)</onclick>
-            </control>
-            <control type="button" id="2013">
-              <posx>848</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/FastForward.png</texturenofocus>
-              <texturefocus>OSD/FastForwardFocused.png</texturefocus>
-              <onup>1013</onup>
-              <ondown>1013</ondown>
-              <onleft>2012</onleft>
-              <onright>2014</onright>
-              <onclick>XBMC.PlayerControl(Forward)</onclick>
-            </control>
-            <control type="button" id="2014">
-              <posx>940</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/SkipForward.png</texturenofocus>
-              <texturefocus>OSD/SkipForwardFocused.png</texturefocus>
-              <onup>1014</onup>
-              <ondown>1014</ondown>
-              <onleft>2013</onleft>
-              <onright>2015</onright>
-              <onclick>XBMC.PlayerControl(Next)</onclick>
-            </control>
-            <control type="button" id="2015">
-              <posx>1034</posx>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/DVD.png</texturenofocus>
-              <texturefocus>OSD/DVDFocused.png</texturefocus>
-              <onup>1015</onup>
-              <ondown>1015</ondown>
-              <onleft>2014</onleft>
-              <onright>2016</onright>
-              <onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
-              <visible>VideoPlayer.HasMenu</visible>
-            </control>
-            <control type="button" id="2016">
-              <posx>1414</posx>
-              <posy>1</posy>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/AudioSettings.png</texturenofocus>
-              <texturefocus>OSD/AudioSettingsFocused.png</texturefocus>
-              <onup>1016</onup>
-              <ondown>1016</ondown>
-              <onleft>2015</onleft>
-              <onright>2017</onright>
-              <onclick>XBMC.ActivateWindow(124)</onclick>
-            </control>
-            <control type="button" id="2017">
-              <posx>1490</posx>
-              <posy>1</posy>
-              <width>93</width>
-              <height>57</height>
-              <texturenofocus>OSD/VideoSettings.png</texturenofocus>
-              <texturefocus>OSD/VideoSettingsFocused.png</texturefocus>
-              <onup>1017</onup>
-              <ondown>1017</ondown>
-              <onleft>2016</onleft>
-              <onright>2009</onright>
-              <onclick>XBMC.ActivateWindow(123)</onclick>
-            </control>
-          </control>-->
-          <!--<control type="image">
-            <posx>1034</posx>
-            <posy>24</posy>
-            <texture>OSD/DVDDisabled.png</texture>
-            <width>93</width>
-            <height>57</height>
-            <visible>!VideoPlayer.HasMenu</visible>
-          </control>-->
           <control type="grouplist">
             <posx>56</posx>
             <posy>46</posy>
