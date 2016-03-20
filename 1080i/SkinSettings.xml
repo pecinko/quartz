@@ -138,16 +138,6 @@
             <label2>$LOCALIZE[106]</label2>
             <onclick>Skin.ToggleSetting(HideFanart)</onclick>
           </item>
-         <!-- <item id="2" description="Lyrics">
-            <label>$LOCALIZE[24020] $LOCALIZE[31132]</label>
-            <label2>$INFO[Skin.String(LyricPath)]</label2>
-            <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-          </item>-->
-          <!--<item id="3" description="Subtitles">
-            <label>$LOCALIZE[24020] $LOCALIZE[31133]</label>
-            <label2>$INFO[Skin.String(SubtitleScript_Path)]</label2>
-            <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
-          </item>-->
           <item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
 						<label>$LOCALIZE[31999]</label>
@@ -172,30 +162,6 @@
             <label2>$LOCALIZE[305]</label2>
             <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
           </item>
-          <!--<item id="6" description="Poster view modes">
-            <visible>Skin.HasSetting(PostersHide)</visible>
-			<label>$LOCALIZE[20343]</label>
-            <label2>$LOCALIZE[31992]</label2>
-            <onclick>Skin.ToggleSetting(PostersHide)</onclick>
-          </item>
-		  <item id="6" description="Poster view modes">
-            <visible>!Skin.HasSetting(PostersHide)</visible>
-			<label>$LOCALIZE[20343]</label>
-            <label2>$LOCALIZE[31991]</label2>
-            <onclick>Skin.ToggleSetting(PostersHide)</onclick>
-          </item>-->
-          <!--<item id="7" description="Additional view modes">
-            <visible>Skin.HasSetting(AddViews)</visible>
-			<label>31993</label>
-            <label2>305</label2>
-            <onclick>Skin.ToggleSetting(AddViews)</onclick>
-          </item>
-		  <item id="7" description="Additional view modes">
-            <visible>!Skin.HasSetting(AddViews)</visible>
-			<label>31993</label>
-            <label2>1223</label2>
-            <onclick>Skin.ToggleSetting(AddViews)</onclick>
-          </item>-->
           <item id="8" description="Home screen categories">
             <label>31990</label>
             <onclick>ActivateWindow(1116)</onclick>
@@ -221,35 +187,6 @@
             <label2>106</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
           </item>
-          <!--<item id="13" description="EpisodeThumbs">
-            <visible>Skin.HasSetting(UseEpisodeThumbs)</visible>
-			<label>$LOCALIZE[31975]</label>
-            <label2>107</label2>
-			<onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
-          </item>
-		  <item id="13" description="EpisodeThumbs">
-            <visible>!Skin.HasSetting(UseEpisodeThumbs)</visible>
-			<label>$LOCALIZE[31975]</label>
-            <label2>106</label2>
-			<onclick>Skin.ToggleSetting(UseEpisodeThumbs)</onclick>
-          </item>
-		  <item id="14" description="Use Widgets script">
-            <visible>System.HasAddon(service.skin.widgets) + Skin.HasSetting(UseWidgets)</visible>
-			<label>$LOCALIZE[31974]</label>
-            <label2>107</label2>
-			<onclick>Skin.ToggleSetting(UseWidgets)</onclick>
-          </item>
-		  <item id="14" description="Use Widgets script">
-			<visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(UseWidgets)</visible>
-			<label>$LOCALIZE[31974]</label>
-            <label2>106</label2>
-			<onclick>Skin.ToggleSetting(UseWidgets)</onclick>
-          </item>
-		  <item id="14" description="Use Widgets script">
-            <visible>!System.HasAddon(service.skin.widgets)</visible>
-			<label>[COLOR=Grey]$LOCALIZE[31974][/COLOR]</label>
-            <onclick>noop</onclick>
-          </item>-->
 		  <item id="12" description="Reset Skin">
             <label>$LOCALIZE[31038]</label>
             <onclick>Skin.ResetSettings</onclick>
@@ -290,7 +227,8 @@
         <width>660</width>
         <height>750</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/PVROFF.jpg</texture>
+        <texture>
+          skin_settings/PVROFF.jpg</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(0) + Skin.HasSetting(PVR_Enabled)</visible>
@@ -300,7 +238,7 @@
         <width>660</width>
         <height>750</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/PVRON.jpg</texture>
+        <texture>skin_settings/PVRON.jpg</texture>
       </control>
 	  <control type="textbox" description="Plot51">
         <visible>Container(50).HasFocus(1)</visible>
@@ -334,7 +272,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/Scrollbar.png</texture>
+        <texture>skin_settings/Scrollbar.png</texture>
       </control>
       <control type="image" description="Menu">
         <visible>Container(50).HasFocus(4) + !Skin.HasSetting(Scrollbars_Active)</visible>
@@ -344,7 +282,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/ScrollbarOFF.png</texture>
+        <texture>skin_settings/ScrollbarOFF.png</texture>
       </control>
       <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5)</visible>
@@ -354,7 +292,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/OptionsMenu.png</texture>
+        <texture>skin_settings/OptionsMenu.png</texture>
       </control>
       <control type="image" description="Menu">
         <visible>Container(50).HasFocus(5) + Skin.HasSetting(ViewOptions_Hide)</visible>
@@ -364,28 +302,8 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/OptionsMenuOFF.png</texture>
+        <texture>skin_settings/OptionsMenuOFF.png</texture>
       </control>
-      <!--<control type="image" description="Menu">
-        <visible>Container(50).HasFocus(6) + !Skin.HasSetting(PostersHide)</visible>
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <posx>120</posx>
-        <posy>273</posy>
-        <width>660</width>
-        <height>534</height>
-        <aspectratio align="center" aligny="bottom">keep</aspectratio>
-        <texture>help/Poster.jpg</texture>
-      </control>
-      <control type="image" description="Menu">
-        <visible>Container(50).HasFocus(6) + Skin.HasSetting(PostersHide)</visible>
-        <animation effect="fade" time="200">VisibleChange</animation>
-        <posx>120</posx>
-        <posy>348</posy>
-        <width>660</width>
-        <height>384</height>
-        <aspectratio>keep</aspectratio>
-        <texture>help/Banner.jpg</texture>
-      </control>-->
       <control type="image" description="Views">
         <visible>Container(50).HasFocus(7)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
@@ -394,7 +312,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
-        <texture>help/Grid.png</texture>
+        <texture>skin_settings/Grid.png</texture>
       </control>
       <control type="image" description="Views">
         <visible>Container(50).HasFocus(7) + !Skin.HasSetting(AddViews)</visible>
@@ -404,7 +322,7 @@
         <width>780</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/OptionsMenuOFF.png</texture>
+        <texture>skin_settings/OptionsMenuOFF.png</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(8)</visible>
@@ -414,7 +332,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/HomeMenu.png</texture>
+        <texture>skin_settings/HomeMenu.png</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(9)</visible>
@@ -424,7 +342,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/Shelf.png</texture>
+        <texture>skin_settings/Shelf.png</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(10)</visible>
@@ -434,7 +352,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/Quit.png</texture>
+        <texture>skin_settings/Quit.png</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(11)</visible>
@@ -444,7 +362,7 @@
         <width>660</width>
         <height>684</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/Clock.png</texture>
+        <texture>skin_settings/Clock.png</texture>
       </control>
       <control type="image" description="HomeMenu">
         <visible>Container(50).HasFocus(12)</visible>
@@ -454,7 +372,7 @@
         <width>660</width>
         <height>234</height>
         <aspectratio>keep</aspectratio>
-        <texture>help/Warning.png</texture>
+        <texture>skin_settings/Warning.png</texture>
       </control>
     </control>
   </controls>

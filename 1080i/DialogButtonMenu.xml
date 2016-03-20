@@ -31,8 +31,8 @@
         <width>72</width>
         <height>72</height>
         <font>-</font>
-        <texturenofocus>exit_menu/quit.png</texturenofocus>
-        <texturefocus colordiffuse="HL">exit_menu/quit.png</texturefocus>
+        <texturenofocus>quit_menu/quit.png</texturenofocus>
+        <texturefocus colordiffuse="HL">quit_menu/quit.png</texturefocus>
         <onclick>XBMC.Quit()</onclick>
         <label>13009</label>
       </control>
@@ -44,8 +44,8 @@
         <width>72</width>
         <height>72</height>
         <font>-</font>
-        <texturenofocus>exit_menu/shutdown.png</texturenofocus>
-        <texturefocus colordiffuse="HL">exit_menu/shutdown.png</texturefocus>
+        <texturenofocus>quit_menu/shutdown.png</texturenofocus>
+        <texturefocus colordiffuse="HL">quit_menu/shutdown.png</texturefocus>
         <onclick>XBMC.Powerdown()</onclick>
         <label>13005</label>
       </control>
@@ -57,8 +57,8 @@
         <width>72</width>
         <height>72</height>
         <font>-</font>
-        <texturenofocus>exit_menu/sleep.png</texturenofocus>
-        <texturefocus colordiffuse="HL">exit_menu/sleep.png</texturefocus>
+        <texturenofocus>quit_menu/sleep.png</texturenofocus>
+        <texturefocus colordiffuse="HL">quit_menu/sleep.png</texturefocus>
         <onclick>XBMC.Suspend()</onclick>
         <label>13011</label>
       </control>
@@ -70,8 +70,8 @@
         <width>72</width>
         <height>72</height>
         <font>-</font>
-        <texturenofocus>exit_menu/restart.png</texturenofocus>
-        <texturefocus colordiffuse="HL">exit_menu/restart.png</texturefocus>
+        <texturenofocus>quit_menu/restart.png</texturenofocus>
+        <texturefocus colordiffuse="HL">quit_menu/restart.png</texturefocus>
         <onclick>XBMC.Reset()</onclick>
         <label>13013</label>
       </control>
