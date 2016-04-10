@@ -10,16 +10,34 @@
       <control type="group" description="Thumbs">
         <visible>Control.HasFocus(10)</visible>
         <include>VisibleFadeEffect</include>
-        <posx>392</posx>
-        <posy>120</posy>
+        <posx>587</posx>
+        <posy>549</posy>
         <control type="image" description="Thumb">
           <posx>0</posx>
           <posy>30</posy>
-          <width>1137</width>
-          <height>660</height>
+          <width>202</width>
+          <height>303</height>
           <texture>$INFO[ListItem.Thumb]</texture>
           <aspectratio aligny="bottom">keep</aspectratio>
+          <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+          <bordersize>9</bordersize>
         </control>
+      </control>
+      <control type="group" description="Thumbs">
+          <visible>Control.HasFocus(10)</visible>
+          <include>VisibleFadeEffect</include>
+          <posx>823</posx>
+          <posy>549</posy>
+          <control type="image" description="Thumb">
+              <posx>0</posx>
+              <posy>30</posy>
+              <width>509</width>
+              <height>303</height>
+              <texture>$INFO[ListItem.Art(fanart)]</texture>
+              <aspectratio aligny="bottom">keep</aspectratio>
+              <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+              <bordersize>9</bordersize>
+          </control>
       </control>
       <control type="group" description="Media Info">
         <include>VisibleFadeEffect</include>
@@ -64,7 +82,7 @@
           </control>
           <control type="image" description="Line Split">
             <posx>0</posx>
-            <posy>376</posy>
+            <posy>444</posy>
             <width>1560</width>
             <height>1</height>
             <texture>img/LineL.png</texture>
@@ -74,7 +92,7 @@
             <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
             <include>VisibleFadeEffect</include>
             <posx>150</posx>
-            <posy>470</posy>
+            <posy>480</posy>
             <width min="90" max="450">auto</width>
             <height>45</height>
             <itemgap>30</itemgap>
@@ -124,7 +142,7 @@
             <posx>0</posx>
             <posy>530</posy>
             <control type="group">
-              <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://3,left) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
+              <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://3,left) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
               <include>VisibleFadeEffect</include>
               <control type="list" id="49">
                 <include>List49_Commons</include>
@@ -187,7 +205,7 @@
               </control>
             </control>
             <control type="group" description="TV Shows">
-              <visible>Container.Content(TVShows) + !Control.HasFocus(12) + ![Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
+              <visible>Container.Content(TVShows) + !Control.HasFocus(12) + ![Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
               <include>VisibleFadeEffect</include>
               <control type="list" id="49">
                 <include>List49_Commons</include>
@@ -226,7 +244,7 @@
               </control>
             </control>
             <control type="group" description="Episodes">
-              <visible>container.content(episodes) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)</visible>
+              <visible>container.content(episodes) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
               <include>VisibleFadeEffect</include>
               <control type="list" id="49">
                 <include>List49_Commons</include>
@@ -307,7 +325,7 @@
               </control>
             </control>
             <control type="group" description="Music Videos">
-              <visible>SubString(Container.FolderPath,videodb://3,left) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
+              <visible>SubString(Container.FolderPath,videodb://3,left) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
               <include>VisibleFadeEffect</include>
               <control type="list" id="49">
                 <include>List49_Commons</include>
@@ -377,7 +395,7 @@
             </control>
           </control>
           <control type="label" description="Info Label">
-              <visible>![Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
+              <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(10)]</visible>
               <include>VisibleFadeEffect</include>
               <posy>376</posy>
               <width>1200</width>
@@ -400,6 +418,18 @@
               <label>344</label>
               <textcolor>White2</textcolor>
           </control>
+          <control type="label" description="Art label">
+              <visible>Control.HasFocus(10)</visible>
+              <include>VisibleFadeEffect</include>
+              <posy>376</posy>
+              <width>1200</width>
+              <height>60</height>
+              <font>size24B</font>
+              <align>left</align>
+              <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
+              <label>$LOCALIZE[31331]</label>
+              <textcolor>White2</textcolor>
+          </control>
         </control>
       </control>
       <control type="group" description="Actors">
@@ -408,8 +438,8 @@
         <control type="panel" id="50">
           <visible>Control.HasFocus(9012) | Control.HasFocus(50)</visible>
           <posx>207</posx>
-          <posy>550</posy>
-          <width>1500</width>
+          <posy>570</posy>
+          <width>1541</width>
           <height>402</height>
           <height>402</height>
           <onleft>50</onleft>
@@ -448,7 +478,7 @@
         <control type="label" description="Actor name">
           <visible>control.HasFocus(50)</visible>
           <posx>190</posx>
-          <posy>856</posy>
+          <posy>876</posy>
           <width>270</width>
           <align>center</align>
           <textcolor>White</textcolor>
@@ -465,7 +495,7 @@
             <visible>Control.HasFocus(50)</visible>
             <include>VisibleFadeEffect</include>
             <posx>190</posx>
-            <posy>535</posy>
+            <posy>555</posy>
             <width>270</width>
             <height>371</height>
             <texture border="36">focus/FrameFO.png</texture>
