@@ -63,7 +63,7 @@
               <width>93</width>
               <height>57</height>
               <texturenofocus>OSD/Play.png</texturenofocus>
-              <texturefocus>OSD/PlayFocused.png</texturefocus>
+              <texturefocus colordiffuse="HL">OSD/Play.png</texturefocus>
               <usealttexture>Player.Playing</usealttexture>
               <alttexturenofocus>OSD/Pause.png</alttexturenofocus>
               <alttexturefocus colordiffuse="HL">OSD/Pause.png</alttexturefocus>
