@@ -4,7 +4,6 @@
 	<color name="Grey2">FFBEBEBE</color>
 	<color name="Grey">FF636363</color>
 	<color name="White">FFCCCCCC</color>
-	<!--<color name="White">FFF1F1F1</color>-->
 	<color name="White2">FFFFFFFF</color>
 	<color name="Red">FFFF0000</color>
 	<color name="Blue">FF003366</color>
@@ -19,15 +18,4 @@
 	<color name="ShadowDark">FF000000</color>
 	<color name="HL">FFe99931</color>
 	<color name="Overlay">FF1b1e22</color>
-	<!--
-	<color name="Black">FF000000</color>
-	<color name="BlackShadow">FF666666</color>
-	<color name="White">FFFFFFFF</color>
-	<color name="WhiteTrans">97FFFFFF</color>
-	<color name="Gray">FFbebebe</color>
-	<color name="DarkGray">FF5b5b5b</color>
-	<color name="Red">FFFF0000</color>
-	<color name="Orange">FFff9900</color>
-	<color name="Shadow">65000000</color>
-	-->
 </colors>
