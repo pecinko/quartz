@@ -8,25 +8,9 @@
     <control type="group" description="content">
       <include>OpenClose</include>
       <control type="group" description="Thumbs">
-        <visible>Control.HasFocus(10)</visible>
-        <include>VisibleFadeEffect</include>
-        <posx>587</posx>
-        <posy>549</posy>
-        <control type="image" description="Thumb">
-          <posx>0</posx>
-          <posy>30</posy>
-          <width>202</width>
-          <height>303</height>
-          <texture>$INFO[ListItem.Thumb]</texture>
-          <aspectratio aligny="bottom">keep</aspectratio>
-          <bordertexture border="12">img/ThumbBorder.png</bordertexture>
-          <bordersize>9</bordersize>
-        </control>
-      </control>
-      <control type="group" description="Thumbs">
           <visible>Control.HasFocus(10)</visible>
           <include>VisibleFadeEffect</include>
-          <posx>823</posx>
+        <posx>705</posx>
           <posy>549</posy>
           <control type="image" description="Thumb">
               <posx>0</posx>
@@ -309,18 +293,6 @@
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.Rating)</visible>
                   </item>
-                  <item>
-                    <label>$LOCALIZE[561]:</label>
-                    <label2>$INFO[ListItem.FileName]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.FileName)</visible>
-                  </item>
-                  <item>
-                    <label>$LOCALIZE[573]:</label>
-                    <label2>[COLOR=Grey]$INFO[ListItem.Path][/COLOR]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.Path)</visible>
-                  </item>
                 </content>
               </control>
             </control>
@@ -377,18 +349,6 @@
                     <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.Duration)</visible>
-                  </item>
-                  <item>
-                    <label>$LOCALIZE[561]:</label>
-                    <label2>$INFO[ListItem.FileName]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.FileName)</visible>
-                  </item>
-                  <item>
-                    <label>$LOCALIZE[573]:</label>
-                    <label2>[COLOR=Grey]$INFO[ListItem.Path][/COLOR]</label2>
-                    <onclick>noop</onclick>
-                    <visible>!IsEmpty(ListItem.Path)</visible>
                   </item>
                 </content>
               </control>
