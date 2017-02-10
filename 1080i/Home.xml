@@ -417,81 +417,85 @@
           <item id="0" description="Update library">
             <visible>!Skin.HasSetting(XBMC0)</visible>
             <label>653</label>
-            <onclick>CleanLibrary(Video)</onclick>
-            <onclick condition="Library.HasContent(Music)">CleanLibrary(Music)</onclick>
             <onclick>UpdateLibrary(Video)</onclick>
             <onclick condition="Library.HasContent(Music)">UpdateLibrary(Music)</onclick>
           </item>
-          <item id="1" description="Now playing Video">
+          <item id="1" description="Clean library">
+            <visible>!Skin.HasSetting(XBMC1)</visible>
+            <label>32001</label>
+            <onclick>CleanLibrary(Video)</onclick>
+            <onclick condition="Library.HasContent(Music)">CleanLibrary(Music)</onclick>
+          </item>
+          <item id="2" description="Now playing Video">
             <visible>Player.HasMedia</visible>
             <label>31977</label>
             <onclick>fullscreen</onclick>
           </item>
-          <item id="2" description="Settings">
+          <item id="3" description="Settings">
             <visible>!Skin.HasSetting(HideSettings)</visible>
             <label>5</label>
             <onclick>ActivateWindow(Settings)</onclick>
           </item>
-          <item id="3" description="File manager">
-            <visible>!Skin.HasSetting(XBMC1)</visible>
+          <item id="4" description="File manager">
+            <visible>!Skin.HasSetting(XBMC2)</visible>
             <label>7</label>
             <onclick>ActivateWindow(FileManager)</onclick>
           </item>
-          <item id="4" description="Favorites">
-            <visible>!Skin.HasSetting(XBMC2)</visible>
+          <item id="5" description="Favorites">
+            <visible>!Skin.HasSetting(XBMC3)</visible>
             <label>1036</label>
             <onclick>ActivateWindow(Favourites)</onclick>
           </item>
-          <item id="5" description="LogOff Profile">
+          <item id="6" description="LogOff Profile">
             <visible>System.HasLoginScreen</visible>
             <visible>System.Loggedon</visible>
             <label>20126</label>
             <onclick>dialog.close(all,true)</onclick>
             <onclick>System.LogOff</onclick>
           </item>
-          <item id="6" description="Master mode button">
+          <item id="7" description="Master mode button">
             <visible>System.HasLocks + System.IsMaster</visible>
             <label>12332</label>
             <onclick>xbmc.mastermode</onclick>
           </item>
-          <item id="7" description="Master mode button">
+          <item id="8" description="Master mode button">
             <visible>System.HasLocks + !System.IsMaster</visible>
             <label>12333</label>
             <onclick>xbmc.mastermode</onclick>
           </item>
-          <item id="8" description="Disc">
+          <item id="9" description="Disc">
             <visible>![System.Platform.ios | System.Platform.atv2]</visible>
-            <visible>!Skin.HasSetting(XBMC3)</visible>
+            <visible>!Skin.HasSetting(XBMC4)</visible>
             <label>446</label>
             <onclick>ActivateWindow(1112)</onclick>
           </item>
-          <item id="9" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + IsEmpty(Skin.String(shutdown))</visible>
+          <item id="10" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + IsEmpty(Skin.String(shutdown))</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>ActivateWindow(shutdownmenu)</onclick>
           </item>
-          <item id="10" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),quit)</visible>
+          <item id="11" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + StringCompare(Skin.String(shutdown),quit)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>XBMC.quit()</onclick>
           </item>
-          <item id="11" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),powerdown)</visible>
+          <item id="12" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + StringCompare(Skin.String(shutdown),powerdown)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>XBMC.powerdown()</onclick>
           </item>
-          <item id="12" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),hibernate)</visible>
+          <item id="13" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + StringCompare(Skin.String(shutdown),hibernate)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>XBMC.hibernate()</onclick>
           </item>
-          <item id="13" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),suspend)</visible>
+          <item id="14" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + StringCompare(Skin.String(shutdown),suspend)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>XBMC.suspend()</onclick>
           </item>
-          <item id="14" description="Quit">
-            <visible>!Skin.HasSetting(XBMC4) + StringCompare(Skin.String(shutdown),reboot)</visible>
+          <item id="15" description="Quit">
+            <visible>!Skin.HasSetting(XBMC5) + StringCompare(Skin.String(shutdown),reboot)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>XBMC.reboot()</onclick>
           </item>
