@@ -1,144 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">50</defaultcontrol>
-  <views>50,51,52,54,501,53,502,55,56,58,59,500,510</views>
-  <controls>
-    <include>FullBackground</include>
-    <include>MediaHeader</include>
-    <control type="group" description="Content">
-      <include>OpenClose</include>
-      <visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
-      <animation effect="fade" delay="100" time="300">Visible</animation>
-      <animation effect="fade" time="0">Hidden</animation>
-      <include>View_50</include>
-			<include>View_51</include>
-			<include>View_52</include>
-			<include>View_53</include>
-			<include>View_54</include>
-			<include>View_55</include>
-			<include>View_500</include>
-			<include>View_501</include>
-			<include>View_502</include>
-			<include>View_510</include>
-    </control>
-		<control type="button" id="9001">
-        <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
-				<centerleft>1400</centerleft>
-        <centertop>540</centertop>
-        <width>201</width>
-        <height>210</height>
-        <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
-				<label>$INFO[ListItem.SortLetter]</label>
-				<font>Scroll</font>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>PageUp(60)</onup>
-				<ondown>PageDown(60)</ondown>
-				<onclick>Control.SetFocus(50)</onclick>
-				<onback>Control.SetFocus(50)</onback>
-				<align>center</align>
-		  </control>
-			<control type="button" id="9002">
-        <visible allowhiddenfocus="true">Control.HasFocus(9002)</visible>
-				<centerleft>960</centerleft>
-        <centertop>750</centertop>
-        <width>201</width>
-        <height>210</height>
-        <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
-				<label>$INFO[ListItem.SortLetter]</label>
-				<font>Scroll</font>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>PageUp(60)</onleft>
-				<onright>PageDown(60)</onright>
-				<onclick>Control.SetFocus(50)</onclick>
-				<onback>Control.SetFocus(50)</onback>
-				<align>center</align>
-		  </control>
-			<control type="button" id="9003">
-        <visible allowhiddenfocus="true">Control.HasFocus(9003)</visible>
-				<centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>201</width>
-        <height>210</height>
-        <texturenofocus>-</texturenofocus>
-				<texturefocus border="12">HUD/ScrollHorizontal.png</texturefocus>
-				<label>$INFO[ListItem.SortLetter]</label>
-				<font>Scroll</font>
-				<onup>50</onup>
-				<ondown>50</ondown>
-				<onleft>PageUp(60)</onleft>
-				<onright>PageDown(60)</onright>
-				<onclick>Control.SetFocus(50)</onclick>
-				<onback>Control.SetFocus(50)</onback>
-				<align>center</align>
-		  </control>
-      <control type="scrollbar" id="60">
-        <posx>-500</posx>
-        <posy>147</posy>
-        <height>882</height>
-        <onleft>50</onleft>
-        <onright>noop</onright>
-      </control>
-			
-    <control type="group" description="Side menu 9000 group">
-      <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
-      <include>DialogOpenCloseVisible</include>
-      <control type="image">
-        <centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>810</width>
-        <height>915</height>
-        <texture border="128">img/DialogPanel.png</texture>
-		  </control>
-      <control type="grouplist" id="9000">
-        <include>9000GrouplistParameters</include>
-        <control type="button" id="2" description="Views">
-          <texturenofocus>-</texturenofocus>
-          <include>9000Buttons</include>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <views>50,51,52,54,501,53,502,55,56,58,59,500,510</views>
+    <controls>
+        <include>FullBackground</include>
+        <include>MediaHeader</include>
+        <control type="group" description="Content">
+            <include>OpenClose</include>
+            <visible>!Window.IsActive(DialogVideoInfo.xml)</visible>
+            <animation effect="fade" delay="100" time="300">Visible</animation>
+            <animation effect="fade" time="0">Hidden</animation>
+            <include>View_50</include>
+            <include>View_51</include>
+            <include>View_52</include>
+            <include>View_53</include>
+            <include>View_54</include>
+            <include>View_55</include>
+            <include>View_500</include>
+            <include>View_501</include>
+            <include>View_502</include>
+            <include>View_510</include>
         </control>
-        <control type="togglebutton" id="14" description="Toggle Watched">
-          <include>9000Buttons</include>
-          <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
-          <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
+        <control type="button" id="9001">
+            <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
+            <centerleft>1400</centerleft>
+            <centertop>540</centertop>
+            <width>201</width>
+            <height>210</height>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
+            <label>$INFO[ListItem.SortLetter]</label>
+            <font>Scroll</font>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>PageUp(60)</onup>
+            <ondown>PageDown(60)</ondown>
+            <onclick>Control.SetFocus(50)</onclick>
+            <onback>Control.SetFocus(50)</onback>
+            <align>center</align>
         </control>
-        <control type="button" id="3" description="Sort">
-          <include>9000Buttons</include>
+        <control type="button" id="9002">
+            <visible allowhiddenfocus="true">Control.HasFocus(9002)</visible>
+            <centerleft>960</centerleft>
+            <centertop>750</centertop>
+            <width>201</width>
+            <height>210</height>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
+            <label>$INFO[ListItem.SortLetter]</label>
+            <font>Scroll</font>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <onleft>PageUp(60)</onleft>
+            <onright>PageDown(60)</onright>
+            <onclick>Control.SetFocus(50)</onclick>
+            <onback>Control.SetFocus(50)</onback>
+            <align>center</align>
         </control>
-        <control type="togglebutton" id="4" description="Ordering">
-          <include>9000Buttons</include>
-          <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
-          <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+        <control type="button" id="9003">
+            <visible allowhiddenfocus="true">Control.HasFocus(9003)</visible>
+            <centerleft>960</centerleft>
+            <centertop>540</centertop>
+            <width>201</width>
+            <height>210</height>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus border="12">HUD/ScrollHorizontal.png</texturefocus>
+            <label>$INFO[ListItem.SortLetter]</label>
+            <font>Scroll</font>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <onleft>PageUp(60)</onleft>
+            <onright>PageDown(60)</onright>
+            <onclick>Control.SetFocus(50)</onclick>
+            <onback>Control.SetFocus(50)</onback>
+            <align>center</align>
         </control>
-        <control type="togglebutton" id="20" description="Update library">
-          <include>9000Buttons</include>
-          <label>653</label>
-          <altlabel>13353</altlabel>
-          <usealttexture>library.isscanningmusic</usealttexture>
+        <control type="scrollbar" id="60">
+            <posx>-500</posx>
+            <posy>147</posy>
+            <height>882</height>
+            <onleft>50</onleft>
+            <onright>noop</onright>
         </control>
-        <control type="button" id="697" description="Playlist">
-          <include>9000Buttons</include>
-          <label>$LOCALIZE[31040]</label>
-          <onclick>ActivateWindow(videoplaylist)</onclick>
+
+        <control type="group" description="Side menu 9000 group">
+            <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+            <include>DialogOpenCloseVisible</include>
+            <control type="image">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>810</width>
+                <height>915</height>
+                <texture border="128">img/DialogPanel.png</texture>
+            </control>
+            <control type="grouplist" id="9000">
+                <include>9000GrouplistParameters</include>
+                <control type="button" id="2" description="Views">
+                    <texturenofocus>-</texturenofocus>
+                    <include>9000Buttons</include>
+                </control>
+                <control type="togglebutton" id="14" description="Toggle Watched">
+                    <include>9000Buttons</include>
+                    <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
+                    <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
+                </control>
+                <control type="button" id="3" description="Sort">
+                    <include>9000Buttons</include>
+                </control>
+                <control type="togglebutton" id="4" description="Ordering">
+                    <include>9000Buttons</include>
+                    <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+                    <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+                </control>
+                <control type="togglebutton" id="20" description="Update library">
+                    <include>9000Buttons</include>
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningmusic</usealttexture>
+                </control>
+                <control type="button" id="697" description="Playlist">
+                    <include>9000Buttons</include>
+                    <label>$LOCALIZE[31040]</label>
+                    <onclick>ActivateWindow(videoplaylist)</onclick>
+                </control>
+                <control type="button" id="698" description="Browse files">
+                    <include>9000Buttons</include>
+                    <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
+                    <onclick>ActivateWindow(Videos,files)</onclick>
+                </control>
+                <control type="togglebutton" id="699" description="Playing">
+                    <enable>Player.HasMedia</enable>
+                    <include>9000Buttons</include>
+                    <label>$LOCALIZE[16003]</label>
+                    <altlabel>$LOCALIZE[31977]</altlabel>
+                    <usealttexture>Player.HasMedia</usealttexture>
+                    <onclick>fullscreen</onclick>
+                    <altclick>fullscreen</altclick>
+                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional
+                    </animation>
+                </control>
+            </control>
         </control>
-        <control type="button" id="698" description="Browse files">
-          <include>9000Buttons</include>
-          <label>$LOCALIZE[1024] $LOCALIZE[744]</label>
-          <onclick>ActivateWindow(Videos,files)</onclick>
-        </control>
-        <control type="togglebutton" id="699" description="Playing">
-          <enable>Player.HasMedia</enable>
-          <include>9000Buttons</include>
-          <label>$LOCALIZE[16003]</label>
-          <altlabel>$LOCALIZE[31977]</altlabel>
-          <usealttexture>Player.HasMedia</usealttexture>
-          <onclick>fullscreen</onclick>
-          <altclick>fullscreen</altclick>
-          <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
-        </control>
-      </control>
-    </control>
-  </controls>
+    </controls>
 </window>

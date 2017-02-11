@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <window>
-	<defaultcontrol always="true">2</defaultcontrol>
-  
-  <controls>
-    <control type="group">
-     <include>OpenClose</include>
-		  <control type="image">
-        <centerleft>960</centerleft>
-        <centertop>480</centertop>
-        <width>1200</width>
-        <height>960</height>
-        <texture border="128">img/DialogPanel.png</texture>
-      </control>
-    <control type="group">
-      <posx>510</posx>
-      <posy>150</posy>
-      <control type="label" description="Header Label">
-        <posx>15</posx>
-        <posy>0</posy>
-        <width>840</width>
-        <label>31048</label>
-        <font>size26B</font>
-        <align>center</align>
-				<textcolor>HL</textcolor>
-      </control>
-      <control type="fixedlist" id="2">
-        <description>Preset List</description>
-        <posx>15</posx>
-        <posy>120</posy>
-        <width>870</width>
-        <height>483</height>
-        <onleft>noop</onleft>
-        <onright>60</onright>
-        <pagecontrol>60</pagecontrol>
-        <focusposition>3</focusposition>
-        <movement>3</movement>
-        <onup>noop</onup>
-        <ondown>noop</ondown>
-        <itemlayout height="69">
-          <control type="label">
-            <posx>30</posx>
-            <width>810</width>
-            <height>69</height>
-            <font>size22</font>
-            <info>ListItem.Label</info>
-            <scroll>false</scroll>
-          </control>
-        </itemlayout>
-        <focusedlayout height="69">
-          <control type="image">
-            <visible>!Control.HasFocus(60)</visible>
-            <width>870</width>
-            <height>69</height>
-            <texture border="9">img/MediaButton2.png</texture>
-          </control>
-          <control type="label">
-            <posx>30</posx>
-            <height>69</height>
-            <width>810</width>
-            <font>size22</font>
-            <info>ListItem.Label</info>
-          </control>
-        </focusedlayout>
-      </control>
-    </control>
-		</control>
-  </controls>
+<window>
+    <defaultcontrol always="true">2</defaultcontrol>
+
+    <controls>
+        <control type="group">
+            <include>OpenClose</include>
+            <control type="image">
+                <centerleft>960</centerleft>
+                <centertop>480</centertop>
+                <width>1200</width>
+                <height>960</height>
+                <texture border="128">img/DialogPanel.png</texture>
+            </control>
+            <control type="group">
+                <posx>510</posx>
+                <posy>150</posy>
+                <control type="label" description="Header Label">
+                    <posx>15</posx>
+                    <posy>0</posy>
+                    <width>840</width>
+                    <label>31048</label>
+                    <font>size26B</font>
+                    <align>center</align>
+                    <textcolor>HL</textcolor>
+                </control>
+                <control type="fixedlist" id="2">
+                    <description>Preset List</description>
+                    <posx>15</posx>
+                    <posy>120</posy>
+                    <width>870</width>
+                    <height>483</height>
+                    <onleft>noop</onleft>
+                    <onright>60</onright>
+                    <pagecontrol>60</pagecontrol>
+                    <focusposition>3</focusposition>
+                    <movement>3</movement>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
+                    <itemlayout height="69">
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>810</width>
+                            <height>69</height>
+                            <font>size22</font>
+                            <info>ListItem.Label</info>
+                            <scroll>false</scroll>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="69">
+                        <control type="image">
+                            <visible>!Control.HasFocus(60)</visible>
+                            <width>870</width>
+                            <height>69</height>
+                            <texture border="9">img/MediaButton2.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>30</posx>
+                            <height>69</height>
+                            <width>810</width>
+                            <font>size22</font>
+                            <info>ListItem.Label</info>
+                        </control>
+                    </focusedlayout>
+                </control>
+            </control>
+        </control>
+    </controls>
 </window>

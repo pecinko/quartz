@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-  <defaultcontrol always="true">11</defaultcontrol>
-  <controls>
-    <control type="group">
-      <include>OpenClose</include>
-      <control type="image">
-        <centerleft>960</centerleft>
-        <centertop>540</centertop>
-        <width>1290</width>
-        <height>690</height>
-        <texture border="128">img/DialogPanel.png</texture>
-      </control>
-      <control type="group">
-        <top>330</top>
-        <control type="label" id="1" description="Heading">
-          <centerleft>960</centerleft>
-          <label>-</label>
-          <width>960</width>
-          <font>size28</font>
-          <align>center</align>
-          <bordersize>0,30,0,30</bordersize>
-          <textcolor>HL</textcolor>
+    <defaultcontrol always="true">11</defaultcontrol>
+    <controls>
+        <control type="group">
+            <include>OpenClose</include>
+            <control type="image">
+                <centerleft>960</centerleft>
+                <centertop>540</centertop>
+                <width>1290</width>
+                <height>690</height>
+                <texture border="128">img/DialogPanel.png</texture>
+            </control>
+            <control type="group">
+                <top>330</top>
+                <control type="label" id="1" description="Heading">
+                    <centerleft>960</centerleft>
+                    <label>-</label>
+                    <width>960</width>
+                    <font>size28</font>
+                    <align>center</align>
+                    <bordersize>0,30,0,30</bordersize>
+                    <textcolor>HL</textcolor>
+                </control>
+                <control type="textbox" id="9" description="Labels">
+                    <top>90</top>
+                    <centerleft>960</centerleft>
+                    <width>870</width>
+                    <height>190</height>
+                    <align>center</align>
+                    <font>size22</font>
+                    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                </control>
+                <control type="button" id="10" description="No">
+                    <top>309</top>
+                    <left>600</left>
+                    <width>300</width>
+                    <label>106</label>
+                    <onleft>11</onleft>
+                    <onright>11</onright>
+                    <onup>10</onup>
+                    <ondown>10</ondown>
+                    <align>center</align>
+                    <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
+                </control>
+                <control type="button" id="11" description="Yes">
+                    <top>309</top>
+                    <left>1020</left>
+                    <width>300</width>
+                    <label>107</label>
+                    <onleft>10</onleft>
+                    <onright>10</onright>
+                    <onup>11</onup>
+                    <ondown>11</ondown>
+                    <align>center</align>
+                    <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
+                </control>
+            </control>
         </control>
-        <control type="textbox" id="9" description="Labels">
-          <top>90</top>
-          <centerleft>960</centerleft>
-          <width>870</width>
-          <height>190</height>
-          <align>center</align>
-					<font>size22</font>
-          <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-        </control>
-        <control type="button" id="10" description="No">
-          <top>309</top>
-          <left>600</left>
-          <width>300</width>
-          <label>106</label>
-          <onleft>11</onleft>
-          <onright>11</onright>
-          <onup>10</onup>
-          <ondown>10</ondown>
-          <align>center</align>
-          <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
-        </control>
-        <control type="button" id="11" description="Yes">
-          <top>309</top>
-          <left>1020</left>
-          <width>300</width>
-          <label>107</label>
-          <onleft>10</onleft>
-          <onright>10</onright>
-          <onup>11</onup>
-          <ondown>11</ondown>
-          <align>center</align>
-          <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
-        </control>
-      </control>
-    </control>
-  </controls>
+    </controls>
 </window>
