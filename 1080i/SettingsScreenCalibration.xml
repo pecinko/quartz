@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">8</defaultcontrol>
-
     <controls>
         <control type="videowindow" id="20">
             <description>videowindow</description>

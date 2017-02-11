@@ -57,8 +57,7 @@
         <focusedcolor>HL</focusedcolor>
         <selectedcolor>HL</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <texturefocus border="9">img/MediaButton2.png</texturefocus>
-        <!--<texturenofocus border="8">img/ButtonNF.png</texturenofocus>-->
+        <texturefocus border="9">img/MediaButton2.png</texturefocus>        <!--<texturenofocus border="8">img/ButtonNF.png</texturenofocus>-->
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="edit">
@@ -110,8 +109,7 @@
         <texturefocus border="9">img/MediaButton2.png</texturefocus>
         <textureradiofocus>img/RadioON.png</textureradiofocus>
         <textureradionofocus>-</textureradionofocus>
-        <textoffsetx>20</textoffsetx>
-        <!--<radioposx>262</radioposx>-->
+        <textoffsetx>20</textoffsetx>        <!--<radioposx>262</radioposx>-->
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">

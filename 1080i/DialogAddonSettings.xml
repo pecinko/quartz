@@ -64,7 +64,6 @@
                     <align>center</align>
                     <texturenofocus border="4">img/SettingsButtonNF.png</texturenofocus>
                 </control>
-
             </control>
             <control type="button" id="13" description="Default Category Button">
                 <font>size22</font>

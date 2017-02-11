@@ -26,8 +26,7 @@
                 <texturenofocus>img/Subtitles_OptionsFO.png</texturenofocus>
                 <texturefocus>img/Subtitles_OptionsFO.png</texturefocus>
                 <onclick>Control.SetFocus(150)</onclick>
-            </control>
-            <!-- ** Required ** Do not change <id>or<type>-->
+            </control>            <!-- ** Required ** Do not change <id>or<type>-->
             <control type="group">
                 <posx>300</posx>
                 <posy>111</posy>
@@ -99,8 +98,7 @@
                     <height>1</height>
                     <texture>img/Line.png</texture>
                 </control>
-            </control>
-            <!-- ** Required ** Do not change <id>or<type>-->
+            </control>            <!-- ** Required ** Do not change <id>or<type>-->
             <control type="list" id="120">
                 <posx>375</posx>
                 <posy>300</posy>

@@ -9,7 +9,6 @@
         <include>MediaHeader</include>
         <control type="group" description="Content">
             <include>OpenClose</include>
-
             <control type="group">
                 <control type="group" description="Thumbs">
                     <posx>0</posx>

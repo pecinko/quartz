@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">300</defaultcontrol>
-
     <include>OpenClose</include>
     <coordinates>
         <origin x="0" y="0"/>
@@ -140,15 +139,7 @@
                     <font>size18</font>
                     <texturefocus>img/HomeBarFO.png</texturefocus>
                     <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-                </control>
-                <!--<control type="button" id="11" description="Cancel">
-                            <height>40</height>
-                            <width>180</width>
-                            <label>222</label>
-                            <font>size18</font>
-                            <texturefocus>img/HomeBarFO.png</texturefocus>
-                            <alttexturefocus>img/HomeBarFO.png</alttexturefocus>
-                        </control>-->
+                </control>                <!--<control type="button" id="11" description="Cancel">                            <height>40</height>                            <width>180</width>                            <label>222</label>                            <font>size18</font>                            <texturefocus>img/HomeBarFO.png</texturefocus>                            <alttexturefocus>img/HomeBarFO.png</alttexturefocus>                        </control>-->
                 <control type="togglebutton" id="8999" description="Path">
                     <height>60</height>
                     <width>270</width>

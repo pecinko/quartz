@@ -22,9 +22,7 @@
                 </control>
             </control>
             <control type="grouplist" description="Sliders">
-                <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) +
-                    !Control.HasFocus(314) + !Control.HasFocus(315)
-                </visible>
+                <visible>!Control.HasFocus(311) + !Control.HasFocus(312) + !Control.HasFocus(313) + !Control.HasFocus(314) + !Control.HasFocus(315)</visible>
                 <posx>0</posx>
                 <posy>586</posy>
                 <width max="1920">auto</width>
@@ -152,8 +150,7 @@
                             <visible>!Skin.HasSetting(TV5)</visible>
                             <visible>Library.HasContent(TVShows)</visible>
                             <label>575</label>
-                            <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;,return)
-                            </onclick>
+                            <onclick>ActivateWindow(Videos,&quot;library://video/inprogressshows.xml/&quot;,return)</onclick>
                         </item>
                         <item id="3" description="Custom TV">
                             <visible>!IsEmpty(Skin.String(CustomTV.1.Path))</visible>
@@ -216,8 +213,7 @@
                         <item id="0" description="Artists">
                             <visible>!Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
                             <label>133</label>
-                            <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Artists,return)
-                            </onclick>
+                            <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Artists,return)</onclick>
                         </item>
                         <item id="1" description="Music Videos">
                             <visible>!Skin.HasSetting(Music2) + Library.HasContent(MusicVideos)</visible>
@@ -275,9 +271,7 @@
                             <onclick>$INFO[Skin.String(CustomMusic.7.Path)]</onclick>
                         </item>
                         <item id="10" description="Search">
-                            <visible>!Skin.HasSetting(Music5) + [Library.HasContent(Music) |
-                                Library.HasContent(MusicVideos)]
-                            </visible>
+                            <visible>!Skin.HasSetting(Music5) + [Library.HasContent(Music) | Library.HasContent(MusicVideos)]</visible>
                             <label>137</label>
                             <onclick>ActivateWindow(MusicLibrary)</onclick>
                             <onclick>SendClick(8)</onclick>
@@ -357,8 +351,7 @@
                         <item id="2" description="Program apps">
                             <visible>!Skin.HasSetting(Addons2)</visible>
                             <label>0</label>
-                            <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)
-                            </onclick>
+                            <onclick condition="!System.Platform.Android">ActivateWindow(Programs,Addons,return)</onclick>
                             <onclick condition="System.Platform.Android">ActivateWindow(Programs)</onclick>
                         </item>
                         <item id="3" description="Picture apps">
@@ -374,10 +367,8 @@
                         <item id="5" description="Music apps">
                             <visible>!Skin.HasSetting(Addons5)</visible>
                             <label>2</label>
-                            <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)
-                            </onclick>
-                            <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)
-                            </onclick>
+                            <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
+                            <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
                         </item>
                         <item id="6" description="Settings">
                             <visible>!Skin.HasSetting(Addons6)</visible>
@@ -516,21 +507,11 @@
                 </animation>
             </control>
             <control type="group" description="Main Bar items">
-                <animation effect="slide" start="0,0" end="750,0" time="0"
-                           condition="StringCompare(Container(500).NumItems,1)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="600,0" time="0"
-                           condition="StringCompare(Container(500).NumItems,2)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="450,0" time="0"
-                           condition="StringCompare(Container(500).NumItems,3)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="300,0" time="0"
-                           condition="StringCompare(Container(500).NumItems,4)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="150,0" time="0"
-                           condition="StringCompare(Container(500).NumItems,5)">conditional
-                </animation>
+                <animation effect="slide" start="0,0" end="750,0" time="0" condition="StringCompare(Container(500).NumItems,1)">conditional</animation>
+                <animation effect="slide" start="0,0" end="600,0" time="0" condition="StringCompare(Container(500).NumItems,2)">conditional</animation>
+                <animation effect="slide" start="0,0" end="450,0" time="0" condition="StringCompare(Container(500).NumItems,3)">conditional</animation>
+                <animation effect="slide" start="0,0" end="300,0" time="0" condition="StringCompare(Container(500).NumItems,4)">conditional</animation>
+                <animation effect="slide" start="0,0" end="150,0" time="0" condition="StringCompare(Container(500).NumItems,5)">conditional</animation>
                 <control type="image" description="Bar">
                     <posx>-15</posx>
                     <posy>473</posy>
@@ -625,13 +606,7 @@
                     <include>PlayingInfo</include>
                 </control>
                 <control type="image" description="Custom Image">
-                    <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] |
-                        [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] |
-                        [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] |
-                        [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] |
-                        [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] |
-                        [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]
-                    </visible>
+                    <visible>[ControlGroup(9000).HasFocus(301) + Skin.HasSetting(MoviesShelf_Image)] | [ControlGroup(9000).HasFocus(302) + Skin.HasSetting(TVShelf_Image)] | [ControlGroup(9000).HasFocus(303) + Skin.HasSetting(MusicShelf_Image)] | [ControlGroup(9000).HasFocus(304) + Skin.HasSetting(PicturesShelf_Image)] | [ControlGroup(9000).HasFocus(305) + Skin.HasSetting(AddonsShelf_Image)] | [ControlGroup(9000).HasFocus(306) + Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]</visible>
                     <include>ListVisibleFade</include>
                     <posx>68</posx>
                     <posy>111</posy>
@@ -642,14 +617,8 @@
                     <texture>$VAR[ShelfIcon]</texture>
                 </control>
                 <control type="image" description="Logo">
-                    <visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) +
-                        !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) +
-                        !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) +
-                        !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] |
-                        [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) +
-                        !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) +
-                        !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] |
-                        [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]
+                    <visible>[ControlGroup(9000).HasFocus(301) + !Skin.HasSetting(MoviesShelf_Image) + !Control.IsVisible(311)] | [ControlGroup(9000).HasFocus(302) + !Skin.HasSetting(TVShelf_Image) + !Control.IsVisible(312)] | [ControlGroup(9000).HasFocus(303) + !Skin.HasSetting(MusicShelf_Image) + !Control.IsVisible(313)] | [ControlGroup(9000).HasFocus(304) + !Skin.HasSetting(PicturesShelf_Image) + !Control.IsVisible(314)] | [ControlGroup(9000).HasFocus(305) +
+                        !Skin.HasSetting(AddonsShelf_Image) + !Control.IsVisible(315)] | [ControlGroup(9000).HasFocus(306) + !Skin.HasSetting(XBMCShelf_Image) + !Player.HasMedia]
                     </visible>
                     <include>ListVisibleFade</include>
                     <centerleft>960</centerleft>
@@ -661,13 +630,10 @@
                 </control>
             </control>
             <control type="group" description="Player Info">
-                <visible>!Control.HasFocus(301) + Player.HasAudio + ![Window.IsActive(DialogBusy.xml) |
-                    Window.IsActive(VideoFullscreen.xml)]
-                </visible>
+                <visible>!Control.HasFocus(301) + Player.HasAudio + ![Window.IsActive(DialogBusy.xml) | Window.IsActive(VideoFullscreen.xml)]</visible>
                 <visible>!IntegerGreaterThan(Player.Time,8) | !IntegerGreaterThan(Player.TimeRemaining,8)</visible>
                 <include>VisibleFadeEffect</include>
-                <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional
-                </animation>
+                <animation effect="fade" start="100" end="0" time="100" condition="Control.HasFocus(301)">conditional</animation>
                 <posx>15</posx>
                 <posy>960</posy>
                 <control type="image" description="Playing BG">

@@ -3,13 +3,9 @@
     <controls>
         <control type="group">
             <visible>Slideshow.IsActive</visible>
-            <animation condition="Slideshow.IsPaused" effect="fade" start="100" end="0" time="200">conditional
-            </animation>
-            <animation condition="!Slideshow.IsPaused" effect="fade" start="0" end="100" time="400">conditional
-            </animation>
-            <animation condition="!Slideshow.IsPaused" effect="fade" start="100" end="0" delay="2000" time="400">
-                conditional
-            </animation>
+            <animation condition="Slideshow.IsPaused" effect="fade" start="100" end="0" time="200">conditional</animation>
+            <animation condition="!Slideshow.IsPaused" effect="fade" start="0" end="100" time="400">conditional</animation>
+            <animation condition="!Slideshow.IsPaused" effect="fade" start="100" end="0" delay="2000" time="400">conditional</animation>
             <posx>90</posx>
             <posy>870</posy>
             <control type="image">

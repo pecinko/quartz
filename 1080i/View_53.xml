@@ -5,17 +5,10 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group" description="Container and frame">
                 <control type="group" description="Frame Sliders">
-                    <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)
-                    </visible>
-                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
+                    <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)</visible>
+                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
                     <control type="image" description="Posters">
                         <posx>69</posx>
                         <posy>210</posy>
@@ -24,46 +17,22 @@
                         <texture border="36">focus/FrameFO.png</texture>
                         <bordersize>-9</bordersize>
                         <aspectratio>stretch</aspectratio>
-                        <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0"
-                                   time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="257,0"
-                                   time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="514,0"
-                                   time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="771,0"
-                                   time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0"
-                                   end="1028,0" time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0"
-                                   end="1285,0" time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0"
-                                   end="1542,0" time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0"
-                                   time="220" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,384"
-                                   time="220" reversible="true">Conditional
-                        </animation>
+                        <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="257,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="514,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="771,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(4)" effect="slide" easing="inout" start="0,0" end="1028,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(5)" effect="slide" easing="inout" start="0,0" end="1285,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(6)" effect="slide" easing="inout" start="0,0" end="1542,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,384" time="220" reversible="true">Conditional</animation>
                     </control>
                 </control>
                 <control type="group" description="Frame Sliders">
                     <visible>container.content(addons)</visible>
-                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
+                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
                     <control type="image">
                         <posx>78</posx>
                         <posy>192</posy>
@@ -72,45 +41,21 @@
                         <texture border="36">focus/FrameFO.png</texture>
                         <bordersize>-9</bordersize>
                         <aspectratio>stretch</aspectratio>
-                        <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(1)" effect="slide" start="0,0" end="360,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(2)" effect="slide" start="0,0" end="720,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(3)" effect="slide" start="0,0" end="1080,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1440,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,360" time="220"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,720" time="220"
-                                   reversible="true">Conditional
-                        </animation>
+                        <animation condition="Container.Column(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(1)" effect="slide" start="0,0" end="360,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(2)" effect="slide" start="0,0" end="720,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(3)" effect="slide" start="0,0" end="1080,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Column(4)" effect="slide" start="0,0" end="1440,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Row(0)" effect="slide" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Row(1)" effect="slide" start="0,0" end="0,360" time="220" reversible="true">Conditional</animation>
+                        <animation condition="Container.Row(2)" effect="slide" start="0,0" end="0,720" time="220" reversible="true">Conditional</animation>
                     </control>
                 </control>
                 <control type="group" description="Frame Sliders">
-                    <visible>![Container.Content(Movies) | Container.content(tvshows) | container.content(seasons) |
-                        container.content(addons)]
-                    </visible>
-                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200"
-                               reversible="true">Conditional
-                    </animation>
+                    <visible>![Container.Content(Movies) | Container.content(tvshows) | container.content(seasons) | container.content(addons)]</visible>
+                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="1890,540" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="200" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="fade" start="100" end="0" time="200" reversible="true">Conditional</animation>
                     <control type="image" description="Generic">
                         <posx>78</posx>
                         <posy>206</posy>
@@ -140,9 +85,7 @@
                     <onup>PageUp</onup>
                     <ondown>PageDown</ondown>
                     <preloaditems>4</preloaditems>
-                    <itemlayout
-                            condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)"
-                            height="384" width="257">
+                    <itemlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
                         <control type="image">
                             <posx>35</posx>
                             <posy>24</posy>
@@ -184,9 +127,7 @@
                             </control>
                         </control>
                     </itemlayout>
-                    <focusedlayout
-                            condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)"
-                            height="384" width="257">
+                    <focusedlayout condition="Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)" height="384" width="257">
                         <control type="image">
                             <posx>35</posx>
                             <posy>24</posy>
@@ -288,9 +229,7 @@
                             <label>[B]$INFO[ListItem.Label][/B]</label>
                         </control>
                     </focusedlayout>
-                    <itemlayout
-                            condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]"
-                            height="375" width="450">
+                    <itemlayout condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]" height="375" width="450">
                         <control type="image">
                             <posx>45</posx>
                             <posy>24</posy>
@@ -318,9 +257,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout
-                            condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]"
-                            height="375" width="450">
+                    <focusedlayout condition="![container.content(addons) | container.content(movies) | container.content(seasons) | container.content(tvshows)]" height="375" width="450">
                         <control type="image">
                             <posx>45</posx>
                             <posy>24</posy>
@@ -379,9 +316,7 @@
                 <label>$INFO[ListItem.label][COLOR=White]$VAR[TopLabel, ][/COLOR]</label>
             </control>
             <control type="image" description="Overlay">
-                <visible>![container.content(tvshows) | container.content(seasons) |
-                    SubString(ListItem.Path,videodb://movies/sets/)]
-                </visible>
+                <visible>![container.content(tvshows) | container.content(seasons) | SubString(ListItem.Path,videodb://movies/sets/)]</visible>
                 <posx>69</posx>
                 <posy>127</posy>
                 <height>21</height>

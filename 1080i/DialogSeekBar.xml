@@ -2,12 +2,8 @@
 <window type="dialog">
     <defaultcontrol always="true">901</defaultcontrol>
     <include>OpenClose</include>
-    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings)
-        | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]
-    </visible>
-    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking |
-        Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching]
-    </visible>
+    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
+    <visible>Window.IsVisible(FullScreenVideo) + [Window.IsActive(videoosd.xml) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching]</visible>
     <animation effect="fade" start="0" end="100" time="400">Visible</animation>
     <animation effect="fade" start="100" end="0" time="100">Hidden</animation>
     <controls>
@@ -51,19 +47,13 @@
                 <height>60</height>
                 <align>center</align>
                 <aligny>center</aligny>
-                <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=HL] •
-                    [/COLOR]]$INFO[VideoPlayer.Season,,.]$INFO[VideoPlayer.Episode,,[COLOR=HL] •
-                    [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,:
-                    ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]
-                </label>
+                <label>$INFO[VideoPlayer.TVShowTitle,,[COLOR=HL] • [/COLOR]]$INFO[VideoPlayer.Season,,.]$INFO[VideoPlayer.Episode,,[COLOR=HL] • [/COLOR]]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
             </control>
         </control>
         <control type="group">
             <posy>270</posy>
             <control type="image" description="Background">
-                <visible>player.forwarding | player.rewinding | [Player.Paused + Player.Caching] |
-                    [Player.DisplayAfterSeek + !IsEmpty(Player.SeekOffset)]
-                </visible>
+                <visible>player.forwarding | player.rewinding | [Player.Paused + Player.Caching] | [Player.DisplayAfterSeek + !IsEmpty(Player.SeekOffset)]</visible>
                 <posx>855</posx>
                 <posy>525</posy>
                 <width>210</width>
@@ -121,39 +111,8 @@
             </control>
         </control>
         <control type="group">
-            <posy>1014</posy>
-            <!--<control type="image" description="Real Background">
-              <posx>299</posx>
-              <posy>6</posy>
-              <width>1407</width>
-              <height>24</height>
-              <texture border="15,1,15,1">VideoOSD/ProgressRealBG.png</texture>
-            </control>-->
-            <!--<control type="progress" description="Buffer Bar">
-              <posx>303</posx>
-              <posy>10</posy>
-              <width>1398</width>
-              <height>17</height>
-              <texturebg border="6">VideoOSD/VideoProgressBG.png</texturebg>
-              <midtexture border="0,6,1,6">VideoOSD/BufferMidd.png</midtexture>
-              <lefttexture border="6,6,0,6">VideoOSD/BufferLeft.png</lefttexture>
-              <righttexture border="0,6,12,6">VideoOSD/BufferRight.png</righttexture>
-              <info>Player.CacheLevel</info>
-              <visible>Player.Caching</visible>
-            </control>
-            <control type="progress" description="Cache Progress">
-              <visible>false</visible>
-              <posx>303</posx>
-              <posy>10</posy>
-              <width>1398</width>
-              <height>17</height>
-              <texturebg border="6">VideoOSD/VideoProgressBG.png</texturebg>
-              <midtexture border="0,6,1,6">VideoOSD/BufferMidd.png</midtexture>
-              <lefttexture border="6,6,0,6">VideoOSD/BufferLeft.png</lefttexture>
-              <righttexture border="0,6,12,6">VideoOSD/BufferRight.png</righttexture>
-              <info>Player.ProgressCache</info>
-            </control>-->
-
+            <posy>1014
+            </posy>            <!--<control type="image" description="Real Background">              <posx>299</posx>              <posy>6</posy>              <width>1407</width>              <height>24</height>              <texture border="15,1,15,1">VideoOSD/ProgressRealBG.png</texture>            </control>-->            <!--<control type="progress" description="Buffer Bar">              <posx>303</posx>              <posy>10</posy>              <width>1398</width>              <height>17</height>              <texturebg border="6">VideoOSD/VideoProgressBG.png</texturebg>              <midtexture border="0,6,1,6">VideoOSD/BufferMidd.png</midtexture>              <lefttexture border="6,6,0,6">VideoOSD/BufferLeft.png</lefttexture>              <righttexture border="0,6,12,6">VideoOSD/BufferRight.png</righttexture>              <info>Player.CacheLevel</info>              <visible>Player.Caching</visible>            </control>            <control type="progress" description="Cache Progress">              <visible>false</visible>              <posx>303</posx>              <posy>10</posy>              <width>1398</width>              <height>17</height>              <texturebg border="6">VideoOSD/VideoProgressBG.png</texturebg>              <midtexture border="0,6,1,6">VideoOSD/BufferMidd.png</midtexture>              <lefttexture border="6,6,0,6">VideoOSD/BufferLeft.png</lefttexture>              <righttexture border="0,6,12,6">VideoOSD/BufferRight.png</righttexture>              <info>Player.ProgressCache</info>            </control>-->
             <control type="progress" id="23">
                 <description>Progressbar</description>
                 <posx>360</posx>
@@ -161,21 +120,7 @@
                 <width>1200</width>
                 <height>24</height>
                 <info>Player.Progress</info>
-            </control>
-
-
-            <!--<control type="progress" id="23" description="Progress Bar">
-<posx>300</posx>
-<posy>6</posy>
-<width>1407</width>
-<height>24</height>
-<texturebg border="8">VideoOSD/VideoProgressBG.png</texturebg>
-<midtexture border="0,0,1,0">VideoOSD/VideoProgressMidd.png</midtexture>
-<lefttexture border="0">VideoOSD/VideoProgressLeft.png</lefttexture>
-<righttexture border="0">VideoOSD/VideoProgressRight.png</righttexture>
-<info>Player.Progress</info>
-<visible>true</visible>
-</control>-->
+            </control>            <!--<control type="progress" id="23" description="Progress Bar"><posx>300</posx><posy>6</posy><width>1407</width><height>24</height><texturebg border="8">VideoOSD/VideoProgressBG.png</texturebg><midtexture border="0,0,1,0">VideoOSD/VideoProgressMidd.png</midtexture><lefttexture border="0">VideoOSD/VideoProgressLeft.png</lefttexture><righttexture border="0">VideoOSD/VideoProgressRight.png</righttexture><info>Player.Progress</info><visible>true</visible></control>-->
             <control type="label">
                 <posx>150</posx>
                 <posy>0</posy>
@@ -203,9 +148,7 @@
                 <posx>52</posx>
                 <include>SeekbarIconsCommons</include>
                 <texture border="2">busy/Busy.png</texture>
-                <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true"
-                           condition="true">conditional
-                </animation>
+                <animation effect="rotate" start="360" end="0" center="auto" time="1200" loop="true" pulse="true" condition="true">conditional</animation>
             </control>
             <control type="image" description="Pause">
                 <visible>Player.Paused + !Player.Caching</visible>
@@ -214,33 +157,25 @@
                 <texture border="2">OSD/OSDProgressPause.png</texture>
             </control>
             <control type="image" description="Play">
-                <visible>player.playing | player.forwarding2x | player.forwarding4x | player.forwarding8x |
-                    player.forwarding16x | player.forwarding32x
-                </visible>
+                <visible>player.playing | player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
                 <posx>52</posx>
                 <include>SeekbarIconsCommons</include>
                 <texture border="2">OSD/OSDProgressPlay.png</texture>
             </control>
             <control type="image" description="FF 2">
-                <visible>player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x |
-                    player.forwarding32x
-                </visible>
+                <visible>player.forwarding2x | player.forwarding4x | player.forwarding8x | player.forwarding16x | player.forwarding32x</visible>
                 <posx>75</posx>
                 <include>SeekbarIconsCommons</include>
                 <texture border="2">OSD/OSDProgressPlay.png</texture>
             </control>
             <control type="image" description="RW 2">
-                <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x |
-                    player.rewinding32x
-                </visible>
+                <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
                 <posx>52</posx>
                 <include>SeekbarIconsCommons</include>
                 <texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>
             </control>
             <control type="image" description="RW 2">
-                <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x |
-                    player.rewinding32x
-                </visible>
+                <visible>player.rewinding2x | player.rewinding4x | player.rewinding8x | player.rewinding16x | player.rewinding32x</visible>
                 <posx>75</posx>
                 <include>SeekbarIconsCommons</include>
                 <texture flipx="true" border="2">OSD/OSDProgressPlay.png</texture>

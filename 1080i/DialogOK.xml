@@ -15,7 +15,6 @@
                 <bordertexture border="22">texture/dialog_border.png</bordertexture>
                 <bordersize>22</bordersize>
             </control>
-
             <control type="group">
                 <top>270</top>
                 <control type="label" id="1" description="Heading">

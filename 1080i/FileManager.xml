@@ -39,8 +39,7 @@
                     <itemlayout height="63" width="840">
                         <control type="image">
                             <width>840</width>
-                            <height>60</height>
-                            <!--<texture border="4">img/MediaButton2.png</texture>-->
+                            <height>60</height>                            <!--<texture border="4">img/MediaButton2.png</texture>-->
                             <texture border="4">img/SettingsButtonNF.png</texture>
                         </control>
                         <control type="label">
@@ -63,8 +62,7 @@
                         <control type="image">
                             <width>840</width>
                             <height>60</height>
-                            <texture border="4">img/MediaButton2.png</texture>
-                            <!--<texture border="4">img/SettingsButtonNF.png</texture>-->
+                            <texture border="4">img/MediaButton2.png</texture>                            <!--<texture border="4">img/SettingsButtonNF.png</texture>-->
                         </control>
                         <control type="label">
                             <posx>15</posx>
@@ -116,8 +114,7 @@
                     <itemlayout height="63" width="840">
                         <control type="image">
                             <width>840</width>
-                            <height>60</height>
-                            <!--<texture border="4">img/MediaButton2.png</texture>-->
+                            <height>60</height>                            <!--<texture border="4">img/MediaButton2.png</texture>-->
                             <texture border="4">img/SettingsButtonNF.png</texture>
                         </control>
                         <control type="label">
@@ -140,8 +137,7 @@
                         <control type="image">
                             <width>840</width>
                             <height>60</height>
-                            <texture border="4">img/MediaButton2.png</texture>
-                            <!--<texture border="4">img/SettingsButtonNF.png</texture>-->
+                            <texture border="4">img/MediaButton2.png</texture>                            <!--<texture border="4">img/SettingsButtonNF.png</texture>-->
                         </control>
                         <control type="label">
                             <posx>15</posx>

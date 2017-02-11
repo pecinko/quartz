@@ -9,10 +9,7 @@
                 <posx>1020</posx>
                 <posy>141</posy>
                 <control type="fixedlist" id="51">
-                    <visible>container.content(movies) | container.content(tvshows) | container.content(seasons) |
-                        container.content(episodes) | container.content(musicvideos) | container.content(addons) |
-                        container.content(files)
-                    </visible>
+                    <visible>container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes) | container.content(musicvideos) | container.content(addons) | container.content(files)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>802</width>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">20</defaultcontrol>
-
     <include>OpenClose</include>
     <controls>
         <include>MiniBackground</include>
@@ -30,21 +29,11 @@
             <visible>!IsEmpty(Window.Property(IsRadio))</visible>
         </control>
         <control type="group" description="Slider and List">
-            <animation effect="slide" start="0,0" end="0,-333" time="0"
-                       condition="StringCompare(Container(20).NumItems,1)">conditional
-            </animation>
-            <animation effect="slide" start="0,0" end="0,-222" time="0"
-                       condition="StringCompare(Container(20).NumItems,2)">conditional
-            </animation>
-            <animation effect="slide" start="0,0" end="0,-222" time="0"
-                       condition="StringCompare(Container(20).NumItems,3)">conditional
-            </animation>
-            <animation effect="slide" start="0,0" end="0,-111" time="0"
-                       condition="StringCompare(Container(20).NumItems,4)">conditional
-            </animation>
-            <animation effect="slide" start="0,0" end="0,-111" time="0"
-                       condition="StringCompare(Container(20).NumItems,5)">conditional
-            </animation>
+            <animation effect="slide" start="0,0" end="0,-333" time="0" condition="StringCompare(Container(20).NumItems,1)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container(20).NumItems,2)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-222" time="0" condition="StringCompare(Container(20).NumItems,3)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container(20).NumItems,4)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-111" time="0" condition="StringCompare(Container(20).NumItems,5)">conditional</animation>
             <posx>1020</posx>
             <posy>141</posy>
             <control type="fixedlist" id="20">
@@ -59,9 +48,7 @@
                 <pagecontrol>60</pagecontrol>
                 <focusposition>3</focusposition>
                 <movement>4</movement>
-
-                <itemlayout width="802" height="111">
-                    <!--<include>ListBG</include>-->
+                <itemlayout width="802" height="111">                    <!--<include>ListBG</include>-->
                     <control type="image" description="Logo">
                         <posx>615</posx>
                         <posy>12</posy>
@@ -99,8 +86,7 @@
                         <label>$INFO[ListItem.Property(ClientName)]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="802" height="111">
-                    <!--<include>ListBG</include>-->
+                <focusedlayout width="802" height="111">                    <!--<include>ListBG</include>-->
                     <control type="image" description="Logo">
                         <posx>615</posx>
                         <posy>12</posy>
@@ -140,40 +126,18 @@
                 </focusedlayout>
             </control>
             <control type="group" description="Slider">
-                <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                           reversible="true">Conditional
-                </animation>
+                <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
+                <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                 <include>Slider5</include>
-                <animation condition="Container(20).Position(0)" effect="slide" start="0,0" end="0,-333" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(1)" effect="slide" start="0,0" end="0,-222" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(2)" effect="slide" start="0,0" end="0,-111" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(3)" effect="slide" start="0,0" end="0,0" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(4)" effect="slide" start="0,0" end="0,111" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(5)" effect="slide" start="0,0" end="0,222" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(6)" effect="slide" start="0,0" end="0,333" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(7)" effect="slide" start="0,0" end="0,444" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(20).Position(8)" effect="slide" start="0,0" end="0,555" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(20).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(20).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
         <control type="image">
@@ -205,152 +169,8 @@
         </control>
         <control type="group">
             <posx>0</posx>
-            <posy>45</posy>
-            <!--<control type="list" id="20">
-                      <posx>30</posx>
-                      <posy>5</posy>
-                      <width>420</width>
-                      <height>470</height>
-                      <onup>20</onup>
-                      <ondown>20</ondown>
-                      <onleft>60</onleft>
-                      <onright>9002</onright>
-                      <pagecontrol>60</pagecontrol>
-                      <scrolltime>200</scrolltime>
-                      <itemlayout height="45" width="420">
-                          <control type="image">
-                              <posx>0</posx>
-                              <posy>0</posy>
-                              <width>420</width>
-                              <height>40</height>
-                              <texture>img/ListBG.png</texture>
-                          </control>
-                          <control type="image">
-                              <posx>5</posx>
-                              <posy>5</posy>
-                              <width>30</width>
-                              <height>30</height>
-                              <texture>$INFO[ListItem.Property(Icon)]</texture>
-                              <visible>ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="image">
-                              <posx>5</posx>
-                              <posy>5</posy>
-                              <width>30</width>
-                              <height>30</height>
-                              <colordiffuse>77FFFFFF</colordiffuse>
-                              <texture>$INFO[ListItem.Property(Icon)]</texture>
-                              <visible>!ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="label">
-                              <posx>45</posx>
-                              <posy>0</posy>
-                              <width>335</width>
-                              <height>40</height>
-                              <font>font12</font>
-                              <align>left</align>
-                              <aligny>center</aligny>
-                              <textcolor>white</textcolor>
-                              <selectedcolor>selected</selectedcolor>
-                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-                              <visible>ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="label">
-                              <posx>45</posx>
-                              <posy>0</posy>
-                              <width>335</width>
-                              <height>40</height>
-                              <font>font12</font>
-                              <align>left</align>
-                              <aligny>center</aligny>
-                              <textcolor>grey3</textcolor>
-                              <selectedcolor>selected</selectedcolor>
-                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-                              <visible>!ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="image">
-                              <posx>390</posx>
-                              <posy>10</posy>
-                              <width>20</width>
-                              <height>20</height>
-                              <texture>OverlayWatched.png</texture>
-                              <visible>ListItem.Property(Changed)</visible>
-                          </control>
-                      </itemlayout>
-                      <focusedlayout height="65" width="420">
-                          <control type="image">
-                              <posx>0</posx>
-                              <posy>0</posy>
-                              <width>420</width>
-                              <height>60</height>
-                              <texture border="5">button-focus2.png</texture>
-                              <animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
-                          </control>
-                          <control type="image">
-                              <posx>5</posx>
-                              <posy>5</posy>
-                              <width>30</width>
-                              <height>30</height>
-                              <texture>$INFO[ListItem.Property(Icon)]</texture>
-                              <visible>ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="image">
-                              <posx>5</posx>
-                              <posy>5</posy>
-                              <width>30</width>
-                              <height>30</height>
-                              <colordiffuse>77FFFFFF</colordiffuse>
-                              <texture>$INFO[ListItem.Property(Icon)]</texture>
-                              <visible>!ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="label">
-                              <posx>45</posx>
-                              <posy>0</posy>
-                              <width>335</width>
-                              <height>40</height>
-                              <font>font12</font>
-                              <align>left</align>
-                              <aligny>center</aligny>
-                              <textcolor>white</textcolor>
-                              <selectedcolor>selected</selectedcolor>
-                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-                              <visible>ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="label">
-                              <posx>45</posx>
-                              <posy>0</posy>
-                              <width>335</width>
-                              <height>40</height>
-                              <font>font12</font>
-                              <align>left</align>
-                              <aligny>center</aligny>
-                              <textcolor>grey3</textcolor>
-                              <selectedcolor>selected</selectedcolor>
-                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-                              <visible>!ListItem.Property(ActiveChannel)</visible>
-                          </control>
-                          <control type="image">
-                              <posx>390</posx>
-                              <posy>10</posy>
-                              <width>20</width>
-                              <height>20</height>
-                              <texture>OverlayWatched.png</texture>
-                              <visible>ListItem.Property(Changed)</visible>
-                          </control>
-                          <control type="label">
-                              <posx>5</posx>
-                              <posy>30</posy>
-                              <width>410</width>
-                              <height>30</height>
-                              <font>font12</font>
-                              <align>left</align>
-                              <aligny>center</aligny>
-                              <textcolor>grey2</textcolor>
-                              <selectedcolor>selected</selectedcolor>
-                              <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
-                          </control>
-                      </focusedlayout>
-                  </control>-->
+            <posy>45
+            </posy>            <!--<control type="list" id="20">                      <posx>30</posx>                      <posy>5</posy>                      <width>420</width>                      <height>470</height>                      <onup>20</onup>                      <ondown>20</ondown>                      <onleft>60</onleft>                      <onright>9002</onright>                      <pagecontrol>60</pagecontrol>                      <scrolltime>200</scrolltime>                      <itemlayout height="45" width="420">                          <control type="image">                              <posx>0</posx>                              <posy>0</posy>                              <width>420</width>                              <height>40</height>                              <texture>img/ListBG.png</texture>                          </control>                          <control type="image">                              <posx>5</posx>                              <posy>5</posy>                              <width>30</width>                              <height>30</height>                              <texture>$INFO[ListItem.Property(Icon)]</texture>                              <visible>ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="image">                              <posx>5</posx>                              <posy>5</posy>                              <width>30</width>                              <height>30</height>                              <colordiffuse>77FFFFFF</colordiffuse>                              <texture>$INFO[ListItem.Property(Icon)]</texture>                              <visible>!ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="label">                              <posx>45</posx>                              <posy>0</posy>                              <width>335</width>                              <height>40</height>                              <font>font12</font>                              <align>left</align>                              <aligny>center</aligny>                              <textcolor>white</textcolor>                              <selectedcolor>selected</selectedcolor>                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>                              <visible>ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="label">                              <posx>45</posx>                              <posy>0</posy>                              <width>335</width>                              <height>40</height>                              <font>font12</font>                              <align>left</align>                              <aligny>center</aligny>                              <textcolor>grey3</textcolor>                              <selectedcolor>selected</selectedcolor>                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>                              <visible>!ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="image">                              <posx>390</posx>                              <posy>10</posy>                              <width>20</width>                              <height>20</height>                              <texture>OverlayWatched.png</texture>                              <visible>ListItem.Property(Changed)</visible>                          </control>                      </itemlayout>                      <focusedlayout height="65" width="420">                          <control type="image">                              <posx>0</posx>                              <posy>0</posy>                              <width>420</width>                              <height>60</height>                              <texture border="5">button-focus2.png</texture>                              <animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>                          </control>                          <control type="image">                              <posx>5</posx>                              <posy>5</posy>                              <width>30</width>                              <height>30</height>                              <texture>$INFO[ListItem.Property(Icon)]</texture>                              <visible>ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="image">                              <posx>5</posx>                              <posy>5</posy>                              <width>30</width>                              <height>30</height>                              <colordiffuse>77FFFFFF</colordiffuse>                              <texture>$INFO[ListItem.Property(Icon)]</texture>                              <visible>!ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="label">                              <posx>45</posx>                              <posy>0</posy>                              <width>335</width>                              <height>40</height>                              <font>font12</font>                              <align>left</align>                              <aligny>center</aligny>                              <textcolor>white</textcolor>                              <selectedcolor>selected</selectedcolor>                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>                              <visible>ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="label">                              <posx>45</posx>                              <posy>0</posy>                              <width>335</width>                              <height>40</height>                              <font>font12</font>                              <align>left</align>                              <aligny>center</aligny>                              <textcolor>grey3</textcolor>                              <selectedcolor>selected</selectedcolor>                              <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>                              <visible>!ListItem.Property(ActiveChannel)</visible>                          </control>                          <control type="image">                              <posx>390</posx>                              <posy>10</posy>                              <width>20</width>                              <height>20</height>                              <texture>OverlayWatched.png</texture>                              <visible>ListItem.Property(Changed)</visible>                          </control>                          <control type="label">                              <posx>5</posx>                              <posy>30</posy>                              <width>410</width>                              <height>30</height>                              <font>font12</font>                              <align>left</align>                              <aligny>center</aligny>                              <textcolor>grey2</textcolor>                              <selectedcolor>selected</selectedcolor>                              <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>                          </control>                      </focusedlayout>                  </control>-->
             <control type="group" id="9002">
                 <control type="group">
                     <posx>98</posx>

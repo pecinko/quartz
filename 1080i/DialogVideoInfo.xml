@@ -73,9 +73,7 @@
                         <aspectratio>stretch</aspectratio>
                     </control>
                     <control type="grouplist" description="Flags">
-                        <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) |
-                            Control.HasFocus(50)]
-                        </visible>
+                        <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
                         <include>VisibleFadeEffect</include>
                         <posx>1109</posx>
                         <posy>480</posy>
@@ -128,10 +126,7 @@
                         <posx>0</posx>
                         <posy>470</posy>
                         <control type="group">
-                            <visible>![container.content(tvshows) | container.content(episodes) |
-                                SubString(Container.FolderPath,videodb://3,left) | Control.HasFocus(12) |
-                                Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]
-                            </visible>
+                            <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://3,left) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
                             <include>VisibleFadeEffect</include>
                             <control type="list" id="49">
                                 <include>List49_Commons</include>
@@ -140,9 +135,7 @@
                                         <label>$LOCALIZE[20376]:</label>
                                         <label2>$INFO[ListItem.OriginalTitle]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>!IsEmpty(ListItem.OriginalTitle) +
-                                            !stringcompare(ListItem.OriginalTitle,Listitem.Title)
-                                        </visible>
+                                        <visible>!IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[20339]:</label>
@@ -194,30 +187,22 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[573]:</label>
-                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]
-                                        </label2>
+                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] +
-                                            Skin.HasSetting(ShowFilePath)
-                                        </visible>
+                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                                     </item>
                                 </content>
                             </control>
                         </control>
                         <control type="group" description="TV Shows">
-                            <visible>Container.Content(TVShows) + !Control.HasFocus(12) + ![Control.HasFocus(9012) |
-                                Control.HasFocus(50)| Control.HasFocus(10)]
-                            </visible>
+                            <visible>Container.Content(TVShows) + !Control.HasFocus(12) + ![Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
                             <include>VisibleFadeEffect</include>
                             <control type="list" id="49">
                                 <include>List49_Commons</include>
                                 <content>
                                     <item>
                                         <label>$LOCALIZE[20360]:</label>
-                                        <label2>$INFO[listitem.episode] [COLOR=Grey]
-                                            ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] -
-                                            $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]
-                                        </label2>
+                                        <label2>$INFO[listitem.episode] [COLOR=Grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!IsEmpty(ListItem.Episode)</visible>
                                     </item>
@@ -247,20 +232,15 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[573]:</label>
-                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]
-                                        </label2>
+                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] +
-                                            Skin.HasSetting(ShowFilePath)
-                                        </visible>
+                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                                     </item>
                                 </content>
                             </control>
                         </control>
                         <control type="group" description="Episodes">
-                            <visible>container.content(episodes) + ![Control.HasFocus(12) | Control.HasFocus(9012) |
-                                Control.HasFocus(50)| Control.HasFocus(10)]
-                            </visible>
+                            <visible>container.content(episodes) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
                             <include>VisibleFadeEffect</include>
                             <control type="list" id="49">
                                 <include>List49_Commons</include>
@@ -327,20 +307,15 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[573]:</label>
-                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]
-                                        </label2>
+                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] +
-                                            Skin.HasSetting(ShowFilePath)
-                                        </visible>
+                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                                     </item>
                                 </content>
                             </control>
                         </control>
                         <control type="group" description="Music Videos">
-                            <visible>SubString(Container.FolderPath,videodb://3,left) + ![Control.HasFocus(12) |
-                                Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]
-                            </visible>
+                            <visible>SubString(Container.FolderPath,videodb://3,left) + ![Control.HasFocus(12) | Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(10)]</visible>
                             <include>VisibleFadeEffect</include>
                             <control type="list" id="49">
                                 <include>List49_Commons</include>
@@ -395,12 +370,9 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[573]:</label>
-                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]
-                                        </label2>
+                                        <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] +
-                                            Skin.HasSetting(ShowFilePath)
-                                        </visible>
+                                        <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                                     </item>
                                 </content>
                             </control>
@@ -496,24 +468,12 @@
                     <textcolor>White</textcolor>
                     <font>size17</font>
                     <label>$INFO[Container(50).ListItem.Label]</label>
-                    <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="254,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="508,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="762,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="1016,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="1270,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
+                    <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
                 </control>
                 <control type="image" description="Coverflow Selector">
                     <visible>Control.HasFocus(50)</visible>
@@ -525,24 +485,12 @@
                     <texture border="36">focus/FrameFO.png</texture>
                     <bordersize>9</bordersize>
                     <aspectratio>stretch</aspectratio>
-                    <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="254,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="508,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="762,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="1016,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="1270,0" time="150"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
+                    <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
                 </control>
             </control>
             <control type="image" description="Navbar">
@@ -587,9 +535,7 @@
                         <usealttexture>Container.Content(TVShows)</usealttexture>
                     </control>
                     <control type="button" id="301" description="InProgressReset">
-                        <visible>[Container.Content(Episodes) | Container.Content(Movies) ] +
-                            system.hasaddon(script.module.inprogressreset) + !SubString(ListItem.PercentPlayed,0,left)
-                        </visible>
+                        <visible>[Container.Content(Episodes) | Container.Content(Movies) ] + system.hasaddon(script.module.inprogressreset) + !SubString(ListItem.PercentPlayed,0,left)</visible>
                         <height>66</height>
                         <width>270</width>
                         <align>center</align>

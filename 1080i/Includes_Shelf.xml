@@ -50,9 +50,7 @@
             <posy>279</posy>
             <height>45</height>
             <width>750</width>
-            <label>$INFO[MusicPlayer.Album]$INFO[VideoPlayer.Album]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , -
-                ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ]
-            </label>
+            <label>$INFO[MusicPlayer.Album]$INFO[VideoPlayer.Album]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.episode,$LOCALIZE[20359] ]</label>
             <align>left</align>
             <aligny>center</aligny>
             <font>size18</font>
@@ -98,8 +96,7 @@
         <height>402</height>
         <orientation>horizontal</orientation>
         <scrolltime>400</scrolltime>
-        <itemlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387"
-                    width="254">
+        <itemlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
             <control type="image">
                 <posx>17</posx>
                 <posy>18</posy>
@@ -122,8 +119,7 @@
                 <align>center</align>
             </control>
         </itemlayout>
-        <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387"
-                       width="254">
+        <focusedlayout condition="!Skin.HasSetting(MoviesShelf_Custom) + Library.HasContent(Movies)" height="387" width="254">
             <control type="group">
                 <control type="image">
                     <posx>17</posx>
@@ -223,8 +219,7 @@
                 <align>center</align>
             </control>
         </itemlayout>
-        <focusedlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="387"
-                       width="254">
+        <focusedlayout condition="!Skin.HasSetting(TVShelf_Custom) + Library.HasContent(TVShows)" height="387" width="254">
             <control type="group">
                 <control type="image">
                     <posx>17</posx>
@@ -359,14 +354,11 @@
                 </control>
             </control>
         </focusedlayout>
-    </include>
-    <!--RA-->
+    </include>    <!--RA-->
     <include name="Movies_RA">
         <control type="group">
             <control type="panel" id="311" description="TOP Shortcuts">
-                <visible>[Library.HasContent(Movies) | Skin.HasSetting(MoviesShelf_Custom)] +
-                    [ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]
-                </visible>
+                <visible>[Library.HasContent(Movies) | Skin.HasSetting(MoviesShelf_Custom)] + [ControlGroup(9000).HasFocus(301) | Control.HasFocus(311)]</visible>
                 <onup>noop</onup>
                 <ondown>301</ondown>
                 <onleft>311</onleft>
@@ -384,21 +376,11 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="354,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="708,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="1062,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1416,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
             <control type="image">
                 <visible>Control.HasFocus(311) + !Skin.HasSetting(MoviesShelf_Custom)</visible>
@@ -409,48 +391,28 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="254,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="508,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="762,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1016,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1270,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(311).Position(6)" effect="slide" start="0,0" end="1524,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(311).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(311).Position(6)" effect="slide" start="0,0" end="1524,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
     <include name="TV_RA">
         <control type="group">
             <control type="panel" id="312" description="TOP Shortcuts">
-                <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Custom)] +
-                    [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]
-                </visible>
+                <visible>[Library.HasContent(TVShows) | Skin.HasSetting(TVShelf_Custom)] + [ControlGroup(9000).HasFocus(302) | Control.HasFocus(312)]</visible>
                 <onup>noop</onup>
                 <ondown>302</ondown>
                 <onleft>312</onleft>
                 <onright>312</onright>
                 <include>TVShortcutsCommons</include>
                 <include condition="Skin.HasSetting(TVShelf_Custom)">TV_Custom_Items</include>
-                <include condition="!Skin.HasSetting(TVShelf_Custom) + System.HasAddon(service.quartz.tvshelf)">
-                    TV_NextUp_Items
-                </include>
-                <include condition="!Skin.HasSetting(TVShelf_Custom) + !System.HasAddon(service.quartz.tvshelf)">
-                    TV_Recent_Items
-                </include>
+                <include condition="!Skin.HasSetting(TVShelf_Custom) + System.HasAddon(service.quartz.tvshelf)">TV_NextUp_Items</include>
+                <include condition="!Skin.HasSetting(TVShelf_Custom) + !System.HasAddon(service.quartz.tvshelf)">TV_Recent_Items</include>
             </control>
             <control type="image">
                 <visible>Control.HasFocus(312) + Skin.HasSetting(TVShelf_Custom)</visible>
@@ -461,21 +423,11 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="354,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="708,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1062,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1416,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
             <control type="image">
                 <visible>Control.HasFocus(312) + !Skin.HasSetting(TVShelf_Custom)</visible>
@@ -486,36 +438,20 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(312).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(1)" effect="slide" start="0,0" end="254,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(2)" effect="slide" start="0,0" end="508,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(3)" effect="slide" start="0,0" end="762,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(4)" effect="slide" start="0,0" end="1016,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(5)" effect="slide" start="0,0" end="1270,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(312).Position(6)" effect="slide" start="0,0" end="1524,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
     <include name="Music_RA">
         <control type="group">
             <control type="panel" id="313" description="TOP Shortcuts">
-                <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) |
-                    Skin.HasSetting(MusicShelf_Custom)] + [ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]
-                </visible>
+                <visible>[Library.HasContent(musicvideos) | Library.HasContent(music) | Skin.HasSetting(MusicShelf_Custom)] + [ControlGroup(9000).HasFocus(303) | Control.HasFocus(313)]</visible>
                 <onup>303</onup>
                 <ondown>303</ondown>
                 <onleft>313</onleft>
@@ -533,21 +469,11 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="354,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(313).Position(2)" effect="slide" start="0,0" end="708,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(313).Position(3)" effect="slide" start="0,0" end="1062,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(313).Position(4)" effect="slide" start="0,0" end="1416,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(313).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(313).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -652,21 +578,11 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(314).Position(1)" effect="slide" start="0,0" end="354,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(314).Position(2)" effect="slide" start="0,0" end="708,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(314).Position(3)" effect="slide" start="0,0" end="1062,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(314).Position(4)" effect="slide" start="0,0" end="1416,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(314).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(314).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(314).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(314).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(314).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>
@@ -771,21 +687,11 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="354,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(315).Position(2)" effect="slide" start="0,0" end="708,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(315).Position(3)" effect="slide" start="0,0" end="1062,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(315).Position(4)" effect="slide" start="0,0" end="1416,0" time="150"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(315).Position(0)" effect="slide" start="0,0" end="0,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(315).Position(1)" effect="slide" start="0,0" end="354,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(315).Position(2)" effect="slide" start="0,0" end="708,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(315).Position(3)" effect="slide" start="0,0" end="1062,0" time="150" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(315).Position(4)" effect="slide" start="0,0" end="1416,0" time="150" easing="inout" reversible="true">Conditional</animation>
             </control>
         </control>
     </include>

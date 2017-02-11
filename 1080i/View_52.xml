@@ -4,9 +4,7 @@
         <control type="group" description="Large Infolist2">
             <visible>Control.IsVisible(52)</visible>
             <control type="group" description="NON music info">
-                <visible>![container.content(musicvideos) | container.content(movies) | container.content(tvshows) |
-                    container.content(seasons)]
-                </visible>
+                <visible>![container.content(musicvideos) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
                 <include>DefaultInfoThumbs</include>
                 <include>DefaultMediaInfo</include>
             </control>
@@ -101,9 +99,7 @@
                 <posx>1020</posx>
                 <posy>141</posy>
                 <control type="fixedlist" id="52">
-                    <visible>container.content(Movies) | container.content(TVshows) | container.content(Seasons) |
-                        container.content(episodes) | container.content(musicvideos) | container.content(files)
-                    </visible>
+                    <visible>container.content(Movies) | container.content(TVshows) | container.content(Seasons) | container.content(episodes) | container.content(musicvideos) | container.content(files)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>802</width>

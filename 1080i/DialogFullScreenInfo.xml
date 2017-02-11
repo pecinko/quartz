@@ -75,9 +75,7 @@
                     <control type="label" description="Main label">
                         <visible>![VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)]</visible>
                         <include>FullscreenInfoLabelMain</include>
-                        <label>$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,:
-                            ]$INFO[VideoPlayer.Title]
-                        </label>
+                        <label>$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
                     </control>
                     <control type="label" description="Main label">
                         <visible>VideoPlayer.Content(MusicVideos)</visible>
@@ -105,9 +103,7 @@
                         <visible>VideoPlayer.Content(Episodes)</visible>
                         <font>size17</font>
                         <include>FullscreenInfoLabel2</include>
-                        <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season],
-                            $LOCALIZE[20359] $INFO[VideoPlayer.Episode]
-                        </label>
+                        <label>$INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[20373] $INFO[VideoPlayer.Season], $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
                     </control>
                     <control type="label" description="Label 2">
                         <visible>VideoPlayer.Content(LiveTV)</visible>

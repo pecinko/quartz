@@ -8,12 +8,8 @@
             <posx>930</posx>
             <posy>141</posy>
             <control type="group" description="Slider">
-                <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                           reversible="true">Conditional
-                </animation>
+                <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300" reversible="true">Conditional</animation>
+                <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                 <control type="image">
                     <animation effect="fade" time="100">VisibleChange</animation>
                     <posx>-12</posx>
@@ -26,39 +22,17 @@
                 <animation type="Conditional" condition="Control.HasFocus(9001) | ControlGroup(9000).HasFocus()">
                     <effect type="fade" start="100" end="40" time="0" reversible="true"/>
                 </animation>
-                <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-405" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-324" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-243" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-162" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,-81" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,0" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,81" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,162" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,243" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,324" time="140"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,405" time="140"
-                           reversible="true">Conditional
-                </animation>
+                <animation condition="Container(50).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
+                <animation condition="Container(50).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
             </control>
             <control type="list" id="50">
                 <posx>0</posx>
@@ -71,7 +45,6 @@
                 <ondown>50</ondown>
                 <focusposition>5</focusposition>
                 <movement>5</movement>
-
                 <itemlayout width="892" height="81">
                     <control type="label" description="Main Label">
                         <posx>30</posx>
@@ -256,7 +229,6 @@
         </control>
         <control type="group" description="Left panel">
             <posy>0</posy>
-
             <control type="image" description="PVR">
                 <visible>Container(50).HasFocus(0) + !Skin.HasSetting(PVR_Enabled)</visible>
                 <animation effect="fade" time="200">VisibleChange</animation>
@@ -265,9 +237,7 @@
                 <width>660</width>
                 <height>750</height>
                 <aspectratio>keep</aspectratio>
-                <texture>
-                    skin_settings/PVROFF.jpg
-                </texture>
+                <texture>skin_settings/PVROFF.jpg</texture>
             </control>
             <control type="image" description="HomeMenu">
                 <visible>Container(50).HasFocus(0) + Skin.HasSetting(PVR_Enabled)</visible>
@@ -291,12 +261,7 @@
                 <align>justify</align>
                 <aligny>bottom</aligny>
                 <autoscroll delay="0" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </label>
+                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</label>
             </control>
             <control type="image" description="Logo">
                 <visible>Container(50).HasFocus(2) | Container(50).HasFocus(3)</visible>

@@ -4,8 +4,7 @@
         <control type="group" description="Fanart 3">
             <visible>Control.IsVisible(510)</visible>
             <control type="fixedlist" id="510" description="Fanart 3 for episodes and files">
-                <visible>![Container.content(movies) | container.content(seasons) | container.content(tvshows)]
-                </visible>
+                <visible>![Container.content(movies) | container.content(seasons) | container.content(tvshows)]</visible>
                 <onup condition="!Skin.HasSetting(ViewOptions_Hide)">9000</onup>
                 <ondown condition="!Skin.HasSetting(ViewOptions_Hide)">9000</ondown>
                 <onleft>510</onleft>
@@ -53,18 +52,10 @@
                 <texture border="36">focus/FrameFO.png</texture>
                 <bordersize>-9</bordersize>
                 <aspectratio>stretch</aspectratio>
-                <animation condition="Container(510).Position(0)" effect="slide" end="-888,0" time="220" easing="inout"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(510).Position(1)" effect="slide" end="-444,0" time="220" easing="inout"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(510).Position(3)" effect="slide" end="444,0" time="220" easing="inout"
-                           reversible="true">Conditional
-                </animation>
-                <animation condition="Container(510).Position(4)" effect="slide" end="888,0" time="220" easing="inout"
-                           reversible="true">Conditional
-                </animation>
+                <animation condition="Container(510).Position(0)" effect="slide" end="-888,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(510).Position(1)" effect="slide" end="-444,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(510).Position(3)" effect="slide" end="444,0" time="220" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(510).Position(4)" effect="slide" end="888,0" time="220" easing="inout" reversible="true">Conditional</animation>
             </control>
             <control type="group" description="Media Info">
                 <visible>!Container.Content(episodes)</visible>
@@ -136,8 +127,7 @@
                     <control type="label" description="Genre">
                         <posy>90</posy>
                         <include>Genre500Commons</include>
-                        <label>$INFO[ListItem.Season,$LOCALIZE[20373] ]: $INFO[ListItem.Episode, $LOCALIZE[20359] ]
-                        </label>
+                        <label>$INFO[ListItem.Season,$LOCALIZE[20373] ]: $INFO[ListItem.Episode, $LOCALIZE[20359] ]</label>
                     </control>
                     <control type="label" description="MPAA">
                         <posy>130</posy>

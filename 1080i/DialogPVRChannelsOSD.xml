@@ -216,21 +216,11 @@
                 <width>750</width>
                 <height>105</height>
                 <texture border="5">img/ButtonFO2.png</texture>
-                <animation condition="Container(11).Position(0)" effect="slide" start="0,0" end="0,-210" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(11).Position(1)" effect="slide" start="0,0" end="0,-105" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(11).Position(2)" effect="slide" start="0,0" end="0,0" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(11).Position(3)" effect="slide" start="0,0" end="0,105" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
-                <animation condition="Container(11).Position(4)" effect="slide" start="0,0" end="0,210" time="180"
-                           easing="inout" reversible="true">Conditional
-                </animation>
+                <animation condition="Container(11).Position(0)" effect="slide" start="0,0" end="0,-210" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(11).Position(1)" effect="slide" start="0,0" end="0,-105" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(11).Position(2)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(11).Position(3)" effect="slide" start="0,0" end="0,105" time="180" easing="inout" reversible="true">Conditional</animation>
+                <animation condition="Container(11).Position(4)" effect="slide" start="0,0" end="0,210" time="180" easing="inout" reversible="true">Conditional</animation>
             </control>
             <control type="scrollbar" id="61">
                 <posx>1011</posx>

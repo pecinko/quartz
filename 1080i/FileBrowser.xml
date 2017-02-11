@@ -61,12 +61,8 @@
                     <posx>1020</posx>
                     <posy>141</posy>
                     <control type="group" description="Slider">
-                        <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                                   reversible="true">Conditional
-                        </animation>
+                        <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300" reversible="true">Conditional</animation>
+                        <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                         <control type="group">
                             <visible>Container(450).HasFocus()</visible>
                             <include>Slider4</include>
@@ -74,39 +70,17 @@
                         <animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
                             <effect type="fade" start="100" end="0" time="0" reversible="true"/>
                         </animation>
-                        <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-405"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(1)" effect="slide" start="0,0" end="0,-324"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(2)" effect="slide" start="0,0" end="0,-243"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(3)" effect="slide" start="0,0" end="0,-162"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(4)" effect="slide" start="0,0" end="0,-81"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(5)" effect="slide" start="0,0" end="0,0"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(6)" effect="slide" start="0,0" end="0,81"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(7)" effect="slide" start="0,0" end="0,162"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(8)" effect="slide" start="0,0" end="0,243"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(9)" effect="slide" start="0,0" end="0,324"
-                                   time="140" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container(450).Position(10)" effect="slide" start="0,0" end="0,405"
-                                   time="140" reversible="true">Conditional
-                        </animation>
+                        <animation condition="Container(450).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
+                        <animation condition="Container(450).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
                     </control>
                     <control type="panel" id="450">
                         <posx>0</posx>
@@ -136,83 +110,7 @@
                         </focusedlayout>
                     </control>
                 </control>
-            </control>
-            <!--<control type="group" description="Group 451 Thumbs">
-              <control type="group" description="Slider and List">
-                <posx>1020</posx>
-                <posy>141</posy>
-                <control type="panel" id="451">
-                  <posx>0</posx>
-                  <posy>0</posy>
-                  <width>802</width>
-                  <height>885</height>
-                  <onleft>9000</onleft>
-                  <onright>9000</onright>
-                  <onup>451</onup>
-                  <ondown>451</ondown>
-                  <pagecontrol>60</pagecontrol>
-                  <focusposition>3</focusposition>
-                  <movement>4</movement>
-                  <itemlayout width="802" height="111">
-                    <control type="image">
-                      <posx>0</posx>
-                      <posy>0</posy>
-                      <height>111</height>
-                      <width>111</width>
-                      <bordersize>6</bordersize>
-                      <texture>$INFO[ListItem.Thumb]</texture>
-                      <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="label" description="Main Label">
-                      <scroll>false</scroll>
-                      <textcolor>White</textcolor>
-                      <posx>135</posx>
-                      <posy>0</posy>
-                      <height>111</height>
-                      <width>600</width>
-                      <label>$INFO[ListItem.Label]</label>
-                    </control>
-                  </itemlayout>
-                  <focusedlayout width="802" height="111">
-                    <include>ArrowFO</include>
-                    <control type="image">
-                      <posx>0</posx>
-                      <posy>0</posy>
-                      <height>111</height>
-                      <width>111</width>
-                      <bordersize>6</bordersize>
-                      <texture>$INFO[ListItem.Thumb]</texture>
-                      <aspectratio>keep</aspectratio>
-                    </control>
-                    <control type="label" description="Main Label">
-                      <textcolor>White2</textcolor>
-                      <posx>135</posx>
-                      <posy>0</posy>
-                      <height>111</height>
-                      <width>600</width>
-                      <label>$INFO[ListItem.Label]</label>
-                    </control>
-                  </focusedlayout>
-                </control>
-                <control type="group" description="Slider">
-                  <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
-                  <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
-                  <control type="group">
-                    <visible>Container(451).HasFocus()</visible>
-                    <include>Slider5</include>
-                  </control>
-                  <animation condition="Container(451).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
-                  <animation condition="Container(451).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
-                </control>
-              </control>
-            </control>-->
+            </control>            <!--<control type="group" description="Group 451 Thumbs">              <control type="group" description="Slider and List">                <posx>1020</posx>                <posy>141</posy>                <control type="panel" id="451">                  <posx>0</posx>                  <posy>0</posy>                  <width>802</width>                  <height>885</height>                  <onleft>9000</onleft>                  <onright>9000</onright>                  <onup>451</onup>                  <ondown>451</ondown>                  <pagecontrol>60</pagecontrol>                  <focusposition>3</focusposition>                  <movement>4</movement>                  <itemlayout width="802" height="111">                    <control type="image">                      <posx>0</posx>                      <posy>0</posy>                      <height>111</height>                      <width>111</width>                      <bordersize>6</bordersize>                      <texture>$INFO[ListItem.Thumb]</texture>                      <aspectratio>keep</aspectratio>                    </control>                    <control type="label" description="Main Label">                      <scroll>false</scroll>                      <textcolor>White</textcolor>                      <posx>135</posx>                      <posy>0</posy>                      <height>111</height>                      <width>600</width>                      <label>$INFO[ListItem.Label]</label>                    </control>                  </itemlayout>                  <focusedlayout width="802" height="111">                    <include>ArrowFO</include>                    <control type="image">                      <posx>0</posx>                      <posy>0</posy>                      <height>111</height>                      <width>111</width>                      <bordersize>6</bordersize>                      <texture>$INFO[ListItem.Thumb]</texture>                      <aspectratio>keep</aspectratio>                    </control>                    <control type="label" description="Main Label">                      <textcolor>White2</textcolor>                      <posx>135</posx>                      <posy>0</posy>                      <height>111</height>                      <width>600</width>                      <label>$INFO[ListItem.Label]</label>                    </control>                  </focusedlayout>                </control>                <control type="group" description="Slider">                  <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>                  <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>                  <control type="group">                    <visible>Container(451).HasFocus()</visible>                    <include>Slider5</include>                  </control>                  <animation condition="Container(451).Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>                  <animation condition="Container(451).Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>                </control>              </control>            </control>-->
             <control type="group" description="Thumbs">
                 <posx>60</posx>
                 <posy>510</posy>

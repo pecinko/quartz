@@ -20,9 +20,7 @@
                 <preloaditems>4</preloaditems>
                 <orientation>horizontal</orientation>
                 <scrolltime easing="inout">280</scrolltime>
-                <itemlayout
-                        condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)"
-                        width="330" height="480">
+                <itemlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="330" height="480">
                     <control type="image">
                         <posx>12</posx>
                         <posy>12</posy>
@@ -40,9 +38,7 @@
                         <texture fallback="DefaultFolder.png" background="true">$INFO[ListItem.Thumb]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout
-                        condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)"
-                        width="330" height="480">
+                <focusedlayout condition="Container.content(movies) | Container.content(tvshows) | Container.content(seasons)" width="330" height="480">
                     <control type="image">
                         <posx>12</posx>
                         <posy>12</posy>

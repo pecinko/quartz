@@ -112,7 +112,6 @@
             <onleft>50</onleft>
             <onright>noop</onright>
         </control>
-
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
@@ -168,8 +167,7 @@
                     <usealttexture>Player.HasMedia</usealttexture>
                     <onclick>fullscreen</onclick>
                     <altclick>fullscreen</altclick>
-                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional
-                    </animation>
+                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
                 </control>
             </control>
         </control>

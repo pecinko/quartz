@@ -12,9 +12,7 @@
                     <posy>0</posy>
                     <width>759</width>
                     <height>429</height>
-                    <texture fallback="special://skin/backgrounds/tv.jpg">
-                        $INFO[Skin.String(Home_Custom_Back_TV_Folder)]
-                    </texture>
+                    <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>!Player.HasVideo</visible>
                 </control>
@@ -71,9 +69,7 @@
                     <visible>Container(11).ListItem.HasEpg</visible>
                     <posy>336</posy>
                     <include>Genre51Commons</include>
-                    <label>$LOCALIZE[142] [COLOR=White]$INFO[Container(11).ListItem.StartTime,, /
-                        ]$INFO[Container(11).ListItem.EndTime][/COLOR]
-                    </label>
+                    <label>$LOCALIZE[142] [COLOR=White]$INFO[Container(11).ListItem.StartTime,, / ]$INFO[Container(11).ListItem.EndTime][/COLOR]</label>
                 </control>
                 <control type="label">
                     <posy>381</posy>
@@ -99,7 +95,6 @@
                     <viewtype label="537">Big List 11</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
-
                     <itemlayout width="802" height="111">
                         <control type="progress">
                             <include>TVProgress</include>
@@ -193,8 +188,7 @@
                     </focusedlayout>
                 </control>
                 <include>LargeListSlider</include>
-            </control>
-            <!--<include>LargeListFade</include>-->
+            </control>            <!--<include>LargeListFade</include>-->
             <control type="scrollbar" id="70">
                 <posx>39r</posx>
                 <posy>135</posy>
@@ -218,9 +212,7 @@
                     <posy>0</posy>
                     <width>759</width>
                     <height>429</height>
-                    <texture fallback="special://skin/backgrounds/tv.jpg">
-                        $INFO[Skin.String(Home_Custom_Back_TV_Folder)]
-                    </texture>
+                    <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
                     <include>VisibleFadeEffect</include>
                     <visible>!Player.HasVideo</visible>
                 </control>
@@ -276,9 +268,7 @@
                     <visible>Container(12).ListItem.HasEpg</visible>
                     <posy>336</posy>
                     <include>Genre51Commons</include>
-                    <label>$LOCALIZE[142] [COLOR=White]$INFO[Container(12).ListItem.StartTime,, /
-                        ]$INFO[Container(12).ListItem.EndTime][/COLOR]
-                    </label>
+                    <label>$LOCALIZE[142] [COLOR=White]$INFO[Container(12).ListItem.StartTime,, / ]$INFO[Container(12).ListItem.EndTime][/COLOR]</label>
                 </control>
                 <control type="label">
                     <posy>381</posy>
@@ -305,7 +295,6 @@
                     <viewtype label="537">Big List 12</viewtype>
                     <focusposition>3</focusposition>
                     <movement>4</movement>
-
                     <itemlayout width="802" height="111">
                         <control type="progress">
                             <include>TVProgress</include>
@@ -399,8 +388,7 @@
                     </focusedlayout>
                 </control>
                 <include>LargeListSlider</include>
-            </control>
-            <!--<include>LargeListFade</include>-->
+            </control>            <!--<include>LargeListFade</include>-->
             <control type="scrollbar" id="71">
                 <posx>39r</posx>
                 <posy>135</posy>
@@ -485,7 +473,6 @@
                         <viewtype label="535">List 13</viewtype>
                         <focusposition>5</focusposition>
                         <movement>5</movement>
-
                         <itemlayout width="802" height="81">
                             <include>Watched_Marks</include>
                             <include>ArrowNF</include>
@@ -762,9 +749,7 @@
                 <textcolor>White</textcolor>
                 <aligny>center</aligny>
                 <align>left</align>
-                <label>$INFO[ListItem.Label] $INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]
-                    $INFO[ListItem.Duration, • $LOCALIZE[31978] ]
-                </label>
+                <label>$INFO[ListItem.Label] $INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime] $INFO[ListItem.Duration, • $LOCALIZE[31978] ]</label>
             </control>
         </control>
     </include>
@@ -1339,7 +1324,6 @@
                             <pagecontrol>75</pagecontrol>
                             <focusposition>3</focusposition>
                             <movement>3</movement>
-
                             <itemlayout width="1702" height="126">
                                 <control type="progress">
                                     <posx>0</posx>
@@ -1474,12 +1458,8 @@
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <control type="group" description="Slider">
-                            <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540"
-                                       time="300" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                                       reversible="true">Conditional
-                            </animation>
+                            <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
+                            <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                             <control type="image">
                                 <animation effect="fade" time="100">VisibleChange</animation>
                                 <posx>-24</posx>
@@ -1489,30 +1469,14 @@
                                 <texture border="26">img/Slider5.png</texture>
                                 <aspectratio>stretch</aspectratio>
                             </control>
-                            <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-378"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-252"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-126"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180"
-                                       easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,126"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,252"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,378"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
-                            <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,504"
-                                       time="180" easing="inout" reversible="true">Conditional
-                            </animation>
+                            <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-378" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-252" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-126" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,126" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,252" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,378" time="180" easing="inout" reversible="true">Conditional</animation>
+                            <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,504" time="180" easing="inout" reversible="true">Conditional</animation>
                         </control>
                     </control>
                     <control type="scrollbar" id="75">
@@ -1529,8 +1493,7 @@
             </control>
         </control>
     </include>
-    <include name="LiveTVGuideNowNextView">
-        <!-- ## OK ## -->
+    <include name="LiveTVGuideNowNextView">        <!-- ## OK ## -->
         <control type="group">
             <description>TV Guide Now/Next</description>
             <visible>Control.IsVisible(16)</visible>
@@ -1555,7 +1518,6 @@
                         <pagecontrol>76</pagecontrol>
                         <focusposition>3</focusposition>
                         <movement>4</movement>
-
                         <itemlayout width="1702" height="111">
                             <control type="image">
                                 <posx>0</posx>
@@ -1599,9 +1561,7 @@
                                 <width>1425</width>
                                 <font>size22</font>
                                 <include>51MainLabel</include>
-                                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,.
-                                    ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]
-                                </label>
+                                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <posx>165</posx>
@@ -1661,9 +1621,7 @@
                                 <width>1425</width>
                                 <font>size22</font>
                                 <include>51MainLabelFO</include>
-                                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,.
-                                    ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]
-                                </label>
+                                <label>[COLOR=Grey2]$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName][/COLOR]$INFO[ListItem.Label, • ]</label>
                             </control>
                             <control type="label" description="Label2">
                                 <posx>165</posx>
@@ -1682,12 +1640,8 @@
                         </focusedlayout>
                     </control>
                     <control type="group" description="Slider">
-                        <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300"
-                                   reversible="true">Conditional
-                        </animation>
-                        <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                                   reversible="true">Conditional
-                        </animation>
+                        <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,540" time="300" reversible="true">Conditional</animation>
+                        <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                         <control type="image">
                             <animation effect="fade" time="100">VisibleChange</animation>
                             <posx>-24</posx>
@@ -1697,33 +1651,15 @@
                             <texture border="26">img/Slider5.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-222" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-111" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,111" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,222" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,333" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,444" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
-                        <animation condition="Container.Position(8)" effect="slide" start="0,0" end="0,555" time="180"
-                                   easing="inout" reversible="true">Conditional
-                        </animation>
+                        <animation condition="Container.Position(0)" effect="slide" start="0,0" end="0,-333" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(1)" effect="slide" start="0,0" end="0,-222" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(2)" effect="slide" start="0,0" end="0,-111" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(3)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(4)" effect="slide" start="0,0" end="0,111" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(5)" effect="slide" start="0,0" end="0,222" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(6)" effect="slide" start="0,0" end="0,333" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(7)" effect="slide" start="0,0" end="0,444" time="180" easing="inout" reversible="true">Conditional</animation>
+                        <animation condition="Container.Position(8)" effect="slide" start="0,0" end="0,555" time="180" easing="inout" reversible="true">Conditional</animation>
                     </control>
                 </control>
                 <control type="scrollbar" id="76">

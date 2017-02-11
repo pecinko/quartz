@@ -9,8 +9,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]
-            </texture>
+            <texture fallback="special://skin/backgrounds/tv.jpg">$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</texture>
             <include>VisibleFadeEffect</include>
             <visible>!Player.HasVideo</visible>
         </control>
@@ -26,9 +25,7 @@
             <include>Dimensions_Fullscreen</include>
             <texture>img/BlackDotST.png</texture>
             <aspectratio>stretch</aspectratio>
-            <animation effect="fade" start="100" end="10" time="200" reversible="true" condition="Control.HasFocus(12)">
-                Conditional
-            </animation>
+            <animation effect="fade" start="100" end="10" time="200" reversible="true" condition="Control.HasFocus(12)">Conditional</animation>
         </control>
         <control type="image" description="Vignette">
             <posx>0</posx>
@@ -39,8 +36,7 @@
             <aspectratio>stretch</aspectratio>
         </control>
         <control type="group" description="Media Info">
-            <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]
-            </visible>
+            <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
             <include>VisibleFadeEffect</include>
             <control type="group" description="top">
                 <posx>180</posx>
@@ -93,9 +89,7 @@
                                 <label>$LOCALIZE[20376]:</label>
                                 <label2>$INFO[ListItem.OriginalTitle]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.OriginalTitle) +
-                                    !stringcompare(ListItem.OriginalTitle,Listitem.Title)
-                                </visible>
+                                <visible>!IsEmpty(ListItem.OriginalTitle) + !stringcompare(ListItem.OriginalTitle,Listitem.Title)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[19148]:</label>

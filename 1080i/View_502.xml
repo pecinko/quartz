@@ -12,33 +12,18 @@
                     <texture border="36">focus/FrameFO.png</texture>
                     <bordersize>-9</bordersize>
                     <aspectratio>stretch</aspectratio>
-                    <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="265,0"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="530,0"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="795,0"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,320"
-                               time="220" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container.Row(2)" effect="slide" easing="inout" start="0,0" end="0,640"
-                               time="220" reversible="true">Conditional
-                    </animation>
+                    <animation condition="Container.Column(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Column(1)" effect="slide" easing="inout" start="0,0" end="265,0" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Column(2)" effect="slide" easing="inout" start="0,0" end="530,0" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Column(3)" effect="slide" easing="inout" start="0,0" end="795,0" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Row(0)" effect="slide" easing="inout" start="0,0" end="0,0" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Row(1)" effect="slide" easing="inout" start="0,0" end="0,320" time="220" reversible="true">Conditional</animation>
+                    <animation condition="Container.Row(2)" effect="slide" easing="inout" start="0,0" end="0,640" time="220" reversible="true">Conditional</animation>
                 </control>
             </control>
             <control type="group" description="Container and frame">
                 <control type="panel" id="502" description="Grid">
-                    <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)
-                    </visible>
+                    <visible>Container.Content(Movies) | Container.content(tvshows) | container.content(seasons)</visible>
                     <viewtype label="$LOCALIZE[31976]">Panel</viewtype>
                     <posx>835</posx>
                     <posy>69</posy>
@@ -222,11 +207,7 @@
                             <include>Genre51Commons</include>
                             <label>$VAR[500TopLabel,[COLOR=Grey]$LOCALIZE[33029]:[/COLOR] ]</label>
                         </control>
-                    </control>
-                    <!--<control type="group">
-                      <visible>Container.Content(MusicVideos)</visible>
-                      <include>MusicInfo</include>
-                    </control>-->
+                    </control>                    <!--<control type="group">                      <visible>Container.Content(MusicVideos)</visible>                      <include>MusicInfo</include>                    </control>-->
                 </control>
             </control>
         </control>

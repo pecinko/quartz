@@ -4,7 +4,6 @@
         <control type="group" description="Banner Fanart 58">
             <visible>Control.IsVisible(58)</visible>
             <control type="group" description="Furniture">
-
                 <control type="group" description="Faded Info thumbs">
                     <posx>-243</posx>
                     <posy>525</posy>
@@ -62,58 +61,26 @@
                 </control>
             </control>
             <control type="group" description="Slider and Container">
-                <animation effect="slide" start="0,0" end="0,-162" time="0"
-                           condition="StringCompare(Container.NumItems,1)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="0,-81" time="0"
-                           condition="StringCompare(Container.NumItems,3)">conditional
-                </animation>
-                <animation effect="slide" start="0,0" end="0,-81" time="0"
-                           condition="StringCompare(Container.NumItems,2)">conditional
-                </animation>
+                <animation effect="slide" start="0,0" end="0,-162" time="0" condition="StringCompare(Container.NumItems,1)">conditional</animation>
+                <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,3)">conditional</animation>
+                <animation effect="slide" start="0,0" end="0,-81" time="0" condition="StringCompare(Container.NumItems,2)">conditional</animation>
                 <posx>1020</posx>
                 <posy>627</posy>
                 <control type="group" description="Slider">
-                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="930,225" time="300"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                               reversible="true">Conditional
-                    </animation>
+                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="930,225" time="300" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                     <include>Slider4</include>
-                    <animation condition="Container(58).Position(0)" effect="slide" start="0,0" end="0,-405" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(1)" effect="slide" start="0,0" end="0,-324" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(2)" effect="slide" start="0,0" end="0,-243" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(3)" effect="slide" start="0,0" end="0,-162" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(4)" effect="slide" start="0,0" end="0,-81" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(5)" effect="slide" start="0,0" end="0,0" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(6)" effect="slide" start="0,0" end="0,81" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(7)" effect="slide" start="0,0" end="0,162" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(8)" effect="slide" start="0,0" end="0,243" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(9)" effect="slide" start="0,0" end="0,324" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(58).Position(10)" effect="slide" start="0,0" end="0,405" time="180"
-                               easing="inout" reversible="true">Conditional
-                    </animation>
+                    <animation condition="Container(58).Position(0)" effect="slide" start="0,0" end="0,-405" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(1)" effect="slide" start="0,0" end="0,-324" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(2)" effect="slide" start="0,0" end="0,-243" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(3)" effect="slide" start="0,0" end="0,-162" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(4)" effect="slide" start="0,0" end="0,-81" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(5)" effect="slide" start="0,0" end="0,0" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(6)" effect="slide" start="0,0" end="0,81" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(7)" effect="slide" start="0,0" end="0,162" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(8)" effect="slide" start="0,0" end="0,243" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(9)" effect="slide" start="0,0" end="0,324" time="180" easing="inout" reversible="true">Conditional</animation>
+                    <animation condition="Container(58).Position(10)" effect="slide" start="0,0" end="0,405" time="180" easing="inout" reversible="true">Conditional</animation>
                 </control>
                 <control type="fixedlist" id="58">
                     <visible>container.content(TVshows)</visible>
@@ -130,7 +97,6 @@
                     <focusposition>2</focusposition>
                     <movement>2</movement>
                     <preloaditems>4</preloaditems>
-
                     <itemlayout width="802" height="81">
                         <include>Watched_Marks</include>
                         <include>Unwatched_Badge</include>
@@ -149,7 +115,6 @@
                     </focusedlayout>
                 </control>
             </control>
-
         </control>
     </include>
 </includes>

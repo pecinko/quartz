@@ -2,7 +2,6 @@
 <window>
     <defaultcontrol always="true">5</defaultcontrol>
     <include>OpenClose</include>
-
     <controls>
         <include>MiniBackground</include>
         <control type="label" id="2" description="Header Label">

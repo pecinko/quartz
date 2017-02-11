@@ -22,8 +22,7 @@
             <width>1980</width>
             <height>174</height>
             <texture border="14">img/ProgressBG.png</texture>
-        </control>
-        <!-- Window Dialog debug -->
+        </control>        <!-- Window Dialog debug -->
         <control type="grouplist">
             <posx>22</posx>
             <posy>22</posy>
@@ -40,8 +39,7 @@
                 <font>font13</font>
                 <align>left</align>
                 <label>$INFO[Container.NumItems,Items: ]</label>
-            </control>
-            <!-- Window labels -->
+            </control>            <!-- Window labels -->
             <control type="label">
                 <width>1170</width>
                 <height>32</height>
@@ -391,8 +389,7 @@
                 <align>left</align>
                 <label>VideoFullScreen.xml</label>
                 <visible>Window.IsVisible(VideoFullScreen.xml)</visible>
-            </control>
-            <!-- Dialog labels -->
+            </control>            <!-- Dialog labels -->
             <control type="label">
                 <width>1170</width>
                 <height>32</height>
@@ -903,8 +900,7 @@
                 <label>VisualisationPresetList.xml</label>
                 <visible>Window.IsVisible(VisualisationPresetList.xml)</visible>
             </control>
-        </control>
-        <!-- Content label -->
+        </control>        <!-- Content label -->
         <control type="group">
             <visible>Skin.HasSetting(DebugInfo)</visible>
             <control type="label">
@@ -1122,8 +1118,7 @@
                 <align>right</align>
                 <label>Content: Live TV</label>
                 <visible>container.content(livetv)</visible>
-            </control>
-            <!-- Control label -->
+            </control>            <!-- Control label -->
             <control type="label">
                 <posx>22r</posx>
                 <posy>120</posy>
@@ -1134,8 +1129,7 @@
                 <font>font13</font>
                 <align>right</align>
                 <label>$INFO[System.CurrentControl,Control: ]</label>
-            </control>
-            <!-- Path label -->
+            </control>            <!-- Path label -->
             <control type="label">
                 <posx>22r</posx>
                 <posy>72</posy>

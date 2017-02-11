@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>32</defaultcontrol>
-
     <controls>
         <control type="group" id="50">
             <include>OpenClose</include>
-            <include>EPGTimelineView</include>
-            <!-- view id = 10 -->
-            <include>LiveTVChannelView</include>
-            <!-- view id = 11 -->
-            <include>LiveRadioChannelView</include>
-            <!-- view id = 12 -->
-            <include>LiveTVRecordingsView</include>
-            <!-- view id = 13 -->
-            <include>LiveTVTimersView</include>
-            <!-- view id = 14 -->
-            <include>LiveTVGuideChannelView</include>
-            <!-- view id = 15 -->
-            <include>LiveTVGuideNowNextView</include>
-            <!-- view id = 16 -->
-            <include>LiveTVSearchView</include>
-            <!-- view id = 17 -->
+            <include>EPGTimelineView</include>            <!-- view id = 10 -->
+            <include>LiveTVChannelView</include>            <!-- view id = 11 -->
+            <include>LiveRadioChannelView</include>            <!-- view id = 12 -->
+            <include>LiveTVRecordingsView</include>            <!-- view id = 13 -->
+            <include>LiveTVTimersView</include>            <!-- view id = 14 -->
+            <include>LiveTVGuideChannelView</include>            <!-- view id = 15 -->
+            <include>LiveTVGuideNowNextView</include>            <!-- view id = 16 -->
+            <include>LiveTVSearchView</include>            <!-- view id = 17 -->
         </control>
         <control type="image">
             <posx>0</posx>
@@ -30,9 +21,7 @@
             <texture>img/BlackDot.png</texture>
             <animation effect="fade" time="400">Visible</animation>
             <animation effect="fade" time="200">Hidden</animation>
-            <visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) |
-                Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)
-            </visible>
+            <visible>Window.IsActive(FileBrowser) | Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo) | Window.IsActive(PVRTimerSetting) | Window.IsActive(PVRGroupManager) | Window.IsActive(PVRGuideSearch)</visible>
         </control>
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
@@ -92,8 +81,7 @@
                     <usealttexture>Player.HasMedia</usealttexture>
                     <onclick>fullscreen</onclick>
                     <altclick>fullscreen</altclick>
-                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional
-                    </animation>
+                    <animation effect="fade" start="100" end="60" time="100" condition="!Player.HasMedia">Conditional</animation>
                 </control>
             </control>
         </control>
@@ -111,9 +99,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <visible>![Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14) |
-                Control.IsVisible(17)]
-            </visible>
+            <visible>![Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14) | Control.IsVisible(17)]</visible>
             <posx>960</posx>
             <posy>60</posy>
             <width>930</width>
@@ -139,9 +125,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <visible>Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14) |
-                Control.IsVisible(17)
-            </visible>
+            <visible>Control.IsVisible(16) | Control.IsVisible(10) | Control.IsVisible(15) | Control.IsVisible(14) | Control.IsVisible(17)</visible>
             <posx>33</posx>
             <posy>0</posy>
             <width>1230</width>

@@ -10,46 +10,20 @@
                 <posx>1020</posx>
                 <posy>141</posy>
                 <control type="group" description="Slider">
-                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300"
-                               reversible="true">Conditional
-                    </animation>
+                    <animation condition="Control.HasFocus(60)" effect="slide" start="0,0" end="960,519" time="300" reversible="true">Conditional</animation>
+                    <animation condition="Control.HasFocus(60)" effect="zoom" start="100" end="0" time="300" reversible="true">Conditional</animation>
                     <include>Slider4</include>
-                    <animation condition="Container(52).Position(0)" effect="slide" start="0,0" end="0,-405" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(1)" effect="slide" start="0,0" end="0,-324" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(2)" effect="slide" start="0,0" end="0,-243" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(3)" effect="slide" start="0,0" end="0,-162" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(4)" effect="slide" start="0,0" end="0,-81" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(5)" effect="slide" start="0,0" end="0,0" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(6)" effect="slide" start="0,0" end="0,81" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(7)" effect="slide" start="0,0" end="0,162" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(8)" effect="slide" start="0,0" end="0,243" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(9)" effect="slide" start="0,0" end="0,324" time="140"
-                               reversible="true">Conditional
-                    </animation>
-                    <animation condition="Container(52).Position(10)" effect="slide" start="0,0" end="0,405" time="140"
-                               reversible="true">Conditional
-                    </animation>
+                    <animation condition="Container(52).Position(0)" effect="slide" start="0,0" end="0,-405" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(1)" effect="slide" start="0,0" end="0,-324" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(2)" effect="slide" start="0,0" end="0,-243" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(3)" effect="slide" start="0,0" end="0,-162" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(4)" effect="slide" start="0,0" end="0,-81" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(5)" effect="slide" start="0,0" end="0,0" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(6)" effect="slide" start="0,0" end="0,81" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(7)" effect="slide" start="0,0" end="0,162" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(8)" effect="slide" start="0,0" end="0,243" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(9)" effect="slide" start="0,0" end="0,324" time="140" reversible="true">Conditional</animation>
+                    <animation condition="Container(52).Position(10)" effect="slide" start="0,0" end="0,405" time="140" reversible="true">Conditional</animation>
                 </control>
                 <control type="fixedlist" id="52">
                     <posx>0</posx>
@@ -208,8 +182,7 @@
                     <scroll>false</scroll>
                     <aligny>top</aligny>
                     <align>center</align>
-                    <label>$LOCALIZE[14022]. $LOCALIZE[14086]. $LOCALIZE[14081]. $LOCALIZE[24012]. $LOCALIZE[14087]
-                    </label>
+                    <label>$LOCALIZE[14022]. $LOCALIZE[14086]. $LOCALIZE[14081]. $LOCALIZE[24012]. $LOCALIZE[14087]</label>
                 </control>
                 <control type="label" description="Music">
                     <visible>Container(52).HasFocus(4)</visible>
@@ -220,9 +193,7 @@
                     <scroll>false</scroll>
                     <aligny>top</aligny>
                     <align>center</align>
-                    <label>$LOCALIZE[14022]. $LOCALIZE[14086]. $LOCALIZE[14081]. $LOCALIZE[15221]. $LOCALIZE[620].
-                        $LOCALIZE[13327]
-                    </label>
+                    <label>$LOCALIZE[14022]. $LOCALIZE[14086]. $LOCALIZE[14081]. $LOCALIZE[15221]. $LOCALIZE[620]. $LOCALIZE[13327]</label>
                 </control>
                 <control type="label" description="Pictures">
                     <visible>Container(52).HasFocus(5)</visible>
@@ -244,8 +215,7 @@
                     <scroll>false</scroll>
                     <aligny>top</aligny>
                     <align>center</align>
-                    <label>$LOCALIZE[24033]. $LOCALIZE[24022]. $LOCALIZE[24021]. $LOCALIZE[24034]. $LOCALIZE[25000].
-                    </label>
+                    <label>$LOCALIZE[24033]. $LOCALIZE[24022]. $LOCALIZE[24021]. $LOCALIZE[24034]. $LOCALIZE[25000].</label>
                 </control>
                 <control type="label" description="PVR">
                     <visible>Container(52).HasFocus(7)</visible>
@@ -289,9 +259,7 @@
                     <scroll>false</scroll>
                     <aligny>top</aligny>
                     <align>center</align>
-                    <label>$LOCALIZE[21373]. $LOCALIZE[337]. $LOCALIZE[14094]. $LOCALIZE[14095]. $LOCALIZE[14092].
-                        $LOCALIZE[20100].
-                    </label>
+                    <label>$LOCALIZE[21373]. $LOCALIZE[337]. $LOCALIZE[14094]. $LOCALIZE[14095]. $LOCALIZE[14092]. $LOCALIZE[20100].</label>
                 </control>
                 <control type="label" description="Profiles">
                     <visible>Container(52).HasFocus(11)</visible>

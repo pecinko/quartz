@@ -38,27 +38,4 @@
             </control>
         </control>
     </controls>
-</window>
-        <!--<window type="dialog">
-
-          <controls>
-            <control type="group">
-              <control type="image">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>390</width>
-                <height>390</height>
-                <texture border="45">HUD/HUDBackground.png</texture>
-              </control>
-              <control type="multiimage">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>210</width>
-                <height>201</height>
-                <imagepath>HUD/loading</imagepath>
-                <timeperimage>50</timeperimage>
-                <loop>yes</loop>
-              </control>
-            </control>
-          </controls>
-        </window>-->
+</window>        <!--<window type="dialog">          <controls>            <control type="group">              <control type="image">                <centerleft>960</centerleft>                <centertop>540</centertop>                <width>390</width>                <height>390</height>                <texture border="45">HUD/HUDBackground.png</texture>              </control>              <control type="multiimage">                <centerleft>960</centerleft>                <centertop>540</centertop>                <width>210</width>                <height>201</height>                <imagepath>HUD/loading</imagepath>                <timeperimage>50</timeperimage>                <loop>yes</loop>              </control>            </control>          </controls>        </window>-->

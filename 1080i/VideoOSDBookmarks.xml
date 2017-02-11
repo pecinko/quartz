@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">2</defaultcontrol>
-
     <include>OpenClose</include>
     <controls>
         <control type="image">
@@ -21,9 +20,7 @@
                 <posy>-15</posy>
                 <width>1140</width>
                 <align>center</align>
-                <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31025] -
-                    $LOCALIZE[31024] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])
-                </label>
+                <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
                 <font>size24</font>
             </control>
             <control type="panel" id="11">

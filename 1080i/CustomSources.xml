@@ -3,7 +3,6 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <include>DialogOpenClose</include>
     <controls>
-
         <control type="group" description="Side menu 9000 group">
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>

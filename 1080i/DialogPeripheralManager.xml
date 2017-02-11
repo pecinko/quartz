@@ -39,9 +39,7 @@
                 <onright>61</onright>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <animation effect="slide" start="0,0" end="15,0" time="0" condition="!Control.IsVisible(61)">
-                    Conditional
-                </animation>
+                <animation effect="slide" start="0,0" end="15,0" time="0" condition="!Control.IsVisible(61)">Conditional</animation>
                 <itemlayout height="128" width="825">
                     <control type="label">
                         <description>Name</description>
@@ -60,9 +58,7 @@
                         <posy>45</posy>
                         <width>780</width>
                         <height>30</height>
-                        <label>$LOCALIZE[35504]: [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR]
-                            $LOCALIZE[35503]: [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]
-                        </label>
+                        <label>$LOCALIZE[35504]: [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR] $LOCALIZE[35503]: [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>size17</font>
@@ -106,9 +102,7 @@
                         <posy>45</posy>
                         <width>780</width>
                         <height>30</height>
-                        <label>$LOCALIZE[35504]: [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR]
-                            $LOCALIZE[35503]: [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]
-                        </label>
+                        <label>$LOCALIZE[35504]: [COLOR=Silver]$INFO[ListItem.Property(Product)][/COLOR] $LOCALIZE[35503]: [COLOR=Silver]$INFO[ListItem.Property(Vendor)][/COLOR]</label>
                         <align>left</align>
                         <aligny>center</aligny>
                         <font>size17</font>
@@ -148,9 +142,7 @@
                 <aligny>center</aligny>
                 <scroll>true</scroll>
                 <textcolor>Silver</textcolor>
-                <label>($INFO[Container(20).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024]
-                    ($INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages])
-                </label>
+                <label>($INFO[Container(20).NumItems] $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages])</label>
             </control>
             <control type="button" id="10">
                 <description>Close button</description>

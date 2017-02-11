@@ -107,8 +107,7 @@
                     </control>
                 </control>
                 <control type="group" description="Media info Top">
-                    <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)
-                    </visible>
+                    <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
                     <posx>0</posx>
                     <posy>702</posy>
                     <control type="label" description="Main Label">
@@ -139,8 +138,7 @@
                     </control>
                 </control>
                 <control type="group" description="Media Info Bottom">
-                    <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)
-                    </visible>
+                    <visible>container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
                     <posx>0</posx>
                     <posy>891</posy>
                     <control type="label" description="MPAA">
@@ -171,9 +169,7 @@
                     <include>MusicInfo</include>
                 </control>
                 <control type="group">
-                    <visible>![Container.Content(MusicVideos) | container.content(tvshows) | container.content(seasons)
-                        | container.content(episodes)]
-                    </visible>
+                    <visible>![Container.Content(MusicVideos) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
                     <include>DefaultMediaInfo</include>
                 </control>
             </control>
@@ -182,9 +178,7 @@
                 <posx>1020</posx>
                 <posy>141</posy>
                 <control type="fixedlist" id="54">
-                    <visible>container.content(files) | container.content(movies) | container.content(tvshows) |
-                        container.content(seasons) | container.content(episodes)
-                    </visible>
+                    <visible>container.content(files) | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>802</width>

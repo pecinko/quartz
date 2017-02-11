@@ -10,9 +10,7 @@
                 <height>1080</height>
             </control>
             <control type="image" description="FA">
-                <visible>Skin.HasSetting(MusicPlayingFanart) +
-                    IsEmpty(Window(Visualisation).Property(ArtistSlideshow))
-                </visible>
+                <visible>Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
@@ -21,9 +19,7 @@
                 <animation effect="fade" time="0" end="70" condition="True">Conditional</animation>
             </control>
             <control type="multiimage" description="Slideshow">
-                <visible>Skin.HasSetting(MusicPlayingFanart) +
-                    !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))
-                </visible>
+                <visible>Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>1920</width>
@@ -51,34 +47,25 @@
                 <visible>true</visible>
             </control>
             <control type="group" description="INFO grouped for visibility sake">
-                <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) |
-                    Window.IsVisible(VisualisationPresetList)]
-                </visible>
+                <visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
                 <animation effect="fade" time="500">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
                 <control type="group" description="Info panel LEFT">
                     <posx>-30</posx>
                     <posy>120</posy>
-                    <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)"
-                               reversible="false">
+                    <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
                         <effect type="zoom" tween="quadratic" start="0" end="100" time="800" center="640,360"/>
                         <effect type="fade" start="0" end="100" time="800" center="640,360"/>
                     </animation>
-                    <animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)"
-                               reversible="false">
-                        <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300"
-                                center="640,360"/>
+                    <animation type="Conditional" condition="StringCompare(Control.GetLabel(23),100)" reversible="false">
+                        <effect type="zoom" tween="quadratic" easing="in" start="100" end="260" time="300" center="640,360"/>
                         <effect type="fade" start="100" end="0" easing="out" time="300"/>
                     </animation>
-                    <animation type="Conditional"
-                               condition="IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)"
-                               reversible="false">
+                    <animation type="Conditional" condition="IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)" reversible="false">
                         <effect type="rotatey" tween="quadratic" start="0" end="180" time="1000" center="960,540"/>
                         <effect type="fade" start="100" end="0" time="400" center="640,360"/>
                     </animation>
-                    <animation type="Conditional"
-                               condition="![IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)]"
-                               reversible="false">
+                    <animation type="Conditional" condition="![IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)]" reversible="false">
                         <effect type="rotatey" tween="quadratic" start="180" end="0" time="1000" center="960,540"/>
                         <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360"/>
                     </animation>
@@ -135,9 +122,7 @@
                             <align>left</align>
                             <textcolor>Grey</textcolor>
                             <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163]
-                                $INFO[MusicPlayer.PlaylistLength][/B]
-                            </label>
+                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
                             <font>size17</font>
                         </control>
                         <control type="group">
@@ -187,9 +172,7 @@
                 <control type="group" description="Info panel RIGHT">
                     <posx>168</posx>
                     <posy>120</posy>
-                    <visible>IntegerGreaterThan(Control.GetLabel(23),30) +
-                        !IntegerGreaterThan(Control.GetLabel(23),60)
-                    </visible>
+                    <visible>IntegerGreaterThan(Control.GetLabel(23),30) + !IntegerGreaterThan(Control.GetLabel(23),60)</visible>
                     <animation type="Visible" reversible="false">
                         <effect type="rotatey" tween="quadratic" start="-180" end="0" time="1000" center="960,"/>
                         <effect type="fade" start="0" end="100" delay="300" time="700" center="640,360"/>
@@ -252,9 +235,7 @@
                             <align>right</align>
                             <textcolor>Grey</textcolor>
                             <animation effect="fade" time="200">VisibleChange</animation>
-                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163]
-                                $INFO[MusicPlayer.PlaylistLength][/B]
-                            </label>
+                            <label>[B]$INFO[MusicPlayer.PlaylistPosition] $LOCALIZE[20163] $INFO[MusicPlayer.PlaylistLength][/B]</label>
                             <font>size17</font>
                         </control>
                     </control>
@@ -323,10 +304,7 @@
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>size17</font>
-                <label>[UPPERCASE]$INFO[musicplayer.Codec][/UPPERCASE] $INFO[musicplayer.Bitrate, @
-                    ,kbps]$INFO[musicplayer.bitspersample, · ,bit]$INFO[musicplayer.Samplerate, ·
-                    ,kHz]$INFO[musicplayer.Channels, · , $LOCALIZE[21444]]
-                </label>
+                <label>[UPPERCASE]$INFO[musicplayer.Codec][/UPPERCASE] $INFO[musicplayer.Bitrate, @ ,kbps]$INFO[musicplayer.bitspersample, · ,bit]$INFO[musicplayer.Samplerate, · ,kHz]$INFO[musicplayer.Channels, · , $LOCALIZE[21444]]</label>
             </control>
             <control type="label" description="row 2 sys label">
                 <posx>1875</posx>
@@ -343,9 +321,7 @@
             <posy>1020</posy>
             <visible>IntegerGreaterThan(Control.GetLabel(23),95) | !IntegerGreaterThan(Control.GetLabel(23),5)</visible>
             <animation effect="fade" time="800">VisibleChange</animation>
-            <animation condition="Window.IsActive(MusicOSD.xml)" effect="slide" start="0,0" end="0,-105" time="200">
-                Conditional
-            </animation>
+            <animation condition="Window.IsActive(MusicOSD.xml)" effect="slide" start="0,0" end="0,-105" time="200">Conditional</animation>
             <control type="label" description="Previous">
                 <posx>30</posx>
                 <height>36</height>
