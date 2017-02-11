@@ -10,7 +10,7 @@
                 <centertop>540</centertop>
                 <width>900</width>
                 <height>480</height>
-                <texture border="128">img/DialogPanelST.png</texture>
+                <texture border="128">img/DialogPanel.png</texture>
             </control>
             <control type="label" id="10" description="Heading">
                 <centerleft>960</centerleft>

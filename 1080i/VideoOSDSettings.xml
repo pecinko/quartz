@@ -16,7 +16,7 @@
                 <posy>0</posy>
                 <width>1110</width>
                 <height>1200</height>
-                <texture border="128">img/DialogPanelST.png</texture>
+                <texture border="128">img/DialogPanel.png</texture>
                 <aspectratio>stretch</aspectratio>
             </control>
             <control type="label" id="2" description="Settings">
