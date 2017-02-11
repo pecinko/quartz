@@ -14,10 +14,11 @@
             <control type="image" description="background image">
                 <centertop>50%</centertop>
                 <posy>0</posy>
-                <width>1110</width>
-                <height>1200</height>
-                <texture border="128">img/DialogPanel.png</texture>
-                <aspectratio>stretch</aspectratio>
+                <width>898</width>
+                <height>988</height>
+                <texture>texture/dialog.png</texture>
+                <bordertexture border="22">texture/dialog_border.png</bordertexture>
+                <bordersize>22</bordersize>
             </control>
             <control type="label" id="2" description="Settings">
                 <posx>30</posx>

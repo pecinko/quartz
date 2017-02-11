@@ -83,14 +83,6 @@
                     </focusedlayout>
                 </control>
             </control>
-            <!--<include>SlimListFade</include>-->
-            <!--<control type="scrollbar" id="60">
-              <posx>39r</posx>
-              <posy>147</posy>
-              <height>882</height>
-              <onleft>50</onleft>
-              <onright>noop</onright>
-            </control>-->
         </control>
     </include>
 </includes>

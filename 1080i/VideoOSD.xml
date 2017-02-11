@@ -304,57 +304,6 @@
                             <visible>player.forwarding</visible>
                         </control>
                     </control>
-                    <!--<control type="progress" id="23">
-                      <description>Progressbar</description>
-                      <posx>200</posx>
-                      <posy>99</posy>
-                      <width>1203</width>
-                      <height>24</height>
-                      <info>Player.Progress</info>
-                      <visible>true</visible>
-                    </control>-->
-                    <!--<control type="label">
-                      <posx>-8</posx>
-                      <posy>99</posy>
-                      <width>240</width>
-                      <height>24</height>
-                      <font>info1</font>
-                      <align>center</align>
-                      <textcolor>Shadow</textcolor>
-                      <label>$INFO[VideoPlayer.Time]</label>
-                    </control>
-                    <control type="label">
-                      <posx>-8</posx>
-                      <posy>96</posy>
-                      <width>240</width>
-                      <height>24</height>
-                      <font>info1</font>
-                      <align>center</align>
-                      <textcolor>White</textcolor>
-                      <label>$INFO[VideoPlayer.Time]</label>
-                    </control>
-                    <control type="label">
-                      <posx>1374</posx>
-                      <posy>99</posy>
-                      <width>240</width>
-                      <height>24</height>
-                      <font>info1</font>
-                      <align>center</align>
-                      <textcolor>Shadow</textcolor>
-                      <label>-$INFO[VideoPlayer.TimeRemaining]</label>
-                      <visible>!IsEmpty(VideoPlayer.TimeRemaining)</visible>
-                    </control>-->
-                    <!--<control type="label">
-                      <posx>1374</posx>
-                      <posy>96</posy>
-                      <width>240</width>
-                      <height>24</height>
-                      <font>info1</font>
-                      <align>center</align>
-                      <textcolor>White</textcolor>
-                      <label>-$INFO[VideoPlayer.TimeRemaining]</label>
-                      <visible>!IsEmpty(VideoPlayer.TimeRemaining)</visible>
-                    </control>-->
                 </control>
             </control>
             <control type="group" description="Options content">
@@ -372,11 +321,13 @@
                 </animation>
                 <control type="image">
                     <visible>ControlGroup(101).HasFocus()</visible>
-                    <centerleft>960</centerleft>
-                    <centertop>540</centertop>
-                    <width>930</width>
-                    <height>630</height>
-                    <texture border="128">img/DialogPanel.png</texture>
+                    <centerleft>50%</centerleft>
+                    <centertop>50%</centertop>
+                    <width>718</width>
+                    <height>418</height>
+                    <texture>texture/dialog.png</texture>
+                    <bordertexture border="22">texture/dialog_border.png</bordertexture>
+                    <bordersize>22</bordersize>
                 </control>
                 <control type="grouplist" id="101" description="Video OSD Options">
                     <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) |
@@ -391,8 +342,8 @@
                         <effect type="fade" start="100" end="0" time="140"/>
                         <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140"/>
                     </animation>
-                    <centerleft>960</centerleft>
-                    <centertop>540</centertop>
+                    <centerleft>50%</centerleft>
+                    <centertop>50%</centertop>
                     <width>576</width>
                     <height>300</height>
                     <itemgap>0</itemgap>

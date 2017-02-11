@@ -34,14 +34,6 @@
                 </control>
                 <include>LargeListSlider</include>
             </control>
-            <!--<include>LargeListFade</include>-->
-            <!--<control type="scrollbar" id="60">
-              <posx>39r</posx>
-              <posy>135</posy>
-              <height>870</height>
-              <onleft>51</onleft>
-              <onright>noop</onright>
-            </control>-->
         </control>
     </include>
 </includes>

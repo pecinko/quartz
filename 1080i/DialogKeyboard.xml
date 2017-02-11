@@ -5,11 +5,13 @@
         <control type="group">
             <visible>!Window.IsVisible(numericinput)</visible>
             <control type="image">
-                <centerleft>960</centerleft>
-                <centertop>744</centertop>
-                <width>1500</width>
-                <height>816</height>
-                <texture border="128">img/DialogPanel.png</texture>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>1288</width>
+                <height>604</height>
+                <texture>texture/dialog.png</texture>
+                <bordertexture border="22">texture/dialog_border.png</bordertexture>
+                <bordersize>22</bordersize>
             </control>
             <control type="image">
                 <centerleft>960</centerleft>

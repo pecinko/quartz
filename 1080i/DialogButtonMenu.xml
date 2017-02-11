@@ -9,11 +9,13 @@
     </coordinates>
     <controls>
         <control type="image">
-            <centerleft>960</centerleft>
-            <centertop>540</centertop>
-            <width>975</width>
-            <height>570</height>
-            <texture border="128">img/DialogPanel.png</texture>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>763</width>
+            <height>358</height>
+            <texture>texture/dialog.png</texture>
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
         </control>
         <control type="grouplist" id="9000">
             <centerleft>960</centerleft>

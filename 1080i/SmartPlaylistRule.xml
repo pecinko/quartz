@@ -5,11 +5,13 @@
     <include>DialogOpenClose</include>
     <controls>
         <control type="image">
-            <centerleft>960</centerleft>
-            <centertop>540</centertop>
-            <width>1560</width>
-            <height>810</height>
-            <texture border="128">img/DialogPanel.png</texture>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>1348</width>
+            <height>510</height>
+            <texture>texture/dialog.png</texture>
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
         </control>
         <control type="group">
             <posx>360</posx>

@@ -5,11 +5,13 @@
         <control type="group">
             <include>OpenClose</include>
             <control type="image">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>1290</width>
-                <height>690</height>
-                <texture border="128">img/DialogPanel.png</texture>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>1078</width>
+                <height>478</height>
+                <texture>texture/dialog.png</texture>
+                <bordertexture border="22">texture/dialog_border.png</bordertexture>
+                <bordersize>22</bordersize>
             </control>
             <control type="group">
                 <top>330</top>

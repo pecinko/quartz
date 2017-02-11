@@ -21,14 +21,24 @@
             <include>View_502</include>
             <include>View_510</include>
         </control>
+        <control type="image">
+            <visible>Control.HasFocus(9001)</visible>
+            <centerleft>1400</centerleft>
+            <centertop>540</centertop>
+            <width>244</width>
+            <height>254</height>
+            <texture>texture/dialog.png</texture>
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
+        </control>
         <control type="button" id="9001">
             <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
             <centerleft>1400</centerleft>
             <centertop>540</centertop>
-            <width>201</width>
+            <width>200</width>
             <height>210</height>
             <texturenofocus>-</texturenofocus>
-            <texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
+            <texturefocus>texture/ScrollVertical.png</texturefocus>
             <label>$INFO[ListItem.SortLetter]</label>
             <font>Scroll</font>
             <onleft>50</onleft>
@@ -39,14 +49,24 @@
             <onback>Control.SetFocus(50)</onback>
             <align>center</align>
         </control>
+        <control type="image">
+            <visible>Control.HasFocus(9002)</visible>
+            <centerleft>960</centerleft>
+            <centertop>750</centertop>
+            <width>254</width>
+            <height>244</height>
+            <texture>texture/dialog.png</texture>
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
+        </control>
         <control type="button" id="9002">
             <visible allowhiddenfocus="true">Control.HasFocus(9002)</visible>
             <centerleft>960</centerleft>
             <centertop>750</centertop>
-            <width>201</width>
+            <width>200</width>
             <height>210</height>
             <texturenofocus>-</texturenofocus>
-            <texturefocus border="12">HUD/ScrollVertical.png</texturefocus>
+            <texturefocus border="12">texture/ScrollHorizontal.png</texturefocus>
             <label>$INFO[ListItem.SortLetter]</label>
             <font>Scroll</font>
             <onup>50</onup>
@@ -57,14 +77,24 @@
             <onback>Control.SetFocus(50)</onback>
             <align>center</align>
         </control>
+        <control type="image">
+            <visible>Control.HasFocus(9003)</visible>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>254</width>
+            <height>244</height>
+            <texture>texture/dialog.png</texture>
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
+        </control>
         <control type="button" id="9003">
             <visible allowhiddenfocus="true">Control.HasFocus(9003)</visible>
-            <centerleft>960</centerleft>
-            <centertop>540</centertop>
-            <width>201</width>
-            <height>210</height>
+            <centerleft>50%</centerleft>
+            <centertop>50%</centertop>
+            <width>210</width>
+            <height>200</height>
             <texturenofocus>-</texturenofocus>
-            <texturefocus border="12">HUD/ScrollHorizontal.png</texturefocus>
+            <texturefocus>texture/ScrollHorizontal.png</texturefocus>
             <label>$INFO[ListItem.SortLetter]</label>
             <font>Scroll</font>
             <onup>50</onup>
@@ -87,11 +117,13 @@
             <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
             <include>DialogOpenCloseVisible</include>
             <control type="image">
-                <centerleft>960</centerleft>
-                <centertop>540</centertop>
-                <width>810</width>
-                <height>915</height>
-                <texture border="128">img/DialogPanel.png</texture>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>598</width>
+                <height>703</height>
+                <texture>texture/dialog.png</texture>
+                <bordertexture border="22">texture/dialog_border.png</bordertexture>
+                <bordersize>22</bordersize>
             </control>
             <control type="grouplist" id="9000">
                 <include>9000GrouplistParameters</include>
