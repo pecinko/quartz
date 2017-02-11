@@ -177,15 +177,27 @@
           </item>
           <item id="11" description="Show Clock">
             <visible>Skin.HasSetting(ShowClock)</visible>
-			<label>$LOCALIZE[31980]</label>
+            <label>$LOCALIZE[31980]</label>
             <label2>107</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
           </item>
-		  <item id="11" description="Show Clock">
+          <item id="11" description="Show Clock">
             <visible>!Skin.HasSetting(ShowClock)</visible>
-			<label>$LOCALIZE[31980]</label>
+            <label>$LOCALIZE[31980]</label>
             <label2>106</label2>
             <onclick>Skin.ToggleSetting(ShowClock)</onclick>
+          </item>
+          <item id="11" description="Show file path">
+            <visible>Skin.HasSetting(ShowFilePath)</visible>
+            <label>$LOCALIZE[32002]</label>
+            <label2>107</label2>
+            <onclick>Skin.ToggleSetting(ShowFilePath)</onclick>
+          </item>
+          <item id="11" description="Show file path">
+            <visible>!Skin.HasSetting(ShowFilePath)</visible>
+            <label>$LOCALIZE[32002]</label>
+            <label2>106</label2>
+            <onclick>Skin.ToggleSetting(ShowFilePath)</onclick>
           </item>
 		  <item id="12" description="Reset Skin">
             <label>$LOCALIZE[31038]</label>

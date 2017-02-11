@@ -75,13 +75,13 @@
           <control type="grouplist" description="Flags">
             <visible>![Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
             <include>VisibleFadeEffect</include>
-            <posx>150</posx>
+            <posx>1109</posx>
             <posy>480</posy>
             <width min="90" max="450">auto</width>
             <height>45</height>
             <itemgap>30</itemgap>
             <orientation>horizontal</orientation>
-            <align>left</align>
+            <align>right</align>
             <aligny>center</aligny>
             <control type="image">
               <visible>IntegerGreaterThan(ListItem.VideoResolution,710)</visible>
@@ -124,7 +124,7 @@
           </control>
           <control type="group" description="List Info">
             <posx>0</posx>
-            <posy>530</posy>
+            <posy>470</posy>
             <control type="group">
               <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://3,left) | Control.HasFocus(12) | Control.HasFocus(10) | Control.HasFocus(9012) | Control.HasFocus(50)]</visible>
               <include>VisibleFadeEffect</include>
@@ -185,6 +185,12 @@
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.mpaa)</visible>
                   </item>
+                  <item>
+                    <label>$LOCALIZE[573]:</label>
+                    <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
+                    <onclick>noop</onclick>
+                    <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
+                  </item>
                 </content>
               </control>
             </control>
@@ -223,6 +229,12 @@
                     <label2>$INFO[ListItem.Rating]</label2>
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.Rating)</visible>
+                  </item>
+                  <item>
+                    <label>$LOCALIZE[573]:</label>
+                    <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
+                    <onclick>noop</onclick>
+                    <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                   </item>
                 </content>
               </control>
@@ -293,6 +305,12 @@
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.Rating)</visible>
                   </item>
+                  <item>
+                    <label>$LOCALIZE[573]:</label>
+                    <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
+                    <onclick>noop</onclick>
+                    <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
+                  </item>
                 </content>
               </control>
             </control>
@@ -349,6 +367,12 @@
                     <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                     <onclick>noop</onclick>
                     <visible>!IsEmpty(ListItem.Duration)</visible>
+                  </item>
+                  <item>
+                    <label>$LOCALIZE[573]:</label>
+                    <label2>[COLOR=Grey]$INFO[ListItem.Path]$INFO[ListItem.FileName][/COLOR]</label2>
+                    <onclick>noop</onclick>
+                    <visible>[!IsEmpty(ListItem.Path) | !IsEmpty(ListItem.FileName)] + Skin.HasSetting(ShowFilePath)</visible>
                   </item>
                 </content>
               </control>
