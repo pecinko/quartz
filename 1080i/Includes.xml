@@ -58,7 +58,7 @@
       <height>100%</height>
       <aspectratio>stretch</aspectratio>
       <texture>img/BGOverlay.png</texture>
-			<colordiffuse>Overlay</colordiffuse>
+      <colordiffuse>Overlay</colordiffuse>
     </control>
   </include>
   <include name="MiniBackground">
