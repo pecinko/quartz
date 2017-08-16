@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">2</defaultcontrol>
+	<zorder>5</zorder>
     <include>OpenClose</include>
     <controls>
-        <control type="image">
-            <posx>225</posx>
-            <posy>0</posy>
-            <width>1470</width>
-            <height>1080</height>
-            <texture border="21">img/DialogNew.png</texture>
-            <colordiffuse>Overlay</colordiffuse>
+        <control type="image" description="background image">
+			<posx>325</posx>
+			<posy>100</posy>
+			<width>1270</width>
+			<height>880</height>
+            <!-- Below is for the OSD background -->
+			<texture border="22">OSD/OSDBackground.png</texture>
+			<!-- Below is for a dialog texture (solid gray) type panel
+            <bordertexture border="22">texture/dialog_border.png</bordertexture>
+            <bordersize>22</bordersize>
+			<texture>texture/dialog.png</texture>
+			-->
         </control>
         <control type="group">
             <posx>360</posx>
@@ -20,8 +26,12 @@
                 <posy>-15</posy>
                 <width>1140</width>
                 <align>center</align>
+				<!-- Includes Pages etc.
                 <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
+				-->
+				<label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
                 <font>size24</font>
+				<textcolor>HL</textcolor>
             </control>
             <control type="panel" id="11">
                 <posx>66</posx>
@@ -42,43 +52,50 @@
                         <posy>3</posy>
                         <width>330</width>
                         <height>210</height>
-                        <bordertexture border="1">img/ThumbBorder2.png</bordertexture>
-                        <bordersize>4</bordersize>
+                        <bordertexture border="12">img/ThumbBorder.png</bordertexture>
+                        <bordersize>2</bordersize>
                         <aspectratio>scale</aspectratio>
                         <info>ListItem.Icon</info>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>225</posy>
+                        <posx>10</posx>
+						<posy>225</posy>
                         <width>338</width>
                         <height>22</height>
                         <align>center</align>
                         <font>size17</font>
-                        <info>ListItem.Label</info>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+						<scroll>false</scroll>
                     </control>
                 </itemlayout>
+				
+				<!-- Need to set properties for on focus like white border on icon -->
                 <focusedlayout height="270" width="360">
                     <control type="image">
                         <posx>10</posx>
                         <posy>3</posy>
                         <width>330</width>
                         <height>210</height>
-                        <bordertexture border="1">img/ThumbBorder3.png</bordertexture>
-                        <bordersize>4</bordersize>
+						<bordertexture border="12">img/WhiteDot.png</bordertexture>
+                        <bordersize>2</bordersize>
+						<aspectratio>scale</aspectratio>
                         <info>ListItem.Icon</info>
-                        <aspectratio>scale</aspectratio>
-                    </control>
+					</control>
                     <control type="label">
-                        <posx>168</posx>
+                        <posx>10</posx>
                         <posy>225</posy>
                         <width>338</width>
                         <height>22</height>
                         <align>center</align>
                         <font>size17</font>
-                        <info>ListItem.Label</info>
+						<textcolor>HL</textcolor>
+                        <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+						<scroll>true</scroll>
                     </control>
                 </focusedlayout>
             </control>
+			
+			<!-- Create / Clear Bookmark Buttons at the bottom -->
             <control type="grouplist" id="9000">
                 <posx>30</posx>
                 <posy>690</posy>
@@ -91,25 +108,26 @@
                 <onright>9000</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
-                <control type="button" id="2">
+                <control type="button" id="2"><!-- Create Bookmark button -->
                     <description>Create Bookmark button</description>
                     <label>294</label>
                     <width>375</width>
-                    <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-                </control>
-                <control type="button" id="3">
+					<align>center</align>
+				</control>
+                <control type="button" id="3"><!-- Clear Bookmark button -->
                     <description>Clear Bookmark button</description>
                     <label>296</label>
                     <width>375</width>
-                    <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-                </control>
-                <control type="button" id="4">
-                    <description>Clear Bookmark button</description>
+					<align>center</align>
+				</control>
+				<control type="button" id="4"><!-- Set episode bookmark -->
+                    <description>Create Episode</description>
                     <label>20406</label>
                     <width>375</width>
-                    <texturenofocus border="8">img/ButtonNF.png</texturenofocus>
-                    <visible>videoplayer.content(episodes)</visible>
+					<align>center</align>
+					<visible>videoplayer.content(episodes)</visible>
                 </control>
+
             </control>
         </control>
     </controls>

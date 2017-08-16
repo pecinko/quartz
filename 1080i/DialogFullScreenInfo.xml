@@ -73,16 +73,20 @@
                     <posx>-30</posx>
                     <posy>66</posy>
                     <control type="label" description="Main label">
+						<!-- Not Music Video and not TV Show (Live TV or Movie?) -->
                         <visible>![VideoPlayer.Content(MusicVideos) | VideoPlayer.Content(Episodes)]</visible>
                         <include>FullscreenInfoLabelMain</include>
-                        <label>$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title]</label>
+						<textcolor>HL</textcolor>
+                        <label>$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Title, ]</label>
                     </control>
                     <control type="label" description="Main label">
+						<!-- Music Video -->
                         <visible>VideoPlayer.Content(MusicVideos)</visible>
                         <include>FullscreenInfoLabelMain</include>
                         <label>$INFO[VideoPlayer.Artist]</label>
                     </control>
                     <control type="label" description="Main label">
+						<!-- TV Show -->
                         <visible>VideoPlayer.Content(Episodes)</visible>
                         <include>FullscreenInfoLabelMain</include>
                         <label>$INFO[VideoPlayer.Title]</label>
@@ -94,10 +98,11 @@
                         <label>$INFO[VideoPlayer.Album]</label>
                     </control>
                     <control type="label" description="Label 2">
-                        <visible>Player.ChapterCount + !VideoPlayer.Content(LiveTV)</visible>
+                        <visible>VideoPlayer.Content(Movies)</visible>
                         <font>size17</font>
                         <include>FullscreenInfoLabel2</include>
-                        <label>$LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label>
+                        <!-- ><label>$INFO[VideoPlayer.mpaa]  $LOCALIZE[21396]$INFO[Player.Chapter, : ]$INFO[Player.ChapterCount, / ]</label> -->
+						<label>$LOCALIZE[562]:$INFO[VideoPlayer.Year]  $INFO[VideoPlayer.mpaa]  $LOCALIZE[515]:$INFO[VideoPlayer.Genre]</label>
                     </control>
                     <control type="label" description="Label 2">
                         <visible>VideoPlayer.Content(Episodes)</visible>
@@ -113,13 +118,13 @@
                     </control>
                     <control type="textbox">
                         <posx>300</posx>
-                        <posy>105</posy>
+                        <posy>111</posy>
                         <width>1275</width>
-                        <height>129</height>
+                        <height>120</height>
                         <label>$INFO[VideoPlayer.Plot]</label>
-                        <align>jistify</align>
-                        <autoscroll>false</autoscroll>
-                        <font>size20</font>
+                        <align>justify</align>
+                        <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
+                        <font>size19</font>
                     </control>
                 </control>
                 <control type="grouplist">

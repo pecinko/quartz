@@ -4,7 +4,7 @@
     <zorder>2</zorder>
     <controls>
         <control type="group" description="OSDMenu">
-            <visible>![Window.IsActive(123) | Window.IsActive(124)]</visible>
+            <visible>![Window.IsActive(123) | Window.IsActive(124)| Window.IsActive(VideoBookmarks)]</visible>
             <control type="group">
                 <control type="group">
                     <posx>154</posx>
@@ -94,17 +94,43 @@
                             <onup>606</onup>
                             <onclick>XBMC.PlayerControl(Next)</onclick>
                         </control>
+						<!-- Bookmarks Control -->
                         <control type="button" id="606">
-                            <posx>1034</posx>
-                            <width>93</width>
+                            <posx>1080</posx>
+                            <width>57</width>
                             <height>57</height>
-                            <texturenofocus>OSD/Options.png</texturenofocus>
-                            <texturefocus colordiffuse="HL">OSD/Options.png</texturefocus>
-                            <onleft>605</onleft>
+                            <texturenofocus>OSD/OSDBookmarksNF.png</texturenofocus>
+                            <texturefocus colordiffuse="HL">OSD/OSDBookmarksNF.png</texturefocus>
+							<onleft>605</onleft>
                             <onright>607</onright>
                             <onup>606</onup>
-                            <onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
+                            <onclick>ActivateWindow(VideoBookmarks)</onclick>
+					        <visible>!VideoPlayer.Content(LiveTV)</visible>
                         </control>
+						<!-- Info Control -->
+                        <control type="button" id="607">
+                            <posx>1150</posx>
+                            <width>57</width>
+                            <height>57</height>
+                            <texturenofocus>OSD/OSDInfoNF.png</texturenofocus>
+                            <texturefocus colordiffuse="HL">OSD/OSDInfoNF.png</texturefocus>
+                            <onleft>606</onleft>
+                            <onright>608</onright>
+                            <onup>607</onup>
+			    			<onclick>ActivateWindow(fullscreeninfo)</onclick>
+                         </control>
+ 						<!-- Options Control -->
+                         <control type="button" id="608">
+                             <posx>1203</posx>
+                             <width>93</width>
+                             <height>57</height>
+                             <texturenofocus>OSD/Options.png</texturenofocus>
+                             <texturefocus colordiffuse="HL">OSD/Options.png</texturefocus>
+                             <onleft>607</onleft>
+                             <onright>608</onright>
+                             <onup>608</onup>
+ 							<onclick allowhiddenfocus="true">Control.SetFocus(101)</onclick>
+                          </control>
                     </control>
                     <control type="grouplist">
                         <posx>56</posx>
@@ -316,18 +342,31 @@
                     <effect type="fade" start="100" end="0" time="140"/>
                     <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140"/>
                 </animation>
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>434</width>
+                <height>344</height>
                 <control type="image">
                     <visible>ControlGroup(101).HasFocus()</visible>
-                    <centerleft>50%</centerleft>
-                    <centertop>50%</centertop>
-                    <width>718</width>
-                    <height>418</height>
+                    <width>434</width>
+                    <height>344</height>
                     <texture>texture/dialog.png</texture>
                     <bordertexture border="22">texture/dialog_border.png</bordertexture>
                     <bordersize>22</bordersize>
                 </control>
                 <control type="grouplist" id="101" description="Video OSD Options">
-                    <visible allowhiddenfocus="true">ControlGroup(101).HasFocus() | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(706) | Control.HasFocus(707) | Control.HasFocus(708) | Control.HasFocus(709)</visible>
+                    <visible allowhiddenfocus="true">
+                        ControlGroup(101).HasFocus() |
+                        Control.HasFocus(701) |
+                        Control.HasFocus(702) |
+                        Control.HasFocus(703) |
+                        Control.HasFocus(704) |
+                        Control.HasFocus(705) |
+                        Control.HasFocus(706) |
+                        Control.HasFocus(707) |
+                        Control.HasFocus(708) |
+                        Control.HasFocus(709)
+                    </visible>
                     <animation type="Visible">
                         <effect type="fade" start="0" end="100" time="240"/>
                         <effect type="zoom" tween="cubic" easing="out" start="30" end="100" center="auto" time="240"/>
@@ -336,45 +375,51 @@
                         <effect type="fade" start="100" end="0" time="140"/>
                         <effect type="zoom" tween="cubic" easing="in" start="100" end="30" center="auto" time="140"/>
                     </animation>
-                    <centerleft>50%</centerleft>
-                    <centertop>50%</centertop>
-                    <width>576</width>
-                    <height>300</height>
+                    <posx>22</posx>
+                    <posy>22</posy>
+                    <width>390</width>
+                    <height>380</height>
                     <itemgap>0</itemgap>
                     <onleft>602</onleft>
                     <onright>602</onright>
                     <onup>101</onup>
                     <ondown>101</ondown>
-                    <itemgap>0</itemgap>
+                    <itemgap>3</itemgap>
                     <scrolltime>240</scrolltime>
                     <control type="button" id="701" description="Subtitles">
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
-                        <include>9000Buttons</include>
                         <label>31356</label>
                         <onclick>SetFocus(602)</onclick>
                         <onclick>Close</onclick>
                         <onclick>ActivateWindow(SubtitleSearch)</onclick>
-                    </control>                    <!--<control type="togglebutton" id="702" description="Record">                      <visible>VideoPlayer.Content(LiveTV)</visible>                      <enable>Player.CanRecord</enable>                      <include>9000Buttons</include>                      <label>264</label>                      <altlabel>265</altlabel>                      <onclick>PlayerControl(Record)</onclick>                      <animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>                    </control>-->
+                        <texturefocus>texture/dialog_button_focus.png</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
                     <control type="button" id="703">
-                        <include>9000Buttons</include>
                         <label>13395</label>
                         <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+                        <texturefocus>texture/dialog_button_focus.png</texturefocus>
+                        <texturenofocus>-</texturenofocus>
                     </control>
                     <control type="button" id="704">
-                        <include>9000Buttons</include>
                         <label>$LOCALIZE[292] $LOCALIZE[1397] $LOCALIZE[287]</label>
                         <onclick>ActivateWindow(OSDAudioSettings)</onclick>
-                    </control>                    <!--<control type="button" id="705">                      <visible>!VideoPlayer.Content(LiveTV)</visible>                      <include>9000Buttons</include>                      <label>298</label>                      <onclick>ActivateWindow(VideoBookmarks)</onclick>                    </control>-->                    <!--<control type="togglebutton" id="706" description="Info">                      <include>9000Buttons</include>                      <label>20159</label>                      <onclick>close</onclick>                      <onclick>ActivateWindow(142)</onclick>                      <altclick>close</altclick>                      <altclick>Dialog.Close(142)</altclick>                      <usealttexture>Window.IsActive(142)</usealttexture>                    </control>-->
+                        <texturefocus>texture/dialog_button_focus.png</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
+					<!-- CodecInfo -->
                     <control type="button" id="707">
-                        <include>9000Buttons</include>
                         <label>21445</label>
                         <onclick>CodecInfo</onclick>
-                    </control>                    <!--<control type="button" id="708">                      <visible>!VideoPlayer.Content(LiveTV)</visible>                      <include>9000Buttons</include>                      <label>31355</label>                      <onclick>PlayerControl(ShowVideoMenu)</onclick>                      <enable>VideoPlayer.HasMenu</enable>                      <animation effect="fade" start="100" end="50" time="100" condition="!VideoPlayer.HasMenu">Conditional</animation>                    </control>-->                    <!--<control type="button" id="709" description="Teletext">                      <visible>VideoPlayer.Content(LiveTV)</visible>                      <include>9000Buttons</include>                      <label>23050</label>                      <onclick>Dialog.Close(VideoOSD)</onclick>                      <onclick>ActivateWindow(Teletext)</onclick>                    </control>-->
+                        <texturefocus>texture/dialog_button_focus.png</texturefocus>
+                        <texturenofocus>-</texturenofocus>
+                    </control>
                 </control>
             </control>
         </control>
-        <control type="group" description="MediaInfo">
-            <visible>ControlGroup(214).Hasfocus + ![Window.IsActive(123) | Window.IsActive(124)]</visible>
+        <control type="group" id="102" description="MediaInfo">
+            <!-- <visible>ControlGroup(214).Hasfocus + ![Window.IsActive(123) | Window.IsActive(124)]</visible> -->
+            <visible>Contro.HasFocus(607)</visible>
             <control type="image" id="1">
                 <posx>165</posx>
                 <posy>74</posy>
